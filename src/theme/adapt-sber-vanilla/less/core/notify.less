@@ -1,0 +1,104 @@
+.notify {
+  &__popup {
+    background-color: @notify;
+    color: @notify-inverted;
+  }
+
+  &__popup-inner {
+    position: relative;
+    .l-container-padding(@notify-padding-ver, @notify-padding-hoz);
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: @notify-title-margin;
+    .notify-title;
+
+    @media (max-width: @device-width-medium) {
+      padding-right: unit(@icon-size + @btn-margin + @btn-padding, rem);
+
+      .dir-rtl & {
+        padding-right: inherit;
+        padding-left: unit(@icon-size + @btn-margin + @btn-padding, rem);
+      }
+    }
+  }
+
+  &__body {
+    margin-bottom: @notify-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @notify-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+    color: @notify-link;
+
+    .no-touch &:hover {
+      color: @notify-link-hover;
+      .transition(color @duration ease-in);
+    }
+  }
+
+  &__btn-container {
+    margin-top: @btn-margin;
+  }
+
+  &__btn {
+    background-color: @notify-btn;
+    color: @notify-btn-inverted;
+
+    .no-touch &:not(.is-disabled):hover {
+      background-color: @notify-btn-hover;
+      color: @notify-btn-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__btn-icon {
+    margin: @btn-margin / 2;
+    padding: @btn-padding / 2;
+    background-color: @notify-icon;
+    color: @notify-icon-inverted;
+    border-radius: 50%;
+
+    .no-touch &:hover {
+      background-color: @notify-icon-hover;
+      color: @notify-icon-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  // --------------------------------------------------
+  // Notify prompt type icon
+  // --------------------------------------------------
+  // &__icon {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+
+  //   .dir-rtl & {
+  //     right: inherit;
+  //     left: 0;
+  //   }
+  // }
+  // --------------------------------------------------
+}

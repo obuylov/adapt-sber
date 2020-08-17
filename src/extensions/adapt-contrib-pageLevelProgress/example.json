@@ -1,0 +1,33 @@
+    // To go on a course
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_showPageCompletion": true,
+        "_isCompletionIndicatorEnabled": true,
+        "_isShownInNavigationBar": true
+    }
+
+    // To go on a contentObject
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_showPageCompletion": true,
+        "_isCompletionIndicatorEnabled": true,
+        "_excludeAssessments": false
+    }
+
+    // To go on an article
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_isCompletionIndicatorEnabled": true
+    }
+
+    // To go on a block
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_isCompletionIndicatorEnabled": true
+    }
+
+    // To go on a component
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_isCompletionIndicatorEnabled": true
+    }

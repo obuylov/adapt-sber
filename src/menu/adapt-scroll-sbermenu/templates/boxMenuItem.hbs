@@ -1,0 +1,38 @@
+<div class="menu-item-inner"
+     {{#if _globals._menu._scroll-sbermenu.menuItem}}tabindex="0"{{/if}}>
+  <div class="menu-item__progress boxmenu-item__progress js-menu-item-progress">
+    {{!-- Menu item progress bar will render in here --}}
+  </div>
+    <div class="menu-item-photo">
+        <img src="{{_graphic.src}}" alt="{{_graphic.alt}}">
+    </div>
+    <div class="menu-item-info">
+        <div class="menu-texts">
+            <div class="menu-item-title">
+                <div class="menu-item-title-inner" tabindex="0">
+                    {{{compile displayTitle}}}
+                </div>
+            </div>
+            <div class="menu-item-body">
+                <div class="menu-item-body-inner">
+                    {{{compile pageBody}}}
+                </div>
+            </div>
+        </div>
+        <div class="menu-item-controls">
+            <div class="menu-item-button">
+                <button class="{{#if _isVisited}}visited{{/if}} {{#if _isLocked}}disabled{{/if}} viewtext"
+                        {{#if _isLocked}}disabled="disabled"{{/if}}>
+                    {{{linkText}}}
+                </button>
+            </div>
+            {{#if duration}}
+                <div class="menu-duration">
+                    <div class="menu-item-duration" tabindex="0">
+                        <img src="assets/duration_icon.svg" alt="duration icon">
+                        {{{duration}}}</div>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

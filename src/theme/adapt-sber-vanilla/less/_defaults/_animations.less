@@ -1,0 +1,129 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+@duration: 0.2s;
+@progress-duration: 0.5s;
+
+@animation-duration: 2000ms;
+@animation-easing: cubic-bezier(.23,1,.32,1);
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Basic image zoom on hover animation
+// Apply to image container
+//
+// .img-zoom();
+// .img-zoom(@duration: .5s;);
+// .img-zoom(1.25; .1s; ease-out;);
+// --------------------------------------------------
+.img-zoom(@scale: 1.1; @duration: .75s; @easing: ease-in-out;) {
+  overflow: hidden;
+
+  img {
+    transition: transform @duration @easing;
+
+    .no-touch &:hover {
+      transform: scale(@scale);
+    }
+  }
+}
+// --------------------------------------------------
+
+// --------------------------------------------------
+// --------------------------------------------------
+// _onScreen Animations
+// --------------------------------------------------
+// --------------------------------------------------
+
+// Add an overflow to the animation container to stop horizontal scrolling
+// on smaller devices
+// https://github.com/adaptlearning/adapt_framework/issues/2675
+// --------------------------------------------------
+.has-animation {
+  overflow: hidden;
+}
+
+// Fade in
+// --------------------------------------------------
+.fade-in-before > div {
+  opacity: 0;
+  transition: all @animation-duration @animation-easing;
+}
+
+.fade-in-after > div {
+  opacity: 1;
+}
+
+// _onScreen animation mixin for 'fade-in-top', 'fade-in-bottom', 
+// 'fade-in-left', and 'fade-in-right'
+// --------------------------------------------------
+.on-screen-anim(fade-in-top; 0; 1; translateY(-100px); translateY(0));
+.on-screen-anim(fade-in-bottom; 0; 1; translateY(100px); translateY(0));
+.on-screen-anim(fade-in-left; 0; 1; translateX(-100px); translateX(0));
+.on-screen-anim(fade-in-right; 0; 1; translateX(100px); translateX(0));
+
+.on-screen-anim(@selector; @opacity-before; @opacity-after; @transform-before; @transform-after) {
+  .@{selector}-before > div {
+    opacity: @opacity-before;
+    transform: @transform-before;
+    transition: all @animation-duration @animation-easing;
+  }
+
+  .@{selector}-after > div {
+    opacity: @opacity-after;
+    transform: @transform-after;
+  }
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+// Keyframe Animations
+// --------------------------------------------------
+// --------------------------------------------------
+
+.keyframes(@name; @args) {
+  @keyframes @name { @args(); }
+}
+
+.animation(@args) {
+  animation: @args;
+}
+
+// scalePulse animation
+// --------------------------------------------------
+.effect-scalePulse() {
+  .keyframes(scalePulse; {
+    0% { transform: none; }
+    50% { transform: scale( 1.2, 1.2 ); }
+    100% { transform: none; }
+  });
+
+  .animation(scalePulse 0.5s 0s 1 normal ease-in-out none);
+  // name, duration, delay, iteration count, direction, timing-function, fill mode
+}
+
+// bounceLeftOnce animation
+// --------------------------------------------------
+.effect-bounceLeftOnce() {
+  .keyframes(bounceLeftOnce; {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  });
+
+  .animation(bounceLeftOnce 0.5s 0s 1 normal ease-in-out none);
+  // name, duration, delay, iteration count, direction, timing-function, fill mode
+}
+
+// bounceRightOnce animation
+// --------------------------------------------------
+.effect-bounceRightOnce() {
+  .keyframes(bounceRightOnce; {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  });
+
+  .animation(bounceRightOnce 0.5s 0s 1 normal ease-in-out none);
+  // name, duration, delay, iteration count, direction, timing-function, fill mode
+}

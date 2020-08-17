@@ -1,0 +1,16 @@
+{
+  "name": "adapt-contrib-text",
+  "version": "4.0.0",
+  "framework": ">=5",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-text",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "component" : "text",
+  "displayName" : "Text",
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-contrib-text.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

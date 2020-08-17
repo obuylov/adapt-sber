@@ -1,0 +1,16 @@
+{
+  "name": "adapt-scroll-sbermenu",
+  "version": "0.2.6",
+  "framework": ">=2.1",
+  "homepage": "https://github.com/mike-st/adapt-scroll-sbermenu",
+  "displayName": "Сбер меню со скроллом",
+  "menu": "scroll-sbermenu",
+  "description": "Меню для курсов Сбербанка №2",
+  "main": "js/adapt-contrib-scrollMenu.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_sber-scrollMenu"
+}

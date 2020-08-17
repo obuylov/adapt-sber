@@ -1,0 +1,186 @@
+// --------------------------------------------------
+// --------------------------------------------------
+// contentObject
+// --------------------------------------------------
+// --------------------------------------------------
+
+// Hide nav back button
+// --------------------------------------------------
+.hide-nav-back-btn .nav__back-btn {
+  .u-display-none;
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+// Block
+// --------------------------------------------------
+// --------------------------------------------------
+
+// Custom class added to block
+// Aligns child components centrally on the vertical axis
+// --------------------------------------------------
+.block.align-vert-center .component__container {
+  align-items: center;
+}
+
+// Reverses the visual layout of the components above the medium breakpoint
+// e.g. Left layout components would still render first in the DOM order
+// but visually appear on the right hand side above the medium breakpoint. The
+// components woud vertically stack as per the DOM order below the breakpoint
+// --------------------------------------------------
+.block.reverse-desktop-order .component {
+  @media (min-width: @device-width-medium) {
+    &__container {
+      flex-direction: row-reverse;
+    }
+
+    &.is-left {
+      padding-right: inherit;
+      padding-left: @component-padding-hoz;
+
+      .dir-rtl & {
+        padding-left: inherit;
+        padding-right: @component-padding-hoz;
+      }
+    }
+
+    &.is-right {
+      padding-left: inherit;
+      padding-right: @component-padding-hoz;
+
+      .dir-rtl & {
+        padding-right: inherit;
+        padding-left: @component-padding-hoz;
+      }
+    }
+  }
+}
+
+// Extend width of block to max page width
+// --------------------------------------------------
+.block.extend-container .block__inner {
+  max-width: @max-width;
+}
+
+// Remove top padding from block
+// --------------------------------------------------
+.block.remove-top-padding .block__inner {
+  padding-top: 0;
+}
+
+// Remove bottom padding from block
+// --------------------------------------------------
+.block.remove-bottom-padding .block__inner {
+  padding-bottom: 0;
+}
+
+// --------------------------------------------------
+// Background color mixin
+// Add to block to enable
+// e.g. 'block-color black'
+// Note: both arguments must be predefined variables
+// --------------------------------------------------
+.block-color-mixin(transparent-light, black);
+.block-color-mixin(transparent-dark, white);
+.block-color-mixin(black, white);
+.block-color-mixin(background, background-inverted);
+
+.block-color-mixin(@color, @color-inverted) {
+
+.block-color.@{color} {
+  background-color: @@color;
+  color: @@color-inverted;
+
+  .block,
+  .component {
+    &__title,
+    &__body a,
+    &__instruction a {
+      color: @@color-inverted;
+    }
+  }
+
+  .pagelevelprogress {
+    &__indicator {
+      border-color: @@color-inverted;
+    }
+    &__indicator-inner {
+      background-color: @@color;
+    }
+    &__indicator-bar {
+      background-color: @@color-inverted;
+    }
+  }
+
+  .narrative {
+    &__progress {
+      background-color: fade(@@color-inverted, 50%);
+    }
+
+    &__progress.is-selected {
+      background-color: @@color-inverted;
+    }
+  }
+}
+
+}
+// --------------------------------------------------
+
+.two-cols {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  .col {
+    width: 48%;
+    line-height: 100%;
+
+    &.white {
+      width: 48%;
+      margin-bottom: 50px;
+      padding: 20px 40px;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .heading {
+      margin-bottom: 40px;
+      .block-title;
+    }
+
+    ul {
+      padding: 0 20px;
+
+      li {
+        text-align: left;
+        margin-bottom: 30px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+
+    .col {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: @device-width-small) {
+    padding: 0 20px;
+
+    .col {
+      width: 100% !important;
+    }
+  }
+}
+
+.additional {
+  font-size: 14px;
+}
+
+.center {
+  text-align: center;
+}

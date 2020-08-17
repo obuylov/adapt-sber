@@ -1,0 +1,24 @@
+{
+  "name": "adapt-sber-vanilla",
+  "version": "0.0.8",
+  "framework": ">=5.2",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-vanilla",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "theme": "sber-vanilla",
+  "displayName": "Sber Vanilla",
+  "description": "Специальная тема для курсов Сбербанк",
+  "main": "js/theme.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-theme"
+  ],
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "targetAttribute": "_sber-vanilla"
+}

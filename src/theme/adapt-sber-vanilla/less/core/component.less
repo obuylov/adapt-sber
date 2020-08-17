@@ -1,0 +1,27 @@
+.component {
+  &__title {
+    margin-bottom: @component-title-margin;
+    .component-title;
+    color: @heading-color;
+  }
+
+  &__body {
+    margin-bottom: @component-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @component-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+
+  @media (max-width: @device-width-medium) {
+    &.is-left {
+      padding-bottom: @block-padding-ver;
+    }
+  }
+}
