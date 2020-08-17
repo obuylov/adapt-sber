@@ -1,8 +1,8 @@
 {
-  "name": "adapt-sber-vanilla",
+  "name": "adapt-sbertheme-1",
   "version": "0.0.8",
   "framework": ">=5.2",
-  "homepage": "https://github.com/adaptlearning/adapt-contrib-vanilla",
+  "homepage": "https://github.com/adaptlearning/adapt-sbertheme-1",
   "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
   "theme": "sber-vanilla",
   "displayName": "Sber Vanilla",
