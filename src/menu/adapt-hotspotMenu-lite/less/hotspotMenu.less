@@ -1,0 +1,130 @@
+.hotspot-menu {
+	min-height: calc(100vh ~"- 64px");
+	color: @heading-color-inverted;
+	.menu& {
+		background: transparent;
+	}
+}
+.menu.hotspot-menu.submenu-hotspot {
+	background: url(assets/backgroundA.jpg) center / cover no-repeat;
+}
+
+.hotspot-menu-header {
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	background: rgba(0,0,0,1);
+	display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: @heading-color-inverted;
+}
+
+.hotspot-menu-item-container {
+	position: relative;
+	min-height: 500px;
+}
+
+.hotspot-menu-title {
+	.menu-title;
+	text-shadow: 2px 2px 4px #000000;
+    margin-right: 20px;
+    width: 70vw;
+    min-width: 380px;
+    font-size: 36px;
+}
+.hotspot-menu-body {
+	text-shadow: 2px 2px 4px #000000;
+}
+.hotspot-menu-item-body {
+	margin-bottom: 30px;
+}
+
+button.hotspot-menu-item {
+	position: absolute;
+	max-width: 200px;
+	padding: 5px;
+	font-size: 14px;
+	transform: translate(-50%, -50%);
+	background: rgba(255,255,255,0.75);
+	&.locked,
+	html:not(.os-ios):not(.os-android) &.locked:hover {
+		
+		color: @visited;
+		cursor: default;
+
+		.hotspot-menu-item-title {
+			color: @visited;
+		}
+		.hotspot-menu-item-progress {
+			border-color: @visited;
+		}
+	}
+}
+
+.hotspot-menu-item-title {
+	font-weight: 700;
+	color: @heading-color;
+}
+
+.hotspot-menu-item-progress {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	border: 3px @heading-color solid;
+	margin: 5px auto 0;
+}
+
+.hotspot-menu-item-progress-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 14px;
+	margin: -7px 0 0 -7px;
+	background-color: @heading-color;
+	.visited & {
+		width: 7px;
+	}
+	.completed & {
+		width: 14px;
+	}
+}
+
+.location-menu.os-ios #a11y-focusguard,
+.location-menu.os-android #a11y-focusguard {
+	display: none;
+}
+.location-menu #wrapper, .location-menu .location-menu{overflow: hidden !important;}
+.navigation {
+	z-index: 555;
+}
+.location-menu .navigation .navigation-back-button.hotspot-adjust {
+    left: inherit;
+}
+.location-menu #accessibility-toggle {
+    display: inline-block !important;
+}
+
+.hotspot-menu-item.locked .hotspot-menu-item-progress:before {
+    content: '\e942';
+    color: @visited;
+    margin-left: -0.1em;
+    font-family: 'vanilla';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hotspot-menu-item:not(.visited) {
+    background: rgba(255,255,255,0.95) !important;
+}
+
+@media all and (max-width:@device-width-medium){
+	.hotspot-menu-header {width: 100%; display: block; text-align: center; padding: 20px 0px;}
+  .hotspot-menu-title, .hotspot-menu-body {width: 100%;}
+}

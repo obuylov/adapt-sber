@@ -1,0 +1,20 @@
+{
+  "name": "adapt-contrib-imgMagnify",
+  "version": "5.0.9",
+  "framework": ">=5.0.0",
+  "homepage": "git://github.com/mike-st/adapt-contrib-imgMagnify",
+  "issues": "",
+  "displayName" : "Image Magnify with text Notify",
+  "component" : "imgMagnify",
+  "assetFields" : [
+    "_graphic.small",
+    "_graphic.large"
+  ],
+  "description": "A graphic component with the ability to zoom into a graphic. It also has text notify abilites which hijacks anchor tag clicks to show a notify. For framework 4.0.",
+  "main": "/js/adapt-contrib-imgMagnify.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

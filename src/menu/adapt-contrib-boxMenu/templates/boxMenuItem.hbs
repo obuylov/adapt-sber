@@ -1,0 +1,55 @@
+{{import_globals}}
+
+<div class="menu-item__inner boxmenu-item__inner">
+
+  {{#if _graphic.src}}
+  <div class="menu-item__image-container boxmenu-item__image-container">
+    <img class="menu-item__image boxmenu-item__image" src="{{_graphic.src}}" aria-hidden="true">
+  </div>
+  {{/if}}
+
+  <div class="menu-item__details boxmenu-item__details">
+    <div class="menu-item__details-inner boxmenu-item__details-inner">
+
+      {{#if displayTitle}}
+      <div class="menu-item__title boxmenu-item__title">
+        <div class="js-heading" data-a11y-heading-type="menuItem"></div>
+
+        <div class="menu-item__title-inner boxmenu-item__title-inner" aria-hidden="true">
+          {{{compile displayTitle}}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if _graphic.alt}}{{a11y_aria_image _graphic.alt}}{{/if}}
+
+      {{#if body}}
+      <div class="menu-item__body boxmenu-item__body">
+        <div class="menu-item__body-inner boxmenu-item__body-inner">
+          {{{compile body}}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if duration}}
+      <div class="menu-item__duration boxmenu-item__duration">
+        <div class="menu-item__duration-inner boxmenu-item__duration-inner">
+          {{#if _globals._menu._boxMenu.durationLabel}}{{{_globals._menu._boxMenu.durationLabel}}}{{/if}} {{{duration}}}
+        </div>
+      </div>
+      {{/if}}
+
+      <div class="menu-item__progress boxmenu-item__progress js-menu-item-progress">
+        {{!-- Menu item progress bar will render in here --}}
+      </div>
+
+      <div class="menu-item__button-container boxmenu-item__button-container">
+        <button class="btn-text menu-item__button boxmenu-item__button js-btn-click{{#if _isVisited}} is-visited{{/if}}{{#if _isLocked}} is-locked{{/if}}" aria-label="{{#if _isVisited}}{{_globals._accessibility._ariaLabels.visited}}{{/if}} {{linkText}}"{{#if _isLocked}} disabled="disabled"{{/if}}>
+          {{{linkText}}}
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

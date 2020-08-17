@@ -1,0 +1,20 @@
+{
+  "name": "adapt-before-and-after",
+  "version": "0.1.0",
+  "framework": ">=5.0.0",
+  "homepage": "https://github.com/mike-st/adapt-before-and-after",
+  "issues": "https://github.com/mike-st/adapt-before-and-after/issues",
+  "displayName" : "Before and After",
+  "component" : "beforeafter",
+  "assetFields" : [
+    "_beforeafter.before",
+    "_beforeafter.after"
+  ],
+  "description": "This component is used to reveal an image's before and after states of itself",
+  "main": "/js/adapt-before-and-after.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

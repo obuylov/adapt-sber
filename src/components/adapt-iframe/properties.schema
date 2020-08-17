@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "default": "inview",
+      "title": "Set completion on",
+      "inputType": {
+        "type": "Select",
+        "options": [
+          "inview",
+          "message"
+        ]
+      },
+      "help": "Set completion based on either having scrolled into view or from the embedded content sending a message via the window.postMessage API"
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text"
+    },
+    "_src": {
+      "type": "string",
+      "required": true,
+      "title": "URL",
+      "default": "",
+      "inputType": "Text",
+      "validators": ["required"],
+      "help": "Path to the page you want to display in the iframe"
+    },
+    "_initialWidth": {
+      "type": "number",
+      "required": true,
+      "title": "Initial width",
+      "default": "",
+      "inputType": "Number",
+      "validators": ["number", "required"]
+    },
+    "_initialHeight": {
+      "type": "number",
+      "required": true,
+      "title": "Initial height",
+      "default": "",
+      "inputType": "Number",
+      "validators": ["number", "required"]
+    },
+    "_dimensionDelegateSelector": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "help": "If the dimensions of the iframe should be delegated to a child element of the iframe, use this attribute to select which child element this is."
+    }
+  }
+}

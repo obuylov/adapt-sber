@@ -1,0 +1,64 @@
+<div class="component__inner textinput__inner">
+
+  {{> component this}}
+
+  {{! complex unless and if combination to set the correct classes for CSS to use in showing marking and disabled states}}
+  <div class="component__widget textinput__widget{{#unless _isEnabled}} is-disabled{{#if _isInteractionComplete}} is-complete is-submitted show-user-answer{{#if _isCorrect}} is-correct{{/if}}{{/if}}{{/unless}}">
+
+    {{#each _items}}
+    <div class="textinput__item js-textinput-item{{#unless ../_isEnabled}}{{#if ../_canShowMarking}}{{#if _isCorrect}} is-correct{{else}} is-incorrect{{/if}}{{/if}}{{/unless}}">
+
+      {{#if prefix}}
+      <div class="textinput__item-prefix-container">
+      <label class="textinput__item-prefix" id="{{../_id}}-{{@index}}-aria" for="{{../_id}}-{{@index}}" aria-label="{{{prefix}}}">
+        {{{prefix}}}
+      </label>
+      </div>
+      {{/if}}
+
+      {{#if ../_isEnabled}}
+      <div class="textinput__item-textbox-container">
+        <input class="textinput__item-textbox js-textinput-textbox" type="text" placeholder="{{{placeholder}}}" data-id="input-{{@index}}" id="{{../_id}}-{{@index}}" {{#if prefix}}aria-labelledby="{{../_id}}-{{@index}}-aria"{{else}}aria-label="{{{placeholder}}}"{{/if}} value="">
+
+        <div class="textinput__item-state">
+          <div class="textinput__item-icon textinput__item-correct-icon">
+            <div class="icon"></div>
+          </div>
+          <div class="textinput__item-icon textinput__item-incorrect-icon">
+            <div class="icon"></div>
+          </div>
+        </div>
+
+      </div>
+      {{else}}
+      <div class="textinput__item-textbox-container">
+        <input class="textinput__item-textbox js-textinput-textbox" type="text" placeholder="{{{placeholder}}}" data-id="input-{{@index}}" value="{{userAnswer}}" disabled="true">
+
+        <div class="textinput__item-state">
+          <div class="textinput__item-icon textinput__item-correct-icon">
+            <div class="icon"></div>
+          </div>
+          <div class="textinput__item-icon textinput__item-incorrect-icon">
+            <div class="icon"></div>
+          </div>
+        </div>
+
+      </div>
+      {{/if}}
+
+      {{#if suffix}}
+      <div class="textinput__item-suffix-container">
+      <label class="textinput__item-suffix" id="{{../_id}}-{{@index}}-aria" for="{{../_id}}-{{@index}}" aria-label="{{{suffix}}}">
+        {{{suffix}}}
+      </label>
+      </div>
+      {{/if}}
+
+    </div>
+    {{/each}}
+
+  </div>
+
+  <div class="btn__container"></div>
+
+</div>

@@ -1,0 +1,141 @@
+.hotgraphic-popup {
+  position: relative;
+
+  // --------------------------------------------------
+  // Pop up toolbar
+  // --------------------------------------------------
+  &__inner {
+    padding-top: @icon-size + (@icon-padding * 2);
+  }
+
+  &__toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__toolbar.hide-pagination {
+    justify-content: flex-end;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__count {
+    padding: @icon-padding;
+  }
+
+  &__controls.is-disabled {
+    visibility: hidden;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Pop up item
+  // --------------------------------------------------
+  &__item-image-container {
+    width: 60%;
+    margin: auto;
+  }
+
+  @media (min-width: @device-width-medium) {
+    &__item {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__item-content,
+    &__item-image-container {
+      width: 50%;
+    }
+
+    &__item-image-container {
+      margin-left: @item-padding / 2;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Modifier for pop up item to add rounded border
+  // --------------------------------------------------
+  &__item.is-round .hotgraphic-popup__item-image {
+    border-radius: 50%;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Hotgraphic pop up icons
+  // --------------------------------------------------
+  &__controls.back .icon {
+    .icon-controls-small-left;
+  }
+
+  &__controls.next .icon {
+    .icon-controls-small-right;
+  }
+
+  &__close .icon {
+    .icon-cross;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Hide the items that are not currently active and being viewed
+  // --------------------------------------------------
+  &__item:not(.is-active) {
+    .u-display-none;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Align hotgraphic pop up image to the left
+  // --------------------------------------------------
+  &__item.align-image-left {
+    @media (min-width: @device-width-medium) {
+      flex-direction: row-reverse;
+
+      .hotgraphic-popup__item-image-container {
+        margin-left: inherit;
+        margin-right: @item-padding / 2;
+      }
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Hide hotgraphic pop up image in desktop
+  // --------------------------------------------------
+  &__item.hide-desktop-image {
+    @media (min-width: @device-width-medium) {
+      .hotgraphic-popup__item-content {
+        width: 100%;
+      }
+
+      .hotgraphic-popup__item-image-container {
+        display: none;
+      }
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Hide hotgraphic pop up image for all screen sizes
+  // --------------------------------------------------
+  &__item.hide-popup-image {
+    .hotgraphic-popup__item-content {
+      width: 100%;
+    }
+
+    .hotgraphic-popup__item-image-container {
+      display: none;
+    }
+  }
+  // --------------------------------------------------
+}

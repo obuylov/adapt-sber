@@ -1,0 +1,20 @@
+    // course.json
+    "_bookmarking": {
+        "_isEnabled": true,
+        "_comment": "_level can be set to page, block, or component",
+        "_level": "page",
+        "_showPrompt": true,
+        "title": "Bookmarking",
+        "body": "Would you like to continue where you left off?",
+        "_buttons": {
+            "yes": "Yes",
+            "no": "No"
+        }
+    }
+
+    // contentObjects.json - will override course.json for each contentObject - _type "page" only, if set. Set _isEnabled false if no bookmarking on page
+    "_bookmarking": {
+        "_isEnabled": true,
+        "_comment": "_level can be set to inherit, page, block, or component",
+        "_level": "inherit"
+    }

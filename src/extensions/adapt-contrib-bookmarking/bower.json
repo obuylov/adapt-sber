@@ -1,0 +1,17 @@
+{
+  "name": "adapt-contrib-bookmarking",
+  "version": "3.0.0",
+  "framework": ">=5.6",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-bookmarking",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "extension" : "bookmarking",
+  "displayName" : "Bookmarking",
+  "description": "An extension that tracks the learner's location in the course so that it can return them to that location in a subsequent session",
+  "main": "/js/adapt-contrib-bookmarking.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_bookmarking"
+}

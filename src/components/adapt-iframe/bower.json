@@ -1,0 +1,20 @@
+{
+    "name": "adapt-iframe",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cgkineo/adapt-iframe"
+    },
+    "framework": ">=2.0.16",
+    "version": "2.1.0",
+    "homepage": "https://github.com/cgkineo/adapt-iframe",
+    "issues": "https://github.com/cgkineo/adapt-iframe/issues/",
+    "displayName": "iframe",
+    "component": "iframe",
+    "description": "An adapt component that loads content into an iframe",
+    "main": "/js/adapt-iframe.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

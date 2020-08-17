@@ -1,0 +1,41 @@
+.hotgraphic {
+  &__widget {
+    position: relative;
+  }
+
+  // --------------------------------------------------
+  // Hotgraphic as pins
+  // --------------------------------------------------
+  &__pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__pin .icon {
+    .icon-pin;
+  }
+
+  &__pin.has-pin-image {
+    padding: 0;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Hotgraphic as tiles
+  // --------------------------------------------------
+  &__tile-item-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tile-item {
+    width: 50%;
+    line-height: 0;
+  }
+
+  &__tile {
+    width: 100%;
+  }
+  // --------------------------------------------------
+}

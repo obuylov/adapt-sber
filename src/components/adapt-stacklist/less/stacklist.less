@@ -1,0 +1,40 @@
+.stacklist {
+
+  &__items {
+    position: relative;
+    margin-bottom: -@item-margin;
+  }
+
+  &__item {
+    position: relative;
+    padding: @item-padding;
+    margin-bottom: @item-margin / 2;
+    background-color: @item-color;
+    color: @font-color-inverted;
+
+    &.show {
+      position: static !important;
+    }
+  }
+
+  &__button {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 53px;
+    //width: 100%;
+    text-align: center;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+
+    button {
+      //min-width: 200px;
+      line-height: unset;
+      background-color: @item-color;
+      color: @font-color-inverted;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.textinput {
+  &__item {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__item-prefix-container,
+  &__item-suffix-container {
+    width: 25%;
+    max-width: 15%;
+  }
+
+  &__item-textbox-container {
+    width: inherit;
+  }
+
+  &__item-textbox {
+    width: inherit;
+
+    /*
+     * Hide 'X' icon for IE11 and Edge 12+
+     * Issue:https://github.com/adaptlearning/adapt_framework/issues/1913
+     */
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  &__item-icon {
+    display: none;
+  }
+
+  // --------------------------------------------------
+  // Text input item icons
+  // --------------------------------------------------
+  &__item-correct-icon .icon {
+    .icon-tick;
+  }
+
+  &__item-incorrect-icon .icon {
+    .icon-cross;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the users selection
+  // --------------------------------------------------
+  &__widget.show-user-answer {
+    .is-correct .textinput__item-correct-icon,
+    .is-incorrect .textinput__item-incorrect-icon {
+      display: block;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer {
+    .is-correct .textinput__item-correct-icon,
+    .is-incorrect .textinput__item-correct-icon {
+      display: block;
+    }
+  }
+  // --------------------------------------------------
+}

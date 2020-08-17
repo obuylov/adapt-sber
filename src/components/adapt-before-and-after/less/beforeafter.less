@@ -1,0 +1,81 @@
+.beforeafter__widget {
+  position: relative;
+  overflow: hidden;
+}
+.beforeafter__widget img {
+  width: 100%;
+  display: block;
+}
+.resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+
+  img {
+    max-width: none !important;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+.handle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  margin-left: -2px;
+  background:  @item-color;
+  cursor: ew-resize;
+}
+.handle:after {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -30px;
+  content: "\e939";
+  color: @font-color-inverted;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  line-height: 62px;
+  background: @item-color;
+  border: 2px solid @font-color-inverted;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-family: 'vanilla';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.draggable:after {
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  line-height: 48px;
+  font-size: 30px;
+}
+.beforeafter-widget-attribution {
+    //this could be used to set the position to relative, and then graphic-attribution div to be absolute
+}
+.beforeafter-attribution {
+    font-size:0.75em;
+    line-height: 1em;
+}
+
+/* ACCESSIBLITY STYLES */
+.accessibility div.handle {
+  display:none;
+}
+.accessibility select.handle {
+  display:block !important;
+}

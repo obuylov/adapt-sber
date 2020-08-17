@@ -1,0 +1,97 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_beforeafter": {
+      "type":"object",
+      "required":true,
+      "title": "Before and After",
+      "properties":{
+        "before": {
+          "type":"string",
+          "required":true,
+          "default": "",
+          "title": "Before Reveal Image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "This is the before image that displays before being revealed to the user"
+        },
+        "altbefore": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Alternative Text For Before Image",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The alternative text to describe the before image",
+          "translatable": true
+        },
+        "after": {
+          "type":"string",
+          "required":true,
+          "default": "",
+          "title": "After Reveal Image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "This is the after image once it has been revealed to the user"
+        },
+        "alt": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Alternative Text For After Image",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The alternative text to describe the after image",
+          "translatable": true
+        },
+        "attribution": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text to be displayed as an attribution for the before and after images",
+          "translatable": true
+        }
+      }
+    },
+    "bottomText": {
+      "type": "string",
+      "required": false,
+      "inputType": "TextArea",
+      "title": "Bottom Text",
+      "default": "",
+      "validators": [],
+      "help": "Enter bottom text which is inserted under the interactive element"
+    }
+  }
+}

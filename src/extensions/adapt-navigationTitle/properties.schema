@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_navigationTitle": {
+              "type": "object",
+              "required": false,
+              "legend": "Navigation Title",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Enable Navigation Title",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to enable the 'Navigation Title' feature."
+                },
+                "title": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "The text that appears in the navigation bar",
+                  "translatable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

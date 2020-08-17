@@ -1,0 +1,139 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "This component contains images laid out in a flexible grid.",
+      "inputType": "Text",
+      "validators": []
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "_columns": {
+      "type": "number",
+      "required": true,
+      "title": "Columns",
+      "inputType": "Number",
+      "default": 3,
+      "validators": ["number"],
+      "help": "This value determines the number of columns within the grid. Any number of columns can be set however keep in mind the more columns there are the smaller the items will be."
+    },
+    "_reverseDirection": {
+      "type": "boolean",
+      "required":true,
+      "default": false,
+      "title": "Reverse the order direction of the grid",
+      "inputType": { "type": "Boolean", "options": [false, true]},
+      "validators": [],
+      "help": "Set to true to enable the reverse order direction of grid. Last grid item will become the first."
+    },
+    "_gridrowHeight": {
+      "type":"object",
+      "required": false,
+      "legend": "Consistent Row Height",
+      "properties":{
+        "_constrainHeight": {
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "title": "Make the row height in grid the same",
+          "inputType": { "type": "Boolean", "options": [false, true]},
+          "validators": [],
+          "help": "Set to true to enable image heights to be the same through out the grid."
+        },
+        "_heightAmount": {
+          "type": "number",
+          "required": false,
+          "title": "Row Height (pixels)",
+          "inputType": "Number",
+          "default": 200,
+          "validators": ["number"],
+          "help": "This value sets the consistent row height on the grid."
+        }
+      }
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "_graphic": {
+            "type": "object",
+            "required": true,
+            "title": "Button Graphic",
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": ["required"],
+                "help": "The item image (default state)."
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Item alt text",
+                "inputType": "Text",
+                "validators": [],
+                "translatable": true
+              },
+              "imagecaption": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Under Image Caption",
+                "inputType": "Text",
+                "validators": [],
+                "help": "This is optional text which is displayed under the grid item image.",
+                "translatable": true
+              },
+              "title": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Notify Title",
+                "inputType": "Text",
+                "validators": [],
+                "help": "This is optional title for the Popup Notify Window",
+                "translatable": true
+              },
+              "gridmessage": {
+                "type": "string",
+                "required": false,
+                "title": "Notify Message Body",
+                "default": "",
+                "inputType": "TextArea",
+                "help": "Message body text for the Popup Notify Window"
+              }
+            }
+          }
+        }
+      }
+    },
+    "bottomText": {
+      "type": "string",
+      "required": false,
+      "inputType": "TextArea",
+      "title": "Bottom Text",
+      "default": "",
+      "validators": [],
+      "help": "Enter bottom text which is inserted under the interactive element"
+    }
+  }
+}

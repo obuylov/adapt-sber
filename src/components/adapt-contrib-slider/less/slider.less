@@ -1,0 +1,150 @@
+.slider {
+  // --------------------------------------------------
+  // Labels
+  // --------------------------------------------------
+  &__label-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Numbers
+  // --------------------------------------------------
+  &__number-container {
+    position: relative;
+    min-height: 1rem;
+    margin: 0 1rem;
+    // Indent half the width of the range slider handle either side
+
+    .dir-rtl & {
+      .transform(rotateY(180deg));
+    }
+  }
+
+  &__number,
+  &__number-selection,
+  &__number-model-answer {
+    position: absolute;
+    top: 0;
+    .transform(translateX(-50%));
+
+    .dir-rtl & {
+      .transform(translateX(-50%) rotateY(180deg));
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Scale
+  // --------------------------------------------------
+  &__scale-container {
+    position: relative;
+    height: 1px;
+    width: calc(~'100% - 2rem');
+    margin: 0.5rem 1rem 1.5rem;
+    // Indent half the width of the range slider handle either side
+    background-color: blue;
+  }
+
+  &__scale-notch {
+    position: absolute;
+    top: -5px;
+    height: 10px;
+    width: 1px;
+    .transform(translateX(-50%));
+    background-color: red;
+  }
+
+  &__scale-notch-start {
+    left: 0;
+  }
+
+  &__scale-notch-end {
+    left: 100%;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Slider bar
+  // --------------------------------------------------
+  &__item {
+    position: relative;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show whether the users selection is in/correct
+  // --------------------------------------------------
+  &__widget.show-user-answer.is-correct {
+    .slider__number-selection {
+      background-color: @validation-success;
+      color: @validation-success-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-success;
+    }
+  }
+
+  &__widget.show-user-answer.is-incorrect {
+    .slider__number-selection {
+      background-color: @validation-error;
+      color: @validation-error-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-error;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer .slider__number-selection {
+    .u-display-none;
+  }
+
+  &__widget.show-correct-answer.is-correct,
+  &__widget.show-correct-answer.is-incorrect {
+    .slider__number-model-answer {
+      background-color: @validation-success;
+      color: @validation-success-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-success;
+    }
+  }
+  // --------------------------------------------------
+}
+
+// --------------------------------------------------
+// Rangeslider overrides
+// --------------------------------------------------
+.rangeslider {
+  &--horizontal {
+    height: 0.375rem;
+  }
+
+  &--horizontal .rangeslider__handle {
+    top: -0.875rem;
+  }
+
+  &__handle {
+    height: 2rem;
+    width: 2rem;
+
+    &:after {
+      height: 1rem;
+      width: 1rem;
+    }
+
+    .slider__widget.is-disabled & {
+      cursor: default;
+    }
+  }
+}
+// --------------------------------------------------

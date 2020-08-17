@@ -1,0 +1,54 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "list",
+        "_comment._classes": "Supported classes = 'align-items-vert-center'. Aligns either the step number or image centrally, on the vertical axis, with the content.",
+        "_classes": "",
+        "_layout": "full",
+        "title": "List component",
+        "displayTitle": "List component",
+        "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.<br/><br/>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "instruction": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+        "_comment._animateList": "loop animate items into view - list is static by default",
+        "_animateList": true,
+        "_comment._percentInviewVertical": "Override percentage inview required to animate items. Default value is 70% inview from top of screen.",
+        "_percentInviewVertical": 70,
+        "_comment._orderedList": "set items as ordered list - list is unordered by default",
+        "_orderedList": true,
+        "_items": [
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "_imageSrc": "",
+                "alt": ""
+            },
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "body": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
+                "_imageSrc": "",
+                "alt": ""
+            },
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "body": "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.",
+                "_imageSrc": "",
+                "alt": ""
+            },
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "body": "Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.",
+                "_imageSrc": "",
+                "alt": ""
+            },
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "body": "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.",
+                "_imageSrc": "",
+                "alt": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }

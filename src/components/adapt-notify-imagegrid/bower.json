@@ -1,0 +1,17 @@
+{
+    "name": "adapt-notify-imagegrid",
+    "repository": "git://github.com/mike-st/adapt-notify-imagegrid",
+    "version": "5.1.5",
+    "framework": ">=5.0.0",
+    "homepage": "https://github.com/mike-st/adapt-notify-imagegrid",
+    "issues": "https://github.com/mike-st/adapt-notify-imagegrid/issues/",
+    "displayName": "Image grid with Notify",
+    "component": "notify-imagegrid",
+    "description": "A component that displays images in a grid format. For framework 4.0.",
+    "main": "/js/adapt-notify-imagegrid.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

@@ -1,0 +1,47 @@
+<div class="reveal__inner component__inner" aria-label="{{globals._components._reveal.ariaRegion}}">
+    {{> component this}}
+    <div class="reveal__widget reveal__component component__widget">
+        <div class="reveal__widget-slider">
+            <a href="#" class="reveal__widget-control a11y-ignore" aria-hidden="true" tabindex="-1"><div class="reveal__widget-icon icon"></div></a>
+            <div class="reveal__widget-item second-item">
+                {{#if second.src}}
+                    <img src="{{second.src}}" class="reveal-image a11y-ignore" aria-hidden="true" tabindex="-1" alt="{{second.alt}}"/>
+                {{/if}}
+                {{#if second.body}}
+                    <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ REVEALED ITEM CONTENT ] **********</div>
+                    <div class="reveal__widget-item-text second">
+                        <div id="{{_id}}" class="reveal__widget-item-text-body reveal-second-long dot-ellipsis dot-resize-update a11y-ignore" aria-hidden="true" tabindex="-1">
+                            <div class="reveal-content-title-inner" role="heading">{{second.title}}</div>
+                            <div class="reveal-content-body-inner">{{{second.body}}}
+                                <br/><button class="reveal-popup-open a11y-ignore" aria-hidden="true" tabindex="-1">{{#if second.moreText}}{{second.moreText}}{{else}}More Information{{/if}}</button>   
+                            </div>                  
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+            <div class="reveal__widget-item first-item">
+                {{#if first.src}}
+                    <img src="{{first.src}}" class="reveal-image" tabindex="0" alt="{{first.alt}}" />
+                {{/if}}
+                {{#if first.body}}
+                    <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ INITIAL ITEM CONTENT ] **********</div>
+                    <div class="reveal__widget-item-text first">
+                        <div id="{{_id}}" class="reveal__widget-item-text-body reveal-first-long dot-ellipsis dot-resize-update">
+                            <div class="reveal-content-title-inner" role="heading">{{first.title}}</div>
+                            <div class="reveal-content-body-inner">{{{first.body}}}
+                                <br/><button class="reveal-popup-open" tabindex="0">{{#if first.moreText}}{{first.moreText}}{{else}}More Information{{/if}}</button>
+                            </div>                  
+                        </div>
+                        <button class="reveal-acessibility" style="display:none;">Reveal Item</button>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    {{#if bottomText}}
+      <div class="reveal-bottom-text" tabindex="0">
+        {{{bottomText}}}
+      </div>
+    {{/if}}
+</div>
+<script class="{{_id}}-fbnotify">if ( !$('html').hasClass('pagesave2txt') ) { $( ".{{_id}}-fbnotify" ).remove(); }</script>

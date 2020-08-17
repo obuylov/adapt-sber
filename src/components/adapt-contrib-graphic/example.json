@@ -1,0 +1,21 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "graphic",
+        "_classes": "",
+        "_layout": "left",
+        "title": "Here is a graphic object",
+        "displayTitle": "Here is a graphic object",
+        "body": "Hi everybody!",
+        "instruction": "",
+        "_graphic": {
+            "alt": "Placeholder graphic",
+            "large": "https://github.com/adaptlearning/documentation/raw/master/04_wiki_assets/adapt_framework/adapt-logo_208x200.gif",
+            "small": "http://minionslovebananas.com/images/check-in-minion.jpg",
+            "attribution": "Copyright © 2019"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }

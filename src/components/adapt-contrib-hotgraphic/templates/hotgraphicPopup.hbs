@@ -1,0 +1,71 @@
+<div class="hotgraphic-popup__inner">
+
+  {{#each _items}}
+  <div class="hotgraphic-popup__item{{#if _classes}} {{_classes}}{{/if}}{{#if _isVisited}} is-visited{{/if}}{{#if _isActive}} is-active{{/if}}{{#if ../_isRound}} is-round{{/if}}" data-index={{@index}}{{#unless _isActive}} aria-hidden="true"{{/unless}}>
+
+    <div class="hotgraphic-popup__item-content">
+      <div class="hotgraphic-popup__item-content-inner">
+
+        {{#if title}}
+        <div{{#if _isActive}} id="notify-heading"{{/if}} class="hotgraphic-popup__item-title" {{a11y_attrs_heading 'notify'}}>
+          <div class="hotgraphic-popup__item-title-inner">
+            {{{title}}}
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if body}}
+        <div class="hotgraphic-popup__item-body">
+          <div class="hotgraphic-popup__item-body-inner">
+            {{{compile body}}}
+          </div>
+        </div>
+        {{/if}}
+
+      </div>
+    </div>
+
+    <div class="hotgraphic-popup__item-image-container{{#if _graphic.attribution}} has-attribution{{/if}}">
+
+      <img class="hotgraphic-popup__item-image" src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}>
+
+      {{#if _graphic.attribution}}
+      <div class="component__attribution hotgraphic-popup__item-attribution">
+        <div class="component__attribution-inner hotgraphic-popup__item-attribution-inner">
+          {{{_graphic.attribution}}}
+        </div>
+      </div>
+      {{/if}}
+
+    </div>
+
+  </div>
+  {{/each}}
+
+</div>
+
+<div class="hotgraphic-popup__toolbar{{#if _hidePagination}} hide-pagination{{/if}}">
+
+  {{#unless _hidePagination}}
+  <div class="hotgraphic-popup__nav">
+
+    <button data-direction="back" class="btn-icon hotgraphic-popup__controls back js-hotgraphic-controls-click" aria-label="{{_globals._accessibility._ariaLabels.previous}}">
+      <div class="icon"></div>
+    </button>
+
+    <div class="hotgraphic-popup__count"></div>
+
+    <button data-direction="next" class="btn-icon hotgraphic-popup__controls next js-hotgraphic-controls-click" aria-label="{{_globals._accessibility._ariaLabels.next}}">
+      <div class="icon"></div>
+    </button>
+
+  </div>
+  {{/unless}}
+
+  <button class="btn-icon hotgraphic-popup__close js-hotgraphic-popup-close" aria-label="{{_globals._accessibility._ariaLabels.closePopup}}">
+    <div class="icon"></div>
+  </button>
+
+</div>
+
+{{a11y_wrap_focus}}

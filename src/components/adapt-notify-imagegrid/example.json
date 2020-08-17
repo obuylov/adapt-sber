@@ -1,0 +1,68 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "notify-imagegrid",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Adapt notify imagegrid",
+        "displayTitle": "Adapt notify imagegrid",
+        "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.",
+        "_columns": 3,
+        "_items": [
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-1.png",
+                    "alt": "alt text here test",
+                    "title": "Item Title 1",
+                    "gridmessage": "Message 1"
+                },
+				"_itemClasses": "grid-item-1"
+            },
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-2.png",
+                    "alt": "",
+                    "title": "Item Title 2",
+                    "gridmessage": "Message 2"
+                },
+				"_itemClasses": "grid-item-2"
+            },
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-3.png",
+                    "alt": "",
+                    "title": "Item Title 3",
+                    "gridmessage": "Message 3"
+                },
+				"_itemClasses": "grid-item-3"
+            },
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-4.png",
+                    "alt": "",
+                    "title": "Item Title 4",
+                    "gridmessage": "Message 4"
+                },
+				"_itemClasses": "grid-item-4"
+            },
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-5.png",
+                    "alt": "",
+                    "title": "Item Title 5",
+                    "gridmessage": "Message 5"
+                },
+				"_itemClasses": "grid-item-5"
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }
+
+    // Accessibility supported courses require ARIA instruction - apply to _globals in course.json
+
+    "_notify-imagegrid": {
+        "ariaRegion": "This component contains selectable grid items. Select an item to trigger a popup that includes an image with display text. Select the close button to close the popup."
+    }

@@ -1,0 +1,21 @@
+{
+  "name": "adapt-homeButton",
+  "version": "0.1.0",
+  "framework": ">=5",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cgkineo/adapt-homeButton.git"
+  },
+  "homepage": "https://github.com/cgkineo/adapt-homeButton",
+  "issues": "https://github.com/cgkineo/adapt-homeButton/issues/",
+  "extension": "homeButton",
+  "displayName": "Home Button",
+  "description": "Add home button to course navigation. Allows hide or redirect of home button. Allows hide of back button.",
+  "main": "/js/adapt-homeButton.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_homeButton"
+}

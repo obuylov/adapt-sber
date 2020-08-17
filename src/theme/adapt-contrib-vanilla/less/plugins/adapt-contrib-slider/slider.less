@@ -1,0 +1,97 @@
+.slider {
+  // --------------------------------------------------
+  // Numbers
+  // --------------------------------------------------
+  &__number-container {
+    min-height: 2.5rem;
+  }
+
+  &__number,
+  &__number-selection,
+  &__number-model-answer {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  &__widget:not(.is-disabled) .slider__number {
+    cursor: pointer;
+  }
+
+  &__number-selection {
+    background-color: @item-color;
+    color: @item-color-inverted;
+    z-index: 5;
+  }
+
+  &__number-model-answer {
+    background-color: @item-color;
+    color: @item-color-inverted;
+    z-index: 10;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Scale
+  // --------------------------------------------------
+  &__scale-container {
+    margin-top: @item-margin * 2;
+    margin-bottom: @item-margin * 4;
+    background-color: lighten(@black, 75%);
+  }
+
+  &__scale-notch {
+    background-color: lighten(@black, 75%);
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Slider bar
+  // --------------------------------------------------
+  &__item {
+    margin-bottom: @item-margin * 4;
+  }
+  // --------------------------------------------------
+}
+
+// --------------------------------------------------
+// Rangeslider
+// --------------------------------------------------
+.rangeslider {
+  background-color: @disabled;
+
+  &--horizontal {
+    box-shadow: none;
+  }
+
+  &__fill {
+    background-color: @item-color;
+    box-shadow: none;
+  }
+
+  &__handle {
+    background-image: none;
+    border: 0;
+    box-shadow: 0 2px 5px fade(@black, 30%);
+  }
+
+  &__handle:after {
+    background-image: none;
+  }
+}
+
+// --------------------------------------------------
+// Rangeslider focus styles
+// --------------------------------------------------
+input[type='range']:focus + .rangeslider .rangeslider__handle {
+  html:not(.a11y-disable-focusoutline) & {
+    box-shadow: 0 2px 5px fade(@black, 60%);
+  }
+
+  html.a11y-disable-focusoutline & {
+    box-shadow: 0 2px 5px fade(@black, 30%);
+  }
+}
+// --------------------------------------------------

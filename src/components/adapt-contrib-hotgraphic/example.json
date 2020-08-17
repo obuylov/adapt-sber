@@ -1,0 +1,159 @@
+    // Regular hotgraphic
+    // --------------------------------------------------
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "hotgraphic",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Hot graphic",
+        "displayTitle": "Hot graphic",
+        "body": "This is optional body text.",
+        "instruction": "Select the hotspots on the image to reveal the text. This component will scale down to a narrative when viewed on mobile.",
+        "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
+        "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
+        "_comment": "setCompletionOn = inview | allItems",
+        "_setCompletionOn": "allItems",
+        "_canCycleThroughPagination": false,
+        "_hidePagination": false,
+        "_useNumberedPins": false,
+        "_useGraphicsAsPins": false,
+        "_isRound": false,
+        "_graphic": {
+            "src": "course/en/images/example.jpg",
+            "alt": "Placeholder graphic",
+            "attribution": "Copyright © 2019"
+        },
+        "_items": [
+            {
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "Placeholder graphic",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "strapline": "Hotspot 1 strapline",
+                "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+                "_classes": "",
+                "_top": 25,
+                "_left": 25
+            },
+            {
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "strapline": "Hotspot 2 strapline",
+                "_classes": "",
+                "_top": 50,
+                "_left": 50
+            },
+            {
+                "title": "Hotspot 3 title",
+                "body": "This is display text 3.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "strapline": "Hotspot 3 strapline",
+                "_classes": "",
+                "_top": 75,
+                "_left": 75
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }
+
+    // Example using graphics as pins
+    // The following example lays out the item graphics (_items._graphic) 
+    // in a 2x2 grid.
+    // --------------------------------------------------
+    {
+        "_useGraphicsAsPins": true,
+        "_items": [
+            {
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "Placeholder graphic",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "strapline": "Hotspot 1 strapline",
+                "_classes": "",
+                "_top": 25,
+                "_left": 25
+            },
+            {
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "strapline": "Hotspot 2 strapline",
+                "_classes": "",
+                "_top": 50,
+                "_left": 50
+            }
+        ]
+    }
+
+    // Example using graphic pins
+    // In the following example there is a background image and each pin 
+    // is an image rather than a pin icon
+    // --------------------------------------------------
+    {
+        "_items": [
+            {
+                "title": "Hotspot 1 title",
+                "body": "This is display text 1.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "Placeholder graphic",
+                    "attribution": "Copyright © 2019",
+                    "_classes": ""
+                },
+                "_pin": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "Placeholder graphic"
+                },
+                "strapline": "Hotspot 1 strapline",
+                "_classes": "",
+                "_left": 25,
+                "_top": 25
+            },
+            {
+                "title": "Hotspot 2 title",
+                "body": "This is display text 2.",
+                "_graphic": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": "",
+                    "attribution": "",
+                    "_classes": ""
+                },
+                "_pin": {
+                    "src": "course/en/images/example.jpg",
+                    "alt": ""
+                },
+                "strapline": "Hotspot 2 strapline",
+                "_classes": "",
+                "_left": 50,
+                "_top": 50
+            }
+        ]
+    }

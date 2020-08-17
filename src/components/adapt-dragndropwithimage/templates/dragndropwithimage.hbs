@@ -1,0 +1,117 @@
+<div class="dragndropwi__inner component__inner">
+    {{> component this}}
+    <div class="dragndropwi__widget component__widget {{#unless _isEnabled}} disabled {{#if _isComplete}} is-complete is-submitted show-user-answer {{#if _isCorrect}}is-correct{{/if}} {{/if}} {{/unless}}">
+
+        <div class="dragndropwi-container">
+
+            <div class="dragndropwi-overlay"></div>
+
+            <div class="dragndropwi-questions">
+                {{#each _items}}
+                <div class="dragndropwi-question clearfix {{_classes}}" data-index="{{@index}}">
+                    <div class="dragndropwi-question-state">
+                        <div class="dragndropwi-correct-icon icon icon-tick"></div>
+                        <div class="dragndropwi-incorrect-icon icon icon-cross"></div>
+                    </div>
+                    <div class="dragndropwi-question-text">{{this.text}}</div>
+                    {{#each accepted}}
+                    <div class="dragndropwi-item dragndropwi-droppable ui-state-enabled" data-index="{{@../index}}"></div>
+                    {{/each}}
+                    {{#if _graphic}}
+                        {{#if _graphic.src}}
+                            <div class="dragndropwi-item-graphic">
+                                <img src="{{_graphic.src}}" aria-label="{{_graphic.alt}}" tabindex="0">
+                            </div>
+                        {{/if}}
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="dragndropwi-answers clearfix">            
+                {{#each _possibleAnswers}}
+                <div class="dragndropwi-item dragndropwi-answer" name="{{this}}" style='background-image: url("{{this}}");'>{{{this}}}{{description}}</div>
+                {{/each}}
+            </div>
+
+        </div>
+        {{#each _items}}
+            {{#each accepted}}
+                <style>.dragndropwithimage[data-adapt-id="{{../../_id}}"] .dragndropwi-item[name*='{{src}}']:after{content:'{{description}}';} *::-ms-backdrop, .dragndropwithimage[data-adapt-id="{{../../_id}}"] .dragndropwi-item[style*='background-image: url("{{src}}")']:after{content:'{{description}}';}</style>
+            {{/each}}
+        {{/each}}
+        {{#each dummyAnswers}}
+                <style>.dragndropwithimage[data-adapt-id="{{../_id}}"] .dragndropwi-item[name*='{{src}}']:after{content:'{{description}}';} *::-ms-backdrop, .dragndropwithimage[data-adapt-id="{{../_id}}"] .dragndropwi-item[style*='background-image: url("{{src}}")']:after{content:'{{description}}';}</style>
+        {{/each}}
+        {{#if _minHeight}}
+            <style>.dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .dragndropwi-answers .dragndropwi-answer{min-height:{{_minHeight}}px !important;}</style>
+        {{/if}}
+        {{#if _outofSpace}}
+            <style>.dragndropwithimage[data-adapt-id="{{_id}}"] .nomorespace:before{content: "{{_outofSpace}}";}</style>
+        {{/if}}
+        <style>
+            .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .is-submitted.is-complete.show-correct-answer .dragndropwi-answers .dragndropwi-answer:not([style*="top: 0px"]), .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .submitted.complete.show-user-answer .dragndropwi-answers .dragndropwi-answer:not([style*="top: 0px"]) {
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -ms-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                opacity: 0;
+            }
+            .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .is-submitted.is-complete.show-correct-answer .dragndropwi-answers .dragndropwi-answer:not(.dragcharm) {
+                opacity: 0;
+            }
+            .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .is-submitted.is-complete.show-correct-answer .dragndropwi-answers .dragndropwi-answer.dragcharm {
+                display: flex !important;
+                opacity: 1 !important;
+                z-index: 25 !important;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                top: 0px !important;
+                left: 0px !important;
+                font-size: 16px;
+                color: black;
+                text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+                font-weight: bold;
+                align-items: baseline;
+            }
+            .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .is-submitted.is-complete.show-correct-answer .dragndropwi-answers .dragndropwi-answer.dragcharm:after {
+                content: "\e944";
+                color: white;
+                background-color: black;
+                border-radius: 36px;
+                padding: 4px;
+                border: 2px solid white;
+                font-size: 24px;
+                text-decoration: none;
+                text-align: center;
+                font-family: 'vanilla';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-shadow: none !important;
+                width: 36px;
+            }
+            .dragndropwithimage[data-adapt-id="{{_id}}"] .dragndropwi__inner .is-submitted.is-complete.show-correct-answer .dragndropwi-answers .dragndropwi-answer.dragcharm:before {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                content: "test";
+                color: white;
+                position: absolute;
+                bottom: 0px;
+                z-index: -1;
+                opacity: 0.65;
+            }
+        </style>
+    </div>
+    <div class="btn__container {{#if _bounceBack}}bounceback{{/if}}" ></div>
+</div>

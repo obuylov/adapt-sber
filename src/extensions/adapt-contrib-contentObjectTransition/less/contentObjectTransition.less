@@ -1,0 +1,57 @@
+@coTransitionDuration: 0.25s;
+@coTransitionEasing: ease-out;
+
+#wrapper {
+  overflow-x: hidden !important;
+}
+
+.contentobjecttransition {
+  &__preremove {
+    opacity: 1 !important;
+    .transition(transform @coTransitionDuration @coTransitionEasing, opacity @coTransitionDuration @coTransitionEasing;);
+    .transform(scale(1) rotateZ(0.01deg));
+  }
+
+  &__remove {
+    opacity: 0 !important;
+    .transform(scale(.95) rotateZ(0.01deg));
+  }
+
+  &__initial {
+    position: fixed;
+    top: @navigation-height;
+    left: 0;
+    width: 100%;
+    .transition(transform @coTransitionDuration @coTransitionEasing);
+    background-color: @white;
+
+    .dir-rtl & {
+      left: inherit;
+      right: 0;
+    }
+  }
+
+  &__initial__forward {
+    .transform(translateX(100%));
+    transform-origin: top left;
+
+    .dir-rtl & {
+      .transform(translateX(-100%));
+      transform-origin: top right;
+    }
+  }
+
+  &__initial__backward {
+    .transform(translateX(-100%));
+    transform-origin: top right;
+
+    .dir-rtl & {
+      .transform(translateX(100%));
+      transform-origin: top left;
+    }
+  }
+
+  &__start {
+    transform: none !important;
+  }
+}

@@ -1,0 +1,50 @@
+<div class="component__inner graphic__inner" id="inner-{{_id}}" role="region" aria-label="{{_globals._components._graphic.ariaRegion}}">
+    {{> component this}}
+
+    <button class="btn-text notifymybut {{#if _buttonData.button.classadd}} notifyonbut {{/if}}" id="mybutton" style="display:none;">{{_buttonData.button.copypaste}}</button>
+
+    <div class="component__widget graphic__widget">
+      {{#if _graphic.large}}
+      
+      <div class="graphic__image-container{{#if _graphic.attribution}} has-attribution{{/if}}">
+
+        <img src="{{_graphic.src}}" style="margin-top: 20px;" data-large="{{_graphic.large}}" data-magnify-src="{{_graphic.large}}" data-small="{{_graphic.small}}"{{#if _graphic.alt}} alt="{{_graphic.alt}}" tabindex="0" class="graphic__image js-graphic-set-image-src zoom {{#if enableMagnify}}enableMagnify{{else}}{{/if}}" {{else}} class="a11y-ignore zoom {{#if enableMagnify}}enableMagnify{{else}}{{/if}}" aria-hidden="true" tabindex="-1"{{/if}}/>
+
+        {{#if _graphic.attribution}}
+        <div class="component__attribution graphic__attribution">
+          <div class="component__attribution-inner graphic__attribution-inner">
+            {{{_graphic.attribution}}}
+          </div>
+        </div>
+        {{/if}}
+
+      </div>
+      {{/if}}
+    </div>
+
+    {{#if bottomText}}
+      <div class="imgMagnify-bottom-text" tabindex="0">
+        {{{bottomText}}}
+      </div>
+    {{/if}}
+    {{#if _buttonData}}
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ IMAGE MAGNIFY NOTIFY BUTTON ITEM CONTENT ] **********</div>
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Button Title ] = {{_buttonData.button.title}}
+          <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Button Body ] = {{{_buttonData.button.message}}}</div>
+        </div>
+    {{/if}}
+    {{#if _alertData}}
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ IMAGE MAGNIFY NOTIFY ALERT ITEM CONTENT ] **********</div>
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Alert Title ] = {{_alertData.myalert.title}}
+          <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Alert Body ] = {{{_alertData.myalert.message}}}</div>
+        </div>
+    {{/if}}
+    {{#if _popupData}}
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ IMAGE MAGNIFY NOTIFY POPUP ITEM CONTENT ] **********</div>
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Popup Title ] = {{_popupData.mypopup.title}}
+          <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Magnify Notify Popup Body ] = {{{_popupData.mypopup.message}}}</div>
+        </div>
+    {{/if}}
+</div>
+<script> var $zoom; $(document).ready(function() {   $zoom = $(".zoom").magnify({ afterLoad: function() { console.log("Image Magnifier has been activated!"); } }); });</script>
+<script class="{{_id}}-fbnotify">if ( !$('html').hasClass('pagesave2txt') ) { $( ".{{_id}}-fbnotify" ).remove(); }</script>

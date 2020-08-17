@@ -1,0 +1,21 @@
+{
+  "name": "adapt-contrib-languagePicker",
+  "repository": {
+    "type":"git",
+    "url": "git://github.com/adaptlearning/adapt-contrib-languagePicker.git"
+  },
+  "version": "4.1.0",
+  "framework": ">=5.6",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-languagePicker",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "extension": "languagePicker",
+  "displayName": "Language Picker",
+  "description": "An extension to allow the learner to select the course language in multi-language course",
+  "main": "/js/adapt-languagePicker.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_languagePicker"
+}

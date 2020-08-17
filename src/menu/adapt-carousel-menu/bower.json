@@ -1,0 +1,16 @@
+{
+	"name": "adapt-carousel-menu",
+	"version": "5.0.0",
+  	"framework": ">=5",
+	"displayName": "Carousel Menu",
+	"menu": "carouselMenu",
+	"targetAttribute": "_carouselMenu",
+	"description": "Carousel Styled Menu. Updated for framework 5+",
+	"main": "/js/adapt-carousel-menu.js",
+	"keywords": [
+		"adapt-plugin",
+		"adapt-menu"
+	],
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/mike-st/adapt-carousel-menu"
+}

@@ -1,0 +1,29 @@
+{
+  "_id": "c-05",
+  "_layout": "full",
+  "_type": "component",
+  "_component": "imageSlider",
+  "_parentId": "b-05",
+  "displayTitle": "Component title",
+  "title": "",
+  "body": "",
+  "_classes": "",
+  "instruction": "",
+  "_items": [
+    {
+      "title": "title one",
+      "alt": "alt text",
+      "src": "course/en/assets/image1.jpg"
+    },
+    {
+      "title": "title one title one <br>title one title one title one",
+      "alt": "alt text",
+      "src": "course/en/assets/image2.jpg"
+    },
+    {
+      "title": "",
+      "alt": "alt text",
+      "src": "course/en/assets/image3.jpg"
+    }
+  ]
+}

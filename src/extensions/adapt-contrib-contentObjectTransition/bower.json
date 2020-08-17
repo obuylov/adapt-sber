@@ -1,0 +1,21 @@
+{
+  "name": "adapt-contrib-contentObjectTransition",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adaptlearning/adapt-contrib-contentObjectTransition.git"
+  },
+  "framework": ">=5.6.0",
+  "version": "0.1.1",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-contentObjectTransition",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "extension": "contentObjectTransition",
+  "displayName": "Menu/Page Transition",
+  "description": "An extension which provides a basic forward and backward animation between pages and menus",
+  "main": "/js/adapt-contrib-contentObjectTransition.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_contentObjectTransition"
+}

@@ -1,0 +1,47 @@
+{{import_globals}}
+
+<div class="menu-group__inner boxmenu-group__inner">
+
+  <div class="menu-group__header boxmenu-group__header">
+    <div class="menu-group__header-inner boxmenu-group__header-inner">
+
+      {{#if displayTitle}}
+      <div class="menu-group__title boxmenu-group__title">
+        <div class="js-heading" data-a11y-heading-type="menuGroup"></div>
+
+        <div class="menu-group__title-inner boxmenu-group__title-inner accessible-text-block" aria-hidden="true">
+          {{{compile displayTitle}}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if body}}
+      <div class="menu-group__body boxmenu-group__body">
+        <div class="menu-group__body-inner boxmenu-group__body-inner">
+          {{{compile body}}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if instruction}}
+      <div class="menu-group__instruction boxmenu-group__instruction">
+        <div class="menu-group__instruction-inner boxmenu-group__instruction-inner">
+          {{{compile instruction}}}
+        </div>
+      </div>
+      {{/if}}
+
+      <div class="menu-group__progress boxmenu-group__progress js-menu-item-progress">
+        {{!-- Menu item progress bar will render in here --}}
+      </div>
+
+    </div>
+  </div>
+
+  <div class="menu-group__container boxmenu-group__container">
+    <div class="menu-group__item-container-inner boxmenu-group__item-container-inner js-group-children" role="list">
+      {{!-- Grouped menu items render here --}}
+    </div>
+  </div>
+
+</div>

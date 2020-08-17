@@ -1,0 +1,113 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_animateList": {
+      "type": "boolean",
+      "required": false,
+      "title": "Animate list",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "Animate the list items into view",
+      "translatable": false
+    },
+    "_percentInviewVertical": {
+      "type": "number",
+      "required": false,
+      "default": 70,
+      "isSetting": true,
+      "title": "Percent in view",
+      "inputType": "Number",
+      "validators": ["number"],
+      "help": "Controls what percentage of the list items height needs to be in the viewport in order for the items to animate"
+    },
+    "_orderedList": {
+      "type": "boolean",
+      "required": false,
+      "title": "Ordered list",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "Set items as ordered list",
+      "translatable": false
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "List Items",
+      "help": "Add some list items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item title",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Title of the list item",
+            "translatable": true
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item body",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "Content area of the list item",
+            "translatable": true
+          },
+          "_imageSrc": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item image",
+            "inputType": "Asset:image",
+            "validators": [],
+            "help": "Image for the list item bullet"
+          },
+          "alt": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Alt text",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Alternative text for this items image",
+            "translatable": true
+          }
+        }
+      }
+    }
+  }
+}

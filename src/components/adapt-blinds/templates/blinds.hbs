@@ -1,0 +1,26 @@
+<div class="blinds__inner component__inner" role="region" aria-label="{{_globals._components._blinds.ariaRegion}}">
+	{{> component this}}
+	<div class="blinds__widget component__widget">
+		<div class="blinds__container">
+			<div class="blinds__items clearfix">
+				{{#each _items}}
+					<div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ BLINDS ITEM CONTENT ] **********</div>
+					<div class="blinds__item" style="background-image:url('{{src}}')" tabindex="0">
+						{{#if alt}}<div class="aria-label" role="img" aria-label="{{{alt}}}" tabindex="0">{{{alt}}}</div>{{/if}}
+						<div class="blinds__captions">
+							{{#each _captions}}
+								<p>{{text}}</p>
+							{{/each}}
+						</div>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+	{{#if bottomText}}
+	<div class="blinds-bottom-text" tabindex="0">
+		{{{bottomText}}}
+	</div>
+	{{/if}}
+</div>
+<script class="{{_id}}-fbnotify">if ( !$('html').hasClass('pagesave2txt') ) { $( ".{{_id}}-fbnotify" ).remove(); }</script>

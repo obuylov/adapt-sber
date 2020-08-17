@@ -1,0 +1,27 @@
+<div class="carousel-menu-item-container no-transition">
+	<div class="carousel-menu-item" data-adapt-id="home" style="background-color: transparent;">
+		<div class="carousel-menu-item-inner">
+		    <div class="carousel-menu-item-content">
+		        {{#if displayTitle}}
+				<div class="carousel-menu-item-title">{{{compile displayTitle}}}</div>
+				{{/if}}
+				{{#if body}}
+				<div class="carousel-menu-item-body">{{{compile body}}}</div>
+				{{/if}}
+		    </div>
+		</div>
+	</div>
+    {{!-- items rendered here --}}
+</div>
+<div class="carousel-menu-item-indicator-container">
+	<div data-adapt-id="home" data-item-index="0" class="carousel-menu-item carousel-menu-item-indicator">
+		<div class="menu-tooltip" style="margin-left: 2px;">Home</div>
+		<button class="base numspothome">
+		    <div class="carousel-menu-item-indicator-button-inner"></div>
+		</button>
+	</div>
+    {{!-- indicators rendered here --}}
+</div>
+<button class="base carousel-menu-item-control display-none back icon icon-controls-left"></button>
+<button class="base carousel-menu-item-control display-none next icon icon-controls-right"></button>
+<div class="tooltips6 wow fadeInUp animated"><h3></h3><br /><br /><span class="skipme">CLOSE</span></div>

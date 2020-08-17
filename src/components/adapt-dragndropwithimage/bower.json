@@ -1,0 +1,19 @@
+{
+    "name": "adapt-dragndropwithimage",
+    "framework": ">=5.0.0",
+    "version": "5.2.7",
+    "repository": "git://github.com/mike-st/adapt-dragndropwithimage.git",
+	"homepage": "https://github.com/mike-st/adapt-dragndropwithimage",
+	"authors": [
+      "Michael Stevens <mesgraphix@gmail.com>"
+    ],
+    "description": "A drag and drop with images component. Works with multiple correct items. Also has bounce back option without submit button. For framework version 5+",
+    "main": "/js/adapt-dragndropwithimage.js",
+    "displayName" : "Drag 'n' Drop with Image",
+    "component" : "dragndropwithimage",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

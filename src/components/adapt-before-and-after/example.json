@@ -1,0 +1,19 @@
+    {
+        "_id":"c-30",
+        "_parentId":"b-15",
+        "_type":"component",
+        "_component":"beforeafter",
+        "_classes":"",
+        "_layout":"left",
+        "title":"Here is a before and after object",
+        "displayTitle":"Here is a before and after object",
+        "body":"Hi everybody!",
+        "instruction":"",
+        "_beforeafter": {
+            "before": "http://egegorgulu.com/assets/img/beforeafter/before.jpg",
+            "altbefore": "alt text",
+            "after": "http://egegorgulu.com/assets/img/beforeafter/after.jpg",
+            "alt": "alt text",
+            "attribution":"Copyright © 2019"
+        }
+    }

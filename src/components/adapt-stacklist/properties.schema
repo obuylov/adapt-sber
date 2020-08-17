@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "This stacklist component presents a list of items. Select the button to access each item in turn.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    },
+      "ariaButtonLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Select this button to access the next item in the stacklist.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "body": {
+            "type": "string",
+            "required": true,
+            "inputType": "TextArea",
+            "title": "Item Body",
+            "default": "",
+            "validators": ["required"],
+            "help": "This is the optional item body text",
+            "translatable": true
+          },
+          "next": {
+            "type": "string",
+            "required": false,
+            "inputType": "Text",
+            "title": "Next Button Text",
+            "default": "",
+            "validators": [],
+            "help": "Leave blank to use the existing text",
+            "translatable": true
+          }
+        }
+      }
+    },
+    "_button": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "startText": {
+          "type": "string",
+          "required": false,
+          "default": "Click here to begin",
+          "inputType": "Text",
+          "validators": [],
+          "title": "Start button text",
+          "help": "",
+          "translatable": true
+        },
+        "continueText": {
+          "type": "string",
+          "required": false,
+          "default": "Next",
+          "inputType": "Text",
+          "validators": [],
+          "title": "Next button text",
+          "help": "",
+          "translatable": true
+        }
+      }
+
+    }
+  }
+}

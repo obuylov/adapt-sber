@@ -1,0 +1,25 @@
+<div class="menu-container" role="region" aria-label="{{_globals._menu._tilesmenu.ariaRegion}}">
+	<div class='menu-container-inner tiles-menu-inner clearfix'>
+		<div class="menu-header">
+			<div class="menu-header-inner">
+				{{#if displayTitle}}
+				<div class="menu-title">
+					<div class="menu-title-inner h1" role="heading" aria-level="1" tabindex="0">
+						{{{compile displayTitle}}}
+					</div>
+				</div>
+				{{/if}}
+				{{#if body}}
+				<div class="menu-body">
+					<div class="menu-body-inner">
+						{{{compile_a11y_text body}}}
+					</div>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class="menu-tile-items">
+		</div>
+	</div>
+	<div class="aria-label relative a11y-ignore-focus prevent-default" tabindex="0" role="region">{{_globals._menu._tilesmenu.menuEnd}}</div>
+</div>

@@ -1,0 +1,242 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_graphic": {
+      "type":"object",
+      "required":false,
+      "title": "Graphic",
+      "properties":{
+        "alt": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Alternative Text",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The alternative text for this image",
+          "translatable": true
+        },
+        "large": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "The large sized image for desktop devices"
+        },
+        "small": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "The small sized image for mobile devices"
+        },
+        "attribution": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text to be displayed as an attribution",
+          "translatable": true
+        }
+      }
+    },
+    "_notifyopt": {
+      "type": "string",
+      "required": true,
+      "enum": ["popup", "alert", "button", "link"],
+      "inputType": {"type": "Select", "options": ["popup", "alert", "button", "link"]},
+      "title": "set if you want to use a popup window or an alert window",
+      "default": "button",
+      "validators": ["required"],
+      "help": "choose a 'popup window', 'alert window' or add a external link to be completed. Also if you would like a button instead of a link use 'button'"
+    },
+    "_popupData": {
+      "type": "array",
+      "required":false,
+      "title": "Notify Popup Text",
+      "items": {
+        "type":"object",
+        "title": "Popup Window",
+        "properties":{
+          "title": {
+            "type":"string",
+            "required":true,
+            "title": "Title",
+            "default": "Title goes here",
+            "inputType": "Text",
+            "help": "Title for the Popup Notify Window"
+          },
+          "message": {
+            "type":"string",
+            "required":true,
+            "title": "Message Body",
+            "default": "Message goes here",
+            "inputType": "TextArea",
+            "help": "Message body text for the Popup Notify Window"
+          },
+          "copypaste": {
+            "type":"string",
+            "title": "Copy and Paste the link",
+            "default": "<a data-index='1' href='#' id='mypopup'>copied popup link</a>",
+            "inputType": "Text",
+            "help": "In the component body or bottom text click the source button, then copy and paste the link below into it. Be sure to increase the data-index number each time you add an item. You can use the tags provided or <button data-index='1' id='mypopup'>copied popup link</button>"
+          }
+        }
+      }
+    },
+    "_alertData": {
+      "type": "array",
+      "required":false,
+      "title": "Notify Alert Text",
+      "items": {
+        "type":"object",
+        "title": "Alert Window",
+        "properties":{
+          "title": {
+            "type":"string",
+            "required":true,
+            "title": "Title",
+            "default": "Title goes here",
+            "inputType": "Text",
+            "help": "Title for the Alert Notify Window"
+          },
+          "message": {
+            "type":"string",
+            "required":true,
+            "title": "Message Body",
+            "default": "Message goes here",
+            "inputType": "TextArea",
+            "help": "Message body text for the Alert Notify Window"
+          },
+          "confirmButton": {
+            "type":"string",
+            "required":true,
+            "title": "Confirm Button Text",
+            "default": "Continue",
+            "inputType": "Text",
+            "help": "Text displayed inside the confirmation button"
+          },
+          "copypaste": {
+            "type":"string",
+            "title": "Copy and Paste the link",
+            "default": "<a data-index='1' href='#' id='myalert'>copied alert link</a>",
+            "inputType": "Text",
+            "help": "In the component body or bottom text click the source button, then copy and paste the link below into it. Be sure to increase the data-index number each time you add an item. You can use the tags provided or <button data-index='1' id='myalert'>copied alert link</button>"
+          }
+        }
+      }
+    },
+    "_externaLink": {
+      "type": "array",
+      "required":false,
+      "title": "External Link for completion",
+      "items": {
+        "type":"object",
+        "title": "Alert Window",
+        "properties":{
+          "copypaste": {
+            "type":"string",
+            "title": "Copy and Paste the link",
+            "default": "<a data-index='1' href='path_to_my_document_goes_here' id='myexternalink' onclick=\"window.open(this.href, '','resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=yes,dependent=no,width=600,height=600'); return false;\">external link name</a>",
+            "inputType": "Text",
+            "help": "In the component body or bottom text click the source button, then copy and paste the link below into it. Be sure to increase the data-index number each time you add an item. You can use the tags provided or <button data-index='1' id='myexternalink' onclick=\"window.open(this.href, '','resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=yes,dependent=no,width=600,height=600'); return false;\">external link name</button>"
+          }
+        }
+      }
+    },
+    "_buttonData": {
+      "type":"object",
+      "required":false,
+      "legend": "Button that launches Notifier with Text",
+      "properties":{
+        "button": {
+          "type":"object",
+          "title": "Button Launches Alert",
+          "properties":{
+            "classadd": {
+              "type":"boolean",
+              "required":false,
+              "default": false,
+              "title": "Enables the Button to launch a notify alert",
+              "inputType": "Checkbox",
+              "validators": [],
+              "help": "If not enabled the button for the notify component won't display on previewing the component."
+            },
+            "copypaste": {
+              "type":"string",
+              "title": "Alert Launch Button Name",
+              "default": "Click Here",
+              "inputType": "Text",
+              "help": "This is the text that will display in your button which will launch the alert."
+            },
+            "title": {
+              "type":"string",
+              "required":true,
+              "title": "Title",
+              "default": "Title goes here",
+              "inputType": "Text",
+              "help": "Title for the Popup Notify Window"
+            },
+            "message": {
+              "type":"string",
+              "required":true,
+              "title": "Message Body",
+              "default": "Message goes here",
+              "inputType": "TextArea",
+              "help": "Message body text for the Popup Notify Window"
+            },
+            "confirmButton": {
+              "type":"string",
+              "required":true,
+              "title": "Confirm Button Text",
+              "default": "Continue",
+              "inputType": "Text",
+              "help": "Text displayed inside the confirmation button"
+            }
+          }
+        }
+      }
+    },
+    "bottomText": {
+      "type": "string",
+      "required": false,
+      "inputType": "TextArea",
+      "title": "Bottom Text",
+      "default": "",
+      "validators": [],
+      "help": "Enter bottom text which is inserted under the interactive element"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"name": "adapt-hotspotMenu",
+	"version": "3.0.6",
+	"framework": ">=5",
+	"displayName": "Hotspot Menu",
+	"menu": "hotspotMenu",
+	"targetAttribute": "_hotspotMenu",
+	"description": "A menu with absolutely-positioned buttons",
+	"main": "/js/adapt-hotspotMenu.js",
+	"keywords": [
+		"adapt-plugin",
+		"adapt-menu"
+	],
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/cgkineo/adapt-hotspotMenu"
+}

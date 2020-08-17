@@ -1,0 +1,11 @@
+    // course.json
+    "_navigationTitle": {
+        "_isEnabled": true,
+        "title": "Title"
+    }
+
+    // course.json -  if you want to use the course displayTitle
+    "_navigationTitle": {
+        "_isEnabled": true,
+        "title": "{{{Adapt.[course].displayTitle}}}"
+    }

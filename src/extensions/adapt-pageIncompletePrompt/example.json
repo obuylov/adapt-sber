@@ -1,0 +1,18 @@
+    // course.json
+    "_pageIncompletePrompt": {
+        "_isEnabled": true,
+        "_buttons": {
+            "yes": "Yes",
+            "no": "No"
+        },
+        "title": "Page incomplete",
+        "message": "Are you sure you would like to leave?",
+        "_classes": ""
+    }
+
+    // and / or (to override)
+
+    // contentObjects.json
+    "_pageIncompletePrompt": {
+        "_isEnabled": true
+    }

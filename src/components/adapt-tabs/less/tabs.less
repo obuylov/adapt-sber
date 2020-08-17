@@ -1,0 +1,111 @@
+//----------------------
+// Horizontal layout (default mobile view)
+//----------------------
+.is-horizontal-layout .tabs__widget {
+  flex-direction: column-reverse;
+}
+
+//----------------------
+// Vertical layout (default mobile view)
+//----------------------
+.is-vertical-layout {
+  .tabs__widget {
+    flex-direction: row-reverse;
+  }
+
+  .tabs__nav {
+    width: 30%;
+  }
+
+  .tabs__nav-inner {
+    flex-direction: column;
+  }
+
+  .tabs__content {
+    width: 70%;
+  }
+}
+
+// ----------------------
+// Global
+// ----------------------
+.tabs {
+  &__nav-inner {
+    display: flex;
+
+    @media (max-width: @device-width-medium) {
+      flex-direction: column;
+    }
+  }
+
+  &__widget {
+    display: flex;
+  }
+
+  &__content-item {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    .transform(translateY(20px));
+  }
+
+  &__content-item.is-active {
+    height: auto;
+    opacity: 1;
+    .transform(translateY(0px));
+    .transition(all @animation-duration @animation-easing);
+  }
+}
+
+//----------------------
+// Theme
+//----------------------
+.tabs {
+  &__content {
+    background-color: @item-color-inverted-selected;
+    box-shadow: inset 0 0 0 0.25rem @item-color-selected;
+  }
+
+  &__content-inner {
+    padding: @item-padding;
+  }
+
+  &__content-item-title {
+    margin-bottom: @item-title-margin;
+    .item-title;
+  }
+
+  &__content-item-body a {
+    .link-text;
+  }
+
+  &__nav-item-btn {
+    padding: @item-padding;
+    background-color: @item-color;
+    color: @item-color-inverted;
+    .button-text;
+
+    .no-touch &:not(.is-selected):hover {
+      background-color: @item-color-hover;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__nav-item-btn.is-visited {
+    background-color: @visited;
+    color: @visited-inverted;
+  }
+
+  &__nav-item-btn.is-selected {
+    background-color: @item-color-selected;
+    color: @item-color-inverted-selected;
+  }
+
+  &__nav-item-btn-inner {
+    text-align: left;
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+}

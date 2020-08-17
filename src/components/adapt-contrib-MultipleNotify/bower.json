@@ -1,0 +1,20 @@
+{
+  "name": "adapt-contrib-MultipleNotify",
+  "version": "5.1.2",
+  "framework": ">=5.0.0",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Multiple Notify",
+  "component" : "MultipleNotify",
+  "assetFields" : [
+    "_graphic.small",
+    "_graphic.large"
+  ],
+  "description": "Add multiple notifiers (as many as you want). It will deem complete when all links in the component have been clicked. For framework 4.0.",
+  "main": "/js/adapt-contrib-MultipleNotify.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

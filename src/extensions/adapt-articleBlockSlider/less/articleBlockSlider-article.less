@@ -1,0 +1,106 @@
+.abs {
+  // Calculates the size of an arrow button
+  // Adds block horizontal padding
+  // Attachs extra size to abs slide container when arrows present so content
+  // displays at the same size as other blocks
+  @abs-arrow-spacing: @icon-size + (@icon-padding * 2) + @block-padding-hoz;
+
+  &__container.has-arrows {
+    .abs__slide-container {
+      max-width: @device-width-large + (@abs-arrow-spacing * 2);
+    }
+
+    .block__inner {
+      @media (min-width: @device-width-medium) {
+        max-width: inherit;
+        padding-left: @abs-arrow-spacing;
+        padding-right: @abs-arrow-spacing;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    .l-container-responsive(@max-width);
+  }
+
+  &__slide-container {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .block {
+    .u-float-left;
+    width: 100%;
+  }
+
+  // Arrows
+  // --------------------------------------------------
+  &__btn-arrow {
+    position: absolute;
+    top: 50%;
+  }
+
+  &__btn-arrow.is-left {
+    left: 0;
+
+    .dir-rtl & {
+      left: inherit;
+      right: 0;
+    }
+  }
+
+  &__btn-arrow.is-right {
+    right: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  &__btn-arrow.is-left .icon {
+    .icon-controls-left;
+  }
+
+  &__btn-arrow.is-right .icon {
+    .icon-controls-right;
+  }
+
+  // Tabs
+  // --------------------------------------------------
+  &__toolbar {
+    width: 100%;
+  }
+
+  &__btn-tab-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+// --------------------------------------------------
+.abs {
+  &__btn-arrow {
+    background-color: @item-color;
+    color: @item-color-inverted;
+
+    .no-touch &:not(.is-disabled):hover {
+      background-color: @item-color-hover;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__btn-arrow.is-disabled {
+    background-color: @disabled;
+    color: @disabled-inverted;
+  }
+}

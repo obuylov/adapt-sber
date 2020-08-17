@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_navigationLogo": {
+              "type": "object",
+              "required": false,
+              "legend": "Navigation Logo",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Add logo to navigation bar",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                },
+                "_graphic": {
+                  "type": "object",
+                  "required": true,
+                  "title": "Logo image",
+                  "properties": {
+                    "src": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Image",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "The provided logo must be 24px high minimum."
+                    },
+                    "_mobileSrc": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Optional mobile image",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "Useful for displaying a smaller logo for mobile view. The provided logo must be 24px high minimum."
+                    },
+                    "alt": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "title": "Logo image alternative text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Provide alternative text for the image, such as your company name. This text is not a visible element. It is utilized by assistive technology such as screen readers. Avoid identifying the logo as actually being a logo.",
+                      "translatable": true
+                    }
+                  }
+                },
+                "_fillNavHeight": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Make logo fill navigation bar height",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Logo displays with minimal padding by default. Set to true for logo to fill the nav bar height."
+                },
+                "_hideLogoForMobile": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Hide logo for mobile view",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Useful to declutter the navigation bar for mobile view where limited space is available."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

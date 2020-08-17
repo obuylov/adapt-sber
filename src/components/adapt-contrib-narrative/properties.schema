@@ -1,0 +1,150 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Slide show. Select the next button to progress.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "mobileInstruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Mobile Instruction",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the mobile only instruction text",
+      "translatable": true
+    },
+    "_hasNavigationInTextArea": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Move navigation to text area",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, all navigation elements will be moved to the text area"
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "required": true,
+      "enum": ["inview", "allItems"],
+      "default": "allItems",
+      "title": "Set completion on",
+      "inputType": {
+        "type": "Select",
+        "options": ["inview", "allItems"]
+      },
+      "validators": ["required"],
+      "help": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component"
+    },
+    "_items": {
+      "type": "array",
+      "required": false,
+      "title": "Narrative items",
+      "items": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Narrative display title",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_ariaLevel": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Narrative title level",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Aria level for title"
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Narrative main text",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_graphic": {
+            "type": "object",
+            "title": "Narrative graphic",
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Select Graphic",
+                "inputType": "Asset:image",
+                "validators": ["required"],
+                "help": ""
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Alternative Text",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Alternative text for this items image",
+                "translatable": true
+              },
+              "attribution": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Text to be displayed as an attribution",
+                "translatable": true
+              }
+            }
+          },
+          "strapline": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Narrative strapline",
+            "inputType": "Text",
+            "validators": ["required"],
+            "help": "",
+            "translatable": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.search {
+  &__textbox-container {
+    position: relative;
+  }
+
+  &__textbox {
+    width: 100%;
+    padding: @item-padding;
+    line-height: @drawer-item-body-line-height;
+
+    /*
+     * Hide 'X' icon for IE11 and Edge 12+
+     * Issue:https://github.com/adaptlearning/adapt_framework/issues/1913
+     */
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  &__items-container {
+    border-top: 1px solid @drawer-item-hover;
+  }
+}
+
+// --------------------------------------------------
+// drawer__item-btn hover override
+// --------------------------------------------------
+.drawer {
+  &__item-btn.is-search {
+    .no-touch &:not(.is-disabled):hover {
+      background-color: @drawer-item;
+      color: @drawer-item-inverted;
+    }
+  }
+}
+// --------------------------------------------------
+
+// --------------------------------------------------
+// drawer__item-btn spacing overrides
+// --------------------------------------------------
+.drawer {
+  &__item-btn.is-search {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border: 0;
+  }
+
+  &__item-btn.is-search > .drawer__item-title,
+  &__item-btn.is-search > .drawer__item-body {
+    padding-left: unit(@item-padding, rem);
+    padding-right: unit(@item-padding, rem);
+  }
+
+  &__item-btn.is-search > .drawer__item-body {
+    margin-bottom: @item-margin;
+  }
+
+  &__item-btn.is-search .search {
+    margin-left: @item-padding;
+    margin-right: @item-padding;
+    margin-bottom: @item-padding;
+  }
+}
+// --------------------------------------------------

@@ -1,0 +1,51 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "accordion",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Accordion",
+        "displayTitle": "Accordion Title",
+        "body": "This is optional body text.",
+        "instruction": "Select the headings below to reveal the text.",
+        "_shouldCollapseItems": true,
+        "_comment": "setCompletionOn = inview | allItems",
+        "_setCompletionOn": "allItems",
+        "_items": [
+            {
+              "title": "Heading 1",
+              "body": "This is display text 1.",
+              "_graphic": {
+                  "src": "course/en/images/example.jpg",
+                  "alt": "Placeholder graphic",
+                  "attribution": "Copyright © 2019"
+              },
+              "_comment": "Supported classes = 'align-image-left' | 'align-image-right'. Additional classes can be used but they must be predefined in one of the Less files",
+              "_classes": "align-image-left"
+            },
+            {
+              "title": "Heading 2",
+              "body": "This is display text 2.",
+              "_graphic": {
+                  "src": "course/en/images/example.jpg",
+                  "alt": "",
+                  "attribution": ""
+              },
+              "_classes": ""
+            },
+            {
+              "title": "Heading 3",
+              "body": "This is display text 3.",
+              "_graphic": {
+                  "src": "course/en/images/example.jpg",
+                  "alt": "",
+                  "attribution": ""
+              },
+              "_classes": ""
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }

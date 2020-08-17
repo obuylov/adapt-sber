@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties":{
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_pageIncompletePrompt": {
+              "type": "object",
+              "required": false,
+              "legend": "Page Incomplete Prompt",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "title": {
+                  "type": "string",
+                  "required": true,
+                  "default": "Page incomplete",
+                  "title": "Prompt title",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "message": {
+                  "type": "string",
+                  "required": true,
+                  "default": "Are you sure you would like to leave?",
+                  "title": "Prompt message",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_classes": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Classes",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "CSS classes for styling the prompt"
+                },
+                "_buttons": {
+                  "type": "object",
+                  "required":true,
+                  "legend": "Button labels",
+                  "properties" : {
+                    "yes": {
+                      "type": "string",
+                      "required": true,
+                      "default": "Yes",
+                      "title": "'Yes' button label",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "no": {
+                      "type": "string",
+                      "required": true,
+                      "default": "No",
+                      "title": "'No' button label",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_pageIncompletePrompt": {
+              "type": "object",
+              "required": false,
+              "legend": "Page Incomplete Prompt",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Whether Page Incomplete Prompt is enabled for this page or not. This is setting is only required if you want this page to override the global setting."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

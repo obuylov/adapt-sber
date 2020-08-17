@@ -1,0 +1,582 @@
+.timedmcq {
+    .timedMcq-item {
+        background-color:@item-color;
+        position:relative;
+    }
+
+    .timedMcq__title, .timedMcq__body , .timedMcq__instruction {
+        width: 70%;
+    }
+
+    .timedMcq-time-instruction {
+        opacity: 1;
+        transition: opacity 0.5s linear;
+        position: absolute;
+        font-weight: 600;
+
+        &.started {
+            visibility: hidden;
+            opacity: 0;
+            z-index: 0;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+    }
+
+    .attemptfr, .js-display-attempts {
+        display:none;
+    }
+
+    .timedMcq-time {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 10px;
+        padding-right: 10px;
+        text-indent: 2px;
+        color: @font-color-inverted;
+        background-color: @item-color;
+        visibility: hidden;
+        border: 1px solid @white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        min-width: 30px;
+        text-align: center;
+        &:after {
+            content: "\e938";
+            vertical-align: middle;
+            font-size: 22px;
+            float: left;
+            margin-left: 0px;
+            display: block;
+            font-family: 'vanilla';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        &.started {
+            visibility: visible;
+            opacity: 1;
+            z-index: 20;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+        &.imgcounton {
+            visibility: visible;
+            cursor: default;
+            opacity: 1;
+            z-index: 20;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+        &.stoppedimgtimer {
+            cursor: pointer;
+            visibility: visible;
+            z-index: 20;
+            &:hover {
+                background-color:@item-color-selected;
+            }
+            &:before {
+                content: 'Start\ATimer';
+                display: block;
+                max-width: 60px;
+                text-align: center;
+            }
+        }
+    }
+
+    .timedMcq-body-items {
+        visibility: hidden;
+        opacity: 0;
+        &.started {
+            visibility: visible;
+            opacity: 1;
+            z-index: 20;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+    }
+
+    .timedMcq-time-start {
+        position: absolute;
+        width: calc(~'100% - 0px');
+        height: calc(~'100% - 0px');
+        top: 0px;
+        font-size: 36px;
+        z-index: 10;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+
+        &.started {
+            visibility: hidden;
+            opacity: 0;
+            z-index: 0;
+            transition: visibility 0s 0.5s, opacity 0.5s linear;
+        }
+
+        img {
+            opacity: 0 !important;
+        }
+    }      
+
+
+    .timedMcq-item label {
+        color:@font-color-inverted;
+        display:block;
+        position:relative;
+        z-index:1;
+        background-color:@item-color;
+        cursor:pointer;
+
+        .timedMcq-answer-icon {
+            color:@font-color-inverted;
+            &.radio {
+                width:18px;
+                height:18px;
+                &:before {
+                    content: "\e96f";
+                    color:@font-color-inverted;
+                }
+            }
+            &.checkbox {
+                &:before {
+                    content: "\e975";
+                    color:@font-color-inverted;
+                }
+                border: none;
+                width:18px;
+                height:18px;
+                font-size:18px;
+                font-weight: bold;
+                border-radius: 2px;
+            }
+        }
+
+        &.selected {
+            color:@item-color-inverted-selected;
+            background-color:@item-color-selected;
+            .timedMcq-answer-icon {
+                 &.radio {
+                    &:before {
+                        content: "\e96e";
+                        color:@font-color-inverted;
+                    }
+                }
+                &.checkbox {
+                    &:before {
+                        content: "\e974";
+                        color:@font-color-inverted;
+                    }
+                    border: none;
+                    width:18px;
+                    height:18px;
+                    font-size:18px;
+                    font-weight: bold;
+                    border-radius: 2px;
+                }
+            }
+            .timedMcq-item-icon {
+                color:@item-color-inverted-selected;
+            }
+        }
+    }
+
+    .timedMcq-item-inner {
+        padding:15px;
+        padding-left:40px;
+        .dir-rtl & {
+            padding-left:inherit;
+            padding-right:40px;
+        }
+    }
+
+    .timedMcq-item input {
+        position:absolute;
+        top:14px;
+        left:14px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+        .dir-rtl & {
+            left:inherit;
+            right:14px;
+        }
+    }
+
+    .timedMcq-correct-icon {
+        color:@validation-success;
+        display:none;
+    }
+
+    .timedMcq-incorrect-icon {
+        color:@validation-error;
+        display:none;
+    }
+
+    .timedMcq-item-state {
+        background:none;
+        position:absolute;
+        left:10px;
+        .dir-rtl & {
+            left:inherit;
+            right:10px;
+        }
+        width:@icon-size;
+        height:@icon-size;
+        top:50%;
+        margin-top:-(@icon-size/2);
+        z-index:0;
+    }
+}
+
+.timedMcq__inner {
+    .btn__container {
+        visibility: hidden;
+        .btn__marking {
+            margin-top: inherit;
+        }
+
+        .btn__display-inner {
+            display: none;
+        }
+    }
+}
+
+.timedMcq__widget {
+    visibility: hidden;
+    &.show-user-answer {
+        .timedMcq-item-icon {
+            display:none;
+        }
+        .incorrect {
+            .selected .timedMcq-incorrect-icon {
+                display:block;
+            }
+        }
+        .correct {
+            .selected .timedMcq-correct-icon {
+                display:block;
+            }
+        }
+    }
+
+    &.show-correct-answer {
+        .timedMcq-item-icon {
+            display:none;
+        }
+        .selected .timedMcq-correct-icon {
+            display:block;
+        }
+    }
+
+    &.disabled {
+        .timedMcq-item label.selected.disabled {
+            color:@item-color-inverted-selected;
+            background-color:@item-color-selected;
+            cursor:default;
+        }
+        .timedMcq-item label.disabled {
+            color:@disabled-inverted;
+            background-color:@disabled;
+            cursor:default;
+        }
+
+        .timedMcq-item.correct .selected .state {
+            color:@validation-success;
+        }
+
+        .timedMcq-item.incorrect .selected .state {
+            color:@validation-error;
+        }
+    }
+
+    &.timed2column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .timedMcq-item {
+            width: 48.5%;
+            margin-top: 1%;
+        }
+
+    }
+
+    &.timed3column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .timedMcq-item {
+            width: 31.3%;
+            margin-top: 1%;
+        }
+
+    }
+
+    &.timed4column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .timedMcq-item {
+            width: 24.25%;
+            margin-top: 1%;
+        }
+
+    }
+    
+}
+
+.no-touch {
+
+    .timedMcq__widget {
+        &:not(.disabled) {
+            .timedMcq-item label:hover {
+                color:@link-inverted-hover;
+                background-color:@item-color-hover;
+                .timedMcq-item-icon {
+                    color:@item-color-hover;
+                }
+            }
+            .timedMcq-item label.disabled {
+                color:@disabled-inverted;
+                background-color:@disabled;
+                &:hover {
+                    color:@disabled-inverted;
+                    background-color:@disabled;
+                }
+                .timedMcq-item-icon {
+                    color:@disabled-inverted;
+                }
+            }
+        }
+    }
+}
+
+.is-left .timedMcq-time {margin-right: 2%;}
+.is-left .timedMcq-time-start {width: calc(~'98% - 0px') !important;}
+.is-right .timedMcq-time-start {width: calc(~'99% - 0px') !important;}
+
+/* Below are overrides for when the MCQ time is up so question is locked down */
+.timeuplock {
+    .timedMcq-time-start {
+        display: none !important;
+    }
+    .timedMcq__widget{
+        visibility: visible !important;
+        .timedMcq-item{
+            label{
+                cursor: default;
+            }
+        }
+    }
+    .btn__container {
+        visibility: visible !important;
+        .btn__action {
+            background-color: @disabled;
+            border-color: @disabled;
+            cursor: default;
+        }
+    }
+}
+.notimenabled {
+    .timedMcq__widget{
+        visibility: visible !important;
+        .timedMcq-item{
+            label{
+                cursor: pointer;
+            }
+        }
+    }
+    .btn__container {
+        visibility: visible !important;
+        .btn__action {
+            background-color: @btn-color;
+            border-color: @btn-color;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Below are overrides for when the images time is up so question can be visible */
+
+.enabledimgtime {
+    button.timedMcq-time-start.disabled {
+        color: transparent !important;
+    }
+}
+.embedimgtimeup {
+    .timedMcq__inner {
+        min-height: auto !important;
+    }
+    .timedMcq-time-start {
+        display: none !important;
+    }
+    .timedMcq-body-items {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .imgcounton {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        cursor: default;
+    }
+    .stoppedimgtimer {
+        visibility: hidden !important;
+        z-index: -1 !important;
+    }
+    .btn__container {
+        visibility: visible !important;
+    }
+    .timedMcq__widget .timedMcq-item label{
+        background-color: inherit;
+        border-color: inherit;
+        cursor: pointer;
+    }
+    .timedMcq__widget.complete.submitted .timedMcq-item label{
+        background-color: @disabled;
+        border-color: @disabled;
+    }
+}
+
+/* Styles for my Score */
+span.leavemyscore {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/* SCORE MCQ BAR AT BOTTOM STYLES */
+.masterscorehold {display:none;}
+.mcqscoringaddup {
+    .masterscorehold {
+        background-color: darken(@item-color, 20%) !important;
+        border-radius: 0 !important;
+        border: 1px solid @white;
+        height: 20px !important;
+        line-height: 20px;
+        position: relative;
+        display: block;
+        width: calc(~'100% - 2px');
+        margin-top: 10px;
+        overflow: hidden;
+        -webkit-transition: background-color .25s ease-in,color .25s ease-in,border-color .25s ease-in;
+        -moz-transition: background-color .25s ease-in,color .25s ease-in,border-color .25s ease-in;
+        -ms-transition: background-color .25s ease-in,color .25s ease-in,border-color .25s ease-in;
+        transition: background-color .25s ease-in,color .25s ease-in,border-color .25s ease-in;
+    }
+
+    .mcqmovingbar {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        -ms-border-radius: 0 !important;
+        -o-border-radius: 0 !important;
+        border-radius: 0 !important;
+        border: 0 solid @item-color !important;
+        border-right: 1px solid rgba(255,255,255,0.5) !important;
+        background-color: @item-color !important;
+        color: @font-color-inverted;
+        background-repeat: repeat-x !important;
+        background-size: 30px 30px !important;
+        width: 0%;
+        min-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        -webkit-animation: progress 1.5s linear infinite !important;
+        -moz-animation: progress 1.5s linear infinite !important;
+        animation: progress 1.5s linear infinite !important;
+        -webkit-transition: width 1s ease-out !important;
+        -moz-transition: width 1s ease-out !important;
+        -ms-transition: width 1s ease-out !important;
+        -o-transition: width 1s ease-out !important;
+        transition: width 1s ease-out !important;
+    }
+}
+.is-left.mcqscoringaddup .masterscorehold {
+    width: calc(~'100% - 0px');
+}
+.is-right.mcqscoringaddup .masterscorehold {
+    width: calc(~'100% - 0px');
+    margin-left: 0px;
+}
+
+@media all and (max-width:@device-width-medium){
+    .timedMcq__widget {
+        &.timed2column {
+            .timedMcq-item {
+                width: 48.5%;
+            }
+
+        }
+
+        &.timed3column {
+            .timedMcq-item {
+                width: 48.5%;
+            }
+
+        }
+
+        &.timed4column {
+            .timedMcq-item {
+                width: 48.5%;
+            }
+
+        }
+    }
+    .is-left .timedMcq-time-start, .is-right .timedMcq-time-start {
+       width: calc(~'100% - 0px') !important;
+        right: 0;
+        left: 0;
+    }
+    .is-left .timedMcq-time {margin-right: 0%;}
+    .mcqscoringaddup .mcqmovingbar span {display:none !important;}
+    .is-left.mcqscoringaddup .masterscorehold, .is-right.mcqscoringaddup .masterscorehold {width: calc(~'100% - 2px');margin-left: 0px;}
+}
+
+@media all and (max-width:@device-width-small){
+    .timedMcq__widget {
+        &.timed2column {
+            display: inherit;
+            flex-wrap: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            .timedMcq-item {
+                width: inherit;
+                margin-top: inherit;
+            }
+
+        }
+
+        &.timed3column {
+            display: inherit;
+            flex-wrap: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            .timedMcq-item {
+                width: inherit;
+                margin-top: inherit;
+            }
+
+        }
+
+        &.timed4column {
+            display: inherit;
+            flex-wrap: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            .timedMcq-item {
+                width: inherit;
+                margin-top: inherit;
+            }
+
+        }
+    }
+}

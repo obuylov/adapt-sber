@@ -1,0 +1,59 @@
+<div class="component__inner accordion__inner">
+
+  {{> component this}}
+
+  <div class="component__widget accordion__widget">
+
+    {{#each _items}}
+    <div class="accordion__item{{#if _graphic.src}} has-image{{/if}}{{#if _classes}} {{_classes}}{{/if}}" data-index="{{_index}}">
+
+      <button id="{{../_id}}-{{@index}}-accordion-button" class="accordion__item-btn js-toggle-item is-closed{{#if _isVisited}} is-visited{{/if}}" aria-expanded="false">
+        <div class="accordion__item-btn-inner">
+
+          <div class="accordion__item-icon">
+            <div class="icon"></div>
+          </div>
+
+          <div class="accordion__item-title">
+            <div class="accordion__item-title-inner">
+              {{{title}}}
+            </div>
+          </div>
+
+        </div>
+      </button>
+
+      <div class="accordion__item-content" role="region" aria-labelledby="{{../_id}}-{{@index}}-accordion-button">
+        <div class="accordion__item-content-inner">
+
+          {{#if body}}
+          <div class="accordion__item-body">
+            <div class="accordion__item-body-inner">
+              {{{compile body}}}
+            </div>
+          </div>
+          {{/if}}
+
+          {{#if _graphic.src}}
+          <div class="accordion__item-image-container{{#if _graphic.attribution}} has-attribution{{/if}}">
+            <img class="accordion__item-image" src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}>
+
+            {{#if _graphic.attribution}}
+            <div class="component__attribution accordion__attribution">
+              <div class="component__attribution-inner accordion__attribution-inner">
+                {{{_graphic.attribution}}}
+              </div>
+            </div>
+            {{/if}}
+
+          </div>
+          {{/if}}
+
+        </div>
+      </div>
+
+    </div>
+    {{/each}}
+
+  </div>
+</div>

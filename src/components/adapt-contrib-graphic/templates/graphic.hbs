@@ -1,0 +1,23 @@
+<div class="component__inner graphic__inner">
+
+  {{> component this}}
+
+  <div class="component__widget graphic__widget">
+
+    <div class="graphic__image-container{{#if _graphic.attribution}} has-attribution{{/if}}">
+
+      <img class="graphic__image js-graphic-set-image-src" src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}" {{#if _graphic.alt}}aria-label="{{{compile_a11y_normalize _graphic.alt}}}"{{else}}aria-hidden="true"{{/if}}>
+
+      {{#if _graphic.attribution}}
+      <div class="component__attribution graphic__attribution">
+        <div class="component__attribution-inner graphic__attribution-inner">
+          {{{_graphic.attribution}}}
+        </div>
+      </div>
+      {{/if}}
+
+    </div>
+
+  </div>
+
+</div>

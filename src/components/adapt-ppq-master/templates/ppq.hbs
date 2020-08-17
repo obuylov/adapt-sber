@@ -1,0 +1,25 @@
+<div class="ppq__inner component__inner" role="region" aria-label="{{_accessibility._ariaRegions.ppq}}">
+    {{> component this}}
+    <div class="ppq__widget component__widget {{#unless _isEnabled}} disabled {{#if _isComplete}} is-complete is-submitted show-user-answer {{#if _isCorrect}}is-correct{{/if}} {{/if}} {{/unless}}">
+        <div class="ppq-other-device {{#unless _showOtherDeviceCompletionMessage}}display-none{{/unless}}">{{{a11y_text _globals._components._ppq.otherDeviceCompletionMessage}}}</div>
+        <div class="ppq-pinboard-container {{#if _showOtherDeviceCompletionMessage}}display-none{{/if}}">
+            <div class="ppq-pinboard-container-inner">
+
+                {{#each _items}}
+                    {{#if ../../desktopLayout}}
+                        <div class="ppq-correct-zone {{#unless ../_developerMode}}display-none{{/unless}}" style="left:{{desktop.left}}%; top:{{desktop.top}}%; width:{{desktop.width}}%; height:{{desktop.height}}%;"></div>
+                    {{else}}
+                        <div class="ppq-correct-zone {{#unless ../_developerMode}}display-none{{/unless}}" style="left:{{mobile.left}}%; top:{{mobile.top}}%; width:{{mobile.width}}%; height:{{mobile.height}}%;"></div>
+                    {{/if}}
+                {{/each}}
+
+                <div class="ppq-boundary">
+                    <img class="ppq-pinboard {{#if _developerMode}}developer-mode{{/if}}" src="{{_pinboardDesktop.src}}" title="{{_pinboardDesktop.title}}" alt="{{_pinboardDesktop.title}}" draggable="false" style="-moz-user-select: none;" ondragstart="return false;"/>
+                </div>
+
+            </div>
+            <span class="ppq-debug"></span>
+        </div>
+    </div>
+    <div class="btn__container"></div>
+</div>

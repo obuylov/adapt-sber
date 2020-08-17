@@ -1,0 +1,161 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_bookmarking": {
+              "type": "object",
+              "required": false,
+              "legend": "Bookmarking",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the Bookmarking extension is enabled or disabled."
+                },
+                "_level": {
+                  "type": "string",
+                  "required": true,
+                  "enum": [
+                    "page",
+                    "block",
+                    "component"
+                  ],
+                  "default": "page",
+                  "title": "Level",
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "page",
+                      "block",
+                      "component"
+                    ]
+                  },
+                  "validators": ["required"],
+                  "help": "Allows you to set whether Bookmarking is done at page, block or component level."
+                },
+                "_showPrompt": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Show prompt",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the Bookmarking prompt is enabled or disabled. If not enabled, the user will be returned to their bookmarked position automatically."
+                },
+                "title": {
+                  "type": "string",
+                  "default": "Bookmarking",
+                  "required": false,
+                  "title": "Prompt Title",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "body": {
+                  "type": "string",
+                  "default": "Would you like to continue where you left off?",
+                  "required": false,
+                  "title": "Prompt Message",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_buttons": {
+                  "type": "object",
+                  "title": "Prompt Buttons",
+                  "properties": {
+                    "yes": {
+                      "type": "string",
+                      "default": "Yes",
+                      "title": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    },
+                    "no": {
+                      "type": "string",
+                      "default": "No",
+                      "title": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_bookmarking": {
+              "type": "object",
+              "required": false,
+              "legend": "Bookmarking",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether Bookmarking is enabled or disabled for this page of the course."
+                },
+                "_level": {
+                  "type": "string",
+                  "required": true,
+                  "enum": [
+                    "inherit",
+                    "page",
+                    "block",
+                    "component"
+                  ],
+                  "default": "inherit",
+                  "title": "Level",
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "inherit",
+                      "page",
+                      "block",
+                      "component"
+                    ]
+                  },
+                  "validators": ["required"],
+                  "help": "Whether you want to inherit the 'Level' setting from Project settings or override it for this page of the course."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

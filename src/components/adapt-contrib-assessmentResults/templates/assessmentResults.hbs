@@ -1,0 +1,38 @@
+{{! make the _globals object in course.json available to this template}}
+{{import_globals}}
+
+<div class="component__inner assessmentresults__inner">
+
+  {{> component this}}
+
+  <div class="component__widget assessmentresults__widget">
+
+    {{#if _isRetryEnabled}}
+    <div class="component__feedback assessmentresults__feedback">
+      <div class="component__feedback-inner assessmentresults__feedback-inner">
+
+        {{#if retryFeedback}}
+        <div class="assessmentresults__retry-feedback">
+          <div class="assessmentresults__retry-feedback-inner">
+            {{{compile retryFeedback}}}
+          </div>
+        </div>
+        {{/if}}
+
+        <button class="btn-text assessmentresults__retry-btn js-assessment-retry-btn">
+          <span>
+            {{#if _retry.button}}
+            {{_retry.button}}
+            {{else}}
+            Retry
+            {{/if}}
+          </span>
+        </button>
+
+      </div>
+    </div>
+    {{/if}}
+
+  </div>
+
+</div>

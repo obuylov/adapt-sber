@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "A tabbed content container. Content can be text, graphic or both.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "required": false,
+      "default": "allItems",
+      "title": "Set completion on:",
+      "enum": ["inview", "allItems"],
+      "inputType": {
+        "type": "Select",
+        "options": ["inview", "allItems"]
+      },
+      "validators": [],
+      "help": "Whether completion is based on the learner having viewed all the tabs - or just having viewed the component"
+    },
+    "_tabLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["horizontal", "vertical"],
+      "default": "horizontal",
+      "title": "Tab button layout",
+      "inputType": {"type": "Select", "options":["vertical", "horizontal"]},
+      "validators": ["required"],
+      "help": "Whether the tab buttons should display horizontal across the top of the content panel, or vertically along the side of the content panel"
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "tabTitle": {
+            "type": "string",
+            "required": true,
+            "inputType": "Text",
+            "title": "Tab Item Title",
+            "default": "",
+            "validators": ["required"],
+            "translatable": true
+          },
+          "title": {
+            "type": "string",
+            "required": false,
+            "inputType": "Text",
+            "title": "Item Title",
+            "default": "",
+            "validators": ["required"],
+            "translatable": true
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "inputType": "TextArea",
+            "title": "Item Body",
+            "default": "",
+            "validators": [],
+            "translatable": true
+          },
+          "_classes": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Classes",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Classes that are applied to the Tabs Item"
+          },
+          "_graphic": {
+            "type": "object",
+            "required": false,
+            "title": "Graphic",
+            "properties": {
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "translatable": true
+              },
+              "src": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

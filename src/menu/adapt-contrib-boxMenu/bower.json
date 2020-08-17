@@ -1,0 +1,17 @@
+{
+  "name": "adapt-contrib-boxMenu",
+  "version": "5.0.0",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-boxMenu",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "menu": "boxMenu",
+  "displayName": "Box Menu",
+  "description": "A core bundled menu",
+  "main": "js/adapt-contrib-boxMenu.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_boxMenu"
+}

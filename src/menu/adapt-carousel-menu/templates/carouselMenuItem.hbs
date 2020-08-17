@@ -1,0 +1,14 @@
+<div class="carousel-menu-item-inner">
+    <div class="carousel-menu-item-content">
+        {{#if displayTitle}}
+        <div class="carousel-menu-item-title">{{{displayTitle}}}</div>
+        {{/if}}
+        {{#if body}}
+        <div class="carousel-menu-item-body">{{{body}}}</div>
+        {{/if}}
+        {{#if duration}}
+        <div class="carousel-menu-item-duration">{{{_globals._menu._carouselMenu.durationLabel}}}{{{duration}}}</div>
+        {{/if}}
+        <button class="carousel-menu-item-button{{#if _isVisited}} is-visited{{/if}}{{#if _isLocked}} is-locked{{/if}}"{{#if _isLocked}} disabled="disabled"{{/if}}>{{{linkText}}}</button>
+    </div>
+</div>

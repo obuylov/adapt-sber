@@ -1,0 +1,13 @@
+{{! Maintainer - Chuck Lorenz <chucklorenz@clearlearning.tech>}}
+<div class="aboutus__inner">
+    <div class="aboutus__header-container">
+        {{#if _graphic.src}}
+            <img src="{{_graphic.src}}" alt="{{_graphic.alt}}" />
+        {{/if}}
+        <div class="aboutus__headline">
+            <div class="aboutus__headline-inner" {{#unless _graphic.src}}width="100%"{{/unless}}>{{{headline}}}</div>
+        </div>
+    </div>
+    <div class="aboutus__items-container" role="list">
+    </div>
+</div>

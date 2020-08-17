@@ -1,0 +1,73 @@
+<div class="component__inner hotgraphic__inner">
+
+  {{> component this}}
+
+  <div class="component__widget hotgraphic__widget{{#unless _useGraphicsAsPins}} is-pin{{else}} is-tile{{/unless}}{{#if _graphic.attribution}} has-attribution{{/if}}">
+
+    {{#unless _useGraphicsAsPins}}
+
+    <img class="hotgraphic__image" src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}}>
+
+    {{#if _graphic.attribution}}
+    <div class="component__attribution hotgraphic__attribution">
+      <div class="component__attribution-inner hotgraphic__attribution-inner">
+        {{{_graphic.attribution}}}
+      </div>
+    </div>
+    {{/if}}
+
+    <div class="hotgraphic__pin-item-container" role="list">
+
+      {{#each _items}}
+      <div class="hotgraphic__pin-item" role="listitem">
+
+        <button class="btn-icon hotgraphic__pin item-{{@index}}{{#if _graphic._classes}} {{_graphic._classes}}{{/if}}{{#if _pin.src}} has-pin-image{{/if}}{{#if _isVisited}} is-visited{{/if}} js-hotgraphic-item-click" data-index="{{@index}}" style="top: {{{_top}}}%; left: {{{_left}}}%;">
+
+          <span class="aria-label">{{#if ../_useNumberedPins}}{{math @index "+" 1}} {{/if}}{{title}}.</span>
+
+          {{#if _pin.src}}
+          <div class="hotgraphic__pin-image-container item-{{@index}}">
+            <img class="hotgraphic__pin-image" src="{{_pin.src}}">
+          </div>
+          {{else}}
+
+          {{#if ../_useNumberedPins}}
+          <div class="hotgraphic__pin-number">{{math @index "+" 1}}</div>
+          {{else}}
+          <div class="icon"></div>
+          {{/if}}
+
+          {{/if}}
+
+        </button>
+
+      </div>
+      {{/each}}
+
+    </div>
+
+    {{else}}
+
+    <div class="hotgraphic__tile-item-container" role="list">
+
+      {{#each _items}}
+      <div class="hotgraphic__tile-item" role="listitem">
+
+        <button class="hotgraphic__tile item-{{@index}}{{#if _graphic._classes}} {{_graphic._classes}}{{/if}}{{#if _isVisited}} is-visited{{/if}} js-hotgraphic-item-click" data-index="{{@index}}">
+
+          <span class="aria-label">{{title}}.</span>
+
+          <img class="hotgraphic__tile-image" src="{{_graphic.src}}">
+
+        </button>
+
+      </div>
+      {{/each}}
+
+    </div>
+
+    {{/unless}}
+
+  </div>
+
+</div>

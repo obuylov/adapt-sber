@@ -1,0 +1,43 @@
+.dropdown {
+  &__btn {
+    width: 100%;
+    outline: 0;
+  }
+
+  &__btn.is-disabled .dropdown__icon {
+    display: none;
+  }
+
+  &__inner {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  // --------------------------------------------------
+  // Dropdown icon
+  // --------------------------------------------------
+  &__icon .icon {
+    .icon-triangle-down;
+  }
+
+  &__btn[aria-expanded="true"] .dropdown__icon .icon {
+    .icon-triangle-up;
+  }
+  // --------------------------------------------------
+
+  &__list {
+    position: absolute;
+    max-height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    z-index: 5000;
+  }
+
+  &__item {
+    cursor: pointer;
+    background-color: @white;
+  }
+}

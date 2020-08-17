@@ -1,0 +1,83 @@
+{
+    "_id": "c-04",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "ppq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts":1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight":1,
+    "_selectable":1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_developerMode": true,
+    "_resetPinsOnPinboardChange": false,
+    "title": "PPQ",
+    "displayTitle": "PPQ",
+    "body": "Body",
+    "instruction": "",
+    "_pinboardDesktop": {
+        "src": "course/en/images/hotgraphic.png",
+        "alt": "alt text",
+        "title": "title text"
+    },
+    "_pinboardMobile": {
+        "src": "course/en/images/ppq-mobile.png",
+        "alt": "alt text",
+        "title": "title text"
+    },
+    "_items": [
+        {
+            "desktop": {
+                "left": 20,
+                "top": 48,
+                "width": 10,
+                "height": 10
+            },
+            "mobile": {
+                "left": 20,
+                "top": 70,
+                "width": 20,
+                "height": 20
+            }
+        },
+        {
+            "desktop": {
+                "left": 40,
+                "top": 48,
+                "width": 10,
+                "height": 10
+            },
+            "mobile": {
+                "left": 40,
+                "top": 40,
+                "width": 20,
+                "height": 20
+            }
+        },
+        {
+            "desktop": {
+                "left": 60,
+                "top": 48,
+                "width": 10,
+                "height": 10
+            },
+            "mobile": {
+                "left": 60,
+                "top": 10,
+                "width": 20,
+                "height": 20
+            }
+        }
+    ],
+    "_feedback": {
+        "correct": "Congratulations, this is the correct feedback.",
+        "_partlyCorrect": {
+            "final": "This is the partly correct feedback."
+        },
+        "_incorrect": {
+            "final": "Unfortunately this is the incorrect feedback."
+        }
+    }
+}

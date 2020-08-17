@@ -1,0 +1,20 @@
+<div class="beforeafter__inner component__inner" role="region" aria-label="{{_globals._components._beforeafter.ariaRegion}}">
+    {{> component this}}
+    <div class="beforeafter__widget component__widget{{#if _beforeafter.attribution}} beforeafter-widget-attribution{{/if}}">
+      <img src="{{_beforeafter.after}}" {{#if _beforeafter.alt}} alt="{{_beforeafter.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+      <div class="resize">
+        <img src="{{_beforeafter.before}}" {{#if _beforeafter.altbefore}} alt="{{_beforeafter.altbefore}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+      </div>
+      <span class="aria-label" role="region" tabindex="0" style="min-width: 100%;">Press the right and left arrow keys to reveal the before and after states</span>
+      <div class="handle" tabindex="0"></div>
+      <select class="handle" tabindex="0" style="display:none;"></select>
+    </div>
+    {{#if _beforeafter.attribution}}
+      <div class="beforeafter-attribution" tabindex="0">{{{_beforeafter.attribution}}}</div>
+    {{/if}}
+    {{#if bottomText}}
+      <div class="beforeafter-bottom-text" tabindex="0">
+        {{{bottomText}}}
+      </div>
+    {{/if}}
+</div>

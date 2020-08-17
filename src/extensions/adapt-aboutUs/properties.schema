@@ -1,0 +1,168 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object",
+          "properties":{
+            "_aboutUs": {
+              "legend": "About Us",
+              "type":"object",
+              "required":false,
+              "properties":{
+                                "_isEnabled": {
+                                    "type": "boolean",
+                                    "required": true,
+                                    "title": "Enable About Us",
+                                    "default": false,
+                                    "inputType": {
+                                        "type": "Boolean",
+                                        "options": [
+                                            false,
+                                            true
+                                        ]
+                                    },
+                                    "validators": [],
+                                    "help": "If set to 'true', the About Us extension will be enabled"
+                                },
+              "_drawerOrder": {
+                  "type": "number",
+                  "required": false,
+                  "title": "Drawer order",
+                  "inputType": "Number",
+                  "default": 0,
+                  "help": "The order in which this extension should appear as a drawer item",
+                  "validators": ["number"]
+                },
+                "title": {
+                  "type":"string",
+                  "required":true,
+                  "title":"Drawer title",
+                  "default": "About Us",
+                  "inputType": "Text",
+                  "translatable": true
+                },
+                "description": {
+                  "type":"string",
+                  "required":true,
+                  "title":"Drawer description",
+                  "inputType": "Text",
+                  "translatable": true
+                },
+                "headline": {
+                  "type":"string",
+                  "required":false,
+                  "default": "",
+                  "title":"Organization name or headline",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_graphic": {
+                  "type":"object",
+                  "required":false,
+                  "title": "Optional graphic",
+                  "properties":{
+                    "alt": {
+                      "type":"string",
+                      "required":false,
+                      "default": "",
+                      "title": "Alt text",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Text for the alt attribute of this image",
+                      "translatable": true
+                    },
+                    "src": {
+                      "type":"string",
+                      "required":false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "validators": []
+                    }
+                  }
+                },
+                "_aboutUsItems": {
+                  "type":"array",
+                  "required":false,
+                  "title":"Text items",
+                  "items": {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                      "title": {
+                          "type":"string",
+                          "required":false,
+                          "default": "",
+                          "title":"Item title",
+                          "inputType": "Text",
+                          "validators": [],
+                          "translatable": true
+                      },
+                      "description": {
+                        "type":"string",
+                        "required":false,
+                        "default": "",
+                        "title": "Item body",
+                        "inputType": "TextArea",
+                        "validators": [],
+                        "translatable": true
+                      }
+                    }
+                  }
+                },
+                "_socialLinks": {
+                  "type":"array",
+                  "required":false,
+                  "title": "Social media links",
+                  "items": {
+                    "type":"object",
+                    "required":true,
+                    "properties":{
+                      "_link": {
+                        "type":"string",
+                        "required":false,
+                        "default": "",
+                        "title":"URL to your account",
+                        "inputType": "Text",
+                        "validators": []
+                      },
+                      "_service": {
+                        "type":"string",
+                        "required":false,
+                        "default": "",
+                        "title":"Name of social networking service",
+                        "inputType": {"type": "Select", "options": ["Twitter", "Facebook", "LinkedIn", "GooglePlus", "YouTube", "Pinterest", "Instagram", "Vimeo", "flickr", "Picasa", "Lanyrd", "DeviantArt", "Steam", "Blogger", "Tumblr", "SoundCloud", "XING", "Feed"]}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}

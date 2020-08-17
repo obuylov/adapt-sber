@@ -1,0 +1,103 @@
+// To go in the course.json file
+"_aboutUs": {
+    "_isEnabled": true,
+    "title": "About Us",
+    "description": "Get to know us better",
+    "_graphic": {
+        "src": "course/en/images/ex-logo.png",
+        "alt": "company logo depicting the top half of a star"
+    },
+    "headline": "Learning Light, Ltd.",
+    "_aboutUsItems": [
+        {
+            "title":"Our Mission",
+            "description":"This is placeholder text. &quot;Our Mission&quot; can be replaced with the section header of your choice. And you can use HTML in this area if you choose."
+        },
+        {
+            "title":"Contact Us",
+            "description":"This is placeholder text. &quot;Contact Us&quot; can be replaced with the section header of your choice. And you can use HTML in this area if you choose."
+        },
+        {
+            "title":"Find Us",
+            "description":"This is placeholder text. &quot;Find Us&quot; can be replaced with the section header of your choice. And you can use HTML in this area if you choose."
+        },
+        {
+            "title":"Partner with Us",
+            "description":"This is placeholder text. &quot;Careers&quot; can be replaced with the section header of your choice. And you can use HTML in this area if you choose."
+        }
+    ],
+    "_socialLinks":[
+        {
+            "_service":"Twitter",
+            "_link": "http://www.twitter.com"
+        },
+        {
+            "_service":"Facebook",
+            "_link": "http://www.facebook.com"
+        },
+        {
+            "_service":"YouTube",
+            "_link": "http://www.youtube.com"
+        },
+        {
+            "_service":"LinkedIn",
+            "_link": "http://www.linkedin.com"
+        },
+        {
+            "_service":"Pinterest",
+            "_link": ""
+        },
+        {
+            "_service":"Instagram",
+            "_link": ""
+        },
+        {
+            "_service":"GooglePlus",
+            "_link": ""
+        },
+        {
+            "_service":"Feed",
+            "_link": ""
+        },
+        {
+            "_service":"Vimeo",
+            "_link": ""
+        },
+        {
+            "_service":"Lanyrd",
+            "_link": ""
+        },
+        {
+            "_service":"flickr",
+            "_link": ""
+        },
+        {
+            "_service":"Picasa",
+            "_link": ""
+        },
+        {
+            "_service":"DeviantArt",
+            "_link": ""
+        },
+        {
+            "_service":"Steam",
+            "_link": ""
+        },
+        {
+            "_service":"Blogger",
+            "_link": ""
+        },
+        {
+            "_service":"Tumblr",
+            "_link": ""
+        },
+        {
+            "_service":"SoundCloud",
+            "_link": ""
+        },
+        {
+            "_service":"XING",
+            "_link": ""
+        }
+    ]
+}

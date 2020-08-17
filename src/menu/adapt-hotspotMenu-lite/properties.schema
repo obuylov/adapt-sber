@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/menu/model.schema",
+  "globals": {
+    "durationLabel": {
+      "type": "string",
+      "default": "Duration: ",
+      "title": "Duration label",
+      "inputType": "Text",
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_hotspotMenu": {
+              "type": "object",
+              "legend": "Hotspot Menu",
+              "properties": {
+                "_backgroundSrc": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Background source",
+                  "inputType": "Asset:image",
+                  "help": "Choose the background graphic"
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_hotspotMenu": {
+              "type": "object",
+              "legend": "Hotspot Menu",
+              "properties": {
+                "_top": {
+                  "type": "number",
+                  "default": 0,
+                  "title": "Top",
+                  "inputType": "Number",
+                  "validators": [
+                    "required"
+                  ],
+                  "help": "Enter the vertical position as a percentage"
+                },
+                "_left": {
+                  "type": "number",
+                  "default": 0,
+                  "title": "Left",
+                  "inputType": "Number",
+                  "validators": [
+                    "required"
+                  ],
+                  "help": "Enter the horizontal position as a percentage"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

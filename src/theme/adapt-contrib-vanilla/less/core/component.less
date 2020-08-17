@@ -1,0 +1,31 @@
+.component {
+  &__title {
+    margin-bottom: @component-title-margin;
+    .component-title;
+    color: @heading-color;
+  }
+
+  &__body {
+    margin-bottom: @component-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @component-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+}
+
+.component.is-left + .component.is-right {
+  // Converted media query to use min width to sync responsive trigger with js
+  // https://github.com/adaptlearning/adapt_framework/issues/2865
+  padding-top: @block-padding-ver;
+
+  @media (min-width: @device-width-medium) {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,39 @@
+.matching {
+  &__select-icon {
+    display: none;
+  }
+
+  // --------------------------------------------------
+  // Matching item icons
+  // --------------------------------------------------
+  &__select-correct-icon .icon {
+    .icon-tick;
+  }
+
+  &__select-incorrect-icon .icon {
+    .icon-cross;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the users selection
+  // --------------------------------------------------
+  &__widget.show-user-answer {
+    .is-correct .matching__select-correct-icon,
+    .is-incorrect .matching__select-incorrect-icon {
+      display: block;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer {
+    .is-correct .matching__select-correct-icon,
+    .is-incorrect .matching__select-correct-icon {
+      display: block;
+    }
+  }
+  // --------------------------------------------------
+}

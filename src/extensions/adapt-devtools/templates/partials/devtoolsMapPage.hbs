@@ -1,0 +1,97 @@
+<div class="devtools__map-section is-content-object{{#if @last}} is-last{{/if}}">
+
+  <a href="#{{getProp "_id"}}" class="devtools__map-section-title is-content-object{{#when "_isComplete"}} is-complete{{/when}}{{#when "_isOptional"}} is-optional{{/when}}{{#when "_isAvailable"}} is-available{{/when}}">
+
+    <div class="devtools__map-info is-content-object">
+      <div class="devtools__map-id is-content-object">
+        {{getProp "_id"}}
+      </div>
+    </div>
+
+    <div class="devtools__map-label is-content-object">
+      {{getTitle}}
+    </div>
+
+  </a>
+
+  <div class="devtools__map-container is-article">
+
+    {{#eachChild}}
+    <div class="devtools__map-section is-article{{#if @last}} is-last{{/if}}">
+
+      <a href="#{{getProp "_id"}}" class="devtools__map-section-title is-article{{#when "_isComplete"}} is-complete{{/when}}{{#when "_isOptional"}} is-optional{{/when}}{{#when "_isAvailable"}} is-available{{/when}}">
+
+        <div class="devtools__map-info is-article">
+          <div class="devtools__map-id is-article">
+            {{getProp "_id"}}
+          </div>
+
+          {{#isTrickled}}
+          <div class="devtools__map-trickle is-article"></div>
+          {{/isTrickled}}
+        </div>
+
+        <div class="devtools__map-label is-article">
+          {{getTitle}}
+        </div>
+
+      </a>
+
+      <div class="devtools__map-container is-block">
+
+        {{#eachChild}}
+        <div class="devtools__map-section is-block{{#if @last}} is-last{{/if}}">
+
+          <a href="#{{getProp "_id"}}" class="devtools__map-section-title is-block{{#when "_isComplete"}} is-complete{{/when}}{{#when "_isOptional"}} is-optional{{/when}}{{#when "_isAvailable"}} is-available{{/when}}">
+
+            <div class="devtools__map-info is-block">
+              <div class="devtools__map-id is-block">
+                {{getProp "_id"}}
+              </div>
+
+              {{#isTrickled}}
+              <div class="devtools__map-trickle is-block"></div>
+              {{/isTrickled}}
+            </div>
+
+          </a>
+
+          <div class="devtools__map-section is-component">
+
+            {{#eachChild}}
+            <a href="#{{getProp "_id"}}" class="devtools__map-component index-{{@index}}{{#if @last}} is-last{{/if}}{{#when "_isComplete"}} is-complete{{/when}}{{#when "_isOptional"}} is-optional{{/when}}{{#when "_isAvailable"}} is-available{{/when}}{{#when "_isSubmitted"}}{{#when "_isCorrect"}} is-correct{{else}} is-incorrect{{/when}}{{/when}}">
+
+              <div class="devtools__map-id is-component">
+                {{getProp "_id"}}
+              </div>
+
+              <div class="devtools__map-info is-component">
+                <div class="devtools__map-type">
+                  {{getProp "_component"}}
+                </div>
+
+                <div class="devtools__map-icon">
+                  <div class="icon"></div>
+                </div>
+              </div>
+
+              <div class="devtools__map-label is-component">
+                {{getTitle}}
+              </div>
+
+            </a>
+            {{/eachChild}}
+
+          </div>
+
+        </div>
+        {{/eachChild}}
+
+      </div>
+
+    </div>
+    {{/eachChild}}
+
+  </div>
+
+</div>

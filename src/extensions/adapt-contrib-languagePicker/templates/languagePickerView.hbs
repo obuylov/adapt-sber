@@ -1,0 +1,31 @@
+<div class="languagepicker__inner">
+
+  {{#if displayTitle}}
+  <div class="languagepicker__title">
+    <div class="languagepicker__title-inner" role="heading" aria-level="1">
+      {{{compile displayTitle}}}
+    </div>
+  </div>
+  {{/if}}
+
+  {{#if body}}
+  <div class="languagepicker__body">
+    <div class="languagepicker__body-inner">
+      {{{compile body}}}
+    </div>
+  </div>
+  {{/if}}
+
+  <div class="languagepicker__languages">
+    <div class="languagepicker__languages-inner">
+
+      {{#each _languages}}
+      <button class="btn-text languagepicker__language-btn is-{{_language}} js-languagepicker-btn-click" role="link" value="{{_language}}">
+        {{{compile displayName}}}
+      </button>
+      {{/each}}
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,4 @@
+// add to course.json or contentObjects.json
+"_keepScrollPosition": {
+    "_isEnabled": true
+}

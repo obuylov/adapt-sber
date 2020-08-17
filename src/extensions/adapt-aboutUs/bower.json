@@ -1,0 +1,20 @@
+{
+  "name": "adapt-aboutUs",
+    "version": "2.0.0",
+    "framework": ">=5.0.0",
+  "homepage": "https://github.com/chucklorenz/adapt-aboutUs",
+  "issues": "https://github.com/chucklorenz/adapt-aboutUs/issues",
+  "authors": [
+    "Chuck Lorenz <chuck.lorenz@clearlearning.tech>"
+  ],
+  "displayName" : "About Us",
+  "extension" : "aboutUs",
+  "description": "An Adapt extension that adds to the drawer information about the sponsoring organization",
+  "main": "/js/adapt-aboutUs.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_aboutUs"
+}

@@ -1,0 +1,83 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_items": {
+      "type": "array",
+      "required": false,
+      "title": "Images",
+      "items": {
+        "type":"object",
+        "required":true,
+        "title": "Graphic",
+        "properties":{
+          "title": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Title displayed above the image",
+            "translatable": true
+          },
+          "alt": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Alternative Text",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Alternative text for this image",
+            "translatable": true
+          },
+          "src": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Select image",
+            "inputType": "Asset:image",
+            "validators": ["required"],
+            "help": ""
+          }
+        }
+      }
+    },
+    "bottomText": {
+      "type": "string",
+      "required": false,
+      "inputType": "TextArea",
+      "title": "Bottom Text",
+      "default": "",
+      "validators": [],
+      "help": "Enter bottom text which is inserted under the interactive element"
+    }
+  }
+}

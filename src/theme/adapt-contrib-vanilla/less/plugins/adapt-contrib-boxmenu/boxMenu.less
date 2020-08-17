@@ -1,0 +1,46 @@
+.boxmenu {
+  max-width: inherit;
+  .l-container-padding(@menu-padding-ver, @menu-padding-hoz);
+
+  &.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__header.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__header-inner {
+    .l-container-padding(@menu-header-padding-ver, @menu-header-padding-hoz);
+  }
+
+  &__title {
+    margin-bottom: @menu-title-margin;
+    .menu-title;
+    color: @heading-color;
+  }
+
+  &__subtitle {
+    margin-bottom: @menu-subtitle-margin;
+    .menu-subtitle;
+  }
+
+  &__body {
+    margin-bottom: @menu-body-margin;
+    .menu-body;
+  }
+
+  &__instruction {
+    margin-bottom: @menu-instruction-margin;
+    .menu-instruction;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+}

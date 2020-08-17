@@ -1,0 +1,21 @@
+.aboutus__item {
+        display:block;
+
+  .aboutus__item-body {
+        display:none;
+    color: @drawer-item-inverted;
+            padding:@item-padding;
+    border-bottom: 1px solid @drawer-item-hover;
+  }
+
+  .aboutus__item-body a {
+    color: @drawer-link;
+    .link-text;
+
+    .no-touch &:hover {
+      color: @drawer-link-hover;
+      .transition(color @duration ease-in);
+        }
+    }
+
+}

@@ -1,0 +1,170 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Assessment results.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_isVisibleBeforeCompletion": {
+      "type": "boolean",
+      "required": true,
+      "default": true,
+      "title": "Show before assessment completion",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "Controls whether this component will be visible or hidden prior to the assessment having been completed."
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "required": false,
+      "default": "inview",
+      "title": "Set completion on:",
+      "enum": ["inview", "pass"],
+      "inputType": {
+        "type": "Select",
+        "options": ["inview", "pass"]
+      },
+      "validators": [],
+      "help": "Set to 'pass' to have the component mark as completed only if the learner passed the associated assessment."
+    },
+    "_resetType": {
+      "type": "string",
+      "required": false,
+      "default": "inherit",
+      "title": "Reset type:",
+      "enum": ["inherit", "hard", "soft"],
+      "inputType": {
+        "type": "Select",
+        "options": ["inherit", "hard", "soft"]
+      },
+      "validators": [],
+      "help": "Set to 'inherit' to use the same reset type as the assessment. Set to 'hard' to have the component's completion reset when the assessment is reset, set to 'soft' if you don't want completion to be reset."
+    },
+    "_assessmentId": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "title": "Assessment Name",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the unique name of the assessment for which results should be displayed. If you only have one assessment you can leave this blank."
+    },
+    "_retry": {
+      "type": "object",
+      "required": true,
+      "title": "",
+      "properties": {
+        "button": {
+          "type": "string",
+          "required": false,
+          "default": "Retry Assessment",
+          "title": "Retry Button Text",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true,
+          "help": "Text that appears on the retry button."
+        },
+        "feedback": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Retry Text",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "This text is displayed only when more attempts remain. You can use the following variables: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{{score}}}, {{{maxScore}}}.",
+          "translatable": true
+        },
+        "_routeToAssessment": {
+          "type": "boolean",
+          "required": true,
+          "default": false,
+          "title": "Redirect to assessment on retry",
+          "inputType": "Checkbox",
+          "validators": [],
+          "help": "When enabled, this will take the user back to the assessment when the \"Retry Assessment\" button is clicked."
+        }
+      }
+    },
+    "_completionBody": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Feedback Text",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "This text overwrites the standard body attribute upon completion of the assessment. It may make use of the following variables: {{attemptsSpent}}, {{attempts}}, {{attemptsLeft}}, {{{score}}}, {{{maxScore}}}. {{{feedback}}}, representing the feedback assigned to the appropriate band, is also allowed.",
+      "translatable": true
+    },
+    "_bands": {
+      "type": "array",
+      "required": true,
+      "title": "Bands",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "_score": {
+            "type": "number",
+            "required": false,
+            "title": "Score",
+            "inputType": "Number",
+            "validators": ["number"],
+            "help": "Enter a value representing the raw score or percentage for the start of the range."
+          },
+          "feedback": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "inputType": "TextArea",
+            "validators": [],
+            "translatable": true,
+            "help": "This text will be displayed to the learner when the learner's score falls within this band's range."
+          },
+          "_allowRetry": {
+            "type": "boolean",
+            "required": true,
+            "default": true,
+            "title": "Allow Retry",
+            "inputType": "Checkbox",
+            "validators": [],
+            "help": "Determines whether the learner will be allowed to re-attempt the assessment. If not set, the learner will not be allowed to retry the assessment regardless of any remaining attempts."
+          },
+          "_classes": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Classes",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Classes to be applied to the containing article. Allows for custom styling based on the band the learner's score falls into."
+          }
+        }
+      }
+    }
+  }
+}

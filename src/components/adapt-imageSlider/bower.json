@@ -1,0 +1,20 @@
+{
+    "name": "adapt-imageSlider",
+    "repository": "git://github.com/LearnChamp/adapt-imageSlider",
+    "framework": ">=5.0.0",
+    "version": "5.0.1",
+    "homepage": "https://github.com/LearnChamp/adapt-imageSlider",
+    "issues": "",
+    "displayName": "Image Slider",
+    "component": "imageSlider",
+    "assetFields": [
+        "_items.src"
+    ],
+    "description": "Simple image slider component",
+    "main": "/js/adapt-image-slider.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": ""
+}

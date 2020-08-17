@@ -1,0 +1,291 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Image with selectable areas. Select each button to show more information.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    },
+    "popupPagination": {
+      "type": "string",
+      "required": true,
+      "default": "{{itemNumber}} / {{totalItems}}",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the aria label for each item. Use {{itemNumber}} and {{totalItems}} in your text to tell the user which item they are viewing and how many items there are in total.",
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "required": false,
+      "default": "allItems",
+      "title": "Set completion on:",
+      "enum": ["inview", "allItems"],
+      "inputType": {
+        "type": "Select",
+        "options": ["inview", "allItems"]
+      },
+      "validators": [],
+      "help": "Whether completion is based on the learner having viewed all the items - or just having viewed the component"
+    },
+    "_graphic": {
+      "type": "object",
+      "required": false,
+      "title": "Main hotgraphic",
+      "properties": {
+        "src": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "This is the image that appears behind the pins"
+        },
+        "alt": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Alternative text for the image",
+          "translatable": true
+        },
+        "attribution": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text to be displayed as an attribution",
+          "translatable": true
+        }
+      }
+    },
+    "mobileBody": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "This body text is displayed on mobile devices when this component turns into a Narrative",
+      "translatable": true
+    },
+    "mobileInstruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "This instruction text is displayed on mobile devices when this component turns into a Narrative",
+      "translatable": true
+    },
+    "_hidePagination": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Hide pagination",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, the progress indicator and previous and next links will not be shown on the popup toolbar"
+    },
+    "_canCycleThroughPagination": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Cycle through item pagination",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, the popup navigation buttons will cycle continuously through the popup items (i.e. clicking next whilst on the last item will cause the first item to be shown."
+    },
+    "_useNumberedPins": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Use numbered pins",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, the pin icons will be replaced with the item number. Useful if you want pins to be visited in a set order or show steps in a process."
+    },
+    "_useGraphicsAsPins": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Use graphics as pins",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, the main graphic will be hidden and pins will be displayed as images which can be positioned using classes"
+    },
+    "_isRound": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Should item image be round?",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, a 50% border radius will be applied to the items pop up images."
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Hot Graphic Pins",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Title displayed in the popup",
+            "translatable": true
+          },
+          "_ariaLevel": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Title level",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Aria level for title"
+          },
+          "body": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "TextArea",
+            "validators": ["required"],
+            "help": "Body text displayed in the popup",
+            "translatable": true
+          },
+          "strapline": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "Text",
+            "validators": ["required"],
+            "help": "Strapline - displayed on mobile version only",
+            "translatable": true
+          },
+          "_graphic": {
+            "type": "object",
+            "required": true,
+            "title": "Item Graphic",
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": ["required"],
+                "help": "Image to be displayed in a popup when this item is selected."
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Alternative text for the popup image",
+                "translatable": true
+              },
+              "attribution": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Text to be displayed as an attribution for the popup image",
+                "translatable": true
+              },
+              "_classes": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Graphic Classes",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Allows you to specify custom CSS classes to be applied to the hotgraphic pin or, alternatively, to the hotspot tile when _useGraphicsAsPins is set to true"
+              }
+            }
+          },
+          "_pin": {
+            "type": "object",
+            "required": false,
+            "title": "Item Pin",
+            "properties": {
+              "src": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": [] ,
+                "help": "This is the pin image, leave blank for default"
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Alternative text for this image",
+                "translatable": true
+              }
+            }
+          },
+          "_classes": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item Popup Classes",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Allows you to specify custom CSS classes to be applied to the popup item. Supported classes are 'align-image-left', 'hide-desktop-image', and 'hide-popup-image' which aligns the item image to the left, hides the pop up image in desktop view, and hides the pop up image for all screen sizes respectively."
+          },
+          "_left": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Pin Position - Left",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Left position of pin"
+          },
+          "_top": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Pin Position - Top",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Top position of pin"
+          }
+        }
+      }
+    }
+  }
+}

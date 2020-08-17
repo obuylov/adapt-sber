@@ -1,0 +1,190 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "This component is an image reveal comprised of an intial image with description and a button when pressed reveals a new image with it's description. You can toogle back and forth between the intial and revealed image.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_direction": {
+      "type": "string",
+      "required": true,
+      "enum": ["left", "right"],
+      "default": "left",
+      "title": "Direction",
+      "inputType": {"type": "Select", "options":["left", "right", "top", "bottom"]},
+      "validators": ["required"],
+      "help": "Indicates the direction content will be revealed from"
+    },
+    "control": {
+      "type":"object",
+      "required":false,
+      "title": "Control (optional)",
+      "properties":{
+        "hideText": {
+          "type": "string",
+          "required": false,
+          "title": "Label for 'hide' text",
+          "default": "Hide",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text which when clicked hides the reveal",
+          "translatable": true
+        },
+        "showText": {
+          "type": "string",
+          "required": false,
+          "title": "Label for 'show' text",
+          "default": "Show",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text which when clicked shows the reveal",
+          "translatable": true
+        }
+      }
+    },
+    "first": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "title": {
+          "type":"string",
+          "required":false,
+          "title": "Title",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Title of the initial item",
+          "translatable": true
+        },
+        "src": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Initial image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "Image to be displayed intially"
+        },
+        "alt": {
+          "type":"string",
+          "required":false,
+          "title": "Alternative text",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text displayed when hovering over the image",
+          "translatable": true
+        },
+        "body": {
+          "type":"string",
+          "required": false,
+          "default": "",
+          "title": "Initial text",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Initial text to be displayed over the image",
+          "translatable": true
+        },
+        "moreText": {
+          "type":"string",
+          "required":false,
+          "title": "Label for 'more' text",
+          "default": "More",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text which is placed in the link for 'more' text",
+          "translatable": true
+        }
+      }
+    },
+    "second": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "title": {
+          "type":"string",
+          "required":false,
+          "title": "Title",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Title of the revealed item",
+          "translatable": true
+        },
+        "src": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Revealed image",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "Image to be displayed on reveal"
+        },
+        "alt": {
+          "type":"string",
+          "required":false,
+          "title": "Alternative text",
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text displayed when hovering over the image",
+          "translatable": true
+        },
+        "body": {
+          "type":"string",
+          "required": false,
+          "default": "",
+          "title": "Reveal text",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Text which will be displayed on reveal",
+          "translatable": true
+        },
+        "moreText": {
+          "type":"string",
+          "required":false,
+          "title": "Label for 'more' text",
+          "default": "More",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text which is placed in the link for 'more' text",
+          "translatable": true
+        }
+      }
+    },
+    "bottomText": {
+      "type": "string",
+      "required": false,
+      "inputType": "TextArea",
+      "title": "Bottom Text",
+      "default": "",
+      "validators": [],
+      "help": "Enter bottom text which is inserted under the interactive element"
+    }
+  }
+}

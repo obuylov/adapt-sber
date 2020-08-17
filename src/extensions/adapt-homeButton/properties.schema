@@ -1,0 +1,132 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_homeButton": {
+              "type": "object",
+              "required": false,
+              "legend": "Home Button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable control of the home button plugin",
+                  "inputType": "Checkbox",
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_homeButton": {
+              "type": "object",
+              "required": false,
+              "legend": "Home Button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable control of the home button at menu level",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_hideHomeButton": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Hide the home button",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_redirectToId": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Redirect the home button to id",
+                  "inputType": "Text",
+                  "validators": []
+                },
+                "alt": {
+                  "type": "string",
+                  "required": false,
+                  "default": "Home",
+                  "title": "Home button alt text - applied globally",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_homeButton": {
+              "type": "object",
+              "required": false,
+              "legend": "Home Button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable control of the home button at page level",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_hideHomeButton": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Hide the home button",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_hideBackButton": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Hide the back button",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_redirectToId": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Redirect the home button to id",
+                  "inputType": "Text",
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

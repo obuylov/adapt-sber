@@ -1,0 +1,11 @@
+    // course.json
+    "_navigationLogo": {
+        "_isEnabled": true,
+        "_graphic": {
+            "src": "assets/example.png",
+            "_mobileSrc": "",
+            "alt": ""
+        },
+        "_fillNavHeight": false,
+        "_hideLogoForMobile": true
+    }

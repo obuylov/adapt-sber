@@ -4,26 +4,27 @@ define([
   'core/js/models/componentModel'
 ], function(Adapt, ComponentView, ComponentModel) {
 
-  var BlankView = ComponentView.extend({
+  class BlankView extends ComponentView {
 
-    preRender: function() {
+    preRender() {
       this.checkIfResetOnRevisit();
-    },
+    }
 
-    postRender: function() {
+    postRender() {
       this.setReadyStatus();
       this.setupInviewCompletion();
-    },
+    }
 
-    checkIfResetOnRevisit: function() {
-      var isResetOnRevisit = this.model.get('_isResetOnRevisit');
+    checkIfResetOnRevisit() {
+      const isResetOnRevisit = this.model.get('_isResetOnRevisit');
 
       if (isResetOnRevisit) {
         this.model.reset(isResetOnRevisit);
       }
     }
+  }
 
-  });
+  BlankView.template = 'blank';
 
   return Adapt.register('blank', {
     model: ComponentModel.extend({}),// create a new class in the inheritance chain so it can be extended per component type if necessary later

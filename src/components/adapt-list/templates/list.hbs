@@ -1,0 +1,47 @@
+<div class="component__inner list__inner">
+
+  {{> component this}}
+
+  <div class="component__widget list__widget">
+
+    <div class="list__container{{#if _orderedList}} is-ordered-list{{/if}}" role="list">
+
+      {{#each _items}}
+      <div class="list__item" role="listitem">
+
+        {{#if ../_orderedList}}
+        <div class="list__item-step-number"></div>
+        {{else if _imageSrc}}
+        <div class="list__item-image-container">
+          <img class="list__item-image" src="{{_imageSrc}}" {{#if alt}}aria-label="{{alt}}"{{else}}aria-hidden="true"{{/if}}>
+        </div>
+        {{/if}}
+
+        <div class="list__item-content">
+
+          {{#if title}}
+          <div class="list__item-title">
+            <div class="list__item-title-inner">
+              {{{compile title}}}
+            </div>
+          </div>
+          {{/if}}
+
+          {{#if body}}
+          <div class="list__item-body">
+            <div class="list__item-body-inner">
+              {{{compile body}}}
+            </div>
+          </div>
+          {{/if}}
+
+        </div>
+
+      </div>
+      {{/each}}
+
+    </div>
+
+  </div>
+
+</div>

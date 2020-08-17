@@ -1,0 +1,231 @@
+.narrative {
+  &__content {
+    display: none;
+
+    @media (min-width: @device-width-medium) {
+      display: block;
+      .u-float-right;
+      margin-left: 2%;
+      width: 38%;
+
+      .dir-rtl & {
+        margin-left: inherit;
+        margin-right: 2%;
+      }
+    }
+  }
+
+  // --------------------------------------------------
+  // Strapline
+  // Clickable element on mobile, opens notify
+  // --------------------------------------------------
+  &__strapline {
+    position: relative;
+
+    @media (min-width: @device-width-medium) {
+      display: none;
+    }
+  }
+
+  &__strapline-header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__strapline-btn {
+    position: relative;
+    .u-float-left;
+    padding: 0;
+    outline-offset: -5px;
+  }
+
+  .ie &__strapline-btn:focus .focus-rect {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    top: 5px;
+    left: 5px;
+    outline-color: highlight;
+    outline-style: solid;
+    outline-width: 3px;
+  }
+
+  &__strapline-title {
+    margin-right: @icon-size + (@item-padding * 2);
+    padding: @item-padding;
+    // Override button line height to match icon size
+    line-height: @icon-size;
+
+    .dir-rtl & {
+      margin-right: inherit;
+      margin-left: @icon-size + (@item-padding * 2);
+    }
+  }
+
+  &__strapline-title-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__strapline-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  &__strapline-icon .icon {
+    .icon-plus;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Graphic
+  // --------------------------------------------------
+  &__slide-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
+    @media (min-width: @device-width-medium) {
+      width: 60%;
+    }
+  }
+
+  &__slider-image-container {
+    .u-float-left;
+  }
+
+  // --------------------------------------------------
+  // Button controls
+  // --------------------------------------------------
+  &__controls-container {
+    position: relative;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    .transform(translateY(-50%));
+  }
+
+  &__controls-left {
+    left: 0;
+
+    .dir-rtl & {
+      left: inherit;
+      right: 0;
+    }
+  }
+
+  &__controls-left .icon {
+    .icon-controls-left;
+  }
+
+  &__controls-right {
+    right: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  &__controls-right .icon {
+    .icon-controls-right;
+  }
+
+  // --------------------------------------------------
+  // Progress indicators
+  // --------------------------------------------------
+  &__indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    @media (min-width: @device-width-medium) {
+      width: 60%;
+    }
+  }
+
+  &__progress {
+    height: @icon-size / 2;
+    width: @icon-size / 2;
+    margin: 0.25rem;
+    cursor: pointer;
+    background-color: @background;
+  }
+
+  &__progress.is-selected {
+    background-color: lighten(@background, 10%);
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // When the disable animation class is not present add a transition effect
+  // to the narrative graphic on desktop and strapline on mobile
+  // --------------------------------------------------
+  html:not(.disable-animation) & {
+    &__slider,
+    &__strapline-header-inner {
+      .transition(transform 400ms ease-in-out);
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Controls located in text content area
+  // Could we refactor this better?
+  // --------------------------------------------------
+  &__content {
+    .narrative__controls,
+    .narrative__indicators {
+      display: none;
+    }
+  }
+
+  &__text-controls {
+    .narrative__content {
+      position: relative;
+      padding-top: @icon-size + (@icon-padding * 2);
+
+      .narrative__indicators {
+        display: flex;
+      }
+
+      .narrative__controls-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .narrative__controls {
+        position: relative;
+        top: 0;
+        display: block;
+        transform: none;
+      }
+    }
+
+    // Hide slide controls and indicators until single column view
+    // --------------------------------------------------
+    @media (min-width: @device-width-medium) {
+      .narrative__slide-container .narrative__controls,
+      .narrative__slide-indicators {
+        display: none;
+      }
+    }
+  }
+  // --------------------------------------------------
+}

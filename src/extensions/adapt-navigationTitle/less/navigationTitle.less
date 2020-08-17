@@ -1,0 +1,15 @@
+.navigation-title {
+  // nav min height based on known icon btn size (vars defined in core)
+  @navMinHeight: (@icon-padding * 2) + @icon-size;
+
+  .u-float-left;
+  display: inline-flex;
+  align-items: center;
+  min-height: @navMinHeight;
+  padding-right: @icon-padding;
+
+  .dir-rtl & {
+    padding-left: @icon-padding;
+    padding-right: inherit;
+  }
+}

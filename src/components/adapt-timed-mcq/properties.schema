@@ -1,0 +1,504 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://jsonschema.net",
+    "$ref": "http://localhost/plugins/content/component/model.schema",
+    "globals": {
+        "ariaRegion": {
+            "type": "string",
+            "required": true,
+            "default": "This component is a timed multiple choice question. You must select the correct answer within the time limit.",
+            "inputType": "Text",
+            "validators": []
+        }
+    },
+    "properties": {
+        "_supportedLayout": {
+          "type": "string",
+          "required": true,
+          "enum": ["full-width", "half-width", "both"],
+          "default": "full-width",
+          "editorOnly": true
+        },
+        "_timedimgEnabled": {
+          "type": "boolean",
+          "required":true,
+          "default": false,
+          "title": "Enable timed image before question",
+          "inputType": { "type": "Boolean", "options": [false, true]},
+          "validators": [],
+          "help": "Set to true to enable an image with timer before the MCQ."
+        },
+        "_graphic": {
+          "type": "object",
+          "required": false,
+          "title": "Insert the timed image",
+          "properties": {
+            "src": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": [],
+              "help": "This is the image that appears before the question is displayed."
+            },
+            "alt": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "inputType": "Text",
+              "validators": [],
+              "help": "Alternative text for this image",
+              "translatable": true
+            }        
+          }
+        },
+        "instruction": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "help": "This is the instruction text"
+        },
+        "_attempts": {
+            "type": "hidden",
+            "required": false,
+            "default": "1",
+            "title": "Attempts",
+            "inputType": "Hidden",
+            "validators": [],
+            "help": "How many attempts the learner is allowed"
+        },
+        "_seconds": {
+            "type": "number",
+            "required": true,
+            "default": 5,
+            "title": "Seconds",
+            "inputType": "Number",
+            "validators": [
+                "required",
+                "number"
+            ],
+            "help": "Number of seconds allowed to answer the question."
+        },
+        "_timerReveal": {
+            "type": "string",
+            "required": false,
+            "default": "Reveal timed question",
+            "title": "Timer MCQ Reveal button text",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Button label text for the timed question before it is revealed."
+        },
+        "_shouldDisplayAttempts": {
+            "type": "hidden",
+            "required": false,
+            "default": false,
+            "title": "Display Attempts",
+            "inputType": {
+                "type": "Hidden",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            "validators": [],
+            "help": "Select 'true' to display the numbers of attempts left"
+        },
+        "_timeroffEnabled": {
+          "type": "boolean",
+          "required":true,
+          "default": false,
+          "title": "Disable Timer Feature",
+          "inputType": { "type": "Boolean", "options": [false, true]},
+          "validators": [],
+          "help": "Set to true to disable the timer on this component."
+        },
+        "_isRandom": {
+            "type": "boolean",
+            "required": false,
+            "default": false,
+            "title": "Randomised Items",
+            "inputType": {
+                "type": "Boolean",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            "validators": [],
+            "help": "If set to 'true', all items will be randomised"
+        },
+        "_recordInteraction": {
+            "type": "boolean",
+            "required": false,
+            "default": true,
+            "title": "Record interaction",
+            "inputType": {
+                "type": "Boolean",
+                "options": [
+                    true,
+                    false
+                ]
+            },
+            "validators": [],
+            "help": "If set to 'true', the user's answer(s) will be recorded to cmi.interactions on the LMS (where supported)."
+        },
+        "_questionWeight": {
+            "type": "number",
+            "required": false,
+            "default": 1,
+            "title": "Question Weight",
+            "inputType": "Number",
+            "validators": [
+                "number"
+            ],
+            "help": "How much this question is worth"
+        },
+        "_selectable": {
+            "type": "number",
+            "required": true,
+            "default": 1,
+            "title": "Selectable Items",
+            "inputType": "Number",
+            "validators": [
+                "number",
+                "required"
+            ],
+            "help": "How many items are selectable"
+        },
+        "_showPercentagebar": {
+          "type": "boolean",
+          "required":true,
+          "default": false,
+          "title": "Display score in a percentage bar",
+          "inputType": { "type": "Boolean", "options": [false, true]},
+          "validators": [],
+          "help": "Set to true to display the users score as a percentage bar."
+        },
+        "_showPercenttext": {
+          "type":"string",
+          "required": false,
+          "default": "Overall Score:",
+          "title": "Percentage Bar Description Text",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Text that shows up in the progress bar at the bottom of the component before the percentage score."
+        },
+        "_themcqtotalscore": {
+          "type": "hidden",
+          "required": false,
+          "default": "0",
+          "title": "Total Correct Score",
+          "inputType": "Hidden",
+          "validators": []            
+        },
+        "_therequiredscore": {
+          "type": "hidden",
+          "required": false,
+          "default": "0",
+          "title": "Total Required Correct Answers",
+          "inputType": "Hidden",
+          "validators": []            
+        },
+        "_outofahundred": {
+          "type": "hidden",
+          "required": false,
+          "default": "0",
+          "title": "Percentage of Overall Score",
+          "inputType": "Hidden",
+          "validators": []            
+        },
+        "_itemscolumnnum": {
+          "type": "string",
+          "required": true,
+          "enum": ["1", "2", "3", "4"],
+          "inputType": {"type": "Select", "options": ["1", "2", "3", "4"]},
+          "title": "Select the Number of Item Columns",
+          "default": "1",
+          "validators": ["required"],
+          "help": "Choose an amount of columns to have for your items"
+        },
+        "_items": {
+            "type": "array",
+            "required": true,
+            "title": "Items",
+            "items": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "required": true,
+                        "default": "",
+                        "title": "Item Text",
+                        "inputType": "Text",
+                        "validators": [
+                            "required"
+                        ],
+                        "help": "This text will display as the item text"
+                    },
+                    "_shouldBeSelected": {
+                        "type": "boolean",
+                        "required": true,
+                        "default": true,
+                        "title": "Should Be Selected",
+                        "inputType": {
+                            "type": "Boolean",
+                            "options": [
+                                true,
+                                false
+                            ]
+                        },
+                        "validators": [],
+                        "help": "Set this item to 'true' if this is one of the correct answers"
+                    },
+                    "feedback": {
+                        "type": "string",
+                        "required": false,
+                        "default": "",
+                        "title": "Option Specific Feedback",
+                        "inputType": "Text",
+                        "validators": [],
+                        "help": "This text will be displayed as feedback if there is only one selectable item for this component"
+                    }
+                }
+            }
+        },
+        "_feedback": {
+            "type": "object",
+            "required": true,
+            "title": "Feedback",
+            "properties": {
+                "_showmyScore": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": false,
+                  "title": "Display users score in Feedback",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Set to true to display the users score within the feedback."
+                },
+                "correct": {
+                    "type": "string",
+                    "required": true,
+                    "default": "",
+                    "title": "Correct",
+                    "inputType": "TextArea",
+                    "validators": [
+                        "required"
+                    ],
+                    "help": "Correct feedback for this question"
+                },
+                "timeUp": {
+                    "type": "string",
+                    "required": true,
+                    "default": "",
+                    "title": "Time up",
+                    "inputType": "TextArea",
+                    "validators": [
+                        "required"
+                    ],
+                    "help": "Time is up feedback for this question"
+                },
+                "_incorrect": {
+                    "type": "object",
+                    "required": true,
+                    "title": "Incorrect Feedback",
+                    "properties": {
+                        "final": {
+                            "type": "string",
+                            "required": true,
+                            "default": "",
+                            "title": "Incorrect Final",
+                            "inputType": "TextArea",
+                            "validators": [
+                                "required"
+                            ],
+                            "help": "Incorrect feedback for the final attempt"
+                        },
+                        "notFinal": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "Incorrect Not Final",
+                            "inputType": "TextArea",
+                            "validators": [],
+                            "help": "Incorrect feedback for any attempt apart from the last attempt"
+                        }
+                    }
+                },
+                "_partlyCorrect": {
+                    "type": "object",
+                    "required": false,
+                    "properties": {
+                        "final": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "Partly Correct Final",
+                            "inputType": "TextArea",
+                            "validators": [],
+                            "help": "Partly correct feedback for the final attempt"
+                        },
+                        "notFinal": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "Partly Correct Not Final",
+                            "inputType": "TextArea",
+                            "validators": [],
+                            "help": "Partly correct feedback for any attempt apart from the last attempt"
+                        }
+                    }
+                }
+            }
+        },
+        "_buttons": {
+            "type": "object",
+            "title": "Buttons",
+            "required": false,
+            "properties": {
+                "_submit": {
+                    "type": "object",
+                    "title": "Submit",
+                    "properties": {
+                        "buttonText": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "QuestionButton",
+                            "validators": [],
+                            "help": "Button label text for the submit button"
+                        },
+                        "ariaLabel": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "Text",
+                            "validators": [],
+                            "help": "Aria label for the submit button"
+                        }
+                    }
+                },
+                "_reset": {
+                    "type": "object",
+                    "title": "Reset",
+                    "properties": {
+                        "buttonText": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "QuestionButton",
+                            "validators": [],
+                            "help": "Button label text for the reset button"
+                        },
+                        "ariaLabel": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "Text",
+                            "validators": [],
+                            "help": "Aria label for the reset button"
+                        }
+                    }
+                },
+                "_showCorrectAnswer": {
+                    "type": "object",
+                    "title": "Show Correct Answer",
+                    "properties": {
+                        "buttonText": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "QuestionButton",
+                            "validators": [],
+                            "help": "Button label text to show the model answer"
+                        },
+                        "ariaLabel": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "Text",
+                            "validators": [],
+                            "help": "Aria label for the show model answer button"
+                        }
+                    }
+                },
+                "_hideCorrectAnswer": {
+                    "type": "object",
+                    "title": "Hide Correct Answer",
+                    "properties": {
+                        "buttonText": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "QuestionButton",
+                            "validators": [],
+                            "help": "Button label text to hide the model answer"
+                        },
+                        "ariaLabel": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "Text",
+                            "validators": [],
+                            "help": "Aria label for the hide model answer button"
+                        }
+                    }
+                },
+                "_showFeedback": {
+                    "type": "object",
+                    "title": "Show Feedback",
+                    "properties": {
+                        "buttonText": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "QuestionButton",
+                            "validators": [],
+                            "help": "Button label text to show feedback"
+                        },
+                        "ariaLabel": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "title": "",
+                            "inputType": "Text",
+                            "validators": [],
+                            "help": "Aria label for the show feedback button"
+                        }
+                    }
+                },
+                "remainingAttemptsText": {
+                    "type": "hidden",
+                    "required": false,
+                    "default": "",
+                    "title": "Attempts Remaining Text",
+                    "inputType": "Hidden",
+                    "validators": [],
+                    "help": "Shown when there are multiple attempts left"
+                },
+                "remainingAttemptText": {
+                    "type": "hidden",
+                    "required": false,
+                    "default": "",
+                    "title": "Final Attempt Text",
+                    "inputType": "Hidden",
+                    "validators": [],
+                    "help": "Shown when there is one attempt left"
+                }
+            }
+        }
+    }
+}

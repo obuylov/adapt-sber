@@ -1,0 +1,107 @@
+<div class="component__inner graphic__inner" id="inner-{{_id}}" role="region" aria-label="{{_globals._components._graphic.ariaRegion}}">
+    
+    <div class="MultipleNotify-header component-header">
+      <div class="MultipleNotify-header-inner component-header-inner">
+
+        {{#if displayTitle}}
+        <div class="MultipleNotify-title component-title">
+            <div role="heading" tabindex="0" class="MultipleNotify-title-inner component-title-inner">
+              {{displayTitle}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if body}}
+        <div class="MultipleNotify-body">
+          <div tabindex="0" class="MultipleNotify-body-inner">
+            {{{body}}}
+          </div>
+        </div>
+        {{/if}}
+
+        {{#if instruction}}
+        <div class="MultipleNotify-instruction component-instruction">
+            <div tabindex="0" class="MultipleNotify-instruction-inner component-instruction-inner">
+                {{instruction}}
+            </div>
+        </div>
+        {{/if}}
+
+      </div>
+    </div>
+
+    <button class="btn-text notifymybut {{#if _buttonData.button.classadd}} notifyonbut {{/if}}" id="mybutton" style="display:none;">{{_buttonData.button.copypaste}}</button>
+
+    <div class="component__widget graphic__widget">
+      {{#if _graphic.large}}
+      <div class="graphic__image-container{{#if _graphic.attribution}} has-attribution{{/if}}">
+
+          <img class="graphic__image js-graphic-set-image-src" style="margin-top: 20px;" src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}" {{#if _graphic.alt}} alt="{{_graphic.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+
+          {{#if _graphic.attribution}}
+          <div class="component__attribution graphic__attribution">
+            <div class="component__attribution-inner graphic__attribution-inner">
+              {{{_graphic.attribution}}}
+            </div>
+          </div>
+          {{/if}}
+
+        </div>
+      {{/if}}
+    </div>
+
+    {{#if bottomText}}
+      <div class="textnotify-bottom-text" tabindex="0">
+        {{{bottomText}}}
+      </div>
+    {{/if}}
+    {{#if _buttonData}}
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ TEXT NOTIFY BUTTON ITEM CONTENT ] **********</div>
+        <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify Button Title ] = {{_buttonData.button.title}}
+          <div class="{{_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify Button Body ] = {{{_buttonData.button.message}}}</div>
+        </div>
+    {{/if}}
+    {{#if _alertData}}
+      {{#each _alertData}}
+        <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ TEXT NOTIFY ALERT ITEM {{@index}} CONTENT ] **********</div>
+        <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify {{@index}} Alert Title ] = {{title}}
+          <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify {{@index}} Alert Body ] = {{{message}}}</div>
+        </div>
+        <script class="{{../_id}}-fbnotify">
+          var $multinotifycounter = {{@index}}+1;
+          $('#inner-{{../_id}} #myalert[data-index="' + $multinotifycounter + '"]').click(function() {
+              $(this).addClass("popcount");
+              var $multinotifymsg = '{{{message}}}';
+              require('coreJS/adapt').trigger('notify:alert',{title:'{{title}}',body:$multinotifymsg,confirmText:'{{confirmButton}}' });return false;
+          });
+        </script>
+      {{/each}}
+    {{/if}}
+    {{#if _popupData}}
+      {{#each _popupData}}
+        <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ TEXT NOTIFY POPUP ITEM {{@index}} CONTENT ] **********</div>
+        <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify {{@index}} Popup Title ] = {{title}}
+          <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Text Notify {{@index}} Popup Body ] = {{{message}}}</div>
+        </div>
+        <script class="{{../_id}}-fbnotify">
+          var $multinotifycounter = {{@index}}+1;
+          $('#inner-{{../_id}} #mypopup[data-index="' + $multinotifycounter + '"]').click(function() {
+              $(this).addClass("popcount");
+              var $multinotifymsg = '{{{message}}}';
+              require('coreJS/adapt').trigger('notify:popup',{title:'{{title}}',body:$multinotifymsg });return false;
+          });
+        </script>
+      {{/each}}
+    {{/if}}
+    {{#if _externaLink}}
+      {{#each _externaLink}}
+        <script class="{{../_id}}-fbnotify">
+          var $multinotifycounter = {{@index}}+1;
+          $('#inner-{{../_id}} #myexternalink[data-index="' + $multinotifycounter + '"]').click(function() {
+              $(this).addClass("popcount");
+          });
+        </script>
+      {{/each}}
+    {{/if}}
+</div>
+<script class="{{_id}}-fbnotify">if ( !$('html').hasClass('pagesave2txt') ) { $( ".{{_id}}-fbnotify" ).remove(); }</script>

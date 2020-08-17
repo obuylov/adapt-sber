@@ -1,0 +1,25 @@
+{{! make the _globals object in course.json available to this template}}
+{{import_globals}}
+
+<div class="languagepicker-drawer">
+  {{{a11y_aria_label _globals._extensions._languagePicker.languageSelector}}}
+
+  <div class="languagepicker-drawer__inner" role="list">
+
+    {{#each _languages}}
+    <div class="languagepicker-drawer__item drawer__item is-{{_language}}{{#if _isSelected}} is-selected{{/if}}{{#equals _direction "ltr"}} is-ltr{{/equals}}{{#equals _direction "rtl"}} is-rtl{{/equals}}" role="listitem">
+
+        <button class="languagepicker-drawer__item-btn drawer__item-btn js-languagepicker-item-btn{{#if _isSelected}} is-disabled{{/if}}" data-language="{{_language}}"{{#if _isSelected}} disabled{{/if}}>
+          <div class="languagepicker-drawer__title drawer__item-title">
+            <div class="languagepicker-drawer__title-inner drawer__item-title-inner">
+              {{{compile displayName}}}
+            </div>
+          </div>
+        </button>
+
+    </div>
+
+    {{/each}}
+  </div>
+
+</div>

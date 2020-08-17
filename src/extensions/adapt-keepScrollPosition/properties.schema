@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_keepScrollPosition": {
+              "type": "object",
+              "required": false,
+              "legend": "Keep scroll position",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Whether the scroll position for the main menu will be remembered and restored when it is revisited."
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_keepScrollPosition": {
+              "type": "object",
+              "required": false,
+              "legend": "Keep scroll position",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Whether the scroll position for this page will be remembered and restored when it is revisited."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

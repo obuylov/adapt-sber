@@ -1,0 +1,20 @@
+{
+    "name": "adapt-timed-mcq",
+    "repository": "git://github.com/simondate/adapt-timed-mcq.git",
+    "framework": ">=5.0.0",
+    "version": "5.1.9",
+    "homepage": "https://github.com/simondate/adapt-timed-mcq",
+    "issues": "https://github.com/simondate/adapt-timed-mcq/issues",
+    "displayName": "Timed Multiple Choice Question",
+    "component": "timedMcq",
+    "description": "A customized timed multiple choice question component that puts a time limit on answering it. For framework 4.0.",
+    "assetFields" : [
+        "_graphic.src"
+    ],
+    "main": "/js/adapt-timed-mcq.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

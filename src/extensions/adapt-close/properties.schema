@@ -1,0 +1,158 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "globals": {
+    "closeButton": {
+      "type": "string",
+      "default": "Select here to close the window.",
+      "title": "Close button",
+      "inputType": "Text",
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_close": {
+              "type": "object",
+              "legend": "Close",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": true,
+                  "title": "Enabled?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_button": {
+                  "type": "object",
+                  "title": "Button",
+                  "properties": {
+                    "_closeViaLMSFinish": {
+                      "type": "boolean",
+                      "default": false,
+                      "title": "Close via LMSFinish?",
+                      "inputType": "Checkbox",
+                      "help": "Enables closing the course via the SCORM 'finish' function rather than by closing the window - useful for LMSes that don't open the course in a new window or don't allow the course window to be closed via JavaScript."
+                    },
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "title": "Enabled?",
+                      "inputType": "Checkbox",
+                      "help": "Set to 'true' to add a close button to the navigation bar"
+                    },
+                    "_notifyPromptIfIncomplete": {
+                      "type": "object",
+                      "title": "Notify prompt if incomplete",
+                      "properties": {
+                        "_isEnabled": {
+                          "type": "boolean",
+                          "default": false,
+                          "title": "Enabled?",
+                          "inputType": "Checkbox",
+                          "help": "Set to true to display a notify prompt if the close button is selected while the course is incomplete"
+                        },
+                        "title": {
+                          "type": "string",
+                          "default": "Confirm close",
+                          "inputType": "Text",
+                          "help": "Enter the prompt title",
+                          "translatable": true
+                        },
+                        "body": {
+                          "type": "string",
+                          "default": "Are you sure you want to close the window?",
+                          "inputType": "TextArea",
+                          "help": "Enter the prompt message",
+                          "translatable": true
+                        },
+                        "confirm": {
+                          "type": "string",
+                          "default": "Close window",
+                          "inputType": "Text",
+                          "help": "Enter the confirm button text",
+                          "translatable": true
+                        },
+                        "cancel": {
+                          "type": "string",
+                          "default": "Cancel",
+                          "inputType": "Text",
+                          "help": "Enter the cancel button text",
+                          "translatable": true
+                        }
+                      }
+                    },
+                    "_notifyPromptIfComplete": {
+                      "type": "object",
+                      "title": "Notify prompt if complete",
+                      "properties": {
+                        "_isEnabled": {
+                          "type": "boolean",
+                          "default": false,
+                          "title": "Enabled?",
+                          "inputType": "Checkbox",
+                          "help": "Set to 'true' to display a notify prompt if the close button is selected after the course has been completed"
+                        },
+                        "title": {
+                          "type": "string",
+                          "default": "Confirm close",
+                          "inputType": "Text",
+                          "help": "Enter the prompt title",
+                          "translatable": true
+                        },
+                        "body": {
+                          "type": "string",
+                          "default": "Are you sure you want to close the window?",
+                          "inputType": "TextArea",
+                          "help": "Enter the prompt message",
+                          "translatable": true
+                        },
+                        "confirm": {
+                          "type": "string",
+                          "default": "Close window",
+                          "inputType": "Text",
+                          "help": "Enter the confirm button text",
+                          "translatable": true
+                        },
+                        "cancel": {
+                          "type": "string",
+                          "default": "Cancel",
+                          "inputType": "Text",
+                          "help": "Enter the cancel button text",
+                          "translatable": true
+                        }
+                      }
+                    }
+                  }
+                },
+                "browserPromptIfIncomplete": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Browser prompt if incomplete",
+                  "inputType": "Text",
+                  "help": "Enter text to display a browser dialog if the window is closed while the course is incomplete",
+                  "translatable": true
+                },
+                "browserPromptIfComplete": {
+                  "type": "string",
+                  "default": "",
+                  "title": "Browser prompt if complete",
+                  "inputType": "Text",
+                  "help": "Enter text to display a browser dialog if the window is closed after the course has been completed",
+                  "translatable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

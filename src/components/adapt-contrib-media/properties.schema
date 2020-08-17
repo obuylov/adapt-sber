@@ -1,0 +1,309 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    },
+    "skipToTranscript": {
+      "type": "string",
+      "required": true,
+      "default": "Skip to transcript",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_media": {
+      "type": "object",
+      "required": true,
+      "title": "Media",
+      "properties": {
+        "mp4": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "MP4 Link",
+          "inputType": "Asset:video",
+          "validators": [],
+          "help": "Link to an MP4 video"
+        },
+        "ogv": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "OGV Link",
+          "inputType": "Asset:video",
+          "validators": [],
+          "help": "Link to an OGV video"
+        },
+        "webm": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "WEBM Link",
+          "inputType": "Asset:video",
+          "validators": [],
+          "help": "Link to a WEBM video"
+        },
+        "mp3": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "MP3 Link",
+          "inputType": "Asset:audio",
+          "validators": [],
+          "help": "Link to an MP3 audio"
+        },
+        "source": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Source URL",
+          "inputType": "Text",
+          "validators": [],
+          "help": "Enter an external link, such as a YouTube URL"
+        },
+        "type": {
+          "type": "string",
+          "required": false,
+          "enum": ["", "video/youtube", "video/vimeo"],
+          "default": "",
+          "title": "Type",
+          "inputType": {"type": "Select", "options":["", "video/youtube", "video/vimeo"]},
+          "validators": [],
+          "help": "Select the 'Source URL' type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo."
+        },
+        "poster": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Poster Link",
+          "inputType": "Asset:image",
+          "validators": [],
+          "help": "Image displayed before the video is played (except on Vimeo)"
+        },
+        "cc": {
+          "type": "array",
+          "required": false,
+          "title": "Closed Captions",
+          "items": {
+            "type": "object",
+            "required": false,
+            "properties": {
+              "srclang": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Language Code",
+                "inputType": "Text",
+                "validators": ["required"]
+              },
+              "src": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Caption File",
+                "inputType": "Asset:other",
+                "validators": ["required"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "_setCompletionOn": {
+      "type": "string",
+      "required": true,
+      "enum": ["inview", "play", "ended"],
+      "default": "play",
+      "title": "Completion trigger",
+      "inputType": {"type": "Select", "options":["inview", "play", "ended"]},
+      "validators": ["required"],
+      "help": "Defines what media event should trigger completion of this component."
+    },
+    "_useClosedCaptions": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Use Closed Captions",
+      "inputType": "Checkbox",
+      "validators": []
+    },
+    "_startLanguage": {
+      "type": "string",
+      "required": false,
+      "default": "en",
+      "title": "Initial Closed Captions language",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Select which closed caption language to display by default. Only required when closed captions are enabled and there are multiple languages."
+    },
+    "_showVolumeControl": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Show Volume Control (Not supported on mobile devices)",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "When enabled, the volume control will appear in the media player. On mobile devices the audio level is controlled the device's physical volume controls."
+    },
+    "_startVolume": {
+      "type": "string",
+      "required":true,
+      "enum": ["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"],
+      "default": "80%",
+      "title": "Default volume (Not supported on mobile devices)",
+      "inputType": {"type": "Select", "options":["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]},
+      "validators": ["required"],
+      "help": "Defines the default volume. On mobile devices the audio level is under the user's physical control"
+    },
+    "_allowFullScreen": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Allow Full Screen",
+      "inputType": "Checkbox",
+      "validators": []
+    },
+    "_pauseWhenOffScreen": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Pause playback when video is no longer in view.",
+      "inputType": "Checkbox",
+      "validators": []
+    },
+    "_playsinline": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Play videos inline on iOS",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, videos will play 'inline' on iPhones (the same way they do on iPads). Note that this feature is only available in iOS10 and above."
+    },
+    "_preventForwardScrubbing": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "title": "Attempt to prevent media scrubbing?",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "If enabled, will attempt to prevent users from skipping ahead in audio/video."
+    },
+    "_transcript": {
+      "type": "object",
+      "required": false,
+      "title": "Transcript Options",
+      "properties": {
+        "_setCompletionOnView": {
+          "type": "boolean",
+          "required": false,
+          "default": true,
+          "title": "Trigger completion?",
+          "inputType": "Checkbox",
+          "validators": [],
+          "help": "Whether to have this component mark as completed when the transcript is shown."
+        },
+        "_inlineTranscript": {
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "title": "Show Inline",
+          "inputType": "Checkbox",
+          "validators": []
+        },
+        "_externalTranscript": {
+          "type": "boolean",
+          "required": false,
+          "default": false,
+          "title": "Show Link",
+          "inputType": "Checkbox",
+          "validators": []
+        },
+        "inlineTranscriptButton": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Inline Open Button",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true
+        },
+        "inlineTranscriptCloseButton": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Inline Close Button",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true
+        },
+        "inlineTranscriptBody": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Inline Transcript",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Optional text appears below the video",
+          "translatable": true
+        },
+        "transcriptLinkButton": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Link Open Button",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true
+        },
+        "transcriptLink": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Transcript Link",
+          "inputType": "Asset:other",
+          "validators": [],
+          "help": "Select a file for the transcript link"
+        }
+      }
+    },
+    "_playerOptions": {
+      "type": "object",
+      "default": {},
+      "title": "Player Options",
+      "inputType": {
+        "type": "CodeEditor",
+        "mode": "json"
+      },
+      "validators": [],
+      "help": "Optional object that can be used to customize the player"
+    }
+  }
+}

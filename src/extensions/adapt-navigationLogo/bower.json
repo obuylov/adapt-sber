@@ -1,0 +1,16 @@
+{
+  "name": "adapt-navigationLogo",
+  "version": "2.1.0",
+  "framework": ">=5",
+  "homepage": "https://github.com/cgkineo/adapt-navigationLogo",
+  "extension": "navigationLogo",
+  "displayName": "Navigation Logo",
+  "description": "Displays an image in the course navigation bar.",
+  "main": "/js/adapt-navigationLogo.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_navigationLogo"
+}

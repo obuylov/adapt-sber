@@ -1,0 +1,228 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/contentobject/model.schema",
+  "globals": {
+    "durationLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Duration:",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_boxMenu": {
+              "type": "object",
+              "required": false,
+              "properties": {
+                "_backgroundImage": {
+                  "type": "object",
+                  "required": false,
+                  "legend": "Menu background image",
+                  "properties": {
+                    "_large": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "Large background image - used on desktop"
+                    },
+                    "_medium": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "Medium background image - used on tablet"
+                    },
+                    "_small": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "Small background image - used on mobile"
+                    }
+                  }
+                },
+                "_backgroundStyles": {
+                  "type": "object",
+                  "required": false,
+                  "legend": "Menu background image styles",
+                  "properties": {
+                    "_backgroundRepeat": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
+                      "title": "Set if/how the background image repeats",
+                      "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                    },
+                    "_backgroundSize": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": {"type":"Select", "options":["auto","cover","contain"]},
+                      "title": "Set the size of the background image",
+                      "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible."
+                    },
+                    "_backgroundPosition": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
+                      "title": "Set the position of the background image",
+                      "help": "The first value is the horizontal position and the second value is the vertical."
+                    }
+                  }
+                },
+                "_menuHeader": {
+                  "type": "object",
+                  "required": false,
+                  "properties": {
+                    "_backgroundImage": {
+                      "type": "object",
+                      "required": false,
+                      "legend": "Menu header background image",
+                      "properties": {
+                        "_large": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Asset:image",
+                          "validators": [],
+                          "help": "Large background image - used on desktop"
+                        },
+                        "_medium": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Asset:image",
+                          "validators": [],
+                          "help": "Medium background image - used on tablet"
+                        },
+                        "_small": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Asset:image",
+                          "validators": [],
+                          "help": "Small background image - used on mobile"
+                        }
+                      }
+                    },
+                    "_backgroundStyles": {
+                      "type": "object",
+                      "required": false,
+                      "legend": "Menu header background image styles",
+                      "properties": {
+                        "_backgroundRepeat": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
+                          "title": "Set if/how the background image repeats",
+                          "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                        },
+                        "_backgroundSize": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": {"type":"Select", "options":["auto","cover","contain"]},
+                          "title": "Set the size of the background image",
+                          "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible."
+                        },
+                        "_backgroundPosition": {
+                          "type": "string",
+                          "required": false,
+                          "default": "",
+                          "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
+                          "title": "Set the position of the background image",
+                          "help": "The first value is the horizontal position and the second value is the vertical."
+                        }
+                      }
+                    },
+                    "_minimumHeights": {
+                      "type": "object",
+                      "required": false,
+                      "legend": "Menu header minimum height",
+                      "properties": {
+                        "_large": {
+                          "type": "number",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                        },
+                        "_medium": {
+                          "type": "number",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                        },
+                        "_small": {
+                          "type": "number",
+                          "required": false,
+                          "default": "",
+                          "inputType": "Number",
+                          "validators": ["number"],
+                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_boxMenu": {
+              "type": "object",
+              "required": false,
+              "properties": {
+                "_renderAsGroup": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable as menu group?",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Enable this option to render items into a group on the menu. Groups can display a title, body, and instruction text."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

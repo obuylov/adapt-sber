@@ -1,0 +1,14 @@
+<button class="aboutus__item-btn drawer__item-btn{{#if className}} {{className}}{{/if}} js-aboutus-item-topic-click"
+        aria-expanded="false" aria-label="{{{title}}}">
+    <div class="aboutus__item-title drawer__item-title">
+        <div class="aboutus__item-title-inner drawer__item-title-inner">
+            {{{title}}}
+    </div>
+    </div>
+</button>
+
+<div class="aboutus__item-body drawer__item-body" role="region" aria-label="{{{title}}}">
+    <div class="aboutus__item-body-inner drawer__item-body-inner">
+        {{{compile description}}}
+    </div>
+</div>

@@ -1,0 +1,265 @@
+.dragndrop__inner {
+
+    position: relative;
+
+    .dragndrop-container {
+    }
+
+    .dragndrop-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+
+    .dragndrop__widget.dragging .dragndrop-overlay {
+        z-index: 10;
+        opacity: 0.4;
+    }
+
+    .btn__container, .dragndrop-item {
+        z-index: 11;
+    }
+
+    .dragndrop-questions {
+        margin-bottom: 20px;
+    }
+
+    .dragndrop-question {
+        position: relative;
+        padding: 20px;
+        margin-bottom: 2px;
+        background: @item-color;
+        color: @font-color-inverted;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        vertical-align: middle;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .dragndrop-question-text {
+            font-size: @body-size;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            vertical-align: middle;
+            width: 100vw;
+            padding-right: 20px;
+            text-align: left;
+
+            .dragquestext {display:block;}
+            .dragquesbutton {display: none;}
+
+        }
+
+        .ui-droppable {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 1px dotted;
+            border-color: @font-color-inverted;
+            vertical-align: middle;
+            max-width: 400px;
+            min-width: 190px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+        }
+
+        .ui-droppable:before {
+            content: 'Drag your answer here.';
+            text-align: center;
+            display: block;
+            vertical-align: middle;
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            letter-spacing: 0px;
+        }
+
+        .ui-droppable.ui-state-active {
+            background-color: @item-color;
+        }
+
+        .ui-droppable.ui-state-enabled.ui-state-hover {
+            background-color: lighten(@item-color, 10%);
+        }
+
+        .ui-droppable.ui-state-disabled {
+            border-style: solid;
+            z-index: 8;
+            opacity: 0;
+        }
+
+        .dragndrop-question-state {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 78;
+
+            .icon {
+                display: none;
+                color: @white;
+                background-color: #000;
+                border-radius: 40px;
+                padding: 5px;
+                border: 2px solid @white;
+            }
+        }
+    }
+
+    .dragndrop-answers {
+
+        vertical-align: middle;
+        text-align: center;
+
+        .dragndrop-answer {
+            float: none;
+            background: @white;
+            border: 1px solid @black;
+            text-align: center;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+            cursor: move;
+            max-width: 400px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+
+            &.ui-draggable-disabled {
+                cursor: default;
+            }
+            &.ui-draggable-dragging {
+                box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.5);
+                z-index: 12;
+            }
+            &.ui-state-placed {
+                z-index: 9;
+                background: @black;
+                color: @white;
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+                border: 1px solid @white;
+            }
+            &.ui-state-placing {
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -ms-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .dragndrop-item {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 0 15px 15px 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+.dragndrop__widget.show-user-answer {
+    .dragndrop-question {
+        &.correct .icon-tick {
+            display: block;
+            position: absolute;
+        }
+        &.incorrect .icon-cross {
+            display: block;
+            position: absolute;
+        }
+    }
+}
+
+.dragndrop-transition-0 {
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+}
+
+.dragndrop-transition-200 {
+    -webkit-transition: top 0.2s, left 0.2s;
+    -moz-transition: top 0.2s, left 0.2s;
+    -ms-transition: top 0.2s, left 0.2s;
+    -o-transition: top 0.2s, left 0.2s;
+    transition: top 0.2s, left 0.2s;
+}
+
+.dragndrop-transition-600 {
+    -webkit-transition: top 0.6s, left 0.6s;
+    -moz-transition: top 0.6s, left 0.6s;
+    -ms-transition: top 0.6s, left 0.6s;
+    -o-transition: top 0.6s, left 0.6s;
+    transition: top 0.6s, left 0.6s;
+}
+
+@-moz-document url-prefix() {
+    .dragndrop-answer {text-align: -moz-center !important;}
+}
+
+/* LEFT AND RIGHT HALF COMPONENT OVERRIDES */
+.is-left .dragndrop__inner .dragndrop-question .ui-droppable, .is-right .dragndrop__inner .dragndrop-question .ui-droppable {
+    margin-left: 0px !important;
+}
+.is-left .dragndrop__inner .dragndrop-question, .is-right .dragndrop__inner .dragndrop-question {
+    display: block;
+}
+.is-left .dragndrop__inner .dragndrop-question .dragndrop-question-text, .is-right .dragndrop__inner .dragndrop-question .dragndrop-question-text {
+    width: 100%;
+}
+
+/* OVERRIDE FOR MULTIPLE DROP ITEMS 2-4 */
+.dragndrop__inner .dragndrop-question div:nth-last-child(n+3):nth-last-child(-n+3):nth-child(2), .dragndrop__inner .dragndrop-question div:nth-last-child(n+4):nth-last-child(-n+4):nth-child(2), .dragndrop__inner .dragndrop-question div:nth-last-child(n+5):nth-last-child(-n+5):nth-child(2) {
+    margin-left: 0px !important;
+}
+
+@media all and (max-width:920px){
+    .dragndrop__inner .dragndrop-question {text-align: center !important;}
+    .dragndrop__inner .dragndrop-question .dragndrop-question-text {width: 99%;}
+    .dragndrop__inner .dragndrop-question .ui-droppable {margin-left: inherit !important;}
+    .dragquestext {display: none !important;}
+    .dragquesbutton {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        min-height: 40px;
+        .dndmobile {
+            height: 40px;
+            padding: 0px 10px;
+            border-radius: 5px;
+            background-color: @white;
+            color: @black;
+        }
+    }
+
+}
+@media all and (max-width:@device-width-small){
+    .dragndrop__inner .dragndrop-questions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .dragndrop__inner .dragndrop-question .ui-droppable {max-width: 304px;}
+    .dragndrop__inner .dragndrop-answers .dragndrop-answer {max-width: 315px;}
+    .is-left .dragndrop__inner .dragndrop-question .ui-droppable, .is-right .dragndrop__inner .dragndrop-question .ui-droppable {margin-left: inherit !important;}
+    .dragndrop__inner .dragndrop-question {display: block;}
+    .dragquesbutton .dndmobile {min-width: 190px;}
+}

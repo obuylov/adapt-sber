@@ -1,0 +1,31 @@
+.block {
+  &.has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  &__inner {
+    .l-container-padding(@block-padding-ver, @block-padding-hoz);
+  }
+
+  &__title {
+    margin-bottom: @block-title-margin;
+    .block-title;
+    color: @heading-color;
+  }
+
+  &__body {
+    margin-bottom: @block-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @block-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+}
