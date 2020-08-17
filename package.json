@@ -7,8 +7,7 @@
         "url": "git://github.com/adaptlearning/adapt_framework.git"
     },
     "scripts": {
-        "lint": "node node_modules/eslint/bin/eslint.js ./",
-        "sync": "browser-sync start -s build -f build"
+        "lint": "node node_modules/eslint/bin/eslint.js ./"
     },
     "authoringTool": ">=0.8",
     "license": "GPL-3.0",
@@ -21,7 +20,6 @@
         "@types/backbone": "^1.4.1",
         "@types/jquery": "^3.3.31",
         "async": "^3.1.1",
-        "browser-sync": "^2.26.10",
         "chalk": "^2.4.1",
         "columnify": "^1.5.4",
         "csv": "^5.0.0",
@@ -42,12 +40,16 @@
         "grunt-replace": "^1.0.1",
         "handlebars": "^4.0.12",
         "iconv-lite": "^0.4.24",
+        "imagemin": "^7.0.1",
+        "imagemin-jpegtran": "^7.0.0",
+        "imagemin-pngquant": "^9.0.0",
+        "imagemin-svgo": "^8.0.0",
         "jit-grunt": "^0.10.0",
         "jschardet": "^1.6.0",
         "jshint-stylish": "^2.2.1",
         "less": "^3.9.0",
         "load-grunt-config": "^1.0.1",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.19",
         "nsdeclare": "^0.1.0",
         "requirejs": "^2.3.6",
         "time-grunt": "^2.0.0",
