@@ -1,0 +1,248 @@
+.narrative {
+  &__content {
+    display: none;
+
+    @media (min-width: @device-width-medium) {
+      display: block;
+      float: right;
+      margin-left: 2%;
+      width: 38%;
+
+      .dir-rtl & {
+        margin-left: inherit;
+        margin-right: 2%;
+      }
+    }
+
+    &-inner {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__content-title {
+    margin-bottom: @item-title-margin;
+    .item-title;
+  }
+
+  &__content-body a {
+    .link-text;
+  }
+  &__slide-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
+    @media (min-width: @device-width-medium) {
+      width: 60%;
+    }
+  }
+
+  &__slider-image-container {
+    //.u-float-left;
+    float: right;
+  }
+
+  &__controls-container {
+    position: relative;
+  }
+  &__controls-left {
+    left: 0;
+
+    .dir-rtl & {
+      left: inherit;
+      right: 0;
+    }
+  }
+
+  &__controls-left .icon {
+    &:before {
+      content: "\2190";
+
+      .dir-rtl & {
+        content: "\2190";
+      }
+    }
+  }
+
+  &__controls-right {
+    right: 0;
+
+    .dir-rtl & {
+      right: inherit;
+      left: 0;
+    }
+  }
+
+  &__controls-right .icon {
+    &:before {
+      content: "\2192";
+
+      .dir-rtl & {
+        content: "\2192";
+      }
+    }
+  }
+
+  &__controls {
+    background-color: transparent;
+    color: black;
+    height: 30px;
+    margin: 0 1rem;
+
+    .no-touch &:hover {
+      background-color: @item-color-hover;
+      color: @item-color-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    @media (min-width: @device-width-medium) {
+      // width: 60%;
+    }
+  }
+
+  &__progress {
+    background-color: @item-color;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+
+    .no-touch &:not(.is-selected):hover {
+      background-color: black;
+      .transition(background-color @duration ease-in);
+    }
+  }
+
+  &__progress.is-selected {
+    background-color: black;
+  }
+
+  &__strapline {
+    position: relative;
+
+    @media (min-width: @device-width-medium) {
+      display: none;
+    }
+  }
+
+  &__strapline-header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__strapline-btn {
+    text-align: left;
+    background-color: @item-color;
+    color: @item-color-inverted;
+    position: relative;
+    float: right;
+    padding: 0;
+    outline-offset: -5px;
+
+    .no-touch &:hover {
+      background-color: @item-color-hover;
+      color: @item-color-inverted-hover;
+    }
+
+    .dir-rtl & {
+      text-align: right;
+    }
+  }
+
+  &__strapline-btn.is-visited {
+    background-color: @visited;
+    color: @visited-inverted;
+  }
+
+  &.has-img-zoom &__slider-image-container {
+    .img-zoom();
+  }
+  &__text-controls {
+    .narrative__content {
+      position: relative;
+      padding-top: @icon-size + (1rem * 2);
+
+      .narrative__indicators {
+        display: flex;
+      }
+
+      .narrative__controls-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .narrative__controls {
+        position: relative;
+        top: 0;
+        display: block;
+        transform: none;
+      }
+    }
+
+    // Hide slide controls and indicators until single column view
+    // --------------------------------------------------
+    @media (min-width: @device-width-medium) {
+      .narrative__slide-container .narrative__controls,
+      .narrative__slide-indicators {
+        display: none;
+      }
+    }
+  }
+}
+.narrative-reverse {
+  .narrative__content {
+    @media (min-width: @device-width-medium) {
+      float: left;
+      margin-left: 0!important;
+      &-inner {
+        width: 38%;
+      }
+    }
+  }
+
+  .narrative__slide-container {
+    @media (min-width: @device-width-medium) {
+      float: right;
+    }
+  }
+}
+
+.narrative-gray {
+  .narrative__content {
+    @media (min-width: @device-width-medium) {
+      &-inner {
+        background-color: @light-gray;
+        width: 48%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .narrative__content-item{
+          width: 80%;
+        }
+      }
+    }
+  }
+  .narrative__slide-container {
+    @media (min-width: @device-width-medium) {
+      width: 50%;
+    }
+  }
+}

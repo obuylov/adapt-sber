@@ -1,21 +1,30 @@
 [
   {
-    "_component": "text",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "New Component Title",
-    "body": "",
     "_id": "5f0ded02b7634a0849160b97",
     "_parentId": "5f0decfcb7634a0849160b96",
     "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
     "_layout": "full",
+    "title": "Accordion",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_shouldCollapseItems": true,
+    "_comment": "",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Дисциплинарная ответственность",
+        "body": "К сотрудникам, которые не выполняют своих обязанностей по соблюдению требований комплаенс и принципов деловой этики, при наличии правовых оснований могут быть применены меры дисциплинарного взыскания в порядке, предусмотренном трудовым законодательством, а также в  соответствии с матрицей кадровых решений Банка.",
+        "_classes": ""
+      },
+      {
+        "title": "Выполняемые функции",
+        "body": "Если у Вас возникнут вопросы по соблюдению положений внутренних документов Банка в области комплаенс, Вам следует обратиться за разъяснением к своему руководителю и/или в подразделение комплаенс.",
+        "_classes": ""
+      }
+    ],
     "_pageLevelProgress": {
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false

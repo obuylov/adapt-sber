@@ -2,21 +2,28 @@
   &__item {
     margin-bottom: @item-margin / 2;
   }
-
+  &__item:last-child {
+    border-bottom: 1.5px black solid;
+  }
+  &__item-content{
+    display: none;
+  }
   &__item-btn {
+    width: 100%;
     position: relative;
     padding: @item-padding;
     padding-right: @icon-size + (@item-padding * 2);
     text-align: left;
-    background-color: @item-color;
-    color: @item-color-inverted;
-    border-radius: @item-border-radius;
+    background-color: transparent;
+    border-top: 1.5px black solid;
+    color: black;
 
-    .no-touch &:not(.is-selected):hover {
-      background-color: @item-color-hover;
-      color: @item-color-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
-    }
+
+    //.no-touch &:not(.is-selected):hover {
+    //  background-color: @item-color-hover;
+    //  color: @item-color-inverted-hover;
+    //  .transition(background-color @duration ease-in, color @duration ease-in;);
+    //}
 
     .dir-rtl & {
       padding-right: @item-padding;
@@ -24,15 +31,25 @@
       text-align: right;
     }
   }
+  &__item-btn .icon{
+    background-color: @light-gray;
+    border-radius: 12px;
+  }
+
+  &__item-btn.is-closed .icon {
+    .icon-plus;
+  }
+
+  &__item-btn.is-open .icon {
+    .icon-cross;
+  }
 
   &__item-btn.is-visited {
-    background-color: @visited;
-    color: @visited-inverted;
+    background-color: transparent;
   }
 
   &__item-btn.is-selected {
-    background-color: @item-color-selected;
-    color: @item-color-inverted-selected;
+    background-color: transparent;
   }
 
   &__item-icon {
@@ -49,9 +66,7 @@
 
   &__item-content {
     padding: @item-padding;
-    background-color: @item-color;
-    color: @item-color-inverted;
-    border-radius: @item-border-radius;
+    background-color: transparent;
   }
 
   &__item-body a {
