@@ -1,12 +1,24 @@
 .accordion {
   &__item {
     margin-bottom: @item-margin / 2;
+    &-title-inner {
+      margin-left: 40px;
+    }
   }
-  &__item:last-child {
-    border-bottom: 1.5px black solid;
-  }
-  &__item-content{
+  &__item-content {
     display: none;
+    padding: @item-padding;
+    border: #c4c4c4 solid 1px;
+    border-top: transparent;
+    border-radius: 0 0 5px 5px;
+    &-inner {
+      display: flex;
+      flex-direction:column-reverse;
+      margin: 20px 0;
+      .accordion__item-image-container{
+        margin-bottom: 35px;
+      }
+    }
   }
   &__item-btn {
     width: 100%;
@@ -14,9 +26,8 @@
     padding: @item-padding;
     padding-right: @icon-size + (@item-padding * 2);
     text-align: left;
-    background-color: transparent;
-    border-top: 1.5px black solid;
-    color: black;
+    background-color: @progress;
+    border-radius: 5px;
 
 
     //.no-touch &:not(.is-selected):hover {
@@ -41,21 +52,20 @@
   }
 
   &__item-btn.is-open .icon {
-    .icon-cross;
+    .icon-minus;
   }
 
   &__item-btn.is-visited {
-    background-color: transparent;
+    background-color: #e5e5e5;
   }
-
-  &__item-btn.is-selected {
-    background-color: transparent;
+  &__item-btn.is-open {
+    background-color: @progress;
   }
 
   &__item-icon {
     position: absolute;
     top: 50%;
-    right: @item-padding;
+
     .transform(translateY(-50%));
 
     .dir-rtl & {
@@ -64,16 +74,40 @@
     }
   }
 
-  &__item-content {
-    padding: @item-padding;
-    background-color: transparent;
-  }
-
   &__item-body a {
     .link-text;
   }
 
   &.has-img-zoom &__item-image-container {
     .img-zoom();
+  }
+}
+
+// Дополнительные классы
+.align-image-left, .align-image-right{
+  .accordion__item-content{
+    &-inner{
+      flex-direction: row;
+      .accordion__item-image-container{
+        width: 48%;
+      }
+      .accordion__item-body{
+        width: 48%;
+        margin-right: 4%;
+      }
+    }
+  }
+}
+.align-image-left{
+  .accordion__item-content {
+    &-inner {
+      flex-direction: row-reverse;
+      .accordion__item-image-container{
+        margin-right: 4%;
+      }
+      .accordion__item-body{
+        margin-right: 0;
+      }
+    }
   }
 }

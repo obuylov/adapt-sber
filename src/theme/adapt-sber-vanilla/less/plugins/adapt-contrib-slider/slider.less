@@ -1,35 +1,58 @@
 .slider {
+  &__inner{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    padding: 70px;
+    .slider__header-inner{
+      text-align: center;
+      font-weight: bold;
+      margin: 0 16% 80px;
+      font-size: 24px;
+    }
+  }
+  // --------------------------------------------------
+  // Labels
+  // --------------------------------------------------
+  &__label-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  // --------------------------------------------------
+
   // --------------------------------------------------
   // Numbers
   // --------------------------------------------------
   &__number-container {
-    min-height: 2.5rem;
+    position: relative;
+    min-height: 1rem;
+    margin: 0 1rem 50px;
+    display: flex;
+    justify-content: space-between;
+    // Indent half the width of the range slider handle either side
+    .slider__number{
+      position: unset;
+    }
+    .slider__number-selection{
+      display: none;
+    }
+    .slider__number-answer {
+      display: none;
+    }
+    .dir-rtl & {
+      .transform(rotateY(180deg));
+    }
   }
 
   &__number,
   &__number-selection,
   &__number-model-answer {
-    height: 2.5rem;
-    width: 2.5rem;
-    line-height: 2.5;
-    text-align: center;
-    border-radius: 50%;
-  }
+    position: absolute;
+    top: 0;
+    .transform(translateX(-50%));
 
-  &__widget:not(.is-disabled) .slider__number {
-    cursor: pointer;
-  }
-
-  &__number-selection {
-    background-color: @item-color;
-    color: @item-color-inverted;
-    z-index: 5;
-  }
-
-  &__number-model-answer {
-    background-color: @item-color;
-    color: @item-color-inverted;
-    z-index: 10;
+    .dir-rtl & {
+      .transform(translateX(-50%) rotateY(180deg));
+    }
   }
   // --------------------------------------------------
 
@@ -37,13 +60,30 @@
   // Scale
   // --------------------------------------------------
   &__scale-container {
-    margin-top: @item-margin * 2;
-    margin-bottom: @item-margin * 4;
-    background-color: lighten(@black, 75%);
+    display: none;
+    position: relative;
+    height: 1px;
+    width: calc(~'100% - 2rem');
+    margin: 0.5rem 1rem 1.5rem;
+    // Indent half the width of the range slider handle either side
+    background-color: blue;
   }
 
   &__scale-notch {
-    background-color: lighten(@black, 75%);
+    position: absolute;
+    top: -5px;
+    height: 10px;
+    width: 1px;
+    .transform(translateX(-50%));
+    background-color: red;
+  }
+
+  &__scale-notch-start {
+    left: 0;
+  }
+
+  &__scale-notch-end {
+    left: 100%;
   }
   // --------------------------------------------------
 
@@ -51,47 +91,81 @@
   // Slider bar
   // --------------------------------------------------
   &__item {
-    margin-bottom: @item-margin * 4;
+    position: relative;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show whether the users selection is in/correct
+  // --------------------------------------------------
+  &__widget.show-user-answer.is-correct {
+    .slider__number-selection {
+      background-color: @validation-success;
+      color: @validation-success-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-success;
+    }
+  }
+
+  &__widget.show-user-answer.is-incorrect {
+    .slider__number-selection {
+      background-color: @validation-error;
+      color: @validation-error-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-error;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer .slider__number-selection {
+    .u-display-none;
+  }
+
+  &__widget.show-correct-answer.is-correct,
+  &__widget.show-correct-answer.is-incorrect {
+    .slider__number-model-answer {
+      background-color: @validation-success;
+      color: @validation-success-inverted;
+    }
+
+    .rangeslider__fill {
+      background-color: @validation-success;
+    }
   }
   // --------------------------------------------------
 }
 
 // --------------------------------------------------
-// Rangeslider
+// Rangeslider overrides
 // --------------------------------------------------
 .rangeslider {
-  background-color: @disabled;
-
   &--horizontal {
-    box-shadow: none;
+    //height: 0.375rem;
   }
 
-  &__fill {
-    background-color: @item-color;
-    box-shadow: none;
+  &--horizontal .rangeslider__handle {
+    top: -0.875rem;
   }
 
   &__handle {
-    background-image: none;
-    border: 0;
-    box-shadow: 0 2px 5px fade(@black, 30%);
-  }
+    height: 2rem;
+    width: 2rem;
 
-  &__handle:after {
-    background-image: none;
-  }
-}
+    &:after {
+      height: 1rem;
+      width: 1rem;
+    }
 
-// --------------------------------------------------
-// Rangeslider focus styles
-// --------------------------------------------------
-input[type='range']:focus + .rangeslider .rangeslider__handle {
-  html:not(.a11y-disable-focusoutline) & {
-    box-shadow: 0 2px 5px fade(@black, 60%);
-  }
-
-  html.a11y-disable-focusoutline & {
-    box-shadow: 0 2px 5px fade(@black, 30%);
+    .slider__widget.is-disabled & {
+      cursor: default;
+    }
   }
 }
 // --------------------------------------------------

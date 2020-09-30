@@ -1,7 +1,27 @@
 [
   {
     "title": "New Article Title",
-    "displayTitle": "New Article Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "gray",
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "a-0-0",
+    "_parentId": "5f0decfab7634a0849160b90",
+    "_type": "article",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Article Title",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -11,7 +31,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5f0decfab7634a0849160b91",
+    "_id": "a-0-1",
     "_parentId": "5f0decfab7634a0849160b90",
     "_type": "article",
     "_pageLevelProgress": {
@@ -31,7 +51,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5f0decfcb7634a0849160b95",
+    "_id": "a-1",
     "_parentId": "5f0decfcb7634a0849160b94",
     "_type": "article",
     "_pageLevelProgress": {
@@ -51,7 +71,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5f0ded05b7634a0849160b99",
+    "_id": "a-2",
     "_parentId": "5f0ded05b7634a0849160b98",
     "_type": "article",
     "_pageLevelProgress": {
@@ -71,7 +91,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5f0f08249f4ba719bcacb86c",
+    "_id": "a-3",
     "_parentId": "5f0f08249f4ba719bcacb86b",
     "_type": "article",
     "_pageLevelProgress": {

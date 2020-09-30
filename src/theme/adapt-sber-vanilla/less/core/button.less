@@ -1,6 +1,27 @@
 .btn {
   &__container {
-    margin-top: @btn-margin;
+    margin-top: 70px;
+  }
+
+  &__response-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+  }
+
+  &__action.is-full-width,
+  &__feedback.is-full-width {
+    width: auto;
+  }
+
+  &__action:not(.is-full-width) {
+    margin-right: @btn-padding;
+
+    .dir-rtl & {
+      margin-right: inherit;
+      margin-left: @btn-padding;
+    }
   }
 
   &-text {
@@ -8,9 +29,10 @@
   }
 
   &-text {
-    background-color: @btn-color;
-    color: @btn-color-inverted;
+    background-color: black;
+    color: white;
     border-radius: @btn-border-radius;
+    padding: 10px 3rem;
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
       background-color: @btn-color-hover;

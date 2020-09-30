@@ -1,0 +1,151 @@
+.list {
+  &__item {
+    @media (min-width: @device-width-medium) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item-content {
+    @media (min-width: @device-width-medium) {
+      width: 85%;
+    }
+  }
+
+  // --------------------------------------------------
+  // Unordered list
+  // --------------------------------------------------
+  &__item-image-container {
+    width: 25%;
+
+    @media (min-width: @device-width-medium) {
+      width: 15%;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Ordered list
+  // --------------------------------------------------
+  &__container.is-ordered-list .list__item {
+    counter-increment: step-counter;
+  }
+
+  &__container.is-ordered-list .list__item-step-number:before {
+    content: counter(step-counter);
+  }
+
+  &__item-step-number {
+    display: flex;
+
+    @media (min-width: @device-width-medium) {
+      align-items: flex-start;
+      justify-content: center;
+      width: 6%;
+    }
+  }
+  // --------------------------------------------------
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+// --------------------------------------------------
+.list {
+  &__item:not(:last-child) {
+    margin-bottom: @item-margin * 2;
+  }
+
+  &__item-title {
+    margin-bottom: @item-title-margin;
+    .item-title;
+  }
+
+  // --------------------------------------------------
+  // Unordered list
+  // --------------------------------------------------
+  &__item-image-container {
+    margin-bottom: @item-margin;
+
+    @media (min-width: @device-width-medium) {
+      margin-bottom: 0;
+      padding-right: @item-margin;
+      img {
+        min-width: unset;
+      }
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Ordered list
+  // --------------------------------------------------
+  &__item-step-number {
+    margin-bottom: @item-margin;
+
+    @media (min-width: @device-width-medium) {
+      margin-bottom: 0;
+      padding-right: @item-margin;
+    }
+  }
+
+  &__item-step-number:before {
+    height: 25px;
+    width: 25px;
+    padding: 0.2rem;
+    .item-title;
+    font-size: 14px;
+    text-align: center;
+    background-color: @item-color;
+    color: black;
+    border-radius: 50%;
+    border: black solid 1px;
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Animated list
+  // --------------------------------------------------
+  &.is-animated-list {
+    .list__widget {
+      overflow: hidden;
+    }
+
+    .list__container .list__item {
+      position: relative;
+      right: -100%;
+      opacity: 0;
+      .transition(all .8s ease-in-out);
+    }
+
+    .list__container .list__item.is-animating {
+      right: 0;
+      opacity: 1;
+    }
+  }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Vertically align image / number with item
+  // --------------------------------------------------
+  .list.align-items-vert-center &__item {
+    align-items: center;
+  }
+  // --------------------------------------------------
+}
+.two-cols{
+  .list__container {
+    display: flex;
+    flex-wrap: wrap;
+    .list__item {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+      .list__item-image-container{
+        margin: 40px 0;
+        height: 70px;
+      }
+    }
+  }
+}

@@ -1,62 +1,69 @@
-<div class="component__inner notify-imagegrid__inner" role="region" aria-label="{{_globals._components._notify-imagegrid.ariaRegion}}">
-    {{> component this}}
-    <div class="component__widget notify-imagegrid__widget">
+<div class="component__inner notify-imagegrid__inner" role="region"
+     aria-label="{{_globals._components._notify-imagegrid.ariaRegion}}">
+  {{> component this}}
+  <div class="component__widget notify-imagegrid__widget">
 
-        <div class="notify-imagegrid-grid">
-            <div class="notify-imagegrid-grid-inner clearfix">
+    <div class="notify-imagegrid-grid">
+      <div class="notify-imagegrid-grid-inner clearfix">
 
-                {{#each _items}}
-                <div class="notify-imagegrid-grid-item {{_itemClasses}} griditem-{{@index}}">
-                    <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">********** [ IMAGE GRID ITEM CONTENT ] **********</div>
-                    <div class="base notify-imagegrid-item-image">
-                        {{#if _graphic.gridmessage}}
-                            <button tabindex="0" aria-label="{{_graphic.alt}}">
-                                <img src="{{_graphic.src}}" class="img2click a11y-ignore" aria-hidden="true" tabindex="-1">
-                            </button>
-                        {{else}}
-                            <img src="{{_graphic.src}}" tabindex="0" alt="{{#if _graphic.alt}} {{_graphic.alt}} {{/if}}{{#if _isVisited}} {{../_globals._accessibility._ariaLabels.visited}}.{{/if}}" />
-                        {{/if}}
-                    </div>
-
-                    <div class="notify-imagegrid-item-title">
-                        <div class="notify-imagegrid-item-title-inner" {{#if _graphic.gridmessage}} {{else}}tabindex="0"{{/if}}>
-                            {{#if _graphic.imagecaption}} {{{_graphic.imagecaption}}} {{else}} {{{_graphic.title}}} {{/if}}
-                        </div>
-                    </div>
-
-                    {{#if _graphic.gridmessage}}
-                        <div class="howmanygrid" style="display:none"></div>
-                        <script class="{{../_id}}-fbnotify">
-                             var count{{../_id}} = 0;
-                            $(".{{../_id}} .griditem-{{@index}} button").click(function() {
-                                if ($(this).hasClass("click4count")) {
-                                    //DO NOT COUNT
-                                }else{
-                                    count{{../_id}}++;
-                                    $(".{{../_id}} .totalgrid").html(""+count{{../_id}});
-                                    $(this).addClass("click4count");
-                                }
-                                var $gridmsg = '{{{_graphic.gridmessage}}}';
-                                require('coreJS/adapt').trigger('notify:popup',{title:'{{{_graphic.title}}}',body:$gridmsg });return false;
-                            });
-                        </script>
-                        <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Grid Notify Title ] = {{{_graphic.title}}}
-                          <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[ Image Grid Notify Body ] = {{{_graphic.gridmessage}}}</div>
-                        </div>
-                    {{/if}}
-
-                </div>
-                {{/each}}
-
+        {{#each _items}}
+          <div class="notify-imagegrid-grid-item {{_itemClasses}} griditem-{{@index}}">
+            <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">
+              ********** [ IMAGE GRID ITEM CONTENT ] **********
             </div>
-        </div>
+            <div class="base notify-imagegrid-item-image">
+              {{#if _graphic.gridmessage}}
+                <button tabindex="0" aria-label="{{_graphic.alt}}">
+                  <img src="{{_graphic.src}}" class="img2click a11y-ignore" aria-hidden="true" tabindex="-1">
+                </button>
+              {{else}}
+                <img src="{{_graphic.src}}" tabindex="0" alt="{{#if _graphic.alt}} {{_graphic.alt}} {{/if}}{{#if
+                    _isVisited}} {{../_globals._accessibility._ariaLabels.visited}}.{{/if}}"/>
+              {{/if}}
+            </div>
 
+            <div class="notify-imagegrid-item-title">
+              <div class="notify-imagegrid-item-title-inner" {{#if _graphic.gridmessage}} {{else}}tabindex="0"{{/if}}>
+                <p>{{#if _graphic.imagecaption}} {{{_graphic.imagecaption}}} {{else}} {{{_graphic.title}}} {{/if}}</p>
+              </div>
+            </div>
+
+            {{#if _graphic.gridmessage}}
+              <div class="howmanygrid" style="display:none"></div>
+              <script class="{{../_id}}-fbnotify">
+                var count = 0;
+                $(".{{../_id}} .griditem-{{@index}} button").click(function () {
+                  if (!$(this).hasClass('click4count')) {
+                    count++;
+                    $(".{{../_id}} .totalgrid").html('' + count);
+                    $(this).addClass('click4count');
+                  }
+                  var $gridmsg = '{{{_graphic.gridmessage}}}';
+                  require('coreJS/adapt').trigger('notify:popup', { title: '{{{_graphic.title}}}', body: $gridmsg });
+                  return false;
+                });
+              </script>
+              <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[
+                Image Grid Notify Title ] = {{{_graphic.title}}}
+                <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">[
+                  Image Grid Notify Body ] = {{{_graphic.gridmessage}}}</div>
+              </div>
+            {{/if}}
+
+          </div>
+        {{/each}}
+
+      </div>
     </div>
-    {{#if bottomText}}
+
+  </div>
+  {{#if bottomText}}
     <div class="imagegrid-bottom-text" tabindex="0">
-        {{{bottomText}}}
+      {{{bottomText}}}
     </div>
-    {{/if}}
-    <div class="totalgrid" style="display:none"></div>
+  {{/if}}
+  <div class="totalgrid" style="display:none"></div>
 </div>
-<script class="{{_id}}-fbnotify">if ( !$('html').hasClass('pagesave2txt') ) { $( ".{{_id}}-fbnotify" ).remove(); }</script>
+<script class="{{_id}}-fbnotify">if (!$('html').hasClass('pagesave2txt')) {
+  $(".{{_id}}-fbnotify").remove();
+}</script>

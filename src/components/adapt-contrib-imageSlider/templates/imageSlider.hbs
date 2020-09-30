@@ -1,0 +1,53 @@
+<div class="imageSlider__inner component__inner">
+    {{> component this}}
+    <div class="imageSlider__widget component__widget">
+        <div class="title-frame clearfix">
+            <div class="title-slider" style="width:{{_totalWidth}}%">
+                {{#each _items }}
+                    <div class="{{../_id}}-fbnotify a11y-ignore" aria-hidden="true" tabindex="-1" style="display:none;">
+                        ********** [ IMAGE SLIDE {{@index}} TITLE ] **********
+                    </div>
+                    <div class="title-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
+                        <div class="title-item-inner">
+                            {{{title}}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        {{#each _items }}
+            <div class="aria-label imgslide-title" data-index="{{@index}}">{{title}}</div>
+        {{/each}}
+
+        <div class="image-frame clearfix">
+            <div class="image-slider" style="width:{{_totalWidth}}%">
+                {{#each _items}}
+                    <div class="image-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
+                        <img src="{{src}}" {{#if alt}}alt="{{alt}}" class="imgslide-alt"
+                             data-index="{{@index}}"{{else}}class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <button class="slider-button previous base" aria-label="{{_globals._accessibility._ariaLabels.previous}}">
+            <div class="icon icon-controls-left"></div>
+        </button>
+        <button class="slider-button next base" aria-label="{{_globals._accessibility._ariaLabels.next}}">
+            <div class="icon icon-controls-right"></div>
+        </button>
+        <div class="indicator">
+            {{#each _items }}
+                <span class="progress" data-index="{{@index}}"></span>
+            {{/each}}
+        </div>
+    </div>
+    {{#if bottomText}}
+        <div class="narrative-bottom-text" tabindex="0">
+            {{{bottomText}}}
+        </div>
+    {{/if}}
+</div>
+
+<script class="{{_id}}-fbnotify">if (!$('html').hasClass('pagesave2txt')) {
+    $(".{{_id}}-fbnotify").remove();
+}</script>

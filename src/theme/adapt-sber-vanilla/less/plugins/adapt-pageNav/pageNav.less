@@ -1,0 +1,101 @@
+html {
+  // Prevents pagenav tooltip from triggering a horizontal scroll bar
+  // Only affects IE11 but applied globally to weed out bugs
+  overflow-x: hidden;
+}
+
+.pagenav {
+  &__widget {
+    position: relative;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    button {
+      background-color: @progress!important;
+      color: black;
+      border-radius: 5px;
+      .pagenav__btn-icon{
+        color: black;
+      }
+    }
+    .align-right {
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+      .pagenav__btn-icon{
+        color: white;
+      }
+    }
+  }
+
+  &__btn-inner {
+    display: flex;
+    align-items: center;
+  }
+  &__btn [data-type="_root"] {
+    &__btn-inner{
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+// --------------------------------------------------
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+// --------------------------------------------------
+
+.pagenav {
+  &__btn {
+    margin: @item-margin;
+  }
+
+
+
+
+  // buttons with text and icon (left aligned icon as default)
+  &__btn.btn-icon:not(.icon-is-right).btn-text .icon {
+    padding-right: (@icon-padding / 2);
+
+    .dir-rtl & {
+      padding-left: (@icon-padding / 2);
+      padding-right: inherit;
+    }
+  }
+
+  // buttons with text and icon (right aligned icon)
+  &__btn.btn-icon.icon-is-right.btn-text .icon {
+    padding-left: (@icon-padding / 2);
+
+    .dir-rtl & {
+      padding-right: (@icon-padding / 2);
+      padding-left: inherit;
+    }
+  }
+
+  // consistent with nav icon button styling
+  &__btn.btn-icon:not(.btn-text) {
+    padding: @icon-padding;
+    background-color: @nav-icon;
+    color: @nav-icon-inverted;
+    //border: 1px solid @nav-icon;
+
+    .no-touch &:not(.is-disabled):not(.is-locked):hover {
+      background-color: @nav-icon-hover;
+      color: @nav-icon-inverted-hover;
+      //border-color: @nav-icon-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+
+    &.is-locked,
+    &.is-disabled {
+      background-color: @disabled;
+      color: @disabled-inverted;
+      //border-color: @disabled-inverted;
+    }
+  }
+}

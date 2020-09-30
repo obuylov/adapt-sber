@@ -4,8 +4,11 @@
     padding: @item-padding (@icon-size + (@item-padding * 2)) @item-padding @item-padding;
     line-height: @body-line-height;
     text-align: left;
-    background-color: @item-color;
-    color: @item-color-inverted;
+    background-color: transparent;
+    color: black;
+    border: black solid 1px;
+    border-radius: 5px;
+    width: 100%;
 
     .no-touch &:not(.is-disabled):not([aria-expanded="true"]):hover,
     html:not(.a11y-disable-focusoutline) &:focus {
@@ -19,6 +22,10 @@
       padding-left: @icon-size + (@item-padding * 2);
       text-align: right;
     }
+
+    &:hover .dropdown__icon:before {
+      top: 55%;
+    }
   }
 
   &__btn.is-disabled {
@@ -29,19 +36,32 @@
   &__btn[aria-expanded="true"] {
     background-color: @item-color-selected;
     color: @item-color-inverted-selected;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
-  &__icon {
+  &__icon .icon {
+    display: none;
+  }
+
+  &__icon:before {
+    content: "";
     position: absolute;
     top: 50%;
-    right: @item-padding;
-    .transform(translateY(-50%));
+    right: 20px;
+    height: 16px;
+    width: 16px;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    transform: translateY(-12px) rotate(45deg);
+    transition: all .3s ease-in-out;
 
     .dir-rtl & {
       right: inherit;
       left: @item-padding;
     }
   }
+
 
   &__item {
     padding: @item-padding;
@@ -69,4 +89,27 @@
       color: @item-color-inverted-selected;
     }
   }
+
+  &__list {
+    position: absolute;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+    border: black solid 1px;
+    border-radius: 0 0 5px 5px;
+    background: white;
+    z-index: 1;
+
+    .dropdown__item {
+      color: black;
+      list-style-type: none;
+      border-bottom: black solid 1px;
+      background-color: transparent;
+    }
+
+    .dropdown__item:last-child {
+      border-bottom: none;
+    }
+  }
+
 }

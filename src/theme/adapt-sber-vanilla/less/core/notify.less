@@ -1,104 +1,75 @@
 .notify {
   &__popup {
-    background-color: @notify;
-    color: @notify-inverted;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    visibility: hidden;
+    z-index: 100;
+    background-color: @background-inverted;
+    margin-top: unset!important;
+    border-radius: 5px;
+    box-shadow: @shadow-full;
   }
 
   &__popup-inner {
-    position: relative;
-    .l-container-padding(@notify-padding-ver, @notify-padding-hoz);
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  &__icon {
-    display: none;
+  // --------------------------------------------------
+  // Notify icons
+  // --------------------------------------------------
+  &__close-btn .icon {
+    .icon-cross;
   }
 
-  &__title {
-    margin-bottom: @notify-title-margin;
-    .notify-title;
+  &__icon .icon.is-prompt {
+    .icon-question;
+  }
 
-    @media (max-width: @device-width-medium) {
-      padding-right: unit(@icon-size + @btn-margin + @btn-padding, rem);
+  &__icon .icon.is-alert {
+    .icon-warning;
+  }
+  // --------------------------------------------------
 
-      .dir-rtl & {
-        padding-right: inherit;
-        padding-left: unit(@icon-size + @btn-margin + @btn-padding, rem);
+
+  // --------------------------------------------------
+  // Sets up full width title and 50/50 text/image split below
+  // --------------------------------------------------
+  @media (min-width: @device-width-medium) {
+    &__content.has-image {
+      .notify__content-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .notify__title {
+        width: 100%;
+      }
+
+      .notify__body,
+      .notify__image-container {
+        width: 50%;
       }
     }
   }
+  // --------------------------------------------------
 
-  &__body {
-    margin-bottom: @notify-body-margin;
-  }
-
-  &__instruction {
-    margin-bottom: @notify-instruction-margin;
-    .instruction-text;
-  }
-
-  &__body a,
-  &__instruction a {
-    .link-text;
-    color: @notify-link;
-
-    .no-touch &:hover {
-      color: @notify-link-hover;
-      .transition(color @duration ease-in);
-    }
-  }
-
-  &__btn-container {
-    margin-top: @btn-margin;
-  }
-
-  &__btn {
-    background-color: @notify-btn;
-    color: @notify-btn-inverted;
-
-    .no-touch &:not(.is-disabled):hover {
-      background-color: @notify-btn-hover;
-      color: @notify-btn-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
-    }
-  }
-
-  &__btn-icon {
-    margin: @btn-margin / 2;
-    padding: @btn-padding / 2;
-    background-color: @notify-icon;
-    color: @notify-icon-inverted;
-    border-radius: 50%;
-
-    .no-touch &:hover {
-      background-color: @notify-icon-hover;
-      color: @notify-icon-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
-    }
-  }
-
-  &__close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    .dir-rtl & {
-      right: inherit;
-      left: 0;
-    }
-  }
 
   // --------------------------------------------------
-  // Notify prompt type icon
+  // Left aligns image in notify pop up
   // --------------------------------------------------
-  // &__icon {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-
-  //   .dir-rtl & {
-  //     right: inherit;
-  //     left: 0;
-  //   }
-  // }
+  @media (min-width: @device-width-medium) {
+    &__content.align-image-left {
+      .notify__content-inner {
+        flex-direction: row-reverse;
+      }
+    }
+  }
   // --------------------------------------------------
 }

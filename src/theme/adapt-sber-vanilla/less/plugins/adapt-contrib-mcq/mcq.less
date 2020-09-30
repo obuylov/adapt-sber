@@ -1,50 +1,144 @@
+
 .mcq {
-  &__item-label {
-    margin-bottom: @item-margin / 2;
-    background-color: @item-color;
-    color: @item-color-inverted;
-    border-radius: @item-border-radius;
 
-    .no-touch &:not(.is-disabled):not(.is-selected):hover,
-    html:not(.a11y-disable-focusoutline) .mcq__item-input:focus + & {
-      background-color: @item-color-hover;
-      color: @item-color-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
+  &__inner {
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: @shadow-full;
+  }
+
+  &__header-inner {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 16% 80px;
+    font-size: 24px;
+
+    .mcq__instruction-inner {
+      margin-top: 24px;
+      font-style: normal;
+      font-size: 21px;
+      font-weight: bold;
     }
+  }
 
-    .no-touch &:not(.is-disabled):not(.is-selected):hover .mcq__item-icon {
-      .effect-scalePulse;
+  &__item {
+    position: relative;
+
+    &-state {
+      min-width: 24px;
     }
   }
 
-  &__item-label.is-disabled {
-    background-color: @disabled;
-    color: @disabled-inverted;
-  }
-
-  &__item-label.is-selected {
-    background-color: @item-color-selected;
-    color: @item-color-inverted-selected;
-  }
-
-  &__item-state {
+  &__item-input {
     position: absolute;
     top: 50%;
-    left: @item-padding;
-    .transform(translateY(-50%));
+    left: 50%;
+    opacity: 0;
+    z-index: -1;
+    .transform(translate(-50%, -50%));
+  }
 
-    .dir-rtl & {
-      left: inherit;
-      right: @item-padding;
+  &__item-label {
+    z-index: 1;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__item-label:not(.is-disabled) {
+    cursor: pointer;
+  }
+
+  &__item-icon {
+    display: none;
+    color: @radio-gray;
+
+    .icon:before {
+      text-align: unset !important;
     }
   }
 
   &__item-text {
-    padding: @item-padding @item-padding @item-padding (@icon-size + (@item-padding * 2));
+    margin-left: 30px;
+  }
 
-    .dir-rtl & {
-      padding-left: @item-padding;
-      padding-right: @icon-size + (@item-padding * 2);
+
+  // --------------------------------------------------
+  // MCQ item icons
+  // --------------------------------------------------
+  &__item-answer-icon.is-radio .icon {
+    .icon-radio-unchecked;
+  }
+
+  &__item-answer-icon.is-checkbox .icon {
+    .icon-checkbox-unchecked;
+  }
+
+  &__item-label.is-selected {
+    .mcq__item-answer-icon.is-radio .icon {
+      .icon-radio-checked;
     }
   }
+
+  &__item-label.is-selected {
+    .mcq__item-answer-icon.is-checkbox .icon {
+      .icon-checkbox-checked;
+    }
+  }
+
+  &__item-correct-icon .icon {
+    .icon-tick;
+  }
+
+  &__item-incorrect-icon .icon {
+    .icon-cross;
+  }
+
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the selection icons until the component is complete
+  // --------------------------------------------------
+  &__widget:not(.is-complete) {
+    .mcq__item-answer-icon {
+      display: block;
+    }
+  }
+
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the users selection
+  // --------------------------------------------------
+  &__widget.show-user-answer {
+    .is-correct .is-selected .mcq__item-correct-icon,
+    .is-incorrect .is-selected .mcq__item-incorrect-icon {
+      display: block;
+    }
+  }
+
+  &__widget.show-user-answer {
+    .mcq__item:not(.is-correct):not(.is-incorrect) .is-selected .mcq__item-answer-icon {
+      display: block;
+    }
+  }
+
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer {
+    .is-correct .is-selected .mcq__item-correct-icon,
+    .is-incorrect .is-selected .mcq__item-correct-icon {
+      display: block;
+    }
+  }
+
+  &__widget.show-correct-answer {
+    .mcq__item:not(.is-correct):not(.is-incorrect) .is-selected .mcq__item-answer-icon {
+      display: block;
+    }
+  }
+
+  // --------------------------------------------------
 }

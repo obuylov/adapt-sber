@@ -1,42 +1,84 @@
 .textinput {
+  &__inner {
+    padding: 90px;
+    box-shadow: @shadow-full;
+    border-radius: 5px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+   // align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  &__body-inner {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
   &__item-prefix-container,
   &__item-suffix-container {
-    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 21px;
   }
 
   &__item-textbox-container {
-    position: relative;
+    width: inherit;
   }
 
   &__item-textbox {
-    padding: @item-padding (@icon-size + (@item-padding * 2)) @item-padding @item-padding;
-    line-height: @body-line-height;
-
-    .dir-rtl & {
-      padding-left: @icon-size + (@item-padding * 2);
-      padding-right: @item-padding;
+    width: inherit;
+    border: 1.5px black solid;
+    border-radius: 5px;
+    height: 40px;
+    /*
+     * Hide 'X' icon for IE11 and Edge 12+
+     * Issue:https://github.com/adaptlearning/adapt_framework/issues/1913
+     */
+    &::-ms-clear {
+      display: none;
     }
   }
 
-  &__widget.is-disabled .textinput__item-textbox {
-    background-color: @disabled;
-    border-color: @disabled;
-    color: @disabled-inverted;
+  &__item-icon {
+    display: none;
   }
 
-  &__widget.is-disabled .textinput__item-icon {
-    color: @disabled-inverted;
+  // --------------------------------------------------
+  // Text input item icons
+  // --------------------------------------------------
+  &__item-correct-icon .icon {
+    .icon-tick;
   }
 
-  &__item-state {
-    position: absolute;
-    top: 50%;
-    right: @item-padding;
-    .transform(translateY(-50%));
+  &__item-incorrect-icon .icon {
+    .icon-cross;
+  }
+  // --------------------------------------------------
 
-    .dir-rtl & {
-      right: inherit;
-      left: @item-padding;
+  // --------------------------------------------------
+  // Class to show the users selection
+  // --------------------------------------------------
+  &__widget.show-user-answer {
+    .is-correct .textinput__item-correct-icon,
+    .is-incorrect .textinput__item-incorrect-icon {
+      display: block;
     }
   }
+  // --------------------------------------------------
+
+  // --------------------------------------------------
+  // Class to show the correct answers
+  // --------------------------------------------------
+  &__widget.show-correct-answer {
+    .is-correct .textinput__item-correct-icon,
+    .is-incorrect .textinput__item-correct-icon {
+      display: block;
+    }
+  }
+  // --------------------------------------------------
 }

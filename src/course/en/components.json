@@ -1,7 +1,224 @@
 [
   {
-    "_id": "5f0ded02b7634a0849160b97",
-    "_parentId": "5f0decfcb7634a0849160b96",
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "New Component Title new1",
+    "body": "",
+    "_id": "c-0-0",
+    "_parentId": "b-0-0",
+    "_type": "component",
+    "_layout": "full",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-0-1",
+    "_parentId": "b-0-1",
+    "_type": "component",
+    "_component": "sber-narrative",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Narrative",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Длинный заголовок 1",
+        "body": "1. К сотрудникам, которые не выполняют своих обязанностей по соблюдению требований комплаенс и принципов деловой этики, при наличии правовых оснований могут быть применены меры дисциплинарного взыскания в порядке, предусмотренном трудовым законодательством.",
+        "_graphic": {
+          "src": "course/en/assets/phone.png",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 1 strapline"
+      },
+      {
+        "title": "Длинный заголовок 2",
+        "body": "2. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-bird.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 2 strapline"
+      },
+      {
+        "title": "Длинный заголовок 3",
+        "body": "3. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/family.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 3 strapline"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-2",
+    "_parentId": "b-0-2",
+    "_type": "component",
+    "_component": "sber-narrative",
+    "_classes": "narrative-reverse",
+    "_layout": "full",
+    "title": "Narrative",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Длинный заголовок 1",
+        "body": "1. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/phone.png",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 1 strapline"
+      },
+      {
+        "title": "Длинный заголовок 2",
+        "body": "2. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-bird.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 2 strapline"
+      },
+      {
+        "title": "Длинный заголовок 3",
+        "body": "3. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/family.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 3 strapline"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-3",
+    "_parentId": "b-0-3",
+    "_type": "component",
+    "_component": "sber-narrative",
+    "_classes": "narrative-gray",
+    "_layout": "full",
+    "title": "Narrative",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Длинный заголовок 1",
+        "body": "1. На личном примере показывают приверженность принципам этики. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-card.png",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 1 strapline"
+      },
+      {
+        "title": "Длинный заголовок 2",
+        "body": "2. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-notebook.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 2 strapline"
+      },
+      {
+        "title": "Длинный заголовок 3",
+        "body": "3. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-notebook.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 2 strapline"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-4",
+    "_parentId": "b-0-4",
+    "_type": "component",
+    "_component": "sber-narrative",
+    "_classes": "narrative-gray narrative-reverse",
+    "_layout": "full",
+    "title": "Narrative",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "mobileInstruction": "",
+    "_minHeight": "500px",
+    "_hasNavigationInTextArea": false,
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Длинный заголовок 1",
+        "body": "1. На личном примере показывают приверженность принципам этики. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-card.png",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 1 strapline"
+      },
+      {
+        "title": "Длинный заголовок 2",
+        "body": "2. На личном примере показывают приверженность принципам этики.",
+        "_graphic": {
+          "src": "course/en/assets/sber-notebook.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "Narrative item 2 strapline"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-5",
+    "_parentId": "b-0-5",
     "_type": "component",
     "_component": "accordion",
     "_classes": "",
@@ -20,15 +237,62 @@
         "_classes": ""
       },
       {
-        "title": "Выполняемые функции",
+        "title": "Картинка по центру",
         "body": "Если у Вас возникнут вопросы по соблюдению положений внутренних документов Банка в области комплаенс, Вам следует обратиться за разъяснением к своему руководителю и/или в подразделение комплаенс.",
+        "_graphic": {
+          "src": "course/en/assets/sber-notebook-half.png"
+        },
         "_classes": ""
+      },
+      {
+        "title": "Картинка слева",
+        "body": "К сотрудникам, которые не выполняют своих обязанностей по соблюдению требований комплаенс и принципов деловой этики, при наличии правовых оснований могут быть применены меры дисциплинарного взыскания в порядке, предусмотренном трудовым законодательством, а также в  соответствии с матрицей кадровых решений Банка.",
+        "_graphic": {
+          "src": "course/en/assets/sber-notebook.png"
+        },
+        "_classes": "align-image-left"
+      },
+      {
+        "title": "Картинка справа",
+        "body": "К сотрудникам, которые не выполняют своих обязанностей по соблюдению требований комплаенс и принципов деловой этики, при наличии правовых оснований могут быть применены меры дисциплинарного взыскания в порядке, предусмотренном трудовым законодательством, а также в  соответствии с матрицей кадровых решений Банка.",
+        "_graphic": {
+          "src": "course/en/assets/sber-card.png"
+        },
+        "_classes": "align-image-right"
       }
     ],
     "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+      "_isEnabled": true
     }
+  },
+  {
+    "_id": "c-0-6",
+    "_layout": "full",
+    "_type": "component",
+    "_component": "imageSlider",
+    "_parentId": "b-0-6",
+    "displayTitle": "",
+    "title": "",
+    "body": "",
+    "_classes": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Длинный заголовок 1",
+        "alt": "alt text",
+        "src": "course/en/assets/photo-women.png"
+      },
+      {
+        "title": "Длинный заголовок 2",
+        "alt": "alt text",
+        "src": "course/en/assets/photo-man.png"
+      },
+      {
+        "title": "Длинный заголовок 3",
+        "alt": "alt text",
+        "src": "course/en/assets/photo-women.png"
+      }
+    ]
   },
   {
     "_component": "text",
@@ -43,8 +307,8 @@
     "title": "New Component Title",
     "displayTitle": "New Component Title",
     "body": "",
-    "_id": "5f0ded09b7634a0849160b9b",
-    "_parentId": "5f0ded05b7634a0849160b9a",
+    "_id": "c-1-0",
+    "_parentId": "b-1-0",
     "_type": "component",
     "_layout": "full",
     "_pageLevelProgress": {
@@ -65,8 +329,8 @@
     "title": "New Component Title",
     "displayTitle": "New Component Title",
     "body": "",
-    "_id": "5f0f082b9f4ba719bcacb86e",
-    "_parentId": "5f0f08249f4ba719bcacb86d",
+    "_id": "c-2-0",
+    "_parentId": "b-2-0",
     "_type": "component",
     "_layout": "full",
     "_pageLevelProgress": {
@@ -75,6 +339,8 @@
     }
   },
   {
+    "_id": "c-3-0",
+    "_parentId": "b-3-0",
     "_component": "text",
     "_classes": "",
     "_isOptional": false,
@@ -87,13 +353,1061 @@
     "title": "New Component Title",
     "displayTitle": "New Component Title",
     "body": "",
-    "_id": "5f1c7104b27c46260bcd82b5",
-    "_parentId": "5f0decfab7634a0849160b92",
     "_type": "component",
     "_layout": "full",
     "_pageLevelProgress": {
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "_id": "c-0-7",
+    "_parentId": "b-0-7",
+    "_type": "component",
+    "_component": "sber-tabs",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Tabs",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_tabLayout": "horizontal",
+    "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
+    "_items": [
+      {
+        "tabTitle": "1 этап",
+        "title": "Подразделение комплаенс —",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": ""
+      },
+      {
+        "tabTitle": "2 этап",
+        "title": "Подразделение комплаенс —",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-right",
+        "_graphic": {
+          "alt": "alt text",
+          "src": "course/en/assets/family.png"
+        }
+      },
+      {
+        "tabTitle": "3 этап",
+        "title": "Подразделение комплаенс —",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "alt": "alt text",
+          "src": "course/en/assets/sber-card.png"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "c-0-8",
+    "_parentId": "b-0-8",
+    "_type": "component",
+    "_component": "list",
+    "_comment._classes": "Supported classes = 'align-items-vert-center'. Aligns either the step number or image centrally, on the vertical axis, with the content.",
+    "_classes": "",
+    "_layout": "full",
+    "title": "List component",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_comment._animateList": "loop animate items into view - list is static by default",
+    "_animateList": false,
+    "_comment._percentInviewVertical": "Override percentage inview required to animate items. Default value is 70% inview from top of screen.",
+    "_percentInviewVertical": 70,
+    "_comment._orderedList": "set items as ordered list - list is unordered by default",
+    "_orderedList": true,
+    "_items": [
+      {
+        "body": "Роль государства, Банка и его сотрудников в борьбе с легализацией преступных доходов",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "body": "Описание понятий: «легализация», «финансирование терроризма»",
+        "_imageSrc": "",
+        "alt": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-9",
+    "_parentId": "b-0-9",
+    "_type": "component",
+    "_component": "list",
+    "_comment._classes": "Supported classes = 'align-items-vert-center'. Aligns either the step number or image centrally, on the vertical axis, with the content.",
+    "_classes": "two-cols",
+    "_layout": "full",
+    "title": "List component",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_comment._animateList": "loop animate items into view - list is static by default",
+    "_animateList": false,
+    "_comment._percentInviewVertical": "Override percentage inview required to animate items. Default value is 70% inview from top of screen.",
+    "_percentInviewVertical": 70,
+    "_comment._orderedList": "set items as ordered list - list is unordered by default",
+    "_orderedList": false,
+    "_items": [
+      {
+        "body": "Роль государства, Банка и его сотрудников в борьбе с легализацией преступных доходов",
+        "_imageSrc": "course/en/assets/icon1.png",
+        "alt": ""
+      },
+      {
+        "body": "Описание понятий: «легализация», «финансирование терроризма»",
+        "_imageSrc": "course/en/assets/icon2.png",
+        "alt": ""
+      },
+      {
+        "body": "Роль государства, Банка и его сотрудников в борьбе с легализацией преступных доходов",
+        "_imageSrc": "course/en/assets/icon3.png",
+        "alt": ""
+      },
+      {
+        "body": "Описание понятий: «легализация», «финансирование терроризма»",
+        "_imageSrc": "course/en/assets/icon4.png",
+        "alt": ""
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-10",
+    "_parentId": "b-0-10",
+    "_type": "component",
+    "_component": "flipcard",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Flip Card",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_flipType": "allFlip",
+    "_flipTime": 300,
+    "_items": [
+      {
+        "frontImage": {
+          "src": "course/en/assets/photo-man.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/photo-women.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/sber-card.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/sber-notebook.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      }
+    ]
+  },
+  {
+    "_id": "c-0-11",
+    "_parentId": "b-0-11",
+    "_type": "component",
+    "_component": "flipcard",
+    "_classes": "green-yellow-grad",
+    "_layout": "full",
+    "title": "Flip Card",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_flipType": "allFlip",
+    "_flipTime": 300,
+    "_items": [
+      {
+        "frontImage": {
+          "src": "course/en/assets/icon5.svg",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/icon6.svg",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/icon7.svg",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/icon8.svg",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      }
+    ]
+  },
+  {
+    "_id": "c-0-12",
+    "_parentId": "b-0-12",
+    "_type": "component",
+    "_component": "flipcard",
+    "_classes": "two-col-card",
+    "_layout": "full",
+    "title": "Flip Card",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "instruction": "",
+    "_flipType": "allFlip",
+    "_flipTime": 300,
+    "_items": [
+      {
+        "frontImage": {
+          "src": "course/en/assets/notebook.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/family.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/phone.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "frontImage": {
+          "src": "course/en/assets/phone.png",
+          "alt": "flipcard item 1 graphic alt text here."
+        },
+        "backTitle": "Длинный заголовок",
+        "backBody": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      }
+    ]
+  },
+  {
+    "_id": "c-0-13",
+    "_parentId": "b-0-13",
+    "_type": "component",
+    "_component": "stacklist",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Stacklist",
+    "displayTitle": "",
+    "body": "",
+    "_button": {
+      "startText": "Показать",
+      "continueText": "Следующий"
+    },
+    "_items": [
+      {
+        "body": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "body": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      },
+      {
+        "body": "Комплаенс-культура позволяет построить прочные деловые отношения как на межличностном уровне, так и между компаниями. Это очень важно для деловой репутации Банка."
+      }
+    ]
+  },
+  {
+    "_id": "c-0-14",
+    "_parentId": "b-0-14",
+    "_type": "component",
+    "_component": "notify-imagegrid",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Adapt notify imagegrid",
+    "displayTitle": "Длинный заголовок",
+    "body": "",
+    "_columns": 3,
+    "_gridrowHeight": {
+      "_heightAmount": 300,
+      "_constrainHeight": 300
+    },
+    "_items": [
+      {
+        "_graphic": {
+          "src": "course/en/assets/photo-man.png",
+          "alt": "alt text here test",
+          "title": "Длинный длинный заголовок 1 длинный заголовок 1",
+          "gridmessage": "Message 1"
+        },
+        "_itemClasses": "grid-item-1"
+      },
+      {
+        "_graphic": {
+          "src": "course/en/assets/photo-man.png",
+          "alt": "",
+          "title": "Длинный длинный заголовок 2",
+          "gridmessage": "Message 2"
+        },
+        "_itemClasses": "grid-item-2"
+      },
+      {
+        "_graphic": {
+          "src": "course/en/assets/photo-man.png",
+          "alt": "",
+          "title": "Длинный длинный заголовок 3",
+          "gridmessage": "Message 3"
+        },
+        "_itemClasses": "grid-item-3"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-15",
+    "_parentId": "b-0-15",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "full",
+    "title": "MCQ",
+    "displayTitle": "",
+    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "instruction": "Выберите один вариант ответа:",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_items": [
+      {
+        "text": "Нет, так как звонок будет произведён после окончания рабочего дня +",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Нет, так как приятель является клиентом Банка",
+        "_shouldBeSelected": false,
+        "feedback": "Option two incorrect feedback"
+      },
+      {
+        "text": "Да, в связи с тем, что международный звонок носит личный характер\n",
+        "_shouldBeSelected": false
+      }
+    ],
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "Congratulations, this is the correct feedback.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question correctly."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-16",
+    "_parentId": "b-0-16",
+    "_type": "component",
+    "_component": "matching",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Matching",
+    "displayTitle": "Matching",
+    "body": "",
+    "instruction": "",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_shouldResetAllAnswers": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "placeholder": "Длинный заголовок",
+    "_items": [
+      {
+        "text": "Длинный заголовок",
+        "_options": [
+          {
+            "text": "Option one",
+            "_isCorrect": false
+          },
+          {
+            "text": "Option two (correct)",
+            "_isCorrect": true
+          },
+          {
+            "text": "Option three",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Длинный заголовок",
+        "_options": [
+          {
+            "text": "Option one",
+            "_isCorrect": false
+          },
+          {
+            "text": "Option two",
+            "_isCorrect": false
+          },
+          {
+            "text": "Option three (correct)",
+            "_isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Длинный заголовок",
+        "_options": [
+          {
+            "text": "Option one (correct)",
+            "_isCorrect": true
+          },
+          {
+            "text": "Option two",
+            "_isCorrect": false
+          },
+          {
+            "text": "Option three",
+            "_isCorrect": false
+          }
+        ]
+      }
+    ],
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered part of the question correctly."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-17",
+    "_parentId": "b-0-17",
+    "_type": "component",
+    "_component": "gmcq",
+    "_classes": "",
+    "_layout": "full",
+    "title": "GMCQ",
+    "displayTitle": "",
+    "body": "Какое из сообщений нарушает правила? ",
+    "instruction": "Выберите сообщение и нажмите Проверить.",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_isRandom": false,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_columns": 3,
+    "_items": [
+      {
+        "text": "Первое фото",
+        "_shouldBeSelected": true,
+        "_graphic": {
+          "alt": "Placeholder graphic",
+          "large": "course/en/assets/sber-card.png",
+          "small": "course/en/assets/sber-card.png"
+        }
+      },
+      {
+        "text": "Второе фото",
+        "_shouldBeSelected": false,
+        "_graphic": {
+          "alt": "",
+          "attribution": "",
+          "large": "course/en/assets/sber-notebook.png",
+          "small": "course/en/assets/sber-notebook.png"
+        }
+      }
+    ],
+    "_feedback": {
+      "title": "Feedback title",
+      "correct": "Congratulations, this is the correct feedback.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "Unfortunately this is the incorrect feedback."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "This is the partly correct feedback."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Проверить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-18",
+    "_parentId": "b-0-18",
+    "_type": "component",
+    "_component": "textinput",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Title of our text input component",
+    "displayTitle": "",
+    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "instruction": "",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_allowsAnyCase": true,
+    "_allowsPunctuation": true,
+    "_items": [
+      {
+        "_answers": [
+          "Yes",
+          "Да"
+        ],
+        "prefix": "Введите ответ:",
+        "placeholder": ""
+      }
+    ],
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      },
+      "_partlyCorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered part of the question correctly."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-19",
+    "_parentId": "b-0-19",
+    "_type": "component",
+    "_component": "ppq",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_canShowModelAnswer": true,
+    "_canShowMarking": true,
+    "_developerMode": true,
+    "_resetPinsOnPinboardChange": false,
+    "title": "PPQ",
+    "displayTitle": "PPQ",
+    "body": "Body",
+    "instruction": "",
+    "_pinboardDesktop": {
+      "src": "course/en/assets/photo-women.png",
+      "alt": "alt text",
+      "title": "title text"
+    },
+    "_pinboardMobile": {
+      "src": "course/en/assets/sber-notebook.png",
+      "alt": "alt text",
+      "title": "title text"
+    },
+    "_items": [
+      {
+        "desktop": {
+          "left": 50,
+          "top": 20
+        },
+        "mobile": {
+          "left": 20,
+          "top": 70,
+          "width": 20,
+          "height": 20
+        }
+      },
+      {
+        "desktop": {
+          "left": 80,
+          "top": 40,
+          "width": 5,
+          "height": 5
+        },
+        "mobile": {
+          "left": 40,
+          "top": 40,
+          "width": 20,
+          "height": 20
+        }
+      },
+      {
+        "desktop": {
+          "left": 90,
+          "top": 60,
+          "width": 5,
+          "height": 5
+        },
+        "mobile": {
+          "left": 60,
+          "top": 10,
+          "width": 20,
+          "height": 20
+        }
+      }
+    ],
+    "_feedback": {
+      "correct": "Congratulations, this is the correct feedback.",
+      "_partlyCorrect": {
+        "final": "This is the partly correct feedback."
+      },
+      "_incorrect": {
+        "final": "Unfortunately this is the incorrect feedback."
+      }
+    }
+  },
+  {
+    "_id": "c-0-20",
+    "_parentId": "b-0-20",
+    "_type": "component",
+    "_component": "blinds",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Blinds",
+    "displayTitle": "Superheroes",
+    "body": "This is an example of Dan's fantastic new adapt-blinds component",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "height": 400,
+    "_expandBy": 2.8,
+    "_items": [
+      {
+        "src": "course/en/assets/photo-man.png"
+      },
+      {
+        "src": "course/en/assets/photo-man.png"
+      },
+      {
+        "src": "course/en/assets/photo-man.png"
+      },
+      {
+        "src": "course/en/assets/photo-man.png"
+      },
+      {
+        "src": "course/en/assets/photo-man.png"
+      }
+    ]
+  },
+  {
+    "_id": "c-0-21",
+    "_parentId": "b-0-21",
+    "_type": "component",
+    "_component": "slider",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Slider type component",
+    "displayTitle": "",
+    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "instruction": "Выберите один вариант ответа:",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "labelStart": "",
+    "labelEnd": "",
+    "_scaleStart": 1,
+    "_scaleEnd": 10,
+    "_scaleStep": 1,
+    "_correctAnswer": "",
+    "_correctRange": {
+      "_bottom": 4,
+      "_top": 9
+    },
+    "_showNumber": true,
+    "_showScaleIndicator": true,
+    "_showScale": true,
+    "_showScaleNumbers": true,
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+  "_id": "c-0-22",
+  "_parentId": "b-0-22",
+  "_type": "component",
+  "_component": "hotgraphic",
+  "_classes": "",
+  "_layout": "full",
+  "title": "Hot graphic",
+  "displayTitle": "Длинный заголовок",
+  "body": "This is optional body text.",
+  "instruction": "Select the hotspots on the image to reveal the text. This component will scale down to a narrative when viewed on mobile.",
+  "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
+  "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
+  "_comment": "setCompletionOn = inview | allItems",
+  "_setCompletionOn": "allItems",
+  "_canCycleThroughPagination": false,
+  "_hidePagination": false,
+  "_useNumberedPins": false,
+  "_useGraphicsAsPins": false,
+  "_isRound": false,
+  "_graphic": {
+    "src": "course/en/assets/photo-man.png",
+    "alt": "Placeholder graphic",
+    "attribution": ""
+  },
+  "_items": [
+    {
+      "title": "Длинный заголовок",
+      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+      "_graphic": {
+        "src": "course/en/assets/sber-card.png",
+        "alt": "Placeholder graphic",
+        "attribution": "",
+        "_classes": ""
+      },
+      "strapline": "Hotspot 1 strapline",
+      "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+      "_classes": "icon-plus align-image-left",
+      "_top": 25,
+      "_left": 25
+    },
+    {
+      "title": "Длинный заголовок 2",
+      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+      "_graphic": {
+        "src": "",
+        "alt": "",
+        "attribution": "",
+        "_classes": ""
+      },
+      "strapline": "Hotspot 2 strapline",
+      "_classes": "icon-plus",
+      "_top": 50,
+      "_left": 50
+    },
+    {
+      "title": "Длинный заголовок 3",
+      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+      "_graphic": {
+        "src": "course/en/assets/phone.png",
+        "alt": "",
+        "attribution": "",
+        "_classes": ""
+      },
+      "strapline": "Hotspot 3 strapline",
+      "_classes": "icon-plus",
+      "_top": 75,
+      "_left": 75
+    }
+  ],
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
+},
+  {
+    "_id": "c-0-pN",
+    "_parentId": "b-0-pN",
+    "_type": "component",
+    "_component": "pageNav",
+    "_classes": "",
+    "_layout": "full",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_loopStyleComment": {
+      "allPages": "loop sequentially through all pages in course",
+      "siblings": "loop sequentially through all pages in current parent object",
+      "none": "disable previous and next buttons at start and end of the pages in the current parent object"
+    },
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Назад",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "icon-home",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Вперед",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "align-right",
+        "_iconClass": "icon-arrow-up-2",
+        "_alignIconRight": false,
+        "text": "",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 1,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
     }
   }
 ]
