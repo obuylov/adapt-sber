@@ -782,9 +782,9 @@
     "_classes": "",
     "_layout": "full",
     "title": "Matching",
-    "displayTitle": "Matching",
-    "body": "",
-    "instruction": "",
+    "displayTitle": "",
+    "body": "Сопоставьте факты с датами в истории Сбербанка",
+    "instruction": "Выберите вариант из каждого раскрывающегося списка и нажмите «Ответить».",
     "_attempts": 1,
     "_shouldDisplayAttempts": false,
     "_shouldResetAllAnswers": false,
@@ -797,52 +797,52 @@
     "placeholder": "Длинный заголовок",
     "_items": [
       {
-        "text": "Длинный заголовок",
+        "text": "В каком году основан Сбербанк",
         "_options": [
           {
-            "text": "Option one",
-            "_isCorrect": false
-          },
-          {
-            "text": "Option two (correct)",
+            "text": "1841",
             "_isCorrect": true
           },
           {
-            "text": "Option three",
+            "text": "1976",
+            "_isCorrect": false
+          },
+          {
+            "text": "2003",
             "_isCorrect": false
           }
         ]
       },
       {
-        "text": "Длинный заголовок",
+        "text": "В каком году была запущена система Сбербанк бизнес ОнЛайн",
         "_options": [
           {
-            "text": "Option one",
+            "text": "2015",
             "_isCorrect": false
           },
           {
-            "text": "Option two",
+            "text": "2003",
             "_isCorrect": false
           },
           {
-            "text": "Option three (correct)",
+            "text": "2010",
             "_isCorrect": true
           }
         ]
       },
       {
-        "text": "Длинный заголовок",
+        "text": "В каком году Сбербанк представил логотип «Сбер»",
         "_options": [
           {
-            "text": "Option one (correct)",
+            "text": "2020",
             "_isCorrect": true
           },
           {
-            "text": "Option two",
+            "text": "2018",
             "_isCorrect": false
           },
           {
-            "text": "Option three",
+            "text": "2019",
             "_isCorrect": false
           }
         ]

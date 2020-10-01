@@ -1,10 +1,26 @@
 .matching {
+  &__inner {
+    box-shadow: @shadow-full;
+    border-radius: 5px;
+    padding: 70px;
+  }
+  &__header-inner{
+    .matching__body-inner {
+      margin-bottom: 50px!important;
+      font-size: 21px!important;
+      font-weight: bold!important;
+    }
+    .matching__instruction-inner {
+      font-size: 18px!important;
+    }
+  }
   &__item {
     margin-bottom: @item-margin / 2;
   }
 
   &__item-title {
-    padding: @item-padding;
+    padding: 1rem 0;
+    font-size: 14px;
   }
 
   &__select-container {

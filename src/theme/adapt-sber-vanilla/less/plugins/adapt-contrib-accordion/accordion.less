@@ -2,15 +2,16 @@
   &__item {
     margin-bottom: @item-margin / 2;
     &-title-inner {
-      margin-left: 40px;
+      margin-left: 60px;
     }
   }
   &__item-content {
     display: none;
     padding: @item-padding;
-    border: #c4c4c4 solid 1px;
+    //border: #c4c4c4 solid 1px;
     border-top: transparent;
     border-radius: 0 0 5px 5px;
+    box-shadow: @shadow-full;
     &-inner {
       display: flex;
       flex-direction:column-reverse;
@@ -26,7 +27,7 @@
     padding: @item-padding;
     padding-right: @icon-size + (@item-padding * 2);
     text-align: left;
-    background-color: @progress;
+    background-color: @light-gray;
     border-radius: 5px;
 
 
@@ -44,7 +45,15 @@
   }
   &__item-btn .icon{
     background-color: @light-gray;
-    border-radius: 12px;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+  }
+  &__item-btn .icon:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__item-btn.is-closed .icon {
@@ -56,10 +65,10 @@
   }
 
   &__item-btn.is-visited {
-    background-color: #e5e5e5;
+    background-color: @green-accordion;
   }
   &__item-btn.is-open {
-    background-color: @progress;
+    background-color: @green-accordion;
   }
 
   &__item-icon {

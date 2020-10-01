@@ -131,7 +131,7 @@
 // Иконка, цветной фон
 .green-yellow-grad {
   .flipcard__item-front {
-    background: @green-yellow-grad;
+    //background: @green-yellow-grad;
     .flipcard__item-frontImage {
       min-width: unset;
       width: 90px;
@@ -139,6 +139,9 @@
       transform: translate(-50%, -80%);
       top: 50%;
       left: 50%;
+    }
+    .flipcard__item-frontTitle p {
+      margin: 0 auto;
     }
   }
 }
@@ -184,6 +187,6 @@
     }
   }
   .flipcard__item-front:hover {
-    background-color: #EBEDFF;
+    background: @green-tab-grad;
   }
 }
