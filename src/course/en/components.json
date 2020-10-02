@@ -371,7 +371,7 @@
     "displayTitle": "Длинный заголовок",
     "body": "",
     "instruction": "",
-    "_tabLayout": "horizontal",
+    "_tabLayout": "vertical",
     "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
     "_items": [
       {
@@ -652,50 +652,34 @@
   },
   {
     "_id": "c-0-14",
-    "_parentId": "b-0-14",
-    "_type": "component",
-    "_component": "notify-imagegrid",
-    "_classes": "",
-    "_layout": "full",
-    "title": "Adapt notify imagegrid",
-    "displayTitle": "Длинный заголовок",
+    "_parentId":"b-0-14",
+    "_type":"component",
+    "_component":"reveal",
+    "_classes":"",
+    "_layout":"full",
+    "_direction":"left",
+    "title": "",
+    "displayTitle": "This is a reveal demo",
     "body": "",
-    "_columns": 3,
-    "_gridrowHeight": {
-      "_heightAmount": 300,
-      "_constrainHeight": 300
+    "first": {
+      "src": "course/en/assets/photo-women.png",
+      "alt": "First item",
+      "title": "Подразделение комплаенс —",
+      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+      "_maxCharacters": 10,
+      "moreText": "More"
     },
-    "_items": [
-      {
-        "_graphic": {
-          "src": "course/en/assets/photo-man.png",
-          "alt": "alt text here test",
-          "title": "Длинный длинный заголовок 1 длинный заголовок 1",
-          "gridmessage": "Message 1"
-        },
-        "_itemClasses": "grid-item-1"
-      },
-      {
-        "_graphic": {
-          "src": "course/en/assets/photo-man.png",
-          "alt": "",
-          "title": "Длинный длинный заголовок 2",
-          "gridmessage": "Message 2"
-        },
-        "_itemClasses": "grid-item-2"
-      },
-      {
-        "_graphic": {
-          "src": "course/en/assets/photo-man.png",
-          "alt": "",
-          "title": "Длинный длинный заголовок 3",
-          "gridmessage": "Message 3"
-        },
-        "_itemClasses": "grid-item-3"
-      }
-    ],
-    "_pageLevelProgress": {
-      "_isEnabled": true
+    "second": {
+      "src": "course/en/assets/photo-man.png",
+      "alt": "Second item",
+      "title": "Подразделение комплаенс —",
+      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+      "_maxCharacters": 50,
+      "moreText": "More"
+    },
+    "control": {
+      "showText": "Show",
+      "hideText": "Hide"
     }
   },
   {
@@ -706,8 +690,8 @@
     "_classes": "",
     "_layout": "full",
     "title": "MCQ",
-    "displayTitle": "",
-    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "displayTitle": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "body": "",
     "instruction": "Выберите один вариант ответа:",
     "_attempts": 1,
     "_shouldDisplayAttempts": false,
@@ -980,8 +964,8 @@
     "_classes": "",
     "_layout": "full",
     "title": "Title of our text input component",
-    "displayTitle": "",
-    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "displayTitle": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "body": "",
     "instruction": "",
     "_attempts": 1,
     "_shouldDisplayAttempts": false,
@@ -1166,9 +1150,9 @@
     "_classes": "",
     "_layout": "full",
     "title": "Slider type component",
-    "displayTitle": "",
-    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
-    "instruction": "Выберите один вариант ответа:",
+    "displayTitle": "Считается, что рабочая память отвечает за нашу способность временно удерживать информацию и манипулировать ею, но, согласно статье Миллера (1956), какое «магическое число» описывает ее способность?",
+    "body": "",
+    "instruction": "Перетащите ползунок, чтобы сделать свой выбор, и нажмите «Ответить»",
     "_attempts": 1,
     "_shouldDisplayAttempts": false,
     "_questionWeight": 1,
@@ -1187,7 +1171,7 @@
       "_top": 9
     },
     "_showNumber": true,
-    "_showScaleIndicator": true,
+    "_showScaleIndicator": false,
     "_showScale": true,
     "_showScaleNumbers": true,
     "_feedback": {
@@ -1301,6 +1285,75 @@
     "_isEnabled": true
   }
 },
+  {
+    "_id": "c-0-23",
+    "_parentId": "b-0-23",
+    "_type": "component",
+    "_component": "slider",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Slider type component",
+    "displayTitle": "Скажите, как вы относитесь к публичным выступлениям?",
+    "body": "",
+    "instruction": "",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "labelStart": "Мне легче подружиться с амазонским тарантулом, чем выступать публично",
+    "labelEnd": "Да я Иллон Маск и Тонни Робинс публичных выступлений",
+    "_scaleStart": 1,
+    "_scaleEnd": 2,
+    "_scaleStep": 1,
+    "_correctAnswer": "",
+    "_correctRange": {
+      "_bottom": 4,
+      "_top": 9
+    },
+    "_showNumber": false,
+    "_showScaleIndicator": true,
+    "_showScale": true,
+    "_showScaleNumbers": false,
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": "Select here to submit your answer."
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Correct Answer",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "My Answer",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "Show feedback",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "attempts remaining",
+      "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
   {
     "_id": "c-0-pN",
     "_parentId": "b-0-pN",

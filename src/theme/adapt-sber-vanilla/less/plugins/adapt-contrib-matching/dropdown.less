@@ -13,8 +13,8 @@
 
     .no-touch &:not(.is-disabled):not([aria-expanded="true"]):hover,
     html:not(.a11y-disable-focusoutline) &:focus {
-      background-color: @item-color-hover;
-      color: @item-color-inverted-hover;
+      background-color: white;
+      color: black;
       .transition(background-color @duration ease-in, color @duration ease-in;);
     }
 
@@ -90,6 +90,9 @@
       background-color: @item-color-selected;
       color: @item-color-inverted-selected;
     }
+    &:hover{
+      background-color: @green-button;
+    }
   }
 
   &__list {
@@ -99,7 +102,7 @@
     padding: 0;
     border: black solid 1px;
     border-radius: 0 0 5px 5px;
-    background: white;
+    background: @light-gray;
     z-index: 1;
 
     .dropdown__item {
@@ -109,7 +112,7 @@
       background-color: transparent;
     }
     .dropdown__item:hover {
-      background-color: @green-accordion;
+      background-color: @green-button;
     }
     .dropdown__item:last-child {
       border-bottom: none;
