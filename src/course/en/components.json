@@ -1355,6 +1355,34 @@
     }
   },
   {
+    "_id": "c-0-24",
+    "_parentId": "b-0-24",
+    "_type": "component",
+    "_component": "dragndrop",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_questionWeight": 100,
+    "title": "dragndrop",
+    "displayTitle": "",
+    "body": "",
+    "_canShowFeedback": false,
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Какие проекты из экосистемы Сбера относятся к сфере финансов?",
+        "accepted": ["ЮMoney", "Сбербанк Онлайн", "Сбербанк Бизнес Онлайн"]
+      },
+      {
+        "text": "Какие проекты из экосистемы Сбера относятся к сфере развлечений?",
+        "accepted": ["Okko", "Сбер Звук"]
+      }
+
+    ],
+    "dummyAnswers": ["Сбер Логистика", "Ситимобил"]
+  },
+
+  {
     "_id": "c-0-pN",
     "_parentId": "b-0-pN",
     "_type": "component",
