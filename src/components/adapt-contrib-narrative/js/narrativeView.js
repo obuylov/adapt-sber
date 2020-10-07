@@ -201,8 +201,8 @@ define([
       this.$('.narrative__progress').removeClass('is-selected').filter(indexSelector).addClass('is-selected');
 
       const $slideGraphics = this.$('.narrative__slider-image-container');
-       Adapt.a11y.toggleAccessibleEnabled($slideGraphics.children('.controls'), false);
-       Adapt.a11y.toggleAccessibleEnabled($slideGraphics.filter(indexSelector).children('.controls'), true);
+      Adapt.a11y.toggleAccessibleEnabled($slideGraphics.children('.controls'), false);
+      Adapt.a11y.toggleAccessibleEnabled($slideGraphics.filter(indexSelector).children('.controls'), true);
 
       const $narrativeItems = this.$('.narrative__content-item');
       $narrativeItems.addClass('u-visibility-hidden u-display-none');
@@ -210,8 +210,8 @@ define([
       Adapt.a11y.toggleAccessible($narrativeItems.filter(indexSelector).removeClass('u-visibility-hidden u-display-none'), true);
 
       const $narrativeStraplineButtons = this.$('.narrative__strapline-btn');
-       Adapt.a11y.toggleAccessibleEnabled($narrativeStraplineButtons, false);
-       Adapt.a11y.toggleAccessibleEnabled($narrativeStraplineButtons.filter(indexSelector), true);
+      Adapt.a11y.toggleAccessibleEnabled($narrativeStraplineButtons, false);
+      Adapt.a11y.toggleAccessibleEnabled($narrativeStraplineButtons.filter(indexSelector), true);
 
       this.evaluateNavigation();
       this.evaluateCompletion();
