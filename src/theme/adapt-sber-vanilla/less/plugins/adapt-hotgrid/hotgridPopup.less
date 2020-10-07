@@ -1,0 +1,183 @@
+.hotgrid-popup {
+  position: relative;
+
+  // Pop up toolbar
+  // --------------------------------------------------
+  &__inner {
+    //padding-top: @icon-size + (@icon-padding * 2);
+  }
+
+  &__toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    background: @green-tab-180-grad;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__toolbar.hide-pagination {
+    justify-content: flex-end;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    button {
+      background-color: transparent;
+    }
+  }
+
+  &__count {
+    padding: @icon-padding;
+  }
+
+  &__controls.is-disabled {
+    visibility: hidden;
+  }
+
+  // Pop up item
+  // --------------------------------------------------
+  &__item-image-container {
+    width: 60%;
+  }
+
+  @media (min-width: @device-width-medium) {
+    &__item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 100px 90px 70px;
+    }
+
+    &__item-content {
+      width: 84%;
+    }
+
+    &__item-image-container {
+      width: 10%;
+    }
+    &__item-title{
+      margin-bottom: 30px;
+      font-size: 21px;
+      font-weight: bold;
+    }
+  }
+
+  // Modifier for pop up item to add rounded border
+  // --------------------------------------------------
+  &__item.is-round &__item-image {
+    border-radius: 50%;
+  }
+
+  // Hotgrid pop up icons
+  // --------------------------------------------------
+  &__controls.back .icon {
+    .icon-controls-small-left;
+  }
+
+  &__controls.next .icon {
+    .icon-controls-small-right;
+  }
+
+  &__close .icon {
+    .icon-cross;
+    background-color: transparent;
+  }
+
+  // Hide the items that are not currently active and being viewed
+  // --------------------------------------------------
+  &__item:not(.is-active) {
+    .u-display-none;
+  }
+
+  // Align hotgrid pop up image to the left
+  // --------------------------------------------------
+  @media (min-width: @device-width-medium) {
+    &__item.align-image-left {
+      flex-direction: row-reverse;
+    }
+
+    &__item.align-image-left &__item-image-container {
+      margin-left: inherit;
+      margin-right: @item-padding;
+    }
+  }
+
+  // Hide hotgrid pop up image in desktop
+  // --------------------------------------------------
+  @media (min-width: @device-width-medium) {
+    &__item.hide-desktop-image &__item-content {
+      width: 100%;
+    }
+
+    &__item.hide-desktop-image &__item-image-container {
+      .u-display-none;
+    }
+  }
+
+  // Hide hotgrid pop up image for all screen sizes
+  // --------------------------------------------------
+  &__item.hide-popup-image &__item-content {
+    width: 100%;
+  }
+
+  &__item.hide-popup-image &__item-image-container {
+    .u-display-none;
+  }
+}
+
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+.hotgrid-popup {
+  // Increase toolbar padding top so the browser outline of the
+  // item title is not hidden by toolbar
+  // --------------------------------------------------
+  &__inner {
+    padding-top: (@icon-size + (@icon-padding * 2)) + (@item-padding / 2);
+  }
+
+  &__controls,
+  &__close {
+    margin: @btn-margin / 2;
+    padding: @btn-padding / 2;
+    background-color: transparent;
+    color: black;
+    border-radius: 50%;
+
+    .no-touch &:hover {
+      background-color: @notify-icon-hover;
+      color: @notify-icon-inverted-hover;
+      .transition(background-color @duration ease-in, color @duration ease-in;);
+    }
+  }
+
+  &__item-title {
+    margin-bottom: @notify-title-margin;
+    .component-title;
+  }
+
+  &__item-body {
+    margin-bottom: @notify-body-margin;
+  }
+
+  &__item-body a {
+    .link-text;
+    color: @notify-link;
+
+    .no-touch &:hover {
+      color: @notify-link-hover;
+      .transition(color @duration ease-in);
+    }
+  }
+
+  .hotgrid.has-img-zoom &__item-image-container {
+    .img-zoom();
+  }
+}

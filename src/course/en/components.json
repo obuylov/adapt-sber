@@ -457,22 +457,22 @@
     "_items": [
       {
         "body": "Роль государства, Банка и его сотрудников в борьбе с легализацией преступных доходов",
-        "_imageSrc": "course/en/assets/icon1.png",
+        "_imageSrc": "course/en/assets/icon1.svg",
         "alt": ""
       },
       {
         "body": "Описание понятий: «легализация», «финансирование терроризма»",
-        "_imageSrc": "course/en/assets/icon2.png",
+        "_imageSrc": "course/en/assets/icon2.svg",
         "alt": ""
       },
       {
         "body": "Роль государства, Банка и его сотрудников в борьбе с легализацией преступных доходов",
-        "_imageSrc": "course/en/assets/icon3.png",
+        "_imageSrc": "course/en/assets/icon3.svg",
         "alt": ""
       },
       {
         "body": "Описание понятий: «легализация», «финансирование терроризма»",
-        "_imageSrc": "course/en/assets/icon4.png",
+        "_imageSrc": "course/en/assets/icon4.svg",
         "alt": ""
       }
     ],
@@ -1381,7 +1381,166 @@
     ],
     "dummyAnswers": ["Сбер Логистика", "Ситимобил"]
   },
-
+  {
+    "_id": "c-0-25",
+    "_parentId": "b-0-25",
+    "_type": "component",
+    "_component": "hotgrid",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Hotgrid",
+    "displayTitle": "Подразделение комплаенс —",
+    "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+    "instruction": "",
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_canCycleThroughPagination": false,
+    "_hidePagination": false,
+    "_columns": 4,
+    "_isRound": false,
+    "_items": [
+      {
+        "title": "Валютный контроль",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon9.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "Placeholder graphic",
+          "title": "Валютный контроль"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon9.svg",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Валютные операции",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon10.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Валютные операции"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon10.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Резиденты",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon11.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Резиденты"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon11.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Нерезиденты",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon12.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Нерезиденты"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon12.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Внешние ценные бумаги",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon13.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Внешние ценные бумаги"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon13.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Валютные ценности",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon14.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Валютные ценности"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon14.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Агенты валютного контроля",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon9.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Агенты валютного контроля"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon9.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Агенты валютного контроля",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon11.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Агенты валютного контроля"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon11.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
   {
     "_id": "c-0-pN",
     "_parentId": "b-0-pN",

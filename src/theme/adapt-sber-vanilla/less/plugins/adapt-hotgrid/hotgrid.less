@@ -1,0 +1,92 @@
+.hotgrid {
+  &__grid {
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &__item {
+    box-shadow: @shadow-full;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+
+  &__item-btn {
+    padding: 30px 10px 10px;
+  }
+
+  &__item-btn:hover {
+    background: @blue-mint-grad;
+    border-radius: 5px;
+
+    .hotgrid__item-btn-inner {
+      .hotgrid__item-title{
+        &-inner {
+          color: white!important;
+        }
+      }
+    }
+  }
+
+
+  // Application of item image states
+  // --------------------------------------------------
+
+
+}
+
+// Hotgrid item image states
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// THEME
+// --------------------------------------------------
+.hotgrid {
+  &__item-btn {
+    height: 100%;
+  }
+
+  &__item-btn-inner {
+    .hotgrid__item-image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__item-title {
+    font-size: 14px;
+  }
+
+
+  // Hotgrid item theme
+  // --------------------------------------------------
+  &__item-btn &__item-title,
+  &__item-btn &__item-icon {
+    background-color: transparent;
+    color: black;
+  }
+
+  .no-touch &__item-btn:hover &__item-title,
+  .no-touch &__item-btn:hover &__item-icon {
+    background-color: transparent;
+    color: white;
+  }
+
+  &__item-btn.is-visited {
+    background-color: @light-gray;
+  }
+
+  &__item-btn.is-visited &__item-title,
+  &__item-btn.is-visited &__item-icon {
+    background-color: transparent;
+    color: black;
+  }
+
+  // Hotgrid CSS border states
+  // --------------------------------------------------
+  &__item-btn.is-css &__item-image {
+    border: none;
+    min-width: unset;
+  }
+}
