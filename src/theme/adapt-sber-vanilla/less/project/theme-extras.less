@@ -87,43 +87,46 @@
 
 .block-color-mixin(@color, @color-inverted) {
 
-.block-color.@{color} {
-  background-color: @@color;
-  color: @@color-inverted;
+  .block-color.@{color} {
+    background-color: @@color;
+    color: @@color-inverted;
 
-  .block,
-  .component {
-    &__title,
-    &__body a,
-    &__instruction a {
-      color: @@color-inverted;
+    .block,
+    .component {
+      &__title,
+      &__body a,
+      &__instruction a {
+        color: @@color-inverted;
+      }
+    }
+
+    .pagelevelprogress {
+      &__indicator {
+        border-color: @@color-inverted;
+      }
+
+      &__indicator-inner {
+        background-color: @@color;
+      }
+
+      &__indicator-bar {
+        background-color: @@color-inverted;
+      }
+    }
+
+    .narrative {
+      &__progress {
+        background-color: fade(@@color-inverted, 50%);
+      }
+
+      &__progress.is-selected {
+        background-color: @@color-inverted;
+      }
     }
   }
 
-  .pagelevelprogress {
-    &__indicator {
-      border-color: @@color-inverted;
-    }
-    &__indicator-inner {
-      background-color: @@color;
-    }
-    &__indicator-bar {
-      background-color: @@color-inverted;
-    }
-  }
-
-  .narrative {
-    &__progress {
-      background-color: fade(@@color-inverted, 50%);
-    }
-
-    &__progress.is-selected {
-      background-color: @@color-inverted;
-    }
-  }
 }
 
-}
 // --------------------------------------------------
 
 .two-cols {
@@ -183,4 +186,30 @@
 
 .center {
   text-align: center;
+}
+
+.figure {
+  position: absolute;
+  z-index: -1;
+
+  &.circle {
+    background: linear-gradient(180deg, #42E3CB 0%, rgba(68, 227, 181, 0.991353) 6.67%, rgba(73, 228, 183, 0.96449) 13.33%, rgba(81, 229, 186, 0.91834) 20%, rgba(94, 231, 191, 0.852589) 26.67%, rgba(110, 233, 197, 0.768225) 33.33%, rgba(129, 236, 205, 0.668116) 40%, rgba(150, 239, 213, 0.557309) 46.67%, rgba(171, 243, 222, 0.442691) 53.33%, rgba(192, 246, 230, 0.331884) 60%, rgba(211, 249, 238, 0.231775) 66.67%, rgba(227, 251, 244, 0.147411) 73.33%, rgba(240, 253, 249, 0.0816599) 80%, rgba(248, 254, 252, 0.03551) 86.67%, rgba(253, 255, 254, 0.0086472) 93.33%, rgba(255, 255, 255, 0) 100%), #0066FF;
+    border-radius: 50%;
+  }
+
+  &.rect {
+    background: linear-gradient(180deg, #42E3CB 0%, rgba(68, 227, 181, 0.991353) 6.67%, rgba(73, 228, 183, 0.96449) 13.33%, rgba(81, 229, 186, 0.91834) 20%, rgba(94, 231, 191, 0.852589) 26.67%, rgba(110, 233, 197, 0.768225) 33.33%, rgba(129, 236, 205, 0.668116) 40%, rgba(150, 239, 213, 0.557309) 46.67%, rgba(171, 243, 222, 0.442691) 53.33%, rgba(192, 246, 230, 0.331884) 60%, rgba(211, 249, 238, 0.231775) 66.67%, rgba(227, 251, 244, 0.147411) 73.33%, rgba(240, 253, 249, 0.0816599) 80%, rgba(248, 254, 252, 0.03551) 86.67%, rgba(253, 255, 254, 0.0086472) 93.33%, rgba(255, 255, 255, 0) 100%), #0066FF;
+    border-radius: 20px;
+    transform: skew(-20deg, 5deg);
+  }
+}
+
+.white {
+  background-color: white;
+}
+
+.white-components {
+  .component__inner {
+    .white;
+  }
 }

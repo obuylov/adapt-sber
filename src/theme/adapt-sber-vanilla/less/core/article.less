@@ -1,4 +1,8 @@
 .article {
+  &.figures {
+    position: relative;
+  }
+
   &.has-bg-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,19 +32,23 @@
   &__instruction a {
     .link-text;
   }
-}
-.gray{
-  background-color: @light-gray;
-}
 
-.dark{
-  color: white!important;
-  background-color: @dark;
-  //filter: invert(1) hue-rotate(210deg);
-}
-.green-grad{
-  background: @green-grad;
-}
-.green-blue-grad{
-  background: @green-blue-grad;
+  &.gray {
+    background-color: @light-gray;
+  }
+
+  &.dark {
+    color: white !important;
+    background-color: @dark;
+    //filter: invert(1) hue-rotate(210deg);
+  }
+
+  &.green-grad {
+    background: @green-grad;
+  }
+
+  &.green-blue-grad {
+    background: @green-blue-grad;
+  }
+
 }

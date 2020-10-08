@@ -14,7 +14,7 @@ define([
     var model = view.model;
     var theme = model.get("_sber-vanilla");
 
-    if (!theme) return;
+    // if (!theme) return;
 
     switch (model.get("_type")) {
       case "page":

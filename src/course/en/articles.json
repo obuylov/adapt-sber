@@ -23,7 +23,7 @@
     "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "",
+    "_classes": "figures white-components",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
