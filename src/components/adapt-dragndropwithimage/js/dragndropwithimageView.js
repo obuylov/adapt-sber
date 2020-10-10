@@ -62,7 +62,7 @@ define([
 			var hItem = $draggables.height();
 
 			$droppables.droppable({
-				activeClass: "ui-state-active",
+				// activeClass: "ui-state-active",
 				tolerance: "intersect"
 			}).height(hItem);
 
@@ -308,7 +308,7 @@ define([
 
 			var component_id = this.model.get("_id");
 			var items = this.model.get("_items");
-			
+
 			_.each(items, function (item, i) {
 				var uniqueitem = $('.dragndropwithimage[data-adapt-id="' + component_id + '"] .dragndropwi__inner .dragndropwi-question[data-index="' + i + '"] .ui-state-disabled');
 				var uniqueitemnum = uniqueitem.length;
@@ -332,7 +332,7 @@ define([
 					setTimeout(function() {
 						$('.dragndropwithimage[data-adapt-id="' + component_id + '"] .dragndropwi__inner .dragndropwi-question[data-index="' + getindex + '"]').addClass('correct');
 						$('.dragndropwithimage[data-adapt-id="' + component_id + '"] .dragndropwi__inner .dragndropwi-answer[name="' + myuser0 + '"]').remove();
-						$('.dragndropwithimage[data-adapt-id="' + component_id + '"] .dragndropwi__inner .dragndropwi-question[data-index="' + getindex + '"] .ui-state-disabled[data-index="' + getindex + '"]').removeAttr('data-index');					
+						$('.dragndropwithimage[data-adapt-id="' + component_id + '"] .dragndropwi__inner .dragndropwi-question[data-index="' + getindex + '"] .ui-state-disabled[data-index="' + getindex + '"]').removeAttr('data-index');
 					}, animationTime);
 					this.popupCorrect();
 				} else {
@@ -423,7 +423,7 @@ define([
 					var checkaccepted = mraccepted.src;
 
 					answers = answers.concat(checkaccepted); //Combines multiple answers?
-					
+
 					$('.dragndropwithimage[data-adapt-id="' + myownid + '"] .dragndropwi__inner .dragndropwi-item[name*="' + checkaccepted + '"]').addClass("dragcharm").text("For \n" + item.text);
 
 
@@ -454,7 +454,7 @@ define([
 
 				_.each(item.accepted, function (mraccepted) {
 					var accepted = mraccepted.src;
-					
+
 					$('.dragndropwithimage[data-adapt-id="' + myownid + '"] .dragndropwi__inner .dragndropwi-item[name*="' + accepted + '"]').removeClass("dragcharm").text(accepted);
 				});
 			});
@@ -571,7 +571,7 @@ define([
 
 					answers.sort();
 					item._userAnswer.sort();
-	
+
 					if (item._userAnswer.join() !== answers.join()) {
 						var itemUserAnswers = _.difference(item._userAnswer, answers);
 						var acceptedAnswers = _.difference(answers, item._userAnswer);

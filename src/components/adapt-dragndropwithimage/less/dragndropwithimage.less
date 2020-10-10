@@ -50,7 +50,7 @@
         justify-content: center;
         align-items: center;
         max-width: 188px;
-        
+
         .dragndropwi-question-text {
             font-size: @body-size;
             margin-bottom: 10px;
@@ -60,10 +60,15 @@
             z-index: 10;
             max-width: 188px;
         }
-        
+
         .dragndropwi-item-graphic {
-            float: right;
             width: 200px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f6f6f6;
+            border-radius: 10px;
         }
 
         .ui-droppable {
@@ -128,10 +133,10 @@
 
     .dragndropwi-answers {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        
+
         .dragndropwi-answer {
             float: left;
             color: transparent;
@@ -182,8 +187,8 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         display: inline-block;
-        padding: 0px;
-        margin: 10px 10px 20px 10px;
+        padding: 0;
+        margin: 0 0 50px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;

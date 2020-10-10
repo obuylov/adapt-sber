@@ -652,12 +652,12 @@
   },
   {
     "_id": "c-0-14",
-    "_parentId":"b-0-14",
-    "_type":"component",
-    "_component":"reveal",
-    "_classes":"",
-    "_layout":"full",
-    "_direction":"left",
+    "_parentId": "b-0-14",
+    "_type": "component",
+    "_component": "reveal",
+    "_classes": "",
+    "_layout": "full",
+    "_direction": "left",
     "title": "",
     "displayTitle": "This is a reveal demo",
     "body": "",
@@ -1212,79 +1212,79 @@
     }
   },
   {
-  "_id": "c-0-22",
-  "_parentId": "b-0-22",
-  "_type": "component",
-  "_component": "hotgraphic",
-  "_classes": "",
-  "_layout": "full",
-  "title": "Hot graphic",
-  "displayTitle": "Длинный заголовок",
-  "body": "This is optional body text.",
-  "instruction": "Select the hotspots on the image to reveal the text. This component will scale down to a narrative when viewed on mobile.",
-  "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
-  "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
-  "_comment": "setCompletionOn = inview | allItems",
-  "_setCompletionOn": "allItems",
-  "_canCycleThroughPagination": false,
-  "_hidePagination": false,
-  "_useNumberedPins": false,
-  "_useGraphicsAsPins": false,
-  "_isRound": false,
-  "_graphic": {
-    "src": "course/en/assets/photo-man.png",
-    "alt": "Placeholder graphic",
-    "attribution": ""
-  },
-  "_items": [
-    {
-      "title": "Длинный заголовок",
-      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
-      "_graphic": {
-        "src": "course/en/assets/sber-card.png",
-        "alt": "Placeholder graphic",
-        "attribution": "",
-        "_classes": ""
-      },
-      "strapline": "Hotspot 1 strapline",
-      "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
-      "_classes": "icon-plus align-image-left",
-      "_top": 25,
-      "_left": 25
+    "_id": "c-0-22",
+    "_parentId": "b-0-22",
+    "_type": "component",
+    "_component": "hotgraphic",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Hot graphic",
+    "displayTitle": "Длинный заголовок",
+    "body": "This is optional body text.",
+    "instruction": "Select the hotspots on the image to reveal the text. This component will scale down to a narrative when viewed on mobile.",
+    "mobileBody": "This is optional body text that will be shown when viewed on mobile.",
+    "mobileInstruction": "This is optional instruction text that will be shown when viewed on mobile.",
+    "_comment": "setCompletionOn = inview | allItems",
+    "_setCompletionOn": "allItems",
+    "_canCycleThroughPagination": false,
+    "_hidePagination": false,
+    "_useNumberedPins": false,
+    "_useGraphicsAsPins": false,
+    "_isRound": false,
+    "_graphic": {
+      "src": "course/en/assets/photo-man.png",
+      "alt": "Placeholder graphic",
+      "attribution": ""
     },
-    {
-      "title": "Длинный заголовок 2",
-      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
-      "_graphic": {
-        "src": "",
-        "alt": "",
-        "attribution": "",
-        "_classes": ""
+    "_items": [
+      {
+        "title": "Длинный заголовок",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_graphic": {
+          "src": "course/en/assets/sber-card.png",
+          "alt": "Placeholder graphic",
+          "attribution": "",
+          "_classes": ""
+        },
+        "strapline": "Hotspot 1 strapline",
+        "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "icon-plus align-image-left",
+        "_top": 25,
+        "_left": 25
       },
-      "strapline": "Hotspot 2 strapline",
-      "_classes": "icon-plus",
-      "_top": 50,
-      "_left": 50
-    },
-    {
-      "title": "Длинный заголовок 3",
-      "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
-      "_graphic": {
-        "src": "course/en/assets/phone.png",
-        "alt": "",
-        "attribution": "",
-        "_classes": ""
+      {
+        "title": "Длинный заголовок 2",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_graphic": {
+          "src": "",
+          "alt": "",
+          "attribution": "",
+          "_classes": ""
+        },
+        "strapline": "Hotspot 2 strapline",
+        "_classes": "icon-plus",
+        "_top": 50,
+        "_left": 50
       },
-      "strapline": "Hotspot 3 strapline",
-      "_classes": "icon-plus",
-      "_top": 75,
-      "_left": 75
+      {
+        "title": "Длинный заголовок 3",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_graphic": {
+          "src": "course/en/assets/phone.png",
+          "alt": "",
+          "attribution": "",
+          "_classes": ""
+        },
+        "strapline": "Hotspot 3 strapline",
+        "_classes": "icon-plus",
+        "_top": 75,
+        "_left": 75
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
     }
-  ],
-  "_pageLevelProgress": {
-    "_isEnabled": true
-  }
-},
+  },
   {
     "_id": "c-0-23",
     "_parentId": "b-0-23",
@@ -1371,15 +1371,24 @@
     "_items": [
       {
         "text": "Какие проекты из экосистемы Сбера относятся к сфере финансов?",
-        "accepted": ["ЮMoney", "Сбербанк Онлайн", "Сбербанк Бизнес Онлайн"]
+        "accepted": [
+          "ЮMoney",
+          "Сбербанк Онлайн",
+          "Сбербанк Бизнес Онлайн"
+        ]
       },
       {
         "text": "Какие проекты из экосистемы Сбера относятся к сфере развлечений?",
-        "accepted": ["Okko", "Сбер Звук"]
+        "accepted": [
+          "Okko",
+          "Сбер Звук"
+        ]
       }
-
     ],
-    "dummyAnswers": ["Сбер Логистика", "Ситимобил"]
+    "dummyAnswers": [
+      "Сбер Логистика",
+      "Ситимобил"
+    ]
   },
   {
     "_id": "c-0-25",
@@ -1539,6 +1548,92 @@
     ],
     "_pageLevelProgress": {
       "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-26",
+    "_parentId": "b-0-26",
+    "_type": "component",
+    "_component": "dragndropwithimage",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 1,
+    "_questionWeight": 100,
+    "title": "Superhero Colours",
+    "displayTitle": "Colourful Characters",
+    "body": "Do you know what colour these well-known superheroes are? Drag the items below into the correct slots",
+    "instruction": "",
+    "_bounceBack": true,
+    "_items": [
+      {
+        "_classes": "",
+        "text": "Сбер",
+        "accepted": [
+          {
+            "description": "Okko",
+            "src": "course/en/assets/okko.png"
+          }
+        ],
+        "_graphic": {
+          "alt": "hello",
+          "src": "course/en/assets/sber.png"
+        }
+      },
+      {
+        "_classes": "",
+        "text": "Яндекс",
+        "accepted": [
+          {
+            "description": "Кинопоиск",
+            "src": "course/en/assets/kino.png"
+          }
+        ],
+        "_graphic": {
+          "alt": "hello",
+          "src": "course/en/assets/ya.png"
+        }
+      },
+      {
+        "_classes": "",
+        "text": "Тинькофф",
+        "accepted": [
+          {
+            "description": "Tinkoff журнал",
+            "src": "course/en/assets/tink.png"
+          }
+        ],
+        "_graphic": {
+          "alt": "hello",
+          "src": "course/en/assets/tinkoff.png"
+        }
+      },
+      {
+        "_classes": "",
+        "text": "МТС",
+        "accepted": [
+          {
+            "description": "GFN",
+            "src": "course/en/assets/gfn.png"
+          }
+        ],
+        "_graphic": {
+          "alt": "hello",
+          "src": "course/en/assets/mts.png"
+        }
+      }
+    ],
+    "_feedback": {
+      "title": "Feedback",
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+        "notFinal": "",
+        "final": "This feedback will appear if you answered the question incorrectly."
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить"
+      }
     }
   },
   {

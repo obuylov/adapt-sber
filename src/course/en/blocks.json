@@ -609,6 +609,23 @@
     }
   },
   {
+    "_id": "b-0-26",
+    "_parentId": "a-0-1",
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 31,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_type": "block"
+  },
+  {
     "_id": "b-0-pN",
     "_parentId": "a-0-1",
     "title": "New Block Title",

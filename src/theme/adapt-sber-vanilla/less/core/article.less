@@ -38,8 +38,12 @@
   }
 
   &.dark {
-    color: white !important;
     background-color: @dark;
+
+    .component:not(.pageNav) {
+      color: white !important;
+      background-color: transparent;
+    }
     //filter: invert(1) hue-rotate(210deg);
   }
 
