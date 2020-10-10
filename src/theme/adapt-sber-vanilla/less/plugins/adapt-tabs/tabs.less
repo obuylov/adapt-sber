@@ -1,24 +1,15 @@
-//----------------------
-// Horizontal layout (default mobile view)
-//----------------------
-.is-horizontal-layout .tabs__widget {
-  flex-direction: column-reverse;
-}
+
 
 //----------------------
 // Vertical layout (default mobile view)
 //----------------------
 .is-vertical-layout {
-  .tabs__widget {
-    flex-direction: row-reverse;
-  }
 
   .tabs__nav {
     width: 20%;
   }
 
   .tabs__nav-inner {
-    flex-direction: column;
     .tabs__nav-item-btn {
       border-radius: 5px 0 0 5px;
       margin: 0 0 10px;
@@ -31,53 +22,16 @@
   }
 }
 
-// ----------------------
-// Global
-// ----------------------
-.tabs {
-  &__nav-inner {
-    display: flex;
-
-    @media (max-width: @device-width-medium) {
-      flex-direction: column;
-    }
-  }
-
-  &__widget {
-    display: flex;
-  }
-
-  &__content-item {
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    .transform(translateY(20px));
-  }
-
-  &__content-item.is-active {
-    height: auto;
-    opacity: 1;
-    .transform(translateY(0px));
-    .transition(all @animation-duration @animation-easing);
-  }
-}
-
 //----------------------
 // Theme
 //----------------------
 .tabs {
   &__content {
-    background-color: @item-color-inverted-selected;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  &__content-inner {
-    padding: @item-padding;
   }
 
   &__content-item-title {
     margin: 24px 0;
-    .item-title;
   }
 
   &__content-item-inner {
@@ -99,19 +53,13 @@
 
   &__content-item-body {
     margin-bottom: 20px;
-
-    a {
-      .link-text;
-    }
   }
 
   &__nav-item-btn {
-    padding: @item-padding;
     background-color: @light-gray;
     color: @gray-text;
     border-radius: 5px 5px 0 0;
     margin: 0 5px;
-    .button-text;
 
     &:first-of-type {
       margin-left: 0;
@@ -121,21 +69,12 @@
       margin-right: 0;
     }
 
-    .no-touch &:not(.is-selected):hover {
-      background-color: @item-color-hover;
-      color: @item-color-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
-    }
 
     @media (max-width: @device-width-small) {
       margin: 0;
     }
   }
 
-  &__nav-item-btn.is-visited {
-    background-color: @visited;
-    color: @visited-inverted;
-  }
 
   &__nav-item-btn.is-selected {
     background: @green-tab-grad;

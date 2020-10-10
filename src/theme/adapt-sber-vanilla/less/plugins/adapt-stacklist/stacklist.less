@@ -1,45 +1,23 @@
 .stacklist {
 
-  &__items {
-    position: relative;
-    margin-bottom: -@item-margin;
-  }
-
   &__item {
-    position: relative;
     margin-bottom: 30px;
     background-color: transparent;
     color: black;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     padding: 30px;
     border-radius: 5px;
-
-    &.show {
-      position: static !important;
-    }
   }
   .visibility-hidden{
     display: none;
   }
 
   &__button {
-    display: none;
-    position: absolute;
-    top: 0;
-    height: 53px;
     left: 50%;
     transform: translate(-50%, 0);
-    //width: 100%;
-    text-align: center;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -ms-transition: 0.25s;
-    -o-transition: 0.25s;
-    transition: 0.25s;
 
     button {
       padding: 10px 24px;
-      line-height: unset;
       background: @green-tab-180-grad;
       color: black;
       border-radius: 5px;
