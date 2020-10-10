@@ -2,52 +2,24 @@
 
   .imageSlider__widget {
 
-    overflow: hidden;
-
     .title-frame,
     .image-frame {
 
       .title-slider,
-      .image-slider {
-        transition: transform 400ms ease-in-out;
-        display: flex;
-      }
 
-      position: relative;
 
       .title-item,
       .image-item {
 
-        float: left;
-
         .title-item-inner {
-          .item-title;
           font-weight: bold;
           margin-bottom: 20px;
         }
       }
 
-      .image-item {
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-
-      .title-item-inner {
-        padding-left: 1px;
-        min-height: 30px;
-      }
     }
 
     .slider-button {
-      position: absolute;
-      display: none;
-
-      background-color: @item-color;
-      padding: 20px;
-      top: 50%;
-      margin-top: (20px * 2 + @icon-size) * -0.5;
       border-radius: 50%;
       .icon {
         color: black;
@@ -60,47 +32,23 @@
         content: "\e97a";
       }
 
-      &:hover {
-        .no-touch & {
-          background-color: @item-color-hover;
-          .icon {
-            color: @link-inverted-hover;
-          }
-        }
-      }
 
       &.next {
         margin-right: 20px;
-        .show-next & {
-          display: inline-block;
-          right: 0%;
-        }
       }
 
 
       &.previous {
         margin-left: 20px;
-        .show-prev & {
-          display: inline-block;
-          left: 0%;
-        }
       }
     }
 
 
     .indicator {
 
-      text-align: center;
-      margin-top: (@icon-size/4);
-
       .progress {
-        width: (@icon-size/2);
-        height: (@icon-size/2);
-        display: inline-block;
         margin: 16px;
         border-radius: 50%;
-        background-color: @item-color;
-        cursor: pointer;
         border: black solid 1px;
         &.selected {
           background-color: black;

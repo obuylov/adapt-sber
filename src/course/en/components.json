@@ -415,7 +415,7 @@
     "body": "",
     "instruction": "",
     "_comment._animateList": "loop animate items into view - list is static by default",
-    "_animateList": false,
+    "_animateList": true,
     "_comment._percentInviewVertical": "Override percentage inview required to animate items. Default value is 70% inview from top of screen.",
     "_percentInviewVertical": 70,
     "_comment._orderedList": "set items as ordered list - list is unordered by default",

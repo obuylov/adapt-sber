@@ -22,20 +22,12 @@
     }
   }
   &__item-btn {
-    width: 100%;
     position: relative;
-    padding: @item-padding;
-    padding-right: @icon-size + (@item-padding * 2);
+    padding: @item-padding @icon-size + (@item-padding * 2) @item-padding @item-padding;
     text-align: left;
     background-color: @light-gray;
     border-radius: 5px;
 
-
-    //.no-touch &:not(.is-selected):hover {
-    //  background-color: @item-color-hover;
-    //  color: @item-color-inverted-hover;
-    //  .transition(background-color @duration ease-in, color @duration ease-in;);
-    //}
 
     .dir-rtl & {
       padding-right: @item-padding;
@@ -54,14 +46,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  &__item-btn.is-closed .icon {
-    .icon-plus;
-  }
-
-  &__item-btn.is-open .icon {
-    .icon-minus;
   }
 
   &__item-btn.is-visited {
