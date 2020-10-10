@@ -1,17 +1,12 @@
 .rangeslider,
 .rangeslider__fill {
-  display: block;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
 
 .rangeslider {
   background: #e4e4e4;
-  position: relative;
 }
 
 .rangeslider--horizontal {
@@ -20,86 +15,31 @@
 
 .rangeslider--vertical {
   width: 24px;
-  min-height: 150px;
-  max-height: 100%;
-  height: 100%;
-}
-
-.rangeslider__rtl {
-  direction: rtl;
-}
-
-.rangeslider__ttb {
-  top: 0;
-}
-
-.rangeslider--disabled {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
 }
 
 .rangeslider__fill {
   background: @green-button;
-  position: absolute;
   width: calc(100% - 10px);
 }
 .rangeslider--horizontal .rangeslider__fill {
   top: 50%;
   transform: translateY(-50%);
-  height: 100%;
-}
-.rangeslider--vertical .rangeslider__fill {
-  bottom: 0;
-  width: 100%;
 }
 
 .rangeslider__handle {
   border: none;
-  cursor: pointer;
-  display: inline-block;
-  width: 40px;
   opacity: 1;
-  height: 40px;
-  position: absolute;
   background-image: none;
-  background-size: 100%;
   -moz-box-shadow: @shadow-full;
   -webkit-box-shadow: @shadow-full;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 .rangeslider__handle:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: 100%;
   background-image: none;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 .rangeslider__handle:active, .rangeslider--active .rangeslider__handle {
-  background-size: 100%;
   background-image: none;
 }
-.rangeslider--horizontal .rangeslider__handle {
-  top: -10px;
-  touch-action: pan-y;
-  -ms-touch-action: pan-y;
-}
-.rangeslider--vertical .rangeslider__handle {
-  left: -10px;
-  touch-action: pan-x;
-  -ms-touch-action: pan-x;
-}
+
 
 input[type="range"]:focus + .rangeslider .rangeslider__handle {
   -moz-box-shadow: @shadow-full;
