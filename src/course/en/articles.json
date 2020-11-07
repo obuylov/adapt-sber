@@ -3,7 +3,7 @@
     "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "gray",
+    "_classes": "opace-grad",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
