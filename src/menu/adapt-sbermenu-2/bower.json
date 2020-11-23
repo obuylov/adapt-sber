@@ -1,6 +1,6 @@
 {
   "name": "adapt-sbermenu-2",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "framework": ">=2.1",
   "homepage": "https://github.com/mike-st/adapt-sbermenu-2",
   "displayName": "Сбер меню со скроллом",

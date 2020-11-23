@@ -1,26 +1,47 @@
 [
   {
-    "_component": "text",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "New Component Title new1",
-    "body": "",
     "_id": "c-0-0",
     "_parentId": "b-0-0",
     "_type": "component",
+    "_component": "graphic",
+    "_classes": "",
     "_layout": "full",
+    "title": "Here is a graphic object",
+    "displayTitle": "PNG-файл",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "Placeholder graphic",
+      "large": "course/en/images/схема.png",
+      "small": "course/en/images/схема.png",
+      "attribution": ""
+    },
     "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+      "_isEnabled": true
     }
   },
+  {
+    "_id": "c-0-0-1",
+    "_parentId": "b-0-0",
+    "_type": "component",
+    "_component": "graphic",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Here is a graphic object",
+    "displayTitle": "SVG-файл",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "alt": "Placeholder graphic",
+      "large": "course/en/images/схема.svg",
+      "small": "course/en/images/схема.svg",
+      "attribution": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+
   {
     "_id": "c-0-1",
     "_parentId": "b-0-1",
