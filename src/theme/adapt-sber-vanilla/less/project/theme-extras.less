@@ -21,6 +21,7 @@
 // --------------------------------------------------
 .block.align-vert-center .component__container {
   align-items: center;
+
 }
 
 // Reverses the visual layout of the components above the medium breakpoint
@@ -211,5 +212,28 @@
 .white-components {
   .component__inner {
     .white;
+  }
+}
+.table-green {
+  border-collapse: collapse;
+  border-radius: 5px;
+  border: transparent solid 2px;
+  box-shadow: @shadow-full;
+  tr {
+    border: black solid 1px;
+    td {
+      border: black solid 1px;
+      padding: 14px 20px;
+      vertical-align: top;
+    }
+  }
+  tr:first-of-type{
+    background-color: @green-button;
+    text-align: center;
+    font-weight: bold;
+  }
+  td:first-of-type{
+    background-color: @green-button;
+    font-weight: bold;
   }
 }

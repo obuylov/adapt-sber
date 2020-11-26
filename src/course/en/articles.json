@@ -1,7 +1,7 @@
 [
   {
     "title": "New Article Title",
-    "displayTitle": "",
+    "displayTitle": "Заголовок артикла",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -43,7 +43,7 @@
     "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "",
+    "_classes": "green-yellow-grad",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,

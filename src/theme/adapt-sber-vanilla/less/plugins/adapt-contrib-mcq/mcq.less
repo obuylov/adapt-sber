@@ -5,8 +5,11 @@
     padding: 70px;
     border-radius: 5px;
     box-shadow: @shadow-full;
+    background-color: white;
+    .mcq__title  {
+      text-align: center;
+    }
   }
-
 
 
   &__item {
@@ -41,9 +44,21 @@
 
   &__item-label.is-selected {
     .mcq__item-answer-icon.is-radio .icon {
-      //.icon-radio-checked;
-      background-color: @radio-gray;
       border-radius: 50%;
     }
+
+    .mcq__item-answer-icon.is-checkbox .icon:before {
+      content: "\e944";
+    }
+  }
+
+  .mcq__item-answer-icon.is-checkbox {
+    border: @radio-gray solid 2px;
+  }
+
+  .mcq__item-answer-icon.is-checkbox .icon:before {
+    content: ' ';
+    width: 25px;
+    height: 25px;
   }
 }
