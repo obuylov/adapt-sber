@@ -554,7 +554,7 @@
     "_parentId": "b-0-11",
     "_type": "component",
     "_component": "flipcard",
-    "_classes": "green-yellow-grad",
+    "_classes": "green-yellow-grad-card",
     "_layout": "full",
     "title": "Flip Card",
     "displayTitle": "Длинный заголовок",
@@ -725,16 +725,16 @@
     "_recordInteraction": true,
     "_items": [
       {
-        "text": "Нет, так как звонок будет произведён после окончания рабочего дня +",
+        "text": "Кредит — срочный инструмент, а факторинг — это бессрочное финансирование: ведь деньги, которые заплатит «Сбербанк Факторинг», остаются в обороте компании навсегда.",
         "_shouldBeSelected": true
       },
       {
-        "text": "Нет, так как приятель является клиентом Банка",
+        "text": "При кредитовании Банк оценивает качество финансовой отчетности и наличие ликвидного залога. При факторинге оценке подлежит качество дебиторской задолженности, а также конкурентоспособность продукции, которую производит и реализует Клиент.",
         "_shouldBeSelected": false,
         "feedback": "Option two incorrect feedback"
       },
       {
-        "text": "Да, в связи с тем, что международный звонок носит личный характер\n",
+        "text": "Безрегрессивный факторинг не только обеспечивает финансирование компании, но и полностью освобождает Клиента от риска по неплатежам Покупателя. Данный риск переходит к факторинговой компании.",
         "_shouldBeSelected": false
       }
     ],
@@ -1704,6 +1704,55 @@
     "displayTitle": "",
     "body": "<table class='table-green'><tbody><tr><td></td><td><strong>Кредит</strong></td><td><strong>Факторинг</strong></td></tr><tr><td><strong>Что оценивает банк при принятии решения?</strong></td><td><strong>Качество финансовой отчетности и наличие ликвидного залога.</strong></td><td><strong>Качество дебиторской задолженности,</strong>&nbsp;а также <strong>конкурентоспособность продукции,</strong> которую производит и реализует Клиент, и <strong>объем платежеспособного спроса на данный товар</strong> со стороны конечных потребителей.</td></tr><tr><td><strong>Погашение задолженности</strong></td><td><strong>Кредит — это срочный инструмент. </strong>Чтобы вернуть Банку кредит, Клиенту приходится выводить из оборота ресурсы компании.</td><td><strong>Факторинг — это бессрочное финансирование. </strong>Деньги, которые заплатит «Сбербанк Факторинг», остаются в обороте компании навсегда. Факторинговое финансирование погашается из денег, поступающих от дебиторов Клиента.</td></tr><tr><td><strong>Обеспечение</strong></td><td><strong>Кредит, как правило, выдается под залог.</strong>&nbsp;Если Банк увеличивает дисконты по залогам, Клиент может потерять возможность привлечения финансирования.</td><td><strong>Факторинг более привлекателен для Клиента из-за отсутствия залогов.</strong></td></tr><tr><td><strong>Риск невозврата задолженности</strong></td><td><strong>Ответственность за возврат кредита полностью лежит на Клиенте.</strong></td><td><strong>Безрегрессный факторинг</strong>&nbsp;не только обеспечивает финансирование компании, но и полностью освобождает Клиента от риска по неплатежам Покупателя. Данный риск берет на себя факторинговая компания.</td></tr></tbody></table>",
     "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-30",
+    "_parentId": "b-0-29",
+    "_type": "component",
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Results",
+    "displayTitle": "Results",
+    "body": "This component you're reading is a results component.",
+    "instruction": "",
+    "_assessmentId": "c-0-30",
+    "_isVisibleBeforeCompletion": true,
+    "_comment": "setCompletionOn = inview | pass",
+    "_setCompletionOn": "inview",
+    "_resetType": "inherit",
+    "_retry": {
+      "button": "Retry Assessment",
+      "feedback": "Why not have another try? You have used {{attemptsSpent}} of {{attempts}} attempt(s), which means you have {{attemptsLeft}} attempt(s) remaining.",
+      "_routeToAssessment": true
+    },
+    "_completionBody" : "This component you're reading is a results component.<br>You have finished the assessment.<br>You scored {{{score}}} out of {{{maxScore}}}. {{{feedback}}}",
+    "_bands": [
+      {
+        "_score": 0,
+        "feedback": "Your score was below 25%.",
+        "_allowRetry": true
+      },
+      {
+        "_score": 25,
+        "feedback": "Your score was below 50%.",
+        "_allowRetry": true
+      },
+      {
+        "_score": 50,
+        "feedback": "Good effort, but your score was under 75%.",
+        "_allowRetry": true
+      },
+      {
+        "_score": 75,
+        "feedback": "Great work. You passed your assessment with {{{scoreAsPercent}}}%.",
+        "_allowRetry": false,
+        "_classes": "high-score"
+      }
+    ],
     "_pageLevelProgress": {
       "_isEnabled": true
     }
