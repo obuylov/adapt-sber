@@ -20,7 +20,11 @@ define([
       let el = this.$el.find(".page__header-inner")[0];
 
       el.innerHTML += `<img class="page__photo" src="${page.get("_graphic").src}" alt="page photo"><div class="page__texts"></div>`;
-      el.querySelector(".page__texts").append(el.querySelector(".page__title"), el.querySelector(".page__body"));
+      el.querySelector(".page__texts").append(el.querySelector(".page__title"));
+
+      if (el.querySelector(".page__body"))
+        el.querySelector(".page__texts").append(el.querySelector(".page__body"));
+      
       el.classList.add("with-pic");
     },
 
