@@ -16,6 +16,26 @@
 
   &__header-inner {
     .l-container-padding(@page-header-padding-ver, @page-header-padding-hoz);
+
+    &.with-pic {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        min-width: auto;
+        max-width: 50%;
+        margin-right: 30px;
+      }
+
+      @media (max-width: @device-width-small) {
+        flex-wrap: wrap;
+
+        img {
+          max-width: none;
+        }
+      }
+    }
   }
 
   &__title {
