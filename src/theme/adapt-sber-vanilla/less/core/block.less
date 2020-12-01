@@ -1,4 +1,12 @@
 .block {
+  &:last-of-type {
+    padding-bottom: 200px;
+  }
+
+  &.pt-100 {
+    padding-top: 100px;
+  }
+
   &.has-bg-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,7 +14,7 @@
   }
 
   &__inner {
-    .l-container-padding(@block-padding-ver, @block-padding-hoz);
+    padding: 65px @block-padding-hoz 0;
   }
 
   &__title {

@@ -57,7 +57,7 @@
             "title": "Heading colour",
             "type": "string",
             "inputType": "ColourPicker",
-            "default": "#36CDE8",
+            "default": "#000000",
             "help": "Global title colour"
           },
           "heading-color-inverted": {
@@ -150,7 +150,7 @@
             "title": "Button colour - inverted",
             "type": "string",
             "inputType": "ColourPicker",
-            "default": "#FFFFFF",
+            "default": "#42E3B4",
             "help": "Question button foreground colour"
           },
           "btn-color-hover": {

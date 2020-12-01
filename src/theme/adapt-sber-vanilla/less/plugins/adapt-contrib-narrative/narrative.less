@@ -6,6 +6,7 @@
 
     &-right {
       right: 10px;
+
       .icon {
         .icon-arrow-right-2;
       }
@@ -13,6 +14,7 @@
 
     &-left {
       left: 10px;
+
       .icon {
         .icon-arrow-left-2;
       }
@@ -20,19 +22,17 @@
   }
 
   &__widget {
+    background-color: @white;
+
     .narrative__controls {
       background: #FFFFFF;
       border-radius: 50%;
     }
-   .narrative__slide-container{
-     @media (min-width: 47.5rem){
-       width: 48%;
-     }
-     .narrative__slider{
-       &-image-container {
-         margin-bottom: 18px;
-       }
-     }
+
+    .narrative__slide-container {
+      @media (min-width: 47.5rem) {
+        width: 48%;
+      }
     }
 
     &.narrative__text-controls {
@@ -42,10 +42,13 @@
     }
 
     .narrative__content {
+      padding-top: 80px;
+      padding-right: 25px;
 
       @media (min-width: 47.5rem) {
         width: 48%;
-    }
+      }
+
       &-title-inner {
         font-weight: bold;
       }
@@ -54,15 +57,12 @@
 
   &.mode-small {
     .narrative__widget .narrative__controls {
-        background: #FFFFFF;
-        border-radius: 50%;
-      }
+      background: #FFFFFF;
+      border-radius: 50%;
+    }
   }
 
   &__indicators {
-    @media (min-width: 47.5rem) {
-      width: 48%;
-    }
     .narrative__progress {
       border-radius: 50%;
       border: 1.5px solid #000;
@@ -84,6 +84,12 @@
       background-color: white;
       border-radius: 50%;
       transform: scale(0.7);
+    }
+  }
+
+  &__text-controls {
+    .narrative__content .narrative__controls-container {
+      top: 20px;
     }
   }
 }

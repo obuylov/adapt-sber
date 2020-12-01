@@ -39,7 +39,8 @@
     align-items: center;
 
     .title-and-body {
-      margin: 0 20px;
+      width: 100%;
+      padding: 0 20px;
     }
 
     @media (max-width: @device-width-small) {
@@ -69,6 +70,9 @@
       margin-right: 0;
     }
 
+    &:hover {
+      background-color: @green-button !important;
+    }
 
     @media (max-width: @device-width-small) {
       margin: 0;
@@ -103,5 +107,13 @@
 .align-image-left {
   .tabs__content-item-inner {
     flex-direction: row-reverse;
+  }
+}
+
+
+.tabs__content {
+  table td {
+    width: 50%;
+    border-color: @gray-text;
   }
 }

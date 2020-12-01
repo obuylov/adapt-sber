@@ -1,0 +1,1447 @@
+[
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>2.4 <strong>Основным критерием</strong> для определения принадлежности корпоративного Клиента Банка к сегменту является размер годовой выручки Клиента/холдинга.</p>",
+    "_id": "5fbad4bf22561caa0112d722",
+    "_parentId": "5fbad44d22561caa0112d71d",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbad52122561caa0112d724",
+    "_parentId": "5fbad51d22561caa0112d723",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "схема",
+      "large": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
+      "small": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "accordion",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p><strong>2.5 Для определения размера выручки используются данные:</strong></p>",
+    "_id": "5fbad55122561caa0112d729",
+    "_parentId": "5fbad54e22561caa0112d728",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "2.5.1 По РСБУ",
+        "body": "<ul><li>Строка 010 Формы №2 – Отчет о прибылях и убытках коммерческих организаций</li><li>Строка 2.080 отчета о прибылях и убытках страховой организации</li><li>Строка 010 отчета о прибылях и убытках негосударственных пенсионных фондов</li><li>Статья 1 отчета некоммерческих организаций (общественных объединений) об объеме получаемых денежных средств</li><li>Статья 3.3 ф. 0Р0001 отчета религиозных организаций</li><li>Сумма статей 1.1 и 1.2 отчета структурного подразделения иностранной некоммерческой неправительственной организации ф. СП0001</li><li>Объем бюджетного финансирования (для бюджетных организаций)</li></ul>",
+        "_graphic": {
+          "alt": "",
+          "src": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "2.5.2 Дисциплинарная ответственность",
+        "body": "<ul><li>Отчет о прибылях и убытках</li></ul>",
+        "_graphic": {
+          "alt": "",
+          "src": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      },
+      {
+        "title": "2.5.4 По РСБУ",
+        "body": "<ul><li>Данные по выручке, указанные в декларациях упрощенной системы налогообложения</li><li>Данные по выручке, декларируемые заемщиком</li><li>Данные по выручке, полученные из управленческой отчетности Клиента</li></ul>",
+        "_graphic": {
+          "alt": "",
+          "src": "",
+          "attribution": ""
+        },
+        "_classes": ""
+      }
+    ],
+    "_shouldCollapseItems": true
+  },
+  {
+    "_component": "sber-tabs",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Критерии отнесения клиентов к клиентским сегментам/подсегментам</p>",
+    "_id": "5fbee3cdb639645d0eb5d5ec",
+    "_parentId": "5fbee394b639645d0eb5d5ea",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_tabLayout": "horizontal",
+    "_items": [
+      {
+        "tabTitle": "Сегмент",
+        "title": "Размер годовой выручки",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Микробизнес</td><td>До 60 млн.руб</td></tr><tr><td>Малый бизнес</td><td>&gt; 60 млн.руб до 400 млн.руб</td></tr><tr><td>Средний бизнес</td><td>&gt; 400 млн.руб до 2 500 млн.руб</td></tr><tr><td>Крупный бизнес</td><td>&gt; 2 500 млн.руб до 15 000 млн.руб</td></tr><tr><td>Крупнейший бизнес</td><td>&gt; 15 000 млн.руб</td></tr><tr><td>Клиенты машиностроения (предприятия опк)</td><td>Приложение №6</td></tr><tr><td>Финансовые институты</td><td>Приложение №7</td></tr><tr><td>Региональный госсектор</td><td>Приложение №8</td></tr></tbody></table>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Подсегмент",
+        "title": "Размер годовой выручки",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Федеральный госсектор</td><td>—</td></tr></tbody></table>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ]
+  },
+  {
+    "_component": "narrative",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbee4ecb639645d0eb5d5ee",
+    "_parentId": "5fbee4deb639645d0eb5d5ed",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": true,
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>2.5 Если корпоративный Клиент Банка входит в холдинг, то его сегмент определяется исходя из данных о<strong> суммарной выручке холдинга</strong>.</p>",
+        "_graphic": {
+          "src": "course/ru/assets/28327331294ac84cf0c991dd53cf021c40331ffd.png",
+          "alt": "фон",
+          "attribution": ""
+        },
+        "strapline": "2.5"
+      },
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>2.6 Сегмент холдинга не может быть ниже максимального сегмента входящих в холдинг юридических лиц.<br/><br/>В случае, когда в состав холдинга входят компании, использующие различные схемы бухгалтерского учета, суммарная выручка определяется путем математического сложения выручки каждого члена холдинга, определенной в соответствии с п. 2.3.</p>",
+        "_graphic": {
+          "src": "course/ru/assets/5fa1d737b3ba4b53c0aef30e937efde2448b0da7.png",
+          "alt": "фон",
+          "attribution": ""
+        },
+        "strapline": "2.6"
+      },
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>2.9 В случае если информация по основному критерию отсутствует или признается менеджером Клиента недостаточной для определения принадлежности Клиента к Сегменту, могут быть использованы дополнительные критерии. Приложение №4.</p>",
+        "_graphic": {
+          "src": "course/ru/assets/1fd8b5720c38849e8b3f44b30ba6067df94d6a70.png",
+          "alt": "фон",
+          "attribution": ""
+        },
+        "strapline": "2.9"
+      },
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>2.9.1 Дополнительные критерии не применяются для присвоения корпоративным клиентам Банка Сегментов:</p><ul><li>Клиенты машиностроения (предприятия ОПК)</li><li>Финансовые институты</li><li>Региональный госсектор</li></ul>",
+        "_graphic": {
+          "src": "course/ru/assets/878dca0de0513609a8ce2875cf01501669635893.png",
+          "alt": "",
+          "attribution": ""
+        },
+        "strapline": "2.9.1"
+      },
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>7.1 При реализации Клиентом строительного проекта, предусматривающего лимит кредитования на сумму не менее 3 млрд. рублей, или совокупности строительных проектов Клиента/группы клиентов с общим лимитом кредитования на сумму не менее 6 млрд. рублей (или эквивалент в иностранной валюте).</p>",
+        "_graphic": {
+          "src": "course/ru/assets/562ba20ac6ff2cfd2df6aec392b645f91271fff2.png",
+          "alt": "фон",
+          "attribution": ""
+        },
+        "strapline": "7.1"
+      },
+      {
+        "title": "",
+        "_ariaLevel": 0,
+        "body": "<p>7.2 При реализации Клиентом, входящим в состав холдинга, относящегося к сегменту «Крупнейший бизнес» и отрасли «Недвижимость», строительного проекта/проектов:</p><ul><li>При лимитах кредитования не менее указанных в п. 7.1 — по обращению блока CIB</li><li>При лимитах кредитования менее указанных в п. 7.1 — по решению руководства Банка в соответствии с п. 7.2.2, на основании обращения бенефициара, CEO или CFO о включении юридического лица в список крупнейшего холдинга</li></ul>",
+        "_graphic": {
+          "src": "course/ru/assets/cc24bf062816c668f3592243365c8f955779636d.png",
+          "alt": "фон",
+          "attribution": ""
+        },
+        "strapline": "7.2"
+      }
+    ]
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Схема механизма определения ЦКС",
+    "displayTitle": "Схема механизма определения ЦКС",
+    "body": "",
+    "_id": "5fbee87fb639645d0eb5d5fd",
+    "_parentId": "5fbee872b639645d0eb5d5fc",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "схема",
+      "large": "course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg",
+      "small": "course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>3.1 <strong>Ответственность</strong> за корректность информации о сегменте/подсегменте корпоративного Клиента Банка, а также о принадлежности к холдингу лежит на <strong>менеджере Клиента</strong>.</p>",
+    "_id": "5fbee8bbb639645d0eb5d602",
+    "_parentId": "5fbee8b7b639645d0eb5d601",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbeea7bb639645d0eb5d605",
+    "_parentId": "5fbee911b639645d0eb5d604",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "фон",
+      "large": "course/ru/assets/148e585757009858d1496aba0e67c7f9a37cc224.png",
+      "small": "course/ru/assets/148e585757009858d1496aba0e67c7f9a37cc224.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>4.1 Присвоение корпоративному Клиенту Банка клиентского сегмента/подсегмента осуществляется менеджером Клиента в <strong>CRM-системе Банка.</strong></p>",
+    "_id": "5fbeeac9b639645d0eb5d60c",
+    "_parentId": "5fbee911b639645d0eb5d604",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbeeb03b639645d0eb5d610",
+    "_parentId": "5fbeeae7b639645d0eb5d60d",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "фон",
+      "large": "course/ru/assets/54b205aa29c92d896799f2b30b0acda09d4d2d5b.png",
+      "small": "course/ru/assets/54b205aa29c92d896799f2b30b0acda09d4d2d5b.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>6.1 Эталонным источником информации о сегменте корпоративного Клиента Банка для целей анализа, подсчета финансового результата подразделения, бизнес-планирования, а также других задач является <strong>CRM-система Банка</strong>.</p>",
+    "_id": "5fbeeb0bb639645d0eb5d611",
+    "_parentId": "5fbeeae7b639645d0eb5d60d",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbeeb2bb639645d0eb5d614",
+    "_parentId": "5fbeeaefb639645d0eb5d60e",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "фон",
+      "large": "course/ru/assets/dc81230b01ee2b6786dd6e0ce749f0715609a414.png",
+      "small": "course/ru/assets/dc81230b01ee2b6786dd6e0ce749f0715609a414.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>7.4 Корректировка сегмента осуществляется с использованием специального функционала в <strong>CRM-системе Банка</strong>.</p>",
+    "_id": "5fbeeb2fb639645d0eb5d615",
+    "_parentId": "5fbeeaefb639645d0eb5d60e",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>10.1 Использование функционала по сегментации CRM-системы Банка регламентируется <strong>«Стандартами работы в АС «CRM Корпоративный»</strong>.</p>",
+    "_id": "5fbeeb50b639645d0eb5d618",
+    "_parentId": "5fbeeaf6b639645d0eb5d60f",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbeeb63b639645d0eb5d619",
+    "_parentId": "5fbeeaf6b639645d0eb5d60f",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "bg",
+      "large": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+      "small": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>10.2 «Рекомендации по работе в CRM-системе» размещены на корпоративном портале: Проекты — CRM Корпоративный — Обучение — Общая функциональность.</p>",
+    "_id": "5fbeeba3b639645d0eb5d61d",
+    "_parentId": "5fbeeb98b639645d0eb5d61c",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "sber-tabs",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbeebe5b639645d0eb5d620",
+    "_parentId": "5fbeebc0b639645d0eb5d61f",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_tabLayout": "horizontal",
+    "_items": [
+      {
+        "tabTitle": "Малый бизнес",
+        "title": "- ",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Средний бизнес",
+        "title": "-",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>&gt; 100 млн руб.</td><td>&gt; 180 млн руб. до 1 500 млн руб.</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Крупный бизнес",
+        "title": "-",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>&gt; 1 500 млн руб. до 3 000 млн руб.</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Крупнейший бизнес",
+        "title": "-",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ]
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Проходной бал 80%",
+    "displayTitle": "Проходной бал 80%",
+    "body": "<p style=\"text-align:center\">Вам необходимо пройти тестирование, состоящее из 6 вопросов, по изученной теме. Результаты тестирования учитываются при проведении итогового результата проверки знаний по курсу.</p><p style=\"text-align:center\"><strong>Будьте внимательны: вопросы могут иметь несколько правильных ответов.</strong></p>",
+    "_id": "5fbeee88b639645d0eb5d626",
+    "_parentId": "5fbeedfab639645d0eb5d623",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "1. Что является основным критерием отнесения Клиента к сегменту?",
+    "displayTitle": "1. Что является основным критерием отнесения Клиента к сегменту?",
+    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
+    "_id": "5fbeeec9b639645d0eb5d629",
+    "_parentId": "5fbeeeb8b639645d0eb5d628",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Оборот по счёту",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Размер уставного капитала",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выручка за последний финансовый год",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Остаток по кредиту",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».",
+    "displayTitle": "2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».",
+    "body": "<p>Выберите варианты ответов и нажмите «Ответить».</p>",
+    "_id": "5fbeefd4b639645d0eb5d62b",
+    "_parentId": "5fbeefceb639645d0eb5d62a",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Более 60 млн руб.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "До 400 млн руб.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Более  2 500 млн руб.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Более 400 млн руб.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "До 2 500 млн руб.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 2,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "3. Как определяется сегмент Клиента, если он входит в холдинг?",
+    "displayTitle": "3. Как определяется сегмент Клиента, если он входит в холдинг?",
+    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
+    "_id": "5fbef0b8b639645d0eb5d62d",
+    "_parentId": "5fbef0b4b639645d0eb5d62c",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "По выручке Клиента",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "По выручке холдинга, если он не является Клиентом  машиностроения (предприятий ОПК)",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Для клиентов машиностроения (предприятий ОПК) по выручке холдинга",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "4. Кто является ответственным за определение сегмента Клиента?",
+    "displayTitle": "4. Кто является ответственным за определение сегмента Клиента?",
+    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
+    "_id": "5fbef0ebb639645d0eb5d62f",
+    "_parentId": "5fbef0e6b639645d0eb5d62e",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Руководитель ВСП",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Клиентский менеджер",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Сотрудник УРиСКБ",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Руководитель ГОСБ",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "5. Должен ли менеджер использовать дополнительные критерии, если имеется информация по выручке и она признана достаточной?",
+    "displayTitle": "5. Должен ли менеджер использовать дополнительные критерии, если имеется информация по выручке и она признана достаточной?",
+    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
+    "_id": "5fbef132b639645d0eb5d631",
+    "_parentId": "5fbef12cb639645d0eb5d630",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Да",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Нет",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?",
+    "displayTitle": "6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?",
+    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
+    "_id": "5fbef151b639645d0eb5d633",
+    "_parentId": "5fbef14db639645d0eb5d632",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "ИАСК",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "IBSO",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "CRM Корпоративный",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Гамма",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbef1adb639645d0eb5d636",
+    "_parentId": "5fbef182b639645d0eb5d635",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_isVisibleBeforeCompletion": true,
+    "_setCompletionOn": "inview",
+    "_resetType": "inherit",
+    "_assessmentId": "test1",
+    "_retry": {
+      "button": "Пройти заново",
+      "feedback": "",
+      "_routeToAssessment": true
+    },
+    "_completionBody": "",
+    "_bands": [
+      {
+        "_score": 0,
+        "feedback": "<p style=\"text-align:center\"><strong>К сожалению, Вы не справились.</strong></p><p style=\"text-align:center\">Вами были допущены ошибки при прохождении тестирования. Изучите повторно курс и проверьте свои знания еще раз.</p>",
+        "_allowRetry": true,
+        "_classes": ""
+      },
+      {
+        "_score": 80,
+        "feedback": "<p style=\"text-align:center\"><strong>Поздравляем, вы справились</strong></p><p style=\"text-align:center\">Вы ответили верно на все вопросы!</p>",
+        "_allowRetry": false,
+        "_classes": ""
+      }
+    ]
+  },
+  {
+    "_component": "pageNav",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fbef1c7b639645d0eb5d639",
+    "_parentId": "5fbef1c1b639645d0eb5d638",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Previous",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Menu",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Next",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  }
+]

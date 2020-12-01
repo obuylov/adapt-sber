@@ -1,5 +1,5 @@
 {
-  "_defaultLanguage": "en",
+  "_defaultLanguage": "ru",
   "_defaultDirection": "ltr",
   "_fixes": {
     "_imgLazyLoad": true
@@ -8,8 +8,8 @@
   "_generateSourcemap": false,
   "_forceRouteLocking": true,
   "_disableAnimationFor": [],
-  "_id": "5f0decf9b7634a0849160b8f",
-  "_courseId": "5f0decf9b7634a0849160b8d",
+  "_id": "5f745935e694223e162022c5",
+  "_courseId": "5f745935e694223e162022c4",
   "_drawer": {
     "_showEasing": "easeOutQuart",
     "_hideEasing": "easeInQuart",
@@ -17,8 +17,41 @@
   },
   "_accessibility": {
     "_isEnabled": false,
-    "_shouldSupportLegacyBrowsers": true,
-    "_isTextProcessorEnabled": false
+    "_isTextProcessorEnabled": false,
+    "_isSkipNavigationEnabled": true,
+    "_ariaLevels": {
+      "_menu": 1,
+      "_menuGroup": 2,
+      "_menuItem": 2,
+      "_page": 1,
+      "_article": 2,
+      "_block": 3,
+      "_component": 4,
+      "_componentItem": 5,
+      "_notify": 1
+    }
   },
-  "__v": 18
+  "__v": 13,
+  "_completionCriteria": {
+    "_requireContentCompleted": true,
+    "_requireAssessmentCompleted": false
+  },
+  "_logging": {
+    "_isEnabled": true,
+    "_level": "info",
+    "_console": true,
+    "_warnFirstOnly": true
+  },
+  "_scrollingContainer": {
+    "_isEnabled": false,
+    "_limitToSelector": ""
+  },
+  "screenSize": {
+    "small": 520,
+    "medium": 760,
+    "large": 900
+  },
+  "_trickle": {
+    "_completionAttribute": "_isComplete"
+  }
 }
