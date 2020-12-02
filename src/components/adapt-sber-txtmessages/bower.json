@@ -1,0 +1,19 @@
+{
+  "name": "adapt-sber-txtmessages",
+  "description": "Txt messages fly in one item at a time.",
+  "version": "1.0.2",
+  "framework": ">=5",
+  "displayName": "Сбер Text Messages",
+  "component": "sber-txtmessages",
+  "main": "/js/adapt-sber-txtmessages.js",
+  "homepage": "https://github.com/cgkineo/adapt-tabs",
+  "issues": "https://github.com/cgkineo/adapt-tabs/issues/",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "authors": [
+    "Pete Stewart <petestewartnz@gmail.com>"
+  ]
+}

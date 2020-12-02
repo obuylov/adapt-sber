@@ -1,0 +1,73 @@
+{
+  "_id": "c-testing-1",
+  "_parentId": "b-2",
+  "_type": "component",
+  "_component": "sber-txtmessages",
+  "_classes": "",
+  "_layout": "full",
+  "title": "TxtMessages",
+  "displayTitle": "Txt Messages",
+  "body": "",
+  "offsetTime": 2000,
+  "_button": {
+    "startText": "Начнем",
+    "continueText": "Дальше"
+  },
+  "_items": [
+    {
+      "body": [
+        "Ну у вас и соперник!",
+        "Кстати, я вам уже читал стихи собственного сочинения про публичные выступления?"
+      ],
+      "_align": "left",
+      "_graphic": {
+        "src": "course/ru/assets/face_3.svg",
+        "alt": "icon"
+      }
+    },
+    {
+      "body": {
+        "correct": "Мы реструктуризуем наши расходы и оптимизируем производство",
+        "incorrect": "Создадим несколько новых линеек продуктов и вложим средства в рекламу"
+      },
+      "_assessmentId": "game_1",
+      "_align": "right",
+      "_graphic": {
+        "src": "course/ru/assets/face_1.svg",
+        "alt": "enemy"
+      }
+    },
+    {
+      "body": {
+        "correct": "Звучит разумно, помимо этого следовало бы расширить штат отдела качества",
+        "incorrect": "Мы не можем просто отказаться от старого ассортимента, надобности в новых продуктах сейчас нет"
+      },
+      "_assessmentId": "game_1",
+      "_align": "left",
+      "_graphic": {
+        "src": "course/ru/assets/face_3.svg",
+        "alt": "icon"
+      }
+    },
+    {
+      "body": {
+        "correct": "Мы не можем конкурировать с такими профессионалами =(",
+        "incorrect": "С такими предложениями вы далеко не уедете"
+      },
+      "_assessmentId": "game_1",
+      "_align": "left",
+      "_graphic": {
+        "src": "course/ru/assets/face_5.svg",
+        "alt": "icon"
+      }
+    },
+    {
+      "body": "Давайте на этом завершим совещание",
+      "_align": "left",
+      "_graphic": {
+        "src": "course/ru/assets/face_3.svg",
+        "alt": "icon"
+      }
+    }
+  ]
+},

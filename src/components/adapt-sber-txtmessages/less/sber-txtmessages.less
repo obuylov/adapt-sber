@@ -1,0 +1,173 @@
+.sber-txtmessages-component {
+  margin: 0 auto;
+}
+
+.sber-txtmessages-widget {
+  position: relative;
+
+  .sber-txtmessages-items {
+    position: relative;
+    top: 0;
+    width: 100%;
+    // height: 0;
+    max-width: 915px;
+    margin: 0 auto;
+    transition: 0.2s;
+  }
+
+  .sber-txtmessages-item {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+
+    &.mentor {
+      position: relative;
+
+      @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .sber-txtmessages-messages-container {
+      max-width: 60%;
+
+      @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+        max-width: 75%;
+      }
+    }
+
+    .sber-txtmessages-item-text {
+      position: relative;
+      padding: 40px;
+      margin-bottom: 30px;
+      border-radius: 18px;
+
+      &:after {
+        position: absolute;
+        bottom: -7px;
+        left: -28px;
+        content: url("assets/bubble-tail.svg");
+
+        @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+          bottom: -10px;
+          left: -20px;
+          transform: scale(0.3);
+        }
+      }
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+        margin-right: 10px;
+        margin-bottom: 8px;
+        padding: 15px;
+        font-size: 13px;
+        line-height: 145%;
+
+        p {
+          line-height: 145% !important;
+          font-size: 13px !important;
+        }
+      }
+    }
+
+    .sber-txtmessages-item-graphic {
+      min-width: 160px;
+      margin-right: 30px;
+
+      @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+        min-width: 50px;
+        max-width: 50px;
+        margin-right: 5px;
+      }
+    }
+
+    &.right-message {
+      flex-direction: row-reverse;
+
+      .sber-txtmessages-item-text {
+        background-color: @green-button;
+        color: white;
+        margin-right: 0 !important;
+
+        &:after {
+          left: auto;
+          right: -28px;
+          content: url("assets/player-bubble-tail.svg");
+
+          @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+            right: -20px;
+            transform: scale(0.3);
+          }
+        }
+      }
+
+      .sber-txtmessages-item-graphic {
+        margin-right: 0;
+        margin-left: 30px;
+
+        img {
+          max-width: 140px;
+          max-height: 160px;
+        }
+
+        @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+          margin-left: 5px;
+
+          img {
+            max-width: 50px;
+            max-height: 50px;
+          }
+        }
+      }
+    }
+
+    &.center-message {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .sber-txtmessages-item-text {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        text-align: center;
+
+        &:after {
+          display: none;
+        }
+
+        p {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &.open {
+      opacity: 1;
+      transform: translateX(0) !important;
+    }
+  }
+}
+
+.white-tail {
+  .sber-txtmessages-widget {
+    .sber-txtmessages-item-text:after {
+      width: 34px;
+      height: 55px;
+      content: url("assets/bubble-tail_white.svg");
+    }
+
+    .sber-txtmessages-item.right-message .sber-txtmessages-item-text:after {
+      content: url("assets/tail_white.svg");
+    }
+  }
+}

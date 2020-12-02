@@ -28,7 +28,7 @@
     "instruction": ""
   },
   {
-    "_component": "graphic",
+    "_component": "sber-txtmessages",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -53,13 +53,32 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
-    "instruction": "",
-    "_graphic": {
-      "alt": "схема",
-      "large": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
-      "small": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
-      "attribution": ""
-    }
+    "_items": [
+      {
+        "body": "Ну что, проверим, как вы поняли материал? Сможете озвучить цель и главную мысль своего выступления? Это возможность прокачать навык «Логика и анализ».",
+        "_align": "left",
+        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+        "_class": ""
+      },
+      {
+        "body": "Ну привет!",
+        "_align": "left",
+        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+        "_class": ""
+      },
+      {
+        "body": "Несказанно вам рады, уважаемый",
+        "_align": "left",
+        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+        "_class": ""
+      },
+      {
+        "body": "Мне всегда есть, что ответить. Дайте мне минуту.",
+        "_align": "right",
+        "_graphic": "course/ru/assets/e4cc8487dd8fcf63328a6dad013442391569440e.png",
+        "_class": ""
+      }
+    ]
   },
   {
     "_component": "accordion",

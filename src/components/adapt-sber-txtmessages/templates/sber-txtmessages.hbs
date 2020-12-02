@@ -1,0 +1,22 @@
+<div class="sber-txtmessages-inner component-inner" role="region" aria-label="{{_globals._components._text.ariaRegion}}">
+  {{> component this}}
+
+  <div class="sber-txtmessages-widget component-widget">
+    <div class="sber-txtmessages-items">
+      <div class="sber-txtmessages-items-inner {{_classes}}">
+        {{#each _items}}
+          <div class="sber-txtmessages-item {{_class}} {{_align}}-message">
+            {{#if _graphic}}
+              <div class="sber-txtmessages-item-graphic">
+                <img src="{{_graphic.src}}" alt="avatar-icon" aria-label="avatar-icon" tabindex="0">
+              </div>
+            {{/if}}
+            <div class="sber-txtmessages-messages-container">
+              <div class="sber-txtmessages-item-text">{{{body}}}</div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
