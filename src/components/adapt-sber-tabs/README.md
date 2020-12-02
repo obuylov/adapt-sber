@@ -1,26 +1,26 @@
-# adapt-tabs
+# adapt-sber-tabs
 
 **Tabs** is a Kineo *presentation component*.
 
-The component displays a vertically or horizontally stacked list of heading tabs. Each heading is associated with a hidden content panel. Clicking a heading toggles the visibility of its content panel. The first content panel is visible by default. Content panels may contain text and/or an image.
+The component displays a vertically or horizontally stacked list of heading sber-tabs. Each heading is associated with a hidden content panel. Clicking a heading toggles the visibility of its content panel. The first content panel is visible by default. Content panels may contain text and/or an image.
 
 ## Installation
 
-If using the [Adapt CLI](https://github.com/adaptlearning/adapt-cli), run `adapt install adapt-tabs`.
+If using the [Adapt CLI](https://github.com/adaptlearning/adapt-cli), run `adapt install adapt-sber-tabs`.
 
 Alternatively, open the */src/components* folder in a new terminal window on Mac OSX or right click the folder and select 'Git Bash Here' on Windows.
 
-Git clone the component, making sure to delete the hidden **.git** folder from the *adapt-tabs* folder.
+Git clone the component, making sure to delete the hidden **.git** folder from the *adapt-sber-tabs* folder.
 
 ## Settings Overview
 
-The attributes listed below are used in *components.json* to configure **Tabs**, and are properly formatted as JSON in [*example.json*](https://github.com/cgkineo/adapt-tabs/blob/master/example.json).
+The attributes listed below are used in *components.json* to configure **Tabs**, and are properly formatted as JSON in [*example.json*](https://github.com/cgkineo/adapt-sber-tabs/blob/master/example.json).
 
 ## Attributes
 
 [**core model attributes**](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes): These are inherited by every Adapt component. [Read more](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes).
 
-**\_component** (string): This value must be: `tabs`.
+**\_component** (string): This value must be: `sber-tabs`.
 
 **\_classes** (string): CSS class name to be applied to the container div. The class must be predefined in one of the Less files. Separate multiple classes with a space.
 
@@ -33,9 +33,9 @@ guide the learner’s interaction with the component.
 
 **\_setCompletionOn** (string): Determines when the component registers as complete. Acceptable values are `"allItems"` and `"inview"`. `"allItems"` (the default) requires the learner to view every single tab; `"inview"` requires only that the component has been viewed (i.e. passed completely through the browser viewport).
 
-**\_tabLayout** (string): Defines the layout of the tabs. Acceptable values are `"left"` and `"top"`. By default, component displays `left` layout for medium screen size and below.
+**\_tabLayout** (string): Defines the layout of the sber-tabs. Acceptable values are `"left"` and `"top"`. By default, component displays `left` layout for medium screen size and below.
 
-**\_items** (array): Multiple items may be created. Each *\_item* represents one element of the tabs component and contains values for **tabTitle**, **title**, **body**, **\_classes** and **\_graphic**.
+**\_items** (array): Multiple items may be created. Each *\_item* represents one element of the sber-tabs component and contains values for **tabTitle**, **title**, **body**, **\_classes** and **\_graphic**.
 
 >**tabTitle** (string): This text is displayed in the actual tab heading. Recommend keeping this title short.
 
@@ -47,7 +47,7 @@ guide the learner’s interaction with the component.
 
 >**\_graphic** (object): An optional image which is displayed below the item body when the learner opens this content panel. It contains values for *src* and *alt*.
 
->>**src** (string): File name (including path) of the image. Path should be relative to the *src* folder (e.g., *course/en/images/tabs.jpg*).
+>>**src** (string): File name (including path) of the image. Path should be relative to the *src* folder (e.g., *course/en/images/sber-tabs.jpg*).
 
 >>**alt** (string): This text becomes the image’s alt attribute.
 

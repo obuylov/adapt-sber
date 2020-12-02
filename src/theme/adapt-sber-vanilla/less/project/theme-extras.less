@@ -214,26 +214,39 @@
     .white;
   }
 }
+
 .table-green {
   border-collapse: collapse;
   border-radius: 5px;
   border: transparent solid 2px;
   box-shadow: @shadow-full;
+
   tr {
     border: black solid 1px;
+
     td {
       border: black solid 1px;
       padding: 14px 20px;
       vertical-align: top;
     }
   }
-  tr:first-of-type{
+
+  tr:first-of-type {
     background-color: @green-button;
     text-align: center;
     font-weight: bold;
   }
-  td:first-of-type{
+
+  td:first-of-type {
     background-color: @green-button;
     font-weight: bold;
   }
+}
+
+ul li::marker {
+  color: @marker-blue;
+}
+
+.menu__item-container-inner {
+  background: none !important
 }

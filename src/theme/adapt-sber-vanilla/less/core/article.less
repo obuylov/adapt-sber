@@ -1,10 +1,10 @@
 .article {
-  &__inner {
-    padding-top: 100px;
-  }
-
   &.figures {
     position: relative;
+  }
+
+  &:last-of-type .block:last-of-type {
+    padding-bottom: 50px;
   }
 
   &.has-bg-image {
@@ -48,6 +48,7 @@
       color: white !important;
       background-color: transparent;
     }
+
     //filter: invert(1) hue-rotate(210deg);
   }
 
@@ -58,9 +59,11 @@
   &.green-blue-grad {
     background: @green-blue-grad;
   }
-  &.green-yellow-grad{
+
+  &.green-yellow-grad {
     background: @green-yellow-grad;
   }
+
   &.opace-grad {
     position: relative;
     background: white;
@@ -77,4 +80,11 @@
     }
   }
 
+  &.blue-mint-grad {
+    background-image: @blue-mint-grad;
+  }
+
+  &.blue-green-grad {
+    background-image: @blue-green-grad;
+  }
 }

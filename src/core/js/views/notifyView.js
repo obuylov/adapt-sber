@@ -151,7 +151,7 @@ define([
         this.$('.notify__popup').velocity({ opacity: 0 }, { duration: 0 }).velocity({ opacity: 1 }, { duration: 400,
           begin: () => {
             // Make sure to make the notify visible and then set
-            // focus, disabled scroll and manage tabs
+            // focus, disabled scroll and manage sber-tabs
             this.$('.notify__popup').css('visibility', 'visible');
             this.onOpened();
           }

@@ -3,13 +3,13 @@
   "_id": "c-05",
   "_parentId": "b-05",
   "_type": "component",
-  "_component": "tabs",
+  "_component": "sber-tabs",
   "_classes": "",
   "_layout": "full",
   "title": "Tabs",
   "displayTitle": "Tabs",
   "body": "Body text.",
-  "instruction": "Select the tabs to find out more.",
+  "instruction": "Select the sber-tabs to find out more.",
   "_tabLayout": "horizontal",
   "_minHeight": "500px",
   "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
@@ -21,7 +21,7 @@
       "_classes": "",
       "_graphic": {
         "alt": "alt text",
-        "src": "course/en/images/tabs.jpg"
+        "src": "course/en/images/sber-tabs.jpg"
       }
     },
     {
@@ -31,7 +31,7 @@
       "_classes": "",
       "_graphic": {
         "alt": "alt text",
-        "src": "course/en/images/tabs.jpg"
+        "src": "course/en/images/sber-tabs.jpg"
       }
     },
     {
@@ -41,7 +41,7 @@
       "_classes": "",
       "_graphic": {
         "alt": "alt text",
-        "src": "course/en/images/tabs.jpg"
+        "src": "course/en/images/sber-tabs.jpg"
       }
     },
     {
@@ -51,7 +51,7 @@
       "_classes": "",
       "_graphic": {
         "alt": "alt text",
-        "src": "course/en/images/tabs.jpg"
+        "src": "course/en/images/sber-tabs.jpg"
       }
     }
   ]

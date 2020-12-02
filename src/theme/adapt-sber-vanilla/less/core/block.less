@@ -7,6 +7,12 @@
     padding-top: 100px;
   }
 
+  &.center {
+    .block__title {
+      text-align: center;
+    }
+  }
+
   &.has-bg-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +21,12 @@
 
   &__inner {
     padding: 65px @block-padding-hoz 0;
+  }
+
+  &:first-of-type {
+    .block__inner {
+      padding-top: 100px;
+    }
   }
 
   &__title {

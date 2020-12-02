@@ -1,23 +1,24 @@
 
 
+
 //----------------------
 // Vertical layout (default mobile view)
 //----------------------
 .is-vertical-layout {
 
-  .tabs__nav {
+  .sber-tabs__nav {
     width: 20%;
   }
 
-  .tabs__nav-inner {
-    .tabs__nav-item-btn {
+  .sber-tabs__nav-inner {
+    .sber-tabs__nav-item-btn {
       border-radius: 5px 0 0 5px;
       margin: 0 0 10px;
       padding: 30px 0 30px;
     }
   }
 
-  .tabs__content {
+  .sber-tabs__content {
     width: 80%;
   }
 }
@@ -25,7 +26,7 @@
 //----------------------
 // Theme
 //----------------------
-.tabs {
+.sber-tabs {
   &__content {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   }
@@ -46,7 +47,7 @@
     @media (max-width: @device-width-small) {
       flex-direction: column !important;
 
-      .tabs__content-item-graphic {
+      .sber-tabs__content-item-graphic {
         order: -1;
       }
     }
@@ -91,11 +92,11 @@
 }
 
 .align-image-right, .align-image-left{
-  .tabs__content-item-graphic {
+  .sber-tabs__content-item-graphic {
     margin: 20px;
   }
 
-  .tabs__content-item-graphic, .title-and-body {
+  .sber-tabs__content-item-graphic, .title-and-body {
     width: 48%;
 
     @media (max-width: @device-width-small) {
@@ -105,15 +106,19 @@
 }
 
 .align-image-left {
-  .tabs__content-item-inner {
+  .sber-tabs__content-item-inner {
     flex-direction: row-reverse;
   }
 }
 
 
-.tabs__content {
+.sber-tabs__content {
   table td {
     width: 50%;
     border-color: @gray-text;
   }
+}
+
+.no-title .sber-tabs__content-item-title {
+  display: none;
 }

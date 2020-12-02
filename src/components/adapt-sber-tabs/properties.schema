@@ -41,7 +41,7 @@
         "options": ["inview", "allItems"]
       },
       "validators": [],
-      "help": "Whether completion is based on the learner having viewed all the tabs - or just having viewed the component"
+      "help": "Whether completion is based on the learner having viewed all the sber-tabs - or just having viewed the component"
     },
     "_tabLayout": {
       "type": "string",

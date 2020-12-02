@@ -1,13 +1,13 @@
 {
   "name": "adapt-sber-tabs",
   "framework": ">=5",
-  "version": "3.0.0",
-  "homepage": "https://github.com/cgkineo/adapt-tabs",
-  "issues": "https://github.com/cgkineo/adapt-tabs/issues/",
-  "displayName": "Tabs",
+  "version": "1.0.1",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "displayName": "Сбер Tabs",
   "component": "sber-tabs",
-  "description": "Organise content into tab views",
-  "main": "/js/adapt-tabs.js",
+  "description": "Обновленная версия плагина со вкладками",
+  "main": "/js/adapt-sber-tabs.js",
   "keywords": [
     "adapt-plugin",
     "adapt-component"

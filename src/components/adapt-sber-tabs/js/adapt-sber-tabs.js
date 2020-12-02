@@ -4,10 +4,10 @@ define([
   'core/js/models/itemsComponentModel'
 ], function (Adapt, ComponentView, ItemsComponentModel) {
 
-  var Tabs = ComponentView.extend({
+  var SberTabs = ComponentView.extend({
 
     events: {
-      'click .js-tabs-nav-item-btn-click': 'onTabItemClicked'
+      'click .js-sber-tabs-nav-item-btn-click': 'onTabItemClicked'
     },
 
     preRender: function () {
@@ -63,13 +63,13 @@ define([
       var itemsLength = this.model.get('_items').length;
       var itemWidth = 100 / itemsLength;
 
-      this.$('.tabs__nav-item-btn').css({
+      this.$('.sber-tabs__nav-item-btn').css({
         width: itemWidth + '%'
       });
     },
 
     setTabLayoutVertical: function () {
-      this.$('.tabs__nav-item-btn').css({
+      this.$('.sber-tabs__nav-item-btn').css({
         width: 100 + '%'
       });
     },
@@ -83,8 +83,8 @@ define([
     onItemsActiveChange: function (item, isActive) {
       var dataFilter = '[data-index="' + item.get('_index') + '"]';
 
-      var $tabButton = this.$('.js-tabs-nav-item-btn-click').filter(dataFilter);
-      var $tabPanel = this.$('.tabs__content-item').filter(dataFilter);
+      var $tabButton = this.$('.js-sber-tabs-nav-item-btn-click').filter(dataFilter);
+      var $tabPanel = this.$('.sber-tabs__content-item').filter(dataFilter);
 
       $tabButton.toggleClass('is-selected', isActive).attr('aria-selected', isActive);
       $tabPanel.toggleClass('is-active', isActive);
@@ -99,16 +99,16 @@ define([
       if (!isVisited) return;
 
       var ariaLabel = item.get('tabTitle') + '. ' + this.model.get('_globals')._accessibility._ariaLabels.visited;
-      var $tabButton = this.$('.js-tabs-nav-item-btn-click').filter('[data-index="' + item.get('_index') + '"]');
+      var $tabButton = this.$('.js-sber-tabs-nav-item-btn-click').filter('[data-index="' + item.get('_index') + '"]');
       $tabButton.addClass('is-visited').attr('aria-label', ariaLabel);
     },
 
   }, {
-    template: 'tabs'
+    template: 'sber-tabs'
   });
 
   return Adapt.register('sber-tabs', {
     model: ItemsComponentModel,
-    view: Tabs
+    view: SberTabs
   });
 });

@@ -1,7 +1,7 @@
 //----------------------
   // Horizontal layout (default mobile view)
   //----------------------
-.is-horizontal-layout .tabs__widget {
+.is-horizontal-layout .sber-tabs__widget {
   flex-direction: column-reverse;
 }
 
@@ -9,19 +9,19 @@
 // Vertical layout (default mobile view)
 //----------------------
 .is-vertical-layout {
-  .tabs__widget {
+  .sber-tabs__widget {
     flex-direction: row-reverse;
   }
 
-  .tabs__nav {
+  .sber-tabs__nav {
     width: 30%;
   }
 
-  .tabs__nav-inner {
+  .sber-tabs__nav-inner {
     flex-direction: column;
   }
 
-  .tabs__content {
+  .sber-tabs__content {
     width: 70%;
   }
 }
@@ -29,7 +29,7 @@
 // ----------------------
 // Global
 // ----------------------
-.tabs {
+.sber-tabs {
   &__nav-inner {
     display: flex;
 
@@ -60,7 +60,7 @@
 //----------------------
 // Theme
 //----------------------
-.tabs {
+.sber-tabs {
   &__content {
     background-color: @item-color-inverted-selected;
     box-shadow: inset 0 0 0 0.25rem @item-color-selected;

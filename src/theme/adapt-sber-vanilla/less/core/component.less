@@ -1,4 +1,19 @@
 .component {
+
+  &.center {
+    .component__title {
+      text-align: center;
+    }
+  }
+
+  &.is-right {
+  padding-left: 16px;
+}
+
+  &.is-left {
+    padding-right: 16px;
+  }
+
   &__title {
     margin-bottom: @component-title-margin;
     .component-title;
@@ -21,12 +36,7 @@
   }
 
   @media (max-width: @device-width-medium) {
-    &.is-right {
-      padding-left: 16px;
-    }
-
     &.is-left {
-      padding-left: 16px;
       padding-bottom: @block-padding-ver;
     }
   }
