@@ -218,16 +218,22 @@
 .table-green {
   border-collapse: collapse;
   border-radius: 5px;
-  border: transparent solid 2px;
   box-shadow: @shadow-full;
 
   tr {
-    border: black solid 1px;
-
     td {
       border: black solid 1px;
       padding: 14px 20px;
       vertical-align: top;
+      &:last-of-type  {
+        border-right: none;
+      }
+      &:first-of-type{
+        border-left: none;
+      }
+    }
+    &:last-of-type  td {
+      border-bottom: none;
     }
   }
 
@@ -235,6 +241,9 @@
     background-color: @green-button;
     text-align: center;
     font-weight: bold;
+    td {
+      border-top: none;
+    }
   }
 
   td:first-of-type {
