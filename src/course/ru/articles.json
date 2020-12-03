@@ -1,7 +1,7 @@
 [
   {
     "title": "New Article Title",
-    "displayTitle": "Виды сегментов",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -51,7 +51,7 @@
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
-      "_scrollTo": "@article +1",
+      "_scrollTo": "@block +1",
       "_button": {
         "_isEnabled": true,
         "_styleBeforeCompletion": "hidden",
@@ -137,7 +137,7 @@
   },
   {
     "title": "Основные критерии отнесения",
-    "displayTitle": "Основные критерии отнесения",
+    "displayTitle": "",
     "body": "",
     "_classes": "opace-grad",
     "instruction": "",
@@ -187,7 +187,7 @@
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
-      "_scrollTo": "@article +1",
+      "_scrollTo": "@block +1",
       "_button": {
         "_isEnabled": true,
         "_styleBeforeCompletion": "hidden",
@@ -226,7 +226,7 @@
   },
   {
     "title": "Тестрирование",
-    "displayTitle": "Тестрирование",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -246,10 +246,10 @@
     },
     "_assessment": {
       "_isEnabled": true,
-      "_id": "test1",
+      "_id": "test",
       "_attempts": -1,
       "_isPercentageBased": true,
-      "_scoreToPass": 80,
+      "_scoreToPass": 35,
       "_includeInTotalScore": true,
       "_assessmentWeight": 1,
       "_suppressMarking": false,
@@ -267,25 +267,25 @@
       "_questions": {
         "_resetType": "soft",
         "_canShowFeedback": false,
-        "_canShowMarking": false,
+        "_canShowMarking": true,
         "_canShowModelAnswer": false
       }
     },
     "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
+      "_isEnabled": true,
+      "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
-      "_scrollTo": "@article +1",
+      "_scrollTo": "@block +1",
       "_button": {
-        "_isEnabled": false,
+        "_isEnabled": true,
         "_styleBeforeCompletion": "hidden",
         "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
+        "_isFullWidth": false,
         "_autoHide": false,
         "_className": "",
         "_hasIcon": false,
-        "text": "Continue",
+        "text": "Далее",
         "startText": "Begin",
         "finalText": "Finish",
         "_component": "trickle-button"
@@ -315,7 +315,7 @@
   },
   {
     "title": "Алгоритм определения ЦКС",
-    "displayTitle": "Алгоритм определения ЦКС",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -365,7 +365,7 @@
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
-      "_scrollTo": "@article +1",
+      "_scrollTo": "@block +1",
       "_button": {
         "_isEnabled": true,
         "_styleBeforeCompletion": "hidden",
@@ -417,6 +417,11 @@
     "_id": "5fbef182b639645d0eb5d634",
     "_parentId": "5fbeedfab639645d0eb5d621",
     "_type": "article",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_assessment": {
       "_isEnabled": false,
       "_id": "",
@@ -444,14 +449,51 @@
         "_canShowModelAnswer": false
       }
     },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_onChildren": false,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": false,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      }
     }
   },
   {
     "title": "Права и обязанности резидентов при осуществлении валютных операций физических лиц",
-    "displayTitle": "Права и обязанности резидентов при осуществлении валютных операций физических лиц",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",
@@ -501,7 +543,7 @@
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
-      "_scrollTo": "@article +1",
+      "_scrollTo": "@block +1",
       "_button": {
         "_isEnabled": true,
         "_styleBeforeCompletion": "hidden",
@@ -540,7 +582,7 @@
   },
   {
     "title": "Дополнительные критерии",
-    "displayTitle": "Дополнительные критерии",
+    "displayTitle": "",
     "body": "",
     "_classes": "opace-grad",
     "instruction": "",
@@ -557,31 +599,6 @@
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
-    },
-    "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
-      "_scrollDuration": 500,
-      "_onChildren": false,
-      "_scrollTo": "@article +1",
-      "_button": {
-        "_isEnabled": false,
-        "_styleBeforeCompletion": "hidden",
-        "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
-        "_autoHide": false,
-        "_className": "",
-        "_hasIcon": false,
-        "text": "Continue",
-        "startText": "Begin",
-        "finalText": "Finish",
-        "_component": "trickle-button"
-      },
-      "_stepLocking": {
-        "_isEnabled": true,
-        "_isCompletionRequired": true,
-        "_isLockedOnRevisit": false
-      }
     },
     "_assessment": {
       "_isEnabled": false,
@@ -608,6 +625,31 @@
         "_canShowFeedback": false,
         "_canShowMarking": false,
         "_canShowModelAnswer": false
+      }
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_onChildren": false,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": false,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
       }
     },
     "_pageLevelProgress": {

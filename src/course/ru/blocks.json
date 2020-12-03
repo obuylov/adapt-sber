@@ -1,7 +1,7 @@
 [
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Виды сегментов",
     "body": "",
     "_classes": "",
     "_trackingId": 1,
@@ -20,6 +20,9 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -43,9 +46,6 @@
         "_isCompletionRequired": true,
         "_isLockedOnRevisit": false
       }
-    },
-    "_assessment": {
-      "_quizBankID": 1
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
@@ -72,7 +72,7 @@
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Основные критерии отнесения",
     "body": "",
     "_classes": "",
     "_trackingId": 2,
@@ -86,17 +86,64 @@
     "_id": "5fbee394b639645d0eb5d5ea",
     "_parentId": "5fbee394b639645d0eb5d5e9",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_assessment": {
       "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Алгоритм определения ЦКС",
     "body": "",
     "_classes": "",
     "_trackingId": 3,
@@ -110,17 +157,64 @@
     "_id": "5fbee872b639645d0eb5d5fc",
     "_parentId": "5fbee872b639645d0eb5d5fb",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_assessment": {
       "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Права и обязанности резидентов при осуществлении валютных операций физических лиц",
     "body": "",
     "_classes": "align-vert-center",
     "_trackingId": 4,
@@ -139,6 +233,9 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -162,9 +259,6 @@
         "_isCompletionRequired": true,
         "_isLockedOnRevisit": false
       }
-    },
-    "_assessment": {
-      "_quizBankID": 1
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
@@ -191,7 +285,7 @@
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Дополнительные критерии",
     "body": "",
     "_classes": "",
     "_trackingId": 5,
@@ -205,12 +299,59 @@
     "_id": "5fbeebc0b639645d0eb5d61f",
     "_parentId": "5fbeebc0b639645d0eb5d61e",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_assessment": {
       "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
@@ -239,7 +380,7 @@
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Тестирование",
     "body": "",
     "_classes": "",
     "_trackingId": 7,
@@ -253,12 +394,59 @@
     "_id": "5fbeeeb8b639645d0eb5d628",
     "_parentId": "5fbeeeb8b639645d0eb5d627",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_assessment": {
       "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
@@ -313,7 +501,7 @@
     "title": "New Block Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "pt-100",
+    "_classes": "",
     "_trackingId": 10,
     "instruction": "",
     "_isOptional": false,
@@ -489,6 +677,77 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
+    "_id": "5fc80d5f6d1eb6c215321129",
+    "_parentId": "5fbeebc0b639645d0eb5d61e",
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 16,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
     "_id": "5fbad54e22561caa0112d728",
     "_parentId": "5fbad44d22561caa0112d71c",
     "_type": "block",
@@ -505,7 +764,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "align-vert-center",
-    "_trackingId": 16,
+    "_trackingId": 17,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -576,7 +835,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 17,
+    "_trackingId": 18,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -600,7 +859,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "align-vert-center",
-    "_trackingId": 18,
+    "_trackingId": 19,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -671,7 +930,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 19,
+    "_trackingId": 20,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -695,7 +954,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 20,
+    "_trackingId": 21,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -719,7 +978,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 21,
+    "_trackingId": 22,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -743,7 +1002,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 22,
+    "_trackingId": 23,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,

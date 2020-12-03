@@ -1,4 +1,20 @@
+body {
+  counter-reset: part;
+}
+
 .article {
+  &__inner {
+    &::before {
+      content: "Часть " counter(part);
+      counter-increment: part;
+      position: absolute;
+      top: 75px;
+      left: calc(19% + 5px);
+      font-size: 14px;
+      color: #7c7c7c;
+    }
+  }
+
   &.figures {
     position: relative;
   }

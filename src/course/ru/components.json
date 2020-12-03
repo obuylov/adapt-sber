@@ -28,7 +28,7 @@
     "instruction": ""
   },
   {
-    "_component": "sber-txtmessages",
+    "_component": "graphic",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -53,32 +53,13 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
-    "_items": [
-      {
-        "body": "Ну что, проверим, как вы поняли материал? Сможете озвучить цель и главную мысль своего выступления? Это возможность прокачать навык «Логика и анализ».",
-        "_align": "left",
-        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
-        "_class": ""
-      },
-      {
-        "body": "Ну привет!",
-        "_align": "left",
-        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
-        "_class": ""
-      },
-      {
-        "body": "Несказанно вам рады, уважаемый",
-        "_align": "left",
-        "_graphic": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
-        "_class": ""
-      },
-      {
-        "body": "Мне всегда есть, что ответить. Дайте мне минуту.",
-        "_align": "right",
-        "_graphic": "course/ru/assets/e4cc8487dd8fcf63328a6dad013442391569440e.png",
-        "_class": ""
-      }
-    ]
+    "instruction": "",
+    "_graphic": {
+      "alt": "схема",
+      "large": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
+      "small": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
+      "attribution": ""
+    }
   },
   {
     "_component": "accordion",
@@ -141,58 +122,6 @@
       }
     ],
     "_shouldCollapseItems": true
-  },
-  {
-    "_component": "sber-tabs",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "<p>Критерии отнесения клиентов к клиентским сегментам/подсегментам</p>",
-    "_id": "5fbee3cdb639645d0eb5d5ec",
-    "_parentId": "5fbee394b639645d0eb5d5ea",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_setCompletionOn": "allItems",
-    "_tabLayout": "horizontal",
-    "_items": [
-      {
-        "tabTitle": "Сегмент",
-        "title": "Размер годовой выручки",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Микробизнес</td><td>До 60 млн.руб</td></tr><tr><td>Малый бизнес</td><td>&gt; 60 млн.руб до 400 млн.руб</td></tr><tr><td>Средний бизнес</td><td>&gt; 400 млн.руб до 2 500 млн.руб</td></tr><tr><td>Крупный бизнес</td><td>&gt; 2 500 млн.руб до 15 000 млн.руб</td></tr><tr><td>Крупнейший бизнес</td><td>&gt; 15 000 млн.руб</td></tr><tr><td>Клиенты машиностроения (предприятия опк)</td><td>Приложение №6</td></tr><tr><td>Финансовые институты</td><td>Приложение №7</td></tr><tr><td>Региональный госсектор</td><td>Приложение №8</td></tr></tbody></table>",
-        "_classes": "",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      },
-      {
-        "tabTitle": "Подсегмент",
-        "title": "Размер годовой выручки",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Федеральный госсектор</td><td>—</td></tr></tbody></table>",
-        "_classes": "",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      }
-    ]
   },
   {
     "_component": "narrative",
@@ -632,80 +561,8 @@
     "instruction": ""
   },
   {
-    "_component": "sber-tabs",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "",
-    "_id": "5fbeebe5b639645d0eb5d620",
-    "_parentId": "5fbeebc0b639645d0eb5d61f",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_setCompletionOn": "allItems",
-    "_tabLayout": "horizontal",
-    "_items": [
-      {
-        "tabTitle": "Малый бизнес",
-        "title": "- ",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
-        "_classes": "no-title",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      },
-      {
-        "tabTitle": "Средний бизнес",
-        "title": "-",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>&gt; 100 млн руб.</td><td>&gt; 180 млн руб. до 1 500 млн руб.</td></tr></tbody></table>",
-        "_classes": "no-title",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      },
-      {
-        "tabTitle": "Крупный бизнес",
-        "title": "-",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>&gt; 1 500 млн руб. до 3 000 млн руб.</td></tr></tbody></table>",
-        "_classes": "no-title",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      },
-      {
-        "tabTitle": "Крупнейший бизнес",
-        "title": "-",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
-        "_classes": "no-title",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      }
-    ]
-  },
-  {
     "_component": "text",
-    "_classes": "",
+    "_classes": "center",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -1317,17 +1174,17 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
-    "instruction": "",
-    "_isVisibleBeforeCompletion": true,
-    "_setCompletionOn": "inview",
+    "instruction": "23423",
+    "_isVisibleBeforeCompletion": false,
+    "_setCompletionOn": "pass",
     "_resetType": "inherit",
-    "_assessmentId": "test1",
+    "_assessmentId": "test",
     "_retry": {
       "button": "Пройти заново",
       "feedback": "",
       "_routeToAssessment": true
     },
-    "_completionBody": "",
+    "_completionBody": "<p>hello</p><p>use {{score}}, {{maxScore}} and {{scoreAsPercent}} to display score and percentage</p>",
     "_bands": [
       {
         "_score": 0,
@@ -1336,7 +1193,7 @@
         "_classes": ""
       },
       {
-        "_score": 80,
+        "_score": 5,
         "feedback": "<p style=\"text-align:center\"><strong>Поздравляем, вы справились</strong></p><p style=\"text-align:center\">Вы ответили верно на все вопросы!</p>",
         "_allowRetry": false,
         "_classes": ""
@@ -1391,7 +1248,7 @@
         "_classes": "",
         "_iconClass": "",
         "_alignIconRight": false,
-        "text": "Previous",
+        "text": "Назад",
         "ariaLabel": "Previous Page",
         "_showTooltip": false,
         "tooltip": "{{displayTitle}}",
@@ -1404,7 +1261,7 @@
         "_classes": "",
         "_iconClass": "",
         "_alignIconRight": false,
-        "text": "Menu",
+        "text": "Меню",
         "ariaLabel": "Go to main menu",
         "_showTooltip": false,
         "tooltip": "{{displayTitle}}",
@@ -1430,7 +1287,7 @@
         "_classes": "",
         "_iconClass": "",
         "_alignIconRight": true,
-        "text": "Next",
+        "text": "Вперед",
         "ariaLabel": "Next Page",
         "_showTooltip": false,
         "tooltip": "{{displayTitle}}",
@@ -1462,5 +1319,249 @@
         "tooltip": "Close window"
       }
     }
+  },
+  {
+    "_component": "sber-tabs",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fc6af89c344aba075d1135a",
+    "_parentId": "5fbee394b639645d0eb5d5ea",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_tabLayout": "horizontal",
+    "_items": [
+      {
+        "tabTitle": "Сегмент",
+        "title": "Размер годовой выручки",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Микробизнес</td><td>До 60 млн.руб</td></tr><tr><td>Малый бизнес</td><td>&gt; 60 млн.руб до 400 млн.руб</td></tr><tr><td>Средний бизнес</td><td>&gt; 400 млн.руб до 2 500 млн.руб</td></tr><tr><td>Крупный бизнес</td><td>&gt; 2 500 млн.руб до 15 000 млн.руб</td></tr><tr><td>Крупнейший бизнес</td><td>&gt; 15 000 млн.руб</td></tr><tr><td>Клиенты машиностроения (предприятия опк)</td><td>Приложение №6</td></tr><tr><td>Финансовые институты</td><td>Приложение №7</td></tr><tr><td>Региональный госсектор</td><td>Приложение №8</td></tr></tbody></table>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Подсегмент",
+        "title": "Размер годовой выручки",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Федеральный госсектор</td><td>—</td></tr></tbody></table>",
+        "_classes": "",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ]
+  },
+  {
+    "_component": "pageNav",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fc80d686d1eb6c21532112a",
+    "_parentId": "5fc80d5f6d1eb6c215321129",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Previous",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Меню",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Далее",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_component": "sber-tabs",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fc813a56d1eb6c21532112f",
+    "_parentId": "5fbeebc0b639645d0eb5d61f",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_tabLayout": "horizontal",
+    "_items": [
+      {
+        "tabTitle": "Малый бизнес",
+        "title": ". ",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Средний бизнес",
+        "title": ".",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>&gt; 100 млн руб.</td><td>&gt; 180 млн руб. до 1 500 млн руб.</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Крупный бизнес",
+        "title": ".",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>&gt; 1 500 млн руб. до 3 000 млн руб.</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      },
+      {
+        "tabTitle": "Крупнейший бизнес",
+        "title": ".",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
+        "_classes": "no-title",
+        "_graphic": {
+          "alt": "",
+          "src": ""
+        }
+      }
+    ]
   }
 ]
