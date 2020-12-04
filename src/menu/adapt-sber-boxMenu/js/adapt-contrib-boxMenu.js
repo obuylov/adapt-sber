@@ -1,7 +1,7 @@
 define([
   'core/js/adapt',
   'core/js/views/menuView',
-  "./adapt-contrib-scrollMenuItemView"
+  "./adapt-contrib-boxMenuItemView"
 ], function(Adapt, MenuView, BoxMenuItemView) {
 
   var BoxMenuView = MenuView.extend({
@@ -26,7 +26,7 @@ define([
     },
 
     setBackgroundImage: function() {
-      var config = this.model.get('_sber-scrollMenu');
+      var config = this.model.get('_sber-boxMenu');
       var backgroundImages = config && config._backgroundImage;
 
       if (!backgroundImages) return;
@@ -45,18 +45,18 @@ define([
       }
 
       if (backgroundImage) {
-        this.$el.find('.menu__info')
+        this.$el.find('.menu__header')
           .addClass("has-bg-image")
           .css("background-image", "url(" + backgroundImage + ")");
       } else {
-        this.$el.find('.menu__info')
+        this.$el.find('.menu__header')
           .removeClass("has-bg-image")
           .css("background-image", "");
       }
     },
 
     setBackgroundStyles: function () {
-      var config = this.model.get('_sber-scrollMenu');
+      var config = this.model.get('_sber-boxMenu');
       var styles = config && config._backgroundStyles;
 
       if (!styles) return;
@@ -69,12 +69,12 @@ define([
     },
 
     processHeader: function() {
-      var config = this.model.get('_sber-scrollMenu');
+      var config = this.model.get('_sber-boxMenu');
       var header = config && config._menuHeader;
 
       if (!header) return;
 
-      var $header = this.$('.menu__info');
+      var $header = this.$('.menu__header');
 
       this.setHeaderBackgroundImage(header, $header);
       this.setHeaderBackgroundStyles(header, $header);

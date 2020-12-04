@@ -18,85 +18,63 @@
           "type": "object"
         },
         "article": {
+          "type": "object"
+        },
+        "component": {
           "type": "object",
           "properties": {
-            "_sberFigures": {
-              "type": "array",
-              "required": true,
-              "title": "Фигуры",
-              "minItems": 1,
-              "items": {
-                "type": "object",
-                "required": false,
-                "legend": "Sber Figures",
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "required": true,
-                    "title": "Фигура",
-                    "enum": ["circle", "donut", "pentagon"],
-                    "inputType": {
-                      "type": "Select",
-                      "options": [
-                        "circle",
-                        "donut",
-                        "pentagon"
-                      ]
-                    },
-                    "default": "circle",
-                    "help": "circle – круг, donut – пончик, pentagon – пятиугольник"
+            "_sberIcon": {
+              "type": "object",
+              "required": false,
+              "title": "Иконка",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить иконку",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "side": {
+                  "type": "string",
+                  "required": true,
+                  "title": "С какой стороны?",
+                  "enum": [
+                    "top",
+                    "left"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "top",
+                      "left"
+                    ]
                   },
-                  "size": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Размер фигуры",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Размер фигуры в пикселях"
-                  },
-                  "x_pos": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Положение по х",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Позиция по х в процентах"
-                  },
-                  "y_pos": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Положени по y",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Позиция по у в процентах"
-                  },
-                  "angle": {
-                    "type": "number",
-                    "required": true,
-                    "default": 0,
-                    "title": "Угол наклона",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Угол наклона фигуры"
-                  }
+                  "default": "top",
+                  "help": "top – сверху, left – слева"
+                },
+                "src": {
+                  "type": "string",
+                  "required": true,
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "validators": ["required"],
+                  "help": "Изображение иконки"
+                },
+                "margin": {
+                  "type": "number",
+                  "required": true,
+                  "default": 30,
+                  "title": "Отступ до текста",
+                  "inputType": "Number",
+                  "validators": [
+                    "number"
+                  ],
+                  "help": "Отступ до текста в пикселях"
                 }
               }
             }
           }
-        },
-        "component": {
-          "type": "object"
         }
       }
     }

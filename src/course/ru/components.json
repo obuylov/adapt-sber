@@ -25,7 +25,13 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
-    "instruction": ""
+    "instruction": "",
+    "_sberIcon": {
+      "_isEnabled": true,
+      "side": "top",
+      "margin": 0,
+      "src": "course/ru/assets/Group.png"
+    }
   },
   {
     "_component": "graphic",

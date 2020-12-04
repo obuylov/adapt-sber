@@ -11,6 +11,7 @@
 
 /* Tile Menu Styles */
 .menu__item-container-inner {
+  background: @item-color;
   max-width: 1000px;
   justify-content: space-between;
 
@@ -21,7 +22,8 @@
     display: block;
 
     margin-top: 0;
-    margin-bottom: 30px;
+    padding: 35px 30px;
+    margin-bottom: 20px;
 
     overflow: hidden;
     border-radius: 5px;
@@ -32,7 +34,7 @@
       transform: translateY(-5px);
     }
 
-    &.is-locked {
+    &.locked {
       opacity: 0.5;
       cursor: auto;
 
@@ -56,48 +58,50 @@
       margin: 0px;
       padding: 0px;
       .flex-stretch-between;
-      flex-direction: column;
 
       .menu-item-info {
+        width: 60%;
         height: 100%;
         .flex-stretch-between;
         flex-direction: column;
-        padding: 0 35px 35px;
       }
 
       .menu-item-body {
         line-height: 23px;
+        .additional;
       }
 
       .menu-item-photo {
-        max-height: 235px;
-        margin-bottom: 20px;
+        max-height: 100%;
+        width: 40%;
+        margin-right: 35px;
+        .flex-center;
       }
 
       .menu-item-title {
         color: @btn-color;
-        margin: 0 0 10px;
+        width: 100%;
+        margin-bottom: 10px;
         .block-title;
-        font-weight: normal;
       }
     }
   }
 
   .menu-item-controls {
-    margin-top: 26px;
+    margin-top: 40px;
     .flex-center;
   }
 
   .viewtext {
-    padding: 12px 18px;
+    padding: 10px 15px;
     background-color: #000000;
     color: white;
     border-radius: 5px;
   }
 
   .menu-duration {
-    margin-left: 34px;
-
+    margin-left: 30px;
+    .additional;
     .menu-item-duration {
       .flex-center;
     }
@@ -105,9 +109,9 @@
     img {
       min-width: auto;
       display: inline;
-      width: 25px;
-      height: 25px;
-      margin-right: 14px;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
     }
   }
 
@@ -127,6 +131,8 @@
 }
 
 .location-id-course {
+
+
   .nav {
     width: 50%;
     right: 0;
@@ -142,7 +148,6 @@
 @media (max-width: 1000px) {
   .menu__item-container-inner {
     padding: 20px;
-
     .menu-item {
       width: 100%;
     }

@@ -1,0 +1,124 @@
+.boxmenu {
+  .l-container-responsive(@max-width);
+
+  &__header-inner {
+    .l-container-responsive(@device-width-large);
+  }
+
+  &__item-container-inner {
+    display: flex;
+    flex-wrap: wrap;
+    .l-container-responsive(@device-width-large);
+  }
+
+  .backg_menu {
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    .text-menu {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .menu__title-inner {
+        color: black;
+        .page-title;
+      }
+    }
+  }
+
+  .menu__header {
+    background-size: cover;
+  }
+
+  .menu__title {
+    margin-bottom: 40px;
+  }
+
+  .menu__body {
+    padding: 90px 20px;
+    background-color: #f7f7f7;
+  }
+
+  .menu__body-inner {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    //.two-cols {
+    //  display: flex;
+    //  justify-content: center;
+    //  margin: 0 auto;
+    //  max-width: 56.25rem;
+    //
+    //  .menu-column-title {
+    //    font-size: 21px;
+    //    text-align: left;
+    //    line-height: 27px;
+    //  }
+    //
+    //  ul {
+    //    font-size: 14px;
+    //    line-height: 18px;
+    //
+    //    li {
+    //      margin-bottom: 30px;
+    //    }
+    //  }
+    //
+    //  .column-little-text {
+    //    font-size: 10px;
+    //    line-height: 13px;
+    //    width: 300px;
+    //  }
+    //
+    //  .left-column {
+    //    height: 550px;
+    //    width: 48%;
+    //    margin: 50px 30px 50px 0;
+    //    background-color: white;
+    //    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    //    border-radius: 5px;
+    //    padding: 20px 40px;
+    //  }
+    //
+    //  .right-column {
+    //    height: 550px;
+    //    width: 45%;
+    //    margin: 50px 0;
+    //    background-color: white;
+    //    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    //    border-radius: 5px;
+    //    padding: 20px 40px;
+    //  }
+    //  @media (max-width: 1000px){
+    //    flex-direction: column;
+    //    .column-little-text{
+    //      width: unset;
+    //    }
+    //    .left-column{
+    //      position: relative;
+    //      height: unset;
+    //      width: 90%;
+    //      margin: 20px 0;
+    //      left: 50%;
+    //      transform: translateX(-50%);
+    //    }
+    //    .right-column{
+    //      position: relative;
+    //      height: unset;
+    //      width: 90%;
+    //      margin: 20px 0;
+    //      left: 50%;
+    //      transform: translateX(-50%);
+    //    }
+    //  }
+    //}
+  }
+  .menu__item-container{
+    background-color: white;
+    margin: 50px auto;
+  }
+}
+

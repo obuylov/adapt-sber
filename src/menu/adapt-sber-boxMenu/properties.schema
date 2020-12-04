@@ -24,7 +24,7 @@
         "course": {
           "type": "object",
           "properties": {
-            "_sber-scrollMenu": {
+            "_sber-boxMenu": {
               "type": "object",
               "required": false,
               "properties": {
