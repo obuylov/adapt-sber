@@ -2,23 +2,25 @@ body {
   counter-reset: part;
 }
 
-.article.show-part {
-  .article__inner {
-    .block:first-of-type .block__inner{
-      position: relative;
 
-      &::before {
-        content: "Часть " counter(part);
-        counter-increment: part;
-        position: absolute;
-        top: 75px;
-        left: 10px;
-        font-size: 14px;
-        color: #7c7c7c;
+.article{
+  &.show-part {
+    .article__inner {
+      .block:first-of-type .block__inner {
+        position: relative;
+
+        &::before {
+          content: "Часть " counter(part);
+          counter-increment: part;
+          position: absolute;
+          top: 75px;
+          left: 10px;
+          font-size: 14px;
+          color: #7c7c7c;
+        }
       }
     }
   }
-
   &.figures {
     position: relative;
   }
