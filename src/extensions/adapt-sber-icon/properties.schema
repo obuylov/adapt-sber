@@ -55,11 +55,29 @@
                 },
                 "src": {
                   "type": "string",
-                  "required": true,
+                  "required": false,
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
                   "help": "Изображение иконки"
+                },
+                "align": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Выравнивание иконки и текста",
+                  "enum": [
+                    "flex-start",
+                    "center"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "flex-start",
+                      "center"
+                    ]
+                  },
+                  "default": "center",
+                  "help": "flex-start – сверху, center – в центре"
                 },
                 "margin": {
                   "type": "number",
