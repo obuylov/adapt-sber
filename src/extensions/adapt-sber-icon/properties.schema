@@ -58,7 +58,7 @@
                   "required": false,
                   "default": "",
                   "inputType": "Asset:image",
-                  "validators": ["required"],
+                  "validators": [],
                   "help": "Изображение иконки"
                 },
                 "align": {

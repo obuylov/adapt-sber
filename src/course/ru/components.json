@@ -1,7 +1,7 @@
 [
   {
     "_component": "text",
-    "_classes": "",
+    "_classes": "definition icon-i",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -10,8 +10,8 @@
     "_ariaLevel": 0,
     "_disableAccessibilityState": false,
     "title": "New Component Title",
-    "displayTitle": "",
-    "body": "<p>2.4 <strong>Основным критерием</strong> для определения принадлежности корпоративного Клиента Банка к сегменту является размер годовой выручки Клиента/холдинга.</p>",
+    "displayTitle": "Консультационное обращение — ",
+    "body": "<p>обращение клиента для получения информации по услугам и продуктам Банка, в том числе по конкретным услугам и продуктам, которыми пользуется клиент.</p>",
     "_id": "5fbad4bf22561caa0112d722",
     "_parentId": "5fbad44d22561caa0112d71d",
     "_type": "component",
@@ -25,17 +25,11 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
-    "instruction": "",
-    "_sberIcon": {
-      "_isEnabled": true,
-      "side": "top",
-      "margin": 0,
-      "src": "course/ru/assets/Group.png"
-    }
+    "instruction": ""
   },
   {
     "_component": "graphic",
-    "_classes": "",
+    "_classes": "definition icon-a",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -45,7 +39,7 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "",
+    "body": "Перевод оборотов достигается, в т. ч. за счет установления переменной процентной ставки.<br><br><br><br><br>",
     "_id": "5fbad52122561caa0112d724",
     "_parentId": "5fbad51d22561caa0112d723",
     "_type": "component",

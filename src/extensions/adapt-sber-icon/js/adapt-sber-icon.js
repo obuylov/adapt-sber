@@ -6,7 +6,7 @@ define([
 
     initialize: function() {
       const current_components = this.model.findDescendantModels("component");
-      this.component_models = current_components.filter(el => el.get("_sberIcon")._isEnabled);
+      this.component_models = current_components.filter(el => el.get("_sberIcon") && el.get("_sberIcon")._isEnabled);
 
       if (this.component_models.length === 0) return false;
 

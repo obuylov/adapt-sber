@@ -1,43 +1,103 @@
 .component {
 
-  &.center {
-    .component__title {
-      text-align: center;
+  &.definition {
+    position: relative;
+    padding: 28px 70px 12px;
+    background-color: @definition-blue;
+
+    &.icon-a::before {
+      position: absolute;
+      top: 26px;
+      left: 26px;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url("assets/icon_a.svg");
     }
-  }
 
-  &.is-right {
-  padding-left: 16px;
-}
+    &.icon-i {
+      padding-top: 100px;
+      text-align: center;
 
-  &.is-left {
-    padding-right: 16px;
-  }
+      &::before {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 36px;
+        height: 36px;
+        background-image: url("assets/icon_i.svg");
+        background-size: contain;
+      }
 
-  &__title {
-    margin-bottom: @component-title-margin;
-    .component-title;
-    color: black;
-    text-align: left;
-  }
+      .component__title {
+        margin-bottom: 0;
+      }
+    }
 
-  &__body {
-    margin-bottom: @component-body-margin;
-  }
+    &.info {
+      position: relative;
+      padding-left: 70px;
 
-  &__instruction {
-    margin-bottom: @component-instruction-margin;
-    .instruction-text;
-  }
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-image: url("assets/icon_i.svg");
+      }
 
-  &__body a,
-  &__instruction a {
-    .link-text;
-  }
+      p:first-of-type {
+        margin-top: 0;
+      }
 
-  @media (max-width: @device-width-medium) {
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &.center {
+      .component__title {
+        text-align: center;
+      }
+    }
+
+    &.is-right {
+      padding-left: 16px;
+    }
+
     &.is-left {
-      padding-bottom: @block-padding-ver;
+      padding-right: 16px;
+    }
+
+    &__title {
+      margin-bottom: @component-title-margin;
+      .component-title;
+      color: black;
+      text-align: left;
+    }
+
+    &__body {
+      margin-bottom: @component-body-margin;
+    }
+
+    &__instruction {
+      margin-bottom: @component-instruction-margin;
+      .instruction-text;
+    }
+
+    &__body a,
+    &__instruction a {
+      .link-text;
+    }
+
+    @media (max-width: @device-width-medium) {
+      &.is-left {
+        padding-bottom: @block-padding-ver;
+      }
     }
   }
 }
