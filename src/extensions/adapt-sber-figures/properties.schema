@@ -23,7 +23,7 @@
             "_sberFigures": {
               "type": "array",
               "required": true,
-              "title": "Фигуры",
+              "legend": "Сбер фигуры",
               "minItems": 1,
               "items": {
                 "type": "object",

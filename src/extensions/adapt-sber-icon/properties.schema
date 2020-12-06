@@ -26,7 +26,7 @@
             "_sberIcon": {
               "type": "object",
               "required": false,
-              "title": "Иконка",
+              "legend": "Сбер иконка",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
