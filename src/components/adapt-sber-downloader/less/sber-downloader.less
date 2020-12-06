@@ -1,0 +1,47 @@
+.sber-downloader__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 34px 35px 90px;
+  background-color: @definition-blue;
+
+  p:first-of-type, p:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 33px;
+    left: 30px;
+    content: "";
+    width: 30.5px;
+    height: 40px;
+    background-image: url("assets/file.svg");
+    background-size: cover;
+  }
+
+  .file-info {
+    width: 75%;
+  }
+
+  .sber-downloader__button {
+    padding: 15px 25px;
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    background-color: @black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sber-downloader-size {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .component__body {
+    margin-bottom: 0;
+  }
+}

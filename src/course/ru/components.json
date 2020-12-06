@@ -1,7 +1,7 @@
 [
   {
-    "_component": "text",
-    "_classes": "definition icon-i",
+    "_component": "sber-downloader",
+    "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -10,8 +10,9 @@
     "_ariaLevel": 0,
     "_disableAccessibilityState": false,
     "title": "New Component Title",
-    "displayTitle": "Консультационное обращение — ",
-    "body": "<p>обращение клиента для получения информации по услугам и продуктам Банка, в том числе по конкретным услугам и продуктам, которыми пользуется клиент.</p>",
+    "displayTitle": "",
+    "body": "",
+    "file_description": "<p>Постановление от 27.09.2007 г. №612 «Об утверждении правил продажи товаров дистанционным способом»</p>",
     "_id": "5fbad4bf22561caa0112d722",
     "_parentId": "5fbad44d22561caa0112d71d",
     "_type": "component",
@@ -25,6 +26,8 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
+    "file_size": "24 кб",
+    "file": "course/ru/assets/Group.png",
     "instruction": ""
   },
   {

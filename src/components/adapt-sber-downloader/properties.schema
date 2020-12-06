@@ -1,0 +1,53 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "file_description": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Название файла",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Название или описание файла",
+      "translatable": true
+    },
+    "file_size": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Размер файла",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Размер файла и измерение, 24 кб",
+      "translatable": true
+    },
+    "file": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Файл",
+      "inputType": "Asset:other",
+      "validators": ["required"]
+    }
+  }
+}
