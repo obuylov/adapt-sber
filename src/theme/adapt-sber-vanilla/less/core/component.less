@@ -35,69 +35,69 @@
         margin-bottom: 0;
       }
     }
+  }
 
-    &.info {
-      position: relative;
-      padding-left: 70px;
+  &.info {
+    position: relative;
+    padding-left: 70px;
 
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        width: 40px;
-        height: 40px;
-        background-image: url("assets/icon_i.svg");
-      }
-
-      p:first-of-type {
-        margin-top: 0;
-      }
-
-      p:last-of-type {
-        margin-bottom: 0;
-      }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-image: url("assets/icon_i.svg");
     }
 
-    &.center {
-      .component__title {
-        text-align: center;
-      }
+    p:first-of-type {
+      margin-top: 0;
     }
 
-    &.is-right {
-      padding-left: 16px;
+    p:last-of-type {
+      margin-bottom: 0;
     }
+  }
 
+  &.center {
+    .component__title {
+      text-align: center;
+    }
+  }
+
+  &.is-right {
+    padding-left: 16px;
+  }
+
+  &.is-left {
+    padding-right: 16px;
+  }
+
+  &__title {
+    margin-bottom: @component-title-margin;
+    .component-title;
+    color: black;
+    text-align: left;
+  }
+
+  &__body {
+    margin-bottom: @component-body-margin;
+  }
+
+  &__instruction {
+    margin-bottom: @component-instruction-margin;
+    .instruction-text;
+  }
+
+  &__body a,
+  &__instruction a {
+    .link-text;
+  }
+
+  @media (max-width: @device-width-medium) {
     &.is-left {
-      padding-right: 16px;
-    }
-
-    &__title {
-      margin-bottom: @component-title-margin;
-      .component-title;
-      color: black;
-      text-align: left;
-    }
-
-    &__body {
-      margin-bottom: @component-body-margin;
-    }
-
-    &__instruction {
-      margin-bottom: @component-instruction-margin;
-      .instruction-text;
-    }
-
-    &__body a,
-    &__instruction a {
-      .link-text;
-    }
-
-    @media (max-width: @device-width-medium) {
-      &.is-left {
-        padding-bottom: @block-padding-ver;
-      }
+      padding-bottom: @block-padding-ver;
     }
   }
 }
