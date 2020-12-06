@@ -5,7 +5,7 @@ define([
     _articleModels: [],
 
     initialize: function() {
-      this._articleModels = this.model.findDescendantModels("article").filter(function (el) {return el.get("_sberFigures")});
+      this._articleModels = this.model.findDescendantModels("article").filter(function (el) {return el.get("_sberFigures") && el.get("_sberFigures")._isEnabled});
 
       if (this._articleModels.length === 0) {
         return;
@@ -25,9 +25,7 @@ define([
 
         el.addClass("figures-container");
 
-        for (let j = 0; j < figures.length; j++) {
-          let figure = figures[j];
-
+        for (let figure of figures) {
           let f_el = document.createElement("div");
           f_el.className = "figure " + figure.type;
 

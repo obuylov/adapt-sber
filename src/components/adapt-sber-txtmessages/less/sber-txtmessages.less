@@ -87,8 +87,15 @@
     }
 
     .sber-txtmessages-item-graphic {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       min-width: 160px;
       margin-right: 30px;
+
+      span {
+        margin-top: 20px;
+      }
 
       @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
         min-width: 50px;

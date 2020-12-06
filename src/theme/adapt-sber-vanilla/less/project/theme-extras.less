@@ -259,3 +259,18 @@ ul li::marker {
 .menu__item-container-inner {
   background: none !important
 }
+
+p.info {
+  position: relative;
+  padding-left: 70px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("assets/icon_i.svg");
+  }
+}
