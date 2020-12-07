@@ -225,14 +225,17 @@
       border: black solid 1px;
       padding: 14px 20px;
       vertical-align: top;
-      &:last-of-type  {
+
+      &:last-of-type {
         border-right: none;
       }
-      &:first-of-type{
+
+      &:first-of-type {
         border-left: none;
       }
     }
-    &:last-of-type  td {
+
+    &:last-of-type td {
       border-bottom: none;
     }
   }
@@ -241,6 +244,7 @@
     background-color: @green-button;
     text-align: center;
     font-weight: bold;
+
     td {
       border-top: none;
     }
@@ -272,5 +276,36 @@ p.info {
     width: 40px;
     height: 40px;
     background-image: url("assets/icon_i.svg");
+  }
+}
+
+ol {
+  padding: 0;
+  counter-reset: ol-counter;
+
+  li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 20px;
+
+    &::before {
+      content: counter(ol-counter);
+      counter-increment: ol-counter;
+
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      float: left;
+
+      padding: .2rem;
+      margin-right: 20px;
+
+      color: black;
+      font-size: 14px;
+      text-align: center;
+
+      border-radius: 50%;
+      border: black solid 1px;
+    }
   }
 }
