@@ -214,11 +214,19 @@
     .white;
   }
 }
-
+.p-0 .block__inner {
+  padding-top: 0;
+}
+.no-top {
+  tr:first-of-type{
+    background-color: #f9f9f9!important;
+  }
+}
 .table-green {
   border-collapse: collapse;
   border-radius: 5px;
   box-shadow: @shadow-full;
+  background-color: #f9f9f9;
 
   tr {
     td {
@@ -309,3 +317,4 @@ ol {
     }
   }
 }
+
