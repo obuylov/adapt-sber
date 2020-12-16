@@ -32,8 +32,8 @@ define([
           $(f_el).css({
             width: figure.size,
             height: figure.size,
-            x: figure.x_pos,
-            y: figure.y_pos,
+            left: figure.x_pos + "px",
+            top: figure.y_pos + "px",
             transform: `rotateX(${figure.angle}deg)`
           });
 
