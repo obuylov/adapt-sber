@@ -9,7 +9,15 @@ define([
       return this.model.get("_isDividerBlock") ? "is-divider-block" : "";
     },
 
-    setCustomStyles: function() {},
+    setCustomStyles: function() {
+      let el = this.$el;
+      this.listenTo(Adapt, "blockView:postRender", function() {
+        el.find("ol").each(function() {
+          if (this.start)
+            this.style.counterSet = "ol-counter " + (this.start-1);
+        });
+      })
+    },
 
     onRemove: function() {}
 

@@ -1,6 +1,68 @@
 [
   {
-    "_component": "sber-downloader",
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Процесс мониторинга контрактов описан в следующих документах:</p>",
+    "_id": "5fd4cf4fdf5af363a4c1f1c9",
+    "_parentId": "5fd4cf4fdf5af363a4c1f1c8",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p><strong>ТС №2929-3 от 16.12.2015</strong></p><p>Технологическая схема взаимодействия подразделений Банка при осуществлении мониторинга и администрирования кредитных операций с корпоративными клиентами<br />&nbsp;</p><p><strong>Порядок №593-2-р от 06.11.2003<br />и Порядок №593-3-р от 25.09.2012</strong></p><p>Порядок предоставления гарантий и принятия гарантий в обеспечение своевременного выполнения обязательств третьих лиц по предоставляемым Сбербанком России кредитам и гарантиям</p><p>&nbsp;</p><p><strong>Регламент №285-6-р от 30.06.2006</strong></p><p>Регламент предоставления кредитов юридическим лицам и индивидуальным предпринимателям</p>",
+    "_id": "5fd4cffadf5af363a4c1f1cd",
+    "_parentId": "5fd4cff6df5af363a4c1f1cc",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -12,9 +74,113 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "file_description": "<p>Постановление от 27.09.2007 г. №612 «Об утверждении правил продажи товаров дистанционным способом»</p>",
-    "_id": "5fbad4bf22561caa0112d722",
-    "_parentId": "5fbad44d22561caa0112d71d",
+    "_id": "5fd4d00fdf5af363a4c1f1ce",
+    "_parentId": "5fd4cff6df5af363a4c1f1cc",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/dd803b6308b38c77ae546ae614b2f4f076f466b1.png",
+      "small": "course/ru/assets/dd803b6308b38c77ae546ae614b2f4f076f466b1.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4d077df5af363a4c1f1d3",
+    "_parentId": "5fd4d068df5af363a4c1f1d2",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "123",
+      "large": "course/ru/assets/b302054936b4bd7a51bb2d09d30bca6bfe57144c.png",
+      "small": "course/ru/assets/b302054936b4bd7a51bb2d09d30bca6bfe57144c.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p><strong>Решение №954 §66 от 21.12.2016</strong></p><p>Об оптимизации перечня ковенантов, правил их применения и мониторинга</p><p>&nbsp;</p><p><strong>Решение КПКИ Сбербанка России №827 §53 от 01.10.2014</strong></p><p>О вводе в промышленную эксплуатацию моделей оценки вероятности дефолта PD</p><p>&nbsp;</p><p><strong>Распоряжение Сбербанка России №276/77-Р от 03.07.2017</strong></p><p>Об утверждении временного порядка мониторинга проектов, находящихся на инвестиционной фазе, контрактов, гарантийных обязательств по контрактам и проектных рейтингов</p><p>&nbsp;</p><p><strong>Методика №2902 от 24.04.2013</strong></p><p>Методика анализа и мониторинга сделок «Контрактного кредитования юридических лиц и индивидуальных предпринимателей»</p>",
+    "_id": "5fd4d07adf5af363a4c1f1d4",
+    "_parentId": "5fd4d068df5af363a4c1f1d2",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "hotgraphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>В мониторинге проектов участвуют следующие подразделения:</p>",
+    "_id": "5fd4d18bdf5af363a4c1f1db",
+    "_parentId": "5fd4d16ddf5af363a4c1f1da",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -22,16 +188,139 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
-    "file_size": "24 кб",
-    "file": "course/ru/assets/Group.png",
-    "instruction": ""
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_graphic": {
+      "src": "course/ru/assets/3a3bdd3ca76cdcdd9e41e3608ee21649cdae357b.svg",
+      "alt": "123",
+      "attribution": ""
+    },
+    "mobileBody": "",
+    "mobileInstruction": "",
+    "_hidePagination": false,
+    "_canCycleThroughPagination": false,
+    "_isNarrativeOnMobile": true,
+    "_useNumberedPins": false,
+    "_useGraphicsAsPins": false,
+    "_isRound": false,
+    "_items": [
+      {
+        "title": "Кредитующее подразделение (КП) ",
+        "_ariaLevel": 0,
+        "body": "<p>Функции:</p><ul><li>документарный контроль целевого использования кредитных средств при выдаче кредита в разрезе статей сметы затрат по проекту</li><li>предоставление кредита (формирование распоряжения на предоставление кредитных средств) </li><li>выявление фактов возврата платежей, перечисленных за счет кредитных средств Банка (ПАК в соответствии с ТС 2929-3)</li><li>анализ соответствия фактических показателей структуры финансирования проекта установленным в финансовой модели проекта (в рамках выдачи кредита)</li><li>определение и согласование с Заемщиком пакета рисков страхования СМР по инвестиционным проектам со строительной составляющей</li></ul>",
+        "strapline": "Кредитующее подразделение (КП) ",
+        "_graphic": {
+          "src": "course/ru/assets/d9173d8151b913d7d1f256436a638ab4ba2b67d4.svg",
+          "alt": "",
+          "attribution": "",
+          "_classes": "no-image"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        },
+        "_classes": "",
+        "_left": 43,
+        "_top": 16
+      },
+      {
+        "title": "Подразделение строительного контроля (ПСК)",
+        "_ariaLevel": 0,
+        "body": "<p>Функции:</p><ul><li>подготовка заключения строительного эксперта с учетом требований Приложений 11, 13 Регламента 479-2-р</li><li>определение и согласование с Заемщиком пакета рисков страхования СМР по строительным контрактам</li></ul>",
+        "strapline": "Подразделение строительного контроля (ПСК)",
+        "_graphic": {
+          "src": "course/ru/assets/d9173d8151b913d7d1f256436a638ab4ba2b67d4.svg",
+          "alt": "",
+          "attribution": "",
+          "_classes": "no-image"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        },
+        "_classes": "",
+        "_left": 24,
+        "_top": 76
+      },
+      {
+        "title": "Подразделение мониторинга (ПМ)",
+        "_ariaLevel": 0,
+        "body": "<p>Функции – мониторинг по направлениям:</p><ul><li>инвестиционные/строительные проекты</li><li>контрактное кредитование</li><li>гарантии исполнения обязательств по контракту</li></ul>",
+        "strapline": "Подразделение мониторинга (ПМ)",
+        "_graphic": {
+          "src": "course/ru/assets/d9173d8151b913d7d1f256436a638ab4ba2b67d4.svg",
+          "alt": "",
+          "attribution": "",
+          "_classes": "no-image"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        },
+        "_classes": "",
+        "_left": 48,
+        "_top": 76
+      },
+      {
+        "title": "Инжиниринговая компания (ИК) ",
+        "_ariaLevel": 0,
+        "body": "<p>Функции, предусмотренные техническим заданием Банка  на мониторинг инвестиционного контракта, в т.ч., но не исключительно, мониторинг на соответствие структуре финансирования контракта, установленной в документах контракта.</p>",
+        "strapline": "Инжиниринговая компания (ИК) ",
+        "_graphic": {
+          "src": "course/ru/assets/d9173d8151b913d7d1f256436a638ab4ba2b67d4.svg",
+          "alt": "",
+          "attribution": "",
+          "_classes": "no-image"
+        },
+        "_pin": {
+          "src": "",
+          "alt": ""
+        },
+        "_classes": "",
+        "_left": 89.5,
+        "_top": 53
+      }
+    ]
   },
   {
-    "_component": "graphic",
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Основные понятия",
+    "displayTitle": "Основные понятия",
+    "body": "",
+    "_id": "5fd4d5aadf5af363a4c1f1e4",
+    "_parentId": "5fd4d4e6df5af363a4c1f1e3",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    }
+  },
+  {
+    "_component": "text",
     "_classes": "definition icon-a",
     "_isOptional": false,
     "_isAvailable": true,
@@ -40,11 +329,11 @@
     "_isResetOnRevisit": "false",
     "_ariaLevel": 0,
     "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "Перевод оборотов достигается, в т. ч. за счет установления переменной процентной ставки.<br><br><br><br><br>",
-    "_id": "5fbad52122561caa0112d724",
-    "_parentId": "5fbad51d22561caa0112d723",
+    "title": "Банковская гарантия  —",
+    "displayTitle": "Банковская гарантия  —",
+    "body": "<p>Это способ обеспечения обязательств, при котором Банк[1] выдает по просьбе должника[2] письменное обязательство уплатить контрагенту принципала[3] денежную сумму при представлении бенефициаром письменного требования о платеже и других документов, указанных в гарантии.</p>",
+    "_id": "5fd4d5b5df5af363a4c1f1e6",
+    "_parentId": "5fd4d5b1df5af363a4c1f1e5",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -52,20 +341,116 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "definition icon-a",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Принципал —",
+    "displayTitle": "Принципал —",
+    "body": "<p>Это клиент Банка – ЮЛ или ИП[4] – по поручению которого Банк выдает гарантийное обязательство</p>",
+    "_id": "5fd4d5dadf5af363a4c1f1e8",
+    "_parentId": "5fd4d5d6df5af363a4c1f1e7",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "definition icon-a",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Бенефициар —",
+    "displayTitle": "Бенефициар —",
+    "body": "<p>Это контрагент клиента Банка – ЮЛ[5], ИП[4] или ФЛ[5] – в пользу которого Банк-гарант выдает гарантийное обязательство.</p>",
+    "_id": "5fd4d606df5af363a4c1f1ea",
+    "_parentId": "5fd4d602df5af363a4c1f1e9",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Алгоритм предоставления гарантии",
+    "displayTitle": "Алгоритм предоставления гарантии",
+    "body": "",
+    "_id": "5fd4d61edf5af363a4c1f1ec",
+    "_parentId": "5fd4d61bdf5af363a4c1f1eb",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_graphic": {
-      "alt": "схема",
-      "large": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
-      "small": "course/ru/assets/e9a0a9fa3fee4d28f56175b4098facb930c9fa4e.svg",
+      "alt": "",
+      "large": "course/ru/assets/42da761b883685ace6ed96953095e2fb9fb0cb63.svg",
+      "small": "course/ru/assets/42da761b883685ace6ed96953095e2fb9fb0cb63.svg",
       "attribution": ""
     }
   },
   {
-    "_component": "accordion",
+    "_component": "list",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -76,9 +461,9 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p><strong>2.5 Для определения размера выручки используются данные:</strong></p>",
-    "_id": "5fbad55122561caa0112d729",
-    "_parentId": "5fbad54e22561caa0112d728",
+    "body": "<p>Для передачи Принципала в ПМ[1] Кредитующее подразделение осуществляет следующие шаги:</p>",
+    "_id": "5fd4d676df5af363a4c1f1f2",
+    "_parentId": "5fd4d649df5af363a4c1f1f1",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -86,180 +471,27 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_setCompletionOn": "allItems",
-    "_items": [
-      {
-        "title": "2.5.1 По РСБУ",
-        "body": "<ul><li>Строка 010 Формы №2 – Отчет о прибылях и убытках коммерческих организаций</li><li>Строка 2.080 отчета о прибылях и убытках страховой организации</li><li>Строка 010 отчета о прибылях и убытках негосударственных пенсионных фондов</li><li>Статья 1 отчета некоммерческих организаций (общественных объединений) об объеме получаемых денежных средств</li><li>Статья 3.3 ф. 0Р0001 отчета религиозных организаций</li><li>Сумма статей 1.1 и 1.2 отчета структурного подразделения иностранной некоммерческой неправительственной организации ф. СП0001</li><li>Объем бюджетного финансирования (для бюджетных организаций)</li></ul>",
-        "_graphic": {
-          "alt": "",
-          "src": "",
-          "attribution": ""
-        },
-        "_classes": ""
-      },
-      {
-        "title": "2.5.2 Дисциплинарная ответственность",
-        "body": "<ul><li>Отчет о прибылях и убытках</li></ul>",
-        "_graphic": {
-          "alt": "",
-          "src": "",
-          "attribution": ""
-        },
-        "_classes": ""
-      },
-      {
-        "title": "2.5.4 По РСБУ",
-        "body": "<ul><li>Данные по выручке, указанные в декларациях упрощенной системы налогообложения</li><li>Данные по выручке, декларируемые заемщиком</li><li>Данные по выручке, полученные из управленческой отчетности Клиента</li></ul>",
-        "_graphic": {
-          "alt": "",
-          "src": "",
-          "attribution": ""
-        },
-        "_classes": ""
-      }
-    ],
-    "_shouldCollapseItems": true
-  },
-  {
-    "_component": "narrative",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "",
-    "_id": "5fbee4ecb639645d0eb5d5ee",
-    "_parentId": "5fbee4deb639645d0eb5d5ed",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
+    "_sberIcon": {
       "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
-    "mobileInstruction": "",
-    "_hasNavigationInTextArea": true,
-    "_setCompletionOn": "allItems",
+    "_animateList": false,
+    "_percentInviewVertical": 70,
+    "_orderedList": true,
     "_items": [
       {
         "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>2.5 Если корпоративный Клиент Банка входит в холдинг, то его сегмент определяется исходя из данных о<strong> суммарной выручке холдинга</strong>.</p>",
-        "_graphic": {
-          "src": "course/ru/assets/28327331294ac84cf0c991dd53cf021c40331ffd.png",
-          "alt": "фон",
-          "attribution": ""
-        },
-        "strapline": "2.5"
-      },
-      {
-        "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>2.6 Сегмент холдинга не может быть ниже максимального сегмента входящих в холдинг юридических лиц.<br/><br/>В случае, когда в состав холдинга входят компании, использующие различные схемы бухгалтерского учета, суммарная выручка определяется путем математического сложения выручки каждого члена холдинга, определенной в соответствии с п. 2.3.</p>",
-        "_graphic": {
-          "src": "course/ru/assets/5fa1d737b3ba4b53c0aef30e937efde2448b0da7.png",
-          "alt": "фон",
-          "attribution": ""
-        },
-        "strapline": "2.6"
-      },
-      {
-        "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>2.9 В случае если информация по основному критерию отсутствует или признается менеджером Клиента недостаточной для определения принадлежности Клиента к Сегменту, могут быть использованы дополнительные критерии. Приложение №4.</p>",
-        "_graphic": {
-          "src": "course/ru/assets/1fd8b5720c38849e8b3f44b30ba6067df94d6a70.png",
-          "alt": "фон",
-          "attribution": ""
-        },
-        "strapline": "2.9"
-      },
-      {
-        "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>2.9.1 Дополнительные критерии не применяются для присвоения корпоративным клиентам Банка Сегментов:</p><ul><li>Клиенты машиностроения (предприятия ОПК)</li><li>Финансовые институты</li><li>Региональный госсектор</li></ul>",
-        "_graphic": {
-          "src": "course/ru/assets/878dca0de0513609a8ce2875cf01501669635893.png",
-          "alt": "",
-          "attribution": ""
-        },
-        "strapline": "2.9.1"
-      },
-      {
-        "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>7.1 При реализации Клиентом строительного проекта, предусматривающего лимит кредитования на сумму не менее 3 млрд. рублей, или совокупности строительных проектов Клиента/группы клиентов с общим лимитом кредитования на сумму не менее 6 млрд. рублей (или эквивалент в иностранной валюте).</p>",
-        "_graphic": {
-          "src": "course/ru/assets/562ba20ac6ff2cfd2df6aec392b645f91271fff2.png",
-          "alt": "фон",
-          "attribution": ""
-        },
-        "strapline": "7.1"
-      },
-      {
-        "title": "",
-        "_ariaLevel": 0,
-        "body": "<p>7.2 При реализации Клиентом, входящим в состав холдинга, относящегося к сегменту «Крупнейший бизнес» и отрасли «Недвижимость», строительного проекта/проектов:</p><ul><li>При лимитах кредитования не менее указанных в п. 7.1 — по обращению блока CIB</li><li>При лимитах кредитования менее указанных в п. 7.1 — по решению руководства Банка в соответствии с п. 7.2.2, на основании обращения бенефициара, CEO или CFO о включении юридического лица в список крупнейшего холдинга</li></ul>",
-        "_graphic": {
-          "src": "course/ru/assets/cc24bf062816c668f3592243365c8f955779636d.png",
-          "alt": "фон",
-          "attribution": ""
-        },
-        "strapline": "7.2"
+        "body": "<p>Проверяет данные по чек-листам.</p>",
+        "_imageSrc": "",
+        "alt": ""
       }
     ]
   },
   {
-    "_component": "graphic",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "Схема механизма определения ЦКС",
-    "displayTitle": "Схема механизма определения ЦКС",
-    "body": "",
-    "_id": "5fbee87fb639645d0eb5d5fd",
-    "_parentId": "5fbee872b639645d0eb5d5fc",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_graphic": {
-      "alt": "схема",
-      "large": "course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg",
-      "small": "course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg",
-      "attribution": ""
-    }
-  },
-  {
     "_component": "text",
     "_classes": "",
     "_isOptional": false,
@@ -271,37 +503,9 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p>3.1 <strong>Ответственность</strong> за корректность информации о сегменте/подсегменте корпоративного Клиента Банка, а также о принадлежности к холдингу лежит на <strong>менеджере Клиента</strong>.</p>",
-    "_id": "5fbee8bbb639645d0eb5d602",
-    "_parentId": "5fbee8b7b639645d0eb5d601",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": ""
-  },
-  {
-    "_component": "graphic",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "",
-    "_id": "5fbeea7bb639645d0eb5d605",
-    "_parentId": "5fbee911b639645d0eb5d604",
+    "body": "<p><strong>в отношении Принципала:</strong><br />используется Чек-лист передачи заемщика на мониторинг</p><ul><li>проверяет все документы на комплектность</li><li>проверяет РВПС, отлагательные, риск-сегмент и пр.</li></ul>",
+    "_id": "5fd4d6b4df5af363a4c1f1f4",
+    "_parentId": "5fd4d6b0df5af363a4c1f1f3",
     "_type": "component",
     "_layout": "left",
     "_onScreen": {
@@ -309,43 +513,12 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_graphic": {
-      "alt": "фон",
-      "large": "course/ru/assets/148e585757009858d1496aba0e67c7f9a37cc224.png",
-      "small": "course/ru/assets/148e585757009858d1496aba0e67c7f9a37cc224.png",
-      "attribution": ""
-    }
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "<p>4.1 Присвоение корпоративному Клиенту Банка клиентского сегмента/подсегмента осуществляется менеджером Клиента в <strong>CRM-системе Банка.</strong></p>",
-    "_id": "5fbeeac9b639645d0eb5d60c",
-    "_parentId": "5fbee911b639645d0eb5d604",
-    "_type": "component",
-    "_layout": "right",
-    "_onScreen": {
+    "_sberIcon": {
       "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": ""
   },
@@ -362,8 +535,8 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fbeeb03b639645d0eb5d610",
-    "_parentId": "5fbeeae7b639645d0eb5d60d",
+    "_id": "5fd4d6e3df5af363a4c1f1f5",
+    "_parentId": "5fd4d6b0df5af363a4c1f1f3",
     "_type": "component",
     "_layout": "right",
     "_onScreen": {
@@ -371,15 +544,55 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_graphic": {
-      "alt": "фон",
-      "large": "course/ru/assets/54b205aa29c92d896799f2b30b0acda09d4d2d5b.png",
-      "small": "course/ru/assets/54b205aa29c92d896799f2b30b0acda09d4d2d5b.png",
+      "alt": "",
+      "large": "course/ru/assets/3a01d386f5b6ecf3ea64493b289290da65151fd3.png",
+      "small": "course/ru/assets/3a01d386f5b6ecf3ea64493b289290da65151fd3.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4d720df5af363a4c1f1fa",
+    "_parentId": "5fd4d71ddf5af363a4c1f1f9",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/14e1548b79dcf3ebc14e783732e76698c2fcb788.png",
+      "small": "course/ru/assets/14e1548b79dcf3ebc14e783732e76698c2fcb788.png",
       "attribution": ""
     }
   },
@@ -395,9 +608,227 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p>6.1 Эталонным источником информации о сегменте корпоративного Клиента Банка для целей анализа, подсчета финансового результата подразделения, бизнес-планирования, а также других задач является <strong>CRM-система Банка</strong>.</p>",
-    "_id": "5fbeeb0bb639645d0eb5d611",
-    "_parentId": "5fbeeae7b639645d0eb5d60d",
+    "body": "<p><strong>в отношении гарантии, контракта:</strong></p><ul><li>проверяет пакет документов на комплектность</li><li>проверяет на наличие всех комментариев по рейтинговой модели​</li></ul>",
+    "_id": "5fd4d739df5af363a4c1f1fe",
+    "_parentId": "5fd4d71ddf5af363a4c1f1f9",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4d763df5af363a4c1f200",
+    "_parentId": "5fd4d75edf5af363a4c1f1ff",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": false,
+    "_percentInviewVertical": 70,
+    "_orderedList": true,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>Передает документы по Принципалу в ПМ и РМ.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "_component": "list",
+    "_classes": "two-cols",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Основные документы, используемые при передаче контракта на мониторинг в ПМ",
+    "displayTitle": "Основные документы, используемые при передаче контракта на мониторинг в ПМ",
+    "body": "",
+    "_id": "5fd4d778df5af363a4c1f202",
+    "_parentId": "5fd4d773df5af363a4c1f201",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": true,
+    "_percentInviewVertical": 70,
+    "_orderedList": false,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>1. Копия контракта со всеми дополнениями и приложениями.</p>",
+        "_imageSrc": "course/ru/assets/d775a7b0241655e3086523710946bc27520d5a26.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>2. Календарный график выполнения контракта (при наличии).</p>",
+        "_imageSrc": "course/ru/assets/0525656bf265780ca1e410798faf0686a473fdfe.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>3. Контрактная база Заемщика: реестр исполняемых контрактов Заемщиком в рамках текущей деятельности.</p>",
+        "_imageSrc": "course/ru/assets/372a4ebab26ac746b9ed81319c998674a65f3830.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>4. Копии договоров[1], заключенных Заемщиком на выполнение работ, поставку материалов, оборудования и т.д. в рамках других проектов (для подрядчиков).</p>",
+        "_imageSrc": "course/ru/assets/d775a7b0241655e3086523710946bc27520d5a26.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>5. План движения денежных средств по контракту и по текущей деятельности контрагента.</p>",
+        "_imageSrc": "course/ru/assets/f6a736e2db197ae991358bb4c52aeb7fb03b10d4.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>6. Форма отчета о ходе реализации контракта.</p>",
+        "_imageSrc": "course/ru/assets/5a47e5680ffebf8db5e00884d613d3056a0d1381.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>﻿7. Заключение строительного эксперта.</p>",
+        "_imageSrc": "course/ru/assets/f55e6b44a39e6784deedf2d67807675e1d0a10b1.svg",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Следующие документы предоставляются отдельно только в том случае, если этой информации нет в заключении строительного эксперта:",
+    "displayTitle": "Следующие документы предоставляются отдельно только в том случае, если этой информации нет в заключении строительного эксперта:",
+    "body": "",
+    "_id": "5fd4d9ee26f36f6649e95206",
+    "_parentId": "5fd4d9e826f36f6649e95205",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    }
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4d9ff26f36f6649e95208",
+    "_parentId": "5fd4d9fb26f36f6649e95207",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/c55ff3c957cdc535169f6697d5db09c6c4d8d260.png",
+      "small": "course/ru/assets/c55ff3c957cdc535169f6697d5db09c6c4d8d260.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<ul><li>Смета затрат с указанием физических объемов и себестоимости работ, плановая калькуляция или сводный сметный расчет по контракту</li><li>Копии договоров с основными подрядчиками, субподрядчикам и поставщиками, заключенных в рамках исполнения контракта</li><li>Реестр документов, подтверждающих выполнение работ, поставку материалов, оборудования и т.д., принятых Заказчиком, акты приемки выполненных работ[3], накладные</li><li>Реестр договоров с подрядчиками, субподрядчиками и поставщиками, заключенных или планируемых к заключению в рамках исполнения контракта</li></ul>",
+    "_id": "5fd4da0226f36f6649e95209",
+    "_parentId": "5fd4d9fb26f36f6649e95207",
     "_type": "component",
     "_layout": "left",
     "_onScreen": {
@@ -405,9 +836,167 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Процесс мониторинга гарантий различается в зависимости от вида гарантии:</p>",
+    "_id": "5fd4da5326f36f6649e9520f",
+    "_parentId": "5fd4da3826f36f6649e9520e",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Договорные гарантии",
+    "displayTitle": "Договорные гарантии",
+    "body": "<ul><li>гарантия исполнения договорных обязательств по договору или контракту, в том числе:<ul><li>гарантия исполнения обязательств по контракту</li><li>гарантия возврата авансового платежа</li><li>гарантия качества[1]</li></ul></li><li>гарантия исполнения обязательств по договору или контракту в рамках пакетного предложения</li></ul>",
+    "_id": "5fd4da6326f36f6649e95211",
+    "_parentId": "5fd4da5f26f36f6649e95210",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Прочие виды банковских гарантий",
+    "displayTitle": "Прочие виды банковских гарантий",
+    "body": "<ul><li>финансовая гарантия: гарантия исполнения финансовых обязательств по договору или контракту</li><li>﻿гарантия исполнения предложения по выкупу ценных бумаг</li><li>﻿гарантия встречного обеспечения</li><li>﻿тендерная гарантия</li><li>﻿гарантия в пользу таможенных органов</li><li>﻿гарантия в пользу налоговых органов</li><li>﻿гарантия в пользу Росалкогольрегулирования</li><li>﻿налоговая гарантия в рамках заявительного порядка возмещения налога[2]</li><li>﻿гарантия под залог векселей ПАО «Сбербанк»</li></ul>",
+    "_id": "5fd4da6a26f36f6649e95212",
+    "_parentId": "5fd4da5f26f36f6649e95210",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "info",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Мониторинг контрактов, в обеспечение которых выданы гарантии",
+    "displayTitle": "Мониторинг контрактов, в обеспечение которых выданы гарантии",
+    "body": "<p>Подробнее изложено в Приложении 7.2, 7.3, 9.1 альбома 593-3р</p>",
+    "_id": "5fd4dad926f36f6649e95214",
+    "_parentId": "5fd4dad426f36f6649e95213",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "info",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Мониторинг контрактов в соответствии с требованиями ТС No2929-3 от 16.12.2015",
+    "displayTitle": "Мониторинг контрактов в соответствии с требованиями ТС No2929-3 от 16.12.2015",
+    "body": "<p>П﻿одробнее изложено в Приложении 7.1, 7.4 -7.14, 8.1-8.3 альбома 593-3р</p>",
+    "_id": "5fd4dadc26f36f6649e95215",
+    "_parentId": "5fd4dad426f36f6649e95213",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": ""
   },
@@ -424,24 +1013,27 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fbeeb2bb639645d0eb5d614",
-    "_parentId": "5fbeeaefb639645d0eb5d60e",
+    "_id": "5fd4de3026f36f6649e95217",
+    "_parentId": "5fd4de2c26f36f6649e95216",
     "_type": "component",
-    "_layout": "left",
+    "_layout": "full",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_graphic": {
-      "alt": "фон",
-      "large": "course/ru/assets/dc81230b01ee2b6786dd6e0ce749f0715609a414.png",
-      "small": "course/ru/assets/dc81230b01ee2b6786dd6e0ce749f0715609a414.png",
+      "alt": "",
+      "large": "course/ru/assets/5717badb455018535a515b12c4b2775891ab5807.png",
+      "small": "course/ru/assets/5717badb455018535a515b12c4b2775891ab5807.png",
       "attribution": ""
     }
   },
@@ -457,47 +1049,22 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p>7.4 Корректировка сегмента осуществляется с использованием специального функционала в <strong>CRM-системе Банка</strong>.</p>",
-    "_id": "5fbeeb2fb639645d0eb5d615",
-    "_parentId": "5fbeeaefb639645d0eb5d60e",
+    "body": "<p><strong>В случае если спецификой сделки предусмотрено проведение строительной или инжиниринговой экспертизы по контракту на ПМ возлагаются следующие функции:</strong></p>",
+    "_id": "5fd4de7f26f36f6649e9521d",
+    "_parentId": "5fd4de6426f36f6649e9521c",
     "_type": "component",
-    "_layout": "right",
+    "_layout": "full",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": ""
-  },
-  {
-    "_component": "text",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "<p>10.1 Использование функционала по сегментации CRM-системы Банка регламентируется <strong>«Стандартами работы в АС «CRM Корпоративный»</strong>.</p>",
-    "_id": "5fbeeb50b639645d0eb5d618",
-    "_parentId": "5fbeeaf6b639645d0eb5d60f",
-    "_type": "component",
-    "_layout": "left",
-    "_onScreen": {
+    "_sberIcon": {
       "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": ""
   },
@@ -514,24 +1081,27 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fbeeb63b639645d0eb5d619",
-    "_parentId": "5fbeeaf6b639645d0eb5d60f",
+    "_id": "5fd4de9126f36f6649e9521f",
+    "_parentId": "5fd4de8d26f36f6649e9521e",
     "_type": "component",
-    "_layout": "right",
+    "_layout": "left",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_graphic": {
-      "alt": "bg",
-      "large": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
-      "small": "course/ru/assets/8c3685f7a3abf913787e8210892038d854c02b1f.png",
+      "alt": "",
+      "large": "course/ru/assets/4a6cf9d1bd5cf5220381c2d34c53c4a05ae9234f.png",
+      "small": "course/ru/assets/4a6cf9d1bd5cf5220381c2d34c53c4a05ae9234f.png",
       "attribution": ""
     }
   },
@@ -547,25 +1117,28 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p>10.2 «Рекомендации по работе в CRM-системе» размещены на корпоративном портале: Проекты — CRM Корпоративный — Обучение — Общая функциональность.</p>",
-    "_id": "5fbeeba3b639645d0eb5d61d",
-    "_parentId": "5fbeeb98b639645d0eb5d61c",
+    "body": "<ul><li>мониторинг рейтинга участника сделки по модели проектного риск-профиля</li><li>мониторинг хода реализации контракта на основании получаемых от ПСК и ИК, согласованных с ДИУ, инженерных отчетов о мониторинге хода реализации контракта[1]</li><li>мониторинг хода реализации контракта путем сопоставления фактических показателей реализации контракта с запланированными в бизнес-плане</li><li>контроль источников финансирования контракта[2]</li><li>мониторинг закрепления в утвержденных бюджетах соответствующего уровня расходов по государственному контракту</li><li>﻿мониторинг изменений и дополнений, вносимых в контракт</li><li>мониторинг поступления[3] выручки по контракту в соответствии с условиями контракта</li><li>мониторинг изменения[4] общей стоимости контракта</li></ul>",
+    "_id": "5fd4def226f36f6649e95223",
+    "_parentId": "5fd4de8d26f36f6649e9521e",
     "_type": "component",
-    "_layout": "full",
+    "_layout": "right",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": ""
   },
   {
     "_component": "text",
-    "_classes": "center",
+    "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -573,586 +1146,29 @@
     "_isResetOnRevisit": "false",
     "_ariaLevel": 0,
     "_disableAccessibilityState": false,
-    "title": "Проходной бал 80%",
-    "displayTitle": "Проходной бал 80%",
-    "body": "<p style=\"text-align:center\">Вам необходимо пройти тестирование, состоящее из 6 вопросов, по изученной теме. Результаты тестирования учитываются при проведении итогового результата проверки знаний по курсу.</p><p style=\"text-align:center\"><strong>Будьте внимательны: вопросы могут иметь несколько правильных ответов.</strong></p>",
-    "_id": "5fbeee88b639645d0eb5d626",
-    "_parentId": "5fbeedfab639645d0eb5d623",
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<ul><li>анализ статьи «Дебиторская задолженность», «Прочие оборотные активы» на предмет выявления задержек по оплате контрактов, в т.ч. не финансируемым или гарантируемым Банком, в соответствии с условиями заключенных контрактов</li><li>анализ статьи «Кредиторская задолженность» на предмет выявления непогашенных обязательств по завершенным контрактам за последние 6 месяцев​</li><li>анализ статьи «Незавершенное производство» на предмет выявления не принятых заказчиками работ и переизбытка материала за последние 6 месяцев</li><li>новостной мониторинг деятельности и деловой репутации заказчика, бенефициара, инозаказчика, генерального подрядчика по контракту или субподрядчиков​</li><li>мониторинг выставления счетов[5] по контрактам и их оплаты покупателями</li><li>﻿​анализ возможных изменений и корректировок договорной базы по доходной и расходной частям сделки</li><li>мониторинг соответствия получаемого Заемщиком, принципалом, приказодателем финансового результата по контракту, контрактам параметрам ТЭО[6] сделки</li><li>﻿​анализ параметров, заложенных в согласованный КП с Заемщиком, принципалом, приказодателем план-график реализации инвестиционного проекта с целью определения степени их влияния на ход реализации проекта​</li></ul>",
+    "_id": "5fd4df4526f36f6649e95225",
+    "_parentId": "5fd4df4126f36f6649e95224",
     "_type": "component",
-    "_layout": "full",
+    "_layout": "left",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": ""
   },
   {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "1. Что является основным критерием отнесения Клиента к сегменту?",
-    "displayTitle": "1. Что является основным критерием отнесения Клиента к сегменту?",
-    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
-    "_id": "5fbeeec9b639645d0eb5d629",
-    "_parentId": "5fbeeeb8b639645d0eb5d628",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "Оборот по счёту",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Размер уставного капитала",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Выручка за последний финансовый год",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Остаток по кредиту",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Ответить",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».",
-    "displayTitle": "2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».",
-    "body": "<p>Выберите варианты ответов и нажмите «Ответить».</p>",
-    "_id": "5fbeefd4b639645d0eb5d62b",
-    "_parentId": "5fbeefceb639645d0eb5d62a",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "Более 60 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "До 400 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Более  2 500 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Более 400 млн руб.",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "До 2 500 млн руб.",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 2,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Ответить",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "3. Как определяется сегмент Клиента, если он входит в холдинг?",
-    "displayTitle": "3. Как определяется сегмент Клиента, если он входит в холдинг?",
-    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
-    "_id": "5fbef0b8b639645d0eb5d62d",
-    "_parentId": "5fbef0b4b639645d0eb5d62c",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "По выручке Клиента",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "По выручке холдинга, если он не является Клиентом  машиностроения (предприятий ОПК)",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Для клиентов машиностроения (предприятий ОПК) по выручке холдинга",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "4. Кто является ответственным за определение сегмента Клиента?",
-    "displayTitle": "4. Кто является ответственным за определение сегмента Клиента?",
-    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
-    "_id": "5fbef0ebb639645d0eb5d62f",
-    "_parentId": "5fbef0e6b639645d0eb5d62e",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "Руководитель ВСП",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Клиентский менеджер",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Сотрудник УРиСКБ",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Руководитель ГОСБ",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "5. Должен ли менеджер использовать дополнительные критерии, если имеется информация по выручке и она признана достаточной?",
-    "displayTitle": "5. Должен ли менеджер использовать дополнительные критерии, если имеется информация по выручке и она признана достаточной?",
-    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
-    "_id": "5fbef132b639645d0eb5d631",
-    "_parentId": "5fbef12cb639645d0eb5d630",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "Да",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Нет",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?",
-    "displayTitle": "6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?",
-    "body": "<p>Выберите вариант ответа и нажмите «Ответить».</p>",
-    "_id": "5fbef151b639645d0eb5d633",
-    "_parentId": "5fbef14db639645d0eb5d632",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_items": [
-      {
-        "text": "ИАСК",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "IBSO",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "CRM Корпоративный",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Гамма",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "assessmentResults",
+    "_component": "graphic",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -1164,8 +1180,45 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fbef1adb639645d0eb5d636",
-    "_parentId": "5fbef182b639645d0eb5d635",
+    "_id": "5fd4df6f26f36f6649e95226",
+    "_parentId": "5fd4df4126f36f6649e95224",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/570cda6c4f0814fc3cc06323b5c7820004cc0231.png",
+      "small": "course/ru/assets/570cda6c4f0814fc3cc06323b5c7820004cc0231.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "В случае если спецификой сделки НЕ предусмотрено проведение строительной или инжиниринговой экспертизы по контракту на ПМ возлагаются следующие функции:",
+    "displayTitle": "В случае если спецификой сделки <u>НЕ предусмотрен</u> о проведение строительной или инжиниринговой экспертизы по контракту на ПМ возлагаются следующие функции:",
+    "body": "",
+    "_id": "5fd4dfa026f36f6649e9522b",
+    "_parentId": "5fd4df9726f36f6649e9522a",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -1173,33 +1226,214 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
-    "instruction": "23423",
-    "_isVisibleBeforeCompletion": false,
-    "_setCompletionOn": "pass",
-    "_resetType": "inherit",
-    "_assessmentId": "test",
-    "_retry": {
-      "button": "Пройти заново",
-      "feedback": "",
-      "_routeToAssessment": true
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4dfc126f36f6649e9522d",
+    "_parentId": "5fd4dfbd26f36f6649e9522c",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
     },
-    "_completionBody": "<p>hello</p><p>use {{score}}, {{maxScore}} and {{scoreAsPercent}} to display score and percentage</p>",
-    "_bands": [
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/e48222de555e81c2b1d61b2bdd6cba80c91a72db.png",
+      "small": "course/ru/assets/e48222de555e81c2b1d61b2bdd6cba80c91a72db.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<ul><li>мониторинг выполнения Заемщиком, принципалом, приказодателем обязательств по контракту[1]</li><li>мониторинг хода реализации контракта путем сопоставления фактических финансовых показателей реализации контракта с запланированными в бизнес-плане</li><li>﻿​анализ возможных изменений и корректировок договорной базы по доходной и расходной частям ТЭО[2] сделки​</li><li>контроль​источников финансирования контракта[3]</li><li>м﻿ониторинг соответствия получаемого Заемщиком, принципалом, приказодателем финансового результата по контракту, контрактам параметрам ТЭО сделки​</li><li>мониторинг закрепления в утвержденных бюджетах соответствующего уровня расходов по государственному контракту​</li><li>мониторинг изменений и дополнений[4], вносимых в контракт​</li><li>мониторинг поступления[5] выручки по контракту в соответствии с условиями контракта​</li></ul>",
+    "_id": "5fd4dfdc26f36f6649e95231",
+    "_parentId": "5fd4dfbd26f36f6649e9522c",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4e01d26f36f6649e95233",
+    "_parentId": "5fd4e01a26f36f6649e95232",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/d7c519f38cdccd9861a4040971a065ee88f5a4d5.png",
+      "small": "course/ru/assets/d7c519f38cdccd9861a4040971a065ee88f5a4d5.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<ul><li>мониторинг изменения общей стоимости контракта, в т.ч. для определения оценочной и залоговой стоимостей залога имущественных прав и требований по контракту</li><li>мониторинг достаточности обеспечения​</li><li>﻿​анализ статей «Дебиторская задолженность», «Прочие оборотные активы» для оценки остаточной стоимости контракта, выявления задержек по оплате контрактов, в т.ч. не финансируемых или гарантируемых Банком, в соответствии с условиями заключенных контрактов</li><li>анализ статьи «Кредиторская задолженность» для выявления непогашенных обязательств по завершенным контрактам за последние 6 месяцев​</li><li>﻿​анализ статьи «Незавершенное производство» для оценки остаточной стоимости контракта, выявления не принятых заказчиками работ или переизбытка материала за последние 6 месяцев</li><li>новостной мониторинг деятельности и деловой репутации заказчика, бенефициара, инозаказчика, генерального исполнителя по контракту, субподрядчиков, конкурентов​</li><li>мониторинг выставления счетов по контрактам[6] и их оплаты покупателями​</li></ul>",
+    "_id": "5fd4e02026f36f6649e95234",
+    "_parentId": "5fd4e01a26f36f6649e95232",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Допускается проведение только «мониторинга поступления выручки по контракту в соответствии с условиями договора», если одновременно выполняется ряд условий:",
+    "displayTitle": "Допускается проведение только «мониторинга поступления выручки по контракту в соответствии с условиями договора», если одновременно выполняется ряд условий:",
+    "body": "",
+    "_id": "5fd4e07226f36f6649e9523a",
+    "_parentId": "5fd4e05e26f36f6649e95238",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": true,
+    "_percentInviewVertical": 70,
+    "_orderedList": true,
+    "_items": [
       {
-        "_score": 0,
-        "feedback": "<p style=\"text-align:center\"><strong>К сожалению, Вы не справились.</strong></p><p style=\"text-align:center\">Вами были допущены ошибки при прохождении тестирования. Изучите повторно курс и проверьте свои знания еще раз.</p>",
-        "_allowRetry": true,
-        "_classes": ""
+        "title": "",
+        "body": "<p>Рейтинг принципала, приказодателя не хуже 13.</p>",
+        "_imageSrc": "",
+        "alt": ""
       },
       {
-        "_score": 5,
-        "feedback": "<p style=\"text-align:center\"><strong>Поздравляем, вы справились</strong></p><p style=\"text-align:center\">Вы ответили верно на все вопросы!</p>",
-        "_allowRetry": false,
-        "_classes": ""
+        "title": "",
+        "body": "<p>Срок действия рассматриваемого гарантийного обязательства не превышает 3 лет.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Сумма рассматриваемого гарантийного обязательства составляет не более 5% от суммарной выручки принципала, приказодателя, рассчитанной за последние 4 отчетных квартала.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Сумма всех действующих гарантийных обязательств составляет не более 30% от суммарной выручки принципала, приказодателя, рассчитанной за последние 4 отчетных квартала.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Принципал, приказодатель имеет опыт исполнения контрактов подобного рода.</p>",
+        "_imageSrc": "",
+        "alt": ""
       }
     ]
   },
@@ -1216,8 +1450,8 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fbef1c7b639645d0eb5d639",
-    "_parentId": "5fbef1c1b639645d0eb5d638",
+    "_id": "5fd4e11426f36f6649e9523d",
+    "_parentId": "5fd4e10926f36f6649e9523c",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -1225,9 +1459,12 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_loopStyle": "none",
@@ -1252,178 +1489,6 @@
         "_iconClass": "",
         "_alignIconRight": false,
         "text": "Назад",
-        "ariaLabel": "Previous Page",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}",
-        "_customRouteId": ""
-      },
-      "_root": {
-        "_isEnabled": true,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "Меню",
-        "ariaLabel": "Go to main menu",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}",
-        "_customRouteId": ""
-      },
-      "_up": {
-        "_isEnabled": false,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "Back to menu",
-        "ariaLabel": "Back to menu",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}",
-        "_customRouteId": ""
-      },
-      "_next": {
-        "_isEnabled": true,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": true,
-        "text": "Вперед",
-        "ariaLabel": "Next Page",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}",
-        "_customRouteId": ""
-      },
-      "_sibling": {
-        "_isEnabled": false,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "{{inc index}}",
-        "ariaLabel": "Page {{inc index}}",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}",
-        "_customRouteId": ""
-      },
-      "_close": {
-        "_isEnabled": false,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "Close",
-        "ariaLabel": "Close window",
-        "_showTooltip": false,
-        "tooltip": "Close window"
-      }
-    }
-  },
-  {
-    "_component": "sber-tabs",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "",
-    "_id": "5fc6af89c344aba075d1135a",
-    "_parentId": "5fbee394b639645d0eb5d5ea",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_setCompletionOn": "allItems",
-    "_tabLayout": "horizontal",
-    "_items": [
-      {
-        "tabTitle": "Сегмент",
-        "title": "Размер годовой выручки",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Микробизнес</td><td>До 60 млн.руб</td></tr><tr><td>Малый бизнес</td><td>&gt; 60 млн.руб до 400 млн.руб</td></tr><tr><td>Средний бизнес</td><td>&gt; 400 млн.руб до 2 500 млн.руб</td></tr><tr><td>Крупный бизнес</td><td>&gt; 2 500 млн.руб до 15 000 млн.руб</td></tr><tr><td>Крупнейший бизнес</td><td>&gt; 15 000 млн.руб</td></tr><tr><td>Клиенты машиностроения (предприятия опк)</td><td>Приложение №6</td></tr><tr><td>Финансовые институты</td><td>Приложение №7</td></tr><tr><td>Региональный госсектор</td><td>Приложение №8</td></tr></tbody></table>",
-        "_classes": "",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      },
-      {
-        "tabTitle": "Подсегмент",
-        "title": "Размер годовой выручки",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td>Федеральный госсектор</td><td>—</td></tr></tbody></table>",
-        "_classes": "",
-        "_graphic": {
-          "alt": "",
-          "src": ""
-        }
-      }
-    ]
-  },
-  {
-    "_component": "pageNav",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "New Component Title",
-    "displayTitle": "",
-    "body": "",
-    "_id": "5fc80d686d1eb6c21532112a",
-    "_parentId": "5fc80d5f6d1eb6c215321129",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "instruction": "",
-    "_loopStyle": "none",
-    "_buttons": {
-      "_returnToPreviousLocation": {
-        "_isEnabled": false,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "Return",
-        "ariaLabel": "Return to previous location",
-        "_showTooltip": false,
-        "tooltip": "{{displayTitle}}"
-      },
-      "_previous": {
-        "_isEnabled": false,
-        "_lockUntilPageComplete": false,
-        "_order": 0,
-        "_classes": "",
-        "_iconClass": "",
-        "_alignIconRight": false,
-        "text": "Previous",
         "ariaLabel": "Previous Page",
         "_showTooltip": false,
         "tooltip": "{{displayTitle}}",
@@ -1496,7 +1561,75 @@
     }
   },
   {
-    "_component": "sber-tabs",
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Банк выдает следующие гарантии:</p>",
+    "_id": "5fd4e2dc26f36f6649e95243",
+    "_parentId": "5fd4e26926f36f6649e95240",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/0ff792b9938d65b61e7fc17770a266983604921f.svg",
+      "small": "course/ru/assets/0ff792b9938d65b61e7fc17770a266983604921f.svg",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Далее в курсе мы разберем эти гарантии более подробно.</p>",
+    "_id": "5fd4e30226f36f6649e95248",
+    "_parentId": "5fd4e2fd26f36f6649e95247",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "hotgrid",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -1508,8 +1641,8 @@
     "title": "New Component Title",
     "displayTitle": "",
     "body": "",
-    "_id": "5fc813a56d1eb6c21532112f",
-    "_parentId": "5fbeebc0b639645d0eb5d61f",
+    "_id": "5fd4e34a26f36f6649e9524b",
+    "_parentId": "5fd4e31526f36f6649e9524a",
     "_type": "component",
     "_layout": "full",
     "_onScreen": {
@@ -1517,54 +1650,2812 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
     },
     "instruction": "",
     "_setCompletionOn": "allItems",
-    "_tabLayout": "horizontal",
+    "_hidePagination": false,
+    "_canCycleThroughPagination": false,
+    "_columns": 4,
+    "_isRound": false,
     "_items": [
       {
-        "tabTitle": "Малый бизнес",
-        "title": ". ",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
-        "_classes": "no-title",
+        "title": "Гарантия исполнения обязательств по договору и контракту",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Исполнение принципалом договорных обязательств перед бенефициаром, в т. ч. по контрактам на:</p><ul><li>поставку</li><li>транспортировку</li><li>переработку продукции</li><li>выполнение строительно-монтажных работ и услуг, включая внешнеэкономические сделки при осуществлении экспортно-импортных операций</li></ul><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — продавец:</strong><br/>получает возможность заключить контракт и получить оплату в период его действия.<br/><br/><strong>Бенефициар — покупатель:</strong><br/>получает гарантированный платеж в случае невыполнения обязательств по контракту со стороны продавца в т.ч. в гарантируемом периоде​.</p>",
+        "_classes": "",
         "_graphic": {
+          "src": "course/ru/assets/7f8e046441b0bd7ab7663b67586acd1a067110f6.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/7f8e046441b0bd7ab7663b67586acd1a067110f6.svg",
           "alt": "",
-          "src": ""
+          "title": "Гарантия исполнения обязательств по договору и контракту"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/7f8e046441b0bd7ab7663b67586acd1a067110f6.svg",
+          "alt": "",
+          "attribution": ""
         }
       },
       {
-        "tabTitle": "Средний бизнес",
-        "title": ".",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>&gt; 100 млн руб.</td><td>&gt; 180 млн руб. до 1 500 млн руб.</td></tr></tbody></table>",
-        "_classes": "no-title",
+        "title": "Гарантия качества",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Исполнение принципалом обязательств по договору, контракту в гарантируемый период.</p><p>В случаях неустранения недостатков по товарам или услугам, зафиксированных в претензии, предусматривает уплату штрафов и неустоек.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — продавец:</strong><br/>получает возможность заключения контракта и получение оплаты в период его действия.<br/><br/><strong>Бенефициар — покупатель:</strong><br/>получает гарантированный платеж в случае невыполнения обязательств по контракту со стороны продавца в т.ч. в гарантируемом периоде​.</p>",
+        "_classes": "",
         "_graphic": {
+          "src": "course/ru/assets/d3ac5e8ae9e2aadc4488589909f79db0c1ba16bd.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/d3ac5e8ae9e2aadc4488589909f79db0c1ba16bd.svg",
           "alt": "",
-          "src": ""
+          "title": "Гарантия качества"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/d3ac5e8ae9e2aadc4488589909f79db0c1ba16bd.svg",
+          "alt": "",
+          "attribution": ""
         }
       },
       {
-        "tabTitle": "Крупный бизнес",
-        "title": ".",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>&gt; 1 500 млн руб. до 3 000 млн руб.</td></tr></tbody></table>",
-        "_classes": "no-title",
+        "title": "Гарантия возврата авансового платежа",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Возврат аванса или платежей, полученных принципалом от бенефициара в соответствии с условиями расчетов по заключенному между ними контракту при невыполнении принципалом обязательств по данному контракту.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — продавец:</strong><br/>получает возможность получить аванс или отсрочку платежа.<br/><br/><strong>Бенефициар — покупатель:</strong><br/>получает гарантированный платеж в случае невыполнения принципалом своих обязательств по возврату авансового платежа.</p>",
+        "_classes": "",
         "_graphic": {
+          "src": "course/ru/assets/1047e12ce7940ad0f7013b1a09aeb29c72416c35.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/1047e12ce7940ad0f7013b1a09aeb29c72416c35.svg",
           "alt": "",
-          "src": ""
+          "title": "Гарантия возврата авансового платежа"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/1047e12ce7940ad0f7013b1a09aeb29c72416c35.svg",
+          "alt": "",
+          "attribution": ""
         }
       },
       {
-        "tabTitle": "Крупнейший бизнес",
-        "title": ".",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table>",
-        "_classes": "no-title",
+        "title": "Финансовая гарантия",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Обязательство принципала осуществить платеж по контракту.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — продавец:</strong><br/>получает возможность получить отсрочку платежа<br/><br/><strong>Бенефициар — покупатель:</strong><br/>получает гарантированный платеж в случае невыполнения покупателем платежных обязательств по контракту</p>",
+        "_classes": "",
         "_graphic": {
+          "src": "course/ru/assets/9414033b4466f4b5150768d6a0719ad6a942e731.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/9414033b4466f4b5150768d6a0719ad6a942e731.svg",
           "alt": "",
-          "src": ""
+          "title": "Финансовая гарантия"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/9414033b4466f4b5150768d6a0719ad6a942e731.svg",
+          "alt": "",
+          "attribution": ""
         }
       }
     ]
+  },
+  {
+    "_component": "blank",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Риски",
+    "displayTitle": "Риски",
+    "body": "",
+    "_id": "5fd4e60e26f36f6649e9525d",
+    "_parentId": "5fd4e60b26f36f6649e9525c",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Риск раскрытия гарантии",
+    "displayTitle": "Риск раскрытия гарантии",
+    "body": "<ul><li>нарушение условий гарантируемого договора со стороны принципала</li><li>​﻿нарушение со стороны бенефициара условий гарантируемого договора, которые могут повлиять на выполнение обязательств со стороны принципала</li></ul>",
+    "_id": "5fd4e61d26f36f6649e9525f",
+    "_parentId": "5fd4e61826f36f6649e9525e",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4e64326f36f6649e95260",
+    "_parentId": "5fd4e61826f36f6649e9525e",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/263cfbe2757c663592aaba63d57566ade608ed19.png",
+      "small": "course/ru/assets/263cfbe2757c663592aaba63d57566ade608ed19.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd4e65926f36f6649e95265",
+    "_parentId": "5fd4e65726f36f6649e95264",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/332a26ac65a4cb666888b509f9410257a4039d8f.png",
+      "small": "course/ru/assets/332a26ac65a4cb666888b509f9410257a4039d8f.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Финансовые риски",
+    "displayTitle": "Финансовые риски",
+    "body": "<ul><li>существенное ухудшение финансового состояния принципала на момент раскрытия гарантии, что приведет к его неплатежеспособности по обязательствам перед Банком</li></ul>",
+    "_id": "5fd4e6c826f36f6649e95269",
+    "_parentId": "5fd4e65726f36f6649e95264",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Дополнительные рекомендации по проведению мониторинга ",
+    "displayTitle": "Дополнительные рекомендации по проведению мониторинга ",
+    "body": "",
+    "_id": "5fd4e6ef26f36f6649e9526b",
+    "_parentId": "5fd4e6e326f36f6649e9526a",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": true,
+    "_percentInviewVertical": 70,
+    "_orderedList": true,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>Проводить <strong>финансовый мониторинг принципала</strong>, в т.ч. анализировать структуру финансирования контрактов, наличие ресурсов контрагента для выполнения работ в рамках контрактной базы, надлежащее исполнение контрактов.​</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Ежеквартально осуществлять <strong>мониторинг гарантийного портфеля принципала</strong> с целью выявления фактов отказа бенефициара от уменьшения суммы гарантий по мере исполнения обязательств принципала по гарантируемым контрактам.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Проводить <strong>мониторинг контрольных финансовых показателей, ковенантов, дополнительных условий</strong>.</p>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>По гарантируемому государственному или муниципальному контракту рекомендуется осуществлять <strong>мониторинг бюджетных ассигнований</strong> на предмет наличия соответствующих расходов по гарантируемому Банком контракту. &nbsp;По виду «Гарантия качества» проводится в случае, если гарантийной обязательство предоставляется на начальной стадии исполнения контракта: работы по контракту еще не начаты или контракт не заключен (с учетом 44-ФЗ).</p>",
+        "_imageSrc": "",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Что обеспечивает",
+    "displayTitle": "Что обеспечивает",
+    "body": "<p>Бенефициар[1] компенсирует все издержки и расходы, в следующих случаях:</p><ul><li>если принципал[2] отзывает свое предложение до истечения срока действия тендера</li><li>если принципал, выигравший торги, отказывается подписать контракт с бенефициаром или выдать гарантию надлежащего исполнения контракта.</li></ul><p>Как правило, сумма гарантии составляет определенный процент от суммы тендерного контракта.</p>",
+    "_id": "5fd93b75ad6de50ed13e90a3",
+    "_parentId": "5fd93b42ad6de50ed13e90a2",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": true,
+      "side": "top",
+      "src": "course/ru/assets/9316bc6095092701c9fe887cfcfc9e19faad8744.svg",
+      "align": "flex-start",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Что дает участникам:",
+    "displayTitle": "Что дает участникам:",
+    "body": "<p><strong>Принципал:</strong></p><ul><li>получает альтернативу размещению денежного депозита​</li><li>​﻿возможность принять участие в торгах​</li></ul><p>&nbsp;</p><p><strong>Бенефициар:</strong></p><ul><li>получает ﻿ограждение от несерьезных и неквалифицированных предложений</li><li>﻿отсутствие необходимости в оценке новых предложений или нового размещения заказов и связанных с этим издержек<br />&nbsp;</li></ul>",
+    "_id": "5fd93bdcad6de50ed13e90a6",
+    "_parentId": "5fd93b42ad6de50ed13e90a2",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "list",
+    "_classes": "two-cols",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Риски",
+    "displayTitle": "Риски",
+    "body": "<p>Риск раскрытия банковской гарантии в случае реализации следующих факторов:</p>",
+    "_id": "5fd93c4dad6de50ed13e90a8",
+    "_parentId": "5fd93c46ad6de50ed13e90a7",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": true,
+    "_percentInviewVertical": 70,
+    "_orderedList": false,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>переоценка принципалом собственных возможностей при принятии решения участвовать в конкурсе: отсутствие опыта, производственных мощностей и т.д.</p>",
+        "_imageSrc": "course/ru/assets/652481760d4b6244d6fd868650048e9a02523b98.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>ухудшение финансового состояния принципала на момент проведения тендера</p>",
+        "_imageSrc": "course/ru/assets/3bc6a65168656514bee82bc672120c8c17d17ae0.svg",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>форс-мажорные факторы, возникновение которых не предусмотрено в тендерной документации, служащие основанием для неисполнения обязательств по банковской гарантии без штрафных санкций</p>",
+        "_imageSrc": "course/ru/assets/9bff06416e0d47a4d2e1d9f397c67bc72be18def.svg",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "_component": "hotgrid",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd93de6ad6de50ed13e90b1",
+    "_parentId": "5fd93cfbad6de50ed13e90b0",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_hidePagination": false,
+    "_canCycleThroughPagination": false,
+    "_columns": 3,
+    "_isRound": false,
+    "_items": [
+      {
+        "title": "Гарантия в пользу Росалкогольрегулирования",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Исполнение принципалом обязательств по использованию приобретаемых им федеральных специальных марок.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — производитель:</strong><br/>обретает возможность получить федеральные специальные марки<br/><br/><strong>﻿Бенефициар — Росалкогольрегулирование:</strong><br/>получает гарантированный платеж в случае нарушения принципалом требований законодательства по использованию федеральных специальных марок<br/>&nbsp;</p>",
+        "_classes": "",
+        "_graphic": {
+          "src": "course/ru/assets/340595167394fc5a309f3fab680d0da94025dd8a.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/340595167394fc5a309f3fab680d0da94025dd8a.svg",
+          "alt": "",
+          "title": "Гарантия в пользу Росалкогольрегулирования"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/340595167394fc5a309f3fab680d0da94025dd8a.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Гарантии в пользу налоговых органов",
+        "body": "<p><strong>1. Гарантия в рамках заявительного порядка возмещения НДС</strong></p><p><strong>Что обеспечивает</strong></p><p>Обязательства принципала по возврату в бюджет излишне полученных им[1] в заявительном порядке сумм, если решение о возмещении суммы налога, заявленной к возмещению, будет отменено полностью или частично.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — налогоплательщик:</strong><br />получает возможность воспользоваться правом на зачет[2] суммы налога, заявленной к возмещению в налоговой декларации, до завершения камеральной налоговой проверки<br /><br /><strong>﻿Бенефициар — налоговый орган: </strong><br />получает гарантированную уплату в бюджет за налогоплательщика суммы налога, излишне полученной им[3]</p><p>&nbsp;</p><p><strong>2. Гарантия по инвестиционному налоговому кредиту (ст. 67 НК РФ)</strong></p><p>Инвестиционный налоговый кредит может быть предоставлен по налогу на прибыль организации, а также по региональным и местным налогам.</p><p>&nbsp;</p><p><strong>3. Гарантия освобождения от уплаты авансового платежа акциза по алкогольной продукции (ст. 74.1, 182, 194, 204 НК РФ)</strong></p><p>Обеспечивает обязательство Банка уплатить в бюджет за принципала сумму акциза в размере авансового платежа, исчисленном в соответствии с Налоговым кодексом РФ, в случае неуплаты или неполной уплаты принципалом акциза по реализованной алкогольной, подакцизной спиртосодержащей продукции.</p>",
+        "_classes": "",
+        "_graphic": {
+          "src": "course/ru/assets/6facb375ce8fddc638d73be6a99361dd12e079f8.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/6facb375ce8fddc638d73be6a99361dd12e079f8.svg",
+          "alt": "",
+          "title": "Гарантии в пользу налоговых органов"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/6facb375ce8fddc638d73be6a99361dd12e079f8.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Гарантия в пользу таможенных органов",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Исполнение принципалом обязательств перед бенефициаром по уплате таможенных платежей, в частности, при учреждении таможенного склада, транзите и доставке товаров под таможенным контролем и пр.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — импортер, владелец таможенного склада:​</strong><br/>- обретает возможность получить акцизные марки​<br/>- включается в реестр владельцев таможенного склада и получает возможность осуществлять свою деятельность в области таможенного дела<br/>&nbsp;​<br/><strong>Бенефициар — таможенные органы РФ:​</strong><br/>- получает гарантированный платеж в случае нарушения импортером обязательства по использованию акцизных марок​<br/>- гарантированный платеж в случае нарушения владельцем таможенного склада возложенных на него обязательств​</p>",
+        "_classes": "",
+        "_graphic": {
+          "src": "course/ru/assets/34e16df5a54d2e14eb01d8fb94a9b65dd44692b5.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/34e16df5a54d2e14eb01d8fb94a9b65dd44692b5.svg",
+          "alt": "",
+          "title": "Гарантия в пользу таможенных органов"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/34e16df5a54d2e14eb01d8fb94a9b65dd44692b5.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      }
+    ]
+  },
+  {
+    "_component": "hotgrid",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94077ad6de50ed13e90c0",
+    "_parentId": "5fd94022ad6de50ed13e90bf",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_setCompletionOn": "allItems",
+    "_hidePagination": false,
+    "_canCycleThroughPagination": false,
+    "_columns": 2,
+    "_isRound": false,
+    "_items": [
+      {
+        "title": "Гарантия оплаты акций",
+        "body": "<p><strong>Что обеспечивает</strong></p><p>Обязательство инвестора уплатить бенефициарам стоимость проданных ими акций.</p><p>&nbsp;</p><p><strong>Что дает участникам:</strong></p><p><strong>Принципал — инвестор:​</strong><br />получает право подать добровольное предложение и приобрести ряд льгот​<br />​﻿выполнение требований ФЗ 208-ФЗ «Об акционерных обществах»&nbsp;​<br /><br /><strong>Бенефициар — прежний владелец ценных бумаг:</strong><br />получает гарантированный платеж в случае неисполнения инвестором обязательств по оплате стоимости ценных бумаг<br />&nbsp;</p>",
+        "_classes": "",
+        "_graphic": {
+          "src": "course/ru/assets/cc217004ad7b2d268571500585fb4fbcfd431cb0.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/cc217004ad7b2d268571500585fb4fbcfd431cb0.svg",
+          "alt": "",
+          "title": "Гарантия оплаты акций"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/cc217004ad7b2d268571500585fb4fbcfd431cb0.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Гарантия встречного обеспечения",
+        "body": "<p>Рассматривая вопрос обеспечения иска, Арбитражный суд[1] может потребовать от лица, обратившегося с заявлением об обеспечении иска, предоставить встречное обеспечение.</p><p>&nbsp;</p><p><strong>Цель данного обеспечения</strong><br />возмещение возможных для ответчика убытков связанных с иском</p><p><strong>Размер встречного обеспечения</strong></p><ul><li>Может быть установлен в пределах имущественных требований истца, указанных в его заявлении, а также суммы процентов от этих требований</li><li>Не может быть менее половины размера имущественных требований</li></ul><p><strong>Способ обеспечения</strong><br />﻿банковская гарантия<br />&nbsp;</p>",
+        "_classes": "",
+        "_graphic": {
+          "src": "course/ru/assets/3fd0bd6491dd2d4f1b4dc9644f9ce633bcd07836.svg",
+          "srcHover": "",
+          "srcVisited": "course/ru/assets/3fd0bd6491dd2d4f1b4dc9644f9ce633bcd07836.svg",
+          "alt": "",
+          "title": "Гарантия встречного обеспечения"
+        },
+        "_itemGraphic": {
+          "src": "course/ru/assets/3fd0bd6491dd2d4f1b4dc9644f9ce633bcd07836.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      }
+    ]
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "В качестве источников рекомендуется использовать:",
+    "displayTitle": "В качестве источников рекомендуется использовать:",
+    "body": "<ul><li>контрактную базу Заемщика: реестр исполняемых контрактов Заемщиком в рамках текущей деятельности: Приложение 7 Методики 2902</li><li>﻿план движения денежных средств по контракту и по текущей деятельности контрагента: Приложение 5-6 Методики 2902</li><li>смету затрат с указанием физических объемов и себестоимости работ / плановая калькуляция / сводный сметный расчет по контракту (при наличии информации в заключении строительного эксперта отдельный документ не предоставляется): Приложение 4 Методики 2902</li><li>форму отчета о ходе реализации контракта: Приложение 7 Методики 2902<br />&nbsp;</li></ul>",
+    "_id": "5fd94181ad6de50ed13e90cb",
+    "_parentId": "5fd94169ad6de50ed13e90ca",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "В ходе мониторинга формируются:",
+    "displayTitle": "В ходе мониторинга формируются:",
+    "body": "",
+    "_id": "5fd941d2ad6de50ed13e90cc",
+    "_parentId": "5fd94169ad6de50ed13e90ca",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_animateList": false,
+    "_percentInviewVertical": 70,
+    "_orderedList": true,
+    "_items": [
+      {
+        "title": "",
+        "body": "<p>Контрактное кредитование и Гарантии выполнения обязательств по контрактам</p><ul><li>мониторинг исполнения платежных обязательств по контракту:<br /><strong>Приложение №9 Регламента №1490-2 от 11.02.2012, Методика №2902 от 24.04.2013​</strong></li><li><strong>Форма №3, Приложение№3 Регламента №2559-6 от 06.06.2012</strong> ,чек-лист мониторинга контракта: <strong>Приложение3 к Распоряжению №276/77-Р от 03.07.2017</strong></li></ul>",
+        "_imageSrc": "",
+        "alt": ""
+      },
+      {
+        "title": "",
+        "body": "<p>Контроль за целевым использованием кредитных средств при контрактном кредитовании</p><ul><li>форма реестра платежей (затрат) за счет кредита: <strong>Приложение 8 Регламента №1490-2 от 11.02.2012, Методика №2902 от 24.04.2013</strong></li></ul>",
+        "_imageSrc": "",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd942e8ad6de50ed13e90ce",
+    "_parentId": "5fd942e5ad6de50ed13e90cd",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/ru/assets/daac89b4fbe46b0a3d040d9a4932bb8680281582.png",
+      "small": "course/ru/assets/daac89b4fbe46b0a3d040d9a4932bb8680281582.png",
+      "attribution": ""
+    }
+  },
+  {
+    "_component": "pageNav",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94313ad6de50ed13e90d4",
+    "_parentId": "5fd94304ad6de50ed13e90d3",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Назад",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Меню",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Далее",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>Добрый день.<br /><br />Так как Ваша коллега Татьяна уходит в отпуск и не успевает завершить мониторинг АО «Спутник» (пакет документов неполный, да и был предоставлен с нарушением сроков), прошу Вас взять на себя мониторинг данного клиента, тем более по нему тоже необходимо проанализировать исполнение обязательств по контракту. Направляю пакет документов.<br /><br />Кратко об участниках сделки:<br />АО «Спутник». Основное направление деятельности – производство насосных агрегатов для НЛО-строительных компаний (зеленая зона проблемности).<br />ООО «Луна». Реализует госпроект по строительству космодрома с осуществлением регулярных бюджетных рейсов на Луну. Реализация проекта осуществляется в г. Звездный.<br /><br />Просьба направить мне итоги мониторинга.<br /><br />С уважением, начальник ОМКО​</p>",
+    "_id": "5fd9458dad6de50ed13e90da",
+    "_parentId": "5fd94425ad6de50ed13e90d7",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd945b9ad6de50ed13e90dc",
+    "_parentId": "5fd945a9ad6de50ed13e90db",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "Гарантируемый контракт",
+    "file_size": "5.7 мб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd945fcad6de50ed13e90df",
+    "_parentId": "5fd945f7ad6de50ed13e90de",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "Спецификация",
+    "file_size": "19 кб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94616ad6de50ed13e90e3",
+    "_parentId": "5fd94616ad6de50ed13e90e2",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "Гарантия исполн. контракта",
+    "file_size": "27 кб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd9462ead6de50ed13e90e7",
+    "_parentId": "5fd9462ead6de50ed13e90e6",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "Гарантия возврата аванса",
+    "file_size": "44 кб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94665ad6de50ed13e90eb",
+    "_parentId": "5fd94665ad6de50ed13e90ea",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "Выписки",
+    "file_size": "18 кб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94676ad6de50ed13e90ef",
+    "_parentId": "5fd94676ad6de50ed13e90ee",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "file_description": "СМИ",
+    "file_size": "736 кб",
+    "file": "course/ru/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>На основании этих документов проведите мониторинг клиента и проанализируйте исполнение им обязательств по контракту, параллельно отвечая на вопросы.</p>",
+    "_id": "5fd94690ad6de50ed13e90f4",
+    "_parentId": "5fd9468cad6de50ed13e90f3",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Что показал анализ выписки из расчетного счета и расшифровки незавершенного производства?",
+    "displayTitle": "Что показал анализ выписки из расчетного счета и расшифровки незавершенного производства?",
+    "body": "",
+    "_id": "5fd946c2ad6de50ed13e90f5",
+    "_parentId": "5fd94689ad6de50ed13e90f2",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Отсутствие нарушений сроков перечисления оплаты со стороны Бенефициара",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Наличие у Принципала работ, не принятых заказчиками на текущий момент",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Наличие нарушений сроков перечисления оплаты со стороны Бенефициара",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неправильно. На самом деле имеются нарушения сроков перечисления оплаты со стороны Бенефициара.</p>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p><!--(figmeta)eyJmaWxlS2V5IjoiWUVMQmpYRVNNbGpSSHprdlk0aW82VyIsInBhc3RlSUQiOi0xLCJkYXRhVHlwZSI6InNjZW5lIn0K(/figmeta)--><!--(figma)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(/figma)-->Неправильно. На самом деле имеются нарушения сроков перечисления оплаты со стороны Бенефициара.</p>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Анализ выписки расчетного счета, расшифровки незавершенного производства показал наличие нарушений сроков перечисления оплаты Бенефициаром, а именно:",
+    "displayTitle": "Анализ выписки расчетного счета, расшифровки незавершенного производства показал наличие нарушений сроков перечисления оплаты Бенефициаром, а именно:",
+    "body": "",
+    "_id": "5fd9471ead6de50ed13e90f7",
+    "_parentId": "5fd9471aad6de50ed13e90f6",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Нарушение направления авансовых платежей на 1-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Нарушение сроков полной оплаты оборудования на 1-м этапе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Нарушение направления авансовых платежей на 2-м этапе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Нарушение сроков полной оплаты оборудования на 2-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Нарушение направления авансовых платежей на 3-м этапе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Нарушение сроков оплаты на всех этапах",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 2,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неправильно. Имеются следующие нарушения сроков перечисления оплаты со стороны Бенефициара:</p><ul><li>Нарушение направления авансовых платежей на 1-м этапе</li><li>Нарушение сроков полной оплаты оборудования на 2-м этапе</li></ul>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неправильно. Имеются следующие нарушения сроков перечисления оплаты со стороны Бенефициара:</p><ul><li>Нарушение направления авансовых платежей на 1-м этапе</li><li>Нарушение сроков полной оплаты оборудования на 2-м этапе</li></ul>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какие еще отклонения допущены компанией в ходе реализации проекта?",
+    "displayTitle": "Какие еще отклонения допущены компанией в ходе реализации проекта?",
+    "body": "",
+    "_id": "5fd9473aad6de50ed13e90fa",
+    "_parentId": "5fd9473aad6de50ed13e90f9",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Отклонения не выявлены",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства насосных агрегатов на 1-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства оборудования (станции) на 1-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства насосных агрегатов на 2-м этапе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства оборудования (станции) на 2-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства насосных агрегатов на 3-м этапе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выявлено отставание от плана производства оборудования (станции) на 3-м этапе",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 4,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неправильно. Допущены следующие отклонения в деятельности компании:</p><ul><li>Отставание от плана производства насосных агрегатов на 1-м этапе</li><li>Отставание от плана производства оборудования (станции) на 1-м этапе</li><li>Отставание от плана производства оборудования (станции) на 2-м этапе</li><li>Отставание от плана производства оборудования (станции) на 3-м этапе</li></ul>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неправильно. Допущены следующие отклонения в деятельности компании:</p><ul><li>Отставание от плана производства насосных агрегатов на 1-м этапе</li><li>Отставание от плана производства оборудования (станции) на 1-м этапе</li><li>Отставание от плана производства оборудования (станции) на 2-м этапе</li><li>Отставание от плана производства оборудования (станции) на 3-м этапе</li></ul>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какая негативная информация выявлена в результате новостного мониторинга деятельности и деловой репутации Принципала?",
+    "displayTitle": "Какая негативная информация выявлена в результате новостного мониторинга деятельности и деловой репутации Принципала?",
+    "body": "",
+    "_id": "5fd9473ead6de50ed13e90fd",
+    "_parentId": "5fd9473ead6de50ed13e90fc",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Негативная информация в отношении Принципала не выявлена",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Имеется иск со стороны крупного контрагента",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Есть информация о задержке заработной платы",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Есть данные об отставании в реализации гарантируемого контракта",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Имеется нарушение ФЗ России",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 3,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неверно. В СМИ упоминаются следующие факты:</p><ul><li>Иск со стороны крупного контрагента</li><li>Задержка заработной платы</li><li>Отставание в реализации гарантируемого контракта</li></ul>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неверно. В СМИ упоминаются следующие факты:</p><ul><li>Иск со стороны крупного контрагента</li><li>Задержка заработной платы</li><li>Отставание в реализации гарантируемого контракта</li></ul>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какая негативная информация выявлена в результате новостного мониторинга деятельности и деловой репутации Бенефициара?",
+    "displayTitle": "Какая негативная информация выявлена в результате новостного мониторинга деятельности и деловой репутации Бенефициара?",
+    "body": "",
+    "_id": "5fd94742ad6de50ed13e9100",
+    "_parentId": "5fd94742ad6de50ed13e90ff",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Негативной информации не выявлено",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Имеется иск со стороны ООО «Сатурн»",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Имеется иск со стороны ООО «Спутник»",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Имеется иск со стороны администрации г. Звездный",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неверно. Негативной информации, касающейся Бенефициара, не найдено. А что можете сообщить по поводу уровня рисков раскрытия банковских гарантий?</p>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неверно. Негативной информации, касающейся Бенефициара, не найдено. А что можете сообщить по поводу уровня рисков раскрытия банковских гарантий?</p>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какой уровень рисков раскрытия банковских гарантий?",
+    "displayTitle": "Какой уровень рисков раскрытия банковских гарантий?",
+    "body": "",
+    "_id": "5fd94746ad6de50ed13e9103",
+    "_parentId": "5fd94746ad6de50ed13e9102",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Риски отсутствуют",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Существует высокий риск раскрытия гарантии исполнения контракта",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Риски раскрытия гарантий находятся на приемлемом уровне",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неправильно. Налицо высокий риск раскрытия гарантии исполнения контракта. Вы планируете запросить у Заемщика дополнительную информацию? Если да, то какую именно?</p>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неправильно. Налицо высокий риск раскрытия гарантии исполнения контракта. Вы планируете запросить у Заемщика дополнительную информацию? Если да, то какую именно?</p>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какую дополнительную информацию необходимо запросить у Заемщика?",
+    "displayTitle": "Какую дополнительную информацию необходимо запросить у Заемщика?",
+    "body": "",
+    "_id": "5fd9474aad6de50ed13e9106",
+    "_parentId": "5fd9474aad6de50ed13e9105",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Информации о планируемых мероприятиях по урегулированию исковых требований",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Пояснений причин отставания от графика реализации проекта",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Доп. соглашения к контракту об изменении его условий (в т.ч. в связи с нарушением сроков, указанных в первоначальной спецификации)",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Данных о планируемых мероприятиях по урегулированию исковых требований в адрес Бенефициара",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 3,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неправильно. Необходимо запросить у Заемщика:</p><ul><li>Информацию о планируемых мероприятиях по урегулированию исковых требований</li><li>Пояснение причин отставания от графика реализации проекта</li><li>Доп. соглашение к контракту об изменении его условий (в т.ч. в связи с нарушением сроков, указанных в первоначальной спецификации)</li></ul>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неправильно. Необходимо запросить у Заемщика:</p><ul><li>Информацию о планируемых мероприятиях по урегулированию исковых требований</li><li>Пояснение причин отставания от графика реализации проекта</li><li>Доп. соглашение к контракту об изменении его условий (в т.ч. в связи с нарушением сроков, указанных в первоначальной спецификации)</li></ul>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какие критерии проблемности возможно инициировать по результатам мониторинга?",
+    "displayTitle": "Какие критерии проблемности возможно инициировать по результатам мониторинга?",
+    "body": "",
+    "_id": "5fd9474dad6de50ed13e9109",
+    "_parentId": "5fd9474dad6de50ed13e9108",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "1.12 Нарушение условий кредитной документации/ковенантов ",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "1.20 Иные факторы, которые ПМ и/или АР считает достаточным основанием для отнесения задолженности к желтой зоне",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "4.5.3 Возникновение на предприятии технической аварии, последствия которой могут оказать влияние на возврат задолженности банку в краткосрочной перспективе",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 2,
+    "_feedback": {
+      "title": "",
+      "correct": "<p>Правильно! Вы отлично справляетесь!</p>",
+      "_incorrect": {
+        "final": "<p>Неверно. Необходимо инициировать следующие критерии проблемности:</p><ul><li>1.12 Нарушение условий кредитной документации/ковенантов</li><li>1.20 Иные факторы, которые ПМ и/или АР считает достаточным основанием для отнесения задолженности к желтой зоне</li></ul>",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "<p>Неверно. Необходимо инициировать следующие критерии проблемности:</p><ul><li>1.12 Нарушение условий кредитной документации/ковенантов</li><li>1.20 Иные факторы, которые ПМ и/или АР считает достаточным основанием для отнесения задолженности к желтой зоне</li></ul>",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>результат</p>",
+    "_id": "5fd94c76ad6de50ed13e910c",
+    "_parentId": "5fd94c72ad6de50ed13e910b",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_isVisibleBeforeCompletion": true,
+    "_setCompletionOn": "inview",
+    "_resetType": "inherit",
+    "_assessmentId": "",
+    "_retry": {
+      "button": "Retry Assessment",
+      "feedback": "",
+      "_routeToAssessment": false
+    },
+    "_completionBody": "",
+    "_bands": []
+  },
+  {
+    "_component": "pageNav",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94c89ad6de50ed13e910f",
+    "_parentId": "5fd94c85ad6de50ed13e910e",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Назад",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Меню",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Далее",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Что входит в мониторинг выполнения Заемщиком/Принципалом/Приказодателем обязательств по контракту:",
+    "displayTitle": "Что входит в мониторинг выполнения Заемщиком/Принципалом/Приказодателем обязательств по контракту:",
+    "body": "",
+    "_id": "5fd94d48ad6de50ed13e9115",
+    "_parentId": "5fd94ccfad6de50ed13e9112",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Мониторинг объемов и сроков выполненных работ / поставки продукции (товара) по контракту",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Мониторинг выполнения обязательств поставщиками/подрядчиками/соисполнителями по контракту ",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Мониторинг выполнения обязательств Заказчиком по контракту",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Мониторинг выполнения обязательств контрагентами-смежниками в рамках одного контракта (при наличии информации)",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Определение процента исполнения контракта",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 5,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какова цель анализа «Дебиторской задолженности»?",
+    "displayTitle": "Какова цель анализа «Дебиторской задолженности»?",
+    "body": "",
+    "_id": "5fd94d68ad6de50ed13e9118",
+    "_parentId": "5fd94d68ad6de50ed13e9117",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление задержек по оплате контрактов (в т.ч. не финансируемым/гарантируемым Банком) в соответствии с условиями заключенных контрактов",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Выявление непогашенных обязательств по завершенным контрактам за последние 6 месяцев",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление непринятых заказчиками работ / переизбыток материала за последние 6 месяцев ",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какова цель анализа «Незавершенного производства»?",
+    "displayTitle": "Какова цель анализа «Незавершенного производства»?",
+    "body": "",
+    "_id": "5fd94d6cad6de50ed13e911b",
+    "_parentId": "5fd94d6cad6de50ed13e911a",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление задержек по оплате контрактов (в т.ч. не финансируемым/гарантируемым Банком) в соответствии с условиями заключенных контрактов",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выявление непогашенных обязательств по завершенным контрактам за последние 6 месяцев",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление непринятых заказчиками работ / переизбыток материала за последние 6 месяцев ",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Какова цель анализа «Кредиторской задолженности»?",
+    "displayTitle": "Какова цель анализа «Кредиторской задолженности»?",
+    "body": "",
+    "_id": "5fd94d6fad6de50ed13e911e",
+    "_parentId": "5fd94d6fad6de50ed13e911d",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление задержек по оплате контрактов (в т.ч. не финансируемым/гарантируемым Банком) в соответствии с условиями заключенных контрактов",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Выявление непогашенных обязательств по завершенным контрактам за последние 6 месяцев",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Оценка остаточной стоимости контракта, выявление непринятых заказчиками работ / переизбыток материала за последние 6 месяцев ",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 1,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "При одновременном выполнении каких условий не требуется проведение полного объема мониторинга, кроме случая «мониторинг поступления выручки по контракту в соответствии с условиями договора»?",
+    "displayTitle": "При одновременном выполнении каких условий не требуется проведение полного объема мониторинга, кроме случая «мониторинг поступления выручки по контракту в соответствии с условиями договора»?",
+    "body": "",
+    "_id": "5fd94d72ad6de50ed13e9121",
+    "_parentId": "5fd94d72ad6de50ed13e9120",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Рейтинг Принципала/Приказодателя не хуже 13",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Срок действия рассматриваемого Гарантийного обязательства не превышает 3 лет",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Сумма рассматриваемого Гарантийного обязательства составляет не более 5% от суммарной выручки Принципала/Приказодателя, рассчитанной за последние 4 отчетных квартала",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Сумма всех действующих Гарантийных обязательств составляет не более 30% от суммарной выручки Принципала Приказодателя, рассчитанной за последние 4 отчетных квартала ",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Принципал/Приказодатель имеет опыт исполнения подобного рода Контрактов",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "В течение последних 3 лет имелись случаи исполнения Принципалом/Приказодателем контрактов на поставку аналогичной продукции / оказание аналогичных услуг, условиями которых было предусмотрено представление ГО; при этом у Банка отсутствует информация о случаях неисполнения / ненадлежащего исполнения Принципалом/Приказодателем обязательств по данным контрактам",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Заклад векселей ПАО «Сбербанк»",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 6,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Что может являться источником информации в рамках мониторинга выполнения Заемщиком, Принципалом, Приказодателем обязательств по контракту?",
+    "displayTitle": "Что может являться источником информации в рамках мониторинга выполнения Заемщиком, Принципалом, Приказодателем обязательств по контракту?",
+    "body": "",
+    "_id": "5fd94d74ad6de50ed13e9124",
+    "_parentId": "5fd94d74ad6de50ed13e9123",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_items": [
+      {
+        "text": "Справки/отчеты от клиента",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Акты приема-предач",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Счета-фактуры",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Иные документы в соответствии с условиями КОД",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      }
+    ],
+    "_attempts": 1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_recordInteraction": true,
+    "_questionWeight": 1,
+    "_selectable": 4,
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "assessmentResults",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "<p>результат</p>",
+    "_id": "5fd94f04ad6de50ed13e9127",
+    "_parentId": "5fd94f00ad6de50ed13e9126",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_isVisibleBeforeCompletion": true,
+    "_setCompletionOn": "inview",
+    "_resetType": "inherit",
+    "_assessmentId": "",
+    "_retry": {
+      "button": "Retry Assessment",
+      "feedback": "",
+      "_routeToAssessment": false
+    },
+    "_completionBody": "",
+    "_bands": []
+  },
+  {
+    "_component": "pageNav",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "5fd94f1dad6de50ed13e912a",
+    "_parentId": "5fd94f11ad6de50ed13e9129",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "instruction": "",
+    "_loopStyle": "none",
+    "_buttons": {
+      "_returnToPreviousLocation": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Return",
+        "ariaLabel": "Return to previous location",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}"
+      },
+      "_previous": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Назад",
+        "ariaLabel": "Previous Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_root": {
+        "_isEnabled": true,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Меню",
+        "ariaLabel": "Go to main menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_up": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Back to menu",
+        "ariaLabel": "Back to menu",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_next": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": true,
+        "text": "Next",
+        "ariaLabel": "Next Page",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_sibling": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "{{inc index}}",
+        "ariaLabel": "Page {{inc index}}",
+        "_showTooltip": false,
+        "tooltip": "{{displayTitle}}",
+        "_customRouteId": ""
+      },
+      "_close": {
+        "_isEnabled": false,
+        "_lockUntilPageComplete": false,
+        "_order": 0,
+        "_classes": "",
+        "_iconClass": "",
+        "_alignIconRight": false,
+        "text": "Close",
+        "ariaLabel": "Close window",
+        "_showTooltip": false,
+        "tooltip": "Close window"
+      }
+    }
   }
 ]

@@ -7,7 +7,8 @@
     height: 40px;
     padding: 0;
     border-radius: 50%;
-    border: black solid 1px;
+    background: #FFFFFF;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
 
     &:hover {
       background-color: @pin-hover;
@@ -15,6 +16,10 @@
 
     .icon {
       .icon-plus;
+
+      &:before {
+        font-size: 2rem;
+      }
     }
 
   }

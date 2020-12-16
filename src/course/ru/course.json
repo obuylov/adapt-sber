@@ -1,15 +1,15 @@
 {
-  "title": "Сегментация клиентов в КБ",
-  "displayTitle": "Сегментация клиентов в КБ",
-  "body": "<div class=\"two-cols\"><div class=\"col\"><p><strong>В курсе рассмотрены:</strong></p><ol><li>Принципы сегментации клиентов</li><li>Алгоритм определения целевого клиентского сегмента</li></ol></div><div class=\"col\"><p><strong>Курс считается пройденным успешно, если Вы:</strong></p><ul><li>Изучили все информационные блоки</li><li>Верно ответили на 80% тестовых вопросов курса</li></ul></div></div>",
-  "subtitle": "Курс разработан для обучения всех сотрудников ПАО «Сбербанк» (далее — Банк, Сбербанк).",
+  "title": "Мониторинг контрактов и гарантийных обязательств по контрактам",
+  "displayTitle": "Мониторинг контрактов и гарантийных обязательств по контрактам",
+  "body": "<p>Курс разработан для обучения кредитных инспекторов Управления мониторинга кредитных операций и залогового обеспечения.</p>",
+  "subtitle": "",
   "description": "",
   "instruction": "",
   "_htmlClasses": "",
-  "_latestTrackingId": 23,
+  "_latestTrackingId": 68,
   "_buttons": {
     "_submit": {
-      "buttonText": "Ответить",
+      "buttonText": "Submit",
       "ariaLabel": "Submit"
     },
     "_reset": {
@@ -69,14 +69,21 @@
       }
     },
     "_components": {
-      "_media": {
-        "ariaRegion": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
-        "skipToTranscript": "Skip to transcript"
+      "_sber-tabs": {
+        "ariaRegion": "A tabbed content container. Content can be text, graphic or both."
       },
-      "_slider": {
-        "ariaRegion": "Slider. Respond to the question by selecting a value on the scale and then submit.",
-        "labelStart": "Start of the scale",
-        "labelEnd": "End of the scale"
+      "_list": {
+        "ariaRegion": ""
+      },
+      "_sber-txtmessages": {
+        "ariaRegion": ""
+      },
+      "_sber-downloader": {
+        "ariaRegion": ""
+      },
+      "_hotgrid": {
+        "ariaRegion": "Selectable image component. Select each item to show more information.",
+        "popupPagination": "{{itemNumber}} / {{totalItems}}"
       },
       "_text": {
         "ariaRegion": ""
@@ -85,6 +92,10 @@
         "ariaRegion": "Slide show. Select the next button to progress.",
         "previous": "{{#if title}}Back to {{title}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
         "next": "{{#if title}}Forward to {{title}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}"
+      },
+      "_media": {
+        "ariaRegion": "Media player{{#any _transcript._inlineTranscript _transcript._externalTranscript}} and transcript{{/any}}.",
+        "skipToTranscript": "Skip to transcript"
       },
       "_hotgraphic": {
         "ariaRegion": "Image with selectable areas. Select each button to show more information.",
@@ -103,19 +114,34 @@
         "ariaRegion": "Text input. Type your answer and then submit."
       },
       "_mcq": {
-        "ariaRegion": "Multiple choice question. Select your option and then submit."
+        "ariaRegion": "Multiple choice question"
       },
       "_gmcq": {
-        "ariaRegion": "Multiple choice question. Select your option and then submit."
+        "ariaRegion": "Multiple choice question"
       },
       "_assessmentResults": {
         "ariaRegion": "Assessment results."
       },
-      "_sber-tabs": {
-        "ariaRegion": "A tabbed content container. Content can be text, graphic or both."
+      "_slider": {
+        "ariaRegion": "Slider. Respond to the question by selecting a value on the scale and then submit.",
+        "labelStart": "Start of the scale",
+        "labelEnd": "End of the scale"
       }
     },
     "_extensions": {
+      "_glossary": {
+        "glossary": "Glossary",
+        "labelLink": "Terms beginning with",
+        "labelNavigation": "Glossary navigation"
+      },
+      "_close": {
+        "closeButton": "Select here to close the window."
+      },
+      "_xapi": {
+        "confirm": "OK",
+        "lrsConnectionErrorTitle": "LRS not available",
+        "lrsConnectionErrorMessage": "We were unable to connect to your Learning Record Store (LRS). This means that your progress cannot be recorded."
+      },
       "_trickle": {
         "incompleteContent": "There is incomplete content above. You must complete this before you can proceed through the course."
       },
@@ -125,6 +151,27 @@
         "pageLevelProgressMenuBar": "Page completion {{percentageComplete}}%",
         "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
         "optionalContent": "Optional content"
+      },
+      "_resources": {
+        "resources": "Additional resources."
+      },
+      "_languagePicker": {
+        "navigationBarLabel": "Select course language",
+        "languageSelector": "Language selector"
+      }
+    },
+    "_menu": {
+      "_tilesmenu": {
+        "ariaRegion": "Menu",
+        "durationLabel": "Duration:",
+        "menuItem": "Menu item.",
+        "menuEnd": "You have reached the end of the menu."
+      },
+      "_boxMenu": {
+        "durationLabel": "Duration:"
+      },
+      "_scroll-sbermenu": {
+        "durationLabel": "Duration:"
       }
     }
   },
@@ -152,8 +199,8 @@
     },
     "_buttons": {
       "btn-color": "#4d4d4d",
-      "btn-color-inverted": "#ffffff",
-      "btn-color-hover": "#42E3B4",
+      "btn-color-inverted": "#42e3b4",
+      "btn-color-hover": "",
       "btn-color-inverted-hover": "",
       "disabled": "#dddddd",
       "disabled-inverted": "#000000"
@@ -237,23 +284,6 @@
       "background-inverted": "#ffffff",
       "shadow": "#000000",
       "shadow-inverted": "#ffffff"
-    }
-  },
-  "_assessment": {
-    "_isPercentageBased": true,
-    "_scoreToPass": 60
-  },
-  "_pageLevelProgress": {
-    "_isEnabled": true,
-    "_showPageCompletion": true,
-    "_isCompletionIndicatorEnabled": false,
-    "_isShownInNavigationBar": true
-  },
-  "_sber-boxMenu": {
-    "_backgroundImage": {
-      "_large": "",
-      "_medium": "",
-      "_small": ""
     }
   }
 }
