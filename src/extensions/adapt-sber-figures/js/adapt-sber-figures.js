@@ -15,29 +15,23 @@ define([
     },
 
     onPageReady: function() {
-      console.log(this._articleModels)
-
-      for (let i = 0; i < this._articleModels.length; i++) {
-        let article = this._articleModels[i];
-
-        let el = $("." + article.get("_id"));
-        let figures = article.get("_sberFigures");
-
+      for (let article of this._articleModels) {
+        let id = article.get("_id");
+        let el = this.$("." + id);
         el.addClass("figures-container");
 
-        for (let figure of figures) {
-          let f_el = document.createElement("div");
-          f_el.className = "figure " + figure.type;
-
-          $(f_el).css({
-            width: figure.size,
-            height: figure.size,
-            left: figure.x_pos + "px",
-            top: figure.y_pos + "px",
-            transform: `rotateX(${figure.angle}deg)`
+        for (let figure of article.get("_sberFigures")._items) {
+          let figure_element = document.createElement("div");
+          figure_element.className = "figure " + figure.type;
+          $(figure_element).css({
+            transform: `rotate(${figure.angle}deg)`,
+            left: figure.x_pos + "%",
+            top: figure.y_pos + "%",
+            width: figure.size + "px",
+            height: figure.size + "px"
           });
 
-          el.append(f_el);
+          el.append(figure_element);
         }
       }
     }

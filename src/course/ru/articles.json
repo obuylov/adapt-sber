@@ -30,6 +30,32 @@
         "_backgroundSize": null,
         "_backgroundPosition": null
       }
+    },
+    "_sberFigures": {
+      "_isEnabled": true,
+      "_items": [
+        {
+          "type": "circle",
+          "angle": 0,
+          "size": 200,
+          "x_pos": 10,
+          "y_pos": 30
+        },
+        {
+          "type": "rect",
+          "angle": 0,
+          "size": 200,
+          "x_pos": 10,
+          "y_pos": 0
+        },
+        {
+          "type": "pentagon",
+          "angle": 0,
+          "size": 200,
+          "x_pos": 80,
+          "y_pos": 20
+        }
+      ]
     }
   },
   {

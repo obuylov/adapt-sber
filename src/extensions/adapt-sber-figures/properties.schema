@@ -21,74 +21,95 @@
           "type": "object",
           "properties": {
             "_sberFigures": {
-              "type": "array",
-              "required": true,
+              "type": "object",
+              "required": false,
               "legend": "Сбер фигуры",
-              "minItems": 1,
-              "items": {
+              "properties": {
                 "type": "object",
                 "required": false,
                 "legend": "Sber Figures",
                 "properties": {
-                  "type": {
-                    "type": "string",
-                    "required": true,
-                    "title": "Фигура",
-                    "enum": ["circle", "donut", "pentagon"],
-                    "inputType": {
-                      "type": "Select",
-                      "options": [
-                        "circle",
-                        "donut",
-                        "pentagon"
-                      ]
-                    },
-                    "default": "circle",
-                    "help": "circle – круг, donut – пончик, pentagon – пятиугольник"
+                  "_isEnabled": {
+                    "type": "boolean",
+                    "required": false,
+                    "title": "Включить иконку",
+                    "inputType": "Checkbox",
+                    "validators": []
                   },
-                  "size": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Размер фигуры",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Размер фигуры в пикселях"
-                  },
-                  "x_pos": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Положение по х",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Позиция по х в процентах"
-                  },
-                  "y_pos": {
-                    "type": "number",
-                    "required": true,
-                    "default": 100,
-                    "title": "Положени по y",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Позиция по у в процентах"
-                  },
-                  "angle": {
-                    "type": "number",
-                    "required": true,
-                    "default": 0,
-                    "title": "Угол наклона",
-                    "inputType": "Number",
-                    "validators": [
-                      "number"
-                    ],
-                    "help": "Угол наклона фигуры"
+                  "_items": {
+                    "type": "array",
+                    "required": false,
+                    "title": "Элементы",
+                    "items": {
+                      "type": "object",
+                      "required": false,
+                      "properties": {
+                        "_type": {
+                          "type": "string",
+                          "required": true,
+                          "title": "Фигура",
+                          "enum": [
+                            "circle",
+                            "donut",
+                            "pentagon"
+                          ],
+                          "inputType": {
+                            "type": "Select",
+                            "options": [
+                              "circle",
+                              "pentagon",
+                              "rect"
+                            ]
+                          },
+                          "default": "circle",
+                          "help": "circle – круг, pentagon – пятиугольник, rect – четырехугольник"
+                        },
+                        "size": {
+                          "type": "number",
+                          "required": true,
+                          "default": 100,
+                          "title": "Размер фигуры",
+                          "inputType": "Number",
+                          "validators": [
+                            "number"
+                          ],
+                          "help": "Размер фигуры в пикселях"
+                        },
+                        "x_pos": {
+                          "type": "number",
+                          "required": true,
+                          "default": 0,
+                          "title": "Положение по х",
+                          "inputType": "Number",
+                          "validators": [
+                            "number"
+                          ],
+                          "help": "Позиция по х в процентах"
+                        },
+                        "y_pos": {
+                          "type": "number",
+                          "required": true,
+                          "default": 0,
+                          "title": "Положени по y",
+                          "inputType": "Number",
+                          "validators": [
+                            "number"
+                          ],
+                          "help": "Позиция по у в процентах"
+                        },
+                        "angle": {
+                          "type": "number",
+                          "required": true,
+                          "default": 0,
+                          "title": "Угол наклона",
+                          "inputType": "Number",
+                          "validators": [
+                            "number"
+                          ],
+                          "help": "Угол наклона фигуры"
+                        }
+                      }
+                    }
                   }
                 }
               }
