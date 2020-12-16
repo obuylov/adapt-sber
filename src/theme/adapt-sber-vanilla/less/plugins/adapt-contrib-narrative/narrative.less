@@ -92,4 +92,23 @@
       top: 20px;
     }
   }
+
 }
+.with-counter {
+  .narrative__progress {
+    border: none;
+    counter-reset: part;
+    counter-increment: part;
+    &.is-selected{
+      background-color: transparent!important;
+    }
+  }
+  .narrative__progress.is-selected:before {
+    content: counter(part);
+    position: absolute;
+    left: 190px;
+    font-size: 18px;
+    color: black;
+  }
+}
+

@@ -1,0 +1,62 @@
+//sentence ordering
+  {
+    "_id": "c-100",
+    "_parentId": "b-100",
+    "_type": "component",
+    "_component": "sentenceOrdering",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Sentence Ordering Component",
+    "displayTitle": "Sentence Ordering Component",
+    "body": "Sentence Ordering question component.",
+    "instruction": "",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_questionWeight": 1,
+    "_itemWeight": 1,
+    "_isRandom": true,
+    "_canShowModelAnswer": true,
+    "_canShowMarking":true,
+    "_recordInteraction": false,
+    "_shouldScale":false,
+    "_defaultWidth": 860,
+    "_isPrefixTitle":false,
+    "_feedback": {
+      "correct": "This feedback will appear if you answered the question correctly.",
+      "_incorrect": {
+          "notFinal": "",
+          "final": "This feedback will appear if you answered the question incorrectly."
+      },
+      "_partlyCorrect": {
+          "notFinal": "",
+          "final": "This feedback will appear if you answered part of the question correctly."
+      }
+    },
+    "_items":[{
+            "id" : 1,
+            "prefixTitle":"Title 1",
+            "sentence":"First Sentence",
+            "position":[1]
+         },{
+           "id" : 2,
+            "prefixTitle":"Title 2",
+            "sentence":"Second Sentence",
+            "position":[2]
+         },{
+            "id" : 3,
+            "prefixTitle":"Title 3",
+            "sentence":"Three Sentence",
+            "position":[3]
+          }, {
+            "id" : 4,
+            "prefixTitle":"Title 4",
+            "sentence":"Fourth Sentence",
+            "position":[4]
+          }, {
+            "id" : 5,
+            "prefixTitle":"Title 5",
+            "sentence":"Fifth Sentence",
+            "position":[5]
+          }
+         ]
+  }

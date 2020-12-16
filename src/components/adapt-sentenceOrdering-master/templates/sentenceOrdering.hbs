@@ -1,0 +1,31 @@
+<div class="sentenceOrdering-inner component-inner" role="region" aria-label="{{_globals._components.sentenceOrdering.ariaRegion}}" {{#if _globals._components.sentenceOrdering.ariaRegion}} tabindex="0" {{/if}} data-id="scaleableWrapper">
+    {{> component this}}
+    <div class="sentenceOrdering-widget component-widget {{#unless _isEnabled}} disabled {{#if _isInteractionComplete}} complete submitted show-user-answer {{#if _isCorrect}}correct{{/if}} {{/if}} {{/unless}}" data-id="innerWrapper" {{#if _shouldScale}} style="width:{{_defaultWidth}}px;"{{/if}}>
+        <div class="sentenceOrdering-container-inner">
+          <div class="container">
+                    {{#if _isPrefixTitle}}
+                    <div data-prefixTitle="prefixTitle" class="prefixTitle-container">
+                        {{#each _prefixTitles}}
+                            <div data-prefixTitleId="prefixTitle-{{inc index}}" class="prefixTitle">{{{this}}} ({{inc @index}})</div>
+                        {{/each}}
+                    </div>
+                    {{/if}}
+                    <div class="sentence-container">
+                        <ul class="content list" data-id="sortable" style="list-style:none;">
+                            {{#each _items}}
+                                <li data-itemId="{{id}}" class="sentenceSequence"><span>{{{sentence}}}</span>
+                                 <div class="sentenceOrdering-item-state">
+                                        <div class="sentenceOrdering-item-icon sentenceOrdering-correct-icon icon icon-tick"></div>
+                                        <div class="sentenceOrdering-item-icon sentenceOrdering-incorrect-icon icon icon-cross"></div>
+                                 </div>
+                               </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+    <div class="buttons">
+    </div>
+</div>

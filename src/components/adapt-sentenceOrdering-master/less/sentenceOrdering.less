@@ -1,0 +1,116 @@
+.sentenceOrdering-inner{
+  resize: both;
+  position: relative;
+  .sentenceOrdering-widget {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      transform-origin: 0% 0%;
+     .sentenceOrdering-container-inner{
+         .prefixTitle-container{
+              position: relative;
+              float: left;
+              width:30%;
+              cursor: auto;
+              word-break: break-word;
+              word-break: break-all;
+               .prefixTitle{
+                   color: red;
+                   background-color: @item-color;
+                   padding:(@item-padding - 10px);
+                   margin: 0px auto 5px 5px;
+                     .dir-rtl & {
+                       text-align: right;
+                   }
+               }
+         }
+       .sentence-container{
+         position: relative;
+         float: left;
+         width:70%;
+         word-break: break-word;
+         word-break: break-all;
+          ul.list li.placeholder, ul.grid li.placeholder {
+            border: dashed 1px #4b4e4f;/* to add border dashed set 1px*/
+            display:inline-block;
+            background-color: transparent;
+          }
+         li{
+           position: relative;
+           color: red;
+           background-color: @item-color;
+           padding:(@item-padding - 10px);
+           margin: 0px auto 5px 5px;
+         }
+         .incorrect-resettable{
+          cursor: auto !important;
+         }
+
+       }
+       .no-touch &:hover {
+        li {
+         cursor: pointer;
+        }
+       }
+     }
+
+  }
+  .sentenceOrdering-item-state{
+    background:none;
+    position:absolute;
+    right:10px;
+    width:@icon-size;
+    height:@icon-size;
+    top:50%;
+    margin-top:-(@icon-size/2);
+    z-index:0;
+  }
+  .component-widget{
+    .sentenceOrdering-item-icon{
+      display:none;
+    }
+    .sentenceOrdering-correct-icon {
+      color:@validation-success;
+      display:none;
+    }
+
+    .sentenceOrdering-incorrect-icon {
+      color:@validation-error;
+      display:none;
+    }
+
+    &.show-user-answer {
+      .incorrect {
+        .sentenceOrdering-incorrect-icon{
+          display:block;
+        }
+      }
+
+      .correct {
+        .sentenceOrdering-correct-icon {
+          display:block;
+        }
+      }
+    }
+
+    &.show-correct-answer {
+      .sentence-ordering-item-icon{
+        display:none;
+      }
+      .sentenceOrdering-correct-icon {
+        display:block;
+      }
+    }
+
+    &.disabled {
+      .sentence-container {
+        .no-touch &:hover {
+          li {
+             cursor: default;
+           }
+        }
+      }
+    }
+
+  }
+}

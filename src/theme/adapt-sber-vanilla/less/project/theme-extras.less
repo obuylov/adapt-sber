@@ -210,8 +210,17 @@
 }
 
 .white-components {
-  .component__widget {
+  .component__inner {
     .white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: @shadow-full;
+    width: fit-content;
+  }
+}
+.right-component {
+  .component__inner{
+    float: right;
   }
 }
 .p-0 .block__inner {
@@ -237,6 +246,25 @@
   tr:first-of-type td:first-of-type {
     background-color: #f9f9f9!important;
   }
+}
+.striped-table {
+  font-size: 12px;
+  border-collapse: collapse;
+  background-color: white;
+
+  tr {
+    border: 1px #999999 solid;
+    &:nth-child(odd) {
+      background: @light-green;
+    }
+    &:first-of-type {
+      background: @green-tab-180-grad;
+      text-align: center;
+      font-weight: bold;
+      border: none;
+    }
+  }
+
 }
 .table-green {
   border-collapse: collapse;
