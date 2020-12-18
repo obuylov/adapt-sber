@@ -2,7 +2,7 @@
   {
     "title": "Нормативная регламентация",
     "displayTitle": "Нормативная регламентация",
-    "body": "",
+    "body": "1<span class='b-b8b'>2</span>3",
     "_classes": "",
     "_trackingId": 1,
     "instruction": "",
@@ -15,6 +15,16 @@
     "_id": "5fd4cf4fdf5af363a4c1f1c8",
     "_parentId": "5fd4cf4fdf5af363a4c1f1c7",
     "_type": "block",
+    "_sberTooltip": {
+      "_isEnabled": true,
+      "_items": [
+        {
+          "_className": "b-b8b",
+          "text": "привет, я проверка",
+          "min_width": 0
+        }
+      ]
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
