@@ -11,7 +11,7 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "",
-    "body": "<p>Процесс мониторинга контрактов описан в следующих документах:</p>",
+    "body": "<p>Процесс мониторинга контрактов <span class='box-1'>описан</span> в следующих <span class='box-2'>документах</span>:</p>",
     "_id": "5fd4cf4fdf5af363a4c1f1c9",
     "_parentId": "5fd4cf4fdf5af363a4c1f1c8",
     "_type": "component",
@@ -20,6 +20,18 @@
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
+    },
+    "_sberTooltip":  {
+      "_isEnabled": true,
+      "_items": [{
+        "_className": "box-1",
+        "text": "test",
+        "min_width": 0
+      },{
+        "_className": "box-2",
+        "text": "В случае необходимости формирования Реестра сервисных операций в целом по Предприятию.",
+        "min_width": 360
+      }]
     },
     "_sberIcon": {
       "_isEnabled": false,

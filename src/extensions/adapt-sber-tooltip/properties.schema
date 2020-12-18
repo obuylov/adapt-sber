@@ -1,0 +1,91 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object",
+          "properties": {
+            "_sberTooltip": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер подсказка",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить подсказки",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Элементы",
+                  "items": {
+                    "type": "object",
+                    "required": false,
+                    "properties": {
+                      "_className": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "Text",
+                        "title": "Класс, куда добавлять",
+                        "default": "",
+                        "validators": [
+                          "required"
+                        ],
+                        "help": "Сначала нужно добавить класс для нужного слова, а потом вставить его сюда",
+                        "translatable": true
+                      },
+                      "text": {
+                        "type": "string",
+                        "required": false,
+                        "inputType": "Text",
+                        "title": "Текст всплывающего сообщения?",
+                        "default": "",
+                        "validators": [
+                          "required"
+                        ],
+                        "help": "Что будет показываться при наведении на указанный блок",
+                        "translatable": true
+                      },
+                      "min_width": {
+                        "type": "number",
+                        "required": false,
+                        "default": 360,
+                        "title": "Минимальная ширина",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Минимальная ширина всплывашки, можно не ставить"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

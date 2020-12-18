@@ -1,0 +1,28 @@
+.sber-tooltip-container {
+  position: relative;
+  color: #00C86A;
+  cursor: pointer;
+
+  .sber-tooltip {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+
+    padding: 17px;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: @font-color;
+    cursor: default;
+    transition: all .3s;
+    z-index: -1;
+
+    &.open {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-20px);
+      cursor: pointer;
+      z-index: 5;
+    }
+  }
+}
