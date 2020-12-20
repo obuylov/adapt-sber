@@ -1,6 +1,3 @@
-
-
-
 //----------------------
 // Vertical layout (default mobile view)
 //----------------------
@@ -50,11 +47,19 @@
       .sber-tabs__content-item-graphic {
         order: -1;
       }
+
+      .title-and-body {
+        padding: 0;
+      }
     }
   }
 
   &__content-item-body {
     margin-bottom: 20px;
+
+    @media (max-width: @device-width-small) {
+      overflow: scroll;
+    }
   }
 
   &__nav-item-btn {

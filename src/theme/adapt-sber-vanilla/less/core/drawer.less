@@ -9,6 +9,10 @@
   width: @drawer-width;
   z-index: 100;
 
+  @media (max-width: @device-width-small) {
+    width: 100%;
+  }
+
   &__toolbar {
     border-bottom: 1px solid @drawer-item-hover;
     position: absolute;

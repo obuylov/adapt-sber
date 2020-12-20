@@ -36,6 +36,12 @@
     }
 
     &.narrative__text-controls {
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
       .narrative__controls {
         background-color: transparent;
       }
