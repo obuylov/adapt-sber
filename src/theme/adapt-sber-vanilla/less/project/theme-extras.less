@@ -212,15 +212,17 @@
 }
 .no-top {
   tr:first-of-type{
-    background-color: #f9f9f9!important;
-    text-align: unset!important;
-    font-weight: unset!important;
+    background-color: #f9f9f9 !important;
+    text-align: unset !important;
+    font-weight: unset !important;
+    font-size: 14px !important;
   }
 }
 .no-left {
   td:first-of-type {
-    background-color: #f9f9f9!important;
-    font-weight: unset!important;
+    background-color: #f9f9f9 !important;
+    font-weight: unset !important;
+    font-size: 14px !important;
   }
   tr:first-of-type td:first-of-type {
       background-color: @green-button!important;
@@ -255,18 +257,24 @@
   border-radius: 5px;
   box-shadow: @shadow-full;
   background-color: #f9f9f9;
-  tr:first-of-type td:first-of-type{
+  font-size: 14px;
+  margin-top: 36px;
+
+  tr:first-of-type td:first-of-type {
     border-radius: 5px 0 0 0;
   }
-  tr:first-of-type td:last-of-type{
+
+  tr:first-of-type td:last-of-type {
     border-radius: 0 5px 0 0;
   }
-  tr:last-of-type td:first-of-type{
+
+  tr:last-of-type td:first-of-type {
     border-radius: 0 0 0 5px;
   }
+
   tr {
     td {
-      border: black solid 1px;
+      border: @dark solid 1px;
       //padding: 14px 20px;
       vertical-align: top;
 
@@ -288,6 +296,7 @@
     background-color: @green-button;
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
 
     td {
       border-top: none;
@@ -297,6 +306,7 @@
   td:first-of-type {
     background-color: @green-button;
     font-weight: bold;
+    font-size: 18px;
   }
   td:last-of-type{
     border-radius: 5px;
@@ -359,5 +369,5 @@ ol {
 
 b, strong {
   font-family: 'SB-Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }

@@ -9,7 +9,10 @@
     border-radius: 50%;
     background: #FFFFFF;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
-
+    //.aria-label {
+    //  color: black;
+    //  font-size: 18px;
+    //}
     &:hover {
       background-color: @pin-hover;
     }
@@ -25,7 +28,14 @@
   }
 
   // Hotgraphic as tiles
-  // --------------------------------------------------
+}
 
-
+// --------------------------------------------------
+.mini-image {
+  .hotgraphic__image {
+    min-width: unset !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
