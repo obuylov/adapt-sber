@@ -5,7 +5,7 @@ define([
     _articleModels: [],
 
     initialize: function() {
-      const current_components = this.model.findDescendantModels("component");
+      let current_components = [...this.model.findDescendantModels("component"), ...this.model.findDescendantModels("block")];
       this.component_models = current_components.filter(el => el.get("_sberTooltip") && el.get("_sberTooltip")._isEnabled);
 
       if (this.component_models.length === 0) return false;

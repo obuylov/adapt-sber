@@ -1,7 +1,7 @@
 [
   {
-    "title": "New Article Title",
-    "displayTitle": "",
+    "title": "hello",
+    "displayTitle": "13",
     "body": "",
     "_classes": "show-part",
     "instruction": "",
@@ -19,11 +19,11 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_vanilla": {
+    "_sber-vanilla": {
       "_backgroundImage": {
-        "_large": "",
-        "_medium": "",
-        "_small": ""
+        "_large": "course/ru/assets/3a01d386f5b6ecf3ea64493b289290da65151fd3.png",
+        "_medium": "course/ru/assets/4a6cf9d1bd5cf5220381c2d34c53c4a05ae9234f.png",
+        "_small": "course/ru/assets/570cda6c4f0814fc3cc06323b5c7820004cc0231.png"
       },
       "_backgroundStyles": {
         "_backgroundRepeat": null,

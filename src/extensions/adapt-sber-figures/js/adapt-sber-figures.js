@@ -34,7 +34,23 @@ define([
           el.append(figure_element);
         }
       }
-    }
+
+      window.lastScrollingPosition = 0;
+      window.onscroll = this.parallax;
+    },
+
+    parallax: function() {
+      $('.figure').each(function () {
+        if ($(this).offset().top + $(this).height() < pageYOffset || $(this).offset().top >= pageYOffset + innerHeight) {
+          return;
+        }
+
+        let goingDown = pageYOffset > window.lastScrollingPosition;
+        $(this).css('top', goingDown ? '-=1px' : '+=1px');
+      });
+
+      window.lastScrollingPosition = window.pageYOffset;
+    },
   });
 
   Adapt.on("pageView:postRender", function(view) {

@@ -27,9 +27,11 @@ define([
 
     setStyles: function() {
       this.setClasses();
-      this.setBackgroundImage();
-      this.setBackgroundStyles();
-      this.setMinimumHeight();
+      if (this.$el.hasClass("article")) {
+        this.setBackgroundImage();
+        this.setBackgroundStyles();
+        this.setMinimumHeight();
+      }
       this.setCustomStyles();
     },
 
@@ -38,6 +40,7 @@ define([
     },
 
     setBackgroundImage: function() {
+      console.log(this)
       var backgroundImages = this.model.get("_backgroundImage");
 
       if (!backgroundImages) return;
