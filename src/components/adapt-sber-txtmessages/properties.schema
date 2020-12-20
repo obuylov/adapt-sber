@@ -69,17 +69,17 @@
             "help": "This is the optional item body text",
             "translatable": true
           },
-          "whoSays": {
-            "type": "string",
-            "required": true,
-            "inputType": "Text",
-            "title": "Кто говорит?",
-            "default": "",
-            "validators": [
-              "required"
-            ],
-            "help": "Имя персонажа",
-            "translatable": true
+"_whoSays": {
+"type": "string",
+"required": true,
+"inputType": "Text",
+"title": "Кто говорит?",
+"default": "",
+"validators": [
+"required"
+],
+"help": "Имя персонажа",
+"translatable": true
           },
           "_graphic": {
             "type": "object",

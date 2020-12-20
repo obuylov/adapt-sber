@@ -1,9 +1,13 @@
 .accordion {
+  margin-top: 40px;
+
   &__item {
     margin-bottom: @item-margin / 2;
 
     &-title-inner {
       margin-left: 60px;
+      font-size: 21px;
+      font-weight: 600;
     }
   }
 
@@ -27,11 +31,11 @@
 
   &__item-btn {
     position: relative;
-    padding: @item-padding @icon-size + (@item-padding * 2) @item-padding @item-padding;
+    padding: @item-padding @icon-size + (@item-padding * 2) 23px @item-padding;
     text-align: left;
     background-color: @light-gray;
     border-radius: 5px;
-
+    height: 65px;
 
     .dir-rtl & {
       padding-right: @item-padding;
