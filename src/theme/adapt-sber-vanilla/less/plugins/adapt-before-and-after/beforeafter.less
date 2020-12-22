@@ -1,0 +1,17 @@
+.handle {
+  width: 2px;
+  background: linear-gradient(180deg, #ffffff calc(50% - 32px),
+  transparent calc(50% - 32px), transparent calc(50% + 32px), #ffffff calc(50% + 32px));
+  transition: all 0.3s ease;
+}
+
+.draggable {
+  background: linear-gradient(180deg, #ffffff calc(50% - 24px),
+  transparent calc(50% - 24px), transparent calc(50% + 24px), #ffffff calc(50% + 24px));
+  transition: all 0.3s ease;
+}
+
+.handle:after {
+  background: unset;
+  font-weight: unset;
+}

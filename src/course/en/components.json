@@ -1283,7 +1283,7 @@
           "_classes": ""
         },
         "strapline": "Hotspot 2 strapline",
-        "_classes": "icon-plus",
+        "_classes": "icon-plus no-image",
         "_top": 50,
         "_left": 50
       },
@@ -1848,6 +1848,25 @@
     "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-34",
+    "_parentId": "b-0-32",
+    "_type": "component",
+    "_component": "beforeafter",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Here is a before and after object",
+    "displayTitle": "Here is a before and after object",
+    "body": "Hi everybody!",
+    "instruction": "",
+    "_beforeafter": {
+      "before": "course/en/assets/photo-man.png",
+      "altbefore": "alt text",
+      "after": "course/en/assets/photo-women.png",
+      "alt": "alt text",
+      "attribution": "Copyright © 2019"
     }
   },
   {

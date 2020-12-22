@@ -23,7 +23,7 @@
     .hotgrid__item-btn-inner {
       .hotgrid__item-title{
         &-inner {
-          color: white!important;
+          color: white !important;
         }
       }
     }
@@ -33,7 +33,15 @@
   // Application of item image states
   // --------------------------------------------------
 
+  @media (max-width: @device-width-small) {
+    .hotgrid__grid {
+      display: block;
 
+      .hotgrid__item {
+        width: unset;
+      }
+    }
+  }
 }
 
 // Hotgrid item image states

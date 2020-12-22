@@ -1,6 +1,6 @@
 {
   "name": "adapt-sber-vanilla",
-  "version": "0.3.1",
+  "version": "0.3.4",
   "framework": ">=5.2",
   "homepage": "https://github.com/obuylov/adapt-sber",
   "issues": "https://github.com/obuylov/adapt-sber",
