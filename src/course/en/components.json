@@ -47,7 +47,7 @@
     "_parentId": "b-0-1",
     "_type": "component",
     "_component": "narrative",
-    "_classes": "",
+    "_classes": "_hasDigitNavigation",
     "_layout": "full",
     "title": "Narrative",
     "displayTitle": "",

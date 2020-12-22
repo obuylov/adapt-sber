@@ -313,8 +313,24 @@
   }
 }
 
-ul li::marker {
-  color: @marker-blue;
+ul {
+  padding-left: 0;
+}
+
+ul ul {
+  padding-left: 20px;
+}
+
+.ul-pad ul {
+  padding-left: 20px;
+}
+
+.ol-pad ol {
+  padding-left: 75px;
+
+  @media (max-width: @device-width-small) {
+    padding-left: 30px;
+  }
 }
 
 .menu__item-container-inner {

@@ -3,8 +3,9 @@ define([
   "./themePageView",
   "./themeArticleView",
   "./themeBlockView",
-  "./themeView"
-], function(Adapt, ThemePageView, ThemeArticleView, ThemeBlockView, ThemeView) {
+  "./themeView",
+  "./updatedNarrativeLogic"
+], function(Adapt, ThemePageView, ThemeArticleView, ThemeBlockView, ThemeView, UpdatedNarrative) {
 
   function onDataReady() {
     $("html").addClass(Adapt.course.get("_courseStyle"));
@@ -31,8 +32,15 @@ define([
     }
   }
 
+  function onComponentRendered(view) {
+    if (view.model.get("_component") !== "narrative") return false;
+
+    new UpdatedNarrative({ model: new Backbone.Model(view.model), el: view.$el});
+  }
+
   Adapt.on({
     "app:dataReady": onDataReady,
-    "pageView:postRender articleView:postRender blockView:postRender": onPostRender
+    "pageView:postRender articleView:postRender blockView:postRender": onPostRender,
+    "componentView:postRender": onComponentRendered
   });
 });
