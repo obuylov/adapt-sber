@@ -10,12 +10,15 @@
 }
 
 /* Tile Menu Styles */
+
 .menu__item-container-inner {
   background: @item-color;
   max-width: 1000px;
   justify-content: space-between;
 
+
   .menu-item {
+    background: white;
     position: relative;
     width: 48%;
     min-height: 200px;
@@ -23,7 +26,7 @@
 
     margin-top: 0;
     padding: 35px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     overflow: hidden;
     border-radius: 5px;
@@ -57,11 +60,15 @@
       max-width: 100%;
       margin: 0px;
       padding: 0px;
-      .flex-stretch-between;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       .menu-item-info {
-        width: 60%;
-        height: 100%;
+        width: 100%;
+        height: 40%;
+        padding-right: 50px;
         .flex-stretch-between;
         flex-direction: column;
       }
@@ -72,24 +79,30 @@
       }
 
       .menu-item-photo {
-        max-height: 100%;
-        width: 40%;
-        margin-right: 35px;
+        max-height: 58%;
+        width: 100%;
+        justify-content: center;
         .flex-center;
+        margin-bottom: 20px;
+
+        img {
+          min-width: unset;
+        }
       }
 
       .menu-item-title {
         color: @btn-color;
         width: 100%;
-        margin-bottom: 10px;
-        .block-title;
+        margin-bottom: 30px;
+        .component-title;
       }
     }
   }
 
   .menu-item-controls {
-    margin-top: 40px;
+    //margin-top: 40px;
     .flex-center;
+    justify-content: space-between;
   }
 
   .viewtext {
@@ -104,19 +117,25 @@
     .additional;
     .menu-item-duration {
       .flex-center;
+      font-size: 18px;
     }
 
     img {
       min-width: auto;
       display: inline;
-      width: 20px;
-      height: 20px;
+      width: 35px;
+      height: 35px;
       margin-right: 5px;
     }
   }
 
   .menu-item-button, .menu-duration {
     display: inline-block;
+
+    button {
+      background: @green-tab-180-grad;
+      color: black;
+    }
   }
 
   .pagelevelprogress__indicator {
@@ -171,7 +190,7 @@
         }
 
         .menu-item-photo, .menu-texts {
-          margin-bottom: 20px;
+          margin-bottom: 38px;
         }
       }
     }

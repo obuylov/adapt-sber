@@ -136,17 +136,15 @@ define([
     getCurrentMenu: function() {
 
       var parents = this.getAncestorModels ? this.getAncestorModels() : this.getParents().models;
-      for (var i = 0, l = parents.length; i < l; i++) {
+       for (var i = 0, l = parents.length; i < l; i++) {
 
-        var model = parents[i];
-        switch (model.get('_type')) {
-          case 'menu':
-          case 'course':
-            return model;
-        }
-
-      }
-
+         var model = parents[i];
+         switch (model.get('_type')) {
+           case 'menu':
+           case 'course':
+             return model;
+         }
+       }
     },
 
     getSiblingPages: function() {

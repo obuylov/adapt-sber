@@ -1237,7 +1237,7 @@
     "_parentId": "b-0-22",
     "_type": "component",
     "_component": "hotgraphic",
-    "_classes": "mini-image",
+    "_classes": "mini-image pin-green",
     "_layout": "full",
     "title": "Hot graphic",
     "displayTitle": "Длинный заголовок",

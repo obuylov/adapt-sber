@@ -1,11 +1,11 @@
 [
   {
-    "title": "Непрерывность бизнеса",
-    "displayTitle": "Непрерывность бизнеса",
+    "title": "Документы для валютных операций",
+    "displayTitle": "Документы для валютных операций",
     "body": "",
     "_classes": "",
     "subtitle": "",
-    "pageBody": "<p>Обеспечение непрерывности бизнеса и восстановления деятельности ПАО Сбербанк в чрезвычайных условиях</p>",
+    "pageBody": "",
     "instruction": "",
     "_htmlClasses": "",
     "linkText": "Изучить",
@@ -23,7 +23,7 @@
     "_parentId": "course",
     "_graphic": {
       "alt": "а",
-      "src": "course/en/assets/1.png"
+      "src": "course/en/assets/menu1.png"
     },
     "_onScreen": {
       "_isEnabled": false,
@@ -100,12 +100,12 @@
     }
   },
   {
-    "title": "Непрерывность бизнеса",
-    "displayTitle": "Непрерывность бизнеса",
+    "title": "Акцепт валютных переводов",
+    "displayTitle": "Акцепт валютных переводов",
     "body": "",
     "_classes": "",
     "subtitle": "",
-    "pageBody": "<p>Обеспечение непрерывности бизнеса и восстановления деятельности ПАО Сбербанк в чрезвычайных условиях</p>",
+    "pageBody": "",
     "instruction": "",
     "_htmlClasses": "",
     "linkText": "Изучить",
@@ -123,7 +123,7 @@
     "_type": "page",
     "_graphic": {
       "alt": "лого",
-      "src": "course/en/assets/2.png"
+      "src": "course/en/assets/menu2.png"
     },
     "_onScreen": {
       "_isEnabled": false,

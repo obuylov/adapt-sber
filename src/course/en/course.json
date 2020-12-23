@@ -1,7 +1,7 @@
 {
   "title": "New Course Title",
   "displayTitle": "Вводный курс для сотрудников Банка по управлению комплаенс-рисками",
-  "body": "<div class=\"two-cols\"><div class=\"col\"><p class='block-title'>В ходе работы с курсом<br />Вы узнаете:</p><ul><li>Об этических&nbsp;принципах, принятых в Банке</li><li>О том, что такое комплаенс и каковы функции комплаенс в Банке&nbsp;</li></ul></div><div class=\"col\"><p class='block-title'>Курс считается пройденным успешно, если Вы:</p><ul><li>Просмотрели все информационные блоки</li><li>Выполнили все&nbsp;упражнения</li><li>Ответили на тестовые вопросы курса</li></ul></div></div><div class=\"sber-copy\">Курс разработан для обучения всех сотрудников ПАО Сбербанк (далее — Банк, Сбербанк).</div>",
+  "body": "<div class=\"two-cols\"><div class=\"col white\"><p class='heading'>В ходе работы с курсом<br />Вы узнаете:</p><ul><li>Об этических&nbsp;принципах, принятых в Банке</li><li>О том, что такое комплаенс и каковы функции комплаенс в Банке&nbsp;</li></ul></div><div class=\"col white\"><p class='heading'>Курс считается пройденным успешно, если Вы:</p><ul><li>Просмотрели все информационные блоки</li><li>Выполнили все&nbsp;упражнения</li><li>Ответили на тестовые вопросы курса</li></ul></div></div><div class=\"sber-copy\">Курс разработан для обучения всех сотрудников ПАО Сбербанк (далее — Банк, Сбербанк).</div>",
   "subtitle": "Рады приветствовать Вас в курсе «Вводный курс для сотрудников Банка по управлению комплаенс-рисками».",
   "description": "2",
   "instruction": "",
@@ -32,7 +32,7 @@
     "remainingAttemptText": "final attempt",
     "disabledAriaLabel": "This button is disabled at the moment"
   },
-  "_classes": "",
+  "_classes": "main-grad",
   "_requireCompletionOf": -1,
   "_lockType": "",
   "_id": "course",
