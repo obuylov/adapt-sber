@@ -9,7 +9,6 @@
     position: relative;
     top: 0;
     width: 100%;
-    // height: 0;
     max-width: 915px;
     margin: 0 auto;
     transition: 0.2s;
@@ -46,15 +45,13 @@
 
       &:after {
         content: ' ';
-        border: 40px solid transparent;
-        border-left: 60px solid #7DD3B9;
-        border-top: 20px #7DD3B9;
+        border: 20px solid transparent;
+        border-left: 20px solid #8EEED2;
+        border-top: 20px #8EEED2;
         position: absolute;
-        bottom: -28px;
+        bottom: -15px;
         left: 0;
         z-index: -2;
-        box-shadow: inset 0 0 80px 40px rgba(0, 0, 0, 0.15),
-        inset rgba(142,238,210,0.8) 0 0 16px 15px;
         //content: url("assets/bubble-tail.svg");
 
         @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
@@ -103,14 +100,14 @@
         margin-right: 5px;
       }
     }
-    &.left-message{
+
+    &.left-message {
       .sber-txtmessages-item-text {
-        box-shadow: inset 0 0 80px 40px rgba(0, 0, 0, 0.15),
-                    inset rgba(142,238,210,0.8) 0 0 16px 15px;
         background: @green-tab-180-grad;
         background-blend-mode: multiply;
       }
     }
+
     &.right-message {
       flex-direction: row-reverse;
 

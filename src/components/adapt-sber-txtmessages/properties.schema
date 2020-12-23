@@ -45,7 +45,10 @@
             "type": "string",
             "required": true,
             "title": "С какой стороны?",
-            "enum": ["left", "right"],
+            "enum": [
+              "left",
+              "right"
+            ],
             "inputType": {
               "type": "Select",
               "options": [
@@ -69,17 +72,17 @@
             "help": "This is the optional item body text",
             "translatable": true
           },
-"_whoSays": {
-"type": "string",
-"required": true,
-"inputType": "Text",
-"title": "Кто говорит?",
-"default": "",
-"validators": [
-"required"
-],
-"help": "Имя персонажа",
-"translatable": true
+          "_whoSays": {
+            "type": "string",
+            "required": true,
+            "inputType": "Text",
+            "title": "Кто говорит?",
+            "default": "",
+            "validators": [
+              "required"
+            ],
+            "help": "Имя персонажа",
+            "translatable": true
           },
           "_graphic": {
             "type": "object",

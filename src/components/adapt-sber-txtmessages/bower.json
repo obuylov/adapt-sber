@@ -1,7 +1,7 @@
 {
   "name": "adapt-sber-txtmessages",
   "description": "Txt messages fly in one item at a time.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "framework": ">=5",
   "displayName": "Сбер Text Messages",
   "component": "sber-txtmessages",
