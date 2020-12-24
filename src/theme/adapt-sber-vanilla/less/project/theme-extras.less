@@ -142,15 +142,23 @@
     &.white {
       width: 48%;
       margin-bottom: 50px;
-      padding: 20px 40px;
+      padding: 47px 45px 68px;
       border-radius: 5px;
       background-color: white;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     }
 
     .heading {
-      margin-bottom: 40px;
-      .component-title;
+      p {
+        margin-bottom: 40px;
+        .component-title;
+      }
+    }
+
+    .heading-first-level {
+      p {
+        .article-title;
+      }
     }
 
     ul {
@@ -243,6 +251,7 @@
     &:nth-child(odd) {
       background: @light-green;
     }
+
     &:first-of-type {
       background: @green-tab-180-grad;
       text-align: center;
@@ -252,6 +261,11 @@
   }
 
 }
+
+.table-opacity-white {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .table-green {
   border-collapse: collapse;
   border-radius: 5px;

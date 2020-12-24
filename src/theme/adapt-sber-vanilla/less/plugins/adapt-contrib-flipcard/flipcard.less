@@ -140,17 +140,47 @@
       top: 50%;
       left: 50%;
     }
+
     .flipcard__item-frontTitle p {
       margin: 0 auto;
     }
   }
 }
+
+.no-back-title {
+  .flipcard__item-back-title {
+    display: none;
+  }
+}
+
+.icon-left {
+  .flipcard__item-frontImage {
+    min-width: unset;
+    height: 70px;
+    width: fit-content;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .flipcard__item-frontTitle {
+    height: 30%;
+    .component-title;
+
+    p {
+      margin: 30px;
+      margin-top: unset;
+    }
+  }
+}
+
 // Картинка, под заголовком стрелка с "Подробнее"
 .two-col-card {
   .flipcard__item-front {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+
     .flipcard__item-frontTitle {
       position: unset;
       width: 46%;
