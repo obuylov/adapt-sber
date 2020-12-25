@@ -8,7 +8,7 @@
     "_layout": "full",
     "title": "Here is a graphic object",
     "displayTitle": "PNG-файл",
-    "body": "",
+    "body": "<ol><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et hic ipsam placeat quas suscipit voluptate voluptatum? Dolorem doloribus est facilis incidunt provident quas quibusdam repudiandae veritatis! Amet nesciunt, quaerat? Beatae.</li></ol>",
     "instruction": "",
     "_graphic": {
       "alt": "Placeholder graphic",
@@ -392,7 +392,7 @@
     "displayTitle": "Длинный заголовок",
     "body": "",
     "instruction": "",
-    "_tabLayout": "horizontal",
+    "_tabLayout": "vertical",
     "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
     "_items": [
       {
