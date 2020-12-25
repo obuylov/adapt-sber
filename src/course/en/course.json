@@ -240,11 +240,9 @@
     "_isCompletionIndicatorEnabled": false,
     "_isShownInNavigationBar": true
   },
-  "_sber-scrollMenu": {
-    "_backgroundImage": {
-      "_large": "course/en/assets/a25637bafa56cf710fcac9520090f354516edce4.png",
-      "_medium": "",
-      "_small": ""
+  "_sber-boxMenu": {
+    "_menuImage": {
+      "_image": "course/en/assets/course.png"
     }
   }
 }

@@ -20,9 +20,20 @@ define([
     },
 
     setStyles: function() {
+      this.setCoursePreview();
       this.setBackgroundImage();
       this.setBackgroundStyles();
       this.processHeader();
+    },
+
+    setCoursePreview: function() {
+      if (this.addedPhoto) return;
+
+      let menu = this.model.get("_sber-boxMenu");
+      if (menu && menu._menuImage) {
+        this.$el.find(".menu__preview-image").append("<img src='"+menu._menuImage._image+"' alt='icon'>");
+        this.addedPhoto = true;
+      }
     },
 
     setBackgroundImage: function() {

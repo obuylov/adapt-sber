@@ -28,6 +28,21 @@
               "type": "object",
               "required": false,
               "properties": {
+                "_menuImage": {
+                  "type": "object",
+                  "required": false,
+                  "legend": "Изображение в меню курса",
+                  "properties": {
+                    "_image": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "validators": [],
+                      "help": "Какое изображение будет находиться рядом с заголовком"
+                    }
+                  }
+                },
                 "_backgroundImage": {
                   "type": "object",
                   "required": false,
