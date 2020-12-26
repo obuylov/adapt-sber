@@ -1761,63 +1761,31 @@
     "_id": "c-0-31",
     "_parentId": "b-0-30",
     "_type": "component",
-    "_component": "sentenceOrdering",
+    "_component": "sber-ordering",
     "_classes": "",
     "_layout": "full",
     "title": "Sentence Ordering Component",
     "displayTitle": "Упражнение 1",
     "body": "Расставьте этапы рассмотрения факторинговой сделки в правильной последовательности. ",
     "instruction": "",
-    "_attempts": 1,
-    "_shouldDisplayAttempts": false,
-    "_questionWeight": 1,
-    "_itemWeight": 1,
     "_isRandom": true,
-    "_canShowModelAnswer": true,
-    "_canShowMarking":true,
-    "_recordInteraction": false,
-    "_shouldScale":false,
-    "_defaultWidth": 860,
-    "_isPrefixTitle":false,
     "_feedback": {
       "correct": "This feedback will appear if you answered the question correctly.",
-      "_incorrect": {
-        "notFinal": "первый",
-        "final": "This feedback will appear if you answered the question incorrectly."
+      "incorrect": "This feedback will appear if you answered the question incorrectly."
+    },
+    "_items": [
+      {
+        "text": "привет",
+        "position": 1
       },
-      "_partlyCorrect": {
-        "notFinal": "второй",
-        "final": "This feedback will appear if you answered part of the question correctly."
+      {
+        "text": "hello!",
+        "position": 2
+      },
+      {
+        "text": "bye!",
+        "position": 0
       }
-    },
-    "_items":[
-      {
-      "id" : 1,
-      "prefixTitle":"Title 1",
-      "sentence":"Открыть расчетный счет (при его отсутствии).",
-      "position":[1]
-    },
-      {
-      "id" : 2,
-      "prefixTitle":"Title 2",
-      "sentence":"Оказать содействие Клиенту в подключении к системе электронного документооборота «Сфера Курьер» (при отсутствии подключенной услуги).",
-      "position":[2]
-    },{
-      "id" : 3,
-      "prefixTitle":"Title 3",
-      "sentence":"Передать Клиенту для ознакомления Типовую форму ГДФО.",
-      "position":[3]
-    }, {
-      "id" : 4,
-      "prefixTitle":"Title 4",
-      "sentence":"Передать Клиенту перечень документов, необходимых для рассмотрения проекта факторинговой сделки.",
-      "position":[4]
-    }, {
-      "id" : 5,
-      "prefixTitle":"Title 5",
-      "sentence":"По запросу Клиента оказать содействие по передаче пакета документов в «Сбербанк Факторинг» посредством ЭДО.",
-      "position":[5]
-    }
     ]
   },
   {

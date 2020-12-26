@@ -1,0 +1,18 @@
+<div class="component__inner sber-ordering__inner">
+  {{> component this}}
+
+
+  <div class="ordering__container">
+    {{#each _items}}
+
+      <div class="ordering__item">
+        <div class="ordering__item-text">{{text}}</div>
+      </div>
+
+    {{/each}}
+  </div>
+
+  <div class="btn__container">
+    <button class="btn-text btn__action js-btn-action" aria-label="Submit">Ответить</button>
+  </div>
+</div>

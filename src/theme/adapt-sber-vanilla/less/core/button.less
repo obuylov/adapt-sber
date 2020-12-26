@@ -1,6 +1,10 @@
 .btn {
   &__container {
     margin-top: 70px;
+
+    .disabled, .disabled:hover {
+      background: @disabled !important;
+    }
   }
 
   &__response-container {
@@ -71,6 +75,7 @@
     }
   }
 }
+
 button:not(.is-disabled):not(.is-locked) {
   outline: none;
 }
