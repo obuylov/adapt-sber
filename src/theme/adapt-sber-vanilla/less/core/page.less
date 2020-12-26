@@ -15,23 +15,33 @@
   }
 
   &__header-inner {
-    .l-container-padding(@page-header-padding-ver, @page-header-padding-hoz);
+    padding: 100px 0;
+    max-width: 820px;
 
     &.with-pic {
       display: flex;
       align-items: center;
 
-      img {
-        min-width: auto;
-        max-width: 50%;
-        margin-right: 30px;
+      .page__photo, .page__texts {
+        width: 49%;
       }
 
-      @media (max-width: @device-width-small) {
+      img {
+        min-width: 70%;
+      }
+
+      @media (max-width: @device-width-medium) {
         flex-wrap: wrap;
+        padding: 100px 30px;
+
+        .page__photo, .page__texts {
+          width: 100%;
+        }
 
         img {
           max-width: none;
+          margin: 50px auto;
+          transform: scale(1);
         }
       }
     }

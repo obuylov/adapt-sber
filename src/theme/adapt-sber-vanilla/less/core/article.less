@@ -2,8 +2,7 @@ body {
   counter-reset: part;
 }
 
-
-.article{
+.article {
   &.show-part {
     .article__inner {
       .block:first-of-type .block__inner {
@@ -21,9 +20,6 @@ body {
       }
     }
   }
-  &.figures {
-    position: relative;
-  }
 
   &:last-of-type .block:last-of-type {
     padding-bottom: 50px;
@@ -33,9 +29,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+
+    .block__inner {
+      padding: 200px 0 150px;
+    }
   }
 
   &__header-inner {
+    max-width: 820px;
     .l-container-padding(@article-header-padding-ver, @article-header-padding-hoz);
   }
 
@@ -133,13 +134,16 @@ body {
   &.blue-green-grad {
     background-image: @blue-green-grad;
   }
-  &.mint-grad{
+
+  &.mint-grad {
     background: @mint-green;
   }
-  &.mint-grad-light{
+
+  &.mint-grad-light {
     background: @mint-green-light;
   }
-  &.green-yellow-grad-4{
+
+  &.green-yellow-grad-4 {
     background: @green-yellow-grad-4;
   }
 }
