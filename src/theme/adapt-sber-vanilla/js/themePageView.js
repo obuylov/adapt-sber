@@ -13,19 +13,21 @@ define([
     },
 
     setupPagePhoto: function() {
-      if (this.$el.find(".page__photo").length > 0) return false;
-
       let id = Adapt.location._currentId;
       let page = Adapt.contentObjects._byAdaptID[id][0];
-      let el = this.$el.find(".page__header-inner")[0];
 
-      if (!page.get("_graphic").src) return false;
+      if (!page.get('_graphic') || this.$el.find('.page__photo').length > 0) return false;
+
+      let el = this.$el.find('.page__header-inner')[0];
+
+      if (!page.get('_graphic').src) return false;
 
       el.innerHTML += `<div class="page__photo"><img src="${page.get('_graphic').src}" alt="page photo"></div><div class="page__texts"></div>`;
       el.querySelector('.page__texts').append(el.querySelector('.page__title'));
 
-      if (el.querySelector(".page__body"))
-        el.querySelector(".page__texts").append(el.querySelector(".page__body"));
+      if (el.querySelector('.page__body')) {
+        el.querySelector('.page__texts').append(el.querySelector('.page__body'));
+      }
 
       el.classList.add("with-pic");
     },

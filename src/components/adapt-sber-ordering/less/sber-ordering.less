@@ -1,6 +1,4 @@
 .ordering__container {
-  display: flex;
-  flex-direction: column;
   margin-top: 50px;
 
   .ordering__item {
@@ -38,4 +36,9 @@
   @media (max-width: @device-width-small) {
     padding: 50px 30px;
   }
+}
+
+.ui-sortable-handle {
+  -ms-touch-action: none;
+  touch-action: none
 }

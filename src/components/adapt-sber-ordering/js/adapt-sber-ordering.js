@@ -2,8 +2,9 @@ define([
   'core/js/adapt',
   'core/js/views/questionView',
   'core/js/models/questionModel',
-  './jqueryUi'
-], function (Adapt, QuestionView, QuestionModel, ui) {
+  'libraries/jquery-ui.min',
+  // "libraries/jquery.ui.touch-punch"
+], function (Adapt, QuestionView, QuestionModel) {
 
   class SberOrderingView extends QuestionView {
     preRender() {
