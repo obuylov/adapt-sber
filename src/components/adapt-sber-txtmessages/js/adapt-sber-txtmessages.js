@@ -1,62 +1,60 @@
-define(function (require) {
-  var ComponentView = require('coreViews/componentView');
-  var Adapt = require('coreJS/adapt');
+define([
+  'core/js/adapt',
+  'core/js/views/componentView',
+  'core/js/models/componentModel'
+], function (Adapt, ComponentView, ComponentModel) {
 
-  var TxtMessages = ComponentView.extend({
-    preRender: function () {
-      this.model.set("_stage", -1);
-    },
+  class SberTxtMessages extends ComponentView {
+    preRender() {
+      this.model.set('_stage', -1);
+    }
 
-    postRender: function () {
+    postRender() {
       this.setReadyStatus();
 
-      let self = this;
-
-      this.$(".sber-txtmessages-item").each(function (){
+      this.$('.sber-txtmessages-item').each(function () {
         let side = $(this).hasClass('right-message') ? 1 : -1;
-        $(this).css('transform', 'translateX(' + $(this).parent()[0].offsetWidth * side + "px)");
+        $(this).css('transform', 'translateX(' + $(this).parent()[0].offsetWidth * side + 'px)');
       });
 
+      let self = this;
+      this.started = false;
+
       this.$('.sber-txtmessages-widget').on('inview', function (event, isInView) {
-        if (!isInView)
+        if (!isInView || self.started) {
           return;
+        }
+
+        self.started = true;
         // whole part of element is visible
         if (self.model.get('_isComplete')) {
+          console.log('!!already completed!!');
           self.model.set('offsetTime', 100);
           self.fireMessage();
           return;
         }
 
-        if (self.model.get("waitFor")) {
-          let modelId = self.model.get("waitFor");
-          if (Adapt.components._byAdaptID[modelId][0].attributes._isComplete)
-            self.fireMessage();
-        } else {
-          self.fireMessage();
-        }
+        self.fireMessage();
       });
+    }
 
-      if (this.model.get('_autoCompleted'))
-        this.setCompletionStatus();
-    },
-
-    nextMessage: function(stage) {
+    nextMessage(stage) {
       stage++;
 
-      this.$(".sber-txtmessages-item").eq(stage).addClass('open');
+      this.$('.sber-txtmessages-item').eq(stage).addClass('open');
       this.model.set('_stage', stage);
       return stage;
-    },
+    }
 
-    fireMessage: function() {
-      let elements = this.$(".sber-txtmessages-item").length;
+    fireMessage() {
+      let elements = this.$('.sber-txtmessages-item').length;
       let stage = this.model.get('_stage');
 
       if (stage < elements) {
         if (stage === -1) {
-          setTimeout(function() {
+          setTimeout(function () {
             stage = this.nextMessage(stage);
-          }.bind(this), 500)
+          }.bind(this), 500);
         }
 
         let mainInterval = setInterval(function () {
@@ -71,22 +69,21 @@ define(function (require) {
           }
         }.bind(this), parseInt(this.model.get('offsetTime')));
 
-        Adapt.on("remove", function() {
+        Adapt.on('remove', function () {
           clearInterval(mainInterval);
-        })
+        });
       }
+    }
 
-      if (!this.model.get("_isComplete") && stage >= elements)
-        this.onComplete();
-    },
-
-    onComplete: function () {
+    onComplete() {
       this.setCompletionStatus();
     }
+  }
+
+  SberTxtMessages.template = 'sber-txtmessages';
+
+  return Adapt.register('sber-txtmessages', {
+    model: ComponentModel.extend({}),// create a new class in the inheritance chain so it can be extended per component type if necessary later
+    view: SberTxtMessages
   });
-
-  Adapt.register('sber-txtmessages', TxtMessages);
-
-  return TxtMessages;
-
 });

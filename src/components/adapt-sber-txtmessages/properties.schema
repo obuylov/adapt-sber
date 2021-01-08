@@ -110,6 +110,15 @@
           }
         }
       }
+    },
+    "offsetTime": {
+      "type": "number",
+      "required": false,
+      "default": 2000,
+      "title": "Скорость вылета сообщений",
+      "inputType": "Number",
+      "validators": [],
+      "help": "Через сколько миллисекунд будет вылетать следующее сообщение"
     }
   }
 }

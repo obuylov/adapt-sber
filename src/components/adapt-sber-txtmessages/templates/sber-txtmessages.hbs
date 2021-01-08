@@ -6,7 +6,7 @@
       <div class="sber-txtmessages-items-inner {{_classes}}">
         {{#each _items}}
           <div class="sber-txtmessages-item {{_class}} {{_align}}-message">
-            {{#if _graphic}}
+            {{#if _graphic.src}}
               <div class="sber-txtmessages-item-graphic">
                 <img src="{{_graphic.src}}" alt="avatar-icon" aria-label="avatar-icon" tabindex="0">
                 <span class="who-says">{{_whoSays}}</span>
