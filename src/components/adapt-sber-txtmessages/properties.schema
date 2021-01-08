@@ -33,6 +33,22 @@
       "validators": [],
       "help": "This is the instruction text"
     },
+    "_leftBackground": {
+      "title": "Фон сообщений слева",
+      "type": "string",
+      "required": false,
+      "inputType": "Text",
+      "default": "",
+      "help": "Цвет или linear-gradient"
+    },
+    "_rightBackground": {
+      "title": "Фон сообщений справа",
+      "type": "string",
+      "required": false,
+      "inputType": "Text",
+      "default": "",
+      "help": "Цвет или linear-gradient"
+    },
     "_items": {
       "type": "array",
       "required": true,
@@ -74,13 +90,11 @@
           },
           "_whoSays": {
             "type": "string",
-            "required": true,
+            "required": false,
             "inputType": "Text",
             "title": "Кто говорит?",
             "default": "",
-            "validators": [
-              "required"
-            ],
+            "validators": [],
             "help": "Имя персонажа",
             "translatable": true
           },

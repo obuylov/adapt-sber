@@ -43,16 +43,13 @@
       margin-bottom: 30px;
       border-radius: 5px;
 
-      &:after {
-        content: ' ';
+      .message-tail {
         border: 20px solid transparent;
-        border-left: 20px solid #8EEED2;
-        border-top: 20px #8EEED2;
+        border-left-color: @green-button;
         position: absolute;
         bottom: -15px;
         left: 0;
         z-index: -2;
-        //content: url("assets/bubble-tail.svg");
 
         @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
           bottom: -10px;
@@ -103,7 +100,7 @@
 
     &.left-message {
       .sber-txtmessages-item-text {
-        background: @green-tab-180-grad;
+        background: @green-button;
         background-blend-mode: multiply;
       }
     }
@@ -113,14 +110,12 @@
 
       .sber-txtmessages-item-text {
         background: @light-gray;
-        box-shadow: @shadow-full;
         margin-right: 0 !important;
 
-        &:after {
+        .message-tail {
           transform: scale(-1, 1);
           right: 0;
-          border-left: 60px solid #f6f6f6;
-          border-top: 20px solid #f6f6f6;
+          border-left: 20px solid @light-gray;
           z-index: auto;
 
           @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {

@@ -12,6 +12,8 @@ define([
     postRender() {
       this.setReadyStatus();
 
+      this.checkBackgrounds();
+
       this.$('.sber-txtmessages-item').each(function () {
         let side = $(this).hasClass('right-message') ? 1 : -1;
         $(this).css('transform', 'translateX(' + $(this).parent()[0].offsetWidth * side + 'px)');
@@ -35,6 +37,29 @@ define([
         }
 
         self.fireMessage();
+      });
+    }
+
+    checkBackgrounds() {
+      let self = this;
+
+      ['left', 'right'].forEach(name => {
+        let bg = self.model.get('_' + name + 'Background');
+
+        if (bg) {
+          let border = '';
+
+          if (bg.match(/linear/)) {
+            border = bg.match(/180deg/) || bg.match(/to bottom/) ? (bg.match(/#[A-Za-z0-9]{6} 0%/gm)[0].split(' ')[0]) : (bg.match(/#[A-Za-z0-9]{6} 100%/gm)[0].split(' ')[0]);
+          } else {
+            border = bg;
+          }
+
+          self.$('.' + name + '-message').each(function () {
+            $(this).find('.sber-txtmessages-item-text').css('background', bg);
+            $(this).find('.message-tail').css('border-left-color', border);
+          });
+        }
       });
     }
 
