@@ -392,7 +392,7 @@ ol {
   padding: 0 0 0 40px;
   counter-reset: ol-counter;
 
-  li {
+  & > li {
     position: relative;
     list-style: none;
     margin-bottom: 20px;
@@ -425,9 +425,7 @@ b, strong {
 }
 
 .m-0 p {
-  &:first-of-type, &:last-of-type {
     margin: 0;
-  }
 }
 
 .min-width-0 {
