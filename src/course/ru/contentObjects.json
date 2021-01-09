@@ -1,8 +1,8 @@
 [
   {
-    "title": "Введение",
-    "displayTitle": "Введение",
-    "body": "<p>В первой части курса Вы познакомитесь с базовой информацией по мониторингу контрактов и гарантийных обязательств по контрактам.</p>",
+    "title": "New Menu/Page Title",
+    "displayTitle": "New Menu/Page Title",
+    "body": "",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
@@ -18,55 +18,14 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fd4cf4fdf5af363a4c1f1c6",
-    "_type": "page",
+    "_id": "5ff83dd968656502e6053d62",
     "_parentId": "course",
-    "_graphic": {
-      "alt": "123",
-      "src": "course/en/assets/22f44b9f8b2bce06e227d477f31a0691acbf50ae.png"
-    },
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_boxMenu": {
-      "_renderAsGroup": false
-    },
-    "_vanilla": {
-      "_backgroundImage": {
-        "_large": "",
-        "_medium": "",
-        "_small": ""
-      },
-      "_backgroundStyles": {
-        "_backgroundRepeat": null,
-        "_backgroundSize": null,
-        "_backgroundPosition": null
-      },
-      "_pageHeader": {
-        "_backgroundImage": {
-          "_large": "",
-          "_medium": "",
-          "_small": ""
-        },
-        "_backgroundStyles": {
-          "_backgroundRepeat": null,
-          "_backgroundSize": null,
-          "_backgroundPosition": null
-        },
-        "_minimumHeights": {
-          "_large": null,
-          "_medium": null,
-          "_small": null
-        }
-      }
-    }
+    "_type": "page"
   },
   {
-    "title": "Виды банковских гарантий",
-    "displayTitle": "Виды банковских гарантий",
-    "body": "<p>В этой части курса Вы узнаете, на какие виды делятся банковские гарантии, что они подразумевают для принципала и для бенефициара, а также какие риски несет каждый вид.</p>",
+    "title": "Ветвление",
+    "displayTitle": "Ветвление",
+    "body": "",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
@@ -82,12 +41,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fd4e26926f36f6649e9523e",
+    "_id": "5fe9e1a868656502e6052f94",
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
       "alt": "",
-      "src": "course/en/assets/f3605517c4bb1bd3ba42c8c2f3252eb10ad28f95.png"
+      "src": ""
     },
     "_onScreen": {
       "_isEnabled": false,
@@ -125,9 +84,9 @@
     }
   },
   {
-    "title": "Кейс",
-    "displayTitle": "Кейс",
-    "body": "<p>Вам предстоит проанализировать полученные от руководителя данные и ответить на 8 вопросов.<br /><br />Важно: для того чтобы перейти к тестированию, Вам необходимо правильно ответить на все вопросы кейса.<br /><br />Если Вы не справитесь с первой попытки, у Вас будет возможность выполнить кейс еще раз. Количество попыток не ограничено.<br /><br /><strong>Результаты упражнения учитываются в итоговой статистике прохождения курса.</strong></p>",
+    "title": "Сбер порядок",
+    "displayTitle": "Сбер порядок",
+    "body": "",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
@@ -143,73 +102,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fd94425ad6de50ed13e90d5",
-    "_parentId": "course",
+    "_id": "5fe76c3268656502e6052d5c",
     "_type": "page",
+    "_parentId": "course",
     "_graphic": {
       "alt": "",
-      "src": "course/en/assets/6ddc71182497abea52b08c086f6ba15495b06749.png"
-    },
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_sber-vanilla": {
-      "_backgroundImage": {
-        "_large": "",
-        "_medium": "",
-        "_small": ""
-      },
-      "_backgroundStyles": {
-        "_backgroundRepeat": null,
-        "_backgroundSize": null,
-        "_backgroundPosition": null
-      },
-      "_pageHeader": {
-        "_backgroundImage": {
-          "_large": "",
-          "_medium": "",
-          "_small": ""
-        },
-        "_backgroundStyles": {
-          "_backgroundRepeat": null,
-          "_backgroundSize": null,
-          "_backgroundPosition": null
-        },
-        "_minimumHeights": {
-          "_large": null,
-          "_medium": null,
-          "_small": null
-        }
-      }
-    }
-  },
-  {
-    "title": "Тестирование",
-    "displayTitle": "Тестирование",
-    "body": "<p>Вы закончили изучение раздела, и теперь Вам предстоит пройти тестирование, которое состоит из 6 вопросов.<br /><br />Важно: для того чтобы успешно закончить обучение, Вам необходимо ответить правильно на все вопросы тестирования.<br /><br />Если Вы не справитесь с первой попытки, у Вас будет возможность выполнить тестирование еще раз. Количество попыток не ограничено.<br /><br /><strong>Результаты данного тестирования учитываются в итоговой статистике прохождения курса.</strong></p>",
-    "_classes": "",
-    "subtitle": "",
-    "pageBody": "",
-    "instruction": "",
-    "_htmlClasses": "",
-    "linkText": "View",
-    "duration": "",
-    "_lockedBy": [],
-    "_lockType": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fd94ccfad6de50ed13e9110",
-    "_parentId": "course",
-    "_type": "page",
-    "_graphic": {
-      "alt": "",
-      "src": "course/en/assets/85b165ad4ca8168fbb443aad5294026c2c883997.png"
+      "src": ""
     },
     "_onScreen": {
       "_isEnabled": false,

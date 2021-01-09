@@ -1,0 +1,19 @@
+{
+  "name": "adapt-block-branching",
+  "version": "1.0.1",
+  "framework": ">=2.0.0",
+  "displayName": "Block Branching",
+  "main": "/js/adapt-block-branching.js",
+  "description": "Extension that allows enables scenarios on a page. When a question is answered it reveals the corresponding block below.",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "authors": [
+    "Simon Date <simon@adaptfreelancer.com>"
+  ],
+  "extension": "scenario",
+  "targetAttribute": "_blockBranching",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/simondate/adapt-block-branching"
+}

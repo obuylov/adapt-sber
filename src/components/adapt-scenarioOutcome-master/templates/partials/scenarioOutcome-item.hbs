@@ -1,0 +1,17 @@
+{{import_globals}}
+{{#if _isEnabled}}
+  <button
+      class="btn-text scenarioOutcome__btn{{#if _classes}} {{_classes}}{{/if}} js-scenarioOutcome-btn"
+      role="link"
+      data-type="{{@key}}">
+    <div class="scenarioOutcome__btn-inner">
+      {{#if text}}
+        <div class="scenarioOutcome__btn-text">
+          <div class="scenarioOutcome__btn-text-inner">
+            {{{compile text this}}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </button>
+{{/if}}

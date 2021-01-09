@@ -1,12 +1,12 @@
 {
-  "title": "Мониторинг контрактов и гарантийных обязательств по контрактам",
-  "displayTitle": "Мониторинг контрактов и гарантийных обязательств по контрактам",
-  "body": "<p>Курс разработан для обучения кредитных инспекторов Управления мониторинга кредитных операций и залогового обеспечения.</p>",
+  "title": "тестовый",
+  "displayTitle": "тестовый",
+  "body": "",
   "subtitle": "",
   "description": "",
   "instruction": "",
   "_htmlClasses": "",
-  "_latestTrackingId": 68,
+  "_latestTrackingId": 7,
   "_buttons": {
     "_submit": {
       "buttonText": "Submit",
@@ -69,22 +69,6 @@
       }
     },
     "_components": {
-      "_sber-tabs": {
-        "ariaRegion": "A tabbed content container. Content can be text, graphic or both."
-      },
-      "_list": {
-        "ariaRegion": ""
-      },
-      "_sber-txtmessages": {
-        "ariaRegion": ""
-      },
-      "_sber-downloader": {
-        "ariaRegion": ""
-      },
-      "_hotgrid": {
-        "ariaRegion": "Selectable image component. Select each item to show more information.",
-        "popupPagination": "{{itemNumber}} / {{totalItems}}"
-      },
       "_text": {
         "ariaRegion": ""
       },
@@ -126,52 +110,40 @@
         "ariaRegion": "Slider. Respond to the question by selecting a value on the scale and then submit.",
         "labelStart": "Start of the scale",
         "labelEnd": "End of the scale"
+      },
+      "_hotgrid": {
+        "ariaRegion": "Selectable image component. Select each item to show more information.",
+        "popupPagination": "{{itemNumber}} / {{totalItems}}"
+      },
+      "_sber-tabs": {
+        "ariaRegion": "A tabbed content container. Content can be text, graphic or both."
+      },
+      "_list": {
+        "ariaRegion": ""
+      },
+      "_flipcard": {
+        "ariaRegion": "This component is a flipcard comprised of flippable cards containing display image. Select the front face image to flip to the back face of these card to display associated text."
+      },
+      "_sber-downloader": {
+        "ariaRegion": ""
+      },
+      "_scenarioOutcome": {
+        "ariaRegion": ""
+      },
+      "_stacklist": {
+        "ariaRegion": "This stacklist component presents a list of items. Select the button to access each item in turn.",
+        "ariaButtonLabel": "Select this button to access the next item in the stacklist."
+      },
+      "_sber-ordering": {
+        "ariaRegion": ""
+      },
+      "_sber-txtmessages": {
+        "ariaRegion": ""
       }
     },
     "_extensions": {
-      "_glossary": {
-        "glossary": "Glossary",
-        "labelLink": "Terms beginning with",
-        "labelNavigation": "Glossary navigation"
-      },
-      "_close": {
-        "closeButton": "Select here to close the window."
-      },
-      "_xapi": {
-        "confirm": "OK",
-        "lrsConnectionErrorTitle": "LRS not available",
-        "lrsConnectionErrorMessage": "We were unable to connect to your Learning Record Store (LRS). This means that your progress cannot be recorded."
-      },
       "_trickle": {
         "incompleteContent": "There is incomplete content above. You must complete this before you can proceed through the course."
-      },
-      "_pageLevelProgress": {
-        "pageLevelProgress": "Page sections",
-        "pageLevelProgressIndicatorBar": "Page progress. Use this to listen to the list of regions in this topic and whether they're completed. You can jump directly to any that are incomplete or which sound particularly interesting. {{percentageComplete}}%",
-        "pageLevelProgressMenuBar": "Page completion {{percentageComplete}}%",
-        "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
-        "optionalContent": "Optional content"
-      },
-      "_resources": {
-        "resources": "Additional resources."
-      },
-      "_languagePicker": {
-        "navigationBarLabel": "Select course language",
-        "languageSelector": "Language selector"
-      }
-    },
-    "_menu": {
-      "_tilesmenu": {
-        "ariaRegion": "Menu",
-        "durationLabel": "Duration:",
-        "menuItem": "Menu item.",
-        "menuEnd": "You have reached the end of the menu."
-      },
-      "_boxMenu": {
-        "durationLabel": "Duration:"
-      },
-      "_scroll-sbermenu": {
-        "durationLabel": "Duration:"
       }
     }
   },
@@ -284,6 +256,16 @@
       "background-inverted": "#ffffff",
       "shadow": "#000000",
       "shadow-inverted": "#ffffff"
+    }
+  },
+  "_sber-boxMenu": {
+    "_menuImage": {
+      "_image": ""
+    },
+    "_backgroundImage": {
+      "_large": "",
+      "_medium": "",
+      "_small": ""
     }
   }
 }

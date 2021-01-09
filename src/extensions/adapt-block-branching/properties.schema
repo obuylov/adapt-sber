@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object",
+          "properties": {
+            "_blockBranching": {
+              "type": "object",
+              "required": false,
+              "legend": "Block branching",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Enable Block Branching",
+                  "inputType": "Checkbox"
+                },
+                "_resetOnRevisit": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Reset scenario on revisit",
+                  "inputType": "Checkbox",
+                  "help": "Reset the scenario if the learner leaves and then returns to the page"
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "_blockBranching": {
+              "type": "object",
+              "required": false,
+              "legend": "Block branching",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": false,
+                  "title": "Enable Block Branching",
+                  "inputType": "Checkbox"
+                },
+                "_scenarioId": {
+                  "type": "string",
+                  "default": "",
+                  "require": true,
+                  "title": "Scenario ID",
+                  "help": "An ID assigned to this block so that it can be revealed by another block",
+                  "inputType": "Text",
+                  "help": "help"
+                },
+                "_userAnswer": {
+                  "type": "array",
+                  "required": true,
+                  "title": "Answers",
+                  "items": {
+                    "type": "string",
+                    "default": "",
+                    "require": true,
+                    "title": "Scenario ID",
+                    "help": "These options should align with the answers in the question component inside this block. Whichever option is selected that scenario ID is revealed next",
+                    "inputType": "Text"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "adapt-scenarioOutcome",
+  "version": "4.0.2",
+  "framework": ">=5",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-text",
+  "issues": "https://github.com/adaptlearning/adapt_framework/issues/new",
+  "component": "scenarioOutcome",
+  "displayName": "ScenarioOutcome",
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-scenarioOutcome.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

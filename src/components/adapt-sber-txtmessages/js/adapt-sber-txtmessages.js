@@ -30,7 +30,6 @@ define([
         self.started = true;
         // whole part of element is visible
         if (self.model.get('_isComplete')) {
-          console.log('!!already completed!!');
           self.model.set('offsetTime', 100);
           self.fireMessage();
           return;
