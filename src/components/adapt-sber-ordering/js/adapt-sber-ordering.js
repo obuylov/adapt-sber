@@ -2,9 +2,8 @@ define([
   'core/js/adapt',
   'core/js/views/questionView',
   'core/js/models/questionModel',
-  'libraries/jquery-ui.min',
-  // "libraries/jquery.ui.touch-punch"
-], function (Adapt, QuestionView, QuestionModel) {
+  'libraries/Sortable.min'
+], function (Adapt, QuestionView, QuestionModel, Sortable) {
 
   class SberOrderingView extends QuestionView {
     preRender() {
@@ -54,10 +53,7 @@ define([
     }
 
     setupSortableLogic() {
-      this.$('.ordering__container').sortable({
-        axis: 'y'
-      });
-      this.$('.ordering__container').disableSelection();
+      this.sort = Sortable.create(this.$('.ordering__container')[0]);
     }
 
     onSubmitClicked() {
@@ -90,6 +86,7 @@ define([
     }
 
     addDisabledStyles() {
+      this.sort.option('disabled', true);
       this.$('button').attr('disabled', 'disabled');
       this.$('button').addClass('disabled');
     }

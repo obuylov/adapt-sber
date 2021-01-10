@@ -62,32 +62,32 @@
             "help": "На каком месте должен быть блок"
           }
         }
-      },
-      "_feedback": {
-        "type": "object",
-        "required": false,
-        "title": "Feedback",
-        "properties": {
-          "correct": {
-            "type": "string",
-            "required": false,
-            "default": "",
-            "title": "Верный ответ",
-            "inputType": "TextArea",
-            "validators": [],
-            "help": "Обратная связь при верном ответе",
-            "translatable": true
-          },
-          "incorrect": {
-            "type": "string",
-            "required": false,
-            "default": "",
-            "title": "Неверный ответ",
-            "inputType": "TextArea",
-            "validators": [],
-            "help": "Обратная связь при неверном ответе",
-            "translatable": true
-          }
+      }
+    },
+    "_feedback": {
+      "type": "object",
+      "required": false,
+      "title": "Обратная связь",
+      "properties": {
+        "correct": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Верный ответ",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Обратная связь при верном ответе",
+          "translatable": true
+        },
+        "incorrect": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Неверный ответ",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Обратная связь при неверном ответе",
+          "translatable": true
         }
       }
     }

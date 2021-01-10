@@ -207,7 +207,11 @@
         "text": "2",
         "position": 1
       }
-    ]
+    ],
+    "_feedback": {
+      "correct": "Nice!",
+      "incorrect": "Anti nice!"
+    }
   },
   {
     "_component": "text",
