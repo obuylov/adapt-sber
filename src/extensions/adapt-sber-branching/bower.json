@@ -1,0 +1,18 @@
+{
+    "name": "adapt-sber-branching",
+    "repository": "git://github.com/obuylov/adapt-sber",
+    "framework": ">=5",
+    "homepage": "https://github.com/obuylov/adapt-sber",
+    "version": "0.0.3",
+    "issues": "",
+    "displayName": "Sber Ветвление",
+    "extension": "sberBranching",
+    "description": "Расширение, которое добавляет ветвление по статьям для курса",
+    "main": "/js/adapt-sber-branching.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3",
+    "targetAttribute": "_sberBranching"
+}

@@ -1,7 +1,7 @@
 [
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Hello!",
     "body": "",
     "_classes": "",
     "_trackingId": 1,
@@ -12,8 +12,8 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe9e1a868656502e6052f96",
-    "_parentId": "5fe9e1a868656502e6052f95",
+    "_id": "5fc80c3facdd61c1b5a51cad",
+    "_parentId": "5fc80c3facdd61c1b5a51cac",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
@@ -44,14 +44,9 @@
         "_isLockedOnRevisit": false
       }
     },
-    "_blockBranching": {
-      "_isEnabled": true,
-      "_scenarioId": "0",
-      "_userAnswer": [
-        "1",
-        "2",
-        "3"
-      ]
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -85,8 +80,8 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ff83dd968656502e6053d64",
-    "_parentId": "5ff83dd968656502e6053d63",
+    "_id": "5fc9311b542dfae6173888e9",
+    "_parentId": "5fc930c3542dfae6173888e5",
     "_type": "block",
     "_trickle": {
       "_isEnabled": false,
@@ -112,10 +107,9 @@
         "_isLockedOnRevisit": false
       }
     },
-    "_blockBranching": {
+    "_pageLevelProgress": {
       "_isEnabled": false,
-      "_scenarioId": "",
-      "_userAnswer": []
+      "_isCompletionIndicatorEnabled": false
     }
   },
   {
@@ -131,8 +125,8 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe9e37968656502e6052f99",
-    "_parentId": "5fe9e1a868656502e6052f95",
+    "_id": "5fedb37deeee4f102fd74c70",
+    "_parentId": "5fedb37deeee4f102fd74c6f",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
@@ -163,14 +157,9 @@
         "_isLockedOnRevisit": false
       }
     },
-    "_blockBranching": {
-      "_isEnabled": true,
-      "_scenarioId": "1",
-      "_userAnswer": [
-        "5",
-        "6",
-        "7"
-      ]
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -204,14 +193,156 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe7717f68656502e6052d67",
-    "_parentId": "5fe76c3268656502e6052d5d",
+    "_id": "5ff83d90b6348f76a2b83d91",
+    "_parentId": "5ff83d90b6348f76a2b83d90",
     "_type": "block",
-    "_blockBranching": {
+    "_pageLevelProgress": {
       "_isEnabled": false,
-      "_scenarioId": "",
-      "_userAnswer": []
-    },
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 5,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffaf9a67307ac19ae0a859a",
+    "_parentId": "5ffaf9a67307ac19ae0a8599",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 6,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffaf9d27307ac19ae0a859d",
+    "_parentId": "5ffaf9d27307ac19ae0a859c",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 7,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffb1476ac2d021ecf3aa4ac",
+    "_parentId": "5ffb1476ac2d021ecf3aa4ab",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 8,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffb14c5ac2d021ecf3aa4af",
+    "_parentId": "5ffb14c5ac2d021ecf3aa4ae",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 9,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffb14e2ac2d021ecf3aa4b3",
+    "_parentId": "5ffb14e2ac2d021ecf3aa4b2",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 10,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5ffb14e7ac2d021ecf3aa4b7",
+    "_parentId": "5ffb14e7ac2d021ecf3aa4b6",
+    "_type": "block",
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 11,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fc930c3542dfae6173888e6",
+    "_parentId": "5fc80c3facdd61c1b5a51cac",
+    "_type": "block",
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -235,6 +366,10 @@
         "_isCompletionRequired": true,
         "_isLockedOnRevisit": false
       }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     }
   },
   {
@@ -242,7 +377,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 5,
+    "_trackingId": 12,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -250,8 +385,53 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe9e3d968656502e6052f9b",
-    "_parentId": "5fe9e1a868656502e6052f95",
+    "_id": "5fcd65194b43603e9a7efc87",
+    "_parentId": "5fc930c3542dfae6173888e5",
+    "_type": "block",
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 13,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fedb42aeeee4f102fd74c74",
+    "_parentId": "5fedb37deeee4f102fd74c6f",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
@@ -282,14 +462,9 @@
         "_isLockedOnRevisit": false
       }
     },
-    "_blockBranching": {
-      "_isEnabled": true,
-      "_scenarioId": "2",
-      "_userAnswer": [
-        "8",
-        "9",
-        "10"
-      ]
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -315,7 +490,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 6,
+    "_trackingId": 14,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -323,14 +498,9 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe7aed668656502e6052d7f",
-    "_parentId": "5fe76c3268656502e6052d5d",
+    "_id": "5fc80c72acdd61c1b5a51caf",
+    "_parentId": "5fc80c3facdd61c1b5a51cac",
     "_type": "block",
-    "_blockBranching": {
-      "_isEnabled": false,
-      "_scenarioId": "",
-      "_userAnswer": []
-    },
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -354,6 +524,10 @@
         "_isCompletionRequired": true,
         "_isLockedOnRevisit": false
       }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     }
   },
   {
@@ -361,7 +535,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 7,
+    "_trackingId": 15,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -369,13 +543,58 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fe8a7bd68656502e6052d81",
-    "_parentId": "5fe76c3268656502e6052d5d",
+    "_id": "5fcd65a24b43603e9a7efc8b",
+    "_parentId": "5fc930c3542dfae6173888e5",
     "_type": "block",
-    "_blockBranching": {
+    "_trickle": {
       "_isEnabled": false,
-      "_scenarioId": "",
-      "_userAnswer": []
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 16,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fedb43ceeee4f102fd74c76",
+    "_parentId": "5fedb37deeee4f102fd74c6f",
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
     },
     "_trickle": {
       "_isEnabled": false,
@@ -400,6 +619,73 @@
         "_isCompletionRequired": true,
         "_isLockedOnRevisit": false
       }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 17,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fcd76724f2b9546d270d0d8",
+    "_parentId": "5fc930c3542dfae6173888e5",
+    "_type": "block",
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
     }
   }
 ]

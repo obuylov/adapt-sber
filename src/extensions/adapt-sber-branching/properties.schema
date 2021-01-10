@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object",
+          "properties": {
+            "_sberBranching": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер ветвление",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить ветвление",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_isWithQuestion": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Это главная ветвь",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Внутри этой статьи есть вопрос"
+                },
+                "_branchID": {
+                  "type": "number",
+                  "required": false,
+                  "title": "Id ветви",
+                  "default": "",
+                  "inputType": "Number",
+                  "validators": [
+                    "number"
+                  ],
+                  "help": "Равна варианту ответа по порядку"
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
