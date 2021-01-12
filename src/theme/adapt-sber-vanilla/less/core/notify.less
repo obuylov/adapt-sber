@@ -1,5 +1,40 @@
 .notify {
   &__popup {
+    width: 100%;
+
+    &-inner {
+      position: relative;
+      max-width: 820px;
+      display: flex;
+      padding: 60px 0;
+
+      .notify__close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+      }
+
+      .notify__title {
+        .component-title;
+        margin-bottom: 30px;
+      }
+    }
+
+    &[class *= "correct"] .notify__popup-inner::before {
+      content: url(assets/yes-icon.svg);
+      display: block;
+      padding: 0 40px;
+    }
+
+    &[class *= "incorrect"] .notify__popup-inner::before {
+      content: url(assets/no-icon.svg);
+      display: block;
+      padding: 0 40px;
+    }
+  }
+
+  &__popup.hotgraphic {
     position: fixed;
     top: 50% !important;
     left: 50%;
@@ -11,13 +46,13 @@
     margin-top: unset !important;
     border-radius: 5px;
     box-shadow: @shadow-full;
-  }
 
-  &__popup-inner {
-    margin: 0 auto;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
+    .notify__popup-inner {
+      margin: 0 auto;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   // --------------------------------------------------
@@ -34,6 +69,7 @@
   &__icon .icon.is-alert {
     .icon-warning;
   }
+
   // --------------------------------------------------
 
 

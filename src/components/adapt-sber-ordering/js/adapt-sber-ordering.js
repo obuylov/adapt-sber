@@ -81,7 +81,7 @@ define([
       Adapt.notify.popup({
         title: this.model.get('_displayTitle'),
         body: this.model.get('_feedback')[what],
-        _classes: 'ordering'
+        _classes: 'ordering ' + what
       });
     }
 
