@@ -6,10 +6,14 @@ define([
     initialize(options) {
       super.initialize(options);
 
-      const current_articles = this.model.findDescendantModels("article");
-      this.article_models = current_articles.filter(el => el.get("_sberBranching") && el.get("_sberBranching")._isEnabled);
+      const current_articles = this.model.findDescendantModels('article');
+      this.article_models = current_articles.filter(el => el.get('_sberBranching') && el.get('_sberBranching')._isEnabled);
 
-      this.listenToOnce(Adapt, "pageView:ready", this.onPageReady.bind(this));
+      if (this.article_models.length === 0) {
+        return false;
+      }
+
+      this.listenToOnce(Adapt, 'pageView:ready', this.onPageReady.bind(this));
     }
 
     onPageReady() {

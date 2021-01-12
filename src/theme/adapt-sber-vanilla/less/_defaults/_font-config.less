@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: "SB-Semibold";
+  src: url("assets/SB-Semibold.otf");
+}
+
+@font-face {
   font-family: "SB-Medium";
   src: url("assets/SB-Medium.otf");
 }
@@ -22,6 +27,7 @@
   font-family: "SB-Display";
   src: url("assets/SB-Display.otf");
 }
+
 // --------------------------------------------------
 
 // --------------------------------------------------
@@ -30,6 +36,7 @@
 @title-family: 'SB-Medium', sans-serif;
 @body-family: 'SB-Display', sans-serif;
 @btn-family: 'SB-Regular', sans-serif;
+@semibold-family: 'SB-Semibold', sans-serif;
 // --------------------------------------------------
 
 // --------------------------------------------------
@@ -153,7 +160,7 @@
 @article-title-line-height: @title-line-height;
 
 @block-title-size: 24px;
-@block-title-family: @title-family;
+@block-title-family: @semibold-family;
 @block-title-weight: @font-weight-bold;
 @block-title-line-height: @title-line-height;
 
