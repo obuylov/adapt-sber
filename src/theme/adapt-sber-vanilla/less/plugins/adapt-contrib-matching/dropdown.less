@@ -65,7 +65,6 @@
     }
   }
 
-
   &__item {
     padding: @item-padding;
     background-color: @item-color;
@@ -73,7 +72,7 @@
     color: @item-color-inverted;
 
     .no-touch &:not(:focus):not([aria-selected="true"]):hover {
-      background-color: @item-color-hover;
+      background-color: @green-button;
       color: @item-color-inverted-hover;
       .transition(background-color @duration ease-in, color @duration ease-in;);
     }
@@ -91,9 +90,6 @@
 
       background-color: @item-color-selected;
       color: @item-color-inverted-selected;
-    }
-    &:hover{
-      background-color: @green-button;
     }
   }
 
@@ -114,9 +110,7 @@
       background-color: transparent;
       margin-bottom: unset !important;
     }
-    .dropdown__item:hover {
-      background-color: @green-button;
-    }
+
     .dropdown__item:last-child {
       border-bottom: none;
     }

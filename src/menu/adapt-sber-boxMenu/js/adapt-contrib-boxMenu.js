@@ -9,6 +9,7 @@ define([
     initialize: function() {
       MenuView.prototype.initialize.apply(this);
       this.setStyles();
+      this.setCoursePreview();
 
       this.listenTo(Adapt, {
         "device:changed": this.onDeviceResize
@@ -20,19 +21,23 @@ define([
     },
 
     setStyles: function() {
-      this.setCoursePreview();
       this.setBackgroundImage();
       this.setBackgroundStyles();
       this.processHeader();
     },
 
     setCoursePreview: function() {
-      if (this.addedPhoto) return;
-
-      let menu = this.model.get("_sber-boxMenu");
-      if (menu && menu._menuImage) {
-        this.$el.find(".menu__preview-image").append("<img src='"+menu._menuImage._image+"' alt='icon'>");
-        this.addedPhoto = true;
+      if (this.model.get('_type') === 'course') {
+        let menu = this.model.get('_sber-boxMenu');
+        if (menu && menu._menuImage) {
+          this.$el.find('.menu__preview-image').append('<img src=\'' + menu._menuImage._image + '\' class=\'the-image\' alt=\'preview\'>');
+        }
+      } else {
+        let image = this.model.get('_graphic');
+        let alt = image.alt ? image.alt : 'preview';
+        if (image.src) {
+          this.$el.find('.menu__preview-image').append(`<img src="${image.src}" class='the-image' alt='${alt}'>`);
+        }
       }
     },
 
