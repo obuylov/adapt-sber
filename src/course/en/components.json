@@ -3,18 +3,27 @@
     "_id": "c-0-0",
     "_parentId": "b-0-0",
     "_type": "component",
-    "_component": "graphic",
+    "_component": "sber-yes-no",
     "_classes": "",
     "_layout": "full",
     "title": "Here is a graphic object",
-    "displayTitle": "PNG-файл",
-    "body": "<ol><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et hic ipsam placeat quas suscipit voluptate voluptatum? Dolorem doloribus est facilis incidunt provident quas quibusdam repudiandae veritatis! Amet nesciunt, quaerat? Beatae.</li></ol>",
+    "displayTitle": "",
+    "body": "Сотрудник перепутал валюту операции.<br>Ошибку выявил проверяющий сотрудник \u2028и не подтвердил операцию в системе.",
     "instruction": "",
     "_graphic": {
       "alt": "Placeholder graphic",
       "large": "course/en/images/схема.png",
       "small": "course/en/images/схема.png",
       "attribution": ""
+    },
+    "_shouldBeSelected": true,
+    "yes_button": "Является",
+    "no_button": "Не является",
+    "_feedback": {
+      "_correct_title": "Верно",
+      "_correct": "<p>Это событие не является операционным риском, так как сработала контрольная процедура.</p>",
+      "_incorrect_title": "Неверно",
+      "_incorrect": "<p>Это событие не является операционным риском, так как сработала контрольная процедура.</p>"
     },
     "_pageLevelProgress": {
       "_isEnabled": true

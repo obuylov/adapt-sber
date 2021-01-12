@@ -1,0 +1,37 @@
+.sber-yes-no__inner {
+  padding: 70px;
+  border-radius: 5px;
+  box-shadow: @shadow-full;
+  background-color: white;
+
+  .component__body {
+    .block-title;
+  }
+
+  .btn__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sber-yes-no__yes {
+      margin-right: 75px;
+    }
+  }
+
+  @media (max-width: @device-width-small) {
+    padding: 30px;
+
+    .btn__container {
+      flex-wrap: wrap;
+
+      .btn-text {
+        width: 100%;
+      }
+
+      .sber-yes-no__yes {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

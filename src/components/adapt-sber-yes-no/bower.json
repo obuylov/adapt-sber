@@ -1,0 +1,16 @@
+{
+  "name": "adapt-sber-yes-no",
+  "version": "0.0.1",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "component": "sber-yes-no",
+  "displayName": "Сбер да/нет",
+  "description": "Тестовый комппонент, в котором нужно выбрать: да или нет",
+  "main": "/js/adapt-sber-yes-no.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}
