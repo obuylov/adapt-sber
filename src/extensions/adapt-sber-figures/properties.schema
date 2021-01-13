@@ -12,7 +12,36 @@
           "type": "object"
         },
         "course": {
-          "type": "object"
+          "type": "object",
+          "properties": {
+            "_sberFigures": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер фигуры",
+              "properties": {
+                "gradient-1": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Фон №1",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Можно оставить знак ;"
+                },
+                "gradient-2": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Фон №2",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Можно оставить знак ;"
+                }
+              }
+            }
+          }
         },
         "contentobject": {
           "type": "object"
@@ -25,92 +54,109 @@
               "required": false,
               "legend": "Сбер фигуры",
               "properties": {
-                "type": "object",
-                "required": false,
-                "legend": "Sber Figures",
-                "properties": {
-                  "_isEnabled": {
-                    "type": "boolean",
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить фигуры",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Элементы",
+                  "items": {
+                    "type": "object",
                     "required": false,
-                    "title": "Включить иконку",
-                    "inputType": "Checkbox",
-                    "validators": []
-                  },
-                  "_items": {
-                    "type": "array",
-                    "required": false,
-                    "title": "Элементы",
-                    "items": {
-                      "type": "object",
-                      "required": false,
-                      "properties": {
-                        "_type": {
-                          "type": "string",
-                          "required": true,
-                          "title": "Фигура",
-                          "enum": [
-                            "circle",
+                    "properties": {
+                      "_type": {
+                        "type": "string",
+                        "required": true,
+                        "title": "Фигура",
+                        "enum": [
+                          "donut",
+                          "thin_donut",
+                          "circle",
+                          "pentagon",
+                          "rect"
+                        ],
+                        "inputType": {
+                          "type": "Select",
+                          "options": [
                             "donut",
-                            "pentagon"
-                          ],
-                          "inputType": {
-                            "type": "Select",
-                            "options": [
-                              "circle",
-                              "pentagon",
-                              "rect"
-                            ]
-                          },
-                          "default": "circle",
-                          "help": "circle – круг, pentagon – пятиугольник, rect – четырехугольник"
+                            "thin_donut",
+                            "circle",
+                            "pentagon",
+                            "rect"
+                          ]
                         },
-                        "size": {
-                          "type": "number",
-                          "required": true,
-                          "default": 100,
-                          "title": "Размер фигуры",
-                          "inputType": "Number",
-                          "validators": [
-                            "number"
-                          ],
-                          "help": "Размер фигуры в пикселях"
-                        },
-                        "x_pos": {
-                          "type": "number",
-                          "required": true,
-                          "default": 0,
-                          "title": "Положение по х",
-                          "inputType": "Number",
-                          "validators": [
-                            "number"
-                          ],
-                          "help": "Позиция по х в процентах"
-                        },
-                        "y_pos": {
-                          "type": "number",
-                          "required": true,
-                          "default": 0,
-                          "title": "Положени по y",
-                          "inputType": "Number",
-                          "validators": [
-                            "number"
-                          ],
-                          "help": "Позиция по у в процентах"
-                        },
-                        "angle": {
-                          "type": "number",
-                          "required": true,
-                          "default": 0,
-                          "title": "Угол наклона",
-                          "inputType": "Number",
-                          "validators": [
-                            "number"
-                          ],
-                          "help": "Угол наклона фигуры"
-                        }
+                        "default": "circle",
+                        "help": "Пончик, узкий пончик, круг, 5-угольник или 4-угольник"
+                      },
+                      "size": {
+                        "type": "number",
+                        "required": true,
+                        "default": 100,
+                        "title": "Размер фигуры",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Размер фигуры в пикселях"
+                      },
+                      "x_pos": {
+                        "type": "number",
+                        "required": true,
+                        "default": 0,
+                        "title": "Положение по х",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Позиция по х в процентах"
+                      },
+                      "y_pos": {
+                        "type": "number",
+                        "required": true,
+                        "default": 0,
+                        "title": "Положени по y",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Позиция по у в процентах"
                       }
                     }
                   }
+                },
+                "gradient": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Фон фигур",
+                  "enum": [
+                    "gradient-1",
+                    "gradient-2"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "gradient-1",
+                      "gradient-2"
+                    ]
+                  },
+                  "default": "gradient-1",
+                  "help": "Должен быть настроен в курсе (course.json)"
+                },
+                "_opacity": {
+                  "type": "number",
+                  "required": true,
+                  "default": 1,
+                  "title": "Прозрачность",
+                  "inputType": "Number",
+                  "validators": [
+                    "number"
+                  ],
+                  "help": "Нужно взять из фигмы (под стилем фона)"
                 }
               }
             }

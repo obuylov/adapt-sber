@@ -267,5 +267,9 @@
       "_medium": "",
       "_small": ""
     }
+  },
+  "_sberFigures": {
+    "gradient-1": "linear-gradient(180deg, #42E3B4 8.47%, #FAED00 96.61%);",
+    "gradient-2": ""
   }
 }
