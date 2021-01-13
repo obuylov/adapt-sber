@@ -10,6 +10,15 @@ define([
     setCustomStyles: function() {
       this.processHeader();
       this.setupPagePhoto();
+      setTimeout(() => this.updateUpButton(), 1000);
+    },
+
+    updateUpButton: function() {
+      let el = $(".js-pagenav-btn[data-type='_up']");
+      el.addClass("is-locked");
+      el.on("click", function() {
+        $.scrollTo(0, 500);
+      })
     },
 
     setupPagePhoto: function() {
