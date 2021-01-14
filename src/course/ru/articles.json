@@ -63,13 +63,13 @@
           "y_pos": 20
         },
         {
-          "_type": "thin_donut",
+          "_type": "triangle",
           "size": 150,
-          "x_pos": 20,
-          "y_pos": 50
+          "x_pos": 90,
+          "y_pos": 60
         },
         {
-          "_type": "circle",
+          "_type": "half_circle",
           "size": 50,
           "x_pos": 90,
           "y_pos": 50

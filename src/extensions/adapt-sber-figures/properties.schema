@@ -182,7 +182,9 @@
                           "thin_donut",
                           "circle",
                           "pentagon",
-                          "rect"
+                          "rect",
+                          "half_circle",
+                          "triangle"
                         ],
                         "inputType": {
                           "type": "Select",
@@ -191,7 +193,9 @@
                             "thin_donut",
                             "circle",
                             "pentagon",
-                            "rect"
+                            "rect",
+                            "half_circle",
+                            "triangle"
                           ]
                         },
                         "default": "circle",

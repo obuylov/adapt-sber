@@ -1,6 +1,6 @@
 define([
   'core/js/adapt'
-], function (Adapt) {
+], async function (Adapt) {
   // Ссылка для namespace svg-элемента
   const url = 'http://www.w3.org/2000/svg';
   /**
@@ -9,6 +9,11 @@ define([
    * @returns {number}
    */
   const l = () => document.querySelectorAll('.figure').length;
+
+  let figures = {};
+  $.ajax('assets/figures.json').done(function (data) {
+    figures = data;
+  });
 
   class SberFiguresView extends Backbone.View {
     initialize(options) {
@@ -308,40 +313,15 @@ define([
      * @param style какой у нее градиент
      */
     generateShape(type, style) {
-      // В зависимости от типа фигуры нужно добавлять разные свойства
-      // this.toBeAdded – или stroke или fill, так же зависит от фигуры
+      // Подгружаем нужные настройки для фигуры
+      let data = figures[type];
 
-      switch (type) {
-        case 'donut':
-          this.shape = document.createElementNS(url, 'circle');
-          this.toBeAdded = 'stroke';
-          // Общие стили объединены в функцию установки атрибутов
-          this.setAttributes('donut');
-          this.shape.setAttribute('stroke-width', '70');
-          break;
-        case 'thin_donut':
-          this.shape = document.createElementNS(url, 'circle');
-          this.toBeAdded = 'stroke';
-          this.setAttributes('donut');
-          this.shape.setAttribute('stroke-width', '40');
-          break;
-        case 'circle':
-          this.shape = document.createElementNS(url, 'circle');
-          this.toBeAdded = 'fill';
-          this.setAttributes('circle');
-          break;
-        case 'rect':
-          this.shape = document.createElementNS(url, 'path');
-          this.toBeAdded = 'fill';
-          this.shape.setAttribute('d', 'M43.1449 19.299C47.6773 7.52185 59.0953 -0.159897 71.7123 0.0795716L228.112 3.04801C243.555 3.34112 256.252 15.3125 257.452 30.7119L271.193 207.047C272.869 228.563 251.961 244.757 231.548 237.754L20.296 165.274C4.2141 159.756 -4.07296 141.99 2.03371 126.123L43.1449 19.299Z');
-          this.shape.setAttribute('transform', 'translate(0 40)');
-          break;
-        case 'pentagon':
-          this.shape = document.createElementNS(url, 'path');
-          this.toBeAdded = 'fill';
-          this.shape.setAttribute('d', 'M0.237303 80.4142C-0.580731 71.7342 4.31818 63.5244 12.3456 60.1227L148.359 2.48514C156.297 -0.878593 165.497 1.22265 171.187 7.69901L269.243 119.299C274.973 125.821 275.841 135.294 271.393 142.749L195.962 269.159C191.513 276.614 182.764 280.347 174.303 278.401L29.5262 245.099C21.1246 243.166 14.9068 236.068 14.0979 227.485L0.237303 80.4142Z');
-          this.shape.setAttribute('transform', 'translate(20 15)');
-          break;
+      this.shape = document.createElementNS(url, data.shape);
+      this.toBeAdded = data.toBeAdded;
+
+      // Берем каждое свойство из props и задаем его как атрибут
+      for (let prop in data.props) {
+        this.shape.setAttribute(prop, data.props[prop]);
       }
 
       // Генерируем SVG и задаем свойству fill или stroke url(#gradient)
@@ -349,25 +329,7 @@ define([
 
       // Добавляем фигуру в текущий svg-элемент
       this.svg.appendChild(this.shape);
-    }
 
-    /**
-     * Задаем свойства радиуса, и другие общие свойства
-     * @param shape
-     */
-    setAttributes(shape) {
-      switch (shape) {
-        case 'circle':
-          this.shape.setAttribute('cx', 150);
-          this.shape.setAttribute('cy', 150);
-          this.shape.setAttribute('r', 120);
-          break;
-        case 'donut':
-          // У пончика такие же свойства, как и у круга, только другой радиус
-          this.setAttributes('circle');
-          this.shape.setAttribute('r', 100);
-          this.shape.setAttribute('fill', 'transparent');
-      }
     }
 
     /**
