@@ -1,7 +1,7 @@
 {
   "title": "тестовый",
   "displayTitle": "тестовый",
-  "body": "",
+  "body": "<div class=\"two-cols\"><div class=\"col white\"><p><strong>В курсе рассмотрены:</strong></p><ul><li>Принципы сегментации клиентов</li><li>Алгоритм определения целевого клиентского сегмента</li></ul></div><div class=\"col white\"><p><strong>Курс считается пройденным успешно, если Вы:</strong></p><ul><li>Изучили все информационные блоки</li><li>Верно ответили на 80% тестовых вопросов курса</li></ul></div></div>",
   "subtitle": "",
   "description": "",
   "instruction": "",
@@ -270,6 +270,23 @@
   },
   "_sberFigures": {
     "gradient-1": "linear-gradient(180deg, #42E3B4 8.47%, #FAED00 96.61%);",
-    "gradient-2": ""
+    "gradient-2": "",
+    "_isEnabled": true,
+    "_items": [
+      {
+        "_type": "donut",
+        "size": 100,
+        "x_pos": 10,
+        "y_pos": 20
+      },
+      {
+        "_type": "thin_donut",
+        "size": 150,
+        "x_pos": 20,
+        "y_pos": 50
+      }
+    ],
+    "gradient": "gradient-1",
+    "_opacity": 0.7
   }
 }

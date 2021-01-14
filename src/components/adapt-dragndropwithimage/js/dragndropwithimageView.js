@@ -1,8 +1,8 @@
 define([
-    "coreJS/adapt",
-    "coreViews/questionView",
-    "./jquery-ui.min",
-    "./jquery.ui.touch-punch"
+	'coreJS/adapt',
+	'coreViews/questionView',
+	'libraries/jquery-ui.min',
+	'libraries/jquery.ui.touch-punch'
 ], function(Adapt, QuestionView, JQueryUI, TouchPunch) {
 
 	var DragndropwithimageView = QuestionView.extend({
