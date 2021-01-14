@@ -22,8 +22,9 @@ define([
     onPageReady() {
       for (let article of this._articleModels) {
         let id = article.get('_id');
-        let el = this.$('.' + id);
-        el.addClass('figures-container');
+
+        this.$a_el = this.$('.' + id);
+        this.$a_el.addClass('figures-container');
 
         this.data = article.get('_sberFigures');
 
@@ -165,7 +166,7 @@ define([
         left: this.data.current_pos.left + '%'
       });
 
-      this.$('.figures-container').append(this.svg);
+      this.$a_el.append(this.svg);
     }
 
     generateShape(type, style, opacity) {
