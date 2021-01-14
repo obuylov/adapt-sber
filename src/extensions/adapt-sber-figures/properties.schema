@@ -38,6 +38,110 @@
                   "validators": [],
                   "translatable": true,
                   "help": "Можно оставить знак ;"
+                },
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить фигуры в меню?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Элементы",
+                  "items": {
+                    "type": "object",
+                    "required": false,
+                    "properties": {
+                      "_type": {
+                        "type": "string",
+                        "required": true,
+                        "title": "Фигура",
+                        "enum": [
+                          "donut",
+                          "thin_donut",
+                          "circle",
+                          "pentagon",
+                          "rect"
+                        ],
+                        "inputType": {
+                          "type": "Select",
+                          "options": [
+                            "donut",
+                            "thin_donut",
+                            "circle",
+                            "pentagon",
+                            "rect"
+                          ]
+                        },
+                        "default": "circle",
+                        "help": "Пончик, узкий пончик, круг, 5-угольник или 4-угольник"
+                      },
+                      "size": {
+                        "type": "number",
+                        "required": true,
+                        "default": 100,
+                        "title": "Размер фигуры",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Размер фигуры в пикселях"
+                      },
+                      "x_pos": {
+                        "type": "number",
+                        "required": true,
+                        "default": 0,
+                        "title": "Положение по х",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Позиция по х в процентах"
+                      },
+                      "y_pos": {
+                        "type": "number",
+                        "required": true,
+                        "default": 0,
+                        "title": "Положени по y",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Позиция по у в процентах"
+                      }
+                    }
+                  }
+                },
+                "gradient": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Фон фигур",
+                  "enum": [
+                    "gradient-1",
+                    "gradient-2"
+                  ],
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "gradient-1",
+                      "gradient-2"
+                    ]
+                  },
+                  "default": "gradient-1",
+                  "help": "Должен быть настроен в курсе (course.json)"
+                },
+                "_opacity": {
+                  "type": "number",
+                  "required": true,
+                  "default": 1,
+                  "title": "Прозрачность",
+                  "inputType": "Number",
+                  "validators": [
+                    "number"
+                  ],
+                  "help": "Нужно взять из фигмы (под стилем фона)"
                 }
               }
             }

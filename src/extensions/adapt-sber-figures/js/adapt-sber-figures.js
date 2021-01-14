@@ -1,64 +1,166 @@
 define([
   'core/js/adapt'
 ], function (Adapt) {
+  // Ссылка для namespace svg-элемента
   const url = 'http://www.w3.org/2000/svg';
+  /**
+   * Возвращает количество фигур на странице
+   * Используется для генерации id новых фигур
+   * @returns {number}
+   */
   const l = () => document.querySelectorAll('.figure').length;
 
   class SberFiguresView extends Backbone.View {
     initialize(options) {
       super.initialize(options);
 
-      this._articleModels = this.model.findDescendantModels('article').filter(function (el) {
-        return el.get('_sberFigures') && el.get('_sberFigures')._isEnabled;
-      });
+      // Добавляем мы фигуры в меню или в article
+      this._target = options._target;
 
-      if (this._articleModels.length === 0 || window.innerWidth <= 900) {
+      // массив для добавления статей. Для простоты оставил значение и для меню
+      this._articleModels = [];
+
+      if (this._target === 'article') {
+        // Если мы добавляем фигуры в статью, то просто ищем все статьи с включенным расширением на странице
+        this._articleModels = this.model.findDescendantModels('article').filter(function (el) {
+          return el.get('_sberFigures') && el.get('_sberFigures')._isEnabled;
+        });
+      } else {
+        /*
+          Если мы добавляем в меню, то нужно проверить 3 вещи:
+          1. Есть расширение
+          2. Оно включено
+          3. Нужно добавить фигуры
+        */
+        let _sberFigures = this.model.get('_sberFigures');
+        if (_sberFigures && _sberFigures._isEnabled && _sberFigures._items.length > 0) {
+          this._articleModels = [true];
+        }
+      }
+
+      // Если нет статей с фигурами, и в меню добавлять не нужно, ничего не делаем
+      if (this._articleModels.length === 0) {
         return;
       }
 
-      this.listenTo(Adapt, 'pageView:ready', this.onPageReady);
+      // Нужно узнать рендера какого объекта дожидаться – страницы или меню
+      let what = this._target === 'article' ? 'page' : 'menu';
+      this.listenTo(Adapt, what + 'View:ready', this.onDeviceResize);
+
+      this.listenTo(Adapt, {
+        'device:resize': this.onDeviceResize,
+        'remove': this.remove
+      });
     }
 
-    onPageReady() {
-      for (let article of this._articleModels) {
-        let id = article.get('_id');
-
-        this.$a_el = this.$('.' + id);
-        this.$a_el.addClass('figures-container');
-
-        this.data = article.get('_sberFigures');
-
-        let color = 'linear-gradient(#000000 0%, #000000 100%);';
-
-        let course_val = Adapt.course.get('_sberFigures');
-        if (course_val && course_val[this.data.gradient]) {
-          color = course_val[this.data.gradient];
+    /**
+     * Отслеживает изменение экрана, а так же отвечает за первый рендер.
+     * Если ширина экрана <= 900px, фигуры удаляются и не показываются
+     * Если ширина больше, фигуры генерируются
+     */
+    onDeviceResize() {
+      if (window.innerWidth <= 900) {
+        $('.figures-container').each(function () {
+          $(this).find('svg.figure').remove();
+        });
+      } else {
+        if (!this.$('.figure').length) {
+          this.onPageReady();
         }
+      }
+    }
 
-        for (let figure of this.data._items) {
-          this.svg = null;
-          this.defs = null;
-          this.shape = null;
+    /**
+     * Метод, который запускает рендер фигур
+     * Тут происходит проверка таргета – куда вставлять фигуры
+     */
+    onPageReady() {
+      if (this._target === 'article') {
+        // Если мы добавляем фигуры в статью, то мы должны пройтись по всем статьям на странице, где есть фигуры
+        for (let article of this._articleModels) {
+          let id = article.get('_id');
 
-          this.data.current_size = figure.size;
-          this.data.current_pos = {
-            top: figure.y_pos,
-            left: figure.x_pos
-          };
+          // $containing_el – свойство класса, которое хранит в себе элемент, в который нужно добавлять фигуры
+          // В случае рендера фигур в статье, containing_element – текущая статья из цикла
+          this.$containing_el = this.$('.' + id);
+          this.$containing_el.addClass('figures-container');
 
-          this.createFigure(figure._type, color, this.model.get('_opacity'));
+          // Чтобы далее можно было спокойно брать информацию из текущей статьи, создадим новое свойство
+          // Все получаемые данные можно посмотреть в example.json, или в properties.schema
+          this.data = article.get('_sberFigures');
+
+          this.renderingFunction();
+        }
+      } else { // Фигуры нужно добавлять в меню
+        // Если вдруг мы добавили фигуры, но на странице меню нет body, нужно прекратить рендер и показать ошибку
+        if (!$('.menu__body').length) {
+          Adapt.notify.popup({
+            title: 'Ошибка в Сбер Фигурах!',
+            body: 'Вы добавили фигуры, но на странице меню поле Body пустое. Фигуры некуда добавлять'
+          });
+        } else {
+          // Текущий элемент – menu__body
+          this.$containing_el = this.$('.menu__body');
+          this.$containing_el.addClass('figures-container');
+
+          this.data = this.model.get('_sberFigures');
+          this.renderingFunction();
         }
       }
 
+      // Запускаем отслеживание последней позиции скролла для параллакса
       window.lastScrollingPosition = 0;
       window.onscroll = this.parallax;
     }
 
+    /**
+     * Генерирует новый svg-элемент и вызывает this.createFigure()
+     * Она повторяется как для отдельной статьи в цикле, так и для меню
+     */
+    renderingFunction() {
+      // Если вдруг в настройках курса забыли фон, нужно поставить просто черный
+      let color = 'linear-gradient(#000000 0%, #000000 100%);';
+
+      // Достаем значение градиента из настроек курса
+      let course_val = Adapt.course.get('_sberFigures');
+      if (course_val && course_val[this.data.gradient]) {
+        color = course_val[this.data.gradient];
+      }
+
+      // Для каждой фигуры из массива _items нужно сделать svg
+      for (let figure of this.data._items) {
+        // обнуляем прошлые значения, или создаем новые
+        this.svg = null;
+        this.defs = null;
+        this.shape = null;
+
+        // Сохраним информацию о размере и текущей позиции, чтобы нормально передать в функцию генерации
+        this.data.current_size = figure.size;
+        this.data.current_pos = {
+          top: figure.y_pos,
+          left: figure.x_pos
+        };
+
+        // Передаем что за фигуру нужно сделать, CSS-градиент и прозрачность фигуры
+        this.createFigure(figure._type, color, this.data._opacity);
+      }
+    }
+
+    /**
+     * Конвертирует RGBA в HEX формат
+     * @param channels строка с rgba()
+     * @returns {string} hex код
+     */
     convertRGBAtoHEX(channels) {
       const hexChannels = channels.map(entry => (`0${entry.toString(16)}`).slice(-2));
       return (`#${hexChannels.join('')}`);
     }
 
+    /**
+     * Парсит RGB или RGBA в численный формат
+     * @param raw строка свойств
+     * @returns {*} [r, b, g, a] как числа
+     */
     parseRGBA(raw) {
       return raw
         .replace(/rgba|rgb|\(|\)/g, '')
@@ -72,69 +174,85 @@ define([
     /**
      * Генерирует массив значений для градиента из стиля
      * @param style
-     * @returns [{color, offset}] – цвет и точку
+     * @returns [{color, offset}] цвет и точку
      */
     generateArray(style) {
+      // Создаем очищенный стиль и удаляем из него лишние части
       let clearedStyle = style;
       ['linear-gradient(', '180deg, ', ');', ';'].forEach(el => clearedStyle = clearedStyle.replace(el, ''));
 
-      clearedStyle = clearedStyle.replace(/rgba\(\d*, \d*, \d*, \d*\.?\d*\)/gm, match => {
+      // Чтобы можно было спокойно разделить строку по пробелу и получить цвет с позицией, придется rgba переводить в hex
+      clearedStyle = clearedStyle.replace(/rgba?\(\d*, \d*, \d*, \d*\.?\d*\)/gm, match => {
         return this.convertRGBAtoHEX(this.parseRGBA(match));
       });
 
+      // Результатом будет массив объектов со значениями цвета и его позиции
       let res = [];
 
       for (let el of clearedStyle.split(', ')) {
+        // Сначала разделили стиль и получили каждую пару "цвет-процент", а теперь и их разделяем
         let values = el.split(' ');
         let color = values[0];
 
+        // Если в значении цвета есть градусы (не 180), нужно повернуть градиент
         if (color.match(/deg/gm)) {
+          // пока не работает
           // this.current_gradient.setAttribute("gradientTransform", "rotate(" + parseFloat(color) * (Math.PI/180)+ ")");
-          continue;
+          continue; // в массив добавлять не нужно, просто идем дальше
         }
 
-        let toAdd = {
+        // Добавляем объект с цветом и процентом в формате 0.XXXX
+        res.push({
           color: color,
           offset: (parseFloat(values[1]) / 100).toFixed(4),
-        };
-
-        res.push(toAdd);
+        });
       }
 
       return res;
     }
 
     /**
-     * Генерирует СВГ элемент linearGradient и его stops
+     * Генерирует linearGradient и его stops
      * @param style
+     * @returns {string} Ссылка на градиент
      */
     generateSVG(style) {
-
+      // Создаем правило градиента
       this.current_gradient = document.createElementNS(url, 'linearGradient');
 
+      // Задаем id как grad_ + индекс последней фигуры
       this.current_gradient.id = 'grad_' + l();
       this.current_gradient.setAttribute('x1', '0');
       this.current_gradient.setAttribute('x2', '0');
       this.current_gradient.setAttribute('y1', '0');
       this.current_gradient.setAttribute('y2', '1');
 
+      // Если вдруг после градиента должна быть подложка обычным цветом, то нужно её отделить
       let bg = '';
+      // Проверяем если ли в стиле похожая запись: linear-gradient(), #color
       let postBG = style.match(/%\), (#.*)/gm);
-      if (postBG) {
+      if (postBG) { // Если все же есть, то мы сохраняем этот цвет, и удаляем его из исходной строки
         bg = postBG[0].split(' ')[1];
         style = style.replace(postBG[0], '%);');
       }
 
       if (bg) {
+        // Если есть цвет-подложка, нам нужно:
+        // 1. Скопировать текущую фигуру
+        // 2. Задать ей этот фон или границу (this.toBeAdded)
+        // 3. Поменять id
+        // 4. Сохранить в текущем svg-элементе
+
         let back_shape = this.shape.cloneNode(false);
         back_shape.setAttribute(this.toBeAdded, bg.slice(0, -1));
         back_shape.id = 'shape_' + l();
         this.svg.prepend(back_shape);
       }
 
+      // Каждая пара "цвет-положение" называется стоп
       let stops = this.generateArray(style);
 
-      for (let stop of stops) {
+      for (let stop of stops) { // Их нужно создать и добавить в текущий градиент
         let el = document.createElementNS(url, 'stop');
         el.setAttribute('offset', stop.offset);
         el.setAttribute('stop-color', stop.color);
@@ -142,16 +260,27 @@ define([
         this.current_gradient.appendChild(el);
       }
 
+      // Правила сохранить в defs и вернуть значение текущего градиента
       this.defs.appendChild(this.current_gradient);
       return 'url(#grad_' + l() + ')';
     }
 
+    /**
+     * Генерирует исходный код самой фигуры
+     * svg, defs, path или circle
+     * @param the_shape какая фигура должна появиться
+     * @param style CSS градиент
+     * @param opacity какая должна быть прозрачность
+     */
     createFigure(the_shape, style, opacity = 1) {
+      // Генерируем элементы
       this.svg = document.createElementNS(url, 'svg');
       this.defs = document.createElementNS(url, 'defs');
 
-      this.generateShape(the_shape, style, opacity);
+      // У фигур есть разные свойства, поэтому вызывается отдельная функция, которая добавит их в зависимости от фигуры
+      this.generateShape(the_shape, style);
 
+      // Задаем id, class, и другие общие свойства
       this.svg.id = 'figure_' + l();
       this.svg.classList.add('figure');
       this.svg.setAttribute('width', this.data.current_size);
@@ -159,57 +288,73 @@ define([
       this.svg.setAttribute('viewBox', '0 0 300 300');
       this.svg.setAttribute('opacity', opacity);
 
+      // Добавляем defs в svg (в defs хранятся все градиенты)
       this.svg.appendChild(this.defs);
 
+      // Позиционируем svg в меню или странице
       $(this.svg).css({
         top: this.data.current_pos.top + '%',
         left: this.data.current_pos.left + '%'
       });
 
-      this.$a_el.append(this.svg);
+      // Добавляем его в текущий элемент
+      this.$containing_el.append(this.svg);
     }
 
-    generateShape(type, style, opacity) {
+    /**
+     * Добавляет в текущую фигуру свойства в зависимости от её типа
+     * Градиент и прозрачность передаются дальше в this.generateSVG()
+     * @param type что за фигура
+     * @param style какой у нее градиент
+     */
+    generateShape(type, style) {
+      // В зависимости от типа фигуры нужно добавлять разные свойства
+      // this.toBeAdded – или stroke или fill, так же зависит от фигуры
+
       switch (type) {
         case 'donut':
           this.shape = document.createElementNS(url, 'circle');
           this.toBeAdded = 'stroke';
+          // Общие стили объединены в функцию установки атрибутов
           this.setAttributes('donut');
           this.shape.setAttribute('stroke-width', '70');
-          this.shape.setAttribute('stroke', this.generateSVG(style, opacity));
           break;
         case 'thin_donut':
           this.shape = document.createElementNS(url, 'circle');
           this.toBeAdded = 'stroke';
           this.setAttributes('donut');
           this.shape.setAttribute('stroke-width', '40');
-          this.shape.setAttribute('stroke', this.generateSVG(style, opacity));
           break;
         case 'circle':
           this.shape = document.createElementNS(url, 'circle');
           this.toBeAdded = 'fill';
           this.setAttributes('circle');
-          this.shape.setAttribute('fill', this.generateSVG(style, opacity));
           break;
         case 'rect':
           this.shape = document.createElementNS(url, 'path');
           this.toBeAdded = 'fill';
           this.shape.setAttribute('d', 'M43.1449 19.299C47.6773 7.52185 59.0953 -0.159897 71.7123 0.0795716L228.112 3.04801C243.555 3.34112 256.252 15.3125 257.452 30.7119L271.193 207.047C272.869 228.563 251.961 244.757 231.548 237.754L20.296 165.274C4.2141 159.756 -4.07296 141.99 2.03371 126.123L43.1449 19.299Z');
           this.shape.setAttribute('transform', 'translate(0 40)');
-          this.shape.setAttribute('fill', this.generateSVG(style, opacity));
           break;
         case 'pentagon':
           this.shape = document.createElementNS(url, 'path');
           this.toBeAdded = 'fill';
           this.shape.setAttribute('d', 'M0.237303 80.4142C-0.580731 71.7342 4.31818 63.5244 12.3456 60.1227L148.359 2.48514C156.297 -0.878593 165.497 1.22265 171.187 7.69901L269.243 119.299C274.973 125.821 275.841 135.294 271.393 142.749L195.962 269.159C191.513 276.614 182.764 280.347 174.303 278.401L29.5262 245.099C21.1246 243.166 14.9068 236.068 14.0979 227.485L0.237303 80.4142Z');
           this.shape.setAttribute('transform', 'translate(20 15)');
-          this.shape.setAttribute('fill', this.generateSVG(style, opacity));
           break;
       }
 
+      // Генерируем SVG и задаем свойству fill или stroke url(#gradient)
+      this.shape.setAttribute(this.toBeAdded, this.generateSVG(style));
+
+      // Добавляем фигуру в текущий svg-элемент
       this.svg.appendChild(this.shape);
     }
 
+    /**
+     * Задаем свойства радиуса, и другие общие свойства
+     * @param shape
+     */
     setAttributes(shape) {
       switch (shape) {
         case 'circle':
@@ -218,30 +363,49 @@ define([
           this.shape.setAttribute('r', 120);
           break;
         case 'donut':
+          // У пончика такие же свойства, как и у круга, только другой радиус
           this.setAttributes('circle');
           this.shape.setAttribute('r', 100);
           this.shape.setAttribute('fill', 'transparent');
       }
     }
 
+    /**
+     * Параллакс
+     * Отслеживает последнюю позицию курсора и двигает видимые фигуры в зависимости от неё
+     */
     parallax() {
       $('.figure').each(function () {
+        // Сначала проверим, что фигура в зоне видимости экрана
         if ($(this).offset().top + $(this).height() < pageYOffset || $(this).offset().top >= pageYOffset + innerHeight) {
           return;
         }
 
+        // Посмотрим куда мы двигаемся – наверх или вниз
         let goingDown = pageYOffset > window.lastScrollingPosition;
+        // И подвинемся в нужную сторону
         $(this).css('top', goingDown ? '-=1px' : '+=1px');
       });
 
+      // Обновим последнюю позицию скролла
       window.lastScrollingPosition = window.pageYOffset;
     }
   }
 
+  // Для меню и страницы одинаковый класс, отличается только _target
+
   Adapt.on('pageView:postRender', function (view) {
-    var model = view.model;
     new SberFiguresView({
-      model: model,
+      _target: 'article',
+      model: view.model,
+      el: view.el
+    });
+  });
+
+  Adapt.on('menuView:postRender', function (view) {
+    new SberFiguresView({
+      _target: 'menu',
+      model: view.model,
       el: view.el
     });
   });

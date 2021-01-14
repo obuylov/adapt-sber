@@ -10,7 +10,13 @@ define([
     setCustomStyles: function() {
       this.processHeader();
       this.setupPagePhoto();
-      setTimeout(() => this.updateUpButton(), 1000);
+
+      setTimeout(() => this.updateUpButton(), 500);
+      this.listenTo(Adapt.contentObjects, {
+        'change:_isComplete change:_isLocked': function () {
+          setTimeout(() => this.updateUpButton(), 500);
+        }
+      });
     },
 
     updateUpButton: function() {

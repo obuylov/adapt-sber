@@ -1,75 +1,72 @@
 .dragndrop__inner {
-    padding: 70px;
-    box-shadow: @shadow-full;
-    background-color: white;
-    border-radius: 5px;
+  padding: 70px;
+  box-shadow: @shadow-full;
+  background-color: white;
+  border-radius: 5px;
 
-    .dragndrop-question {
+  .dragndrop-question {
+    color: black;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding: 0;
+
+    .dragndrop-question-text {
+      width: 100vw;
+      padding-right: 24%;
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 34px;
+    }
+
+    .ui-droppable {
+      background-color: @light-gray;
+      border-radius: 5px;
+      max-width: 150px;
+      min-width: 150px;
+      min-height: 50px;
+      margin-right: 40px;
+    }
+
+    .ui-droppable:before {
+      content: 'Перетащите верный ответ:';
+      display: none;
+    }
+
+
+  }
+
+  .dragndrop-answers {
+    display: flex;
+    flex-wrap: wrap;
+
+    .dragndrop-answer {
+      border: none;
+      border-radius: 5px;
+      box-shadow: none;
+      background: @green-tab-180-grad;
+      min-height: 50px;
+      width: 150px !important;
+      padding: 20px;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 20px 20px;
+
+      &.ui-state-placed {
+        background: @green-tab-180-grad;
         color: black;
-        justify-content: flex-start;
-        margin-bottom: 50px;
-
-        .dragndrop-question-text {
-            width: 100vw;
-            padding-right: 24%;
-            font-size: 21px;
-            font-weight: bold;
-            margin-bottom: 34px;
-
-        }
-
-        .ui-droppable {
-            background-color: @light-gray;
-            border-radius: 5px;
-            max-width: 134px;
-            min-width: 134px;
-            min-height: 50px;
-            max-height: 50px;
-            margin-right: 40px;
-        }
-
-        .ui-droppable:before {
-            content: 'Перетащите верный ответ:';
-            display: none;
-        }
-
-
+        box-shadow: none;
+        border: none;
+      }
     }
 
-    .dragndrop-answers {
-        display: flex;
-        flex-wrap: wrap;
-
-        .dragndrop-answer {
-            border: none;
-            border-radius: 5px;
-            box-shadow: none;
-            background: @green-tab-180-grad;
-            height: 50px;
-            width: 134px;
-            padding: 0;
-            vertical-align: middle;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 0 40px 40px;
-
-            &.ui-state-placed {
-                background: @green-tab-180-grad;
-                color: black;
-                box-shadow: none;
-                border: none;
-            }
-        }
-        .dragndrop-answer:nth-child(4n+1) {
-            margin-left: 0;
-        }
+    .dragndrop-answer:nth-child(4n+1) {
+      margin-left: 0;
     }
+  }
 
-    .dragndrop-item {
-        padding: 0;
-    }
+  .dragndrop-item {
+    padding: 0;
+  }
 }
-
-
-
