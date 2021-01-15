@@ -5,8 +5,8 @@
     "props": {
       "cx": 150,
       "cy": 150,
-      "r": 120,
-      "stoke-width": 70,
+      "r": 100,
+      "stroke-width": 100,
       "fill": "transparent"
     }
   },

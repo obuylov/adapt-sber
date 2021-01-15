@@ -30,7 +30,6 @@
     background: @light-gray;
   }
 
-
   &.center {
     .block__title {
       text-align: center;
@@ -68,7 +67,7 @@
     display: block;
     width: 100%;
     height: 3px;
-    background: @blue-mint-grad-90;
+    background: @line-grad;
   }
 
   &__body {
@@ -83,6 +82,12 @@
   &__body a,
   &__instruction a {
     .link-text;
+  }
+
+  @media (max-width: @device-width-small) {
+    &.mobile-reverse .component__container {
+      flex-direction: column-reverse;
+    }
   }
 
 }

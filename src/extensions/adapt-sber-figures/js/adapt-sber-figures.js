@@ -10,6 +10,8 @@ define([
    */
   const l = () => document.querySelectorAll('.figure').length;
 
+  // Для удобства использования и добавления новых фигур они были выделены в отдельный
+  // JSON-файл со свойствами для каждой нужной фигуры
   let figures = {};
   $.ajax('assets/figures.json').done(function (data) {
     figures = data;
