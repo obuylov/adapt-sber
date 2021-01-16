@@ -1,0 +1,16 @@
+{
+  "name": "adapt-sber-ifrae",
+  "version": "0.0.5",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "component": "sber-iframe",
+  "displayName": "Сбер iframe",
+  "description": "Компонент, который добавляет кнопку, при нажатии на которую откроется всплывающее окно с iframe",
+  "main": "/js/adapt-sber-iframe.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

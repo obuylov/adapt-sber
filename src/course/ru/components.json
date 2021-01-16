@@ -182,7 +182,7 @@
     "instruction": ""
   },
   {
-    "_component": "sber-downloader",
+    "_component": "sber-iframe",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -207,6 +207,8 @@
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
     },
+    "_src": "https://obuylov.ru/files/risk/story/risk-koordinatory-1/story.html",
+    "_buttonText": "Изучить",
     "file_description": "бра момент",
     "file_size": "много весит",
     "file": "course/en/assets/641c21777f9bc87bb186e0f886e38d564a7eee80.pdf"

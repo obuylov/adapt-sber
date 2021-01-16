@@ -1,0 +1,148 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "full-width",
+        "half-width",
+        "both"
+      ],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text"
+    },
+    "_buttonText": {
+      "type": "string",
+      "required": true,
+      "title": "Текст кнопки",
+      "default": "Изучить информацию",
+      "inputType": "Text",
+      "validators": [
+        "required"
+      ],
+      "help": "Какой текст будет на кнопке, чтобы открылся iframe"
+    },
+    "_src": {
+      "type": "string",
+      "required": true,
+      "title": "URL",
+      "default": "",
+      "inputType": "Text",
+      "validators": [
+        "required"
+      ],
+      "help": "Ссылка, которую нужно поместить в iframe"
+    },
+    "_mobile": {
+      "type": "object",
+      "required": false,
+      "legend": "Размеры на телефоне (до 500рх)",
+      "help": "-1 значит 100%",
+      "properties": {
+        "width": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Ширина",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        },
+        "height": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Высота",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        }
+      }
+    },
+    "_tablet": {
+      "type": "object",
+      "required": false,
+      "legend": "Размеры на планшете (500-900рх)",
+      "help": "-1 значит 100%",
+      "properties": {
+        "width": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Ширина",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        },
+        "height": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Высота",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        }
+      }
+    },
+    "_pc": {
+      "type": "object",
+      "required": false,
+      "legend": "Размеры на телефоне (900рх и больше)",
+      "properties": {
+        "width": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Ширина",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        },
+        "height": {
+          "type": "number",
+          "required": false,
+          "default": -1,
+          "title": "Высота",
+          "inputType": "Number",
+          "validators": [
+            "number"
+          ],
+          "help": "-1 значит 100%"
+        }
+      }
+    }
+  }
+}
