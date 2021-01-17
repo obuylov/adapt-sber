@@ -1,0 +1,72 @@
+.sber-dragndrop {
+  &__question {
+    &-container {
+      margin-bottom: 50px;
+    }
+
+    &-text {
+      .component-title;
+      margin-bottom: 35px;
+    }
+
+    &-instructions {
+      margin-bottom: 40px;
+    }
+
+    &-answers-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &-answer-placeholder {
+      position: relative;
+      min-width: 134px;
+      min-height: 50px;
+      margin-right: 40px;
+      padding: 20px;
+      background-color: @light-gray;
+      border-radius: 5px;
+      box-sizing: border-box;
+
+      span {
+        display: block;
+      }
+
+      &.not-empty span {
+        display: none;
+      }
+
+      .sber-dragndrop__answers-answer {
+        margin: 0;
+      }
+    }
+  }
+
+  &__answers {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    &-title {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    &-answer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+      margin-right: 50px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background-color: @green-button;
+      box-sizing: border-box;
+    }
+  }
+}

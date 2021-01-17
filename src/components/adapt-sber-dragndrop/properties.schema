@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "full-width",
+        "half-width",
+        "both"
+      ],
+      "default": "both",
+      "editorOnly": true
+    },
+    "_isRandom": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Случайный порядок элементов",
+      "inputType": "Checkbox",
+      "validators": [],
+      "help": "Нужно ли случайно выставить элементы, или оставить порядок из редактора"
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Элементы",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "text": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "title": "Текст",
+            "help": "Текст элемента",
+            "translatable": true
+          },
+          "position": {
+            "type": "number",
+            "required": true,
+            "default": "",
+            "title": "Уникальный порядковый номер (с нуля)",
+            "inputType": "Number",
+            "validators": [],
+            "help": "На каком месте должен быть блок"
+          }
+        }
+      }
+    },
+    "_feedback": {
+      "type": "object",
+      "required": false,
+      "title": "Обратная связь",
+      "properties": {
+        "correct": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Верный ответ",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Обратная связь при верном ответе",
+          "translatable": true
+        },
+        "incorrect": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Неверный ответ",
+          "inputType": "TextArea",
+          "validators": [],
+          "help": "Обратная связь при неверном ответе",
+          "translatable": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "adapt-sber-dragndrop",
+  "version": "0.0.1",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "component": "sber-dragndrop",
+  "displayName": "Сбер Drag'n'drop",
+  "description": "Компонент для тестирования, нужно переставлять элементы в нужные контейнеры",
+  "main": "/js/adapt-sber-dragndrop.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

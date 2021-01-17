@@ -118,7 +118,7 @@
     "_pc": {
       "type": "object",
       "required": false,
-      "legend": "Размеры на телефоне (900рх и больше)",
+      "legend": "Размеры на ПК (900рх и больше)",
       "properties": {
         "width": {
           "type": "number",
