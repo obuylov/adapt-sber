@@ -33,19 +33,20 @@
   }
 
   &-text {
-    background: @button-gradient;
-    background-color: @btn-color;
+    background: @buttons-grad;
+    //background-color: @btn-color;
     color: black;
     border-radius: @btn-border-radius;
     padding: 10px 24px;
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
-      .transition(background-color @duration ease-in, color @duration ease-in;);
+      //.transition(background-color @duration ease-in, color @duration ease-in;);
+      background: @button-hover;
     }
   }
 
   &-text.is-disabled {
-    background: @light-gray;
+    background: @light-gray !important;
     color: black;
   }
 

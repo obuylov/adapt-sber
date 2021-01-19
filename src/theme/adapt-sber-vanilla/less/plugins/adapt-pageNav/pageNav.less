@@ -14,14 +14,16 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     button {
-      background:@green-tab-180-grad;
+      background: @buttons-grad;
       color: black;
       border-radius: 5px;
-      .pagenav__btn-icon{
+
+      .pagenav__btn-icon {
         color: black;
       }
-      button:hover{
-        background: @green-button;
+
+      button:hover {
+        background: @button-hover;
       }
     }
     .align-right {
@@ -57,8 +59,14 @@ html {
     margin: @item-margin;
   }
 
+  .pagenav__btn.btn-icon:not(.btn-text) {
+    background-color: unset;
+  }
 
-
+  .btn-icon.pagenav__btn.has-icon.is-locked:hover {
+    background: @button-hover;
+    cursor: pointer
+  }
 
   // buttons with text and icon (left aligned icon as default)
   &__btn.btn-icon:not(.icon-is-right).btn-text .icon {
@@ -83,15 +91,16 @@ html {
   // consistent with nav icon button styling
   &__btn.btn-icon:not(.btn-text) {
     padding: @icon-padding;
-    background-color: @nav-icon;
-    color: @nav-icon-inverted;
+    //background-color: @nav-icon;
+    //color: @nav-icon-inverted;
     //border: 1px solid @nav-icon;
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
-      background-color: @nav-icon-hover;
-      color: @nav-icon-inverted-hover;
+      background: @button-hover;
+      transition: unset !important;
+      //color: @nav-icon-inverted-hover;
       //border-color: @nav-icon-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
+      //.transition(background-color @duration ease-in, color @duration ease-in;);
     }
 
     &.is-locked,

@@ -42,7 +42,7 @@
       cursor: auto;
 
       button {
-        background-color: darken(#e5e5e5, 50%) !important;
+        background: darken(#e5e5e5, 50%) !important;
         cursor: auto !important;
       }
     }
@@ -130,8 +130,12 @@
     display: inline-block;
 
     button {
-      background: @button-gradient;
+      background: @buttons-grad;
       color: black;
+    }
+
+    button:hover {
+      background: @button-hover !important;
     }
   }
 
