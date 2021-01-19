@@ -1415,7 +1415,8 @@
         "hint": "Вот сюда!"
       }
     ],
-    "_style_type": "first"
+    "_style_type": "first",
+    "_columns": 3
   },
   {
     "_id": "c-0-25",

@@ -62,19 +62,20 @@ define([
     }
 
     setWidthStyle() {
-      let max = Math.max(...this.model.get('_items').map(el => el.accepted.length));
-      let parentWidth = $('.sber-dragndrop__answers-container').width();
-
-      let computedVal = parentWidth / max - 50;
-      $('.sber-dragndrop__answers-answer').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : computedVal);
+      let cols = this.model.get('_columns');
+      let computedVal = Math.floor(100 / cols);
+      $('.sber-dragndrop__answers-answer').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : computedVal + '%');
+      document.querySelectorAll(`[data-adapt-id="${this.model.get('_id')}"] .sber-dragndrop__answers-answer:nth-child(${cols}n)`).forEach(el => el.style.marginRight = 0);
     }
 
     shuffleAnswers() {
-      let parent = this.$('.sber-dragndrop__answers-container');
-      let children = parent.children();
+      if (this.model.get('_isRandom')) {
+        let parent = this.$('.sber-dragndrop__answers-container');
+        let children = parent.children();
 
-      for (let i = 0; i < Math.floor(children.length / 2); i++) {
-        parent.append(children[Math.floor(Math.random() * children.length)]);
+        for (let i = 0; i < Math.floor(children.length / 2); i++) {
+          parent.append(children[Math.floor(Math.random() * children.length)]);
+        }
       }
     }
 

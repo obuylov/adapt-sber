@@ -25,6 +25,15 @@
       "default": "both",
       "editorOnly": true
     },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
     "_isRandom": {
       "type": "boolean",
       "required": true,
@@ -49,45 +58,201 @@
             "inputType": "Text",
             "validators": [],
             "title": "Текст",
-            "help": "Текст элемента",
+            "help": "Текст вопроса или общей корзины",
             "translatable": true
           },
-          "position": {
-            "type": "number",
-            "required": true,
+          "accepted": {
+            "type": "array",
+            "required": false,
+            "title": "Подходит",
+            "items": {
+              "type": "string",
+              "required": true,
+              "title": "Фигура",
+              "inputType": "Text",
+              "default": "circle",
+              "help": "Пончик, узкий пончик, круг, 5-угольник или 4-угольник"
+            }
+          },
+          "hint": {
+            "type": "string",
+            "required": false,
             "default": "",
-            "title": "Уникальный порядковый номер (с нуля)",
-            "inputType": "Number",
+            "inputType": "Text",
             "validators": [],
-            "help": "На каком месте должен быть блок"
+            "title": "Подсказка на поле сброса",
+            "help": "Например «Сбросить сюда»",
+            "translatable": true
           }
         }
       }
     },
+    "_columns": {
+      "type": "number",
+      "required": true,
+      "default": 3,
+      "title": "Количество колонок",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "Сколько должно быть колонок"
+    },
+    "_style_type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "first",
+        "second"
+      ],
+      "default": "first",
+      "title": "Вид верстки",
+      "inputType": {
+        "type": "Select",
+        "options": [
+          "first",
+          "second"
+        ]
+      },
+      "validators": [
+        "requried"
+      ],
+      "help": "first – для каждого ответа только 1 поле, second – для ответов общая корзина"
+    },
+    "_attempts": {
+      "type": "number",
+      "required": true,
+      "default": 1,
+      "title": "Attempts",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "How many attempts the learner is allowed"
+    },
+    "_canShowFeedback": {
+      "type": "boolean",
+      "required": true,
+      "default": true,
+      "title": "Display Feedback",
+      "inputType": "Checkbox",
+      "validators": []
+    },
+    "_canShowMarking": {
+      "type": "boolean",
+      "default": true,
+      "title": "Display Marking",
+      "inputType": "Checkbox",
+      "validators": []
+    },
     "_feedback": {
       "type": "object",
       "required": false,
-      "title": "Обратная связь",
+      "title": "Feedback",
       "properties": {
         "correct": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Верный ответ",
+          "title": "Correct",
           "inputType": "TextArea",
           "validators": [],
-          "help": "Обратная связь при верном ответе",
+          "help": "Correct answer feedback for this question",
           "translatable": true
         },
-        "incorrect": {
-          "type": "string",
+        "_incorrect": {
+          "type": "object",
           "required": false,
-          "default": "",
-          "title": "Неверный ответ",
-          "inputType": "TextArea",
-          "validators": [],
-          "help": "Обратная связь при неверном ответе",
-          "translatable": true
+          "title": "Incorrect Feedback",
+          "properties": {
+            "final": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "title": "Incorrect Final",
+              "inputType": "TextArea",
+              "validators": [],
+              "help": "Incorrect answer feedback for the final attempt",
+              "translatable": true
+            },
+            "notFinal": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "title": "Incorrect Not Final",
+              "inputType": "TextArea",
+              "validators": [],
+              "help": "Incorrect answer feedback for any attempt apart from the last attempt. If you leave this blank, the 'Incorrect Final' feedback will be used instead.",
+              "translatable": true
+            }
+          }
+        },
+        "_partlyCorrect": {
+          "type": "object",
+          "required": false,
+          "properties": {
+            "final": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "title": "Partly Correct Final",
+              "inputType": "TextArea",
+              "validators": [],
+              "help": "Partly correct answer feedback for the final attempt. If you leave this blank, the 'Incorrect Final' feedback will be used instead.",
+              "translatable": true
+            },
+            "notFinal": {
+              "type": "string",
+              "required": false,
+              "default": "",
+              "title": "Partly Correct Not Final",
+              "inputType": "TextArea",
+              "validators": [],
+              "help": "Partly correct answer feedback for any attempt apart from the last attempt. If you leave this blank, the 'Partly Correct Final' feedback will be used instead.",
+              "translatable": true
+            }
+          }
+        }
+      }
+    },
+    "_buttons": {
+      "type": "object",
+      "title": "Buttons",
+      "required": false,
+      "properties": {
+        "_submit": {
+          "type": "object",
+          "title": "Submit",
+          "properties": {
+            "buttonText": {
+              "type": "string",
+              "required": false,
+              "default": "Ответить",
+              "title": "",
+              "inputType": "QuestionButton",
+              "validators": [],
+              "help": "Button label text for the submit button",
+              "translatable": true
+            }
+          }
+        },
+        "_reset": {
+          "type": "object",
+          "title": "Reset",
+          "properties": {
+            "buttonText": {
+              "type": "string",
+              "required": false,
+              "default": "Ещё раз",
+              "title": "",
+              "inputType": "QuestionButton",
+              "validators": [],
+              "help": "Button label text for the reset button",
+              "translatable": true
+            }
+          }
         }
       }
     }

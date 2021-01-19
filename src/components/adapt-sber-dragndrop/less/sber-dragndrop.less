@@ -1,5 +1,8 @@
 .sber-dragndrop {
   &__inner {
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: @shadow-full;
     background-color: white;
   }
 
@@ -27,7 +30,7 @@
       min-width: 134px;
       max-width: 45%;
       min-height: 50px;
-      margin-right: 40px;
+      margin-right: 20px;
       padding: 20px;
       background-color: @light-gray;
       border-radius: 5px;
@@ -72,8 +75,8 @@
       justify-content: center;
 
       padding: 20px;
-      margin-right: 50px;
-      margin-bottom: 30px;
+      margin-right: 20px;
+      margin-bottom: 20px;
       border-radius: 5px;
       background-color: @green-button;
       box-sizing: border-box;
@@ -125,5 +128,9 @@
 
   .btn__action {
     margin: 0 !important;
+  }
+
+  .btn__feedback {
+    display: none;
   }
 }
