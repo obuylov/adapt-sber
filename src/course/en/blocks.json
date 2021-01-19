@@ -631,7 +631,7 @@
     "title": "New Block Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "align-vert-center",
+    "_classes": "align-vert-center mobile-reverse ",
     "_trackingId": 32,
     "instruction": "",
     "_isOptional": false,
