@@ -84,9 +84,20 @@
     .link-text;
   }
 
-  @media (max-width: @device-width-small) {
-    &.mobile-reverse .component__container {
-      flex-direction: column-reverse;
+  @media (max-width: @device-width-medium + 240px) {
+    &.mobile-reverse {
+      .component__container {
+        flex-direction: column-reverse;
+
+        .is-right {
+          margin-bottom: 30px;
+          margin-left: unset;
+        }
+
+        .is-left {
+          margin: 0;
+        }
+      }
     }
   }
 

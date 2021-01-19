@@ -1667,6 +1667,21 @@
     "_id": "c-0-27",
     "_parentId": "b-0-27",
     "_type": "component",
+    "_component": "text",
+    "_classes": "white-components",
+    "_layout": "right",
+    "title": "Our first look at a component",
+    "displayTitle": "",
+    "body": "This component you're reading is a text component.   to push the me.",
+    "instruction": "",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-0-28",
+    "_parentId": "b-0-27",
+    "_type": "component",
     "_component": "graphic",
     "_classes": "",
     "_layout": "left",
@@ -1680,21 +1695,6 @@
       "small": "course/en/assets/family.png",
       "attribution": ""
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true
-    }
-  },
-  {
-    "_id": "c-0-28",
-    "_parentId": "b-0-27",
-    "_type": "component",
-    "_component": "text",
-    "_classes": "white-components",
-    "_layout": "right",
-    "title": "Our first look at a component",
-    "displayTitle": "",
-    "body": "This component you're reading is a text component.   to push the me.",
-    "instruction": "",
     "_pageLevelProgress": {
       "_isEnabled": true
     }
