@@ -27,7 +27,7 @@ define([
 
     setStyles: function() {
       this.setClasses();
-      if (this.$el.hasClass("article")) {
+      if (this.$el.hasClass('article') || this.$el.hasClass('block')) {
         this.setBackgroundImage();
         this.setBackgroundStyles();
         this.setMinimumHeight();
