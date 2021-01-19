@@ -9,7 +9,8 @@ define([
     setupQuestion() {
       this.sortables = [];
       this.answers = [];
-      window.Sortable = Sortable;
+
+      this.model.set('_canShowModelAnswer', false);
     }
 
     onQuestionRendered() {
@@ -23,11 +24,11 @@ define([
     }
 
     setupCorrectVersion() {
+      let self = this;
       switch (this.model.get('_style_type')) {
         case 'first':
-          let self = this;
           this.$('.sber-dragndrop__question-answer-placeholder').each(function () {
-            Sortable.create($(this)[0], {
+            const sort = Sortable.create($(this)[0], {
               group: {
                 name: 'drag',
                 put: function (to) {
@@ -42,17 +43,20 @@ define([
               onRemove: function (e) {
                 $(e.from).removeClass('not-empty');
               },
-              animation: 150
+              animation: 150,
+              scroll: true,
+              scrollSensitivity: 100
             });
+            self.sortables.push(sort);
           });
-
           new Sortable(this.$('.sber-dragndrop__answers-container')[0], {
             group: 'drag',
             animation: 150,
             sort: false,
-            filter: '.ignore'
+            filter: '.ignore',
+            scroll: true,
+            scrollSensitivity: 100
           });
-
           break;
       }
     }
@@ -65,61 +69,72 @@ define([
     }
 
     shuffleAnswers() {
+      let parent = this.$('.sber-dragndrop__answers-container');
+      let children = parent.children();
 
-    }
-
-    // DRAG N DROP
-
-    setupSortable(el, group = '') {
-      let res = {
-        el,
-        sortable: new Sortable.create(el,),
-      };
-
-      if (group) {
-        res.group = group;
+      for (let i = 0; i < Math.floor(children.length / 2); i++) {
+        parent.append(children[Math.floor(Math.random() * children.length)]);
       }
-
-      this.sortables.push(res);
     }
 
     // QUESTION VIEW FUNCTIONS
 
-    toggleAnswer(show = true) {
+    getAnswers() {
+      let answers = [];
+      this.model.get('_items').forEach(el => {
+        answers = answers.concat(el.accepted);
+      });
 
+      return answers;
     }
 
     markAnswers() {
+      let id = '.' + this.model.get('_id');
+      let count = 0;
 
+      _.each(this.model.get('_items'), function (item, i) {
+        let answers = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container')[0];
+        answers = answers.innerText.split('\n');
+
+        item._isCorrect = item.accepted.sort().join() === answers.sort().join();
+
+        if (item._isCorrect) {
+          count++;
+        }
+      }, this);
+
+      this.model.set("_correctAnswerCount", count);
     }
 
     canSubmit() {
-
+      let elements_count = this.$('.sber-dragndrop__answers-container').children().length;
+      return elements_count <= 1;
     }
 
     isCorrect() {
+      this.markAnswers();
 
-    }
-
-    resetQuestion() {
-
-    }
-
-    showCorrectAnswer() {
-      this.toggleAnswer();
-    }
-
-    hideCorrectAnswer() {
-      this.toggleAnswer(false);
+      return !_.contains(_.pluck(this.model.get('_items'), '_isCorrect'), false);
     }
 
     storeUserAnswer() {
       let userAnswers = [];
+      let the_answers = this.getAnswers();
+
+      this.$('.sber-dragndrop__question-answer-placeholder').each(function () {
+        userAnswers.push(the_answers.indexOf($(this)[0].innerText));
+      });
+
       this.model.set('_userAnswer', userAnswers);
+      console.log(userAnswers);
     }
 
     setScore() {
-      let score = 0;
+      let amount = this.model.get('_items').length;
+      let weight = this.model.get('_questionWeight');
+      let count = this.model.get('_correctAnswerCount') || 0;
+
+      let score = count * weight / amount;
       this.model.set('_score', score);
     }
   }

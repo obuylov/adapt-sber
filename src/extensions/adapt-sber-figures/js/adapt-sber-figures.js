@@ -1,6 +1,6 @@
 define([
   'core/js/adapt'
-], async function (Adapt) {
+], function (Adapt) {
   // Ссылка для namespace svg-элемента
   const url = 'http://www.w3.org/2000/svg';
   /**
@@ -24,7 +24,7 @@ define([
       // Добавляем мы фигуры в меню или в article
       this._target = options._target;
 
-      // массив для добавления статей. Для простоты оставил значение и для меню
+      // Массив для добавления статей. Для простоты оставил значение и для меню
       this._articleModels = [];
 
       if (this._target === 'article') {
@@ -136,7 +136,7 @@ define([
 
       // Для каждой фигуры из массива _items нужно сделать svg
       for (let figure of this.data._items) {
-        // обнуляем прошлые значения, или создаем новые
+        // Обнуляем прошлые значения, или создаем новые
         this.svg = null;
         this.defs = null;
         this.shape = null;
@@ -357,7 +357,6 @@ define([
   }
 
   // Для меню и страницы одинаковый класс, отличается только _target
-
   Adapt.on('pageView:postRender', function (view) {
     new SberFiguresView({
       _target: 'article',
