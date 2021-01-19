@@ -7,7 +7,6 @@ define([
 
   class SberDragndropView extends QuestionView {
     setupQuestion() {
-      this.sortables = [];
       this.answers = [];
 
       this.model.set('_canShowModelAnswer', false);
@@ -21,51 +20,53 @@ define([
       this.setWidthStyle();
       this.shuffleAnswers();
       this.setupCorrectVersion();
+
+      this.listenTo(Adapt, 'device:resize', this.setWidthStyle);
     }
 
     setupCorrectVersion() {
       let self = this;
-      switch (this.model.get('_style_type')) {
-        case 'first':
-          this.$('.sber-dragndrop__question-answer-placeholder').each(function () {
-            const sort = Sortable.create($(this)[0], {
-              group: {
-                name: 'drag',
-                put: function (to) {
-                  return to.el.children.length < 2;
-                }
-              },
-              sort: false,
-              filter: '.ignore',
-              onAdd: function (e) {
-                $(e.to).addClass('not-empty');
-              },
-              onRemove: function (e) {
-                $(e.from).removeClass('not-empty');
-              },
-              animation: 150,
-              scroll: true,
-              scrollSensitivity: 100
-            });
-            self.sortables.push(sort);
-          });
-          new Sortable(this.$('.sber-dragndrop__answers-container')[0], {
-            group: 'drag',
-            animation: 150,
-            sort: false,
-            filter: '.ignore',
-            scroll: true,
-            scrollSensitivity: 100
-          });
-          break;
-      }
+      let type = this.model.get('_style_type');
+      this.$('.sber-dragndrop__question-answer-placeholder').each(function (i) {
+        const sort = Sortable.create($(this)[0], {
+          group: {
+            name: 'drag',
+            put: function (to) {
+              return type === 'first' || type === 'third' ? to.el.children.length < 2 : true;
+            }
+          },
+          sort: false,
+          filter: '.ignore',
+          onAdd: function (e) {
+            $(e.to).addClass('not-empty');
+          },
+          onRemove: function (e) {
+            if (e.from.children.length <= 1) {
+              $(e.from).removeClass('not-empty');
+            }
+          },
+          animation: 150,
+          scroll: true,
+          scrollSensitivity: 100
+        });
+      });
+
+      new Sortable(this.$('.sber-dragndrop__answers-container')[0], {
+        group: 'drag',
+        animation: 150,
+        sort: false,
+        filter: '.ignore',
+        scroll: true,
+        scrollSensitivity: 100
+      });
     }
 
     setWidthStyle() {
       let max = Math.max(...this.model.get('_items').map(el => el.accepted.length));
       let parentWidth = $('.sber-dragndrop__answers-container').width();
 
-      $('.sber-dragndrop__answers-answer').css('max-width', parentWidth / max - 50);
+      let computedVal = parentWidth / max - 50;
+      $('.sber-dragndrop__answers-answer').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : computedVal);
     }
 
     shuffleAnswers() {
@@ -91,10 +92,20 @@ define([
     markAnswers() {
       let id = '.' + this.model.get('_id');
       let count = 0;
+      let type = this.model.get('_style_type');
 
       _.each(this.model.get('_items'), function (item, i) {
-        let answers = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container')[0];
-        answers = answers.innerText.split('\n');
+        let answers = [];
+
+        if (type === 'first') {
+          answers = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container')[0];
+          answers = answers.innerText.split('\n');
+
+          item._isCorrect = item.accepted.sort().join() === answers.sort().join();
+        } else if (type === 'second') {
+          answers = $(id + ' .sber-dragndrop__question-answer-placeholder').eq(i)[0];
+          answers = answers.innerText.split('\n');
+        }
 
         item._isCorrect = item.accepted.sort().join() === answers.sort().join();
 
@@ -103,7 +114,7 @@ define([
         }
       }, this);
 
-      this.model.set("_correctAnswerCount", count);
+      this.model.set('_correctAnswerCount', count);
     }
 
     canSubmit() {
@@ -121,7 +132,7 @@ define([
       let userAnswers = [];
       let the_answers = this.getAnswers();
 
-      this.$('.sber-dragndrop__question-answer-placeholder').each(function () {
+      this.$('.sber-dragndrop__answers-answer').each(function () {
         userAnswers.push(the_answers.indexOf($(this)[0].innerText));
       });
 

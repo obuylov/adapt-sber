@@ -16,18 +16,32 @@
         </div>
       </div>
     {{/each}}
+  {{/equals}}
 
-    <div class="sber-dragndrop__answers-container answers">
-      <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
-      {{#each _items}}
-        {{#each accepted}}
-          <div class="sber-dragndrop__answers-answer">
-            {{{this}}}
+  {{#equals _style_type "second"}}
+    <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
+      <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
+
+      <div class="sber-dragndrop__question-answers-container">
+        {{#each _items}}
+          <div class="sber-dragndrop__question-answer-placeholder">
+            <span class="ignore">{{{text}}}</span>
           </div>
         {{/each}}
-      {{/each}}
+      </div>
     </div>
   {{/equals}}
+
+  <div class="sber-dragndrop__answers-container answers">
+    <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
+    {{#each _items}}
+      {{#each accepted}}
+        <div class="sber-dragndrop__answers-answer">
+          {{{this}}}
+        </div>
+      {{/each}}
+    {{/each}}
+  </div>
 
   <div class="btn__container"></div>
 </div>
