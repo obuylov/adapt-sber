@@ -42,6 +42,11 @@
     "_force": false,
     "_isMenuDisabled": false
   },
+  "_sberParallax": {
+    "_isEnabled": true,
+    "_areFiguresEnabled": false,
+    "_areImagesEnabled": true
+  },
   "_globals": {
     "_accessibility": {
       "skipNavigationText": "Skip navigation",

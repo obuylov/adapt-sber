@@ -54,6 +54,16 @@
       ],
       "gradient": "gradient-1",
       "_opacity": 0.7
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "course/en/assets/1.png",
+        "_medium": "",
+        "_small": ""
+      }
+    },
+    "_sberParallax": {
+      "_isImageEnabled": false
     }
   },
   {

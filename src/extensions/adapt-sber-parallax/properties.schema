@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_sberParallax": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер Параллакс",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить параллакс на странице",
+                  "default": true,
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_areFiguresEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить параллакс для фигур",
+                  "inputType": "Checkbox",
+                  "default": true,
+                  "validators": []
+                },
+                "_areImagesEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить параллакс для изображений",
+                  "inputType": "Checkbox",
+                  "default": true,
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object",
+          "properties": {
+            "_sberParallax": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер Параллакс",
+              "properties": {
+                "_isImageEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить параллакс для фонового изображения",
+                  "default": true,
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Если фона нет, ничего не поменяется"
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
