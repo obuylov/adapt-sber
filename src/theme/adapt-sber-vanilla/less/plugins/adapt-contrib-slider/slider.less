@@ -1,13 +1,19 @@
 .slider {
-  &__inner{
+  &__inner {
     box-shadow: @shadow-full;
     padding: 70px;
     background-color: white;
     border-radius: 5px;
-    .slider__header-inner{
+
+    .slider__header-inner {
       margin-bottom: 50px;
     }
+
+    @media (max-width: @device-width-small) {
+      padding: 30px;
+    }
   }
+
   // --------------------------------------------------
   // Labels
   // --------------------------------------------------
@@ -15,10 +21,12 @@
     .slider__label-start {
       width: 32%;
     }
+
     .slider__label-end {
       width: 32%;
     }
   }
+
   // --------------------------------------------------
 
   // --------------------------------------------------
@@ -29,16 +37,19 @@
     display: flex;
     justify-content: space-between;
     // Indent half the width of the range slider handle either side
-    .slider__number{
+    .slider__number {
       position: unset;
     }
-    .slider__number-selection{
+
+    .slider__number-selection {
       display: none;
     }
+
     .slider__number-answer {
       display: none;
     }
   }
+
   // --------------------------------------------------
 
   // --------------------------------------------------
@@ -81,4 +92,5 @@
 
   }
 }
+
 // --------------------------------------------------

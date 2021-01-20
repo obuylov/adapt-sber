@@ -54,6 +54,11 @@
       flex-direction: column-reverse;
       padding: 0;
     }
+
+    @media (max-width: @device-width-small) {
+      width: 90%;
+      padding: 0;
+    }
   }
 
   // --------------------------------------------------
@@ -115,7 +120,7 @@
       padding: 50px 20px;
       border-radius: 0;
 
-      button {
+      button.close {
         position: absolute;
         top: 12px;
         right: 12px;

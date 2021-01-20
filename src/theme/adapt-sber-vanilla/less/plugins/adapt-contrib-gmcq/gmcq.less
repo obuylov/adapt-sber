@@ -1,16 +1,22 @@
 .gmcq {
-  &__inner{
+  &__inner {
     padding: 70px 120px;
     box-shadow: @shadow-full;
     border-radius: 5px;
     background-color: white;
+
+    @media (max-width: @device-width-small) {
+      padding: 30px;
+    }
   }
+
   &__header-inner {
     font-size: 24px;
     text-align: left;
     margin-bottom: 90px;
     font-weight: bold;
   }
+
   &__widget {
     justify-content: space-between;
   }
@@ -24,6 +30,7 @@
       min-width: 24px;
     }
   }
+
   &__item-text-inner {
     margin-left: 10px;
   }

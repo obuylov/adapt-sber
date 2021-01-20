@@ -4,15 +4,22 @@
     border-radius: 5px;
     padding: 70px;
     background-color: white;
+
+    @media (max-width: @device-width-small) {
+      padding: 30px;
+    }
   }
-  &__header-inner{
+
+  &__header-inner {
     .matching__body-inner {
       .block-title;
     }
+
     .matching__instruction-inner {
-      font-size: 18px!important;
+      font-size: 18px !important;
     }
   }
+
   &__item {
     margin-bottom: 22px;
   }
@@ -50,5 +57,6 @@
   &__widget:not(.is-complete) .matching__select-container.has-error .dropdown__btn {
     box-shadow: 0 0 0 1px @validation-error inset;
   }
+
   // --------------------------------------------------
 }

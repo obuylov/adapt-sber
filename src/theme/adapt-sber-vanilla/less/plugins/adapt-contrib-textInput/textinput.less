@@ -4,7 +4,12 @@
     box-shadow: @shadow-full;
     border-radius: 5px;
     background-color: white;
+
+    @media (max-width: @device-width-small) {
+      padding: 30px;
+    }
   }
+
   &__item {
     flex-direction: column;
   }

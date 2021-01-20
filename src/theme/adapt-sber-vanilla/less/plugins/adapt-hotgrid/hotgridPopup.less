@@ -11,15 +11,26 @@
 
   &__nav {
     button {
-      background-color: transparent;
+      background-color: transparent !important;
     }
   }
 
+  @media (max-width: @device-width-small) {
+    &__inner {
+      padding-top: 80px;
+    }
+
+    &__item {
+      padding: 30px;
+    }
+
+    &__item-body {
+      margin-bottom: 30px;
+    }
+  }
 
   // Pop up item
   // --------------------------------------------------
-
-
   @media (min-width: @device-width-medium) {
     &__item {
       justify-content: space-between;
@@ -34,7 +45,8 @@
       width: 10%;
       margin: unset;
     }
-    &__item-title{
+
+    &__item-title {
       margin-bottom: 30px;
       font-size: 21px;
       font-weight: bold;
@@ -44,7 +56,6 @@
 
   // Hotgrid pop up icons
   // --------------------------------------------------
-
   &__close .icon {
     background-color: transparent;
   }
@@ -66,5 +77,9 @@
 
   &__count {
     color: black;
+  }
+
+  &__controls, .hotgrid-popup__close {
+    margin: 0;
   }
 }

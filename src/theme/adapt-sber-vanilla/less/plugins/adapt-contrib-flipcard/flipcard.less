@@ -21,6 +21,7 @@
   html.size-medium &,
   html.size-small & {
     width: 100%;
+    margin: 0 0 20px;
   }
 
   &-face {
@@ -127,6 +128,7 @@
     }
   }
 }
+
 // Дополнительные классы
 // Иконка, цветной фон
 .green-yellow-grad-card {
@@ -187,6 +189,7 @@
       margin: 40px;
       background-color: transparent;
       font-weight: bold;
+
       p {
         margin-left: 5px;
       }
@@ -202,7 +205,7 @@
       margin-left: 5px;
     }
 
-    .flipcard__item-frontTitle:after{
+    .flipcard__item-frontTitle:after {
       content: "Подробнее";
       position: absolute;
       bottom: 40px;
@@ -210,12 +213,13 @@
       margin-left: 5px;
     }
 
-    .flipcard__item-frontImage{
+    .flipcard__item-frontImage {
       min-width: unset;
       width: 46%;
       object-fit: scale-down;
     }
   }
+
   .flipcard__item-front:hover {
     background: @green-tab-grad;
   }

@@ -323,7 +323,9 @@ define([
 
       // Берем каждое свойство из props и задаем его как атрибут
       for (let prop in data.props) {
-        this.shape.setAttribute(prop, data.props[prop]);
+        if (data.props.hasOwnProperty(prop)) {
+          this.shape.setAttribute(prop, data.props[prop]);
+        }
       }
 
       // Генерируем SVG и задаем свойству fill или stroke url(#gradient)

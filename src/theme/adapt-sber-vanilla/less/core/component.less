@@ -71,10 +71,18 @@
 
   &.is-right {
     padding-left: 16px;
+
+    @media (max-width: @device-width-small) {
+      padding-left: 0;
+    }
   }
 
   &.is-left {
     padding-right: 16px;
+
+    @media (max-width: @device-width-small) {
+      padding-right: 0;
+    }
   }
 
   &__title {

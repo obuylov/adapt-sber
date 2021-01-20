@@ -33,7 +33,7 @@
 
   @media (max-width: @device-width-medium) {
     .menu__header-inner {
-      padding: 100px 30px;
+      padding: 100px 20px;
       min-height: auto;
     }
 
@@ -58,6 +58,10 @@
   .menu__body {
     padding: 160px 20px;
     background-color: #f7f7f7;
+
+    @media (max-width: @device-width-small) {
+      padding: 50px 20px;
+    }
   }
 
   .menu__body-inner {
