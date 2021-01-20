@@ -2,17 +2,39 @@
   background-color: @nav;
 
   &__inner {
-    max-width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+
+    &::before, &::after {
+      display: none;
+    }
   }
 
-  &__btn {
-    background-color: @nav-icon;
-    color: @nav-icon-inverted;
+  .icon-home::before {
+    content: url(assets/home.svg);
+  }
 
-    .no-touch &:hover {
-      background-color: @nav-icon-hover;
-      color: @nav-icon-inverted-hover;
-      .transition(background-color @duration ease-in, color @duration ease-in;);
-    }
+  .btn-icon {
+    padding: 0;
+    background-color: @white;
+  }
+
+  &__pagelevelprogress-btn {
+    padding: 20px 0;
+    margin-right: 30px;
+    float: none;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.location-id-course {
+  .nav {
+    display: none;
   }
 }

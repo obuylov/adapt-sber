@@ -61,6 +61,23 @@ define([
     }
 
     /**
+     * Подгоняет размер фигур под размер экрана
+     * Если 900 < экран < 1920, то подгонится коэффициент
+     * * @param size начальный размер фигуры
+     * * @returns {number} новый размер
+     */
+    setupFiguresRatio(size) {
+      let newSize = size;
+
+      if (innerWidth > 900 && innerWidth < 1920 && size > 300) {
+        let initial_ratio = 1920 / size;
+        newSize = innerWidth / initial_ratio;
+      }
+
+      return newSize;
+    }
+
+    /**
      * Отслеживает изменение экрана, а так же отвечает за первый рендер.
      * Если ширина экрана <= 900px, фигуры удаляются и не показываются
      * Если ширина больше, фигуры генерируются
@@ -142,7 +159,7 @@ define([
         this.shape = null;
 
         // Сохраним информацию о размере и текущей позиции, чтобы нормально передать в функцию генерации
-        this.data.current_size = figure.size;
+        this.data.current_size = this.setupFiguresRatio(figure.size);
         this.data.current_pos = {
           top: figure.y_pos,
           left: figure.x_pos
