@@ -1,15 +1,15 @@
 {
-  "title": "тестовый",
-  "displayTitle": "тестовый",
+  "title": "1. Сегментация клиентов в КБ",
+  "displayTitle": "Сегментация <br>клиентов в КБ",
   "body": "<div class=\"two-cols\"><div class=\"col white\"><p><strong>В курсе рассмотрены:</strong></p><ul><li>Принципы сегментации клиентов</li><li>Алгоритм определения целевого клиентского сегмента</li></ul></div><div class=\"col white\"><p><strong>Курс считается пройденным успешно, если Вы:</strong></p><ul><li>Изучили все информационные блоки</li><li>Верно ответили на 80% тестовых вопросов курса</li></ul></div></div>",
-  "subtitle": "",
+  "subtitle": "Курс разработан для обучения всех <br>сотрудников ПАО «Сбербанк» <br>(далее — Банк, Сбербанк).",
   "description": "",
   "instruction": "",
-  "_htmlClasses": "",
-  "_latestTrackingId": 17,
+  "_htmlClasses": "main-grad",
+  "_latestTrackingId": 23,
   "_buttons": {
     "_submit": {
-      "buttonText": "Submit",
+      "buttonText": "Ответить",
       "ariaLabel": "Submit"
     },
     "_reset": {
@@ -32,15 +32,9 @@
     "remainingAttemptText": "final attempt",
     "disabledAriaLabel": "This button is disabled at the moment"
   },
-  "_pageLevelProgress": {
-    "_isEnabled": true,
-    "_showPageCompletion": true,
-    "_isCompletionIndicatorEnabled": true,
-    "_isShownInNavigationBar": true
-  },
   "_classes": "",
   "_requireCompletionOf": -1,
-  "_lockType": "",
+  "_lockType": "sequential",
   "_id": "course",
   "_start": {
     "_isEnabled": false,
@@ -104,10 +98,10 @@
         "ariaRegion": "Text input. Type your answer and then submit."
       },
       "_mcq": {
-        "ariaRegion": "Multiple choice question"
+        "ariaRegion": "Multiple choice question. Select your option and then submit."
       },
       "_gmcq": {
-        "ariaRegion": "Multiple choice question"
+        "ariaRegion": "Multiple choice question. Select your option and then submit."
       },
       "_assessmentResults": {
         "ariaRegion": "Assessment results."
@@ -140,23 +134,54 @@
         "ariaRegion": "This stacklist component presents a list of items. Select the button to access each item in turn.",
         "ariaButtonLabel": "Select this button to access the next item in the stacklist."
       },
-      "_sber-ordering": {
+      "_beforeafter": {
         "ariaRegion": ""
       },
       "_sber-txtmessages": {
+        "ariaRegion": ""
+      },
+      "_sber-ordering": {
+        "ariaRegion": ""
+      },
+      "_sber-yes-no": {
+        "ariaRegion": ""
+      },
+      "_dragndrop": {
+        "ariaRegion": "This component is a multiple choice question. Once you have selected an option select the submit button below"
+      },
+      "_dragndropwithimage": {
+        "ariaRegion": "This component is a multiple choice question. Once you have selected an option select the submit button below"
+      },
+      "_sber-iframe": {
+        "ariaRegion": ""
+      },
+      "_sber-dragndrop": {
+        "ariaRegion": ""
+      },
+      "_imageSlider": {
         "ariaRegion": ""
       }
     },
     "_extensions": {
       "_trickle": {
         "incompleteContent": "There is incomplete content above. You must complete this before you can proceed through the course."
+      },
+      "_pageLevelProgress": {
+        "pageLevelProgress": "Page sections",
+        "pageLevelProgressIndicatorBar": "Page progress. Use this to listen to the list of regions in this topic and whether they're completed. You can jump directly to any that are incomplete or which sound particularly interesting. {{percentageComplete}}%",
+        "pageLevelProgressMenuBar": "Page completion {{percentageComplete}}%",
+        "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
+        "optionalContent": "Optional content"
+      },
+      "_resources": {
+        "resources": "Additional resources."
       }
     }
   },
   "_type": "course",
   "themeVariables": {
     "_global": {
-      "font-color": "#4d4d4d",
+      "font-color": "#434343",
       "font-color-inverted": "#ffffff",
       "link": "",
       "link-inverted": "",
@@ -264,35 +289,81 @@
       "shadow-inverted": "#ffffff"
     }
   },
+  "_sberParallax": {
+    "_isEnabled": true,
+    "_areFiguresEnabled": true,
+    "_areImagesEnabled": true
+  },
+  "_assessment": {
+    "_isPercentageBased": true,
+    "_scoreToPass": 60
+  },
+  "_pageLevelProgress": {
+    "_isEnabled": true,
+    "_showPageCompletion": true,
+    "_isCompletionIndicatorEnabled": false,
+    "_isShownInNavigationBar": true
+  },
+  "_resources": {
+    "_isEnabled": true,
+    "_drawerOrder": 1,
+    "title": "Ресурсы",
+    "description": "Документы, представленные в курсе",
+    "_filterButtons": {
+      "all": "All",
+      "document": "Documents",
+      "media": "Media",
+      "link": "Links"
+    },
+    "_filterAria": {
+      "allAria": "View all resources",
+      "documentAria": "View document resources",
+      "mediaAria": "View media resources",
+      "linkAria": "View resource links"
+    },
+    "_resourcesItems": []
+  },
+  "_sberFigures": {
+    "gradient-1": "linear-gradient(180deg, #42E3CB 0%, rgba(68, 227, 181, 0.991353) 6.67%, rgba(73, 228, 183, 0.96449) 13.33%, rgba(81, 229, 186, 0.91834) 20%, rgba(94, 231, 191, 0.852589) 26.67%, rgba(110, 233, 197, 0.768225) 33.33%, rgba(129, 236, 205, 0.668116) 40%, rgba(150, 239, 213, 0.557309) 46.67%, rgba(171, 243, 222, 0.442691) 53.33%, rgba(192, 246, 230, 0.331884) 60%, rgba(211, 249, 238, 0.231775) 66.67%, rgba(227, 251, 244, 0.147411) 73.33%, rgba(240, 253, 249, 0.0816599) 80%, rgba(248, 254, 252, 0.03551) 86.67%, rgba(253, 255, 254, 0.0086472) 93.33%, rgba(255, 255, 255, 0) 100%), #0066FF;",
+    "gradient-2": "",
+    "_isEnabled": true,
+    "_items": [
+      {
+        "_type": "pentagon",
+        "size": 348,
+        "x_pos": 19,
+        "y_pos": 10
+      },
+      {
+        "_type": "circle",
+        "size": 83,
+        "x_pos": 75,
+        "y_pos": 20
+      },
+      {
+        "_type": "thin_donut",
+        "size": 257,
+        "x_pos": 90,
+        "y_pos": 45
+      },
+      {
+        "_type": "circle",
+        "size": 147,
+        "x_pos": 10,
+        "y_pos": 75
+      }
+    ],
+    "gradient": "gradient-1",
+    "_opacity": 0.6
+  },
   "_sber-boxMenu": {
     "_menuImage": {
-      "_image": ""
+      "_image": "course/ru/assets/5ce9e5a0249a1c495332e806456cf12d54403b3a.png"
     },
     "_backgroundImage": {
       "_large": "",
       "_medium": "",
       "_small": ""
     }
-  },
-  "_sberFigures": {
-    "gradient-1": "linear-gradient(180deg, #42E3B4 8.47%, #FAED00 96.61%);",
-    "gradient-2": "",
-    "_isEnabled": true,
-    "_items": [
-      {
-        "_type": "donut",
-        "size": 100,
-        "x_pos": 10,
-        "y_pos": 20
-      },
-      {
-        "_type": "thin_donut",
-        "size": 150,
-        "x_pos": 20,
-        "y_pos": 50
-      }
-    ],
-    "gradient": "gradient-1",
-    "_opacity": 0.7
   }
 }

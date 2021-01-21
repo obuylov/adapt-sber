@@ -3,7 +3,7 @@
     "repository": "git://github.com/obuylov/adapt-sber",
     "framework": ">=5",
     "homepage": "https://github.com/obuylov/adapt-sber",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "issues": "",
     "displayName": "Sber Параллакс",
     "extension": "sberParallax",

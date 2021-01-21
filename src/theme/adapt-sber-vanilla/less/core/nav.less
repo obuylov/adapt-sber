@@ -16,13 +16,26 @@
     content: url(assets/home.svg);
   }
 
+  &__drawer-btn {
+    margin-right: 30px;
+
+    .icon:before {
+      content: url(assets/drawer.svg);
+    }
+  }
+
+  &__close-btn .icon:before {
+    content: url(assets/cross.svg);
+  }
+
   .btn-icon {
     padding: 0;
     background-color: @white;
   }
 
   &__pagelevelprogress-btn {
-    padding: 20px 0;
+    order: -1;
+    padding: 10px 0 !important;
     margin-right: 30px;
     float: none;
   }

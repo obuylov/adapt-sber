@@ -22,19 +22,19 @@ define([
       if (this.parallaxModel._areImagesEnabled) {
         setTimeout(() => {
           $('.has-bg-image').css('background-attachment', 'fixed');
-          this.checkArticles();
         }, 1000);
+        setTimeout(() => {
+          this.checkArticles();
+        }, 1500);
       }
     }
 
     checkArticles() {
-      console.log(56);
       const current_components = this.model.findDescendantModels('articles');
       this.article_models = current_components.filter(el => el.get('_sberParallax') && !el.get('_sberParallax')._isImageEnabled);
 
       if (this.article_models.length === 0) return false;
 
-      console.log(4);
       this.article_models.forEach(el => {
         $('.' + el.get('_id')).css('background-attachment', 'initial');
       });

@@ -1,7 +1,7 @@
 [
   {
     "title": "New Block Title",
-    "displayTitle": "Hello!",
+    "displayTitle": "Виды сегментов",
     "body": "",
     "_classes": "",
     "_trackingId": 1,
@@ -12,13 +12,16 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fc80c3facdd61c1b5a51cad",
-    "_parentId": "5fc80c3facdd61c1b5a51cac",
+    "_id": "5fd9e9cd68656502e6050b08",
+    "_parentId": "5fd9e9cd68656502e6050afe",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_trickle": {
       "_isEnabled": false,
@@ -47,6 +50,10 @@
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -69,7 +76,7 @@
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Основные критерии отнесения",
     "body": "",
     "_classes": "",
     "_trackingId": 2,
@@ -80,9 +87,17 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fc9311b542dfae6173888e9",
-    "_parentId": "5fc930c3542dfae6173888e5",
+    "_id": "5fd9e9cd68656502e6050b09",
+    "_parentId": "5fd9e9cd68656502e6050b00",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -110,11 +125,33 @@
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Алгоритм определения ЦКС",
     "body": "",
     "_classes": "",
     "_trackingId": 3,
@@ -125,13 +162,16 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fedb37deeee4f102fd74c70",
-    "_parentId": "5fedb37deeee4f102fd74c6f",
+    "_id": "5fd9e9ce68656502e6050b0a",
+    "_parentId": "5fd9e9cd68656502e6050b02",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_trickle": {
       "_isEnabled": false,
@@ -160,6 +200,10 @@
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -193,19 +237,26 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ff83d90b6348f76a2b83d91",
-    "_parentId": "5ff83d90b6348f76a2b83d90",
+    "_id": "5fd9e9ce68656502e6050b0d",
+    "_parentId": "5fd9e9cd68656502e6050aff",
     "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Права и обязанности резидентов при осуществлении валютных операций физических лиц",
     "body": "",
-    "_classes": "",
+    "_classes": "align-vert-center",
     "_trackingId": 5,
     "instruction": "",
     "_isOptional": false,
@@ -214,17 +265,71 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffaf9a67307ac19ae0a859a",
-    "_parentId": "5ffaf9a67307ac19ae0a8599",
+    "_id": "5fd9e9ce68656502e6050b0b",
+    "_parentId": "5fd9e9cd68656502e6050b04",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Дополнительные критерии",
     "body": "",
     "_classes": "",
     "_trackingId": 6,
@@ -235,17 +340,71 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffaf9d27307ac19ae0a859d",
-    "_parentId": "5ffaf9d27307ac19ae0a859c",
+    "_id": "5fd9e9ce68656502e6050b0c",
+    "_parentId": "5fd9e9cd68656502e6050b06",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
     "title": "New Block Title",
-    "displayTitle": "",
+    "displayTitle": "Тестирование",
     "body": "",
     "_classes": "",
     "_trackingId": 7,
@@ -256,12 +415,66 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffb1476ac2d021ecf3aa4ac",
-    "_parentId": "5ffb1476ac2d021ecf3aa4ab",
+    "_id": "5fd9e9ce68656502e6050b0e",
+    "_parentId": "5fd9e9cd68656502e6050b01",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
@@ -277,12 +490,19 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffb14c5ac2d021ecf3aa4af",
-    "_parentId": "5ffb14c5ac2d021ecf3aa4ae",
+    "_id": "5fd9e9ce68656502e6050b0f",
+    "_parentId": "5fd9e9cd68656502e6050b03",
     "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
@@ -298,12 +518,19 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffb14e2ac2d021ecf3aa4b3",
-    "_parentId": "5ffb14e2ac2d021ecf3aa4b2",
+    "_id": "5fd9e9ce68656502e6050b15",
+    "_parentId": "5fd9e9cd68656502e6050b05",
     "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
@@ -319,12 +546,66 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffb14e7ac2d021ecf3aa4b7",
-    "_parentId": "5ffb14e7ac2d021ecf3aa4b6",
+    "_id": "5fd9e9ce68656502e6050b16",
+    "_parentId": "5fd9e9cd68656502e6050b07",
     "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "startText": "Begin",
+        "finalText": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
     }
   },
   {
@@ -340,36 +621,19 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fc930c3542dfae6173888e6",
-    "_parentId": "5fc80c3facdd61c1b5a51cac",
+    "_id": "5fd9e9ce68656502e6050b10",
+    "_parentId": "5fd9e9cd68656502e6050afe",
     "_type": "block",
-    "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
-      "_scrollDuration": 500,
-      "_scrollTo": "@block +1",
-      "_button": {
-        "_isEnabled": true,
-        "_styleBeforeCompletion": "hidden",
-        "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
-        "_autoHide": false,
-        "_className": "",
-        "_hasIcon": false,
-        "text": "Continue",
-        "startText": "Begin",
-        "finalText": "Finish",
-        "_component": "trickle-button"
-      },
-      "_stepLocking": {
-        "_isEnabled": true,
-        "_isCompletionRequired": true,
-        "_isLockedOnRevisit": false
-      }
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
@@ -385,36 +649,19 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fcd65194b43603e9a7efc87",
-    "_parentId": "5fc930c3542dfae6173888e5",
+    "_id": "5fd9e9ce68656502e6050b11",
+    "_parentId": "5fd9e9cd68656502e6050b00",
     "_type": "block",
-    "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
-      "_scrollDuration": 500,
-      "_scrollTo": "@block +1",
-      "_button": {
-        "_isEnabled": true,
-        "_styleBeforeCompletion": "hidden",
-        "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
-        "_autoHide": false,
-        "_className": "",
-        "_hasIcon": false,
-        "text": "Continue",
-        "startText": "Begin",
-        "finalText": "Finish",
-        "_component": "trickle-button"
-      },
-      "_stepLocking": {
-        "_isEnabled": true,
-        "_isCompletionRequired": true,
-        "_isLockedOnRevisit": false
-      }
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
@@ -430,13 +677,44 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fedb42aeeee4f102fd74c74",
-    "_parentId": "5fedb37deeee4f102fd74c6f",
+    "_id": "5fd9e9ce68656502e6050b12",
+    "_parentId": "5fd9e9cd68656502e6050b02",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "align-vert-center",
+    "_trackingId": 14,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b13",
+    "_parentId": "5fd9e9cd68656502e6050b04",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_trickle": {
       "_isEnabled": false,
@@ -465,6 +743,10 @@
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -483,51 +765,6 @@
         "_small": null
       },
       "_isDividerBlock": false
-    }
-  },
-  {
-    "title": "New Block Title",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 14,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fc80c72acdd61c1b5a51caf",
-    "_parentId": "5fc80c3facdd61c1b5a51cac",
-    "_type": "block",
-    "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
-      "_scrollDuration": 500,
-      "_scrollTo": "@block +1",
-      "_button": {
-        "_isEnabled": true,
-        "_styleBeforeCompletion": "hidden",
-        "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
-        "_autoHide": false,
-        "_className": "",
-        "_hasIcon": false,
-        "text": "Continue",
-        "startText": "Begin",
-        "finalText": "Finish",
-        "_component": "trickle-button"
-      },
-      "_stepLocking": {
-        "_isEnabled": true,
-        "_isCompletionRequired": true,
-        "_isLockedOnRevisit": false
-      }
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": false,
-      "_isCompletionIndicatorEnabled": false
     }
   },
   {
@@ -543,36 +780,19 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fcd65a24b43603e9a7efc8b",
-    "_parentId": "5fc930c3542dfae6173888e5",
+    "_id": "5fd9e9ce68656502e6050b14",
+    "_parentId": "5fd9e9cd68656502e6050b01",
     "_type": "block",
-    "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
-      "_scrollDuration": 500,
-      "_scrollTo": "@block +1",
-      "_button": {
-        "_isEnabled": true,
-        "_styleBeforeCompletion": "hidden",
-        "_styleAfterClick": "hidden",
-        "_isFullWidth": true,
-        "_autoHide": false,
-        "_className": "",
-        "_hasIcon": false,
-        "text": "Continue",
-        "startText": "Begin",
-        "finalText": "Finish",
-        "_component": "trickle-button"
-      },
-      "_stepLocking": {
-        "_isEnabled": true,
-        "_isCompletionRequired": true,
-        "_isLockedOnRevisit": false
-      }
+    "_assessment": {
+      "_quizBankID": 1
     },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   },
   {
@@ -588,8 +808,36 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fedb43ceeee4f102fd74c76",
-    "_parentId": "5fedb37deeee4f102fd74c6f",
+    "_id": "5fd9e9ce68656502e6050b17",
+    "_parentId": "5fd9e9cd68656502e6050afe",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "align-vert-center",
+    "_trackingId": 17,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b18",
+    "_parentId": "5fd9e9cd68656502e6050b04",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
@@ -620,9 +868,16 @@
         "_isLockedOnRevisit": false
       }
     },
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     },
     "_sber-vanilla": {
       "_backgroundImage": {
@@ -648,7 +903,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 17,
+    "_trackingId": 18,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -656,9 +911,42 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5fcd76724f2b9546d270d0d8",
-    "_parentId": "5fc930c3542dfae6173888e5",
+    "_id": "5fd9e9ce68656502e6050b19",
+    "_parentId": "5fd9e9cd68656502e6050b01",
     "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "align-vert-center",
+    "_trackingId": 19,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b1a",
+    "_parentId": "5fd9e9cd68656502e6050b04",
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "_trickle": {
       "_isEnabled": false,
       "_autoScroll": false,
@@ -683,9 +971,146 @@
         "_isLockedOnRevisit": false
       }
     },
+    "_assessment": {
+      "_quizBankID": 1
+    },
     "_pageLevelProgress": {
       "_isEnabled": false,
       "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_sber-vanilla": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 20,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b1b",
+    "_parentId": "5fd9e9cd68656502e6050b01",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 21,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b1c",
+    "_parentId": "5fd9e9cd68656502e6050b04",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 22,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b1d",
+    "_parentId": "5fd9e9cd68656502e6050b01",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 23,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "5fd9e9ce68656502e6050b1e",
+    "_parentId": "5fd9e9cd68656502e6050b01",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
     }
   }
 ]

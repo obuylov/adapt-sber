@@ -1,15 +1,15 @@
 [
   {
-    "title": "sber branching",
-    "displayTitle": "sber branching",
+    "title": "Сегментация клиентов в КБ",
+    "displayTitle": "Сегментация клиентов в КБ",
     "body": "",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
     "instruction": "",
     "_htmlClasses": "",
-    "linkText": "View",
-    "duration": "",
+    "linkText": "Изучить",
+    "duration": "15 мин",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -18,12 +18,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ffb1476ac2d021ecf3aa4aa",
+    "_id": "5fd9e9cd68656502e6050afa",
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "alt": "",
-      "src": ""
+      "alt": "иконка",
+      "src": "course/ru/assets/5653522af8c2ccf030af48da076887cba96b8bf7.png"
     },
     "_onScreen": {
       "_isEnabled": false,
@@ -67,16 +67,16 @@
     }
   },
   {
-    "title": "диалоги и тест",
-    "displayTitle": "диалоги и тест",
+    "title": "Тестирование",
+    "displayTitle": "Тестирование",
     "body": "",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
     "instruction": "",
-    "_htmlClasses": "",
-    "linkText": "View",
-    "duration": "",
+    "_htmlClasses": "gray",
+    "linkText": "Изучить",
+    "duration": "15 мин",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -85,149 +85,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "5ff83d90b6348f76a2b83d8f",
+    "_id": "5fd9e9cd68656502e6050afc",
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "alt": "",
-      "src": ""
-    },
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_showPageCompletion": true,
-      "_isCompletionIndicatorEnabled": false,
-      "_excludeAssessments": false
-    },
-    "_sber-vanilla": {
-      "_backgroundImage": {
-        "_large": "",
-        "_medium": "",
-        "_small": ""
-      },
-      "_backgroundStyles": {
-        "_backgroundRepeat": null,
-        "_backgroundSize": null,
-        "_backgroundPosition": null
-      },
-      "_pageHeader": {
-        "_backgroundImage": {
-          "_large": "",
-          "_medium": "",
-          "_small": ""
-        },
-        "_backgroundStyles": {
-          "_backgroundRepeat": null,
-          "_backgroundSize": null,
-          "_backgroundPosition": null
-        },
-        "_minimumHeights": {
-          "_large": null,
-          "_medium": null,
-          "_small": null
-        }
-      }
-    }
-  },
-  {
-    "title": "много разных блоков",
-    "displayTitle": "много разных блоков",
-    "body": "",
-    "_classes": "",
-    "subtitle": "",
-    "pageBody": "",
-    "instruction": "",
-    "_htmlClasses": "",
-    "linkText": "View",
-    "duration": "",
-    "_lockedBy": [],
-    "_lockType": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fc80c3facdd61c1b5a51cab",
-    "_type": "page",
-    "_parentId": "course",
-    "_graphic": {
-      "alt": "",
-      "src": ""
-    },
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_showPageCompletion": true,
-      "_isCompletionIndicatorEnabled": false,
-      "_excludeAssessments": false
-    },
-    "_boxMenu": {
-      "_renderAsGroup": false
-    },
-    "_sber-vanilla": {
-      "_backgroundImage": {
-        "_large": "",
-        "_medium": "",
-        "_small": ""
-      },
-      "_backgroundStyles": {
-        "_backgroundRepeat": null,
-        "_backgroundSize": null,
-        "_backgroundPosition": null
-      },
-      "_pageHeader": {
-        "_backgroundImage": {
-          "_large": "",
-          "_medium": "",
-          "_small": ""
-        },
-        "_backgroundStyles": {
-          "_backgroundRepeat": null,
-          "_backgroundSize": null,
-          "_backgroundPosition": null
-        },
-        "_minimumHeights": {
-          "_large": null,
-          "_medium": null,
-          "_small": null
-        }
-      }
-    }
-  },
-  {
-    "title": "бранчинг",
-    "displayTitle": "бранчинг",
-    "body": "",
-    "_classes": "",
-    "subtitle": "",
-    "pageBody": "",
-    "instruction": "",
-    "_htmlClasses": "",
-    "linkText": "View",
-    "duration": "",
-    "_lockedBy": [],
-    "_lockType": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5feb91140cba9a2941e43eba",
-    "_parentId": "course",
-    "_type": "page",
-    "_graphic": {
-      "alt": "",
-      "src": ""
+      "alt": "фото",
+      "src": "course/ru/assets/3e40f5e30dd18cb0b9832e40036ed4c4538d6bb3.png"
     },
     "_onScreen": {
       "_isEnabled": false,
