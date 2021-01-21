@@ -41,6 +41,7 @@
   }
 
   .pagelevelprogress__indicator-bar {
+    min-width: 0;
     background: @progress-grad;
   }
 }
@@ -51,16 +52,28 @@
 // Nav
 // --------------------------------------------------
 .pagelevelprogress__nav-btn {
-  .pagelevelprogress__indicator {
-    border-color: @nav-progress-border;
-  }
 
-  .pagelevelprogress__indicator-inner {
-    background-color: @nav-progress-inverted;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
-  .pagelevelprogress__indicator-bar {
-    background-color: @nav-progress;
+  .pagelevelprogress {
+    &__indicator {
+      width: 100%;
+      border-radius: 0;
+      border-color: @nav-progress-border;
+
+      &-inner {
+        height: 12px;
+        background-color: @white;
+      }
+
+      &-bar {
+        min-width: 0;
+        background: @progress-grad;
+      }
+    }
   }
 
   .no-touch &:hover {

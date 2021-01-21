@@ -27,11 +27,11 @@
                 </button>
             </div>
             {{#if duration}}
-                <div class="menu-duration">
-                    <div class="menu-item-duration" tabindex="0">
-                        <img src="assets/duration_icon.svg" alt="duration icon">
-                        {{{duration}}}</div>
-                </div>
+              <div class="menu-duration">
+                <div class="menu-item-duration" tabindex="0">
+                  <img src="assets/{{#if _isLocked}}locked-{{/if}}duration_icon.svg" alt="duration icon">
+                  {{{duration}}}</div>
+              </div>
             {{/if}}
         </div>
     </div>

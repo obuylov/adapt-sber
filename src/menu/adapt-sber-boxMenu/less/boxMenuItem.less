@@ -37,13 +37,18 @@
       transform: translateY(-5px);
     }
 
-    &.locked {
-      opacity: 0.5;
+    &.is-locked {
+      color: #8c8c8c;
       cursor: auto;
 
-      button {
-        background: darken(#e5e5e5, 50%) !important;
+      button, .pagelevelprogress__indicator-bar {
+        background: #e5e5e5 !important;
+        color: #8c8c8c;
         cursor: auto !important;
+      }
+
+      .menu-item-photo {
+        filter: grayscale(1);
       }
     }
 

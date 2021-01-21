@@ -2,6 +2,8 @@
   background-color: @nav;
 
   &__inner {
+    position: relative;
+    max-width: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,8 +19,6 @@
   }
 
   &__drawer-btn {
-    margin-right: 30px;
-
     .icon:before {
       content: url(assets/drawer.svg);
     }
@@ -31,13 +31,6 @@
   .btn-icon {
     padding: 0;
     background-color: @white;
-  }
-
-  &__pagelevelprogress-btn {
-    order: -1;
-    padding: 10px 0 !important;
-    margin-right: 30px;
-    float: none;
   }
 
   .center {

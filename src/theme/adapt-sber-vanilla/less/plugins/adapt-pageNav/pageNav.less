@@ -13,6 +13,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     button {
       background: @buttons-grad;
       color: black;
@@ -26,12 +27,20 @@ html {
         background: @button-hover;
       }
     }
+
     .align-right {
       border-radius: 50%;
       position: absolute;
       right: 0;
-      .pagenav__btn-icon{
+
+      .pagenav__btn-icon {
         color: @black;
+      }
+    }
+
+    @media (max-width: @device-width-small) {
+      [data-type="_up"] {
+        top: -85px;
       }
     }
   }
@@ -40,8 +49,9 @@ html {
     display: flex;
     align-items: center;
   }
+
   &__btn [data-type="_root"] {
-    &__btn-inner{
+    &__btn-inner {
       width: 60px;
       height: 60px;
     }
