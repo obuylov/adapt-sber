@@ -66,7 +66,9 @@
   }
 
   &.scroll {
-    overflow: scroll;
+    @media (max-width: @device-width-small) {
+      overflow: scroll;
+    }
   }
 
   &.is-right {

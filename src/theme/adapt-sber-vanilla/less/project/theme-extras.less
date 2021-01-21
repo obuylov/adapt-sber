@@ -205,11 +205,24 @@
     box-shadow: @shadow-full;
     width: fit-content;
   }
+
+  @media (max-width: @device-width-small) {
+    padding-left: unset !important;
+    padding-right: unset !important;
+    display: flex;
+    justify-content: center;
+    .component__inner {
+      width: 100%;
+    }
+  }
 }
 
 .right-component {
   .component__inner {
     float: right;
+    @media (max-width: @device-width-small) {
+      float: unset;
+    }
   }
 }
 
@@ -416,7 +429,7 @@ ol {
 
 b, strong {
   font-family: 'SB-Semibold', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .m-0 p {
@@ -493,5 +506,16 @@ b, strong {
     &:nth-child(odd) {
       background: @table-grad;
     }
+  }
+}
+
+.mobile-instructions, .tablet-instructions {
+  display: none;
+  color: @gray-text;
+}
+
+@media (max-width: @device-width-small) {
+  .mobile-instructions {
+    display: inline-block;
   }
 }
