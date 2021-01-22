@@ -104,7 +104,8 @@
       "required": true,
       "enum": [
         "first",
-        "second"
+        "second",
+        "third"
       ],
       "default": "first",
       "title": "Вид верстки",
@@ -112,7 +113,8 @@
         "type": "Select",
         "options": [
           "first",
-          "second"
+          "second",
+          "third"
         ]
       },
       "validators": [

@@ -27,6 +27,7 @@
     .narrative__controls {
       background: #FFFFFF;
       border-radius: 50%;
+      box-shadow: @shadow-full;
     }
 
     .narrative__slide-container {
@@ -44,6 +45,10 @@
 
       .narrative__controls {
         background-color: transparent;
+        box-shadow: unset !important;
+        @media (max-width: @device-width-small) {
+          box-shadow: @shadow-full !important;
+        }
       }
     }
 

@@ -1,47 +1,61 @@
 <div class="component__inner sber-dragndrop__inner style-{{_style_type}}">
-  {{> component this}}
+    {{> component this}}
 
-  {{#equals _style_type "first"}}
-    {{#each _items}}
-      <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
-        <div class="sber-dragndrop__question-text">{{{text}}}</div>
-        <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
-
-        <div class="sber-dragndrop__question-answers-container">
-          {{#each accepted}}
-            <div class="sber-dragndrop__question-answer-placeholder">
-              <span class="ignore">{{../hint}}</span>
-            </div>
-          {{/each}}
-        </div>
-      </div>
-    {{/each}}
-  {{/equals}}
-
-  {{#equals _style_type "second"}}
-    <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
-      <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
-
-      <div class="sber-dragndrop__question-answers-container">
+    {{#equals _style_type "first"}}
         {{#each _items}}
-          <div class="sber-dragndrop__question-answer-placeholder">
-            <span class="ignore">{{{text}}}</span>
-          </div>
+            <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
+                <div class="sber-dragndrop__question-text">{{{text}}}</div>
+                <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
+
+                <div class="sber-dragndrop__question-answers-container">
+                    {{#each accepted}}
+                        <div class="sber-dragndrop__question-answer-placeholder">
+                            <span class="ignore">{{../hint}}</span>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
         {{/each}}
-      </div>
-    </div>
-  {{/equals}}
+    {{/equals}}
 
-  <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
-  <div class="sber-dragndrop__answers-container answers">
-    {{#each _items}}
-      {{#each accepted}}
-        <div class="sber-dragndrop__answers-answer">
-          {{{this}}}
+    {{#equals _style_type "second"}}
+        <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
+            <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
+
+            <div class="sber-dragndrop__question-answers-container">
+                {{#each _items}}
+                    <div class="sber-dragndrop__question-answer-placeholder">
+                        <span class="ignore">{{{text}}}</span>
+                    </div>
+                {{/each}}
+            </div>
         </div>
-      {{/each}}
-    {{/each}}
-  </div>
+    {{/equals}}
 
-  <div class="btn__container"></div>
+    <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
+    <div class="sber-dragndrop__answers-container answers">
+        {{#each _items}}
+            {{#each accepted}}
+                <div class="sber-dragndrop__answers-answer">
+                    {{{this}}}
+                </div>
+            {{/each}}
+        {{/each}}
+    </div>
+    {{#equals _style_type "third"}}
+        <div class="sber-dragndrop__question-container questions" data-index="{{@index}}">
+            <div class="sber-dragndrop__question-instructions">{{{../instruction}}}</div>
+
+            <div class="sber-dragndrop__question-answers-container">
+                {{#each _items}}
+                    <div class="sber-dragndrop__question-answers-place-n-text">
+                        <div class="sber-dragndrop__question-answer-placeholder"></div>
+                        <span class="ignore">{{{text}}}</span>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    {{/equals}}
+
+    <div class="btn__container"></div>
 </div>

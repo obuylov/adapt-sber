@@ -1278,7 +1278,7 @@
         },
         "strapline": "Hotspot 1 strapline",
         "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
-        "_classes": "icon-plus align-image-left",
+        "_classes": "icon-plus align-image-left popup-mini-image",
         "_top": 25,
         "_left": 25
       },
@@ -1306,7 +1306,7 @@
           "_classes": ""
         },
         "strapline": "Hotspot 3 strapline",
-        "_classes": "icon-plus",
+        "_classes": "icon-plus popup-mini-image",
         "_top": 75,
         "_left": 75
       }
@@ -1400,23 +1400,36 @@
     "instruction": "Перетащите верный ответ",
     "_items": [
       {
-        "text": "<p>Подлежит информированию</p>",
+        "text": "<p>Внедрение расписания получения ценностей инкассаторами в шлюзе</p>",
         "accepted": [
-          "Банк не взимал комиссию с клиентов, на общую сумму 5 млн. руб.",
-          "Банк уплатил штраф в размере 750 рублей"
+          "Основное внимание"
         ],
         "hint": ""
       },
       {
-        "text": "<p>НЕ<br />Подлежит информированию</p>",
+        "text": "<p>Организация бесконтактной передачи ценностей и оформление необходимых документов в кассовом центре без присутствия инкассаторов (требуется внесение изменений в ВНД)</p>",
         "accepted": [
-          "Сотрудник ошибся в сумме операции на 50 млн. руб., но проводящий контроль коллега остановил её выполнение"
+          "Запланировать на долгосрочную перспективу"
         ],
-        "hint": "Вот сюда!"
+        "hint": ""
+      },
+      {
+        "text": "<p>Закупка новых тележек для кассового центра</p>",
+        "accepted": [
+          "Только при наличии достаточных ресурсов"
+        ],
+        "hint": ""
+      },
+      {
+        "text": "<p>Перестройка коридора, по которому перемещаются инкассаторы</p>",
+        "accepted": [
+          "В отсев"
+        ],
+        "hint": ""
       }
     ],
-    "_style_type": "first",
-    "_columns": 3
+    "_style_type": "third",
+    "_columns": 4
   },
   {
     "_id": "c-0-25",
