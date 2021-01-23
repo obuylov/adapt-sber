@@ -1,0 +1,29 @@
+.assessmentresults {
+  text-align: center;
+}
+
+.quiz-correct {
+  .assessmentresults::before {
+    content: url(assets/yes-icon.svg);
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+.quiz-incorrect {
+  .figure {
+    circle:not([stroke]), path {
+      fill: #F2F2F2;
+    }
+
+    circle[stroke] {
+      stroke: #F2F2F2;
+    }
+  }
+
+  .assessmentresults::before {
+    content: url(assets/no-icon.svg);
+    display: block;
+    margin-bottom: 60px;
+  }
+}

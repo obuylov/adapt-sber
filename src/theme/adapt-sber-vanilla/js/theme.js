@@ -1,30 +1,30 @@
 define([
-  "core/js/adapt",
-  "./themePageView",
-  "./themeArticleView",
-  "./themeBlockView",
-  "./themeView",
-  "./updatedNarrativeLogic"
-], function(Adapt, ThemePageView, ThemeArticleView, ThemeBlockView, ThemeView, UpdatedNarrative) {
+  'core/js/adapt',
+  './themePageView',
+  './themeArticleView',
+  './themeBlockView',
+  './themeView',
+  './updatedNarrativeLogic',
+], function (Adapt, ThemePageView, ThemeArticleView, ThemeBlockView, ThemeView, UpdatedNarrative) {
 
   function onDataReady() {
-    $("html").addClass(Adapt.course.get("_courseStyle"));
+    $('html').addClass(Adapt.course.get('_courseStyle'));
   }
 
   function onPostRender(view) {
     var model = view.model;
-    var theme = model.get("_sber-vanilla");
+    var theme = model.get('_sber-vanilla');
 
     // if (!theme) return;
 
-    switch (model.get("_type")) {
-      case "page":
+    switch (model.get('_type')) {
+      case 'page':
         new ThemePageView({ model: new Backbone.Model(theme), el: view.$el });
         break;
-      case "article":
+      case 'article':
         new ThemeArticleView({ model: new Backbone.Model(theme), el: view.$el });
         break;
-      case "block":
+      case 'block':
         new ThemeBlockView({ model: new Backbone.Model(theme), el: view.$el });
         break;
       default:
@@ -33,14 +33,14 @@ define([
   }
 
   function onComponentRendered(view) {
-    if (view.model.get("_component") !== "narrative") return false;
-
-    new UpdatedNarrative({ model: new Backbone.Model(view.model), el: view.$el});
+    if (view.model.get('_component') === 'narrative') {
+      new UpdatedNarrative({ model: new Backbone.Model(view.model), el: view.$el });
+    }
   }
 
   Adapt.on({
-    "app:dataReady": onDataReady,
-    "pageView:postRender articleView:postRender blockView:postRender": onPostRender,
-    "componentView:postRender": onComponentRendered
+    'app:dataReady': onDataReady,
+    'pageView:postRender articleView:postRender blockView:postRender': onPostRender,
+    'componentView:postRender': onComponentRendered
   });
 });

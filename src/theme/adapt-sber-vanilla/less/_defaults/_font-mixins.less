@@ -7,7 +7,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 // --------------------------------------------------
+
+.mobile-16() {
+  @media (max-width: @device-width-small) {
+    font-size: 16px;
+  }
+}
+
+.mobile-30() {
+  @media (max-width: @device-width-small) {
+    font-size: 30px;
+  }
+}
 
 // --------------------------------------------------
 // Globals
@@ -19,6 +32,7 @@ body {
   font-weight: @body-weight;
   line-height: @body-line-height;
   color: @font-color;
+  .mobile-16;
 }
 
 .instruction-text() {
@@ -64,6 +78,7 @@ body {
   font-size: @menu-subtitle-size;
   font-weight: @menu-subtitle-weight;
   line-height: @menu-subtitle-line-height;
+  .mobile-16;
 }
 
 .menu-body() {
@@ -108,6 +123,7 @@ body {
   font-size: @page-title-size;
   font-weight: @page-title-weight;
   line-height: @page-title-line-height;
+  .mobile-30;
 }
 
 .page-subtitle() {
@@ -122,6 +138,7 @@ body {
   font-size: @page-body-size;
   font-weight: @page-body-weight;
   line-height: @page-body-line-height;
+  .mobile-16;
 }
 
 .page-instruction() {
@@ -141,6 +158,7 @@ body {
   font-size: @article-title-size;
   font-weight: @article-title-weight;
   line-height: @article-title-line-height;
+  .mobile-30;
 }
 
 .block-title() {

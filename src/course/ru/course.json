@@ -6,7 +6,7 @@
   "description": "",
   "instruction": "",
   "_htmlClasses": "main-grad",
-  "_latestTrackingId": 23,
+  "_latestTrackingId": 25,
   "_buttons": {
     "_submit": {
       "buttonText": "Ответить",
@@ -34,7 +34,7 @@
   },
   "_classes": "",
   "_requireCompletionOf": -1,
-  "_lockType": "sequential",
+  "_lockType": "",
   "_id": "course",
   "_start": {
     "_isEnabled": false,
