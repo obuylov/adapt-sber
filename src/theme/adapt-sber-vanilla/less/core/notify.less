@@ -22,13 +22,14 @@
       }
     }
 
-    &[class *= "correct"] .notify__popup-inner::before {
+    &.is-correct .notify__popup-inner::before {
       content: url(assets/yes-icon.svg);
       display: block;
       padding: 0 40px;
     }
 
-    &[class *= "incorrect"] .notify__popup-inner::before {
+    &[class *= "incorrect"] .notify__popup-inner::before,
+    &[class *= "partly"] .notify__popup-inner::before {
       content: url(assets/no-icon.svg);
       display: block;
       padding: 0 40px;

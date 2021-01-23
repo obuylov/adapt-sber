@@ -156,6 +156,13 @@
           "size": 570,
           "x_pos": 86,
           "y_pos": 0
+        },
+        {
+          "_type": "pentagon",
+          "size": 570,
+          "height": 100,
+          "x_pos": 86,
+          "y_pos": 0
         }
       ],
       "gradient": "gradient-1",

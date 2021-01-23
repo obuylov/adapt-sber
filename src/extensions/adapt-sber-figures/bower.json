@@ -1,18 +1,18 @@
 {
-    "name": "adapt-sber-figures",
-    "repository": "git://github.com/obuylov/adapt-sber",
-    "framework": ">=5",
-    "homepage": "https://github.com/obuylov/adapt-sber",
-    "version": "0.3.2",
-    "issues": "",
-    "displayName": "Sber Фигуры",
-    "extension": "sberFigures",
-    "description": "Расширение, которое добавляет фигуры",
-    "main": "/js/adapt-sber-figures.js",
-    "keywords": [
-        "adapt-plugin",
-        "adapt-extension"
-    ],
-    "license": "GPLv3",
+  "name": "adapt-sber-figures",
+  "repository": "git://github.com/obuylov/adapt-sber",
+  "framework": ">=5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "version": "0.3.5",
+  "issues": "",
+  "displayName": "Sber Фигуры",
+  "extension": "sberFigures",
+  "description": "Расширение, которое добавляет фигуры",
+  "main": "/js/adapt-sber-figures.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
     "targetAttribute": "_sberFigures"
 }

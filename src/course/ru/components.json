@@ -1065,7 +1065,7 @@
       "feedback": "",
       "_routeToAssessment": true
     },
-    "_completionBody": "",
+    "_completionBody": "{{{feedback}}}",
     "_bands": [
       {
         "_score": 0,

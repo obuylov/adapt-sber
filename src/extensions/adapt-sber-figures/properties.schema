@@ -110,27 +110,27 @@
                         "default": "circle",
                         "help": "См. дизайн в фигме"
                       },
-                      "width": {
+                      "size": {
                         "type": "number",
                         "required": true,
                         "default": 100,
-                        "title": "Ширина фигуры",
+                        "title": "Размер фигуры",
                         "inputType": "Number",
                         "validators": [
                           "number"
                         ],
-                        "help": "Ширина фигуры в пикселях"
+                        "help": "Размер фигуры в пикселях"
                       },
                       "height": {
                         "type": "number",
-                        "required": true,
-                        "default": 100,
+                        "required": false,
+                        "default": -1,
                         "title": "Высота фигуры",
                         "inputType": "Number",
                         "validators": [
                           "number"
                         ],
-                        "help": "Высота фигуры в пикселях"
+                        "help": "Высота фигуры в пикселях. Если значение -1, возьмется ширина"
                       },
                       "x_pos": {
                         "type": "number",
@@ -223,22 +223,50 @@
                         "enum": [
                           "donut",
                           "thin_donut",
+                          "donut_8",
                           "circle",
                           "pentagon",
                           "rect",
-                          "half_circle",
-                          "triangle"
+                          "x",
+                          "hexagon",
+                          "cloud",
+                          "cloud_2",
+                          "jelly",
+                          "peanut",
+                          "rhombus",
+                          "blot1_t",
+                          "blot1_bl",
+                          "blot1_br",
+                          "blot1_ur",
+                          "blot1_ul",
+                          "blot2_br",
+                          "blot2_bl",
+                          "blot2_ur"
                         ],
                         "inputType": {
                           "type": "Select",
                           "options": [
                             "donut",
                             "thin_donut",
+                            "donut_8",
                             "circle",
                             "pentagon",
                             "rect",
-                            "half_circle",
-                            "triangle"
+                            "x",
+                            "hexagon",
+                            "cloud",
+                            "cloud_2",
+                            "jelly",
+                            "peanut",
+                            "rhombus",
+                            "blot1_t",
+                            "blot1_bl",
+                            "blot1_br",
+                            "blot1_ur",
+                            "blot1_ul",
+                            "blot2_br",
+                            "blot2_bl",
+                            "blot2_ur"
                           ]
                         },
                         "default": "circle",
@@ -254,6 +282,17 @@
                           "number"
                         ],
                         "help": "Размер фигуры в пикселях"
+                      },
+                      "height": {
+                        "type": "number",
+                        "required": false,
+                        "default": -1,
+                        "title": "Высота фигуры",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Высота фигуры в пикселях. Если значение -1, возьмется ширина"
                       },
                       "x_pos": {
                         "type": "number",
