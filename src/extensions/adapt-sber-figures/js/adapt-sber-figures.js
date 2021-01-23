@@ -12,9 +12,10 @@ define([
 
   // Для удобства использования и добавления новых фигур они были выделены в отдельный
   // JSON-файл со свойствами для каждой нужной фигуры
-  let figures = {};
+  let figures = window.figures || {};
   $.ajax('assets/figures.json').done(function (data) {
     figures = data;
+    window.figures = data;
   });
 
   class SberFiguresView extends Backbone.View {
@@ -69,9 +70,9 @@ define([
     setupFiguresRatio(size) {
       let newSize = size;
 
-      if (innerWidth > 900 && innerWidth < 1920 && size > 300) {
-        let initial_ratio = 1920 / size;
-        newSize = innerWidth / initial_ratio;
+      if (innerWidth > 900 && innerWidth < 1920 && size.w > 300) {
+        let initial_ratio = 1920 / size.w;
+        newSize.w = innerWidth / initial_ratio;
       }
 
       return newSize;
@@ -155,7 +156,7 @@ define([
         this.shape = null;
 
         // Сохраним информацию о размере и текущей позиции, чтобы нормально передать в функцию генерации
-        this.data.current_size = this.setupFiguresRatio(figure.size);
+        this.data.current_size = this.setupFiguresRatio({ w: figure.width, h: figure.height });
         this.data.current_pos = {
           top: figure.y_pos,
           left: figure.x_pos
@@ -303,8 +304,8 @@ define([
       // Задаем id, class, и другие общие свойства
       this.svg.id = 'figure_' + l();
       this.svg.classList.add('figure');
-      this.svg.setAttribute('width', this.data.current_size);
-      this.svg.setAttribute('height', this.data.current_size);
+      this.svg.setAttribute('width', this.data.current_size.w);
+      this.svg.setAttribute('height', this.data.current_size.h);
       this.svg.setAttribute('viewBox', '0 0 300 300');
       this.svg.setAttribute('opacity', opacity);
 

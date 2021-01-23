@@ -61,33 +61,76 @@
                         "enum": [
                           "donut",
                           "thin_donut",
+                          "donut_8",
                           "circle",
                           "pentagon",
-                          "rect"
+                          "rect",
+                          "x",
+                          "hexagon",
+                          "cloud",
+                          "cloud_2",
+                          "jelly",
+                          "peanut",
+                          "rhombus",
+                          "blot1_t",
+                          "blot1_bl",
+                          "blot1_br",
+                          "blot1_ur",
+                          "blot1_ul",
+                          "blot2_br",
+                          "blot2_bl",
+                          "blot2_ur"
                         ],
                         "inputType": {
                           "type": "Select",
                           "options": [
                             "donut",
                             "thin_donut",
+                            "donut_8",
                             "circle",
                             "pentagon",
-                            "rect"
+                            "rect",
+                            "x",
+                            "hexagon",
+                            "cloud",
+                            "cloud_2",
+                            "jelly",
+                            "peanut",
+                            "rhombus",
+                            "blot1_t",
+                            "blot1_bl",
+                            "blot1_br",
+                            "blot1_ur",
+                            "blot1_ul",
+                            "blot2_br",
+                            "blot2_bl",
+                            "blot2_ur"
                           ]
                         },
                         "default": "circle",
-                        "help": "Пончик, узкий пончик, круг, 5-угольник или 4-угольник"
+                        "help": "См. дизайн в фигме"
                       },
-                      "size": {
+                      "width": {
                         "type": "number",
                         "required": true,
                         "default": 100,
-                        "title": "Размер фигуры",
+                        "title": "Ширина фигуры",
                         "inputType": "Number",
                         "validators": [
                           "number"
                         ],
-                        "help": "Размер фигуры в пикселях"
+                        "help": "Ширина фигуры в пикселях"
+                      },
+                      "height": {
+                        "type": "number",
+                        "required": true,
+                        "default": 100,
+                        "title": "Высота фигуры",
+                        "inputType": "Number",
+                        "validators": [
+                          "number"
+                        ],
+                        "help": "Высота фигуры в пикселях"
                       },
                       "x_pos": {
                         "type": "number",
