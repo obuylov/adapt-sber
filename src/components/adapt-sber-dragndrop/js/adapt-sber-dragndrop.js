@@ -64,11 +64,11 @@ define([
     setWidthStyle() {
       let cols = this.model.get('_columns');
       let computedVal = Math.floor(100 / cols);
-      $('.sber-dragndrop__answers-answer').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : computedVal + '%');
-      document.querySelectorAll(`[data-adapt-id="${this.model.get('_id')}"] .sber-dragndrop__answers-answer:nth-child(${cols}n)`).forEach(el => el.style.marginRight = 0);
+      $('.sber-dragndrop__answers-answer').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : `calc(${computedVal}% - 20px)`);
+
       if (this.model.get('_style_type') === 'third') {
-        $('.sber-dragndrop__question-answers-place-n-text').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : computedVal + '%');
-        //document.querySelectorAll(`[data-adapt-id="${this.model.get('_id')}"] .sber-dragndrop__question-answers-place-n-text:nth-child(${cols}n)`).item(0).forEach(el => el.style.marginRight = 0);
+        $('.sber-dragndrop__question-answers-place-n-text').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : `calc(${computedVal}% - 20px)`);
+
       }
     }
 

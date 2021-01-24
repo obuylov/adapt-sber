@@ -31,7 +31,7 @@
       max-width: 45%;
       min-height: 50px;
       margin-right: 20px;
-      padding: 20px;
+      padding: 10px;
       background-color: @light-gray;
       border-radius: 5px;
       box-sizing: border-box;
@@ -71,6 +71,7 @@
     }
 
     &-answer {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -129,7 +130,13 @@
 
   .style-third {
     .sber-dragndrop__question-answers-place-n-text {
-      // width: 25%;
+      margin-right: 20px;
+
+      .sber-dragndrop__question-answer-placeholder {
+        max-width: none;
+        margin-right: 0;
+        font-size: 16px;
+      }
     }
 
     .ignore {
