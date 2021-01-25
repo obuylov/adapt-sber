@@ -26,9 +26,9 @@ define([
       // если выбирать не нужно, а мы нажали на "да", в условии будет false === true
       // если нужно выбрать, а мы не нажали на "да", в условии будет true === false
       if (this.model.get('_shouldBeSelected') === user_answered_yes) {
-        this.showFeedback(feedback._correct_title, feedback._correct, 'correct');
+        this.showFeedback(feedback._correct_title, feedback._correct, 'is-correct');
       } else {
-        this.showFeedback(feedback._incorrect_title, feedback._incorrect, 'incorrect');
+        this.showFeedback(feedback._incorrect_title, feedback._incorrect, 'is-incorrect');
       }
 
       this.disableButtons();

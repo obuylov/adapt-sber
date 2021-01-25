@@ -15,9 +15,11 @@ html {
     justify-content: center;
 
     button {
-      background: @buttons-grad;
+      padding: 12px 35px;
       color: black;
+      font-size: 21px;
       border-radius: 5px;
+      background: @buttons-grad;
 
       .pagenav__btn-icon {
         color: black;
@@ -55,6 +57,18 @@ html {
       width: 60px;
       height: 60px;
     }
+  }
+
+  &__btn [data-type="_up"] {
+    margin: 0 0 5px;
+  }
+
+  .icon-home::before {
+    content: url(assets/nav_home.svg);
+  }
+
+  .icon-arrow-up-2::before {
+    content: url(assets/nav_up.svg);
   }
 }
 
@@ -100,7 +114,7 @@ html {
 
   // consistent with nav icon button styling
   &__btn.btn-icon:not(.btn-text) {
-    padding: @icon-padding;
+    padding: 16px 20px;
     //background-color: @nav-icon;
     //color: @nav-icon-inverted;
     //border: 1px solid @nav-icon;
