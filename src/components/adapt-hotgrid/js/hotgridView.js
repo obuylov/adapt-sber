@@ -74,7 +74,7 @@ define([
       var columns = this.model.get('_columns');
 
       if (columns && Adapt.device.screenSize === 'large') {
-        let percent = (100 / columns - 4);
+        let percent = (100 / columns - 2);
         let size = $(".hotgrid__grid").width();
         let oneItem = size * percent / 100;
         let space = size - oneItem * columns;

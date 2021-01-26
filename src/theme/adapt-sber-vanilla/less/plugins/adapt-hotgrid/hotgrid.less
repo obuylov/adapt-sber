@@ -1,14 +1,18 @@
 .hotgrid {
   &__grid {
     align-items: stretch;
-    justify-content: flex-start;
+    justify-content: stretch;
   }
 
   &__item {
     box-shadow: @shadow-full;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 5px;
     background-color: white;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
   }
 
   &__item-btn {
