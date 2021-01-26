@@ -1,7 +1,7 @@
 {
   "name": "adapt-sber-tabs",
   "framework": ">=5",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/obuylov/adapt-sber",
   "issues": "https://github.com/obuylov/adapt-sber",
   "displayName": "Сбер Tabs",

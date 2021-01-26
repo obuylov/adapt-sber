@@ -1,6 +1,10 @@
 .block {
   &:last-of-type {
     padding-bottom: 200px;
+
+    @media (max-width: @device-width-small) {
+      padding-bottom: 50px;
+    }
   }
 
   &.pt-100 {
@@ -58,8 +62,14 @@
   }
 
   &:first-of-type {
+    padding-top: 100px;
+
     .block__inner {
       padding-top: 100px;
+    }
+
+    @media (max-width: @device-width-small) {
+      padding-top: 50px;
     }
   }
 
