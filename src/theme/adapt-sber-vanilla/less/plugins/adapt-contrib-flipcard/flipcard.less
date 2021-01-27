@@ -6,17 +6,21 @@
 .flipcard__item {
   position: relative;
   float: left;
-  width: 46%;
+  width: 48%;
   height: 260px !important;
   color: black;
   box-shadow: @shadow-full;
   border-radius: 5px;
-  margin: 2%;
+  margin-bottom: 2%;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   -ms-perspective: 600px;
   -o-perspective: 600px;
   perspective: 600px;
+
+  &:nth-child(odd) {
+    margin-right: 2%;
+  }
 
   html.size-medium &,
   html.size-small & {
@@ -223,5 +227,12 @@
 
   .flipcard__item-front:hover {
     background: @green-tab-grad;
+  }
+}
+
+.front-title-14 {
+  .flipcard__item-frontTitle {
+    font-size: 14px;
+    margin-top: 60px !important;
   }
 }
