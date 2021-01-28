@@ -511,7 +511,7 @@
       },
       "_questions": {
         "_resetType": "soft",
-        "_canShowFeedback": false,
+        "_canShowFeedback": true,
         "_canShowMarking": true,
         "_canShowModelAnswer": false
       }

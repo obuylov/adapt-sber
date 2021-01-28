@@ -1,6 +1,6 @@
 [
   {
-    "_component": "mcq",
+    "_component": "sber-txtmessages",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -11,7 +11,7 @@
     "_disableAccessibilityState": false,
     "title": "New Component Title",
     "displayTitle": "New Component Title",
-    "body": "",
+    "body": "<p>lorem <span class='tl-1'>sdfsdf</span></p>",
     "_id": "600b282668656502e60549d6",
     "_parentId": "600b26f468656502e60549d5",
     "_type": "component",
@@ -28,16 +28,34 @@
     "instruction": "",
     "_items": [
       {
-        "text": "123",
-        "_shouldBeSelected": false,
-        "feedback": ""
+        "_align": "left",
+        "body": "<p>123</p>",
+        "_whoSays": "123",
+        "_graphic": {
+          "src": ""
+        },
+        "_classes": ""
       },
       {
-        "text": "yes",
-        "_shouldBeSelected": true,
-        "feedback": ""
+        "_align": "right",
+        "body": "<p>goodbye</p>",
+        "_whoSays": "345",
+        "_graphic": {
+          "src": "course/en/assets/8c6e9674fc9572cfedbaf1b0c6d176c6a36f6246.png"
+        },
+        "_classes": ""
       }
     ],
+    "_sberTooltip": {
+      "_isEnabled": true,
+      "_items": [
+        {
+          "_className": "tl-1",
+          "text": "Управление сопровождения операций юридических лиц ПЦП «Центр сопровождения клиентских операций»",
+          "min_width": 360
+        }
+      ]
+    },
     "_attempts": 1,
     "_canShowModelAnswer": false,
     "_canShowFeedback": true,
@@ -85,7 +103,7 @@
     }
   },
   {
-    "_component": "assessmentResults",
+    "_component": "hotgrid",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -111,30 +129,155 @@
       "_isCompletionIndicatorEnabled": false
     },
     "instruction": "",
-    "_isVisibleBeforeCompletion": false,
-    "_setCompletionOn": "inview",
-    "_resetType": "inherit",
-    "_assessmentId": "quiz1",
-    "_retry": {
-      "button": "Пройти заново",
-      "feedback": "",
-      "_routeToAssessment": false
-    },
-    "_completionBody": "<p>{{{feedback}}}</p>",
-    "_bands": [
+    "_items": [
       {
-        "_score": 0,
-        "feedback": "<p><span class='heading-third-level'>К сожалению, Вы не справились.</span></p><p>Вами были допущены ошибки при прохождении тестирования. Изучите повторно темы, затрагиваемые в тестировании, и проверьте свои знания еще раз.</p>",
-        "_allowRetry": true,
-        "_classes": "quiz-incorrect"
+        "title": "Валютный контроль",
+        "body": " <p><span class='tl-1'>Это</span> комплекс услуг, оказываемых Фактором Клиенту под уступку/продажу денежных требований, включающий следующие основные блоки:</p><ul><li>финансирование, выплачиваемое по передаваемым денежным требованиям (поставкам);</li><li>управление дебиторской задолженностью (контроль за соблюдением Покупателями сроков оплаты, учет состояния дебиторской задолженности с предоставлением отчетов Поставщику и т. д.);</li><li>иные виды услуг, связанных с обработкой и учетом денежных требований, предоставлением доступа к информационным системам Фактора и т. д.</li></ul>",
+        "_comment": "Supported classes = 'align-image-left' | 'hide-desktop-image' | 'hide-popup-image'. Additional classes can be used but they must be predefined in one of the Less files",
+        "_classes": "align-image-left no-image",
+        "_graphic": {
+          "src": "course/en/assets/icon9.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "Placeholder graphic",
+          "title": "Валютный контроль"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon9.svg",
+          "alt": "Placeholder graphic",
+          "attribution": ""
+        }
       },
       {
-        "_score": 100,
-        "feedback": "<p><span class='heading-third-level'>Поздравляем, вы справились</span></p><p>Вами не было допущено ошибок при прохождении тестирования.</p>",
-        "_allowRetry": false,
-        "_classes": "quiz-correct"
+        "title": "Валютные операции",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon10.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Валютные операции"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon10.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Резиденты",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon11.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Резиденты"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon11.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Нерезиденты",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon12.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Нерезиденты"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon12.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Внешние ценные бумаги",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon13.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Внешние ценные бумаги"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon13.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Валютные ценности",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon14.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Валютные ценности"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon14.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Агенты валютного контроля",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon9.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Агенты валютного контроля"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon9.svg",
+          "alt": "",
+          "attribution": ""
+        }
+      },
+      {
+        "title": "Агенты валютного контроля",
+        "body": "центральное звено управления комплаенс-риском в Банке. Обеспечение соответствия регуляторным требованиям является обязанностью каждого сотрудника Банка в рамках выполняемой функции.",
+        "_classes": "align-image-left",
+        "_graphic": {
+          "src": "course/en/assets/icon11.svg",
+          "srcHover": "",
+          "srcVisited": "",
+          "alt": "",
+          "title": "Агенты валютного контроля"
+        },
+        "_itemGraphic": {
+          "src": "course/en/assets/icon11.svg",
+          "alt": "",
+          "attribution": ""
+        }
       }
-    ]
+    ],
+    "_sberTooltip": {
+      "_isEnabled": true,
+      "_items": [
+        {
+          "_className": "tl-1",
+          "text": "Управление сопровождения операций юридических лиц ПЦП «Центр сопровождения клиентских операций»",
+          "min_width": 360
+        }
+      ]
+    }
   },
   {
     "_component": "graphic",
@@ -1468,7 +1611,7 @@
     ],
     "_attempts": -1,
     "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
+    "_canShowFeedback": true,
     "_canShowMarking": true,
     "_shouldDisplayAttempts": false,
     "_isRandom": false,
@@ -1476,11 +1619,11 @@
     "_questionWeight": 1,
     "_selectable": 1,
     "_feedback": {
-      "title": "",
-      "correct": "",
+      "title": "12123123",
+      "correct": "123123",
       "_incorrect": {
-        "final": "",
-        "notFinal": ""
+        "final": "121",
+        "notFinal": "123"
       },
       "_partlyCorrect": {
         "final": "",
