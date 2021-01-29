@@ -12,6 +12,11 @@
     }
   }
 
+  .list__item {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   // --------------------------------------------------
   // --------------------------------------------------
   // THEME
@@ -54,6 +59,12 @@
     color: black;
     border: black solid 1px;
     background-color: transparent !important;
+    @media (max-width: @device-width-small) {
+      height: 20px;
+      width: 20px;
+      font-size: 10px;
+      margin-right: 8px;
+    }
   }
 
 }

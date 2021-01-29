@@ -401,7 +401,7 @@
     "displayTitle": "Длинный заголовок",
     "body": "",
     "instruction": "",
-    "_tabLayout": "vertical",
+    "_tabLayout": "horizontal",
     "_comment": "Only set min height if you want to uniform the content container size across tab items. By default, the container will display at the height of each item's content",
     "_items": [
       {
@@ -738,12 +738,12 @@
         "_shouldBeSelected": true
       },
       {
-        "text": "При кредитовании Банк оценивает качество финансовой отчетности и наличие ликвидного залога. При факторинге оценке подлежит качество дебиторской задолженности, а также конкурентоспособность продукции, которую производит и реализует Клиент.",
+        "text": "При кредитованииликвидногоость продукции, которую производит и реализует Клиент.",
         "_shouldBeSelected": false,
         "feedback": "Option two incorrect feedback"
       },
       {
-        "text": "Безрегрессивный факторинг не только обеспечивает финансирование компании, но и полностью освобождает Клиента от риска по неплатежам Покупателя. Данный риск переходит к факторинговой компании.",
+        "text": "Безрегрессивный к компании.",
         "_shouldBeSelected": false
       }
     ],
