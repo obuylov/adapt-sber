@@ -1,11 +1,11 @@
 {
   "name": "adapt-sber-downloader",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "framework": ">=5.5",
   "homepage": "https://github.com/obuylov/adapt-sber",
   "issues": "https://github.com/obuylov/adapt-sber",
-  "component" : "sber-downloader",
-  "displayName" : "Сбер файл",
+  "component": "sber-downloader",
+  "displayName": "Сбер файл",
   "description": "Компонент, который позволяет скачать файл",
   "main": "/js/adapt-sber-downloader.js",
   "keywords": [

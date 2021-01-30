@@ -90,7 +90,7 @@
     "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "green-yellow-grad",
+    "_classes": "",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -108,7 +108,7 @@
   },
   {
     "title": "New Article Title",
-    "displayTitle": "New Article Title",
+    "displayTitle": "",
     "body": "",
     "_classes": "",
     "instruction": "",

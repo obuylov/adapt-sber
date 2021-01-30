@@ -44,6 +44,22 @@
   .component__body {
     margin-bottom: 0;
   }
+
+  @media (max-width: @device-width-small) {
+    flex-direction: column;
+    .file-info {
+      width: 98%;
+
+      .sber-downloader-size {
+        margin-bottom: 10px;
+      }
+    }
+
+    .sber-downloader__button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  }
 }
 
 .green-bg {

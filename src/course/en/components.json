@@ -50,7 +50,6 @@
       "_isEnabled": true
     }
   },
-
   {
     "_id": "c-0-1",
     "_parentId": "b-0-1",
@@ -1779,7 +1778,7 @@
       "feedback": "Why not have another try? You have used {{attemptsSpent}} of {{attempts}} attempt(s), which means you have {{attemptsLeft}} attempt(s) remaining.",
       "_routeToAssessment": true
     },
-    "_completionBody" : "This component you're reading is a results component.<br>You have finished the assessment.<br>You scored {{{score}}} out of {{{maxScore}}}. {{{feedback}}}",
+    "_completionBody": "This component you're reading is a results component.<br>You have finished the assessment.<br>You scored {{{score}}} out of {{{maxScore}}}. {{{feedback}}}",
     "_bands": [
       {
         "_score": 0,
@@ -1886,6 +1885,47 @@
       "alt": "alt text",
       "attribution": "Copyright © 2019"
     }
+  },
+  {
+    "_id": "c-0-35",
+    "_parentId": "b-0-33",
+    "displayTitle": "",
+    "body": "",
+    "file": "course/en/assets/1.png",
+    "file_description": "Постановление от 23.07.2007 г. №470 «Положение  о регистрации и применении контрольно-кассовой техники, используемой организациями и индивидуальными предпринимателями»",
+    "file_size": "25 кб",
+    "title": "New Component Title",
+    "_ariaLevel": 0,
+    "_component": "sber-downloader",
+    "_classes": "",
+    "_disableAccessibilityState": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isOptional": false,
+    "_isResetOnRevisit": "false",
+    "_isVisible": true,
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_sberIcon": {
+      "_isEnabled": false,
+      "side": "top",
+      "src": "",
+      "align": "center",
+      "margin": 30
+    },
+    "_sberTooltip": {
+      "_isEnabled": false,
+      "_items": []
+    },
+    "_type": "component"
   },
   {
     "_id": "c-0-pN",
