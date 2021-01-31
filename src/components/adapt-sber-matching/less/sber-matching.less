@@ -1,0 +1,35 @@
+.sber-matching {
+  &__main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__questions-container, &__answers-container {
+    width: 48%;
+
+    @media (max-width: @device-width-small) {
+      width: 100%;
+    }
+  }
+
+  &__question-container {
+    @media (max-width: @device-width-small) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    cursor: pointer;
+
+    @media (max-width: @device-width-small) {
+      margin-bottom: 20px;
+    }
+  }
+}

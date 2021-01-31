@@ -1,0 +1,16 @@
+{
+  "name": "adapt-sber-matching",
+  "version": "0.0.1",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "component": "sber-matching",
+  "displayName": "Сбер соответствие",
+  "description": "Тестовый комппонент, в котором нужно выбрать 2 соответствия",
+  "main": "/js/adapt-sber-matching.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

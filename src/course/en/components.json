@@ -346,7 +346,7 @@
     }
   },
   {
-    "_component": "blank",
+    "_component": "sber-matching",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -362,6 +362,21 @@
     "_parentId": "b-2-0",
     "_type": "component",
     "_layout": "full",
+    "_isRandom": "true",
+    "_items": [
+      {
+        "question": "Привет",
+        "answer": "Пока"
+      },
+      {
+        "question": "Hello?",
+        "answer": "Goodbye!"
+      }
+    ],
+    "_feedback": {
+      "correct": "Congratulations, this is the correct feedback.",
+      "incorrect": "This feedback will appear if you answered the question incorrectly."
+    },
     "_pageLevelProgress": {
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false

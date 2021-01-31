@@ -26,9 +26,9 @@ define([
       }, 500);
 
       if (!selector.length) {
-        Adapt.notify.popup({
+        console.error({
           title: 'Ошибка в настройке Сбер-подсказок!',
-          body: `Вы добавили подсказку <b>${selectorName.split(' ')[1]}</b>, но в исходнике её не указали`
+          body: `Вы добавили подсказку <b>${selectorName.split(' ')[1]}</b>, но в исходнике её не указали.<br> Проверьте компонент ` + this.currentId
         });
         return false;
       }
@@ -65,6 +65,8 @@ define([
     onPageReady: function () {
       for (let component of this.component_models) {
         let id = component.get('_id');
+        this.currentId = id;
+
         for (let tool of component.get('_sberTooltip')._items) {
           let tip = document.createElement('div');
           tip.className = 'sber-tooltip';

@@ -1,0 +1,25 @@
+{
+  "_id": "c-05",
+  "_parentId": "b-05",
+  "_type": "component",
+  "_component": "sber-matching",
+  "_classes": "",
+  "_layout": "left",
+  "title": "Our first look at a component",
+  "displayTitle": "Sber-matching",
+  "body": "",
+  "instruction": "",
+  "_items": [
+    {
+      "question": "Привет",
+      "answer": "Пока"
+    },
+    {
+      "question": "Hello?",
+      "answer": "Goodbye!"
+    }
+  ],
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
+}

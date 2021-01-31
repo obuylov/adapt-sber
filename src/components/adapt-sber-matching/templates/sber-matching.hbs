@@ -1,0 +1,20 @@
+<div class="component__inner sber-matching__inner">
+  {{> component this}}
+
+  <div class="sber-matching__main-container">
+    <div class="sber-matching__questions-container">
+      {{#each _items}}
+        <div class="sber-matching__question item" data-id="q-{{@index}}">{{{question}}}</div>
+      {{/each}}
+    </div>
+    <div class="sber-matching__answers-container">
+      {{#each _items}}
+        <div class="sber-matching__answer item" data-id="a-{{@index}}">{{{answer}}}</div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="btn__container">
+    <button class="btn-text btn__action js-btn-action" aria-label="Submit">Ответить</button>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "full-width",
+        "half-width",
+        "both"
+      ],
+      "default": "both",
+      "editorOnly": true
+    },
+    "_shouldBeSelected": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "title": "Ответ да?",
+      "inputType": "Checkbox",
+      "help": "Если нужно ответить положительно, то поставьте эту галочку",
+      "validators": []
+    },
+    "yes_button": {
+      "type": "string",
+      "required": true,
+      "default": "Является",
+      "title": "Название кнопки «Да»",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Текст для положительной кнопки",
+      "translatable": true
+    },
+    "no_button": {
+      "type": "string",
+      "required": true,
+      "default": "Не является",
+      "title": "Название кнопки «Нет»",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Текст для отрицательной кнопки",
+      "translatable": true
+    },
+    "_feedback": {
+      "type": "object",
+      "required": false,
+      "title": "Обратная связь",
+      "properties": {
+        "_correct_title": {
+          "type": "string",
+          "required": false,
+          "default": "Верно",
+          "title": "Заголовок при правильном ответе",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true
+        },
+        "_correct": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Текст обратной связи для правильного ответа",
+          "inputType": "TextArea",
+          "validators": [],
+          "translatable": true
+        },
+        "_incorrect_title": {
+          "type": "string",
+          "required": false,
+          "default": "Неверно",
+          "title": "Заголовок при неправильном ответе",
+          "inputType": "Text",
+          "validators": [],
+          "translatable": true
+        },
+        "_incorrect": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "Текст обратной связи для неправильного ответа",
+          "inputType": "TextArea",
+          "validators": [],
+          "translatable": true
+        }
+      }
+    }
+  }
+}
