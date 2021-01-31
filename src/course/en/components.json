@@ -990,18 +990,18 @@
     "_parentId": "b-0-18",
     "_type": "component",
     "_component": "textinput",
-    "_classes": "",
+    "_classes": "mini-text-input",
     "_layout": "full",
     "title": "Title of our text input component",
-    "displayTitle": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
-    "body": "",
-    "instruction": "",
+    "displayTitle": "1 of 3",
+    "body": "Как Вы считаете, будет ли Ваше действие нарушением этических норм?",
+    "instruction": "Введите ответ:",
     "_attempts": 1,
     "_shouldDisplayAttempts": false,
     "_isRandom": false,
     "_questionWeight": 1,
     "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
+    "_canShowFeedback": true,
     "_canShowMarking": true,
     "_recordInteraction": true,
     "_allowsAnyCase": true,
@@ -1012,12 +1012,12 @@
           "Yes",
           "Да"
         ],
-        "prefix": "Введите ответ:",
-        "placeholder": ""
+        "placeholder": "",
+        "suffix": "rub"
       }
     ],
     "_feedback": {
-      "title": "Feedback",
+      "title": "",
       "correct": "This feedback will appear if you answered the question correctly.",
       "_incorrect": {
         "notFinal": "",
