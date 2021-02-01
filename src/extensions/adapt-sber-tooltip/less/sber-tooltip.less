@@ -29,4 +29,13 @@
       z-index: 5;
     }
   }
+
+  @media (max-width: @device-width-small) {
+    position: static;
+
+    .sber-tooltip.open {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

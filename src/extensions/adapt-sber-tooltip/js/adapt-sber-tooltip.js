@@ -36,27 +36,16 @@ define([
       selector[0].onclick = function (e) {
         if ($(e.target).hasClass('sber-tooltip-container')) {
           let theTooltip = $(this).find('.sber-tooltip');
-          let wasOpen = theTooltip.hasClass('open');
-          let blockOffset = document.querySelector('.block__inner').offsetLeft;
-          let tipOffset = theTooltip[0].parentElement.offsetLeft;
 
           $('.sber-tooltip').each(function () {
             $(this).removeClass('open');
           });
 
-          if (!wasOpen) {
-            if (blockOffset <= 80) {
-              theTooltip.css('transform', 'translateY(-20px) translateX(-8%)');
-            }
+          theTooltip.toggleClass('open');
+          theTooltip.css('top', e.target.offsetTop - theTooltip.height());
 
-            if (tipOffset >= 120 || Adapt.device.screenSize === 'small') {
-              theTooltip.css('transform', `translateY(-20px) translateX(-${tipOffset}px)`);
-            }
-
-            theTooltip.addClass('open');
-          } else {
-            theTooltip.css('transform', '');
-            theTooltip.removeClass('open');
+          if (selectorName.match(/notify/)) {
+            e.target.style.position = 'static';
           }
         }
       };
