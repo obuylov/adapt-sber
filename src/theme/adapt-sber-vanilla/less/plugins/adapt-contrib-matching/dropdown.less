@@ -41,6 +41,10 @@
     color: black;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    .dropdown__icon:before {
+      transform: rotate(224deg) !important;
+    }
   }
 
   &__icon .icon {
@@ -102,6 +106,7 @@
     border-radius: 0 0 5px 5px;
     background: @light-gray;
     z-index: 1;
+    outline: none;
 
     .dropdown__item {
       color: black;

@@ -365,12 +365,12 @@
     "_isRandom": "true",
     "_items": [
       {
-        "question": "Привет",
-        "answer": "Пока"
+        "question": "1. Кассиры долго выдают ценности.",
+        "answer": "А. Кассиры долго ищут тележки с ценностями для маршрута."
       },
       {
-        "question": "Hello?",
-        "answer": "Goodbye!"
+        "question": "2. Инкассаторы тратят время на перекладку пакетов с ценностями после получения от кассиров.",
+        "answer": "Б. Кассиры выдают инкассаторам сумки/кассеты не в порядке объезда клиентов бригадой инкассаторов."
       }
     ],
     "_feedback": {
@@ -819,7 +819,7 @@
     "_isRandom": false,
     "_questionWeight": 1,
     "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
+    "_canShowFeedback": true,
     "_canShowMarking": true,
     "_recordInteraction": true,
     "placeholder": "Длинный заголовок",
