@@ -7,44 +7,57 @@ define([
   class SberMatchingView extends QuestionView {
     events() {
       return {
-        'click .sber-matching__question': 'questionClicked',
-        'click .sber-matching__answer': 'answerClicked',
-        'click .btn__action': 'onSubmitClicked'
+        'click .item': 'elementClicked',
+        'click .btn__submit': 'onSubmitClicked',
+        'click .btn__reset': 'onResetClicked'
       };
     }
 
     preRender() {
-      this.colors = ['#42E3B4', '#00C86A',
-        '#00D900', '#A0E720', '#0066FF'];
+      // Заранее забитые цвета, и переменная "можем ли мы играть"
+      this.colors = ['#42E3B4', '#00C86A', '#00D900', '#A0E720', '#0066FF'];
+      this.canPlay = true;
 
+      // сбрасываем настройки
       this.resetAnswers();
     }
 
     resetAnswers() {
-      this.canPlay = true;
+      // очищаем текущие: цвет, ответ, вопрос, все ответы, все выбранные пары.
       this.currentColor = undefined;
       this.currentAnswer = undefined;
       this.currentQuestion = undefined;
 
       this.answers = [];
       this.pairs = [];
+
+      // получаем элементы
       this.items = this.model.get('_items');
     }
 
+    /**
+     * @name addDisabledStyles
+     * Отключает возможность играть и нажимать на кнопки
+     */
     addDisabledStyles() {
       this.canPlay = false;
-      this.$('button').attr('disabled', 'disabled');
+      this.$('button').attr('disabled', 'disabled').addClass('disabled');
     }
 
     postRender() {
       this.setReadyStatus();
 
       if (!this.model.get('_isComplete')) {
-        if (this.model.get('_isRandom')) {
+        if (this.model.get('_isRandom')) { // мы ещё не прошли компонент, сморим нужен ли случайный порядок вопросов
           this.setupRandomIndices();
         }
-      } else {
+      } else { // компонент уже пройден, просто отключу возможность играть и покрашу элементы
         this.addDisabledStyles();
+
+        this.model.get('_answers').forEach(el => {
+          this.$(`[data-id=${el.a_id}]`).css('border-color', el.c);
+          this.$(`[data-id=${el.q_id}]`).css('border-color', el.c);
+        });
       }
     }
 
@@ -66,6 +79,12 @@ define([
       }
     }
 
+    /**
+     * Устанавливает значение цвета.
+     * Если цвет уже стоит, то ничего не делаем, а иначе берем случайный из списка
+     * Чтобы не повторяться удаляем цвет из доступных
+     * @param reset
+     */
     setColor(reset = false) {
       if (reset) {
         this.currentColor = undefined;
@@ -82,70 +101,62 @@ define([
       }
     }
 
-    questionClicked(e) {
-      if (!this.canPlay) {
+    /**
+     * Обрабатываем клик на любой из элементов
+     * Код одинаковый, поэтому объединен в одну функцию
+     * @param e
+     */
+    elementClicked(e) {
+      if (!this.canPlay) { // если не можем играть, то дальше не смотрим
         return;
       }
 
+      // Смотрим, нажали ли мы на вопрос, или на ответ
+      let isQuestion = e.target.classList.contains('sber-matching__question');
+      let el = isQuestion ? 'currentQuestion' : 'currentAnswer';
+
       this.setColor();
 
-      if (!this.currentQuestion) {
-        this.currentQuestion = e.target;
+      if (!this[el]) { // Если сейчас нет текущего ответа/вопроса
+        this[el] = e.target; // Задаем его
 
-        let arr = this.pairs.filter(el => el.q === this.currentQuestion.innerText);
+        // Смотрим, не выбрали ли мы его раньше (есть ли он в списке готовых пар)
+        let arr = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] === this[el].innerText);
+
+        // Если есть, нужно открепить
         if (arr.length > 0) {
-          this.$('[data-id=' + arr[0].a_id + ']').css('border-color', 'black');
+          // Если это вопрос, то чистим цвет у парного ответа, и наоборот в случае, если нажали на ответ
+          this.$('[data-id=' + arr[0][isQuestion ? 'a_id' : 'q_id'] + ']').css('border-color', 'black');
+          // Возвращаем цвет в список
           this.colors.push(arr[0].c);
-          this.pairs = this.pairs.filter(el => el.q !== this.currentQuestion.innerText);
-          this.currentQuestion.style.borderColor = 'black';
-          this.currentQuestion = undefined;
-        } else {
-          this.currentQuestion.style.borderColor = this.currentColor;
-          this.currentQuestion.classList.add('selected');
+          // Удаляем эту пару
+          this.pairs = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] !== this[el].innerText);
+
+          // Очищаем сам элемент
+          this[el].style.borderColor = 'black';
+          this[el] = undefined;
+        } else { // На этот элемент раньше не нажимали, просто красим его
+          this[el].style.borderColor = this.currentColor;
+          this[el].classList.add('selected');
         }
-      } else {
-        this.colors.push(this.currentQuestion.style.borderColor);
-        this.currentQuestion.style.borderColor = 'black';
-        this.currentQuestion = undefined;
+      } else { // У нас уже есть текущий элемент, и мы или нажали на него самого, или на его же категорию
+        // Сбрасываем текущий выбранный
+        this.colors.push(this[el].style.borderColor);
+        this[el].style.borderColor = 'black';
+        this[el] = undefined;
       }
 
+      // Если у нас есть пара, нужно её обработать и сохранить
       if (this.currentAnswer && this.currentQuestion) {
         this.addAnswerPair();
       }
     }
 
-    answerClicked(e) {
-      if (!this.canPlay) {
-        return;
-      }
-
-      this.setColor();
-
-      if (!this.currentAnswer) {
-        this.currentAnswer = e.target;
-
-        let arr = this.pairs.filter(el => el.a === this.currentAnswer.innerText);
-        if (arr.length > 0) {
-          this.$('[data-id=' + arr[0].q_id + ']').css('border-color', 'black');
-          this.pairs = this.pairs.filter(el => el.a !== this.currentAnswer.innerText);
-          this.colors.push(arr[0].c);
-          this.currentAnswer.style.borderColor = 'black';
-          this.currentAnswer = undefined;
-        } else {
-          this.currentAnswer.classList.add('selected');
-          this.currentAnswer.style.borderColor = this.currentColor;
-        }
-      } else {
-        this.colors.push(this.currentAnswer.style.borderColor);
-        this.currentAnswer.style.borderColor = 'black';
-        this.currentAnswer = undefined;
-      }
-
-      if (this.currentAnswer && this.currentQuestion) {
-        this.addAnswerPair();
-      }
-    }
-
+    /**
+     * Создаем пару вопрос-ответ
+     * Сохраняем текст вопроса, текст ответа, цвет, id div'ов вопроса и ответа
+     * Обнуляем все значения
+     */
     addAnswerPair() {
       this.pairs.push({
         q: this.currentQuestion.innerText, a: this.currentAnswer.innerText, c: this.currentColor,
@@ -168,7 +179,6 @@ define([
       });
 
       this.checkAnswers();
-
       this.resetAnswers();
     }
 
@@ -180,17 +190,19 @@ define([
         this.showFeedback('correct');
         this.setCompletionStatus();
         this.addDisabledStyles();
+        this.model.set('_answers', this.pairs);
       }
     }
 
     showFeedback(what) {
       Adapt.notify.popup({
         body: this.model.get('_feedback')[what],
-        _classes: 'matching ' + what
+        _classes: 'matching ' + 'is-' + what
       });
     }
 
     onResetClicked() {
+      this.canPlay = true;
       this.resetAnswers();
       this.$('.item').each(function () {
         $(this).removeClass('selected');

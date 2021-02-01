@@ -25,74 +25,69 @@
       "default": "both",
       "editorOnly": true
     },
-    "_shouldBeSelected": {
+    "_isRandom": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Ответ да?",
+      "title": "Случайный порядок элементов",
       "inputType": "Checkbox",
-      "help": "Если нужно ответить положительно, то поставьте эту галочку",
-      "validators": []
-    },
-    "yes_button": {
-      "type": "string",
-      "required": true,
-      "default": "Является",
-      "title": "Название кнопки «Да»",
-      "inputType": "Text",
       "validators": [],
-      "help": "Текст для положительной кнопки",
-      "translatable": true
+      "help": "Нужно ли случайно выставить элементы, или оставить порядок из редактора"
     },
-    "no_button": {
-      "type": "string",
+    "_items": {
+      "type": "array",
       "required": true,
-      "default": "Не является",
-      "title": "Название кнопки «Нет»",
-      "inputType": "Text",
-      "validators": [],
-      "help": "Текст для отрицательной кнопки",
-      "translatable": true
+      "title": "Элементы",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "question": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "title": "Вопрос",
+            "help": "Вопрос элемента",
+            "translatable": true
+          },
+          "answer": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "inputType": "Text",
+            "validators": [],
+            "title": "Ответ",
+            "help": "Ответ на текущий вопрос",
+            "translatable": true
+          }
+        }
+      }
     },
     "_feedback": {
       "type": "object",
       "required": false,
       "title": "Обратная связь",
       "properties": {
-        "_correct_title": {
-          "type": "string",
-          "required": false,
-          "default": "Верно",
-          "title": "Заголовок при правильном ответе",
-          "inputType": "Text",
-          "validators": [],
-          "translatable": true
-        },
-        "_correct": {
+        "correct": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Текст обратной связи для правильного ответа",
+          "title": "Верный ответ",
           "inputType": "TextArea",
           "validators": [],
+          "help": "Обратная связь при верном ответе",
           "translatable": true
         },
-        "_incorrect_title": {
-          "type": "string",
-          "required": false,
-          "default": "Неверно",
-          "title": "Заголовок при неправильном ответе",
-          "inputType": "Text",
-          "validators": [],
-          "translatable": true
-        },
-        "_incorrect": {
+        "incorrect": {
           "type": "string",
           "required": false,
           "default": "",
-          "title": "Текст обратной связи для неправильного ответа",
+          "title": "Неверный ответ",
           "inputType": "TextArea",
           "validators": [],
+          "help": "Обратная связь при неверном ответе",
           "translatable": true
         }
       }
