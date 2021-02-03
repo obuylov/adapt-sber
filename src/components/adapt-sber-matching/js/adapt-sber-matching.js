@@ -14,22 +14,20 @@ define([
     }
 
     preRender() {
-      // Заранее забитые цвета, и переменная "можем ли мы играть"
-      this.colors = ['#42E3B4', '#00C86A', '#00D900', '#A0E720', '#0066FF'];
-      this.canPlay = true;
-
       // сбрасываем настройки
       this.resetAnswers();
     }
 
     resetAnswers() {
       // очищаем текущие: цвет, ответ, вопрос, все ответы, все выбранные пары.
+      this.canPlay = true;
       this.currentColor = undefined;
       this.currentAnswer = undefined;
       this.currentQuestion = undefined;
 
       this.answers = [];
       this.pairs = [];
+      this.colors = ['#42E3B4', '#00C86A', '#00D900', '#A0E720', '#0066FF'];
 
       // получаем элементы
       this.items = this.model.get('_items');

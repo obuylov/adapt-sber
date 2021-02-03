@@ -17,13 +17,8 @@ define([
     setupSelector: function (selectorName, tip) {
       let selector = $(selectorName);
       selector.addClass('sber-tooltip-container');
-      selector.append(tip);
-
-      setTimeout(function () {
-        $(tip).css({
-          top: -$(tip).height() - 20
-        });
-      }, 500);
+      selector.data('tip', tip.dataset.parent);
+      $('body').append(tip);
 
       if (!selector.length) {
         console.error({
@@ -33,22 +28,24 @@ define([
         return false;
       }
 
-      selector[0].onclick = function (e) {
+      document.onclick = function (e) {
+        if (!e.target.classList.contains('sber-tooltip-container')) {
+          $('.sber-tooltip').removeClass('open');
+        }
+      };
+
+      selector.on('click', function (e) {
         if ($(e.target).hasClass('sber-tooltip-container')) {
-          let theTooltip = $(this).find('.sber-tooltip');
+          let theTooltip = $(`[data-parent="${selector.data('tip')}"]`);
 
           $('.sber-tooltip').each(function () {
             $(this).removeClass('open');
           });
 
-          theTooltip.toggleClass('open');
-          theTooltip.css('top', e.target.offsetTop - theTooltip.height());
-
-          if (selectorName.match(/notify/)) {
-            e.target.style.position = 'static';
-          }
+          theTooltip.addClass('open');
+          theTooltip.css('top', selector.offset().top);
         }
-      };
+      });
     },
 
     onPageReady: function () {
@@ -60,9 +57,8 @@ define([
           let tip = document.createElement('div');
           tip.className = 'sber-tooltip';
           tip.innerHTML = tool.text;
-          tip.onclick = function () {
-            $(this).removeClass('open');
-          };
+          tip.dataset.parent = `.${id} .` + tool._className;
+
           $(tip).css('minWidth', tool.min_width);
 
           if (component.get('_type') === 'block' || !component.get('_component').match(/hot/)) {
