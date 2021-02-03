@@ -128,3 +128,10 @@
     display: none;
   }
 }
+
+.mobile-only {
+  display: none;
+  @media (max-width: @device-width-small) {
+    display: block;
+  }
+}

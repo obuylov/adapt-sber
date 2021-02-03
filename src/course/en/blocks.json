@@ -24,7 +24,7 @@
     "title": "New Block Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "",
+    "_classes": "mobile-only",
     "_trackingId": 5,
     "instruction": "",
     "_isOptional": false,
