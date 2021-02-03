@@ -1415,12 +1415,12 @@
     "_component": "sber-dragndrop",
     "_classes": "",
     "_layout": "full",
-    "_attempts": 1,
+    "_attempts": -1,
     "_questionWeight": 100,
     "title": "dragndrop",
     "displayTitle": "Подлежит ли направлению в Блок «Риски» событие\n",
     "body": "<span class='tl-1'>123123</span>",
-    "_canShowFeedback": false,
+    "_canShowFeedback": true,
     "instruction": "Перетащите верный ответ",
     "_items": [
       {
@@ -1453,6 +1453,25 @@
       }
     ],
     "_style_type": "third",
+    "_feedback": {
+      "correct": "123",
+      "_incorrect": {
+        "final": "456",
+        "notFinal": "567"
+      },
+      "_partlyCorrect": {
+        "final": "789",
+        "notFinal": "890"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Ответить"
+      },
+      "_reset": {
+        "buttonText": "Ещё раз"
+      }
+    },
     "_columns": 4,
     "_sberTooltip": {
       "_isEnabled": true,

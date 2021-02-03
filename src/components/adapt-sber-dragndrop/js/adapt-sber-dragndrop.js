@@ -7,8 +7,11 @@ define([
 
   class SberDragndropView extends QuestionView {
     setupQuestion() {
+      this.sortables = {
+        questions: [],
+        answer: {}
+      };
       this.answers = [];
-
       this.model.set('_canShowModelAnswer', false);
     }
 
@@ -18,17 +21,29 @@ define([
       this.$('.component__header-inner .component__instruction').remove();
 
       this.setWidthStyle();
+      this.setMaxHeight();
       this.shuffleAnswers();
       this.setupCorrectVersion();
 
       this.listenTo(Adapt, 'device:resize', this.setWidthStyle);
     }
 
+    setMaxHeight() {
+      let maxHeight = 0;
+      this.$('.sber-dragndrop__answers-answer').each(function () {
+        if (maxHeight < $(this).height()) {
+          maxHeight = $(this).height();
+        }
+      });
+
+      this.$('.sber-dragndrop__question-answer-placeholder').height(maxHeight);
+    }
+
     setupCorrectVersion() {
       let self = this;
       let type = this.model.get('_style_type');
       this.$('.sber-dragndrop__question-answer-placeholder').each(function (i) {
-        const sort = Sortable.create($(this)[0], {
+        self.sortables.questions.push(Sortable.create($(this)[0], {
           group: {
             name: 'drag',
             put: function (to) {
@@ -48,10 +63,10 @@ define([
           animation: 150,
           scroll: true,
           scrollSensitivity: 100
-        });
+        }));
       });
 
-      new Sortable(this.$('.sber-dragndrop__answers-container')[0], {
+      this.sortables.answer = new Sortable(this.$('.sber-dragndrop__answers-container')[0], {
         group: 'drag',
         animation: 150,
         sort: false,
@@ -105,9 +120,7 @@ define([
         if (type === 'first') {
           answers = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container')[0];
           answers = answers.innerText.split('\n');
-
-          item._isCorrect = item.accepted.sort().join() === answers.sort().join();
-        } else if (type === 'second') {
+        } else {
           answers = $(id + ' .sber-dragndrop__question-answer-placeholder').eq(i)[0];
           answers = answers.innerText.split('\n');
         }
@@ -133,6 +146,14 @@ define([
       return !_.contains(_.pluck(this.model.get('_items'), '_isCorrect'), false);
     }
 
+    resetUserAnswer() {
+      let self = this;
+      this.$('.not-empty').each(function () {
+        self.$('.sber-dragndrop__answers-container').append($(this).find('.sber-dragndrop__answers-answer'));
+        $(this).removeClass('not-empty');
+      });
+    }
+
     storeUserAnswer() {
       let userAnswers = [];
       let the_answers = this.getAnswers();
@@ -142,7 +163,6 @@ define([
       });
 
       this.model.set('_userAnswer', userAnswers);
-      console.log(userAnswers);
     }
 
     setScore() {

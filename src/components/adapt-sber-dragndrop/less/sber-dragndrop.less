@@ -44,8 +44,12 @@
         display: block;
       }
 
-      &.not-empty span {
-        display: none;
+      &.not-empty {
+        height: auto !important;
+
+        span {
+          display: none;
+        }
       }
 
       .sber-dragndrop__answers-answer {
@@ -154,11 +158,13 @@
     }
   }
 
-  .btn__action {
-    margin: 0 !important;
+  .btn__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .btn__feedback {
+  .btn__feedback, .btn__marking {
     display: none;
   }
 }
