@@ -8,6 +8,7 @@
   opacity: 0;
   position: absolute;
   left: 50%;
+  top: -1px;
   transform: translateX(-50%) translateY(-20px);
 
   padding: 17px;
@@ -25,6 +26,15 @@
 
   &.open {
     opacity: 1;
-    z-index: 5;
+    z-index: 101;
   }
+
+  @media (max-width: @device-width-small) {
+    min-width: 310px !important;
+    max-width: 310px !important;
+  }
+}
+
+.tooltips__container {
+
 }

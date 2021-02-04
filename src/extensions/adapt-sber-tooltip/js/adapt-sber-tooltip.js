@@ -12,13 +12,16 @@ define([
 
       this.listenToOnce(Adapt, 'pageView:postReady', this.onPageReady.bind(this));
       this.listenToOnce(Adapt, 'remove', this.onRemove);
+
+      if (!$(".tooltips__container").length)
+        $("body").append("<div class='tooltips__container'></div>")
     },
 
     setupSelector: function (selectorName, tip) {
       let selector = $(selectorName);
       selector.addClass('sber-tooltip-container');
       selector.data('tip', tip.dataset.parent);
-      $('body').append(tip);
+      $('.tooltips__container').append(tip);
 
       if (!selector.length) {
         console.error({

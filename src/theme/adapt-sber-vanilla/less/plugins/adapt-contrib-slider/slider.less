@@ -1,96 +1,25 @@
 .slider {
-  &__inner {
-    box-shadow: @shadow-full;
-    padding: 70px;
-    background-color: white;
-    border-radius: 5px;
-
-    .slider__header-inner {
-      margin-bottom: 50px;
-    }
-
-    @media (max-width: @device-width-small) {
-      padding: 30px;
-    }
+  &__scale-container, &__scale-notch {
+    display: none;
   }
 
-  // --------------------------------------------------
-  // Labels
-  // --------------------------------------------------
-  &__label-container {
-    .slider__label-start {
-      width: 32%;
-    }
-
-    .slider__label-end {
-      width: 32%;
-    }
+  &__item {
+    margin-top: 45px;
   }
 
-  // --------------------------------------------------
-
-  // --------------------------------------------------
-  // Numbers
-  // --------------------------------------------------
-  &__number-container {
-    margin: 0 1rem 50px;
-    display: flex;
-    justify-content: space-between;
-    // Indent half the width of the range slider handle either side
-    .slider__number {
-      position: unset;
-    }
-
-    .slider__number-selection {
-      display: none;
-    }
-
-    .slider__number-answer {
-      display: none;
-    }
-  }
-
-  // --------------------------------------------------
-
-  // --------------------------------------------------
-  // Scale
-  // --------------------------------------------------
-  &__scale-container {
-    margin: 0.5rem 1rem 50px;
-    // Indent half the width of the range slider handle either side
-    background-color: black;
-  }
-
-  &__scale-notch {
-    top: -20px;
-    height: 20px;
-    background-color: black;
-  }
-
-  // --------------------------------------------------
-
-  // --------------------------------------------------
-  // --------------------------------------------------
-
-
-  // --------------------------------------------------
-}
-
-// --------------------------------------------------
-// Rangeslider overrides
-// --------------------------------------------------
-.rangeslider {
-
-  &__handle {
+  &__number-selection, &__number-model-answer {
+    top: -5px;
+    padding: 5px 12px;
+    border-radius: 50%;
     background-color: @green-button;
-    height: 48px;
-    width: 48px;
+  }
 
-    &:after {
-      display: none;
-    }
+  &__widget.show-user-answer.is-correct .slider__number-selection,
+  &__widget.show-correct-answer.is-correct .slider__number-model-answer, &__widget.show-correct-answer.is-incorrect .slider__number-model-answer {
+    background-color: @green-button;
+  }
 
+  .btn__action {
+    margin: 0;
   }
 }
-
-// --------------------------------------------------

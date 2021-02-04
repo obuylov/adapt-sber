@@ -1215,7 +1215,7 @@
       "_top": 9
     },
     "_showNumber": true,
-    "_showScaleIndicator": false,
+    "_showScaleIndicator": true,
     "_showScale": true,
     "_showScaleNumbers": true,
     "_feedback": {
