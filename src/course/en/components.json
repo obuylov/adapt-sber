@@ -1509,8 +1509,8 @@
         "_classes": "align-image-left no-image",
         "_graphic": {
           "src": "course/en/assets/icon9.svg",
-          "srcHover": "",
-          "srcVisited": "",
+          "srcHover": "course/en/assets/icon8.svg",
+          "srcVisited": "course/en/assets/icon7.svg",
           "alt": "Placeholder graphic",
           "title": "Валютный контроль"
         },

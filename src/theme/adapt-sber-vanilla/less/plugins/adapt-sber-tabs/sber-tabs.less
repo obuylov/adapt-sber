@@ -80,7 +80,7 @@
     color: @gray-text !important;
     border-radius: 5px 5px 0 0;
     margin: 0 5px;
-    border: transparent 1.5px solid;
+    //border: transparent 1.5px solid;
 
     &:first-of-type {
       margin-left: 0;
@@ -91,8 +91,9 @@
     }
 
     &:hover {
-      background: white !important;
-      border: @green-button 1.5px solid;
+      background: @button-hover !important;
+      color: black !important;
+      //border: @green-button 1.5px solid;
     }
 
     @media (max-width: @device-width-small) {
@@ -101,13 +102,13 @@
     }
   }
 
-  &__nav-item-btn.is-selected {
-    background: @green-tab-grad !important;
+  &__nav-item-btn.is-selected:not(:hover) {
+    background: @buttons-grad;
     color: black !important;
   }
 
   &__nav-item-btn.is-visited {
-    background: @button-tab-visited;
+    background: @button-visited;
     color: @gray-text;
   }
 
