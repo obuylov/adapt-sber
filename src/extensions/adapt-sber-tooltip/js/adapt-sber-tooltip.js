@@ -47,6 +47,9 @@ define([
 
           theTooltip.addClass('open');
           theTooltip.css('top', selector.offset().top);
+          if (innerWidth >= 940) {
+            theTooltip.css('left', selector.offset().left);
+          }
         }
       });
     },
@@ -62,7 +65,7 @@ define([
           tip.innerHTML = tool.text;
           tip.dataset.parent = `.${id} .` + tool._className;
 
-          $(tip).css('minWidth', tool.min_width);
+          $(tip).css('max-width', tool.min_width);
 
           if (component.get('_type') === 'block' || !component.get('_component').match(/hot/)) {
             let selector = `.${id} .` + tool._className;

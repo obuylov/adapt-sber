@@ -7,6 +7,10 @@
     }
   }
 
+  &.p-0 .block__inner {
+    padding-top: 0;
+  }
+
   &.pt-100 {
     padding-top: 100px;
   }
@@ -131,7 +135,8 @@
 
 .mobile-only {
   display: none;
+
   @media (max-width: @device-width-small) {
-    display: none;
+    display: block;
   }
 }

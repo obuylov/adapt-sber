@@ -230,10 +230,6 @@
   }
 }
 
-.p-0 .block__inner {
-  padding-top: 0 !important;
-}
-
 .no-top {
   tr:first-of-type {
     background-color: #f9f9f9 !important;
@@ -538,5 +534,14 @@ b, strong {
 .scroll {
   @media (max-width: @device-width-small) {
     overflow: scroll;
+  }
+}
+
+.page,
+.article,
+.block,
+.component {
+  &__title-inner {
+    word-break: break-word;
   }
 }
