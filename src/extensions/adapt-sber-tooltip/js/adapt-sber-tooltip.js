@@ -37,7 +37,7 @@ define([
         }
       };
 
-      selector.on('click', function (e) {
+      selector.on('click mouseover', function (e) {
         if ($(e.target).hasClass('sber-tooltip-container')) {
           let theTooltip = $(`[data-parent="${selector.data('tip')}"]`);
 
@@ -82,6 +82,7 @@ define([
 
     onRemove: function () {
       this.stopListening(Adapt, 'notify:popup');
+      $('.sber-tooltip').remove();
     }
   });
 

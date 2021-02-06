@@ -3,7 +3,7 @@
   "repository": "git://github.com/obuylov/adapt-sber",
   "framework": ">=5",
   "homepage": "https://github.com/obuylov/adapt-sber",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "issues": "",
   "displayName": "Sber Ветвление",
   "extension": "sberBranching",

@@ -13,3 +13,15 @@
     align-items: flex-start;
   }
 }
+
+.sber-icon-wrap {
+  .sber-icon-top, .sber-icon-left {
+    @media (max-width: @device-width-small) {
+      flex-wrap: wrap;
+
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

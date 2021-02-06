@@ -13,24 +13,23 @@ define([
         return false;
       }
 
-      this.listenToOnce(Adapt, 'pageView:ready', this.onPageReady.bind(this));
+      this.onPageReady();
     }
 
     onPageReady() {
-      let first_article = this.getFirstArticle();
-
+      this.first_article = this.getFirstArticle();
       this.article_models.forEach(el => {
-        if (el !== first_article && !el.get("_hasBeenShown")) {
-          this.hideArticle(el)
+        if (el !== this.first_article && !el.get('_hasBeenShown')) {
+          this.hideArticle(el);
         }
       });
-      this.article_models.splice(this.article_models.indexOf(first_article), 1);
-      let question = first_article.findDescendantModels("component").filter(el => el.get("_isQuestionType"));
+      this.article_models.splice(this.article_models.indexOf(this.first_article), 1);
+      let question = this.first_article.findDescendantModels('component').filter(el => el.get('_isQuestionType'));
 
       if (question.length > 0) {
-        this.listenTo(question[0], "change:_isInteractionComplete", this.interactionCompleted)
+        this.listenTo(question[0], 'change:_isInteractionComplete', this.interactionCompleted);
       } else {
-        this.showFeedback("Ошибка подключения к вопросу", "Расширение не смогло найти вопрос в статье, которая указана как главная!");
+        this.showFeedback('Ошибка подключения к вопросу', 'Расширение не смогло найти вопрос в статье, которая указана как главная!');
       }
     }
 
@@ -43,19 +42,38 @@ define([
 
     hideArticle(el) {
       el.set({
-        "_isHidden": true,
-        "_isAvailable": false,
-        "_isVisible": false
-      })
+        '_isOptional': true,
+        '_isAvailable': false,
+      });
+      el.setOnChildren({ '_isOptional': true, '_isAvailable': false });
     }
 
     showArticle(el) {
       el.set({
-        "_hasBeenShown": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isVisible": true
+        '_hasBeenShown': true,
+        '_isOptional': false,
+        '_isAvailable': true,
+        '_isRendered': true
       });
+      el.setOnChildren({ '_isOptional': false, '_isAvailable': true });
+
+      if (!this.hasRendered) {
+        this.hasRendered = true;
+        let articleClass = Adapt.getViewClass('article');
+        let newArticle = new articleClass({ model: el }).$el;
+        newArticle.insertAfter($('[data-adapt-id=' + this.first_article.get('_id') + ']'));
+
+        setTimeout(() => {
+          let seen = {};
+          $('.article').each(function () {
+            if (seen[this.className]) {
+              this.remove();
+            } else {
+              seen[this.className] = true;
+            }
+          })
+        }, 500);
+      }
     }
 
     getFirstArticle() {
@@ -86,7 +104,7 @@ define([
     }
   }
 
-  Adapt.on("pageView:postRender", function(view) {
+  Adapt.on('pageView:preRender', function (view) {
     new SberBranching({
       model: view.model,
       el: view.el
