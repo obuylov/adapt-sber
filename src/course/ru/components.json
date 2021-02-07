@@ -2157,5 +2157,196 @@
         }
       }
     ]
+  },
+  {
+    "_component": "matching",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "New Component Title",
+    "body": "",
+    "_id": "5ffb280268656502e60540c5",
+    "_parentId": "5ffb27ee68656502e60540c4",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": "",
+    "_attempts": -1,
+    "_canShowModelAnswer": false,
+    "_canShowFeedback": false,
+    "_canShowMarking": false,
+    "_shouldResetAllAnswers": true,
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_recordInteraction": false,
+    "placeholder": "Please select an option",
+    "_items": [
+      {
+        "text": "123",
+        "_options": [
+          {
+            "text": "1",
+            "_isCorrect": true
+          },
+          {
+            "text": "2",
+            "_isCorrect": true
+          }
+        ]
+      }
+    ],
+    "_feedback": {
+      "title": "",
+      "correct": "",
+      "_incorrect": {
+        "final": "",
+        "notFinal": ""
+      },
+      "_partlyCorrect": {
+        "final": "",
+        "notFinal": ""
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_reset": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "_showFeedback": {
+        "buttonText": "",
+        "ariaLabel": ""
+      },
+      "remainingAttemptsText": "",
+      "remainingAttemptText": ""
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "исход 1",
+    "displayTitle": "исход 1",
+    "body": "<p>а это первый исход</p>",
+    "_id": "5ffb286c68656502e60540c8",
+    "_parentId": "5ffb285e68656502e60540c7",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "исход 2",
+    "displayTitle": "исход 2",
+    "body": "<p>а это второй исход</p><div id=\"gtx-trans\" style=\"position: absolute; left: 54px; top: 38px;\"><div class=\"gtx-trans-icon\">&nbsp;</div></div>",
+    "_id": "5ffb288568656502e60540cc",
+    "_parentId": "5ffb288568656502e60540cb",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "sber-matching",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "New Component Title",
+    "body": "",
+    "_id": "6017485868656502e6054c0c",
+    "_parentId": "6017484768656502e6054c0b",
+    "_type": "component",
+    "_layout": "full",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_isRandom": true,
+    "_items": [
+      {
+        "question": "Кассиры долго выдают ценности",
+        "answer": "Кассиры долго ищут тележки с ценностями для маршрута"
+      },
+      {
+        "question": "Инкассаторы тратят время на перекладку пакетов с ценностями после получения от кассиров",
+        "answer": "Кассиры выдают инкассаторам сумки/кассеты не в порядке объезда клиентов бригадой инкассаторов"
+      },
+      {
+        "question": "Долгое ожидание в общей очереди получения ценностей/оружия",
+        "answer": "Бригады пребывают в одно и то же время"
+      }
+    ],
+    "_feedback": {
+      "correct": "",
+      "incorrect": ""
+    }
   }
 ]

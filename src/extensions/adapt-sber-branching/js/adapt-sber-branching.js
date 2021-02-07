@@ -1,6 +1,6 @@
 define([
   'core/js/adapt'
-], function(Adapt) {
+], function (Adapt) {
 
   class SberBranching extends Backbone.View {
     initialize(options) {
@@ -44,6 +44,7 @@ define([
       el.set({
         '_isOptional': true,
         '_isAvailable': false,
+        '_hasBeenShown': false
       });
       el.setOnChildren({ '_isOptional': true, '_isAvailable': false });
     }
@@ -57,50 +58,85 @@ define([
       });
       el.setOnChildren({ '_isOptional': false, '_isAvailable': true });
 
-      if (!this.hasRendered) {
-        this.hasRendered = true;
-        let articleClass = Adapt.getViewClass('article');
-        let newArticle = new articleClass({ model: el }).$el;
-        newArticle.insertAfter($('[data-adapt-id=' + this.first_article.get('_id') + ']'));
+      let articleClass = Adapt.getViewClass('article');
+      let newArticle = new articleClass({ model: el }).$el;
+      newArticle.insertAfter($('[data-adapt-id=' + this.first_article.get('_id') + ']'));
 
-        setTimeout(() => {
-          let seen = {};
-          $('.article').each(function () {
-            if (seen[this.className]) {
-              this.remove();
-            } else {
-              seen[this.className] = true;
-            }
-          })
-        }, 500);
-      }
+      setTimeout(() => {
+        let seen = {};
+        $('.article').each(function () {
+          if (seen[this.className]) {
+            this.remove();
+          } else {
+            seen[this.className] = true;
+          }
+        });
+      }, 500);
     }
 
     getFirstArticle() {
-      let with_question = this.article_models.filter(el => el.get("_sberBranching")._isWithQuestion);
+      let with_question = this.article_models.filter(el => el.get('_sberBranching')._isWithQuestion);
 
-      let res = with_question[0]
+      let res = with_question[0];
 
       if (with_question.length > 1) {
-        this.showFeedback("Слишком много ветвлений", "Пока что расширение умеет работать только с одним ветвлением, главным стало первое");
-      }
-      else if (with_question.length === 0) {
-        this.showFeedback("Нет настройки ветвления", "Вы не добавили флаг 'Главная ветвь' к какой-либо из статей, и ветвление сделать невозможно. Будет показана только первая ветвь");
+        this.showFeedback('Слишком много ветвлений', 'Пока что расширение умеет работать только с одним ветвлением, главным стало первое');
+      } else if (with_question.length === 0) {
+        this.showFeedback('Нет настройки ветвления', 'Вы не добавили флаг \'Главная ветвь\' к какой-либо из статей, и ветвление сделать невозможно. Будет показана только первая ветвь');
       }
 
       return res;
     }
 
-    interactionCompleted(model) {
-      let id = model.get("_userAnswer")[0] + 1;
+    resetQuestionView() {
+      this.article_models.forEach(el => {
+        this.hideArticle(el);
+        $('.' + el.get('_id')).remove();
+      });
+      let id = this.q_model.get('_id');
+      $.scrollTo('.' + this.first_article.get('_id'));
 
-      let article_to_show = this.article_models.filter(el => el.get("_sberBranching")._branchID === id)[0];
+      this.q_model.set({
+        '_attemptsLeft': 1,
+        '_isComplete': false,
+        '_isInteractionComplete': false,
+        '_canReset': true
+      });
+      this.q_model.resetUserAnswer();
+      Adapt.findViewByModelId(id).onResetClicked();
+
+      $('.' + id + ' .btn-reset').remove();
+
+      Adapt.trigger('pageLevelProgress:update');
+      this.hasButton = false;
+    }
+
+    interactionCompleted(model) {
+      if (!model.get('_isInteractionComplete')) {
+        return;
+      }
+
+      if (!this.hasButton && this.first_article.get('_sberBranching')._canReset) {
+        this.hasButton = true;
+        this.q_model = model;
+        let el = $('.' + model.get('_id'));
+        let btn = document.createElement('button');
+        btn.className = 'btn-text btn-reset';
+        btn.innerHTML = 'Ещё раз';
+        btn.onclick = this.resetQuestionView.bind(this);
+        btn.style.marginLeft = '20px';
+
+        el.find('.btn__response-container')[0].append(btn);
+      }
+
+      let id = model.get('_userAnswer')[0] + 1;
+      let article_to_show = this.article_models.filter(el => el.get('_sberBranching')._branchID === id)[0];
 
       if (!article_to_show) {
-        this.showFeedback("Ошибка в выборе ветви!", "Вы добавили вариант ответа, но ветви с таким id нет!<br>id добавляется автоматически, он всегда равен порядковому номеру ответа")
-      }
-      else
+        this.showFeedback('Ошибка в выборе ветви!', 'Вы добавили вариант ответа, но ветви с таким id нет!<br>id добавляется автоматически, он всегда равен порядковому номеру ответа');
+      } else {
         this.showArticle(article_to_show);
+      }
     }
   }
 

@@ -40,6 +40,14 @@
                   "validators": [],
                   "help": "Внутри этой статьи есть вопрос"
                 },
+                "_canReset": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Можно ли перевыбрать ветвь",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Только для статьи с вопросом"
+                },
                 "_branchID": {
                   "type": "number",
                   "required": false,
