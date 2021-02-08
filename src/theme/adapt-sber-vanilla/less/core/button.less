@@ -38,14 +38,14 @@
   &-text {
     background: @buttons-grad;
     //background-color: @btn-color;
-    color: black;
+    color: @button-text-color;
     border-radius: @btn-border-radius;
     padding: 10px 24px;
 
-     &:not(.is-disabled):not(.is-locked):hover {
-       //.transition(background-color @duration ease-in, color @duration ease-in;);
-       background: @button-hover;
-     }
+    &:not(.is-disabled):not(.is-locked):hover {
+      //.transition(background-color @duration ease-in, color @duration ease-in;);
+      background: @button-hover !important;
+    }
   }
 
   &-text.is-disabled {

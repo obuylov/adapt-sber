@@ -56,6 +56,10 @@
     border-radius: 50%;
     height: 34px;
     width: 34px;
+
+    &:before {
+      color: black;
+    }
   }
 
   &__item-btn .icon:before {
@@ -72,12 +76,12 @@
 
   &__item-btn.is-open {
     background: @buttons-grad !important;
-    color: black !important;
+    color: @button-text-color !important;
   }
 
   &__item-btn:hover {
     background: @button-hover !important;
-    color: black !important;
+    color: @button-text-color !important;
     //border: @green-button 1.5px solid;
   }
 
