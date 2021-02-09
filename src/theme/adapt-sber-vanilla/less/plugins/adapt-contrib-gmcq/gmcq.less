@@ -1,4 +1,14 @@
 .gmcq {
+  &__item {
+    padding: 0 55px;
+
+    @media (max-width: @device-width-small) {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+  }
+
   &__inner {
     padding: 70px 120px;
     box-shadow: @shadow-full;
@@ -28,6 +38,10 @@
 
     .gmcq__item-state {
       min-width: 24px;
+    }
+
+    @media (max-width: @device-width-small) {
+      margin-top: 20px;
     }
   }
 

@@ -31,6 +31,18 @@ define([
       } else {
         this.showFeedback('Ошибка подключения к вопросу', 'Расширение не смогло найти вопрос в статье, которая указана как главная!');
       }
+
+      this.q_model = Adapt.offlineStorage.get('q_model') || '';
+
+      if (this.q_model && this.first_article.get('_sberBranching')._canReset) {
+        this.hasButton = true;
+
+        setTimeout(() => {
+          let el = $('.' + this.q_model.get('_id'));
+          let btn = this.generateResetingButton();
+          el.find('.btn__response-container')[0].append(btn);
+        }, 500);
+      }
     }
 
     showFeedback(title, body) {
@@ -111,6 +123,16 @@ define([
       this.hasButton = false;
     }
 
+    generateResetingButton() {
+      let btn = document.createElement('button');
+      btn.className = 'btn-text btn-reset';
+      btn.innerHTML = this.first_article.get('_sberBranching')._btnText;
+      btn.onclick = this.resetQuestionView.bind(this);
+      btn.style.marginLeft = '20px';
+
+      return btn;
+    }
+
     interactionCompleted(model) {
       if (!model.get('_isInteractionComplete')) {
         return;
@@ -120,13 +142,10 @@ define([
         this.hasButton = true;
         this.q_model = model;
         let el = $('.' + model.get('_id'));
-        let btn = document.createElement('button');
-        btn.className = 'btn-text btn-reset';
-        btn.innerHTML = 'Ещё раз';
-        btn.onclick = this.resetQuestionView.bind(this);
-        btn.style.marginLeft = '20px';
+        let btn = this.generateResetingButton();
 
         el.find('.btn__response-container')[0].append(btn);
+        Adapt.offlineStorage.set('q_model', model);
       }
 
       let id = model.get('_userAnswer')[0] + 1;

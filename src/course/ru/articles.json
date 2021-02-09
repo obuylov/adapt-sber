@@ -1169,7 +1169,8 @@
       "_isEnabled": true,
       "_isWithQuestion": true,
       "_canReset": true,
-      "_branchID": 0
+      "_branchID": 0,
+      "_btnText": "again"
     },
     "_sberFigures": {
       "_isEnabled": false,

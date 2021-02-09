@@ -58,6 +58,15 @@
                     "number"
                   ],
                   "help": "Равна варианту ответа по порядку"
+                },
+                "_btnText": {
+                  "type": "string",
+                  "default": "Ещё раз",
+                  "required": false,
+                  "title": "Текст кнопки повторного выбора",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
                 }
               }
             }
