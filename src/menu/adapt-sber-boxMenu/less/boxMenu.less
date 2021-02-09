@@ -95,7 +95,11 @@
   .menu__item-container {
     background-color: white;
     margin: 0 auto;
-    padding: 80px 0 200px;
+    padding: 80px 20px 200px;
+
+    @media (max-width: @device-width-small) {
+      padding: 80px 0;
+    }
   }
 
   .menu__item-title {

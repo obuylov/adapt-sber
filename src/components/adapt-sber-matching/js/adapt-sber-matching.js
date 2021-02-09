@@ -184,12 +184,15 @@ define([
       // есть ошибки
       if (this.answers.indexOf(false) !== -1) {
         this.showFeedback('incorrect');
+        this.model.set('_isCorrect', false);
       } else {
         this.showFeedback('correct');
-        this.setCompletionStatus();
-        this.addDisabledStyles();
+        this.model.set('_isCorrect', true);
         this.model.set('_answers', this.pairs);
+        this.addDisabledStyles();
       }
+
+      this.setCompletionStatus();
     }
 
     showFeedback(what) {

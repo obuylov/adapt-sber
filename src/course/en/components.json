@@ -818,60 +818,137 @@
     "_shouldResetAllAnswers": false,
     "_isRandom": false,
     "_questionWeight": 1,
-    "_canShowModelAnswer": true,
+    "_canShowModelAnswer": false,
     "_canShowFeedback": true,
-    "_canShowMarking": true,
-    "_recordInteraction": true,
+    "_canShowMarking": false,
+    "_recordInteraction": false,
     "placeholder": "Длинный заголовок",
     "_items": [
       {
-        "text": "В каком году основан Сбербанк",
+        "text": "Банковская услуга",
         "_options": [
           {
-            "text": "1841",
+            "text": "Дебетовые карты (внутренние операции: взнос наличных) ",
             "_isCorrect": true
           },
           {
-            "text": "1976",
+            "text": "Дебетовые карты (внутренние операции: выдача наличных)",
             "_isCorrect": false
           },
           {
-            "text": "2003",
+            "text": "Дебетовые карты (внутренние операции: безналичные платежи)",
+            "_isCorrect": false
+          },
+          {
+            "text": "Дебетовые карты (внутренние операции: наличные платежи)",
+            "_isCorrect": false
+          },
+          {
+            "text": "Дебетовые карты (внутренние операции: внешние операции)",
+            "_isCorrect": false
+          },
+          {
+            "text": "Дебетовые карты (внутренние операции: технический овердрафт)",
+            "_isCorrect": false
+          },
+          {
+            "text": "Дебетовые карты (внутренние операции: эмиссия) ",
             "_isCorrect": false
           }
         ]
       },
       {
-        "text": "В каком году была запущена система Сбербанк бизнес ОнЛайн",
+        "text": "Канал/Инструмент",
         "_options": [
           {
-            "text": "2015",
+            "text": "ВСП",
             "_isCorrect": false
           },
           {
-            "text": "2003",
+            "text": "Система управления очередью ",
             "_isCorrect": false
           },
           {
-            "text": "2010",
+            "text": "Устройства самообслуживания ",
             "_isCorrect": true
+          },
+          {
+            "text": "Мобильный банк",
+            "_isCorrect": false
+          },
+          {
+            "text": "Автоплатеж",
+            "_isCorrect": false
+          },
+          {
+            "text": "Операции вне ВСП ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Сбербанк Он-Л@йн",
+            "_isCorrect": false
           }
         ]
       },
       {
-        "text": "В каком году Сбербанк представил логотип «Сбер»",
+        "text": "Тип обращения",
         "_options": [
           {
-            "text": "2020",
+            "text": "Держатель карты просит представить разъяснение/подтверждение или документ по операции ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Держатель карты оспорил сумму/валюту операции",
+            "_isCorrect": false
+          },
+          {
+            "text": "Мошенничество (несанкционированная клиентом операция) ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Сумма операции списана многократно",
+            "_isCorrect": false
+          },
+          {
+            "text": "Взнос наличных на счет карты ",
             "_isCorrect": true
           },
           {
-            "text": "2018",
+            "text": "Перевод с карты на карту",
+            "_isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Причина обращения ",
+        "_options": [
+          {
+            "text": "Ошибка сотрудника фронт-офиса Банка ",
             "_isCorrect": false
           },
           {
-            "text": "2019",
+            "text": "Ошибка сотрудника бэк-офиса Банка ",
             "_isCorrect": false
+          },
+          {
+            "text": "Ошибка Клиента ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Неработоспособность (сбой в работе) ПО ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Проблема технологии (методология) ",
+            "_isCorrect": false
+          },
+          {
+            "text": "Действие 3 лиц при отсутствии вины Банка ",
+            "_isCorrect": false
+          },
+          {
+            "text": "На данном этапе установить невозможно ",
+            "_isCorrect": true
           }
         ]
       }
@@ -1421,6 +1498,7 @@
     "displayTitle": "Подлежит ли направлению в Блок «Риски» событие\n",
     "body": "<span class='tl-1'>123123</span>",
     "_canShowFeedback": true,
+    "attempts": -1,
     "instruction": "Перетащите верный ответ",
     "_items": [
       {

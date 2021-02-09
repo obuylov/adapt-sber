@@ -70,18 +70,21 @@ define([
       // есть ошибки
       if (this.answers.indexOf(false) !== -1) {
         this.showFeedback('incorrect');
+        this.model.set('_isCorrect', false);
       } else {
         this.showFeedback('correct');
-        this.setCompletionStatus();
+        this.model.set('_isCorrect', true);
         this.addDisabledStyles();
       }
+
+      this.setCompletionStatus();
     }
 
     showFeedback(what) {
       Adapt.notify.popup({
         title: this.model.get('_displayTitle'),
         body: this.model.get('_feedback')[what],
-        _classes: 'ordering ' + what
+        _classes: 'ordering is-' + what
       });
     }
 

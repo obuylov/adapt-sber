@@ -416,7 +416,7 @@ ol {
 
       position: absolute;
       left: -40px;
-      top: 3px;
+      top: 0;
 
       width: 25px;
       height: 25px;
@@ -552,4 +552,20 @@ b, strong {
 
 a:hover {
   color: #00C86A;
+}
+
+.pc-only {
+  display: none;
+
+  @media (min-width: @device-width-large) {
+    display: inline-block;
+  }
+}
+
+.tablet-only {
+  display: none;
+
+  @media (min-width: @device-width-medium) {
+    display: inline-block;
+  }
 }
