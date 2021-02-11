@@ -32,7 +32,7 @@
         "body": "<p>123</p>",
         "_whoSays": "123",
         "_graphic": {
-          "src": ""
+          "src": "course/ru/assets/woman.png"
         },
         "_classes": ""
       },
@@ -41,7 +41,7 @@
         "body": "<p>goodbye</p>",
         "_whoSays": "345",
         "_graphic": {
-          "src": "course/en/assets/8c6e9674fc9572cfedbaf1b0c6d176c6a36f6246.png"
+          "src": "course/ru/assets/woman.png"
         },
         "_classes": ""
       }
@@ -850,324 +850,6 @@
     "instruction": ""
   },
   {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».",
-    "displayTitle": "",
-    "body": "<p><strong>2. Укажите максимальное и минимальное значение годовой выручки для сегмента «Средний бизнес».</strong></p>",
-    "_id": "5fd9e9cf68656502e6050b42",
-    "_parentId": "5fd9e9ce68656502e6050b14",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberIcon": {
-      "_isEnabled": false,
-      "side": "top",
-      "src": "",
-      "align": "center",
-      "margin": 30
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
-    },
-    "instruction": "Выберите варианты ответов и нажмите «Ответить».",
-    "_items": [
-      {
-        "text": "Более 60 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "До 400 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Более  2 500 млн руб.",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "Более 400 млн руб.",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "До 2 500 млн руб.",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 2,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Ответить",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "3. Как определяется сегмент Клиента, если он входит в холдинг?",
-    "displayTitle": "",
-    "body": "<p><strong>3. Как определяется сегмент Клиента, если он входит в холдинг?</strong></p>",
-    "_id": "5fd9e9cf68656502e6050b43",
-    "_parentId": "5fd9e9ce68656502e6050b19",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberIcon": {
-      "_isEnabled": false,
-      "side": "top",
-      "src": "",
-      "align": "center",
-      "margin": 30
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
-    },
-    "instruction": "Выберите вариант ответа и нажмите «Ответить».",
-    "_items": [
-      {
-        "text": "<span class=\"custom-1\">По выручке Клиента</span>",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "По выручке холдинга, если он не является Клиентом  машиностроения (предприятий ОПК)",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Для клиентов машиностроения (предприятий ОПК) по выручке холдинга",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
-    "_component": "mcq",
-    "_classes": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_isResetOnRevisit": "false",
-    "_ariaLevel": 0,
-    "_disableAccessibilityState": false,
-    "title": "6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?",
-    "displayTitle": "",
-    "body": "<p><strong>6. Какая автоматизированная система Банка является эталонным источником информации о сегменте корпоративного Клиента?</strong></p>",
-    "_id": "5fd9e9cf68656502e6050b46",
-    "_parentId": "5fd9e9ce68656502e6050b1e",
-    "_type": "component",
-    "_layout": "full",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberIcon": {
-      "_isEnabled": false,
-      "side": "top",
-      "src": "",
-      "align": "center",
-      "margin": 30
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
-    },
-    "instruction": "Выберите вариант ответа и нажмите «Ответить».",
-    "_items": [
-      {
-        "text": "ИАСК",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "IBSO",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      },
-      {
-        "text": "CRM Корпоративный",
-        "_shouldBeSelected": true,
-        "feedback": ""
-      },
-      {
-        "text": "Гамма",
-        "_shouldBeSelected": false,
-        "feedback": ""
-      }
-    ],
-    "_attempts": 1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": false,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
-    "_feedback": {
-      "title": "",
-      "correct": "",
-      "_incorrect": {
-        "final": "",
-        "notFinal": ""
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
-    }
-  },
-  {
     "_component": "assessmentResults",
     "_classes": "",
     "_isOptional": false,
@@ -1556,7 +1238,7 @@
     }
   },
   {
-    "_component": "mcq",
+    "_component": "sber-ordering",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -1565,9 +1247,9 @@
     "_isResetOnRevisit": "false",
     "_ariaLevel": 0,
     "_disableAccessibilityState": false,
-    "title": "1. Что является основным критерием отнесения Клиента к сегменту?",
-    "displayTitle": "",
-    "body": "<p><strong>1. Что является основным критерием отнесения Клиента к сегменту?</strong></p>",
+    "title": "Упражнение 2",
+    "displayTitle": "Упражнение 2",
+    "body": "<div class=\"heading-second-level\"><p><strong>Укажите правильную последовательность шагов КМ после принятия решения «‎Сбербанк Факторинг» относительно сделки.</strong></p></div>",
     "_id": "5fd9e9cf68656502e6050b41",
     "_parentId": "5fd9e9ce68656502e6050b0e",
     "_type": "component",
@@ -1577,10 +1259,6 @@
       "_classes": "",
       "_percentInviewVertical": 50
     },
-    "_pageLevelProgress": {
-      "_isEnabled": true,
-      "_isCompletionIndicatorEnabled": false
-    },
     "_sberIcon": {
       "_isEnabled": false,
       "side": "top",
@@ -1588,77 +1266,36 @@
       "align": "center",
       "margin": 30
     },
-    "_sberTooltip": {
+    "_pageLevelProgress": {
       "_isEnabled": false,
-      "_items": []
+      "_isCompletionIndicatorEnabled": false
     },
-    "instruction": "Выберите вариант ответа и нажмите «Ответить».",
+    "_isRandom": true,
     "_items": [
       {
-        "text": "Оборот по счёту",
-        "_shouldBeSelected": false,
-        "feedback": ""
+        "text": "Получает от «‎Сбербанк Факторинг» решение относительно сделки, а также, в случае положительного решения, чек-лист Клиентского досье.",
+        "position": 0
       },
       {
-        "text": "Размер уставного капитала",
-        "_shouldBeSelected": false,
-        "feedback": ""
+        "text": "Отражает результат рассмотрения сделки в CRM: положительное – сделка закрыта/заключена, отрицательное – сделка закрыта/отказ.",
+        "position": 1
       },
       {
-        "text": "Выручка за последний финансовый год",
-        "_shouldBeSelected": true,
-        "feedback": ""
+        "text": "По проектам с положительным решением запрашивает у Клиента оригиналы ранее переданных в СБФ по ЭДО документов по чек-листу.",
+        "position": 2
       },
       {
-        "text": "Остаток по кредиту",
-        "_shouldBeSelected": false,
-        "feedback": ""
+        "text": "Загружает документы в CRM.",
+        "position": 3
+      },
+      {
+        "text": "Направляет Уведомление об уступке права требования (в бумажном виде, подписанное Клиентом) банковской почтой в Территориальный банк, информирует «‎Сбербанк Факторинг» об отправке уведомления по электронной почте.",
+        "position": 4
       }
     ],
-    "_attempts": -1,
-    "_canShowModelAnswer": true,
-    "_canShowFeedback": true,
-    "_canShowMarking": true,
-    "_shouldDisplayAttempts": false,
-    "_isRandom": false,
-    "_recordInteraction": true,
-    "_questionWeight": 1,
-    "_selectable": 1,
     "_feedback": {
-      "title": "12123123",
-      "correct": "123123",
-      "_incorrect": {
-        "final": "121",
-        "notFinal": "123"
-      },
-      "_partlyCorrect": {
-        "final": "",
-        "notFinal": ""
-      }
-    },
-    "_buttons": {
-      "_submit": {
-        "buttonText": "Ответить",
-        "ariaLabel": ""
-      },
-      "_reset": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_hideCorrectAnswer": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "_showFeedback": {
-        "buttonText": "",
-        "ariaLabel": ""
-      },
-      "remainingAttemptsText": "",
-      "remainingAttemptText": ""
+      "correct": "<p>Верно!</p>",
+      "incorrect": "<p>Неверно!</p>"
     }
   },
   {
@@ -2149,7 +1786,7 @@
       {
         "tabTitle": "Крупнейший бизнес",
         "title": ".",
-        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table><p>&nbsp;</p><p><strong>Экспертное суждение</strong></p><ul><li>Юридические лица, сотрудничающие с Банком под обеспечение, предоставленное крупнейшими юридическими лицами/юридическими лицами, входящими в состав крупнейшего холдинга, и/или предоставившие обеспечение по обязательствам крупнейших юридических лиц/юридических лиц, входящих в состав крупнейшего холдинга</li><li><!--(figmeta)eyJmaWxlS2V5IjoiWUVMQmpYRVNNbGpSSHprdlk0aW82VyIsInBhc3RlSUQiOjQ5MDc3ODQ0MiwiZGF0YVR5cGUiOiJzY2VuZSJ9Cg==(/figmeta)--><!--(figma)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(/figma)-->Органы государственного управления федерального значения</li><li>Органы государственной власти городов федерального значения Москва и Санкт-Петербург</li><li>Проектные компании, реализующие проекты с использованием механизмов государственно-частного партнерства (ГЧП)</li><li>Институты развития РФ, государственные корпорации, их ДЗО и создаваемые с их участием компании</li><li>Органы государственной власти зарубежных стран</li><li>При реализации Клиентом строительного проекта, предусматривающего лимит кредитования на сумму не менее 3 млрд рублей, или совокупности строительных проектов Клиента/группы клиентов с общим лимитом кредитования на сумму не менее 6 млрд рублей (или эквивалент в иностранной валюте)</li><li>При реализации Клиентом, входящим в состав холдинга, относящегося к сегменту «Крупнейший бизнес» и отрасли «Недвижимость», строительного проекта/проектов: — при лимитах кредитования не менее указанных в п. 7.1 — по обращению блока «CIB» — При лимитах кредитования менее указанных в п. 7.1 — по решению руководства Банка в соответствии с п. 7.2.2, на основании обращения бенефициара, CEO или CFO о включении юридического лица в список крупнейшего холдинга</li><li>Корректировка ранее определенного сегмента производится в соответствии с п. 7</li></ul>",
+        "body": "<table border=\"1\" cellpadding=\"20\" cellspacing=\"0\" style=\"width:100%\"><tbody><tr><td><strong>Среднеквартальный кредитовый оборот по р/с Клиента в Банке</strong></td><td><strong>Объем ссудной задолженности</strong></td></tr><tr><td>Не применяется</td><td>Не применяется</td></tr></tbody></table><p>&nbsp;</p><p><strong>Экспертное суждение</strong></p><ul><li>Юридические лица, сотрудничающие с Банком под обеспечение, предоставленное крупнейшими юридическими лицами/юридическими лицами, входящими в состав крупнейшего холдинга, и/или предоставившие обеспечение по обязательствам крупнейших юридических лиц/юридических лиц, входящих в состав крупнейшего холдинга</li><li>Органы государственного управления федерального значения</li><li>Органы государственной власти городов федерального значения Москва и Санкт-Петербург</li><li>Проектные компании, реализующие проекты с использованием механизмов государственно-частного партнерства (ГЧП)</li><li>Институты развития РФ, государственные корпорации, их ДЗО и создаваемые с их участием компании</li><li>Органы государственной власти зарубежных стран</li><li>При реализации Клиентом строительного проекта, предусматривающего лимит кредитования на сумму не менее 3 млрд рублей, или совокупности строительных проектов Клиента/группы клиентов с общим лимитом кредитования на сумму не менее 6 млрд рублей (или эквивалент в иностранной валюте)</li><li>При реализации Клиентом, входящим в состав холдинга, относящегося к сегменту «Крупнейший бизнес» и отрасли «Недвижимость», строительного проекта/проектов: — при лимитах кредитования не менее указанных в п. 7.1 — по обращению блока «CIB» — При лимитах кредитования менее указанных в п. 7.1 — по решению руководства Банка в соответствии с п. 7.2.2, на основании обращения бенефициара, CEO или CFO о включении юридического лица в список крупнейшего холдинга</li><li>Корректировка ранее определенного сегмента производится в соответствии с п. 7</li></ul>",
         "_classes": "no-title",
         "_graphic": {
           "alt": "",

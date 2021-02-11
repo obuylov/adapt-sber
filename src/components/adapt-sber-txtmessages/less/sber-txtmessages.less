@@ -17,7 +17,7 @@
 
   .sber-txtmessages-item {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 40px;
     opacity: 0;
     transition: all .3s ease-in-out;
@@ -45,17 +45,15 @@
       border-radius: 5px;
 
       .message-tail {
-        border: 20px solid transparent;
+        border: 18px solid transparent;
         border-left-color: @green-button;
         position: absolute;
-        bottom: -15px;
         left: 0;
-        z-index: -2;
+        bottom: -18px;
 
-        @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
+        @media (max-width: @device-width-small) {
           bottom: -10px;
-          left: -20px;
-          transform: scale(0.3);
+          border-width: 10px;
         }
       }
 
@@ -63,7 +61,7 @@
         margin-top: 0;
       }
 
-      p:last-child {
+      p:last-of-type {
         margin-bottom: 0;
       }
 
@@ -87,6 +85,7 @@
       flex-direction: column;
       min-width: 160px;
       margin-right: 30px;
+      margin-top: 25px;
 
       span {
         margin-top: 20px;
@@ -97,6 +96,7 @@
         min-width: 50px;
         max-width: 50px;
         margin-right: 5px;
+
         span {
           font-size: 12px;
         }
@@ -118,15 +118,10 @@
         margin-right: 0 !important;
 
         .message-tail {
-          transform: scale(-1, 1);
+          left: unset;
           right: 0;
-          border-left: 20px solid @light-gray;
-          z-index: auto;
-
-          @media (max-width: @device-width-small), (orientation: landscape) and (max-width: 600px) {
-            right: -20px;
-            transform: scale(0.3);
-          }
+          border-left-color: transparent;
+          border-right-color: @light-gray;
         }
       }
 

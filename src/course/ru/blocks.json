@@ -868,34 +868,6 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 15,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fd9e9ce68656502e6050b14",
-    "_parentId": "5fd9e9cd68656502e6050b01",
-    "_type": "block",
-    "_assessment": {
-      "_quizBankID": 1
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": false,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
-    }
-  },
-  {
-    "title": "New Block Title",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
     "_trackingId": 16,
     "instruction": "",
     "_isOptional": false,
@@ -992,34 +964,6 @@
         "_small": null
       },
       "_isDividerBlock": false
-    }
-  },
-  {
-    "title": "New Block Title",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 18,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fd9e9ce68656502e6050b19",
-    "_parentId": "5fd9e9cd68656502e6050b01",
-    "_type": "block",
-    "_assessment": {
-      "_quizBankID": 1
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": false,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
     }
   },
   {
@@ -1167,34 +1111,6 @@
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
     "_id": "5fd9e9ce68656502e6050b1d",
-    "_parentId": "5fd9e9cd68656502e6050b01",
-    "_type": "block",
-    "_assessment": {
-      "_quizBankID": 1
-    },
-    "_pageLevelProgress": {
-      "_isEnabled": false,
-      "_isCompletionIndicatorEnabled": false
-    },
-    "_sberTooltip": {
-      "_isEnabled": false,
-      "_items": []
-    }
-  },
-  {
-    "title": "New Block Title",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 23,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "5fd9e9ce68656502e6050b1e",
     "_parentId": "5fd9e9cd68656502e6050b01",
     "_type": "block",
     "_assessment": {

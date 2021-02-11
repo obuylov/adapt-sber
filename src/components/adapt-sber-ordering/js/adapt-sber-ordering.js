@@ -6,7 +6,7 @@ define([
 ], function (Adapt, QuestionView, QuestionModel, Sortable) {
 
   class SberOrderingView extends QuestionView {
-    preRender() {
+    setupQuestion() {
       this.resetAnswers();
     }
 
@@ -15,23 +15,27 @@ define([
       this.items = this.model.get('_items');
     }
 
-    postRender() {
+    resetQuestion() {
+      if (!this.sort) {
+        this.setupSortableLogic();
+      }
+      this.answers = [];
+    }
+
+    onQuestionRendered() {
       this.setReadyStatus();
 
-      if (!this.model.get('_isComplete')) {
+      if (!this.sort) {
         this.setupSortableLogic();
+      }
+
+      if (!this.model.get('_isCorrect')) {
         if (this.model.get('_isRandom')) {
           this.setupRandomIndices();
         }
       } else {
         this.addDisabledStyles();
       }
-    }
-
-    events() {
-      return {
-        'click .btn__action': 'onSubmitClicked'
-      };
     }
 
     setupRandomIndices() {
@@ -77,6 +81,8 @@ define([
         this.addDisabledStyles();
       }
 
+      this.storeUserAnswer();
+
       this.setCompletionStatus();
     }
 
@@ -92,6 +98,21 @@ define([
       this.sort.option('disabled', true);
       this.$('button').attr('disabled', 'disabled');
       this.$('button').addClass('disabled');
+    }
+
+    getAnswers() {
+      return this.model.get('_items').map(el => el.text);
+    }
+
+    storeUserAnswer() {
+      let userAnswers = [];
+      let the_answers = this.getAnswers();
+
+      this.$('.ordering__item').each(function () {
+        userAnswers.push(the_answers.indexOf($(this)[0].innerText));
+      });
+
+      this.model.set('_userAnswer', userAnswers);
     }
   }
 
