@@ -10,8 +10,6 @@
     flex-wrap: nowrap;
 
     @media (max-width: @device-width-small) {
-      flex-wrap: wrap;
-
       img {
         margin-bottom: 20px;
       }
@@ -43,6 +41,11 @@
     }
   }
 
+  &__container:not(.is-ordered-list) .list__item {
+    @media (max-width: @device-width-small) {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .two-cols {

@@ -1,7 +1,7 @@
 {
   "name": "adapt-sber-txtmessages",
   "description": "Диалог, сообщения в котором вылетают по очереди",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "framework": ">=5",
   "displayName": "Сбер Text Messages",
   "component": "sber-txtmessages",

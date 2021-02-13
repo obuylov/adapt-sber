@@ -56,7 +56,7 @@ define([
 
           self.$('.' + name + '-message').each(function () {
             $(this).find('.sber-txtmessages-item-text').css('background', bg);
-            $(this).find('.message-tail').css('border-left-color', border);
+            $(this).find('.message-tail').css('border-' + name + '-color', border);
           });
         }
       });
