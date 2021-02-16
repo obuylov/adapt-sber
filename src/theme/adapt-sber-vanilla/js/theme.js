@@ -39,14 +39,18 @@ define([
 
     if (!view.model.isListeningToResult && view.model.get('_component') === 'assessmentResults') {
       view.model.isListeningToResult = true;
-      Adapt.listenTo(view.model, 'change:_isVisible', function () {
+
+      function updateVisibility() {
         let id = view.model.findAncestor('article').get('_id');
         if (view.model.get('_isVisible')) {
           $('.' + id).removeClass('dn');
         } else {
           $('.' + id).addClass('dn');
         }
-      });
+      }
+
+      updateVisibility();
+      Adapt.listenTo(view.model, 'change:_isVisible', updateVisibility);
     }
   }
 

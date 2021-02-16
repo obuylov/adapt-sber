@@ -244,7 +244,7 @@
       }
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
@@ -424,7 +424,7 @@
       }
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
@@ -517,7 +517,7 @@
       }
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
@@ -610,7 +610,7 @@
       }
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
@@ -796,7 +796,7 @@
       }
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
@@ -1141,7 +1141,7 @@
       "_percentInviewVertical": 50
     },
     "_trickle": {
-      "_isEnabled": true,
+      "_isEnabled": false,
       "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
