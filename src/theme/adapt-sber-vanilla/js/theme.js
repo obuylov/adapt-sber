@@ -39,9 +39,10 @@ define([
 
     if (!view.model.isListeningToResult && view.model.get('_component') === 'assessmentResults') {
       view.model.isListeningToResult = true;
+      let id = view.model.findAncestor('article').get('_id');
 
       function updateVisibility() {
-        let id = view.model.findAncestor('article').get('_id');
+        console.log(123, view.model.get('_isVisible'));
         if (view.model.get('_isVisible')) {
           $('.' + id).removeClass('dn');
         } else {
@@ -51,6 +52,7 @@ define([
 
       updateVisibility();
       Adapt.listenTo(view.model, 'change:_isVisible', updateVisibility);
+      Adapt.listenTo(Adapt, 'pageView:postRender', updateVisibility);
     }
   }
 
