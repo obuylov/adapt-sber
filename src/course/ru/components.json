@@ -357,16 +357,6 @@
       "align": "center",
       "margin": 30
     },
-    "_sberTooltip": {
-      "_isEnabled": true,
-      "_items": [
-        {
-          "_className": "p-1",
-          "text": "Нумерация сохранена из методологими №2086",
-          "min_width": 360
-        }
-      ]
-    },
     "instruction": "",
     "_setCompletionOn": "allItems",
     "_items": [
@@ -1662,11 +1652,22 @@
     "_disableAccessibilityState": false,
     "title": "Виды сегментов",
     "displayTitle": "",
-    "body": "<p><span class=\"p-1\">2.4.</span> <strong>Основным критерием</strong> для определения принадлежности корпоративного <span class=\"p-2\">Клиента Банка к сегменту является размер годовой выручки Клиента/холдинга.</span></p>",
+    "body": "<p><a class='a_tet' href='course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg'>testtststtststsst</a><span class=\"p-1\">2.4.</span> <strong>Основным критерием</strong> для определения принадлежности корпоративного <span class=\"p-2\">Клиента Банка к сегменту является размер годовой выручки Клиента/холдинга.</span></p>",
     "_id": "5fd9e9ce68656502e6050b1f",
     "_parentId": "5fd9e9cd68656502e6050b08",
     "_type": "component",
     "_layout": "full",
+    "_sberAnchorDownload": {
+      "_isEnabled": true,
+      "_items": [
+        {
+          "linkClass": "a_tet",
+          "leadsTo": "course/ru/assets/0a365fd600815b0692eb74792e9c34a808576135.svg",
+          "fileName": "",
+          "download": true
+        }
+      ]
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",

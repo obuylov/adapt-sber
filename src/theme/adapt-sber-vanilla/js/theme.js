@@ -43,6 +43,15 @@ define([
       function updateVisibility() {
         if (view.model.get('_isVisible')) {
           $('.' + id).removeClass('dn');
+
+          let figures = Adapt.findById(id).get('_sberFigures');
+          if (figures._isEnabled) {
+            for (let i in figures._items) {
+              let el = figures._items[i];
+
+              $(`.${id} svg`).eq(i).css('top', el.y_pos + '%');
+            }
+          }
         } else {
           $('.' + id).addClass('dn');
         }

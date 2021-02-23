@@ -1,0 +1,18 @@
+{
+  "name": "adapt-sber-anchor-download",
+  "repository": "git://github.com/obuylov/adapt-sber",
+  "framework": ">=5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "version": "0.0.1",
+  "issues": "",
+  "displayName": "Sber Скачивание по ссылке",
+  "extension": "sberAnchorDownload",
+  "description": "Расширение, которое добавляет возможность скачать файл по ссылке",
+  "main": "/js/adapt-sber-anchor-download.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_sberAnchorDownload"
+}

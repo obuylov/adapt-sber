@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object",
+          "properties": {
+            "_sberAnchorDownload": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер скачивание по ссылке",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Включить возможность скачать по ссылке",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "linkClass": {
+                  "type": "string",
+                  "default": "",
+                  "required": false,
+                  "title": "Класс ссылки для скачивания",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "leadsTo": {
+                  "type": "string",
+                  "required": false,
+                  "default": "",
+                  "title": "Файл для скачивания",
+                  "inputType": "Asset:other",
+                  "validators": []
+                },
+                "download": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Скачивается ли файл?",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "default": true,
+                  "help": "Если нет, то просто откроется в новой вкладке"
+                },
+                "fileName": {
+                  "type": "string",
+                  "default": "",
+                  "required": false,
+                  "title": "Название скачиваемого файла",
+                  "help": "Если оставить пустое, то будет стандартное сгенерированное",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
