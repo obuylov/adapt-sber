@@ -739,8 +739,34 @@
           "size": 570,
           "x_pos": 86,
           "y_pos": 0
+        },
+        {
+          "_type": "thin_donut",
+          "size": 364,
+          "x_pos": -10,
+          "y_pos": 5
+        },
+        {
+          "_type": "circle",
+          "size": 257,
+          "x_pos": 65,
+          "y_pos": 40
+        },
+        {
+          "_type": "circle",
+          "size": 83,
+          "x_pos": 55,
+          "y_pos": 55
+        },
+        {
+          "_type": "circle",
+          "size": 83,
+          "x_pos": 20,
+          "y_pos": 83
         }
-      ]
+      ],
+      "gradient": "gradient-1",
+      "_opacity": 0.7
     },
     "_sberParallax": {
       "_isImageEnabled": true

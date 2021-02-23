@@ -37,12 +37,10 @@ define([
       new UpdatedNarrative({ model: new Backbone.Model(view.model), el: view.$el });
     }
 
-    if (!view.model.isListeningToResult && view.model.get('_component') === 'assessmentResults') {
-      view.model.isListeningToResult = true;
+    if (view.model.get('_component') === 'assessmentResults') {
       let id = view.model.findAncestor('article').get('_id');
 
       function updateVisibility() {
-        console.log(123, view.model.get('_isVisible'));
         if (view.model.get('_isVisible')) {
           $('.' + id).removeClass('dn');
         } else {
@@ -51,7 +49,17 @@ define([
       }
 
       updateVisibility();
-      Adapt.listenTo(view.model, 'change:_isVisible', updateVisibility);
+
+      let currentClassName = Adapt.offlineStorage.get('currentClassName');
+      if (currentClassName) {
+        $('.' + id).addClass(currentClassName);
+      }
+
+      Adapt.listenTo(view.model, 'change:_isVisible', () => {
+        updateVisibility();
+        let theClassName = $('.' + id).attr('class').split(' ')[3];
+        Adapt.offlineStorage.set('currentClassName', theClassName);
+      });
       Adapt.listenTo(Adapt, 'pageView:postRender', updateVisibility);
     }
   }
