@@ -92,7 +92,7 @@ define([
             return Math.floor(Math.random() * arr.length);
           }
 
-          let id = rnd(this.items);
+          let id = rnd(this.colors);
           this.currentColor = this.colors[id];
           this.colors.splice(id, 1);
         }
@@ -171,8 +171,14 @@ define([
         return;
       }
 
+      console.log(this.items, this.pairs, this.answers);
+
       this.items.forEach((el) => {
-        let item = this.pairs.filter(pair => pair.q === el.question)[0];
+        let item = this.pairs.filter(pair => {
+          console.log(pair, el);
+          return pair.q === el.question;
+        })[0];
+        console.log('====');
         this.answers.push(item.a === el.answer);
       });
 
