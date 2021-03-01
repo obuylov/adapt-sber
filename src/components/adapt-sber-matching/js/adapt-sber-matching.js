@@ -171,14 +171,11 @@ define([
         return;
       }
 
-      console.log(this.items, this.pairs, this.answers);
-
       this.items.forEach((el) => {
         let item = this.pairs.filter(pair => {
-          console.log(pair, el);
           return pair.q === el.question;
         })[0];
-        console.log('====');
+        w;
         this.answers.push(item.a === el.answer);
       });
 

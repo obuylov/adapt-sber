@@ -71,6 +71,10 @@ define([
       });
       Adapt.listenTo(Adapt, 'pageView:postRender', updateVisibility);
     }
+
+    if (view.model.get('_component') === 'textinput') {
+      $('.' + view.model.get('_id') + ' input').attr('autocomplete', 'off');
+    }
   }
 
   Adapt.on({

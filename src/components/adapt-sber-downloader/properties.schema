@@ -47,7 +47,19 @@
       "default": "",
       "title": "Файл",
       "inputType": "Asset:other",
-      "validators": ["required"]
+      "validators": [
+        "required"
+      ]
+    },
+    "file_name": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Название скачиваемого файла",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Если оставить пустым, то будет случайный набор букв/цифр из адапта",
+      "translatable": true
     }
   }
 }

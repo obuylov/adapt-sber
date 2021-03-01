@@ -1530,7 +1530,7 @@
         "hint": ""
       }
     ],
-    "_style_type": "third",
+    "_style_type": "first",
     "_feedback": {
       "correct": "123",
       "_incorrect": {
