@@ -137,7 +137,7 @@ define([
 
     canSubmit() {
       let elements_count = this.$('.sber-dragndrop__answers-container').children().length;
-      return elements_count <= 1;
+      return elements_count <= 0;
     }
 
     isCorrect() {

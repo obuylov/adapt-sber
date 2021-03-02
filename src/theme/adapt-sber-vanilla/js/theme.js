@@ -59,15 +59,20 @@ define([
 
       updateVisibility();
 
-      let currentClassName = Adapt.offlineStorage.get('currentClassName');
+      let theObject = Adapt.offlineStorage.get('currentClassName');
+      theObject = theObject ? theObject : {};
+
+      let currentClassName = theObject[id];
       if (currentClassName) {
         $('.' + id).addClass(currentClassName);
       }
 
       Adapt.listenTo(view.model, 'change:_isVisible', () => {
         updateVisibility();
-        let theClassName = $('.' + id).attr('class').split(' ')[3];
-        Adapt.offlineStorage.set('currentClassName', theClassName);
+
+        let matchedClass = $('.article.' + id).attr('class').match(/quiz-(in)?correct/g);
+        theObject[id] = matchedClass ? matchedClass[0] : '';
+        Adapt.offlineStorage.set('currentClassName', theObject);
       });
       Adapt.listenTo(Adapt, 'pageView:postRender', updateVisibility);
     }
