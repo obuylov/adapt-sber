@@ -175,7 +175,6 @@ define([
         let item = this.pairs.filter(pair => {
           return pair.q === el.question;
         })[0];
-        w;
         this.answers.push(item.a === el.answer);
       });
 
@@ -193,9 +192,8 @@ define([
         this.model.set('_isCorrect', true);
         this.model.set('_answers', this.pairs);
         this.addDisabledStyles();
+        this.setCompletionStatus();
       }
-
-      this.setCompletionStatus();
     }
 
     showFeedback(what) {

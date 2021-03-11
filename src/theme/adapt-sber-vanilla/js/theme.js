@@ -48,7 +48,7 @@ define([
           art.removeClass('dn');
 
           let figures = Adapt.findById(id).findAncestor('article').get('_sberFigures');
-          if (figures._isEnabled) {
+          if (figures && figures._isEnabled) {
             for (let i in figures._items) {
               let el = figures._items[i];
 

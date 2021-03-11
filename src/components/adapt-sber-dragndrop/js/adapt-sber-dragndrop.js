@@ -60,9 +60,7 @@ define([
               $(e.from).removeClass('not-empty');
             }
           },
-          animation: 150,
-          scroll: true,
-          scrollSensitivity: 100
+          animation: 150
         }));
       });
 
@@ -70,9 +68,7 @@ define([
         group: 'drag',
         animation: 150,
         sort: false,
-        filter: '.ignore',
-        scroll: true,
-        scrollSensitivity: 100
+        filter: '.ignore'
       });
     }
 
@@ -83,7 +79,6 @@ define([
 
       if (this.model.get('_style_type') === 'third') {
         $('.sber-dragndrop__question-answers-place-n-text').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : `calc(${computedVal}% - 20px)`);
-
       }
     }
 
