@@ -150,6 +150,7 @@ define([
 
       // Для каждой фигуры из массива _items нужно сделать svg
       for (let figure of this.data._items) {
+        let figure_color = color;
         // Обнуляем прошлые значения, или создаем новые
         this.svg = null;
         this.defs = null;
@@ -163,8 +164,12 @@ define([
           left: figure.x_pos
         };
 
+        if (figure.gradient && figure.gradient !== 'default') {
+          figure_color = course_val[figure.gradient];
+        }
+
         // Передаем что за фигуру нужно сделать, CSS-градиент и прозрачность фигуры
-        this.createFigure(figure._type, color, this.data._opacity);
+        this.createFigure(figure._type, figure_color, this.data._opacity);
       }
     }
 
