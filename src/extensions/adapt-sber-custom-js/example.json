@@ -1,0 +1,8 @@
+// in course.json
+
+"_sberCustomJS": {
+"_isEnabled": true,
+"_theCode": "alert(123)",
+"_isOnPage": true,
+"_isInMenu": false
+},

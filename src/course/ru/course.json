@@ -323,6 +323,13 @@
     },
     "_resourcesItems": []
   },
+  "_sberCustomJS": {
+    "_isEnabled": false,
+    "_theCode": "",
+    "_isOnPage": true,
+    "_isInMenu": true,
+    "_needGlobalAdapt": true
+  },
   "_sberFigures": {
     "gradient-1": "linear-gradient(180deg, #FFFFFF 0%, #00FF00 49.48%);",
     "gradient-2": "linear-gradient(180deg, #FF0000 8.47%, #000000 96.61%);",
@@ -333,7 +340,8 @@
         "size": 348,
         "height": 100,
         "x_pos": 19,
-        "y_pos": 10
+        "y_pos": 10,
+        "gradient": "gradient-2"
       },
       {
         "_type": "circle",

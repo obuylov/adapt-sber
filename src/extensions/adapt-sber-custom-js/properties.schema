@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_sberCustomJS": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер custom JS",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Добавить код",
+                  "inputType": "Checkbox",
+                  "default": true,
+                  "validators": []
+                },
+                "_theCode": {
+                  "type": "string",
+                  "default": "",
+                  "required": false,
+                  "title": "Код",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_isOnPage": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Код будет на страницах?",
+                  "inputType": "Checkbox",
+                  "default": true,
+                  "validators": []
+                },
+                "_isInMenu": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Код будет в меню?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "_needGlobalAdapt": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Нужна ли глобальная переменная Adapt?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

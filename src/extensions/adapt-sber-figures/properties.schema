@@ -153,6 +153,26 @@
                           "number"
                         ],
                         "help": "Позиция по у в процентах"
+                      },
+                      "gradient": {
+                        "type": "string",
+                        "required": false,
+                        "title": "Фон фигур",
+                        "enum": [
+                          "default",
+                          "gradient-1",
+                          "gradient-2"
+                        ],
+                        "inputType": {
+                          "type": "Select",
+                          "options": [
+                            "default",
+                            "gradient-1",
+                            "gradient-2"
+                          ]
+                        },
+                        "default": "default",
+                        "help": "default – как во всей статье, или отдельно для фигуры свой"
                       }
                     }
                   }
