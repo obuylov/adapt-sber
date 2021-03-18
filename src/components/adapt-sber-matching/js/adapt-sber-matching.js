@@ -242,6 +242,7 @@ define([
         $(this).removeClass('selected');
         $(this).css('border-color', 'black');
       });
+      this.$('.badge').remove();
     }
   }
 
