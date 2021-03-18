@@ -1,4 +1,6 @@
 .sber-matching {
+  counter-reset: question answer;
+
   &__inner {
     padding: 70px;
     border-radius: 5px;
@@ -18,7 +20,7 @@
   }
 
   &__questions-container, &__answers-container {
-    width: 48%;
+    width: 49%;
 
     @media (max-width: @device-width-small) {
       width: 100%;
@@ -32,12 +34,13 @@
   }
 
   .item {
+    position: relative;
     width: 100%;
-    padding: 12px 10px;
+    padding: 12px 20px 12px 10px;
     margin-bottom: 40px;
     border-radius: 5px;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     cursor: pointer;
 
     @media (max-width: @device-width-small) {
@@ -54,5 +57,17 @@
     button:last-of-type {
       margin: 0;
     }
+  }
+
+  .badge {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 0px 5px;
+    font-size: 10px;
+    border: 2px solid;
+    border-radius: 15px;
   }
 }

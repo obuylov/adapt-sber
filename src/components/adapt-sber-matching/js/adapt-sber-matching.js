@@ -27,8 +27,7 @@ define([
 
       this.answers = [];
       this.pairs = [];
-      this.colors = ['#42E3B4', '#00C86A', '#00D900', '#A0E720', '#0066FF'];
-
+      this.colors = ['rgb(66, 227, 180)', 'rgb(0, 200, 106)', 'rgb(0, 217, 0)', 'rgb(160, 231, 32)', 'rgb(0, 102, 255)'];
       // получаем элементы
       this.items = this.model.get('_items');
     }
@@ -105,7 +104,9 @@ define([
      * @param e
      */
     elementClicked(e) {
-      if (!this.canPlay) { // если не можем играть, то дальше не смотрим
+      // если не можем играть, то дальше не смотрим
+      // или если нажали на бейджик
+      if (!this.canPlay || e.target.classList.contains('badge')) {
         return;
       }
 
@@ -119,7 +120,7 @@ define([
         this[el] = e.target; // Задаем его
 
         // Смотрим, не выбрали ли мы его раньше (есть ли он в списке готовых пар)
-        let arr = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] === this[el].innerText);
+        let arr = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] === this[el].innerText.replace(/[0-9]$/g, '').replace('\n', ''));
 
         // Если есть, нужно открепить
         if (arr.length > 0) {
@@ -127,8 +128,13 @@ define([
           this.$('[data-id=' + arr[0][isQuestion ? 'a_id' : 'q_id'] + ']').css('border-color', 'black');
           // Возвращаем цвет в список
           this.colors.push(arr[0].c);
+
+          // удаляем бейджик
+          this.removeBadgeFrom(arr[0]['q_id']);
+          this.removeBadgeFrom(arr[0]['a_id']);
+
           // Удаляем эту пару
-          this.pairs = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] !== this[el].innerText);
+          this.pairs = this.pairs.filter(elem => elem[isQuestion ? 'q' : 'a'] !== this[el].innerText.replace(/[0-9]$/g, '').replace('\n', ''));
 
           // Очищаем сам элемент
           this[el].style.borderColor = 'black';
@@ -139,8 +145,12 @@ define([
         }
       } else { // У нас уже есть текущий элемент, и мы или нажали на него самого, или на его же категорию
         // Сбрасываем текущий выбранный
-        this.colors.push(this[el].style.borderColor);
+        const borderColor = this[el].style.borderColor;
+        if (this.colors.indexOf(borderColor) === -1) {
+          this.colors.push(borderColor);
+        }
         this[el].style.borderColor = 'black';
+        this.currentColor = undefined;
         this[el] = undefined;
       }
 
@@ -150,6 +160,25 @@ define([
       }
     }
 
+    appendBadgeToElement(element) {
+      element.innerHTML += `<span class="badge">${+this.currentQuestion.dataset.id.split('-')[1] + 1}</span>`;
+      element.querySelector('.badge').style.color = this.currentColor;
+    }
+
+    removeBadgeFrom(id) {
+      this.$(`[data-id='${id}']`).find('.badge').remove();
+    }
+
+    addBadge() {
+      if (!this.currentQuestion || !this.currentColor || !this.currentAnswer) {
+        alert('Ошибка в присваивании бейджика');
+        return;
+      }
+
+      this.appendBadgeToElement(this.currentAnswer);
+      this.appendBadgeToElement(this.currentQuestion);
+    }
+
     /**
      * Создаем пару вопрос-ответ
      * Сохраняем текст вопроса, текст ответа, цвет, id div'ов вопроса и ответа
@@ -157,9 +186,12 @@ define([
      */
     addAnswerPair() {
       this.pairs.push({
+        id: this.currentQuestion.dataset.id,
         q: this.currentQuestion.innerText, a: this.currentAnswer.innerText, c: this.currentColor,
         q_id: this.currentQuestion.dataset.id, a_id: this.currentAnswer.dataset.id
       });
+
+      this.addBadge();
 
       this.setColor(true);
       this.currentQuestion = undefined;

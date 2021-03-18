@@ -710,8 +710,8 @@
       }
     },
     "_trickle": {
-      "_isEnabled": false,
-      "_autoScroll": false,
+      "_isEnabled": true,
+      "_autoScroll": true,
       "_scrollDuration": 500,
       "_onChildren": false,
       "_scrollTo": "@block +1",

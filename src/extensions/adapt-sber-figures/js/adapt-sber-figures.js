@@ -107,7 +107,7 @@ define([
 
           // $containing_el – свойство класса, которое хранит в себе элемент, в который нужно добавлять фигуры
           // В случае рендера фигур в статье, containing_element – текущая статья из цикла
-          this.$containing_el = this.$('.' + id);
+          this.$containing_el = this.$('.' + id).eq(0);
           this.$containing_el.addClass('figures-container');
 
           // Чтобы далее можно было спокойно брать информацию из текущей статьи, создадим новое свойство

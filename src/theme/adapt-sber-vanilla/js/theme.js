@@ -47,14 +47,16 @@ define([
         if (Adapt.findById(id).get('_isVisible')) {
           art.removeClass('dn');
 
-          let figures = Adapt.findById(id).findAncestor('article').get('_sberFigures');
-          if (figures && figures._isEnabled) {
-            for (let i in figures._items) {
-              let el = figures._items[i];
+          setTimeout(() => {
+            let figures = Adapt.findById(id).findAncestor('article').get('_sberFigures');
+            if (figures && figures._isEnabled) {
+              for (let i in figures._items) {
+                let el = figures._items[i];
 
-              art.find('svg').eq(i).css('top', el.y_pos + '%');
+                art.find('svg').eq(i).css('top', el.y_pos + '%');
+              }
             }
-          }
+          }, 100);
         } else {
           art.addClass('dn');
         }
