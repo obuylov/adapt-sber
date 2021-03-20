@@ -79,11 +79,10 @@ define([
         this.showFeedback('correct');
         this.model.set('_isCorrect', true);
         this.addDisabledStyles();
+        this.setCompletionStatus();
       }
 
       this.storeUserAnswer();
-
-      this.setCompletionStatus();
     }
 
     showFeedback(what) {
