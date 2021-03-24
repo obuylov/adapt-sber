@@ -31,7 +31,12 @@
     </div>
   {{/equals}}
 
-  <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
+  {{#if instruction}}
+    <div class="sber-dragndrop__question-instructions upper">{{{instruction}}}</div>
+  {{/if}}
+  {{#if show_variants }}
+    <div class="sber-dragndrop__answers-title ignore">Варианты ответов:</div>
+  {{/if}}
   <div class="sber-dragndrop__answers-container answers">
     {{#each _items}}
       {{#each accepted}}

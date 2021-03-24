@@ -122,6 +122,14 @@
       ],
       "help": "first – для каждого ответа только 1 поле, second – для ответов общая корзина"
     },
+    "show_variants": {
+      "type": "boolean",
+      "required": true,
+      "default": true,
+      "title": "Показать фразу Варианты ответа",
+      "inputType": "Checkbox",
+      "validators": []
+    },
     "_attempts": {
       "type": "number",
       "required": true,

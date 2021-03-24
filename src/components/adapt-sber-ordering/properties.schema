@@ -34,6 +34,18 @@
       "validators": [],
       "help": "Нужно ли случайно выставить элементы, или оставить порядок из редактора"
     },
+    "_attempts": {
+      "type": "number",
+      "required": true,
+      "default": 1,
+      "title": "Attempts",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "How many attempts the learner is allowed"
+    },
     "_items": {
       "type": "array",
       "required": true,

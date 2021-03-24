@@ -79,6 +79,8 @@ define([
 
       if (this.model.get('_style_type') === 'third') {
         $('.sber-dragndrop__question-answers-place-n-text').css('max-width', Adapt.device.screenSize === 'small' ? '100%' : `calc(${computedVal}% - 20px)`);
+      } else {
+        this.$('.upper').remove();
       }
     }
 
