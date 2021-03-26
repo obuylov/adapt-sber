@@ -99,6 +99,18 @@
       ],
       "help": "Сколько должно быть колонок"
     },
+    "maxChildren": {
+      "type": "number",
+      "required": false,
+      "default": 2,
+      "title": "Сколько может быть ответов (больше 0)",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "Только для 1 и 3го варианта верстки"
+    },
     "_style_type": {
       "type": "string",
       "required": true,

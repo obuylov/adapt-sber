@@ -42,12 +42,19 @@ define([
     setupCorrectVersion() {
       let self = this;
       let type = this.model.get('_style_type');
+      let maxChildren = 2;
+
+      let modelData = this.model.get('maxChildren');
+      if (modelData && parseInt(modelData) > 0) {
+        maxChildren = modelData;
+      }
+
       this.$('.sber-dragndrop__question-answer-placeholder').each(function (i) {
         self.sortables.questions.push(Sortable.create($(this)[0], {
           group: {
             name: 'drag',
             put: function (to) {
-              return type === 'first' || type === 'third' ? to.el.children.length < 2 : true;
+              return type === 'first' || type === 'third' ? to.el.children.length < maxChildren : true;
             }
           },
           sort: false,
