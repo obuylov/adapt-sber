@@ -188,7 +188,7 @@ define([
 
       _.extend(globals._learnerInfo, Adapt.offlineStorage.get('learnerinfo'));
     },
-  
+
     /**
      * Intializes the ADL xapiWrapper code.
      * @param {ErrorOnlyCallback} callback
@@ -1089,11 +1089,11 @@ define([
       var actor = this.get('actor');
       var type = model.get('_type');
       var state = this.get('state');
-      var registration = this.get('shouldUseRegistration') === true 
+      var registration = this.get('shouldUseRegistration') === true
         ? this.get('registration')
         : null;
-      var collectionName = _.findKey(this.coreObjects, function(o) {
-        return o === type || o.indexOf(type) > -1
+      var collectionName = _.findKey(this.coreObjects, function (o) {
+        return o === type || o.indexOf(type) > -1;
       });
       var stateCollection = _.isArray(state[collectionName]) ? state[collectionName] : [];
       var newState;
@@ -1138,7 +1138,7 @@ define([
       var self = this;
       var activityId = this.get('activityId');
       var actor = this.get('actor');
-      var registration = this.get('shouldUseRegistration') === true 
+      var registration = this.get('shouldUseRegistration') === true
         ? this.get('registration')
         : null;
       var state = {};
@@ -1216,10 +1216,10 @@ define([
       var self = this;
       var activityId = this.get('activityId');
       var actor = this.get('actor');
-      var registration = this.get('shouldUseRegistration') === true 
+      var registration = this.get('shouldUseRegistration') === true
         ? this.get('registration')
         : null;
- 
+
       Async.each(_.keys(this.coreObjects), function(type, nextType) {
         self.xapiWrapper.deleteState(activityId, actor, type, registration, null, null, function(error, xhr) {
           if (error) {
@@ -1471,15 +1471,46 @@ define([
      * @param {array} [attachments] - An array of attachments to pass to the LRS.
      */
     onStatementReady: function(statement, callback, attachments) {
-      this.xapiWrapper.sendStatement(statement, function(error) {
-        if (error) {
-          Adapt.trigger('xapi:lrs:sendStatement:error', error);
-          return callback(error);
-        }
+      let extensions = {
+        'https://sberbank.ru/os': Adapt.device.OS,
+        'https://sberbank.ru/browser': Adapt.device.browser,
+        'https://sberbank.ru/screen-size': outerWidth + '*' + outerHeight
+      };
 
-        Adapt.trigger('xapi:lrs:sendStatement:success', statement);
-        return callback();
-      }, attachments);
+      if (!statement.context) // проверяем что контекст вообще есть
+      {
+        statement.context = {
+          extensions
+        };
+      } else if (!statement.context.extensions) // такая же проверка для расширений
+      {
+        statement.context.extensions = extensions;
+      } else {
+        statement.context.extensions = Object.assign(statement.context.extensions, extensions);
+      }
+
+      if (!statement.result) {
+        statement.result = {
+          duration: this.convertMillisecondsToISO8601Duration(this.getAttemptDuration())
+        };
+      } else if (!statement.result.duration) {
+        statement.result.duration = this.convertMillisecondsToISO8601Duration(this.getAttemptDuration());
+      }
+      let xapiState = new ADL.XAPIStatement(statement);
+      let resp = ADL.XAPIWrapper.sendStatement(xapiState);
+      console.log(xapiState.verb);
+
+      return callback();
+
+      // this.xapiWrapper.sendStatement(statement, function(error) {
+      //   if (error) {
+      //     Adapt.trigger('xapi:lrs:sendStatement:error', error);
+      //     return callback(error);
+      //   }
+      //
+      //   Adapt.trigger('xapi:lrs:sendStatement:success', statement);
+      //   return callback();
+      // }, attachments);
     },
 
     /**
@@ -1606,6 +1637,7 @@ define([
   /** Adapt event listeners begin here */
   Adapt.once('app:dataLoaded', function() {
     var xapi = xAPI.getInstance();
+    Adapt.xapi = xapi;
 
     xapi.initialize();
 

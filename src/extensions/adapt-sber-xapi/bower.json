@@ -1,16 +1,10 @@
 {
-  "name": "adapt-contrib-xapi",
-  "version": "0.8.3",
+  "name": "adapt-sber-xapi",
+  "version": "0.1.0",
   "framework": ">=3",
-  "homepage": "https://github.com/adaptlearning/adapt-contrib-xapi",
-  "authors": [
-    "Dennis Heaney <dennis@learningpool.com>",
-    "Barry McKay <barry@learningpool.com>",
-    "Andy Bell <andrewb@learningpool.com>",
-    "Brian Quinn <brian@learningpool.com>"
-  ],
-  "displayName": "xAPI",
-  "extension": "xapi",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "displayName": "Sber xAPI",
+  "extension": "sber-xapi",
   "description": "An extension to track learner activity via xAPI",
   "main": "/js/index.js",
   "scripts": {

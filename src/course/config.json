@@ -53,5 +53,43 @@
   },
   "_trickle": {
     "_completionAttribute": "_isComplete"
+  },
+  "build": {
+    "strictMode": false
+  },
+  "_xapi": {
+    "_isEnabled": true,
+    "_specification": "xAPI",
+    "_activityID": "https://cloud.scorm.com/lrs/9S3W109MSD/",
+    "_endpoint": "",
+    "_user": "",
+    "_password": "",
+    "_lang": "en-US",
+    "_generateIds": false,
+    "_shouldTrackState": true,
+    "_shouldUseRegistration": true,
+    "_componentBlacklist": "blank,graphic",
+    "_coreEvents": {
+      "Adapt": {
+        "router:menu": false,
+        "router:page": true,
+        "questionView:recordInteraction": true,
+        "assessments:complete": true
+      },
+      "contentObjects": {
+        "change:_isComplete": false
+      },
+      "articles": {
+        "change:_isComplete": true
+      },
+      "blocks": {
+        "change:_isComplete": false
+      },
+      "components": {
+        "change:_isComplete": true,
+        "change:_isExperienced": true
+      }
+    },
+    "_lrsFailureBehaviour": "show"
   }
 }
