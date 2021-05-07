@@ -56,7 +56,7 @@
         "nsdeclare": "^0.1.0",
         "requirejs": "^2.3.6",
         "time-grunt": "^2.0.0",
-        "underscore": "^1.9.1",
+        "underscore": "^1.12.1",
         "underscore-deep-extend": "^1.1.5"
     },
     "devDependencies": {
