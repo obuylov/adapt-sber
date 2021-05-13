@@ -32,7 +32,7 @@ define([
         this.showFeedback('Ошибка подключения к вопросу', 'Расширение не смогло найти вопрос в статье, которая указана как главная!');
       }
 
-      this.q_model = Adapt.offlineStorage.get('q_model') || '';
+      this.q_model = Adapt.offlineStorage.get("q_model") || "";
 
       if (this.q_model && this.first_article.get('_sberBranching')._canReset) {
         this.hasButton = true;
@@ -40,7 +40,7 @@ define([
         setTimeout(() => {
           let el = $('.' + this.q_model.get('_id'));
           let btn = this.generateResetingButton();
-          el.find('.btn__response-container')[0].append(btn);
+          el.find('.btn__response-container').append(btn);
         }, 500);
       }
     }
@@ -126,7 +126,7 @@ define([
     generateResetingButton() {
       let btn = document.createElement('button');
       btn.className = 'btn-text btn-reset';
-      btn.innerHTML = this.first_article.get('_sberBranching')._btnText;
+      btn.innerHTML = this.first_article.get("_sberBranching")._btnText;
       btn.onclick = this.resetQuestionView.bind(this);
       btn.style.marginLeft = '20px';
 
@@ -144,8 +144,8 @@ define([
         let el = $('.' + model.get('_id'));
         let btn = this.generateResetingButton();
 
-        el.find('.btn__response-container')[0].append(btn);
-        Adapt.offlineStorage.set('q_model', model);
+        el.find('.btn__response-container').append(btn);
+        Adapt.offlineStorage.set("q_model", model);
       }
 
       let id = model.get('_userAnswer')[0] + 1;
