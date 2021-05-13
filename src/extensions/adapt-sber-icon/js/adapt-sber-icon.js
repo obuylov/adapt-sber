@@ -28,7 +28,7 @@ define([
         body.style.alignItems = config.align;
 
         let img = this.createImage(config);
-        body.prepend(img);
+        $(body).prepend(img);
       }
     },
 
