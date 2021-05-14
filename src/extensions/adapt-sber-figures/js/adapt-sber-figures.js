@@ -358,22 +358,24 @@ define([
     }
   }
 
-  if (Adapt.device.browser !== "internet explorer") {
-    // Для меню и страницы одинаковый класс, отличается только _target
+  // Для меню и страницы одинаковый класс, отличается только _target
     Adapt.on('pageView:postRender', function (view) {
-      new SberFiguresView({
-        _target: 'article',
-        model: view.model,
-        el: view.el
-      });
+      if (Adapt.device.browser !== "internet explorer") {
+        new SberFiguresView({
+          _target: 'article',
+          model: view.model,
+          el: view.el
+        });
+      }
     });
 
     Adapt.on('menuView:postRender', function (view) {
-      new SberFiguresView({
-        _target: 'menu',
-        model: view.model,
-        el: view.el
-      });
+      if (Adapt.device.browser !== "internet explorer") {
+        new SberFiguresView({
+          _target: 'menu',
+          model: view.model,
+          el: view.el
+        });
+      }
     });
-  }
 });
