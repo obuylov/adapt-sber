@@ -1,0 +1,18 @@
+{
+    "name": "adapt-sber-completion",
+    "repository": "git://github.com/obuylov/adapt-sber",
+    "framework": ">=5",
+    "homepage": "https://github.com/obuylov/adapt-sber/",
+    "version": "1.0.8",
+    "issues": "",
+    "displayName": "Sber CustomCompletion",
+    "extension": "sberCompletion",
+    "description": "Кастомное завершение курса",
+    "main": "/js/adapt-sber-completion.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "license": "GPLv3",
+    "targetAttribute": "_sberCompletionCriteria"
+}

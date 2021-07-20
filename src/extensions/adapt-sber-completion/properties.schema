@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_sberCompletionCriteria": {
+              "type": "object",
+              "required": false,
+              "legend": "Сбер Завершение",
+              "properties": {
+                "_activityID": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Activity ID",
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Unique identifier for this xAPI activity, i.e. usually the URL to the course."
+                },
+                "_sberCustomCompletion": {
+                  "type": "object",
+                  "required": false,
+                  "title": "Что необходимо завершить",
+                  "properties": {
+                    "_requirePageVisited": {
+                      "type": "string",
+                      "required": false,
+                      "title": "ID страницы",
+                      "default": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Уникальный id страницы, которую нужно посетить"
+                    },
+                    "_requireComponentVisited": {
+                      "type": "string",
+                      "required": false,
+                      "title": "ID компонента",
+                      "default": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "help": "Уникальный id компонента, который нужно завершить"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

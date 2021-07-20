@@ -1,0 +1,10 @@
+{
+  "_completionCriteria": {
+    "_requireContentCompleted": true,
+    "_requireAssessmentCompleted": false,
+    "_customCompletion": {
+      "_requirePageVisited": "co-10",
+      "_requireComponentVisited": "c-10"
+    }
+  }
+}
