@@ -1,10 +1,9 @@
-{
-  "_completionCriteria": {
-    "_requireContentCompleted": true,
-    "_requireAssessmentCompleted": false,
-    "_customCompletion": {
-      "_requirePageVisited": "co-10",
-      "_requireComponentVisited": "c-10"
-    }
+// config.json
+
+"_sberCompletionCriteria": {
+  "_activityID": "http://hr.sberbank.ru/xapi/adapt/TKBG0AI",
+  "_sberCustomCompletion": {
+  "_requirePageVisited": "60f6e0b72657f903502aa56c",
+  "_requireComponentVisited": ""
   }
-}
+},
