@@ -13,42 +13,17 @@
           "properties": {
             "_sberCompletionCriteria": {
               "type": "object",
-              "required": false,
+              "required": true,
               "legend": "Сбер Завершение",
               "properties": {
-                "_activityID": {
+                "_requireComponentVisited": {
                   "type": "string",
-                  "required": false,
-                  "title": "Activity ID",
+                  "required": true,
+                  "title": "ID компонента",
                   "default": "",
                   "inputType": "Text",
                   "validators": [],
-                  "help": "Unique identifier for this xAPI activity, i.e. usually the URL to the course."
-                },
-                "_sberCustomCompletion": {
-                  "type": "object",
-                  "required": false,
-                  "title": "Что необходимо завершить",
-                  "properties": {
-                    "_requirePageVisited": {
-                      "type": "string",
-                      "required": false,
-                      "title": "ID страницы",
-                      "default": "",
-                      "inputType": "Text",
-                      "validators": [],
-                      "help": "Уникальный id страницы, которую нужно посетить"
-                    },
-                    "_requireComponentVisited": {
-                      "type": "string",
-                      "required": false,
-                      "title": "ID компонента",
-                      "default": "",
-                      "inputType": "Text",
-                      "validators": [],
-                      "help": "Уникальный id компонента, который нужно завершить"
-                    }
-                  }
+                  "help": "Уникальный id компонента, который нужно завершить"
                 }
               }
             }

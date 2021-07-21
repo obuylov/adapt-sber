@@ -1,95 +1,78 @@
 define([
-        'core/js/adapt',
-        'libraries/tincan-min'
-    ],
+    'core/js/adapt',
+    'libraries/tincan-min'
+  ],
 
-    function (Adapt) {
+  function (Adapt) {
 
-        const CustomCompletion = Backbone.Controller.extend({
+    const CustomCompletion = Backbone.Controller.extend({
 
-            customConfig: undefined,
-            pageVisited: false,
-            componentCompleted: false,
+      customConfig: undefined,
 
-            initialize: function () {
-                this.listenToOnce(Adapt, "router:location", this.onAdaptInitialize);
-            },
+      initialize: function () {
+        this.listenToOnce(Adapt, 'router:location', this.onAdaptInitialize);
+      },
 
-            onAdaptInitialize: function () {
-                if (!this.checkIsCustomCompletion()) return;
-                this.setupEventListeners();
-            },
+      onAdaptInitialize: function () {
+        if (!this.checkIsCustomCompletion()) return;
+        this.setupEventListeners();
+      },
 
-            checkIsCustomCompletion: function () {
-                if (!Adapt.offlineStorage) return false;
+      checkIsCustomCompletion: function () {
+        if (!Adapt.offlineStorage) return false;
 
-                if (Adapt.config.has('_sberCompletionCriteria')) {
-                    let AdaptConfig = Adapt.config.get('_sberCompletionCriteria');
-                    this.customConfig = AdaptConfig._sberCustomCompletion;
-                    this.customConfig["_activityID"] = AdaptConfig._activityID;
-                }
+        if (!Adapt.config.has('_xapi')) {
+          Adapt.trigger('notify:popup', {
+            title: 'Вы не подключили xapi!',
+            body: 'Для корректной работы кастомного завершения необходимо расширение xapi'
+          });
+          return false;
+        }
 
-                return this.customConfig !== undefined;
-            },
+        if (!Adapt.config.get('_xapi')._activityID) {
+          Adapt.trigger('notify:popup', {
+            title: 'Вы не ввели _activityID!',
+            body: 'Для корректной работы кастомного завершения необходимо ввести в xapi _activityID'
+          });
+          return false;
+        }
 
-            checkIfCompletedEverything() {
-                // You always need page completion, but if you need to complete a component, we need to check that first
-                if (this.customConfig._requireComponentVisited !== "") {
-                    if (this.pageVisited && this.componentCompleted) {
-                        this.setContentCompleted();
-                    }
-                } else {
-                    if (this.pageVisited) {
-                        this.setContentCompleted();
-                    }
-                }
-            },
+        if (Adapt.config.has('_sberCompletionCriteria')) {
+          this.customConfig = Adapt.config.get('_sberCompletionCriteria');
+          this.customConfig['_activityID'] = Adapt.config.get('_xapi')._activityID;
+        }
 
-            setupEventListeners: function () {
-                this.listenTo(Adapt, 'pageView:preRender', this.onPageVisit);
-                if (this.customConfig._requireComponentVisited) {
-                    let model = Adapt.findById(this.customConfig._requireComponentVisited);
-                    Adapt.listenTo(model, "change:_isComplete", function () {
-                        this.componentCompleted = true;
-                        this.checkIfCompletedEverything();
-                    }.bind(this))
-                }
-            },
+        return this.customConfig !== undefined;
+      },
 
-            onPageVisit: function (pageView) {
-                let _sCurrentScreenId = pageView.model.get('_id'),
-                    _sPageId = this.customConfig._requirePageVisited;
+      setupEventListeners: function () {
+        let model = Adapt.findById(this.customConfig._requireComponentVisited);
+        Adapt.listenTo(model, 'change:_isComplete', function () {
+          this.setContentCompleted();
+        }.bind(this));
+      },
 
-                console.log('_sCurrentScreenId - ', _sCurrentScreenId, ' _sPageId - ', _sPageId);
-                if (_sPageId !== undefined) {
-                    if (_sCurrentScreenId === _sPageId) {
-                        this.pageVisited = true;
-                        this.checkIfCompletedEverything();
-                    }
-                }
-            },
-
-            setContentCompleted: function () {
-                const tincan = new TinCan({
-                    url: window.location.href
-                });
-                tincan.sendStatement({
-                    verb: {
-                        id: "http://adlnet.gov/expapi/verbs/passed"
-                    },
-                    object: {
-                        "id": this.customConfig._activityID,
-                        "objectType": "Activity"
-                    }
-                });
-
-                let _sCompletionData = Adapt.offlineStorage.get('completion');
-                if (_sCompletionData) {
-                    _sCompletionData = _sCompletionData.replace(/0/g, 1);
-                    Adapt.offlineStorage.set('completion', _sCompletionData);
-                }
-            }
+      setContentCompleted: function () {
+        const tincan = new TinCan({
+          url: window.location.href
+        });
+        tincan.sendStatement({
+          verb: {
+            id: 'http://adlnet.gov/expapi/verbs/passed'
+          },
+          object: {
+            'id': this.customConfig._activityID,
+            'objectType': 'Activity'
+          }
         });
 
-        return new CustomCompletion();
+        let _sCompletionData = Adapt.offlineStorage.get('completion');
+        if (_sCompletionData) {
+          _sCompletionData = _sCompletionData.replace(/0/g, 1);
+          Adapt.offlineStorage.set('completion', _sCompletionData);
+        }
+      }
     });
+
+    return new CustomCompletion();
+  });
