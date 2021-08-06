@@ -3,7 +3,7 @@
   "repository": "git://github.com/obuylov/adapt-sber",
   "framework": ">=5",
   "homepage": "https://github.com/obuylov/adapt-sber",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "issues": "",
   "displayName": "Sber Фигуры",
   "extension": "sberFigures",
