@@ -351,11 +351,12 @@
       "_isCompletionIndicatorEnabled": false
     },
     "_sberIcon": {
-      "_isEnabled": false,
+      "_isEnabled": true,
       "side": "top",
-      "src": "",
+      "src": "course/ru/assets/5653522af8c2ccf030af48da076887cba96b8bf7.png",
       "align": "center",
-      "margin": 30
+      "margin": 30,
+      "classInside": "p1"
     },
     "instruction": "",
     "_setCompletionOn": "allItems",
@@ -372,7 +373,7 @@
       },
       {
         "title": "2.5.2. Дисциплинарная ответственность",
-        "body": "<ul><li>Отчет о прибылях и убытках</li></ul>",
+        "body": "<ul><li><span class='p1'></span>Отчет о прибылях и убытках</li></ul>",
         "_graphic": {
           "alt": "",
           "src": "",
@@ -1678,11 +1679,12 @@
       "_isCompletionIndicatorEnabled": false
     },
     "_sberIcon": {
-      "_isEnabled": false,
+      "_isEnabled": true,
       "side": "top",
-      "src": "",
+      "src": "course/ru/assets/5653522af8c2ccf030af48da076887cba96b8bf7.png",
       "align": "center",
-      "margin": 30
+      "margin": 30,
+      "classInside": ""
     },
     "_sberTooltip": {
       "_isEnabled": true,

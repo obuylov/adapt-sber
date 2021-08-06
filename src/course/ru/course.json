@@ -336,7 +336,7 @@
     "_isEnabled": true,
     "_items": [
       {
-        "_type": "pentagon",
+        "_type": "hexagon",
         "size": 348,
         "height": 100,
         "x_pos": 19,

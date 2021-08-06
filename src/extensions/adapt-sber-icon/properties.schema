@@ -89,6 +89,16 @@
                     "number"
                   ],
                   "help": "Отступ до текста в пикселях"
+                },
+                "classInside": {
+                  "type": "string",
+                  "default": "",
+                  "required": false,
+                  "title": "Класс внутри компонента",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "Заполнять только если нужно добавить иконку внутрь компонента (в часть текста)"
                 }
               }
             }
