@@ -119,15 +119,19 @@ define([
       let type = this.model.get('_style_type');
 
       _.each(this.model.get('_items'), function (item, i) {
-        let answers = [];
+        let parentContainer = null;
 
         if (type === 'first') {
-          answers = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container')[0];
-          answers = answers.innerText.split('\n');
+          parentContainer = $(id + ' .sber-dragndrop__question-container').eq(i).find('.sber-dragndrop__question-answers-container');
         } else {
-          answers = $(id + ' .sber-dragndrop__question-answer-placeholder').eq(i)[0];
-          answers = answers.innerText.split('\n');
+          parentContainer = $(id + ' .sber-dragndrop__question-answer-placeholder').eq(i);
         }
+
+        let answers = [];
+        parentContainer.find(".sber-dragndrop__answers-answer").each(function() {
+          let theText = $(this).text().trim();
+          answers.push(theText)
+        })
 
         item._isCorrect = item.accepted.sort().join() === answers.sort().join();
 
