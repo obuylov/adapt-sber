@@ -3,6 +3,7 @@ define([
 ], function (Adapt) {
   class SberIconsView extends Backbone.View {
     initialize(options) {
+      console.clear()
       this._articleModels = [];
 
       const current_components = this.model.findDescendantModels('component');
@@ -25,27 +26,48 @@ define([
           body = el.querySelector('.component-widget');
         }
 
-        if (config.classInside) {
-          body = body.querySelector("." + config.classInside);
+        if (config.childElements && config.childElements.length) {
+          for (let child of config.childElements) {
+            let el = body.querySelector("." + child.childClass);
+
+            if (!el) {
+              Adapt.notify.popup({
+                title: "Ошибка в Сбер-иконке",
+                body: "Перепроверьте класс <b>" + child.childClass + "</b>! Его не получилось найти в данном компоненте",
+                _classes: "show-title"
+              });
+
+              continue;
+            }
+
+            let imgSrc = child.src ? child.src : config.src;
+            let img = this.createImage(config, imgSrc);
+
+            this.appendToElement(el, img, config)
+          }
+        } else {
+          let img = this.createImage(config, config.src);
+          this.appendToElement(body, img, config);
         }
-
-        body.classList.add('sber-icon-' + config.side);
-        body.style.alignItems = config.align;
-
-        let img = this.createImage(config);
-
-        if (config.classInside && config.side === "left") {
-          body.style.display = "inline-flex";
-        }
-        body.prepend(img);
       }
     }
 
-    createImage(config) {
+    appendToElement(el, image, config) {
+      el.classList.add('sber-icon-' + config.side);
+      el.style.alignItems = config.align;
+
+      if (!el.className.match(/component/g) && config.side === "left") {
+        el.style.display = "inline-flex";
+      }
+
+      el.prepend(image);
+    }
+
+    createImage(config, src) {
       let margin = config.side === 'top' ? 'Bottom' : 'Right';
 
       let img = document.createElement('img');
-      img.src = config.src;
+      img.src = src;
       img.alt = 'icon';
       img.style['margin' + margin] = config.margin + 'px';
 

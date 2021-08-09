@@ -354,9 +354,18 @@
       "_isEnabled": true,
       "side": "top",
       "src": "course/ru/assets/5653522af8c2ccf030af48da076887cba96b8bf7.png",
-      "align": "center",
+      "align": "left",
       "margin": 30,
-      "classInside": "p1"
+      "childElements": [
+        {
+          "childClass": "a1",
+          "src": ""
+        },
+        {
+          "childClass": "a2",
+          "src": ""
+        }
+      ]
     },
     "instruction": "",
     "_setCompletionOn": "allItems",
@@ -383,7 +392,7 @@
       },
       {
         "title": "2.5.4. По РСБУ",
-        "body": "<ul><li>Данные по выручке, указанные в декларациях упрощенной системы налогообложения</li><li>Данные по выручке, декларируемые заемщиком</li><li>Данные по выручке, полученные из управленческой отчетности Клиента</li></ul>",
+        "body": "<ul><li>Данные по <span class='a1'></span>выручке, указанные в декларациях упрощенной системы налогообложения</li><li>Данные по выручке, декларируемые заемщиком</li><li>Данные по выручке, полученные из управленческой отчетности Клиента</li></ul><span class='a2'></span>",
         "_graphic": {
           "alt": "",
           "src": "",
@@ -1683,8 +1692,7 @@
       "side": "top",
       "src": "course/ru/assets/5653522af8c2ccf030af48da076887cba96b8bf7.png",
       "align": "center",
-      "margin": 30,
-      "classInside": ""
+      "margin": 30
     },
     "_sberTooltip": {
       "_isEnabled": true,

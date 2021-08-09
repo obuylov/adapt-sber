@@ -90,15 +90,35 @@
                   ],
                   "help": "Отступ до текста в пикселях"
                 },
-                "classInside": {
-                  "type": "string",
-                  "default": "",
-                  "required": false,
-                  "title": "Класс внутри компонента",
-                  "inputType": "Text",
-                  "validators": [],
-                  "translatable": true,
-                  "help": "Заполнять только если нужно добавить иконку внутрь компонента (в часть текста)"
+                "childElements": {
+                  "type": "array",
+                  "required": true,
+                  "title": "Иконки в компонент",
+                  "help": "Внимание! Добавление только в span!",
+                  "items": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "childClass": {
+                        "type": "string",
+                        "default": "",
+                        "required": false,
+                        "title": "Класс внутри компонента",
+                        "inputType": "Text",
+                        "validators": [],
+                        "translatable": true,
+                        "help": "Для каждой иконки свой отдельный класс"
+                      },
+                      "src": {
+                        "type": "string",
+                        "required": false,
+                        "default": "",
+                        "inputType": "Asset:image",
+                        "validators": [],
+                        "help": "Изображение иконки"
+                      }
+                    }
+                  }
                 }
               }
             }

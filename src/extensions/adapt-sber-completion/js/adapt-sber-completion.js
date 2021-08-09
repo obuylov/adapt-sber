@@ -22,17 +22,19 @@ define([
         if (!Adapt.offlineStorage) return false;
 
         if (!Adapt.config.has('_xapi')) {
-          Adapt.trigger('notify:popup', {
+          Adapt.notify.popup({
             title: 'Вы не подключили xapi!',
-            body: 'Для корректной работы кастомного завершения необходимо расширение xapi'
+            body: 'Для корректной работы кастомного завершения необходимо расширение xapi',
+            _classes: "show-title"
           });
           return false;
         }
 
         if (!Adapt.config.get('_xapi')._activityID) {
-          Adapt.trigger('notify:popup', {
+          Adapt.notify.popup({
             title: 'Вы не ввели _activityID!',
-            body: 'Для корректной работы кастомного завершения необходимо ввести в xapi _activityID'
+            body: 'Для корректной работы кастомного завершения необходимо ввести в xapi _activityID',
+            _classes: "show-title"
           });
           return false;
         }

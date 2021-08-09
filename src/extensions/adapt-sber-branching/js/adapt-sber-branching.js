@@ -48,7 +48,8 @@ define([
     showFeedback(title, body) {
       Adapt.notify.popup({
         title,
-        body
+        body,
+        _classes: "show-title"
       });
     }
 
