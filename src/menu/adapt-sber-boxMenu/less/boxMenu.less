@@ -26,6 +26,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: @device-width-small) {
+        height: auto;
+    }
   }
 
   .menu__preview-image, .menu__heading {
@@ -66,8 +70,12 @@
   }
 
   .menu__body {
-    padding: 160px 20px 110px;
+    padding: 70px 20px;
     background-color: #f7f7f7;
+
+    .two-cols {
+      margin-top: 50px;
+    }
 
     @media (max-width: @device-width-small) {
       padding: 50px 20px;
