@@ -1,6 +1,6 @@
 [
   {
-    "_component": "sber-txtmessages",
+    "_component": "sber-html",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -12,6 +12,7 @@
     "title": "New Component Title",
     "displayTitle": "New Component Title",
     "body": "<p>lorem <span class='tl-1'>sdfsdf</span></p>",
+    "_htmlCode": "<p>123</p><h1>gaga</h1>",
     "_id": "600b282668656502e60549d6",
     "_parentId": "600b26f468656502e60549d5",
     "_type": "component",

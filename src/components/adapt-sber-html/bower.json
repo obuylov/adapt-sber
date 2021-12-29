@@ -1,0 +1,16 @@
+{
+  "name": "adapt-sber-html",
+  "version": "0.0.2",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov/adapt-sber",
+  "issues": "https://github.com/obuylov/adapt-sber",
+  "component": "sber-html",
+  "displayName": "Сбер html",
+  "description": "Компонент, который добавляет кастомный html",
+  "main": "/js/adapt-sber-html.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}
