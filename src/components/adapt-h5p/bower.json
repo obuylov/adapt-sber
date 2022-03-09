@@ -1,0 +1,16 @@
+{
+  "name": "adapt-h5p",
+  "version": "0.1.0",
+  "framework": ">=5.5",
+  "homepage": "https://github.com/obuylov",
+  "issues": "https://github.com/obuylov",
+  "component": "adapt-h5p",
+  "displayName": "H5P",
+  "description": "Компонент H5P для интеграции с Adapt Learning",
+  "main": "/js/adapt-h5p.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

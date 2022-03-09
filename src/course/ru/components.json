@@ -1,6 +1,6 @@
 [
   {
-    "_component": "sber-html",
+    "_component": "sber-h5p",
     "_classes": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -27,26 +27,9 @@
       "_isCompletionIndicatorEnabled": false
     },
     "instruction": "",
-    "_items": [
-      {
-        "_align": "left",
-        "body": "<p>123</p>",
-        "_whoSays": "123",
-        "_graphic": {
-          "src": "course/ru/assets/woman.png"
-        },
-        "_classes": ""
-      },
-      {
-        "_align": "right",
-        "body": "<p>goodbye</p>",
-        "_whoSays": "345",
-        "_graphic": {
-          "src": "course/ru/assets/woman.png"
-        },
-        "_classes": ""
-      }
-    ],
+    "file": "course/ru/assets/book.html",
+    "width": 100,
+    "height": 729,
     "_sberTooltip": {
       "_isEnabled": true,
       "_items": [

@@ -1,0 +1,59 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "file": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Файл",
+      "inputType": "Asset:other",
+      "validators": [
+        "required"
+      ]
+    },
+    "width": {
+      "type": "number",
+      "required": true,
+      "default": 100,
+      "title": "Ширина (в %)",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "Ширина iframe"
+    },
+    "height": {
+      "type": "number",
+      "required": true,
+      "default": 792,
+      "title": "Высота (в рх)",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "Высота iframe"
+    }
+  }
+}

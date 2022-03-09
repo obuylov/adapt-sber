@@ -32,7 +32,7 @@
                   "default": "",
                   "required": false,
                   "title": "Код",
-                  "inputType": "Text",
+                  "inputType": "CodeEditor:less",
                   "validators": [],
                   "translatable": true
                 },
